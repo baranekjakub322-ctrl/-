@@ -9,6 +9,7 @@ import { Availability } from "@/components/site/Availability";
 import { Gallery } from "@/components/site/Gallery";
 import { Contact } from "@/components/site/Contact";
 import { Footer, MobileCallBar } from "@/components/site/Footer";
+import { CallGuard } from "@/components/site/CallGuard";
 import { scrollToId } from "@/lib/api";
 
 export default function Landing() {
@@ -32,6 +33,7 @@ export default function Landing() {
       </main>
       <Footer />
       <MobileCallBar />
+      <CallGuard />
     </div>
   );
 }

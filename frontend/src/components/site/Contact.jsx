@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Phone, Mail, Send, Copy, Check, MessageSquare, MessageCircle } from "lucide-react";
 import { Reveal } from "./Reveal";
-import { PHONE, TEL, EMAIL, api, formatErr } from "@/lib/api";
+import { PHONE, TEL, EMAIL, api, formatErr, copyText } from "@/lib/api";
 import { toast } from "sonner";
 
 const SMS_NUMBER = "+48668434331";
@@ -74,24 +74,12 @@ const InquiryForm = ({ prefill }) => {
       <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-3">
         <button type="button" onClick={sms} data-testid="inquiry-sms-button" className="btn-amber justify-center"><MessageSquare className="h-4 w-4" /> Wyślij SMS</button>
         <button type="submit" disabled={sending} data-testid="inquiry-submit-button" className="btn-amber justify-center disabled:opacity-50"><Send className="h-4 w-4" /> {sending ? "Wysyłanie…" : "Wyślij e-mail"}</button>
-        <a href={TEL} onClick={(e) => { if (!window.matchMedia("(pointer: coarse)").matches) { e.preventDefault(); copyText(PHONE).then(() => toast.success(`Numer ${PHONE} skopiowany — zadzwoń z telefonu`)); } }} data-testid="inquiry-call-button" className="btn-ghost justify-center"><Phone className="h-4 w-4" /> Zadzwoń</a>
+        <a href={TEL} data-testid="inquiry-call-button" className="btn-ghost justify-center"><Phone className="h-4 w-4" /> Zadzwoń</a>
       </div>
     </form>
   );
 };
 
-const copyText = async (text) => {
-  try {
-    await navigator.clipboard.writeText(text);
-  } catch {
-    const t = document.createElement("textarea");
-    t.value = text;
-    document.body.appendChild(t);
-    t.select();
-    document.execCommand("copy");
-    t.remove();
-  }
-};
 
 const PhoneAction = ({ href, icon: I, label, testId, onClick, external }) => {
   const cls = "flex flex-col items-center justify-center gap-1.5 rounded-2xl bg-white/[0.06] px-2 py-3 text-xs font-semibold text-white transition-colors hover:bg-white/15";

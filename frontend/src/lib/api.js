@@ -25,6 +25,19 @@ export function formatErr(detail) {
   return String(detail);
 }
 
+export const copyText = async (text) => {
+  try {
+    await navigator.clipboard.writeText(text);
+  } catch {
+    const t = document.createElement("textarea");
+    t.value = text;
+    document.body.appendChild(t);
+    t.select();
+    document.execCommand("copy");
+    t.remove();
+  }
+};
+
 export const scrollToId = (id) => {
   const el = document.getElementById(id);
   if (!el) return;
