@@ -42,9 +42,8 @@ export const Navbar = () => {
       </div>
       {open && (
         <nav data-testid="nav-mobile-menu" className="border-t border-white/10 px-5 pb-6 pt-2 lg:hidden">
-          {LINKS.map(([id, label], i) => (
+          {LINKS.map(([id, label]) => (
             <button key={id} data-testid={`nav-mobile-link-${id}`} onClick={() => go(id)} className="flex w-full items-baseline gap-4 border-b border-white/5 py-4 text-left font-display text-2xl font-bold text-white">
-              <span className="font-mono text-xs text-zinc-300">0{i + 1}</span>
               {label}
             </button>
           ))}
