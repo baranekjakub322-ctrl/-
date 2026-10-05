@@ -98,7 +98,7 @@ export const Estimator = ({ onInquiry }) => {
                   <>
                     <Row label={`Bus · ${q.days} × ${zl(q.rate)}`} value={zl(q.total)} testId="calc-bus-total" />
                     <Row label="Limit kilometrów" value={`${new Intl.NumberFormat("pl-PL").format(q.limit)} km`} testId="calc-km-limit" />
-                    {q.over > 0 && <Row label={`Nadwyżka · ${new Intl.NumberFormat("pl-PL").format(q.over)} km × ok. 0,40 zł`} value={zl(q.overCost)} testId="calc-km-over-total" />}
+                    {q.over > 0 && <Row label={`Nadwyżka · ${new Intl.NumberFormat("pl-PL").format(q.over)} km`} value={`ok. ${zl(q.overCost)}`} testId="calc-km-over-total" />}
                   </>
                 ) : <Row label="Bus" value="—" testId="calc-bus-total" />}
                 {wert > 0 && <Row label={`Wertykulator · ${wert} × 110 zł`} value={zl(wert * RATES.wertykulator)} testId="calc-wert-total" />}
@@ -106,7 +106,7 @@ export const Estimator = ({ onInquiry }) => {
                 <Row label={driver ? (total ? "Razem ok. (bez busa)" : "Razem") : "Razem ok."} value={driver && !total ? "indywidualnie" : zl(total)} testId="calc-grand-total" strong />
               </div>
               {q?.over > 0 && !driver && (
-                <p data-testid="calc-km-over-warning" className="mt-4 rounded-xl bg-white/10 p-3 text-sm text-white">Przekroczenie limitu o {new Intl.NumberFormat("pl-PL").format(q.over)} km — dopłata ok. 0,40 zł/km (ok. {zl(q.overCost)}), ustalana indywidualnie.</p>
+                <p data-testid="calc-km-over-warning" className="mt-4 rounded-xl bg-white/10 p-3 text-sm text-white">Przekroczenie limitu o {new Intl.NumberFormat("pl-PL").format(q.over)} km — dopłata ok. {zl(q.overCost)}, ustalana indywidualnie.</p>
               )}
               <p className="mt-4 flex gap-2 text-sm leading-relaxed text-zinc-300"><Info className="mt-0.5 h-4 w-4 shrink-0" />Cena jest orientacyjna i ustalana indywidualnie. Przy dłuższym wynajmie stawka może być niższa niż 250 zł/doba.</p>
               <button data-testid="calc-send-inquiry-button" disabled={total === 0 && !(driver && q)} onClick={send} className="btn-amber mt-6 w-full justify-center disabled:opacity-40">
