@@ -9,7 +9,7 @@ export const PHONE = "+48 668 434 331";
 export const TEL = "tel:+48668434331";
 export const EMAIL = "jarospeedrent@gmail.com";
 export const FB_URL = "https://www.facebook.com/profile.php?id=61557774450251";
-export const REVIEW_URL = "https://share.google/u0KgpUIosKR71n431";
+export const REVIEW_URL = "https://www.google.com/search?sca_esv=cbebc86b742c5175&hl=pl-PL&sxsrf=APpeQns6KvD9JCz_mtChyd4uhhdHQPdP0Q:1791202049770&q=wypo%C5%BCyczalnia+%22jarospeedrent%22+strze%C5%BC%C3%B3w+drugi+opinie&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_5Wjg6LcQ99vPW_wLC5C0haMP0yTWk4frUDGwbrYiYYehnmM11KTNIbuEJVsUoU1kfGOKPx4rTarOAFUbxNvjvxqwAiA36XcZ3JiRUGgdyJBikqWXCHh4iE2X1G_vaz0PU5OYE8%3D&sa=X&ved=2ahUKEwiRxJbP66KXAxX6GRAIHfROHeUQ9qsLegQIGRAI&biw=387&bih=743&dpr=2.79";
 
 export const FALLBACK_PHOTOS = [
   { id: "f1", category: "bus", src: "/img/bus.webp", caption: "Ford Tourneo Custom — 8 miejsc" },
