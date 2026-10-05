@@ -1,10 +1,8 @@
 import { useState } from "react";
 import { Phone, Menu, X, Facebook, Star } from "lucide-react";
 import { Logo } from "./Logo";
-import { PHONE, TEL, scrollToId } from "@/lib/api";
+import { PHONE, TEL, scrollToId, FB_URL, REVIEW_URL } from "@/lib/api";
 
-const FB_URL = "https://www.facebook.com/profile.php?id=61557774450251";
-const REVIEW_URL = "https://share.google/u0KgpUIosKR71n431";
 const ext = { target: "_blank", rel: "noopener noreferrer" };
 
 const LINKS = [

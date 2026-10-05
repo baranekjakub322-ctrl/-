@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { Phone, Mail, Send, Copy, Check, MessageSquare, MessageCircle } from "lucide-react";
+import { Phone, Mail, Send, Copy, Check, MessageSquare, MessageCircle, Facebook, Star } from "lucide-react";
 import { Reveal } from "./Reveal";
-import { PHONE, TEL, EMAIL, api, formatErr, copyText } from "@/lib/api";
+import { PHONE, TEL, EMAIL, api, formatErr, copyText, FB_URL, REVIEW_URL } from "@/lib/api";
 import { toast } from "sonner";
 
 const SMS_NUMBER = "+48668434331";
@@ -118,9 +118,13 @@ export const Contact = ({ prefill }) => {
             </div>
           </div>
           <div className="mt-4 flex items-center gap-3 rounded-3xl border border-white/15 bg-white/[0.03] p-5 sm:p-6">
-            <span className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-white text-[#0A0A0A]"><Mail className="h-6 w-6" /></span>
-            <a href={`mailto:${EMAIL}`} data-testid="contact-email-link" className="min-w-0 flex-1"><span className="block font-mono text-xs uppercase tracking-widest text-zinc-300">E-mail</span><span className="block break-all font-display text-base font-bold sm:text-2xl">{EMAIL}</span><span className="mt-1 block text-xs text-zinc-400">Kliknij, aby otworzyć swoją pocztę</span></a>
+            <span className="hidden h-14 w-14 shrink-0 place-items-center rounded-2xl bg-white text-[#0A0A0A] sm:grid"><Mail className="h-6 w-6" /></span>
+            <a href={`mailto:${EMAIL}`} data-testid="contact-email-link" className="min-w-0 flex-1"><span className="block font-mono text-xs uppercase tracking-widest text-zinc-300">E-mail</span><span className="block whitespace-nowrap font-display text-[17px] font-bold sm:text-2xl">{EMAIL}</span><span className="mt-1 block text-xs text-zinc-400">Kliknij, aby otworzyć swoją pocztę</span></a>
             <button data-testid="contact-email-copy-button" onClick={() => copy("email", EMAIL)} aria-label="Kopiuj e-mail" className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-white/10 hover:bg-white/20">{copied === "email" ? <Check className="h-5 w-5" /> : <Copy className="h-5 w-5" />}</button>
+          </div>
+          <div className="mt-6 flex items-center gap-3" data-testid="contact-social">
+            <a href={FB_URL} target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook" data-testid="contact-facebook-link" className="grid h-12 w-12 place-items-center rounded-full border border-white/15 text-white transition-colors hover:bg-white/10"><Facebook className="h-5 w-5" /></a>
+            <a href={REVIEW_URL} target="_blank" rel="noopener noreferrer" data-testid="contact-google-review-link" className="inline-flex h-12 items-center gap-2 rounded-full border border-white/15 px-5 text-sm font-semibold text-white transition-colors hover:bg-white/10"><Star className="h-4 w-4" />Oceń nas</a>
           </div>
         </Reveal>
         <Reveal delay={0.1} className="lg:col-span-6"><InquiryForm prefill={prefill} /></Reveal>

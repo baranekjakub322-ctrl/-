@@ -8,6 +8,8 @@ export const photoSrc = (src) => (src?.startsWith("/api/") ? `${BACKEND_URL}${sr
 export const PHONE = "+48 668 434 331";
 export const TEL = "tel:+48668434331";
 export const EMAIL = "jarospeedrent@gmail.com";
+export const FB_URL = "https://www.facebook.com/profile.php?id=61557774450251";
+export const REVIEW_URL = "https://share.google/u0KgpUIosKR71n431";
 
 export const FALLBACK_PHOTOS = [
   { id: "f1", category: "bus", src: "/img/bus.webp", caption: "Ford Tourneo Custom — 8 miejsc" },
