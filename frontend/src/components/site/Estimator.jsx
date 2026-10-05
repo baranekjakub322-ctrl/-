@@ -14,7 +14,7 @@ const Stepper = ({ value, onChange, min = 0, max = 60, testId }) => (
 const Row = ({ label, value, testId, strong }) => (
   <div className={`flex items-baseline justify-between gap-4 py-3 ${strong ? "" : "border-b border-dashed border-white/15"}`}>
     <span className="text-sm text-zinc-300">{label}</span>
-    <span data-testid={testId} className={`font-mono ${strong ? "text-3xl font-bold text-white sm:text-4xl" : "text-sm text-white"}`}>{value}</span>
+    <span data-testid={testId} className={`shrink-0 whitespace-nowrap font-mono ${strong ? "text-3xl font-bold text-white sm:text-4xl" : "text-sm text-white"}`}>{value}</span>
   </div>
 );
 
@@ -24,7 +24,7 @@ export const Estimator = ({ onInquiry }) => {
   const [wert, setWert] = useState(0);
   const [aer, setAer] = useState(0);
   const q = busDays > 0 ? busQuote(busDays, km) : null;
-  const total = (q?.total ?? 0) + wert * RATES.wertykulator + aer * RATES.aerator;
+  const total = (q?.total ?? 0) + (q?.overCost ?? 0) + wert * RATES.wertykulator + aer * RATES.aerator;
 
   const send = () => {
     const parts = [];
@@ -85,6 +85,7 @@ export const Estimator = ({ onInquiry }) => {
                   <>
                     <Row label={`Bus · ${q.days} × ${zl(q.rate)}`} value={zl(q.total)} testId="calc-bus-total" />
                     <Row label="Limit kilometrów" value={`${new Intl.NumberFormat("pl-PL").format(q.limit)} km`} testId="calc-km-limit" />
+                    {q.over > 0 && <Row label={`Nadwyżka · ${new Intl.NumberFormat("pl-PL").format(q.over)} km × ok. 0,40 zł`} value={zl(q.overCost)} testId="calc-km-over-total" />}
                   </>
                 ) : <Row label="Bus" value="—" testId="calc-bus-total" />}
                 {wert > 0 && <Row label={`Wertykulator · ${wert} × 110 zł`} value={zl(wert * RATES.wertykulator)} testId="calc-wert-total" />}
@@ -92,7 +93,7 @@ export const Estimator = ({ onInquiry }) => {
                 <Row label="Razem ok." value={zl(total)} testId="calc-grand-total" strong />
               </div>
               {q?.over > 0 && (
-                <p data-testid="calc-km-over-warning" className="mt-4 rounded-xl bg-white/10 p-3 text-sm text-white">Przekroczenie limitu o {new Intl.NumberFormat("pl-PL").format(q.over)} km — dopłata ustalana indywidualnie.</p>
+                <p data-testid="calc-km-over-warning" className="mt-4 rounded-xl bg-white/10 p-3 text-sm text-white">Przekroczenie limitu o {new Intl.NumberFormat("pl-PL").format(q.over)} km — dopłata ok. 0,40 zł/km (ok. {zl(q.overCost)}), ustalana indywidualnie.</p>
               )}
               <p className="mt-4 flex gap-2 text-sm leading-relaxed text-zinc-300"><Info className="mt-0.5 h-4 w-4 shrink-0" />Cena jest orientacyjna i ustalana indywidualnie. Przy dłuższym wynajmie stawka może być niższa niż 250 zł/doba.</p>
               <button data-testid="calc-send-inquiry-button" disabled={total === 0} onClick={send} className="btn-amber mt-6 w-full justify-center disabled:opacity-40">
