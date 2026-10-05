@@ -50,7 +50,10 @@ export const Estimator = ({ onInquiry }) => {
                   <p className="font-mono text-xs uppercase tracking-[0.25em] text-zinc-300">Bus 8-osobowy</p>
                   <h3 className="mt-1 font-display text-2xl font-bold text-white">Ford Tourneo Custom</h3>
                 </div>
-                <Stepper value={busDays} onChange={setBusDays} max={60} testId="calc-bus-days" />
+                <div className="flex flex-col items-start gap-2 sm:items-end">
+                  <span data-testid="calc-bus-days-label" className="text-xs font-semibold uppercase tracking-wider text-zinc-300">Wybierz liczbę dni</span>
+                  <Stepper value={busDays} onChange={setBusDays} max={60} testId="calc-bus-days" />
+                </div>
               </div>
               <input data-testid="calc-bus-days-slider" type="range" min="0" max="30" value={Math.min(busDays, 30)} onChange={(e) => setBusDays(Number(e.target.value))} className="range-amber mt-6 w-full" aria-label="Liczba dni busa" />
               <div className="mt-6 grid gap-3 sm:grid-cols-3">
@@ -66,15 +69,18 @@ export const Estimator = ({ onInquiry }) => {
               {[["Wertykulator spalinowy", RATES.wertykulator, wert, setWert, "calc-wert-days"], ["Aerator rurkowy", RATES.aerator, aer, setAer, "calc-aer-days"]].map(([n, r, v, set, id]) => (
                 <div key={id} className="mt-5 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-5 first:border-0">
                   <div><p className="font-semibold text-white">{n}</p><p className="text-sm text-zinc-400">{r} zł / doba</p></div>
-                  <Stepper value={v} onChange={set} max={30} testId={id} />
+                  <div className="flex flex-col items-start gap-2 sm:items-end">
+                    <span className="text-xs font-semibold uppercase tracking-wider text-zinc-300">Liczba dni</span>
+                    <Stepper value={v} onChange={set} max={30} testId={id} />
+                  </div>
                 </div>
               ))}
             </div>
           </Reveal>
           <Reveal delay={0.1} className="lg:col-span-5">
-            <div data-testid="calc-summary" className="receipt sticky top-24 rounded-3xl bg-[#F8FAFC] p-6 text-[#0A0A0A] sm:p-8">
-              <p className="font-mono text-xs uppercase tracking-[0.25em] text-zinc-500">Szacunek · Jaro Speed Rent</p>
-              <div className="receipt-dark mt-4 rounded-2xl bg-[#0A0A0A] p-5">
+            <div data-testid="calc-summary" className="receipt sticky top-24 rounded-3xl border border-white/10 bg-[#27272A] p-6 text-white sm:p-8">
+              <p className="font-mono text-xs uppercase tracking-[0.25em] text-zinc-300">Szacunek · Jaro Speed Rent</p>
+              <div className="mt-4 rounded-2xl bg-[#0A0A0A] p-5 text-white">
                 {q ? (
                   <>
                     <Row label={`Bus · ${q.days} × ${zl(q.rate)}`} value={zl(q.total)} testId="calc-bus-total" />
@@ -86,10 +92,10 @@ export const Estimator = ({ onInquiry }) => {
                 <Row label="Razem ok." value={zl(total)} testId="calc-grand-total" strong />
               </div>
               {q?.over > 0 && (
-                <p data-testid="calc-km-over-warning" className="mt-4 rounded-xl bg-zinc-100 p-3 text-sm text-zinc-900">Przekroczenie limitu o {new Intl.NumberFormat("pl-PL").format(q.over)} km — dopłata ustalana indywidualnie.</p>
+                <p data-testid="calc-km-over-warning" className="mt-4 rounded-xl bg-white/10 p-3 text-sm text-white">Przekroczenie limitu o {new Intl.NumberFormat("pl-PL").format(q.over)} km — dopłata ustalana indywidualnie.</p>
               )}
-              <p className="mt-4 flex gap-2 text-sm leading-relaxed text-zinc-600"><Info className="mt-0.5 h-4 w-4 shrink-0" />Cena jest orientacyjna i ustalana indywidualnie. Przy dłuższym wynajmie stawka może być niższa niż 250 zł/doba.</p>
-              <button data-testid="calc-send-inquiry-button" disabled={total === 0} onClick={send} className="btn-navy mt-6 w-full justify-center disabled:opacity-40">
+              <p className="mt-4 flex gap-2 text-sm leading-relaxed text-zinc-300"><Info className="mt-0.5 h-4 w-4 shrink-0" />Cena jest orientacyjna i ustalana indywidualnie. Przy dłuższym wynajmie stawka może być niższa niż 250 zł/doba.</p>
+              <button data-testid="calc-send-inquiry-button" disabled={total === 0} onClick={send} className="btn-amber mt-6 w-full justify-center disabled:opacity-40">
                 <Send className="h-4 w-4" /> Zapytaj o tę wycenę
               </button>
             </div>

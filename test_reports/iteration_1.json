@@ -1,0 +1,33 @@
+{
+  "summary": "First-run full-stack test of Jaro Speed Rent. Backend: 22/22 pytest tests passing (auth, admin guards, booking CRUD, gallery upload/caption/reorder/soft-delete, static file serving, CORS, bcrypt hash format, seeded demo booking visible). Frontend: landing renders all sections at 1440 & 390 with no horizontal overflow; estimator math verified (1 day=300 zł limit 350 km, 3 days=750 zł limit 1050 km, 3d+1w+2a=1320 zł); km-over warning shows; send-inquiry button prefills contact message. Availability calendar shows booked days 2026-10-14..17 (disabled, .day-booked styling); range crossing booked days shows availability-clash-warning and disables reserve button; valid range 2026-11-05..08 shows estimate '4 dni · 1000 zł · 1400 km' and reserve prefills inquiry from/to dates. Gallery tabs filter correctly (bus=3, garden=2, all=5), lightbox opens / next / prev / close works. Inquiry form validation shows 'Podaj imię i numer telefonu.' and builds mailto on submit. tel: links correct on contact-phone-button and mobile-call-button (+48 668 434 331). Admin /admin: wrong-password shows error; valid login opens dashboard; bookings add+delete works; gallery upload (multipart), caption edit, reorder up/down, soft delete all working; logout returns to login. Public /api/files/{path} serves uploaded images with correct content-type. All data-testid selectors wired correctly.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "Hero (mobile 390)", "issues": ["At 390px, part of the animated hero headline (word 'ogrodniczego') is clipped under a dark overlay in the initial frame — appears to be a scroll/animation reveal that only completes after user scroll. Not blocking, but noticeable on first paint."]}
+    ]
+  },
+  "test_report_links": [
+    "/app/backend/tests/backend_test.py",
+    "/app/test_reports/pytest/pytest_results.xml"
+  ],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "backend/server.py uses deprecated FastAPI @app.on_event startup/shutdown — consider migrating to lifespan context manager (works but will emit deprecation warnings on FastAPI upgrades).",
+    "Storage integration (put/get) uses blocking `requests` library inside async FastAPI handlers — this blocks the event loop under load. For low traffic (admin uploads only) acceptable, but for production consider httpx.AsyncClient or offloading via run_in_threadpool.",
+    "GET /api/bookings publicly exposes booking IDs & dates (no note) — fine per spec, but note that /api/files/{path} does not expose any object key enumeration (good).",
+    "Login lockout counter is keyed by (client.host + email). When behind a reverse proxy the client.host will be the proxy's IP for all users — a brute-force on a single account will still be throttled, but all users share a pool for a given proxy IP. Acceptable for this app.",
+    "AdminGallery.jsx: optimistic reorder spreads `all.filter(...)` then appended `next`, but keeps the previous category's photos in the state while they'd normally remain unchanged — current code is correct because it rebuilds array keyed by filter, but it reorders those photos within `all` differently from server; subsequent reload re-syncs. No functional bug observed."
+  ],
+  "updated_files": [
+    "/app/backend/tests/backend_test.py (new)"
+  ],
+  "success_rate": {"backend": "100% (22/22)", "frontend": "100% of in-scope flows"},
+  "test_credentials": "Admin: jarospeedrent@gmail.com / JaroAdmin2026! (from /app/memory/test_credentials.md)",
+  "seed_data_creation": "Created and cleaned up TEST_ bookings/photos during test. The pre-seeded TEST_demo booking 2026-10-14..17 is left in place (per instruction). 5 seed gallery photos preserved (3 bus + 2 garden).",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "Backend tests in /app/backend/tests/backend_test.py cover public (GET /gallery, /bookings), auth (login/logout/me/refresh behavior via cookies), admin guards, bookings CRUD and gallery upload/caption/reorder/soft-delete + file-serving. Login lockout kicks in at 5 failures per (ip,email) for 15 min — a single wrong-password frontend test adds 1 attempt but is cleared on successful login. Hero animation on 390 wraps/reveals 'ogrodniczego' only after user scroll — low-priority cosmetic.",
+  "rca of the issue": "N/A — no bugs found."
+}

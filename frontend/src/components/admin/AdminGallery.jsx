@@ -3,7 +3,7 @@ import { ArrowUp, ArrowDown, Trash2, Upload, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 import { api, formatErr, photoSrc } from "@/lib/api";
 
-const CATS = [["bus", "Bus — Ford Tourneo Custom"], ["garden", "Maszyny ogrodnicze"]];
+const CATS = [["bus", "Bus — Ford Tourneo Custom"], ["wertykulator", "Wertykulator"], ["aerator", "Aerator"]];
 
 const PhotoRow = ({ p, i, total, move, remove, saveCaption }) => {
   const [cap, setCap] = useState(p.caption || "");

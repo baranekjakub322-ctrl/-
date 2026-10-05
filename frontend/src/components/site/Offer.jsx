@@ -1,6 +1,15 @@
-import { ArrowUpRight, Users, Camera, Gauge, Snowflake, Sprout, Layers, Check } from "lucide-react";
+import { ArrowUpRight, Users, Camera, Gauge, Snowflake, Sprout, Layers, Check, Images } from "lucide-react";
 import { Reveal, Eyebrow, useSpotlight } from "./Reveal";
 import { scrollToId } from "@/lib/api";
+
+const openGallery = (cat) => {
+  window.dispatchEvent(new CustomEvent("gallery:show", { detail: cat }));
+  scrollToId("galeria");
+};
+
+const GalleryHint = () => (
+  <span className="absolute bottom-4 right-4 z-[2] flex items-center gap-2 rounded-full bg-black/70 px-3 py-1.5 text-xs font-semibold text-white opacity-90 backdrop-blur transition-opacity group-hover/img:opacity-100"><Images className="h-3.5 w-3.5" />Zobacz galerię</span>
+);
 
 const BUS_FEATURES = [
   [Users, "8 miejsc, różne konfiguracje", "Przestronne wnętrze i duży bagażnik"],
@@ -15,10 +24,11 @@ const MachineCard = ({ id, img, title, model, desc, specs, icon: Icon, price }) 
   const spot = useSpotlight();
   return (
     <article data-testid={`offer-card-${id}`} onMouseMove={spot} className="spot-card group flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-[#141414]">
-      <div className="relative h-56 shrink-0 overflow-hidden sm:h-64 lg:h-48">
+      <button type="button" data-testid={`offer-${id}-gallery-link`} onClick={() => openGallery(id)} aria-label={`Galeria: ${title}`} className="group/img relative block h-56 w-full shrink-0 cursor-pointer overflow-hidden sm:h-64 lg:h-48">
         <img src={img} alt={title} className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-105" />
         <span className="absolute left-4 top-4 rounded-full bg-white px-3 py-1 font-mono text-[11px] font-bold uppercase tracking-wider text-[#0A0A0A]">{price}</span>
-      </div>
+        <GalleryHint />
+      </button>
       <div className="relative flex-1 p-6 sm:p-7">
         <div className="flex items-start justify-between gap-4">
           <div>
@@ -45,11 +55,12 @@ const BusCard = () => {
   const spot = useSpotlight();
   return (
     <article data-testid="offer-card-bus" onMouseMove={spot} className="spot-card group flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-[#141414] lg:row-span-2">
-      <div className="relative aspect-[16/9] overflow-hidden lg:aspect-auto lg:min-h-[300px] lg:flex-1">
+      <button type="button" data-testid="offer-bus-gallery-link" onClick={() => openGallery("bus")} aria-label="Galeria: Ford Tourneo Custom" className="group/img relative block aspect-[16/9] w-full cursor-pointer overflow-hidden lg:aspect-auto lg:min-h-[300px] lg:flex-1">
         <img src="/img/bus.webp" alt="Ford Tourneo Custom" className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1.4s] ease-out group-hover:scale-105" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#141414] via-transparent to-transparent" />
         <span className="absolute left-5 top-5 rounded-full bg-white px-3 py-1 font-mono text-[11px] font-bold uppercase tracking-wider text-[#0A0A0A]">od 250 zł / doba</span>
-      </div>
+        <GalleryHint />
+      </button>
       <div className="relative p-6 sm:p-8">
         <p className="font-mono text-xs uppercase tracking-[0.25em] text-zinc-300">Flota · 01</p>
         <h3 className="mt-2 font-display text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Ford Tourneo Custom</h3>

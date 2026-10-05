@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight, X, Expand } from "lucide-react";
 import { Reveal, Eyebrow } from "./Reveal";
 import { api, photoSrc, FALLBACK_PHOTOS } from "@/lib/api";
 
-const TABS = [["bus", "Ford Tourneo Custom"], ["garden", "Maszyny Weibang"], ["all", "Wszystkie"]];
+const TABS = [["bus", "Ford Tourneo Custom"], ["wertykulator", "Wertykulator"], ["aerator", "Aerator"], ["all", "Wszystkie"]];
 
 const Lightbox = ({ items, index, setIndex }) => {
   const close = useCallback(() => setIndex(null), [setIndex]);
@@ -39,6 +39,11 @@ export const Gallery = () => {
   const [index, setIndex] = useState(null);
   useEffect(() => {
     api.get("/gallery").then((r) => { if (Array.isArray(r.data) && r.data.length) setPhotos(r.data); }).catch(() => {});
+  }, []);
+  useEffect(() => {
+    const on = (e) => { setTab(e.detail); setIndex(null); };
+    window.addEventListener("gallery:show", on);
+    return () => window.removeEventListener("gallery:show", on);
   }, []);
   const items = tab === "all" ? photos : photos.filter((p) => p.category === tab);
 

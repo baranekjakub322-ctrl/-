@@ -72,13 +72,13 @@ export const Availability = ({ onInquiry }) => {
               {range?.from ? `${fmt(range.from)} – ${fmt(range.to ?? range.from)}` : "Wybierz daty w kalendarzu"}
             </p>
             {q && !clash && (
-              <p data-testid="availability-estimate" className="mt-4 text-zinc-300">{days} {days === 1 ? "doba" : "dni"} · orientacyjnie <span className="font-semibold text-white">{zl(q.total)}</span> · limit {q.limit} km</p>
+              <p data-testid="availability-estimate" className="mt-4 text-zinc-300">{days} {days === 1 ? "doba" : "dni"} · orientacyjnie <span className="font-semibold text-white">{zl(q.total)}</span> · limit {q.limit} km <span className="block text-sm text-zinc-400">(cena uzgadniana indywidualnie)</span></p>
             )}
             {clash && (
-              <p data-testid="availability-clash-warning" className="mt-4 flex gap-2 rounded-xl bg-red-500/15 p-3 text-sm text-red-200"><AlertTriangle className="h-4 w-4 shrink-0" />Wybrany zakres zawiera zajęte dni. Wybierz inny termin.</p>
+              <p data-testid="availability-clash-warning" className="mt-4 flex gap-2 rounded-xl bg-white/10 p-3 text-sm text-zinc-100"><AlertTriangle className="h-4 w-4 shrink-0" />Możliwe, że termin jest zajęty — zapytaj, a potwierdzimy dostępność.</p>
             )}
             <div className="mt-auto pt-8">
-              <button data-testid="availability-reserve-button" disabled={!range?.from || clash} onClick={send} className="btn-amber w-full justify-center disabled:opacity-40">
+              <button data-testid="availability-reserve-button" disabled={!range?.from} onClick={send} className="btn-amber w-full justify-center disabled:opacity-40">
                 <Send className="h-4 w-4" /> Zapytaj o ten termin
               </button>
               <p className="mt-3 text-xs text-zinc-400">Kalendarz dotyczy busa. Dostępność maszyn ogrodniczych potwierdzamy telefonicznie.</p>

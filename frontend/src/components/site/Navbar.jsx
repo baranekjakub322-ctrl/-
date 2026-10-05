@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Phone, Menu, X } from "lucide-react";
 import { Logo } from "./Logo";
 import { PHONE, TEL, scrollToId } from "@/lib/api";
@@ -13,19 +13,12 @@ const LINKS = [
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-  useEffect(() => {
-    const on = () => setScrolled(window.scrollY > 24);
-    on();
-    window.addEventListener("scroll", on, { passive: true });
-    return () => window.removeEventListener("scroll", on);
-  }, []);
   const go = (id) => {
     setOpen(false);
     scrollToId(id);
   };
   return (
-    <header data-testid="site-navbar" className={`fixed inset-x-0 top-0 z-50 transition-[background-color,border-color] duration-500 ${scrolled || open ? "border-b border-white/10 bg-[#050505]/75 backdrop-blur-xl" : "border-b border-transparent"}`}>
+    <header data-testid="site-navbar" className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black">
       <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-5 sm:px-8">
         <Logo />
         <nav className="hidden items-center gap-1 lg:flex">

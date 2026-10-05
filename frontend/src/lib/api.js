@@ -13,8 +13,8 @@ export const FALLBACK_PHOTOS = [
   { id: "f1", category: "bus", src: "/img/bus.webp", caption: "Ford Tourneo Custom — 8 miejsc" },
   { id: "f2", category: "bus", src: "/img/kokpit.webp", caption: "Kokpit z automatyczną skrzynią" },
   { id: "f3", category: "bus", src: "/img/bagaznik.webp", caption: "Przestrzeń bagażowa" },
-  { id: "f4", category: "garden", src: "/img/aerator.webp", caption: "Aerator spalinowy rurkowy Weibang" },
-  { id: "f5", category: "garden", src: "/img/wertykulator.webp", caption: "Wertykulator spalinowy Weibang" },
+  { id: "f4", category: "aerator", src: "/img/aerator.webp", caption: "Aerator spalinowy rurkowy Weibang" },
+  { id: "f5", category: "wertykulator", src: "/img/wertykulator.webp", caption: "Wertykulator spalinowy Weibang" },
 ];
 
 export function formatErr(detail) {

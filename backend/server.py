@@ -55,7 +55,7 @@ class Booking(BaseDocument):
 
 
 class Photo(BaseDocument):
-    category: Literal["bus", "garden"]
+    category: Literal["bus", "wertykulator", "aerator"]
     url: Optional[str] = None
     storage_path: Optional[str] = None
     content_type: Optional[str] = None
@@ -239,8 +239,12 @@ SEED_PHOTOS = [
     ("bus", "/img/bus.webp", "Ford Tourneo Custom — 8 miejsc"),
     ("bus", "/img/kokpit.webp", "Kokpit z automatyczną skrzynią"),
     ("bus", "/img/bagaznik.webp", "Przestrzeń bagażowa"),
-    ("garden", "/img/aerator.webp", "Aerator spalinowy rurkowy Weibang"),
-    ("garden", "/img/wertykulator.webp", "Wertykulator spalinowy Weibang"),
+    ("aerator", "/img/aerator.webp", "Aerator spalinowy rurkowy Weibang"),
+    ("wertykulator", "/img/wertykulator.webp", "Wertykulator spalinowy Weibang"),
+    ("bus", "/img/ulotka-bus.jpg", "Bezpieczny transport na każdą okazję"),
+    ("bus", "/img/ulotka-bus-wyposazenie.jpg", "Wyposażenie Forda Tourneo Custom"),
+    ("wertykulator", "/img/ulotka-wertykulator.jpg", "Wertykulator Weibang WB486CRB"),
+    ("aerator", "/img/ulotka-aerator.jpg", "Aerator Weibang WB457AB"),
 ]
 ALLOWED_TYPES = {"image/jpeg": "jpg", "image/png": "png", "image/webp": "webp", "image/gif": "gif", "image/heic": "heic"}
 
@@ -257,7 +261,7 @@ async def gallery():
 
 
 @api.post("/admin/gallery")
-async def upload_photos(category: Literal["bus", "garden"] = Form(...), files: List[UploadFile] = File(...),
+async def upload_photos(category: Literal["bus", "wertykulator", "aerator"] = Form(...), files: List[UploadFile] = File(...),
                         user: dict = Depends(get_current_user)):
     last = await db.photos.find({"category": category, "is_deleted": False}).sort("order", -1).limit(1).to_list(1)
     order = (last[0]["order"] + 1) if last else 0
@@ -280,7 +284,7 @@ async def upload_photos(category: Literal["bus", "garden"] = Form(...), files: L
 
 
 class ReorderIn(BaseModel):
-    category: Literal["bus", "garden"]
+    category: Literal["bus", "wertykulator", "aerator"]
     ids: List[str]
 
 
@@ -350,7 +354,7 @@ async def startup():
     elif not verify_password(pwd, existing["password_hash"]):
         await db.users.update_one({"email": email}, {"$set": {"password_hash": hash_password(pwd)}})
     if await db.photos.count_documents({}) == 0:
-        counters = {"bus": 0, "garden": 0}
+        counters = {"bus": 0, "wertykulator": 0, "aerator": 0}
         for cat, url, cap in SEED_PHOTOS:
             await db.photos.insert_one(Photo(category=cat, url=url, caption=cap, order=counters[cat]).to_mongo())
             counters[cat] += 1
