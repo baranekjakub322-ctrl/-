@@ -350,8 +350,46 @@ async def create_inquiry(body: InquiryIn, request: Request):
         raise HTTPException(429, "Zbyt wiele zapytań. Zadzwoń do nas: +48 668 434 331")
     d = {"name": body.name.strip(), "phone": body.phone.strip(), "email": str(body.email), "service": SERVICE_NAMES[body.service],
          "from_date": body.from_date.isoformat(), "to_date": body.to_date.isoformat(), "message": body.message.strip()}
-    await db.inquiries.insert_one({**d, "ip": ip, "created_at": datetime.now(timezone.utc).isoformat()})
+    await db.inquiries.insert_one({**d, "ip": ip, "handled": False, "created_at": datetime.now(timezone.utc).isoformat()})
     await send_email(to=os.environ["OWNER_EMAIL"], subject=f"Nowe zapytanie: {d['service']} ({d['from_date']} – {d['to_date']})", html=inquiry_html(d))
+    return {"ok": True}
+
+
+class Inquiry(BaseDocument):
+    name: str
+    phone: str
+    email: str
+    service: str
+    from_date: str
+    to_date: str
+    message: str = ""
+    handled: bool = False
+    created_at: str
+
+
+@api.get("/admin/inquiries")
+async def admin_inquiries(user: dict = Depends(get_current_user)):
+    docs = await db.inquiries.find().sort("created_at", -1).to_list(1000)
+    return [Inquiry.from_mongo(d).model_dump() for d in docs]
+
+
+class InquiryPatch(BaseModel):
+    handled: bool
+
+
+@api.patch("/admin/inquiries/{inquiry_id}")
+async def update_inquiry(inquiry_id: str, body: InquiryPatch, user: dict = Depends(get_current_user)):
+    res = await db.inquiries.update_one({"_id": ObjectId(inquiry_id)}, {"$set": {"handled": body.handled}})
+    if not res.matched_count:
+        raise HTTPException(404, "Nie znaleziono")
+    return {"ok": True}
+
+
+@api.delete("/admin/inquiries/{inquiry_id}")
+async def delete_inquiry(inquiry_id: str, user: dict = Depends(get_current_user)):
+    res = await db.inquiries.delete_one({"_id": ObjectId(inquiry_id)})
+    if not res.deleted_count:
+        raise HTTPException(404, "Nie znaleziono")
     return {"ok": True}
 
 

@@ -1,16 +1,18 @@
 import { useEffect, useState } from "react";
-import { LogOut, CalendarDays, Images, ArrowLeft } from "lucide-react";
+import { LogOut, CalendarDays, Images, ArrowLeft, Inbox } from "lucide-react";
 import { api } from "@/lib/api";
 import { Logo } from "@/components/site/Logo";
 import { AdminLogin } from "@/components/admin/AdminLogin";
 import { AdminBookings } from "@/components/admin/AdminBookings";
 import { AdminGallery } from "@/components/admin/AdminGallery";
+import { AdminInquiries } from "@/components/admin/AdminInquiries";
 
-const TABS = [["bookings", "Rezerwacje busa", CalendarDays], ["gallery", "Galeria zdjęć", Images]];
+const TABS = [["inquiries", "Zapytania", Inbox], ["bookings", "Rezerwacje busa", CalendarDays], ["gallery", "Galeria zdjęć", Images]];
+const PANELS = { inquiries: AdminInquiries, bookings: AdminBookings, gallery: AdminGallery };
 
 export default function Admin() {
   const [user, setUser] = useState(null);
-  const [tab, setTab] = useState("bookings");
+  const [tab, setTab] = useState("inquiries");
   useEffect(() => {
     api.get("/auth/me").then((r) => setUser(r.data)).catch(() => setUser(false));
   }, []);
@@ -43,7 +45,7 @@ export default function Admin() {
             </button>
           ))}
         </div>
-        <div className="mt-8">{tab === "bookings" ? <AdminBookings /> : <AdminGallery />}</div>
+        <div className="mt-8">{(() => { const P = PANELS[tab]; return <P />; })()}</div>
       </main>
     </div>
   );

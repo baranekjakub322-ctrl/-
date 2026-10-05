@@ -15,6 +15,7 @@ User follow-ups: kalendarz tylko dla busa (admin wpisuje zajęte terminy), kalku
 - Panel /admin: rezerwacje busa (dodaj/usuń zakres), galeria (upload wielu zdjęć, kolejność, podpisy, usuwanie).
 - Monochrome redesign, black header, customer logo.
 - Formularz kontaktowy wysyła e-mail bezpośrednio (Emergent Resend) na jarospeedrent@gmail.com, kopia w db.inquiries, limit 5/h na IP; karta telefonu: Zadzwoń / SMS / WhatsApp / Kopiuj.
+- Panel: zakładka „Zapytania” (nowe/wszystkie, oznacz jako obsłużone, usuń); kalkulator: opcja z kierowcą, dopłata 0,40 zł/km; numery tel: telefon = potwierdzenie, komputer = kopiowanie.
 
 ## Backlog
 - P1: link do profilu Facebook (brak URL), drag&drop kolejności zdjęć
