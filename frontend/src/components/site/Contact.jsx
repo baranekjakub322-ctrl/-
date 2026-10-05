@@ -74,7 +74,7 @@ const InquiryForm = ({ prefill }) => {
       <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-3">
         <button type="button" onClick={sms} data-testid="inquiry-sms-button" className="btn-amber justify-center"><MessageSquare className="h-4 w-4" /> Wyślij SMS</button>
         <button type="submit" disabled={sending} data-testid="inquiry-submit-button" className="btn-amber justify-center disabled:opacity-50"><Send className="h-4 w-4" /> {sending ? "Wysyłanie…" : "Wyślij e-mail"}</button>
-        <a href={TEL} data-testid="inquiry-call-button" className="btn-ghost justify-center"><Phone className="h-4 w-4" /> Zadzwoń</a>
+        <a href={TEL} onClick={(e) => { if (!window.matchMedia("(pointer: coarse)").matches) { e.preventDefault(); copyText(PHONE).then(() => toast.success(`Numer ${PHONE} skopiowany — zadzwoń z telefonu`)); } }} data-testid="inquiry-call-button" className="btn-ghost justify-center"><Phone className="h-4 w-4" /> Zadzwoń</a>
       </div>
     </form>
   );
