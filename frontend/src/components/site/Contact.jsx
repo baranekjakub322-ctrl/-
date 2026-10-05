@@ -21,8 +21,10 @@ const InquiryForm = ({ prefill }) => {
   const set = (k) => (e) => setF((s) => ({ ...s, [k]: e.target.value }));
   const build = () => {
     if (!f.name.trim() || !f.phone.trim()) { setError("Podaj imię i numer telefonu."); return null; }
+    if (!f.from || !f.to) { setError("Podaj daty wynajmu (od – do)."); return null; }
+    if (f.to < f.from) { setError("Data „Do” nie może być wcześniejsza niż „Od”."); return null; }
     setError("");
-    return [`Imię: ${f.name}`, `Telefon: ${f.phone}`, `Usługa: ${SERVICES[f.service]}`, f.from ? `Termin: ${f.from} – ${f.to || f.from}` : null, f.message || null].filter(Boolean).join("\n");
+    return [`Imię: ${f.name}`, `Telefon: ${f.phone}`, `Usługa: ${SERVICES[f.service]}`, `Termin: ${f.from} – ${f.to}`, f.message || null].filter(Boolean).join("\n");
   };
   const submit = (e) => {
     e.preventDefault();
@@ -48,8 +50,8 @@ const InquiryForm = ({ prefill }) => {
           </select>
         </Field>
         <div className="grid grid-cols-2 gap-3">
-          <Field label="Od"><input data-testid="inquiry-from-input" type="date" className="field" value={f.from} onChange={set("from")} /></Field>
-          <Field label="Do"><input data-testid="inquiry-to-input" type="date" className="field" value={f.to} onChange={set("to")} /></Field>
+          <Field label="Od *"><input data-testid="inquiry-from-input" type="date" required className="field" value={f.from} onChange={set("from")} /></Field>
+          <Field label="Do *"><input data-testid="inquiry-to-input" type="date" required min={f.from || undefined} className="field" value={f.to} onChange={set("to")} /></Field>
         </div>
         <div className="sm:col-span-2"><Field label="Wiadomość"><textarea data-testid="inquiry-message-input" rows={4} className="field resize-none" value={f.message} onChange={set("message")} placeholder="Cel wyjazdu, liczba osób, planowana trasa..." /></Field></div>
       </div>
