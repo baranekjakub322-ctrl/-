@@ -3,6 +3,10 @@ import { Phone, Mail, Send, Copy, Check, MessageSquare, MessageCircle, Facebook,
 import { Reveal } from "./Reveal";
 import { PHONE, TEL, EMAIL, api, formatErr, copyText, FB_URL, REVIEW_URL } from "@/lib/api";
 import { toast } from "sonner";
+import {
+  AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent,
+  AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle,
+} from "@/components/ui/alert-dialog";
 
 const SMS_NUMBER = "+48668434331";
 
@@ -34,12 +38,18 @@ const InquiryForm = ({ prefill }) => {
       if (Number(f.license) < 3) { setError("Kierowca musi mieć prawo jazdy od co najmniej 3 lat (wymóg ubezpieczyciela)."); return null; }
     }
     setError("");
-    return [`Imię: ${f.name}`, `Telefon: ${f.phone}`, `Usługa: ${SERVICES[f.service]}`, `Termin: ${f.from} – ${f.to}`, bus && `Wiek kierowcy: ${f.age}`, bus && `Prawo jazdy od: ${f.license} lat`, bus && `Państwa: ${f.countries}`, f.message || null].filter(Boolean).join("\n");
+    return [`Imię: ${f.name}`, `Telefon: ${f.phone}`, `Usługa: ${SERVICES[f.service]}`, `Termin: ${f.from} – ${f.to}`, bus && `Wiek kierowcy: ${f.age}`, bus && `Prawo jazdy od: ${f.license} lat`, bus && `Państwa: ${f.countries}`, f.message ? `Wiadomość: ${f.message}` : null].filter(Boolean).join("\n");
   };
-  const submit = async (e) => {
+  const [preview, setPreview] = useState(null);
+  const submit = (e) => {
     e.preventDefault();
-    if (!build()) return;
+    const body = build();
+    if (!body) return;
     if (!/^\S+@\S+\.\S+$/.test(f.email.trim())) { setError("Podaj swój adres e-mail, abyśmy mogli odpisać."); return; }
+    setPreview(`${body}\nE-mail: ${f.email.trim()}`);
+  };
+  const doSend = async () => {
+    setPreview(null);
     setSending(true);
     try {
       const bus = needsDriver(f.service);
@@ -94,6 +104,19 @@ const InquiryForm = ({ prefill }) => {
         <button type="submit" disabled={sending} data-testid="inquiry-submit-button" className="btn-amber justify-center disabled:opacity-50"><Send className="h-4 w-4" /> {sending ? "Wysyłanie…" : "Wyślij e-mail"}</button>
         <a href={TEL} data-testid="inquiry-call-button" className="btn-ghost justify-center"><Phone className="h-4 w-4" /> Zadzwoń</a>
       </div>
+      <AlertDialog open={!!preview} onOpenChange={(o) => { if (!o) setPreview(null); }}>
+        <AlertDialogContent data-testid="inquiry-preview-dialog" className="max-h-[90vh] max-w-[92vw] overflow-y-auto rounded-3xl border-white/10 bg-[#141414] text-white sm:max-w-lg">
+          <AlertDialogHeader>
+            <AlertDialogTitle className="font-display text-xl">Czy chcesz wysłać to zapytanie?</AlertDialogTitle>
+            <AlertDialogDescription className="text-zinc-300">Tak będzie wyglądać wiadomość do {EMAIL}:</AlertDialogDescription>
+          </AlertDialogHeader>
+          <pre data-testid="inquiry-preview-body" className="whitespace-pre-wrap break-words rounded-2xl bg-black/40 p-4 font-sans text-sm leading-relaxed text-zinc-100">{preview}</pre>
+          <AlertDialogFooter className="flex-row gap-3 sm:justify-end">
+            <AlertDialogCancel data-testid="inquiry-preview-edit" className="mt-0 flex-1 rounded-full border-white/20 bg-transparent text-white hover:bg-white/10 hover:text-white sm:flex-none">Nie, popraw</AlertDialogCancel>
+            <AlertDialogAction data-testid="inquiry-preview-send" onClick={doSend} className="flex-1 rounded-full bg-white text-[#0A0A0A] hover:bg-zinc-200 sm:flex-none">Tak, wyślij</AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
     </form>
   );
 };
