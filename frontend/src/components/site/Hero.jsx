@@ -34,7 +34,7 @@ const HeroVisual = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/80 via-transparent to-transparent" />
           <div className="absolute bottom-5 left-5 font-mono text-[11px] uppercase tracking-[0.25em] text-white/90">Ford Tourneo Custom · 8 miejsc</div>
         </div>
-        <motion.div style={{ y: cardY, translateZ: 60 }} className="absolute -bottom-10 -right-3 w-[36%] rotate-[4deg] overflow-hidden rounded-2xl border-4 border-[#0A0A0A] shadow-2xl shadow-black/60 sm:-right-8">
+        <motion.div style={{ y: cardY, translateZ: 60 }} className="absolute -bottom-10 -right-3 w-[36%] rotate-[4deg] overflow-hidden rounded-2xl border-4 border-[#0A0A0A] shadow-2xl shadow-black/60 sm:-right-4 2xl:-right-8">
           <img src="/img/aerator.webp" alt="Aerator Weibang" className="aspect-[4/5] w-full object-cover" />
           <span className="absolute left-2 top-2 rounded-full bg-white px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-wider text-[#0A0A0A]">Weibang</span>
         </motion.div>
