@@ -7,8 +7,8 @@ const ext = { target: "_blank", rel: "noopener noreferrer" };
 
 const LINKS = [
   ["oferta", "Oferta"],
-  ["cennik", "Cennik"],
   ["kalendarz", "Dostępność"],
+  ["cennik", "Cennik"],
   ["galeria", "Galeria"],
   ["kontakt", "Kontakt"],
 ];

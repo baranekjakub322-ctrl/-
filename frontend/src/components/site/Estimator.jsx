@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Minus, Plus, Info, Send, UserRound, ArrowDown } from "lucide-react";
 import { Switch } from "@/components/ui/switch";
 import { Reveal, Eyebrow } from "./Reveal";
@@ -26,8 +26,12 @@ const PriceJump = ({ testId }) => (
   </button>
 );
 
-export const Estimator = ({ onInquiry }) => {
+export const Estimator = ({ onInquiry, preset }) => {
   const [busDays, setBusDays] = useState(3);
+  useEffect(() => {
+    if (preset?.days) setBusDays(preset.days);
+  }, [preset]);
+  const dates = preset?.days && preset.days === busDays ? preset : null;
   const [km, setKm] = useState("");
   const [wert, setWert] = useState(0);
   const [aer, setAer] = useState(0);
@@ -38,11 +42,11 @@ export const Estimator = ({ onInquiry }) => {
 
   const send = () => {
     const parts = [];
-    if (q) parts.push(`Ford Tourneo Custom${driver ? " Z KIEROWCĄ" : ""}: ${q.days} dni${km ? `, planowane ok. ${km} km` : ""}`);
+    if (q) parts.push(`Ford Tourneo Custom${driver ? " Z KIEROWCĄ" : ""}: ${q.days} dni${dates ? ` (${dates.label})` : ""}${km ? `, planowane ok. ${km} km` : ""}`);
     if (wert) parts.push(`Wertykulator Weibang: ${wert} dni`);
     if (aer) parts.push(`Aerator Weibang: ${aer} dni`);
     const note = driver ? `\nWynajem busa z kierowcą — proszę o indywidualną wycenę.${total ? `\nSzacunek sprzętu z kalkulatora: ok. ${zl(total)}` : ""}` : `\nSzacunek z kalkulatora: ok. ${zl(total)}`;
-    onInquiry({ message: `Dzień dobry, proszę o wycenę:\n- ${parts.join("\n- ")}${note}` });
+    onInquiry({ message: `Dzień dobry, proszę o wycenę:\n- ${parts.join("\n- ")}${note}`, ...(dates && q ? { from: dates.from, to: dates.to, service: "bus" } : {}) });
   };
 
   return (
@@ -67,6 +71,7 @@ export const Estimator = ({ onInquiry }) => {
                 </div>
               </div>
               <input data-testid="calc-bus-days-slider" type="range" min="0" max="30" value={Math.min(busDays, 30)} onChange={(e) => setBusDays(Number(e.target.value))} className="range-amber mt-6 w-full" aria-label="Liczba dni busa" />
+              {dates && <p data-testid="calc-preset-dates" className="mt-4 rounded-xl bg-white/10 px-4 py-2.5 text-sm text-white">Termin z kalendarza: <strong>{dates.label}</strong> ({dates.days} {dates.days === 1 ? "doba" : "dni"})</p>}
               <div className="mt-6 grid gap-3 sm:grid-cols-3">
                 {[["1 doba", `${RATES.busOneDay} zł`], ["2+ doby", `${RATES.busMultiDay} zł / doba lub mniej`], ["Limit", `${RATES.kmPerDay} km / doba`]].map(([a, b]) => (
                   <div key={a} className="rounded-2xl bg-white/5 p-4"><p className="text-xs text-zinc-400">{a}</p><p className="mt-1 text-sm font-semibold text-white">{b}</p></div>

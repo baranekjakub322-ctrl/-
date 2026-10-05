@@ -21,6 +21,11 @@ export default function Landing() {
       scrollToId(mobile ? "szybkie-zapytanie" : "kontakt", mobile ? -90 : -72);
     }, 50);
   };
+  const [calcPreset, setCalcPreset] = useState(null);
+  const checkPrice = (p) => {
+    setCalcPreset({ ...p });
+    setTimeout(() => scrollToId("cennik"), 50);
+  };
   return (
     <div className="site grain relative min-h-screen bg-[#0A0A0A] text-white" data-testid="landing-page">
       <SmoothScroll />
@@ -29,8 +34,8 @@ export default function Landing() {
         <Hero />
         <Marquee />
         <Offer />
-        <Estimator onInquiry={inquire} />
-        <Availability onInquiry={inquire} />
+        <Availability onCheckPrice={checkPrice} />
+        <Estimator onInquiry={inquire} preset={calcPreset} />
         <Gallery />
         <Contact prefill={prefill} />
       </main>

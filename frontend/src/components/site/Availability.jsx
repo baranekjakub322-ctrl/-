@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { addDays, differenceInCalendarDays, format, isWithinInterval, parseISO, startOfToday } from "date-fns";
 import { pl } from "date-fns/locale";
-import { CalendarRange, Send, AlertTriangle } from "lucide-react";
+import { CalendarRange, Calculator, AlertTriangle } from "lucide-react";
 import { Reveal, Eyebrow } from "./Reveal";
 import { RentCalendar } from "./RentCalendar";
 import { api } from "@/lib/api";
@@ -21,7 +21,7 @@ const useMonths = () => {
 
 const fmt = (d) => format(d, "d MMM yyyy", { locale: pl });
 
-export const Availability = ({ onInquiry }) => {
+export const Availability = ({ onCheckPrice }) => {
   const [raw, setRaw] = useState([]);
   const [range, setRange] = useState();
   const months = useMonths();
@@ -44,7 +44,7 @@ export const Availability = ({ onInquiry }) => {
 
   const send = () => {
     const to = range.to ?? range.from;
-    onInquiry({ from: format(range.from, "yyyy-MM-dd"), to: format(to, "yyyy-MM-dd"), service: "bus", message: `Dzień dobry, chciałbym zarezerwować Forda Tourneo Custom w terminie ${fmt(range.from)} – ${fmt(to)} (${days} dni).` });
+    onCheckPrice({ days, from: format(range.from, "yyyy-MM-dd"), to: format(to, "yyyy-MM-dd"), label: `${fmt(range.from)} – ${fmt(to)}` });
   };
 
   return (
@@ -79,8 +79,8 @@ export const Availability = ({ onInquiry }) => {
               <p data-testid="availability-clash-warning" className="mt-4 flex gap-2 rounded-xl bg-white/10 p-3 text-sm text-zinc-100"><AlertTriangle className="h-4 w-4 shrink-0" />Możliwe, że termin jest zajęty — zapytaj, a potwierdzimy dostępność.</p>
             )}
             <div className="mt-auto pt-8">
-              <button data-testid="availability-reserve-button" disabled={!range?.from} onClick={send} className="btn-amber w-full justify-center disabled:opacity-40">
-                <Send className="h-4 w-4" /> Zapytaj o ten termin
+              <button data-testid="availability-check-price-button" disabled={!range?.from} onClick={send} className="btn-amber w-full justify-center disabled:opacity-40">
+                <Calculator className="h-4 w-4" /> Sprawdź cenę
               </button>
               <p className="mt-3 text-xs text-zinc-400">Kalendarz dotyczy busa. Dostępność maszyn ogrodniczych potwierdzamy telefonicznie.</p>
             </div>
