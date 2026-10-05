@@ -108,6 +108,8 @@ async def send_email(*, to: str, subject: str, html: str) -> str | None:
 def inquiry_html(d: dict) -> str:
     rows = [("Imię", d["name"]), ("Telefon", d["phone"]), ("E-mail", d["email"]), ("Usługa", d["service"]),
             ("Termin", f'{d["from_date"]} – {d["to_date"]}')]
+    if d.get("driver_age") is not None:
+        rows += [("Wiek kierowcy", str(d["driver_age"])), ("Prawo jazdy od", f'{d["license_years"]} lat'), ("Państwa", d["countries"])]
     cells = "".join(
         f'<tr><td style="padding:6px 12px 6px 0;color:#71717a;font-size:13px">{escape(k)}</td>'
         f'<td style="padding:6px 0;font-size:14px;color:#0a0a0a"><strong>{escape(v)}</strong></td></tr>' for k, v in rows)

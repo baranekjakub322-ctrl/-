@@ -3,7 +3,7 @@
 ## Original problem statement
 Stwórz nowoczesną, przejrzystą i responsywną stronę internetową (landing page) dla wypożyczalni samochodów oraz sprzętu ogrodniczo-budowlanego Jaro Speed Rent. Flota: Ford Tourneo Custom (8-osobowy). Sprzęt: Wertykulator spalinowy Weibang, Aerator spalinowy (rurkowy) Weibang. Sekcje: Hero z CTA, karty oferty, galerie zdjęć (z możliwością wgrania własnych), kalendarz dostępności, bardzo widoczny kontakt (tel +48 668 434 331, e-mail jarospeedrent@gmail.com, formularz). Pełna RWD.
 
-User follow-ups: kalendarz tylko dla busa (admin wpisuje zajęte terminy), kalkulator cen (1 doba 300 zł, >1 doba 250 zł lub mniej, limit 350 km/doba, dopłata indywidualnie; wertykulator 110 zł/doba, aerator 230 zł/doba; cena zawsze indywidualna); zapytania bezpośrednio tel/e-mail/SMS; galeria zarządzana przez właściciela (dużo zdjęć, własna kolejność); nazwa „Wypożyczalnia JaroSpeedRent”, własne logo; kolory biały/szary/czarny; czarny nagłówek; klik w kartę oferty → galeria danej pozycji.
+User follow-ups: kalendarz tylko dla busa (admin wpisuje zajęte terminy), kalkulator cen (1 doba 300 zł, >1 doba 250 zł lub mniej, limit 300 km/doba, dopłata indywidualnie; wertykulator 110 zł/doba, aerator 230 zł/doba; cena zawsze indywidualna); zapytania bezpośrednio tel/e-mail/SMS; galeria zarządzana przez właściciela (dużo zdjęć, własna kolejność); nazwa „Wypożyczalnia JaroSpeedRent”, własne logo; kolory biały/szary/czarny; czarny nagłówek; klik w kartę oferty → galeria danej pozycji.
 
 ## Architecture
 - React (CRA) + framer-motion + lenis; FastAPI + MongoDB; Emergent object storage for uploaded photos; JWT cookie auth (single admin seeded from env).

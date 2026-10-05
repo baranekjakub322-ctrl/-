@@ -7,7 +7,8 @@ import { toast } from "sonner";
 const SMS_NUMBER = "+48668434331";
 
 const SERVICES = { bus: "Ford Tourneo Custom (8 os.)", wert: "Wertykulator Weibang", aer: "Aerator Weibang", mix: "Kilka pozycji" };
-const EMPTY = { name: "", phone: "", email: "", service: "bus", from: "", to: "", message: "" };
+const EMPTY = { name: "", phone: "", email: "", service: "bus", from: "", to: "", age: "", license: "", countries: "", message: "" };
+const needsDriver = (s) => s === "bus" || s === "mix";
 
 const Field = ({ label, children }) => (
   <label className="block"><span className="mb-2 block text-xs font-semibold uppercase tracking-wider text-zinc-300">{label}</span>{children}</label>
@@ -26,8 +27,14 @@ const InquiryForm = ({ prefill }) => {
     if (!f.name.trim() || !f.phone.trim()) { setError("Podaj imię i numer telefonu."); return null; }
     if (!f.from || !f.to) { setError("Podaj daty wynajmu (od – do)."); return null; }
     if (f.to < f.from) { setError("Data „Do” nie może być wcześniejsza niż „Od”."); return null; }
+    const bus = needsDriver(f.service);
+    if (bus) {
+      if (!f.age || !f.license || !f.countries.trim()) { setError("Podaj wiek kierowcy, staż prawa jazdy i państwa, w których będzie bus."); return null; }
+      if (Number(f.age) < 25) { setError("Kierowca musi mieć ukończone 25 lat (wymóg ubezpieczyciela)."); return null; }
+      if (Number(f.license) < 3) { setError("Kierowca musi mieć prawo jazdy od co najmniej 3 lat (wymóg ubezpieczyciela)."); return null; }
+    }
     setError("");
-    return [`Imię: ${f.name}`, `Telefon: ${f.phone}`, `Usługa: ${SERVICES[f.service]}`, `Termin: ${f.from} – ${f.to}`, f.message || null].filter(Boolean).join("\n");
+    return [`Imię: ${f.name}`, `Telefon: ${f.phone}`, `Usługa: ${SERVICES[f.service]}`, `Termin: ${f.from} – ${f.to}`, bus && `Wiek kierowcy: ${f.age}`, bus && `Prawo jazdy od: ${f.license} lat`, bus && `Państwa: ${f.countries}`, f.message || null].filter(Boolean).join("\n");
   };
   const submit = async (e) => {
     e.preventDefault();
@@ -35,7 +42,8 @@ const InquiryForm = ({ prefill }) => {
     if (!/^\S+@\S+\.\S+$/.test(f.email.trim())) { setError("Podaj swój adres e-mail, abyśmy mogli odpisać."); return; }
     setSending(true);
     try {
-      await api.post("/inquiry", { name: f.name, phone: f.phone, email: f.email.trim(), service: f.service, from_date: f.from, to_date: f.to, message: f.message });
+      const bus = needsDriver(f.service);
+      await api.post("/inquiry", { name: f.name, phone: f.phone, email: f.email.trim(), service: f.service, from_date: f.from, to_date: f.to, message: f.message, ...(bus ? { driver_age: Number(f.age), license_years: Number(f.license), countries: f.countries.trim() } : {}) });
       setSent(true);
       setF(EMPTY);
       toast.success("Zapytanie wysłane — odezwiemy się wkrótce!");
@@ -68,6 +76,16 @@ const InquiryForm = ({ prefill }) => {
           <Field label="Od *"><input data-testid="inquiry-from-input" type="date" required className="field" value={f.from} onChange={set("from")} /></Field>
           <Field label="Do *"><input data-testid="inquiry-to-input" type="date" required min={f.from || undefined} className="field" value={f.to} onChange={set("to")} /></Field>
         </div>
+        {needsDriver(f.service) && (
+          <>
+            <div className="grid grid-cols-2 gap-3 sm:col-span-2">
+              <Field label="Wiek kierowcy *"><input data-testid="inquiry-age-input" type="number" min="18" max="99" inputMode="numeric" className="field" value={f.age} onChange={set("age")} placeholder="min. 25" /></Field>
+              <Field label="Prawo jazdy od (lat) *"><input data-testid="inquiry-license-input" type="number" min="0" max="80" inputMode="numeric" className="field" value={f.license} onChange={set("license")} placeholder="min. 3" /></Field>
+            </div>
+            <div className="sm:col-span-2"><Field label="Państwa, w których będzie bus *"><input data-testid="inquiry-countries-input" className="field" value={f.countries} onChange={set("countries")} placeholder="np. Polska, Niemcy, Austria" /></Field></div>
+            <p data-testid="inquiry-requirements-note" className="rounded-xl bg-white/[0.06] p-3 text-xs leading-relaxed text-zinc-300 sm:col-span-2">Wymóg ubezpieczyciela: kierowca min. 25 lat i prawo jazdy od min. 3 lat. Zawsze pobieramy zwrotną kaucję 1000 zł, a w sezonie wysokim możliwa jest zaliczka.</p>
+          </>
+        )}
         <div className="sm:col-span-2"><Field label="Wiadomość"><textarea data-testid="inquiry-message-input" rows={4} className="field resize-none" value={f.message} onChange={set("message")} placeholder="Cel wyjazdu, liczba osób, planowana trasa..." /></Field></div>
       </div>
       {error && <p data-testid="inquiry-error" className="mt-4 text-sm text-red-300">{error}</p>}

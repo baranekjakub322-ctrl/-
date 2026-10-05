@@ -78,7 +78,7 @@ export const Hero = () => (
             </a>
           </div>
           <dl className="mt-14 grid max-w-lg grid-cols-3 divide-x divide-white/10 border-y border-white/10">
-            {[["8", "miejsc w busie"], ["350", "km / doba"], ["2", "maszyny Weibang"]].map(([n, l]) => (
+            {[["8", "miejsc w busie"], ["300", "km / doba"], ["2", "maszyny Weibang"]].map(([n, l]) => (
               <div key={l} className="px-4 py-5 first:pl-0">
                 <dt className="font-display text-3xl font-extrabold text-white sm:text-4xl">{n}</dt>
                 <dd className="mt-1 text-xs text-zinc-400 sm:text-sm">{l}</dd>

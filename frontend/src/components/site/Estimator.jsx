@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Minus, Plus, Info, Send, UserRound, ArrowDown } from "lucide-react";
+import { Minus, Plus, Info, Send, UserRound, ArrowDown, ShieldCheck, CalendarClock, IdCard } from "lucide-react";
 import { Switch } from "@/components/ui/switch";
 import { Reveal, Eyebrow } from "./Reveal";
 import { RATES, busQuote, zl } from "@/lib/pricing";
@@ -123,6 +123,11 @@ export const Estimator = ({ onInquiry, preset }) => {
                 <p data-testid="calc-km-over-warning" className="mt-4 rounded-xl bg-white/10 p-3 text-sm text-white">Przekroczenie limitu o {new Intl.NumberFormat("pl-PL").format(q.over)} km — dopłata ok. {zl(q.overCost)}, ustalana indywidualnie.</p>
               )}
               <p className="mt-4 flex gap-2 text-sm leading-relaxed text-zinc-300"><Info className="mt-0.5 h-4 w-4 shrink-0" />Cena jest orientacyjna i ustalana indywidualnie. Przy dłuższym wynajmie stawka może być niższa niż 250 zł/doba.</p>
+              <ul data-testid="calc-rental-terms" className="mt-4 space-y-2 rounded-2xl border border-white/10 bg-black/30 p-4 text-sm text-zinc-200">
+                <li className="flex gap-2"><ShieldCheck className="mt-0.5 h-4 w-4 shrink-0" /><span>Kaucja zwrotna <strong className="text-white">1000 zł</strong> — zawsze przy wynajmie busa.</span></li>
+                <li className="flex gap-2"><CalendarClock className="mt-0.5 h-4 w-4 shrink-0" />W sezonie wysokim możliwa zaliczka.</li>
+                <li className="flex gap-2"><IdCard className="mt-0.5 h-4 w-4 shrink-0" />Kierowca min. 25 lat, prawo jazdy od min. 3 lat (wymóg ubezpieczyciela).</li>
+              </ul>
               <button data-testid="calc-send-inquiry-button" disabled={total === 0 && !(driver && q)} onClick={send} className="btn-amber mt-6 w-full justify-center disabled:opacity-40">
                 <Send className="h-4 w-4" /> Zapytaj o tę wycenę
               </button>

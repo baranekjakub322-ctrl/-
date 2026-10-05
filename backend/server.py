@@ -338,18 +338,27 @@ class InquiryIn(BaseModel):
     from_date: date
     to_date: date
     message: str = Field(default="", max_length=2000)
+    driver_age: Optional[int] = Field(default=None, ge=18, le=99)
+    license_years: Optional[int] = Field(default=None, ge=0, le=80)
+    countries: Optional[str] = Field(default=None, max_length=200)
 
 
 @api.post("/inquiry")
 async def create_inquiry(body: InquiryIn, request: Request):
     if body.to_date < body.from_date:
         raise HTTPException(400, "Data końcowa nie może być wcześniejsza niż początkowa")
+    if body.service in ("bus", "mix"):
+        if body.driver_age is None or body.license_years is None or not (body.countries or "").strip():
+            raise HTTPException(400, "Podaj wiek kierowcy, staż prawa jazdy i państwa podróży")
+        if body.driver_age < 25 or body.license_years < 3:
+            raise HTTPException(400, "Wymóg ubezpieczyciela: kierowca min. 25 lat i prawo jazdy od min. 3 lat")
     ip = request.headers.get("x-forwarded-for", request.client.host if request.client else "x").split(",")[0].strip()
     since = (datetime.now(timezone.utc) - timedelta(hours=1)).isoformat()
     if await db.inquiries.count_documents({"ip": ip, "created_at": {"$gte": since}}) >= 5:
         raise HTTPException(429, "Zbyt wiele zapytań. Zadzwoń do nas: +48 668 434 331")
     d = {"name": body.name.strip(), "phone": body.phone.strip(), "email": str(body.email), "service": SERVICE_NAMES[body.service],
-         "from_date": body.from_date.isoformat(), "to_date": body.to_date.isoformat(), "message": body.message.strip()}
+         "from_date": body.from_date.isoformat(), "to_date": body.to_date.isoformat(), "message": body.message.strip(),
+         "driver_age": body.driver_age, "license_years": body.license_years, "countries": (body.countries or "").strip()}
     await db.inquiries.insert_one({**d, "ip": ip, "handled": False, "created_at": datetime.now(timezone.utc).isoformat()})
     await send_email(to=os.environ["OWNER_EMAIL"], subject=f"Nowe zapytanie: {d['service']} ({d['from_date']} – {d['to_date']})", html=inquiry_html(d))
     return {"ok": True}
@@ -363,6 +372,9 @@ class Inquiry(BaseDocument):
     from_date: str
     to_date: str
     message: str = ""
+    driver_age: Optional[int] = None
+    license_years: Optional[int] = None
+    countries: str = ""
     handled: bool = False
     created_at: str
 

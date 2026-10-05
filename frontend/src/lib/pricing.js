@@ -1,4 +1,4 @@
-export const RATES = { busOneDay: 300, busMultiDay: 250, kmPerDay: 350, overKm: 0.4, wertykulator: 110, aerator: 230 };
+export const RATES = { busOneDay: 300, busMultiDay: 250, kmPerDay: 300, overKm: 0.4, wertykulator: 110, aerator: 230 };
 
 export const busRate = (days) => (days <= 1 ? RATES.busOneDay : RATES.busMultiDay);
 

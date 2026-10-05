@@ -22,6 +22,9 @@ const InquiryCard = ({ q, toggle, remove }) => (
       <a href={`mailto:${q.email}`} data-testid={`admin-inquiry-email-${q.id}`} className="flex min-w-0 items-center gap-2 hover:text-white"><Mail className="h-4 w-4 shrink-0 text-zinc-400" /><span className="truncate">{q.email}</span></a>
       <span className="flex items-center gap-2"><CalendarRange className="h-4 w-4 text-zinc-400" />{fmtDay(q.from_date)} – {fmtDay(q.to_date)}</span>
     </div>
+    {q.driver_age != null && (
+      <p data-testid={`admin-inquiry-driver-${q.id}`} className="mt-3 text-sm text-zinc-300">Kierowca: {q.driver_age} lat · prawo jazdy od {q.license_years} lat · państwa: {q.countries || "—"}</p>
+    )}
     {q.message && <p className="mt-4 whitespace-pre-line rounded-xl bg-black/40 p-3 text-sm text-zinc-200">{q.message}</p>}
     <div className="mt-4 flex flex-wrap gap-2">
       <button data-testid={`admin-inquiry-toggle-${q.id}`} onClick={() => toggle(q)} className="btn-ghost !px-4 !py-2">
