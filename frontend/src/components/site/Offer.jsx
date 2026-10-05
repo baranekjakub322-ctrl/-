@@ -1,6 +1,18 @@
+import { useEffect, useState } from "react";
 import { ArrowUpRight, Users, Camera, Gauge, Snowflake, Sprout, Layers, Check, Images } from "lucide-react";
 import { Reveal, Eyebrow, useSpotlight } from "./Reveal";
-import { scrollToId } from "@/lib/api";
+import { scrollToId, api, photoSrc } from "@/lib/api";
+
+const useFirstPhoto = (category, fallback) => {
+  const [src, setSrc] = useState(fallback);
+  useEffect(() => {
+    api.get("/gallery").then((r) => {
+      const first = (Array.isArray(r.data) ? r.data : []).find((p) => p.category === category);
+      if (first?.src) setSrc(photoSrc(first.src));
+    }).catch(() => {});
+  }, [category]);
+  return src;
+};
 
 const openGallery = (cat) => {
   window.dispatchEvent(new CustomEvent("gallery:show", { detail: cat }));
@@ -86,7 +98,9 @@ const BusCard = () => {
   );
 };
 
-export const Offer = () => (
+export const Offer = () => {
+  const wertImg = useFirstPhoto("wertykulator", "/img/wertykulator.webp");
+  return (
   <section id="oferta" data-testid="offer-section" className="relative py-24 sm:py-32">
     <div className="mx-auto max-w-7xl px-5 sm:px-8">
       <Reveal className="mb-14 grid gap-6 lg:grid-cols-12 lg:items-end">
@@ -99,7 +113,7 @@ export const Offer = () => (
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-12 lg:grid-rows-2">
         <Reveal className="h-full lg:col-span-8 lg:row-span-2"><BusCard /></Reveal>
         <Reveal delay={0.1} className="h-full lg:col-span-4">
-          <MachineCard id="wertykulator" img="/img/wertykulator.webp" icon={Sprout} price="110 zł / doba" model="WB486CRB" title="Wertykulator spalinowy" desc="Skutecznie usuwa filc i mech oraz napowietrza glebę. Solidna, stalowa obudowa." specs={[["Szerokość", "47 cm"], ["Regulacja", "do 32 mm"], ["Noże", "28 uchylnych"], ["Waga", "56 kg"]]} />
+          <MachineCard id="wertykulator" img={wertImg} icon={Sprout} price="110 zł / doba" model="WB486CRB" title="Wertykulator spalinowy" desc="Skutecznie usuwa filc i mech oraz napowietrza glebę. Solidna, stalowa obudowa." specs={[["Szerokość", "47 cm"], ["Regulacja", "do 32 mm"], ["Noże", "28 uchylnych"], ["Waga", "56 kg"]]} />
         </Reveal>
         <Reveal delay={0.2} className="h-full lg:col-span-4">
           <MachineCard id="aerator" img="/img/aerator.webp" icon={Layers} price="230 zł / doba" model="WB457AB" title="Aerator spalinowy rurkowy" desc="Głęboko nakłuwa i rozluźnia zbitą glebę, poprawiając ukorzenienie trawy." specs={[["Rurki", "24 szt."], ["Głębokość", "do 7 cm"], ["Szerokość", "45 cm"], ["Wydajność", "1600 m²/h"]]} />
@@ -107,4 +121,5 @@ export const Offer = () => (
       </div>
     </div>
   </section>
-);
+  );
+};
