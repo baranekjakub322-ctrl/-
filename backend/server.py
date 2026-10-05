@@ -16,8 +16,9 @@ import requests
 from bson import ObjectId
 from fastapi import FastAPI, APIRouter, HTTPException, Request, Response, UploadFile, File, Form, Depends
 from motor.motor_asyncio import AsyncIOMotorClient
-from pydantic import BaseModel, Field, BeforeValidator, ConfigDict
+from pydantic import BaseModel, Field, BeforeValidator, ConfigDict, EmailStr
 from starlette.middleware.cors import CORSMiddleware
+from email_service import send_email, inquiry_html
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -323,6 +324,35 @@ async def serve_file(path: str):
     data, ctype = get_object(path)
     return Response(content=data, media_type=record.get("content_type") or ctype,
                     headers={"Cache-Control": "public, max-age=86400"})
+
+
+# ---------- Inquiry (contact form) ----------
+SERVICE_NAMES = {"bus": "Ford Tourneo Custom (8 os.)", "wert": "Wertykulator Weibang", "aer": "Aerator Weibang", "mix": "Kilka pozycji"}
+
+
+class InquiryIn(BaseModel):
+    name: str = Field(min_length=1, max_length=80)
+    phone: str = Field(min_length=5, max_length=30)
+    email: EmailStr
+    service: Literal["bus", "wert", "aer", "mix"]
+    from_date: date
+    to_date: date
+    message: str = Field(default="", max_length=2000)
+
+
+@api.post("/inquiry")
+async def create_inquiry(body: InquiryIn, request: Request):
+    if body.to_date < body.from_date:
+        raise HTTPException(400, "Data końcowa nie może być wcześniejsza niż początkowa")
+    ip = request.headers.get("x-forwarded-for", request.client.host if request.client else "x").split(",")[0].strip()
+    since = (datetime.now(timezone.utc) - timedelta(hours=1)).isoformat()
+    if await db.inquiries.count_documents({"ip": ip, "created_at": {"$gte": since}}) >= 5:
+        raise HTTPException(429, "Zbyt wiele zapytań. Zadzwoń do nas: +48 668 434 331")
+    d = {"name": body.name.strip(), "phone": body.phone.strip(), "email": str(body.email), "service": SERVICE_NAMES[body.service],
+         "from_date": body.from_date.isoformat(), "to_date": body.to_date.isoformat(), "message": body.message.strip()}
+    await db.inquiries.insert_one({**d, "ip": ip, "created_at": datetime.now(timezone.utc).isoformat()})
+    await send_email(to=os.environ["OWNER_EMAIL"], subject=f"Nowe zapytanie: {d['service']} ({d['from_date']} – {d['to_date']})", html=inquiry_html(d))
+    return {"ok": True}
 
 
 @api.get("/")

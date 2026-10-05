@@ -14,6 +14,7 @@ User follow-ups: kalendarz tylko dla busa (admin wpisuje zajęte terminy), kalku
 - Landing: kinetic hero, marquee, bento oferty (z danymi z ulotek), kalkulator cen, kalendarz dostępności busa, galeria z zakładkami + lightbox, kontakt (SMS / e-mail / telefon), mobilny pasek kontaktu.
 - Panel /admin: rezerwacje busa (dodaj/usuń zakres), galeria (upload wielu zdjęć, kolejność, podpisy, usuwanie).
 - Monochrome redesign, black header, customer logo.
+- Formularz kontaktowy wysyła e-mail bezpośrednio (Emergent Resend) na jarospeedrent@gmail.com, kopia w db.inquiries, limit 5/h na IP; karta telefonu: Zadzwoń / SMS / WhatsApp / Kopiuj.
 
 ## Backlog
 - P1: link do profilu Facebook (brak URL), drag&drop kolejności zdjęć
