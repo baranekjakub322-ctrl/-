@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { Minus, Plus, Info, Send, UserRound } from "lucide-react";
+import { Minus, Plus, Info, Send, UserRound, ArrowDown } from "lucide-react";
 import { Switch } from "@/components/ui/switch";
 import { Reveal, Eyebrow } from "./Reveal";
 import { RATES, busQuote, zl } from "@/lib/pricing";
+import { scrollToId } from "@/lib/api";
 
 const Stepper = ({ value, onChange, min = 0, max = 60, testId }) => (
   <div className="flex items-center rounded-full border border-white/15 bg-white/5">
@@ -17,6 +18,12 @@ const Row = ({ label, value, testId, strong }) => (
     <span className="text-sm text-zinc-300">{label}</span>
     <span data-testid={testId} className={`shrink-0 whitespace-nowrap font-mono ${strong ? "text-2xl font-bold text-white sm:text-4xl" : "text-sm text-white"}`}>{value}</span>
   </div>
+);
+
+const PriceJump = ({ testId }) => (
+  <button type="button" data-testid={testId} onClick={() => scrollToId("kalkulacja", -110)} className="btn-amber mt-6 w-full justify-center lg:hidden">
+    <ArrowDown className="h-4 w-4" /> Sprawdź cenę
+  </button>
 );
 
 export const Estimator = ({ onInquiry }) => {
@@ -74,6 +81,7 @@ export const Estimator = ({ onInquiry }) => {
                 </span>
                 <Switch id="calc-driver" data-testid="calc-driver-switch" checked={driver} onCheckedChange={setDriver} />
               </label>
+              <PriceJump testId="calc-jump-bus" />
             </div>
             <div className="rounded-3xl border border-white/10 bg-[#141414] p-6 sm:p-8">
               <p className="font-mono text-xs uppercase tracking-[0.25em] text-zinc-300">Sprzęt ogrodniczy Weibang</p>
@@ -86,10 +94,11 @@ export const Estimator = ({ onInquiry }) => {
                   </div>
                 </div>
               ))}
+              <PriceJump testId="calc-jump-garden" />
             </div>
           </Reveal>
           <Reveal delay={0.1} className="lg:col-span-5">
-            <div data-testid="calc-summary" className="receipt sticky top-24 rounded-3xl border border-white/10 bg-[#27272A] p-6 text-white sm:p-8">
+            <div id="kalkulacja" data-testid="calc-summary" className="receipt sticky top-24 rounded-3xl border border-white/10 bg-[#27272A] p-6 text-white sm:p-8">
               <p className="font-mono text-xs uppercase tracking-[0.25em] text-zinc-300">Szacunek · Jaro Speed Rent</p>
               <div className="mt-4 rounded-2xl bg-[#0A0A0A] p-5 text-white">
                 {q && driver ? (

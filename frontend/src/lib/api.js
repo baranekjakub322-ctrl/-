@@ -40,9 +40,9 @@ export const copyText = async (text) => {
   }
 };
 
-export const scrollToId = (id) => {
+export const scrollToId = (id, offset = -72) => {
   const el = document.getElementById(id);
   if (!el) return;
-  if (window.__lenis) window.__lenis.scrollTo(el, { offset: -72, duration: 1.4 });
+  if (window.__lenis) window.__lenis.scrollTo(el, { offset, duration: 1.4 });
   else el.scrollIntoView({ behavior: "smooth" });
 };
