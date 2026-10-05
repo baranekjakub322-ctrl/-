@@ -51,7 +51,7 @@ const InquiryForm = ({ prefill }) => {
     window.location.href = `sms:${SMS_NUMBER}?body=${encodeURIComponent(body)}`;
   };
   return (
-    <form onSubmit={submit} data-testid="inquiry-form" className="rounded-3xl border border-white/10 bg-[#0A0A0A] p-6 shadow-2xl shadow-black/40 sm:p-8">
+    <form id="szybkie-zapytanie" onSubmit={submit} data-testid="inquiry-form" className="rounded-3xl border border-white/10 bg-[#0A0A0A] p-6 shadow-2xl shadow-black/40 sm:p-8">
       <p className="font-display text-2xl font-bold text-white">Szybkie zapytanie</p>
       <p className="mt-1 text-sm text-zinc-300">Wyślij zapytanie e-mailem prosto z formularza, SMS-em — albo po prostu zadzwoń.</p>
       {sent && <p data-testid="inquiry-success" className="mt-4 flex items-center gap-2 rounded-xl bg-white/10 p-3 text-sm text-white"><Check className="h-4 w-4 shrink-0" />Dziękujemy! Zapytanie dotarło do nas — odpowiemy najszybciej, jak to możliwe.</p>}

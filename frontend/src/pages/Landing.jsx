@@ -16,7 +16,10 @@ export default function Landing() {
   const [prefill, setPrefill] = useState(null);
   const inquire = (data) => {
     setPrefill({ ...data });
-    setTimeout(() => scrollToId("kontakt"), 50);
+    setTimeout(() => {
+      const mobile = window.matchMedia("(max-width: 1023px)").matches;
+      scrollToId(mobile ? "szybkie-zapytanie" : "kontakt", mobile ? -90 : -72);
+    }, 50);
   };
   return (
     <div className="site grain relative min-h-screen bg-[#0A0A0A] text-white" data-testid="landing-page">
