@@ -70,7 +70,7 @@ export const Hero = () => (
             <button data-testid="hero-check-availability-button" onClick={() => scrollToId("kalendarz")} className="btn-amber btn-lg">
               <CalendarCheck className="h-5 w-5" /> Sprawdź dostępność
             </button>
-            <button data-testid="hero-reserve-button" onClick={() => scrollToId("kontakt")} className="btn-ghost btn-lg">
+            <button data-testid="hero-reserve-button" onClick={() => scrollToId("kalendarz")} className="btn-ghost btn-lg">
               Zarezerwuj <ArrowDownRight className="h-5 w-5" />
             </button>
             <a href={TEL} data-testid="hero-call-link" className="ml-1 inline-flex items-center gap-2 font-mono text-sm text-zinc-200 underline-offset-4 hover:text-white hover:underline">
