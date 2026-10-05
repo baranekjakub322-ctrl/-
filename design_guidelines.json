@@ -1,0 +1,183 @@
+{
+  "project_info": {
+    "name": "Jaro Speed Rent",
+    "description": "Nowoczesna, przejrzysta i responsywna strona landing page dla wypożyczalni samochodów (Ford Tourneo Custom 8-osobowy) oraz sprzętu ogrodniczego (wertykulator spalinowy Weibang, aerator spalinowy rurkowy Weibang) wraz z kalkulatorem cen, kalendarzem dostępności busa i panelem administratora.",
+    "app_type": "landing_page + admin_dashboard",
+    "language": "pl"
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Outfit, sans-serif",
+      "body": "Manrope, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "font_imports": "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap",
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight",
+      "h3": "text-xl sm:text-2xl font-semibold tracking-tight",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body_lg": "text-base sm:text-lg leading-relaxed text-slate-300",
+      "body_base": "text-sm sm:text-base leading-normal text-slate-300",
+      "caption": "text-xs font-mono uppercase tracking-widest text-slate-400"
+    }
+  },
+  "colors": {
+    "theme": "dark_modern",
+    "palette": {
+      "background": "#0F172A",
+      "surface_dark": "#1E293B",
+      "surface_card": "#1E293B",
+      "surface_glass": "rgba(30, 41, 59, 0.75)",
+      "border": "rgba(255, 255, 255, 0.1)",
+      "border_active": "rgba(249, 115, 22, 0.5)",
+      "primary_navy": "#0B132B",
+      "accent_amber": "#F97316",
+      "accent_amber_hover": "#EA580C",
+      "accent_green": "#10B981",
+      "accent_green_hover": "#059669",
+      "text_primary": "#F8FAFC",
+      "text_secondary": "#94A3B8",
+      "text_muted": "#64748B",
+      "status_booked": "#EF4444",
+      "status_available": "#10B981"
+    },
+    "gradients": {
+      "hero_overlay": "linear-gradient(180deg, rgba(15,23,42,0.6) 0%, rgba(15,23,42,0.95) 100%)",
+      "card_hover": "linear-gradient(135deg, rgba(249,115,22,0.1) 0%, rgba(16,185,129,0.05) 100%)",
+      "amber_glow": "radial-gradient(circle, rgba(249,115,22,0.15) 0%, transparent 70%)",
+      "green_glow": "radial-gradient(circle, rgba(16,185,129,0.15) 0%, transparent 70%)"
+    }
+  },
+  "visual_enhancers": {
+    "effects": [
+      "Glassmorphism with backdrop-blur-xl (16px) on header and sticky bars",
+      "Spotlight card borders on hover using animated 1px borders",
+      "Subtle noise/grain background overlay texture",
+      "Masked line-by-line hero text entrance with framer-motion",
+      "Infinite slow editorial marquee for key USPs (np. 'FORD TOURNEO CUSTOM 8-OSOBOWY • SYNTETYCZNY OLEJ VIRTUAL CONTROL • AGREGAT WEIBANG • DOSTĘPNOŚĆ 24/7')",
+      "Lenis smooth scroll integration"
+    ]
+  },
+  "grids_and_layouts": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "spacing_scale": {
+      "section_padding": "py-16 sm:py-24 lg:py-32",
+      "card_padding": "p-6 sm:p-8",
+      "gap_default": "gap-6 lg:gap-8"
+    },
+    "bento_offer": {
+      "grid_cols": "grid grid-cols-1 lg:grid-cols-12 gap-6",
+      "bus_hero_card": "lg:col-span-8 bg-slate-800/80 rounded-2xl border border-white/10 p-6 sm:p-8 relative overflow-hidden",
+      "verticutter_card": "lg:col-span-4 bg-slate-800/80 rounded-2xl border border-white/10 p-6 sm:p-8 relative overflow-hidden",
+      "aerator_card": "lg:col-span-6 bg-slate-800/80 rounded-2xl border border-white/10 p-6 sm:p-8 relative overflow-hidden",
+      "estimator_card": "lg:col-span-6 bg-slate-800/80 rounded-2xl border border-white/10 p-6 sm:p-8 relative overflow-hidden"
+    }
+  },
+  "key_sections": [
+    {
+      "section_id": "navbar",
+      "type": "header",
+      "features": [
+        "Brand SVG Logo with Jaro Speed Rent mark",
+        "Navigation links (Oferta, Cennik & Kalkulator, Kalendarz Bus, Galeria, Kontakt)",
+        "Quick call button (+48 668 434 331) with phone icon",
+        "Admin link button (/admin)"
+      ]
+    },
+    {
+      "section_id": "hero",
+      "type": "hero",
+      "features": [
+        "Kinetic headline reveal: 'Wynajem komfortowego busa 8-osobowego oraz profesjonalnego sprzętu ogrodniczego'",
+        "Subheadline describing travel comfort & gardening power",
+        "Primary CTA button: 'Sprawdź dostępność'",
+        "Secondary CTA button: 'Rezerwuj busa'",
+        "Key stats ticker / badges: 8 Miejsc, 350km limit/doba, Weibang PRO"
+      ]
+    },
+    {
+      "section_id": "oferta",
+      "type": "bento_grid",
+      "features": [
+        "Ford Tourneo Custom 8-osobowy card with real photography & specs breakdown",
+        "Wertykulator spalinowy Weibang card (usuwanie filcu i mchu, napowietrzanie)",
+        "Aerator spalinowy rurkowy Weibang card (głębokie nakłuwanie, rozluźnianie gleby)",
+        "USP badges, equipment lists & quick inquiry buttons"
+      ]
+    },
+    {
+      "section_id": "kalkulator",
+      "type": "interactive_price_estimator",
+      "features": [
+        "Interactive days & km slider / inputs for Ford Tourneo Custom (1 dzień: 300 zł, >1 dzień: 250 zł/dzień, limit 350 km/doba, dopłata za nadkilometry ustalana indywidualnie)",
+        "Equipment add-ons selector (Wertykulator: 110 zł/doba, Aerator: 230 zł/doba)",
+        "Estimated total price calculation with disclaimer note 'Cena końcowa ustalana indywidualnie'",
+        "Direct button to send inquiry pre-filled with selected options"
+      ]
+    },
+    {
+      "section_id": "kalendarz",
+      "type": "interactive_calendar",
+      "features": [
+        "Interactive availability calendar for Ford Tourneo Custom",
+        "Highlights booked vs available dates (managed via Admin Panel)",
+        "Selecting dates populates quick booking form"
+      ]
+    },
+    {
+      "section_id": "galeria",
+      "type": "photo_gallery",
+      "features": [
+        "Category tabs (Wszystkie, Ford Tourneo Custom, Maszyny Ogrodnicze)",
+        "Real photography lightbox modal on image click",
+        "Support for additional photo display uploaded via Admin Panel"
+      ]
+    },
+    {
+      "section_id": "kontakt",
+      "type": "contact",
+      "features": [
+        "Highly visible phone button: +48 668 434 331 (tel: link)",
+        "E-mail copy button / mailto: jarospeedrent@gmail.com",
+        "Quick inquiry form generating mailto link or direct phone trigger",
+        "Location & service info details"
+      ]
+    },
+    {
+      "section_id": "admin_panel",
+      "type": "dashboard",
+      "route": "/admin",
+      "features": [
+        "Password protected login (/admin)",
+        "Date range selector & list manager for Bus booked dates",
+        "Photo uploader & order reorder/delete manager for galleries"
+      ]
+    }
+  ],
+  "image_urls": {
+    "ford_exterior": {
+      "url": "https://images.unsplash.com/photo-1768401183636-4404f996c6f8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHwxfHxmb3JkJTIwdG91cm5lbyUyMGN1c3RvbSUyMHBhc3NlbmdlciUyMHZhbiUyMHJvYWQlMjB0cmlwJTIwdHJpcCUyMGZhbWlseSUyMGxhd24lMjBnYXJkZW4lMjBtYWNoaW5lfGVufDB8fHx8MTc5MTE5NTM3NXww&ixlib=rb-4.1.0&q=85",
+      "category": "Ford Tourneo Custom Exterior",
+      "description": "Czarny Ford Tourneo Custom z zewnątrz"
+    },
+    "ford_road": {
+      "url": "https://images.unsplash.com/photo-1760151541345-720256ab52e1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHw0fHxmb3JkJTIwdG91cm5lbyUyMGN1c3RvbSUyMHBhc3NlbmdlciUyMHZhbiUyMHJvYWQlMjB0cmlwJTIwdHJpcCUyMGZhbWlseSUyMGxhd24lMjBnYXJkZW4lMjBtYWNoaW5lfGVufDB8fHx8MTc5MTE5NTM3NXww&ixlib=rb-4.1.0&q=85",
+      "category": "Ford Tourneo Custom Travel",
+      "description": "Bus w trasie plenerowej"
+    },
+    "lawn_care": {
+      "url": "https://images.unsplash.com/photo-1642541744624-7a2a89545a32?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwyfHxncmVlbiUyMGxhd24lMjBnYXJkZW4lZE58ZW58MHx8fHwxNzkxMTk1MzgxfDA&ixlib=rb-4.1.0&q=85",
+      "category": "Maszyny Ogrodnicze Tło",
+      "description": "Piękny zadbany zielony trawnik"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Używaj plików z rozszerzeniem .js oraz React components z Tailwind CSS.",
+    "Wszystkie elementy interaktywne (przyciski, inputy, karty, linki, przyciski kalendarza i kalkulatora) MUSZĄ posiadać jednoznaczne atrybuty `data-testid` (np. data-testid='calc-days-input', data-testid='hero-check-availability-button', data-testid='phone-call-button').",
+    "Główna kolorystyka: Głęboki granat tła (#0F172A / #0B132B), akcent pomarańczowy/bursztynowy (#F97316) dla busa i rezerwacji, akcent zielony (#10B981) dla sprzętu ogrodniczego Weibang.",
+    "Formularz kontaktowy ma po wysłaniu przygotowywać link mailto/tel lub natychmiastowe potwierdzenie, bez konieczności skomplikowanego backendu bazodanowego.",
+    "Panel administratora pod `/admin` umożliwia zarządzanie zajętymi terminami busa (dodaj/usuń zakresem dat) oraz dodawanie, zmiana kolejności i usuwanie zdjęć do galerii."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": "Nie używaj domyślnych kolorów i ascetycznych layoutów. Zadbaj o mikrointerakcje, zaokrąglone krawędzie (rounded-2xl), subtle neon/glow efekty na kartach po najechaniu i wysoki kontrast dla doskonałej czytelności APCA. Dodaj obsługe data-testid na wszystkich elementach."
+}
