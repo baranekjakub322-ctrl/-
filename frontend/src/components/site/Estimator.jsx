@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Minus, Plus, Info, Send } from "lucide-react";
+import { Minus, Plus, Info, Send, UserRound } from "lucide-react";
+import { Switch } from "@/components/ui/switch";
 import { Reveal, Eyebrow } from "./Reveal";
 import { RATES, busQuote, zl } from "@/lib/pricing";
 
@@ -14,7 +15,7 @@ const Stepper = ({ value, onChange, min = 0, max = 60, testId }) => (
 const Row = ({ label, value, testId, strong }) => (
   <div className={`flex items-baseline justify-between gap-4 py-3 ${strong ? "" : "border-b border-dashed border-white/15"}`}>
     <span className="text-sm text-zinc-300">{label}</span>
-    <span data-testid={testId} className={`shrink-0 whitespace-nowrap font-mono ${strong ? "text-3xl font-bold text-white sm:text-4xl" : "text-sm text-white"}`}>{value}</span>
+    <span data-testid={testId} className={`shrink-0 whitespace-nowrap font-mono ${strong ? "text-2xl font-bold text-white sm:text-4xl" : "text-sm text-white"}`}>{value}</span>
   </div>
 );
 
@@ -23,15 +24,18 @@ export const Estimator = ({ onInquiry }) => {
   const [km, setKm] = useState("");
   const [wert, setWert] = useState(0);
   const [aer, setAer] = useState(0);
+  const [driver, setDriver] = useState(false);
   const q = busDays > 0 ? busQuote(busDays, km) : null;
-  const total = (q?.total ?? 0) + (q?.overCost ?? 0) + wert * RATES.wertykulator + aer * RATES.aerator;
+  const busCost = q && !driver ? q.total + q.overCost : 0;
+  const total = busCost + wert * RATES.wertykulator + aer * RATES.aerator;
 
   const send = () => {
     const parts = [];
-    if (q) parts.push(`Ford Tourneo Custom: ${q.days} dni${km ? `, planowane ok. ${km} km` : ""}`);
+    if (q) parts.push(`Ford Tourneo Custom${driver ? " Z KIEROWCĄ" : ""}: ${q.days} dni${km ? `, planowane ok. ${km} km` : ""}`);
     if (wert) parts.push(`Wertykulator Weibang: ${wert} dni`);
     if (aer) parts.push(`Aerator Weibang: ${aer} dni`);
-    onInquiry({ message: `Dzień dobry, proszę o wycenę:\n- ${parts.join("\n- ")}\nSzacunek z kalkulatora: ok. ${zl(total)}` });
+    const note = driver ? `\nWynajem busa z kierowcą — proszę o indywidualną wycenę.${total ? `\nSzacunek sprzętu z kalkulatora: ok. ${zl(total)}` : ""}` : `\nSzacunek z kalkulatora: ok. ${zl(total)}`;
+    onInquiry({ message: `Dzień dobry, proszę o wycenę:\n- ${parts.join("\n- ")}${note}` });
   };
 
   return (
@@ -42,7 +46,7 @@ export const Estimator = ({ onInquiry }) => {
           <h2 className="mt-5 font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl">Policz orientacyjny koszt wynajmu.</h2>
           <p className="mt-5 text-base text-zinc-300 sm:text-lg">Cena końcowa jest zawsze ustalana indywidualnie — kalkulator pokazuje zarys, od którego zaczynamy rozmowę.</p>
         </Reveal>
-        <div className="grid gap-6 lg:grid-cols-12">
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
           <Reveal className="space-y-6 lg:col-span-7">
             <div className="rounded-3xl border border-white/10 bg-[#141414] p-6 sm:p-8">
               <div className="flex flex-wrap items-center justify-between gap-4">
@@ -63,6 +67,13 @@ export const Estimator = ({ onInquiry }) => {
               </div>
               <label className="mt-6 block text-sm text-zinc-300" htmlFor="calc-km">Planowany dystans (km, opcjonalnie)</label>
               <input id="calc-km" data-testid="calc-km-input" inputMode="numeric" value={km} onChange={(e) => setKm(e.target.value.replace(/\D/g, ""))} placeholder="np. 1200" className="field mt-2" />
+              <label htmlFor="calc-driver" className="mt-6 flex cursor-pointer items-center justify-between gap-4 rounded-2xl border border-white/10 bg-white/5 p-4">
+                <span className="flex items-start gap-3">
+                  <UserRound className="mt-0.5 h-5 w-5 shrink-0 text-zinc-300" />
+                  <span><span className="block text-sm font-semibold text-white">Wynajem z kierowcą</span><span className="block text-xs text-zinc-400">Cena ustalana indywidualnie — bez wyliczenia w kalkulatorze</span></span>
+                </span>
+                <Switch id="calc-driver" data-testid="calc-driver-switch" checked={driver} onCheckedChange={setDriver} />
+              </label>
             </div>
             <div className="rounded-3xl border border-white/10 bg-[#141414] p-6 sm:p-8">
               <p className="font-mono text-xs uppercase tracking-[0.25em] text-zinc-300">Sprzęt ogrodniczy Weibang</p>
@@ -81,7 +92,9 @@ export const Estimator = ({ onInquiry }) => {
             <div data-testid="calc-summary" className="receipt sticky top-24 rounded-3xl border border-white/10 bg-[#27272A] p-6 text-white sm:p-8">
               <p className="font-mono text-xs uppercase tracking-[0.25em] text-zinc-300">Szacunek · Jaro Speed Rent</p>
               <div className="mt-4 rounded-2xl bg-[#0A0A0A] p-5 text-white">
-                {q ? (
+                {q && driver ? (
+                  <Row label={`Bus z kierowcą · ${q.days} ${q.days === 1 ? "doba" : "dni"}`} value="wycena indywidualna" testId="calc-bus-total" />
+                ) : q ? (
                   <>
                     <Row label={`Bus · ${q.days} × ${zl(q.rate)}`} value={zl(q.total)} testId="calc-bus-total" />
                     <Row label="Limit kilometrów" value={`${new Intl.NumberFormat("pl-PL").format(q.limit)} km`} testId="calc-km-limit" />
@@ -90,13 +103,13 @@ export const Estimator = ({ onInquiry }) => {
                 ) : <Row label="Bus" value="—" testId="calc-bus-total" />}
                 {wert > 0 && <Row label={`Wertykulator · ${wert} × 110 zł`} value={zl(wert * RATES.wertykulator)} testId="calc-wert-total" />}
                 {aer > 0 && <Row label={`Aerator · ${aer} × 230 zł`} value={zl(aer * RATES.aerator)} testId="calc-aer-total" />}
-                <Row label="Razem ok." value={zl(total)} testId="calc-grand-total" strong />
+                <Row label={driver ? (total ? "Razem ok. (bez busa)" : "Razem") : "Razem ok."} value={driver && !total ? "indywidualnie" : zl(total)} testId="calc-grand-total" strong />
               </div>
-              {q?.over > 0 && (
+              {q?.over > 0 && !driver && (
                 <p data-testid="calc-km-over-warning" className="mt-4 rounded-xl bg-white/10 p-3 text-sm text-white">Przekroczenie limitu o {new Intl.NumberFormat("pl-PL").format(q.over)} km — dopłata ok. 0,40 zł/km (ok. {zl(q.overCost)}), ustalana indywidualnie.</p>
               )}
               <p className="mt-4 flex gap-2 text-sm leading-relaxed text-zinc-300"><Info className="mt-0.5 h-4 w-4 shrink-0" />Cena jest orientacyjna i ustalana indywidualnie. Przy dłuższym wynajmie stawka może być niższa niż 250 zł/doba.</p>
-              <button data-testid="calc-send-inquiry-button" disabled={total === 0} onClick={send} className="btn-amber mt-6 w-full justify-center disabled:opacity-40">
+              <button data-testid="calc-send-inquiry-button" disabled={total === 0 && !(driver && q)} onClick={send} className="btn-amber mt-6 w-full justify-center disabled:opacity-40">
                 <Send className="h-4 w-4" /> Zapytaj o tę wycenę
               </button>
             </div>

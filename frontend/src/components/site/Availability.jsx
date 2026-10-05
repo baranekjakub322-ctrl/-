@@ -62,7 +62,7 @@ export const Availability = ({ onInquiry }) => {
             <span className="flex items-center gap-2"><i className="h-3 w-3 rounded-sm bg-white" />Twój wybór</span>
           </div>
         </Reveal>
-        <div className="grid gap-6 lg:grid-cols-12">
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
           <Reveal className="rounded-3xl border border-white/10 bg-[#141414] p-4 sm:p-8 lg:col-span-8" data-testid="availability-calendar">
             <RentCalendar mode="range" booked={booked} months={months} selected={range} onSelect={setRange} disabled={[{ before: today }, ...booked]} fromMonth={today} />
           </Reveal>
