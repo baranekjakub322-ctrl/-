@@ -54,6 +54,7 @@ export const Availability = ({ onInquiry }) => {
           <div className="lg:col-span-7">
             <Eyebrow>Kalendarz dostępności</Eyebrow>
             <h2 className="mt-5 font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl">Sprawdź wolne terminy busa.</h2>
+            <p data-testid="availability-ask-anyway-note" className="mt-5 max-w-xl text-sm leading-relaxed text-zinc-300 sm:text-base">Termin wygląda na zajęty? Mimo to napisz krótką wiadomość — plany klientów często się zmieniają, a my szybko odpowiemy i zaproponujemy najlepsze rozwiązanie.</p>
           </div>
           <div className="flex flex-wrap gap-5 text-sm text-zinc-300 lg:col-span-5 lg:justify-end">
             <span className="flex items-center gap-2"><i className="h-3 w-3 rounded-sm bg-white/15" />Wolny</span>
