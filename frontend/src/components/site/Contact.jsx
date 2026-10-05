@@ -112,7 +112,7 @@ const InquiryForm = ({ prefill }) => {
           </AlertDialogHeader>
           <pre data-testid="inquiry-preview-body" className="whitespace-pre-wrap break-words rounded-2xl bg-black/40 p-4 font-sans text-sm leading-relaxed text-zinc-100">{preview}</pre>
           <AlertDialogFooter className="flex-row gap-3 sm:justify-end">
-            <AlertDialogCancel data-testid="inquiry-preview-edit" className="mt-0 flex-1 rounded-full border-white/20 bg-transparent text-white hover:bg-white/10 hover:text-white sm:flex-none">Nie, popraw</AlertDialogCancel>
+            <AlertDialogCancel data-testid="inquiry-preview-edit" className="mt-0 flex-1 rounded-full border-white/20 bg-transparent text-white hover:bg-white/10 hover:text-white sm:flex-none">Nie, edytuj</AlertDialogCancel>
             <AlertDialogAction data-testid="inquiry-preview-send" onClick={doSend} className="flex-1 rounded-full bg-white text-[#0A0A0A] hover:bg-zinc-200 sm:flex-none">Tak, wyślij</AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
