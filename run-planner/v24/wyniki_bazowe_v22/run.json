@@ -1,0 +1,99 @@
+{
+  "node": "v24.19.0",
+  "started": "2026-11-03T19:48:56.023Z",
+  "elapsedMs": 165930,
+  "hashes": {
+    "planGenerator_v22.js": "499b3ea7fb940e1e9764c9c2394a51fc36e96634e8a7baf39f1b9265cf599554",
+    "model/training.mjs": "dfb3fdd9e9a74dedfa90e458fa14e0e0205dd61b29a779726b7321383bd671a0",
+    "testy/lib.mjs": "8478ff1957461ec279c4462d1e04351a6eeb7de172b982c938d7428b05e60fcb",
+    "testy/miernik_v22.mjs": "477aa66b72f5612bb3cd4f50b39c91303ac393eb8bcb22e112965dc1e9e24774"
+  },
+  "results": [
+    {
+      "name": "podstawowe",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 188
+    },
+    {
+      "name": "trudne",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 688
+    },
+    {
+      "name": "czulosc",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 349
+    },
+    {
+      "name": "regresje",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 8775
+    },
+    {
+      "name": "czulosc_v21",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 492
+    },
+    {
+      "name": "jakosciowe",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 3977
+    },
+    {
+      "name": "dostepnosc",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 4871
+    },
+    {
+      "name": "porownanie28",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 554
+    },
+    {
+      "name": "porownanie_v19_v20",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 15567
+    },
+    {
+      "name": "porownanie_v20_v21",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 15909
+    },
+    {
+      "name": "sweep",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 87765
+    },
+    {
+      "name": "skrypt_bledy",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 507
+    },
+    {
+      "name": "v22",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 1417
+    },
+    {
+      "name": "porownanie_v21_v22",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 24867
+    }
+  ],
+  "passed": 14,
+  "failed": 0
+}

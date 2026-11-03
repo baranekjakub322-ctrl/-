@@ -1,0 +1,158 @@
+{
+  "node": "v24.19.0",
+  "started": "2026-11-03T21:52:15.677Z",
+  "elapsedMs": 240236,
+  "hashes": {
+    "planGenerator_v24.js": "ebb858d173b168945539adc53512117ea0173cdade76c257dc4813ed40d98e48",
+    "model/policy_v24.mjs": "2acb1c9d0450baf23abd5ada0b0984a5360bbb0e175914af9ec6cec725ebdee4",
+    "model/quality_v24.mjs": "74d22887b5c54c9b8194bb1ca69433ba5587db9f70be8bc379fd8e21483a0cb6",
+    "model/frequency_v24.mjs": "25ea3b69cf93ecf6052e39ba023f7a865a2848d2c82828ae86459476f9c51435",
+    "model/ledger_v24.mjs": "13c6c12e28e9a27640ce9673b53cd7f02378122bf2216bb7624a0d1c885f67f8",
+    "model/adaptation_v24.mjs": "be4b6f8b6fbee28c1b3f2adc36040850007b09a6ccbb46dc73e94b87e1e5feb9",
+    "planGenerator_v23.js": "b8fd490bf71c986563ef8649152fcbe0accede4121728407cd973d7905922b7a",
+    "planGenerator_v22.js": "499b3ea7fb940e1e9764c9c2394a51fc36e96634e8a7baf39f1b9265cf599554",
+    "model/training.mjs": "dfb3fdd9e9a74dedfa90e458fa14e0e0205dd61b29a779726b7321383bd671a0",
+    "model/policy_v23.mjs": "bcfb1b68dd1ee257da0dd797059d4d3ea3b342552dbdc067fe0ca13ec4ce9c7d",
+    "model/quality_v23.mjs": "fe92d01711b079e54b9caa4dbaa5b4429a4ce00767056e1b9380413de1a82411",
+    "model/adaptation_v23.mjs": "0cd5cdee5d0449ab4ebcb442aaaa9955b849dba4ee5323b82c8e140a794952fb",
+    "scoring/v23.mjs": "a7d2cfe244bb156418e3334b917b39773c1e96ad7c0ff356aac586380aa3eb71",
+    "testy/lib.mjs": "5829b948a5f2d45eb11690478bf529c5925c4e296a40ff42edbc137bb2e3008f",
+    "testy/miernik_v22.mjs": "477aa66b72f5612bb3cd4f50b39c91303ac393eb8bcb22e112965dc1e9e24774",
+    "testy/v23.mjs": "d975154fc9a87a0a2fb70d2f69f0b767aa69280463fd0a5114cb5889b102a871",
+    "testy/benchmark_v23.mjs": "ae71473adab2919ed0e480102c22d901dbb9385e8a3259cf31af37edd086f244",
+    "testy/porownanie_v22_v23.mjs": "36c8a3475e338742cc6509c92f960526b92e3c848672593180283a6b792dcb49",
+    "testy/v24.mjs": "98eb57e4f0659681acf36184ba7dc5fb9f25184d6e2f9d70b4f75851d707c150",
+    "testy/v24_inherited.mjs": "d7142ccf6fc7f0badcddc8f6b1eaa1eb5ad5ffd15b24e010666cea8aef3d5a49",
+    "testy/porownanie_v23_v24.mjs": "c5ee48d4bdf19af43a8dc615d77d585cc5f1adfba9c191f4665f63d9c7e549a1"
+  },
+  "results": [
+    {
+      "name": "podstawowe",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 161
+    },
+    {
+      "name": "trudne",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 655
+    },
+    {
+      "name": "czulosc",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 335
+    },
+    {
+      "name": "regresje",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 10221
+    },
+    {
+      "name": "czulosc_v21",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 507
+    },
+    {
+      "name": "jakosciowe",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 3788
+    },
+    {
+      "name": "dostepnosc",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 5027
+    },
+    {
+      "name": "porownanie28",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 519
+    },
+    {
+      "name": "porownanie_v19_v20",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 13488
+    },
+    {
+      "name": "porownanie_v20_v21",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 16503
+    },
+    {
+      "name": "sweep",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 86293
+    },
+    {
+      "name": "skrypt_bledy",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 524
+    },
+    {
+      "name": "v22",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 1551
+    },
+    {
+      "name": "porownanie_v21_v22",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 29446
+    },
+    {
+      "name": "regresje_v22_v23",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 1451
+    },
+    {
+      "name": "kalibracja_v23",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 84
+    },
+    {
+      "name": "v23",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 1677
+    },
+    {
+      "name": "porownanie_v22_v23",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 28197
+    },
+    {
+      "name": "v24_inherited",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 1569
+    },
+    {
+      "name": "v24",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 7371
+    },
+    {
+      "name": "porownanie_v23_v24",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 30860
+    }
+  ],
+  "passed": 21,
+  "failed": 0
+}

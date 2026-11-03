@@ -1,0 +1,299 @@
+{
+  "node": "v24.19.0",
+  "passed": 73,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "all V21 exports preserved and V22 version",
+      "ok": true
+    },
+    {
+      "name": "history invalid null",
+      "ok": true
+    },
+    {
+      "name": "history invalid \"bad\"",
+      "ok": true
+    },
+    {
+      "name": "history invalid {}",
+      "ok": true
+    },
+    {
+      "name": "history invalid []",
+      "ok": true
+    },
+    {
+      "name": "history invalid [20]",
+      "ok": true
+    },
+    {
+      "name": "history invalid [-1,20]",
+      "ok": true
+    },
+    {
+      "name": "history invalid [20,null]",
+      "ok": true
+    },
+    {
+      "name": "history invalid [20,20,20,20,20,20,20,20,20,20,20,20,20]",
+      "ok": true
+    },
+    {
+      "name": "reject invalid/unsafe {\"pain\":4}",
+      "ok": true
+    },
+    {
+      "name": "reject invalid/unsafe {\"pain\":10}",
+      "ok": true
+    },
+    {
+      "name": "reject invalid/unsafe {\"activeInjury\":true}",
+      "ok": true
+    },
+    {
+      "name": "reject invalid/unsafe {\"pain\":-1}",
+      "ok": true
+    },
+    {
+      "name": "reject invalid/unsafe {\"pain\":11}",
+      "ok": true
+    },
+    {
+      "name": "reject invalid/unsafe {\"experienceMonths\":-1}",
+      "ok": true
+    },
+    {
+      "name": "reject invalid/unsafe {\"experienceMonths\":\"bad\"}",
+      "ok": true
+    },
+    {
+      "name": "reject invalid/unsafe {\"bestResult\":{\"distanceKm\":10,\"timeSec\":3000,\"date\":\"2030-01-01\"}}",
+      "ok": true
+    },
+    {
+      "name": "reject invalid/unsafe {\"bestResult\":{\"distanceKm\":10,\"timeSec\":3000,\"date\":\"2026-02-30\"}}",
+      "ok": true
+    },
+    {
+      "name": "reject invalid/unsafe {\"weeks\":53,\"goal\":{\"type\":\"health\"}}",
+      "ok": true
+    },
+    {
+      "name": "declining completed weeks reduce start, zeros count, input unmodified",
+      "ok": true
+    },
+    {
+      "name": "recent stable history never inflates declared base",
+      "ok": true
+    },
+    {
+      "name": "short experience reduces peak and intensity",
+      "ok": true
+    },
+    {
+      "name": "stale result falls back to effort and broader pace",
+      "ok": true
+    },
+    {
+      "name": "quality pace does not accelerate without new evidence",
+      "ok": true
+    },
+    {
+      "name": "5k/1 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "5k/2 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "5k/3 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "5k/4 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "5k/5 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "5k/6 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "5k/7 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "10k/1 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "10k/2 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "10k/3 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "10k/4 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "10k/5 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "10k/6 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "10k/7 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "half/1 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "half/2 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "half/3 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "half/4 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "half/5 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "half/6 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "half/7 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "marathon/1 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "marathon/2 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "marathon/3 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "marathon/4 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "marathon/5 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "marathon/6 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "marathon/7 independent invariants",
+      "ok": true
+    },
+    {
+      "name": "two-day half rotation actually includes easy and quality weeks",
+      "ok": true
+    },
+    {
+      "name": "two-day marathon is base alternative and strict rejects",
+      "ok": true
+    },
+    {
+      "name": "actual one day also classified when declaration says four",
+      "ok": true
+    },
+    {
+      "name": "prepared marathon has MP without threshold finishes",
+      "ok": true
+    },
+    {
+      "name": "finish mode removes target pressure, time mode distinct",
+      "ok": true
+    },
+    {
+      "name": "race weekday 0: sums include race once, no hard within 2d",
+      "ok": true
+    },
+    {
+      "name": "race weekday 1: sums include race once, no hard within 2d",
+      "ok": true
+    },
+    {
+      "name": "race weekday 2: sums include race once, no hard within 2d",
+      "ok": true
+    },
+    {
+      "name": "race weekday 3: sums include race once, no hard within 2d",
+      "ok": true
+    },
+    {
+      "name": "race weekday 4: sums include race once, no hard within 2d",
+      "ok": true
+    },
+    {
+      "name": "race weekday 5: sums include race once, no hard within 2d",
+      "ok": true
+    },
+    {
+      "name": "race weekday 6: sums include race once, no hard within 2d",
+      "ok": true
+    },
+    {
+      "name": "strict refuses unrealistic time and ordinary mode supplies alternative",
+      "ok": true
+    },
+    {
+      "name": "underage long-distance target is explicitly outside automatic qualification",
+      "ok": true
+    },
+    {
+      "name": "history/profile adapter preserves new fields",
+      "ok": true
+    },
+    {
+      "name": "two-day policy differs by distance and cannot add intensity on deload",
+      "ok": true
+    },
+    {
+      "name": "independent meter detects injected broken quality envelope",
+      "ok": true
+    },
+    {
+      "name": "time/effort regression: introducing quality cannot double two-day load",
+      "ok": true
+    },
+    {
+      "name": "marathon duration cap uses actual long pace, including slow reference",
+      "ok": true
+    },
+    {
+      "name": "dose correction cannot leave recovery label without preceding hard load",
+      "ok": true
+    },
+    {
+      "name": "long rebound follows actual trimmed long, not the original recipe",
+      "ok": true
+    }
+  ]
+}

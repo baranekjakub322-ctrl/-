@@ -1,0 +1,334 @@
+{
+  "passed": 82,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "V22 exports retained and V23 version",
+      "ok": true
+    },
+    {
+      "name": "prepared athlete gets controlled quality by second week",
+      "ok": true
+    },
+    {
+      "name": "long 10k preparation has 600/800/1000 progression and current-fitness pace",
+      "ok": true
+    },
+    {
+      "name": "threshold dose evolves without increasing pace automatically",
+      "ok": true
+    },
+    {
+      "name": "goal slower than current result means maintenance explicitly",
+      "ok": true
+    },
+    {
+      "name": "faster goal is distinct from maintaining fitness",
+      "ok": true
+    },
+    {
+      "name": "first four weeks contain both introduction and deload",
+      "ok": true
+    },
+    {
+      "name": "race counts towards three-run weekly limit",
+      "ok": true
+    },
+    {
+      "name": "explicit shake-out honoured within frequency budget",
+      "ok": true
+    },
+    {
+      "name": "specificity has a clear non-taper period",
+      "ok": true
+    },
+    {
+      "name": "5k/1: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "5k/2: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "5k/3: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "5k/4: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "5k/5: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "5k/6: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "5k/7: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "10k/1: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "10k/2: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "10k/3: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "10k/4: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "10k/5: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "10k/6: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "10k/7: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "half/1: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "half/2: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "half/3: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "half/4: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "half/5: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "half/6: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "half/7: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "marathon/1: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "marathon/2: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "marathon/3: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "marathon/4: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "marathon/5: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "marathon/6: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "marathon/7: independent bounds, race sums and no input mutation",
+      "ok": true
+    },
+    {
+      "name": "race weekday 0 includes race without extra unit",
+      "ok": true
+    },
+    {
+      "name": "race weekday 1 includes race without extra unit",
+      "ok": true
+    },
+    {
+      "name": "race weekday 2 includes race without extra unit",
+      "ok": true
+    },
+    {
+      "name": "race weekday 3 includes race without extra unit",
+      "ok": true
+    },
+    {
+      "name": "race weekday 4 includes race without extra unit",
+      "ok": true
+    },
+    {
+      "name": "race weekday 5 includes race without extra unit",
+      "ok": true
+    },
+    {
+      "name": "race weekday 6 includes race without extra unit",
+      "ok": true
+    },
+    {
+      "name": "invalid tolerance",
+      "ok": true
+    },
+    {
+      "name": "invalid recovery",
+      "ok": true
+    },
+    {
+      "name": "unavailable preference",
+      "ok": true
+    },
+    {
+      "name": "bad long-distance experience",
+      "ok": true
+    },
+    {
+      "name": "bad HR source",
+      "ok": true
+    },
+    {
+      "name": "HR estimated and measured separated without changing km",
+      "ok": true
+    },
+    {
+      "name": "longer recent consistent volume never reduces first-week allowance",
+      "ok": true
+    },
+    {
+      "name": "low tolerance reduces or preserves peak; no automatic high-load reward",
+      "ok": true
+    },
+    {
+      "name": "short experience and active pain still suppress/reject quality",
+      "ok": true
+    },
+    {
+      "name": "young novice not given early quality to manufacture variety",
+      "ok": true
+    },
+    {
+      "name": "frequency reduction gives exact numbers and reasons",
+      "ok": true
+    },
+    {
+      "name": "prepared marathon preserves MP, duration limits and explicit history",
+      "ok": true
+    },
+    {
+      "name": "missed workouts not caught up, future changes only and journal persists",
+      "ok": true
+    },
+    {
+      "name": "fatigue and high RPE lower volume and postpone quality",
+      "ok": true
+    },
+    {
+      "name": "pain blocks adaptation rather than scheduling a catch-up",
+      "ok": true
+    },
+    {
+      "name": "new measured test updates pace within 2% VDOT guard",
+      "ok": true
+    },
+    {
+      "name": "new worse test slows down current-fitness prescription",
+      "ok": true
+    },
+    {
+      "name": "availability update only uses new days",
+      "ok": true
+    },
+    {
+      "name": "break input does not reset effective base without observed recovery",
+      "ok": true
+    },
+    {
+      "name": "complete observation window accounts for shortened and zero days",
+      "ok": true
+    },
+    {
+      "name": "long gap explicitly supplied causes conservative return",
+      "ok": true
+    },
+    {
+      "name": "invalid observation [null] rejected",
+      "ok": true
+    },
+    {
+      "name": "invalid observation [{}] rejected",
+      "ok": true
+    },
+    {
+      "name": "invalid observation [{\"date\":\"2030-01-01\",\"status\":\"done\"}] rejected",
+      "ok": true
+    },
+    {
+      "name": "invalid observation [{\"date\":\"2027-01-01\",\"status\":\"magic\"}] rejected",
+      "ok": true
+    },
+    {
+      "name": "invalid observation [{\"date\":\"2027-01-01\",\"status\":\"done\",\"distanceKm\":null,\"durationMin\":40}] rejected",
+      "ok": true
+    },
+    {
+      "name": "invalid observation [{\"date\":\"2027-01-01\",\"status\":\"done\",\"distanceKm\":5,\"durationMin\":40,\"rpe\":11}] rejected",
+      "ok": true
+    },
+    {
+      "name": "duplicate observation dates rejected",
+      "ok": true
+    },
+    {
+      "name": "adaptation has no input/previous-plan mutation",
+      "ok": true
+    },
+    {
+      "name": "new score cannot trust fabricated internal audit score",
+      "ok": true
+    },
+    {
+      "name": "three-day recovery rule extends across week boundary",
+      "ok": true
+    },
+    {
+      "name": "partial first week cannot inflate deload long share",
+      "ok": true
+    },
+    {
+      "name": "changing an intent label cannot inflate the independent score",
+      "ok": true
+    },
+    {
+      "name": "moderate pain switches to conservative base with limited feasibility",
+      "ok": true
+    },
+    {
+      "name": "older unresolved injury does not expire silently",
+      "ok": true
+    },
+    {
+      "name": "invalid injury flag in observation is rejected",
+      "ok": true
+    },
+    {
+      "name": "partial first calendar week cannot collapse the full-week base or inflate taper reference",
+      "ok": true
+    }
+  ]
+}

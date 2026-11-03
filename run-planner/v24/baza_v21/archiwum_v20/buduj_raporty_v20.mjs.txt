@@ -1,0 +1,41 @@
+// Buduje raport_testow_v20.md i ocena_jakosci_v20.md WYŁĄCZNIE z plików wyniki/*.json (żadnych liczb wpisanych ręcznie poza
+// opisami znanych problemów). Kod wyjścia != 0, gdy brakuje wyniku wymaganego testu.
+import fs from "node:fs"; import path from "node:path";
+const [passedS = "", failedS = ""] = process.argv.slice(2);
+if (process.env.TESTS_ONLY_LIGHT === "1") { console.log("[raporty] tryb lekki: pomijam"); process.exit(0); }
+const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
+const W = process.env.WYNIKI || path.join(ROOT, "wyniki");
+const rd = (f) => { try { return JSON.parse(fs.readFileSync(path.join(W, f), "utf8")); } catch { return null; } };
+const REQ = ["podstawowe", "trudne", "czulosc", "regresje", "porownanie28", "porownanie_v19_v20", "sweep", "skrypt_bledy"];
+const R = Object.fromEntries(REQ.map((n) => [n, rd(n + ".json")]));
+const missing = REQ.filter((n) => !R[n]);
+const bazaReg = rd("baza_v19/regresje.json"), bazaSweep = rd("baza_v19/sweep.json");
+const zal = REQ.reduce((a, n) => a + (R[n] ? R[n].zaliczone : 0), 0), nie = REQ.reduce((a, n) => a + (R[n] ? R[n].niezaliczone : 0), 0);
+const sw = R.sweep, p28 = R.porownanie28, cmp = R.porownanie_v19_v20;
+const lines = fs.readFileSync(path.join(ROOT, "planGenerator_v20.js"), "utf8").split("\n").length, size = fs.statSync(path.join(ROOT, "planGenerator_v20.js")).size;
+const now = new Date().toISOString().slice(0, 10);
+let md = `# Raport testów V20\n\nData uruchomienia: ${now}. Wszystkie liczby poniżej pochodzą z plików \`wyniki/*.json\` wygenerowanych przez \`uruchom_wszystko.sh\`.\n\n`;
+md += `**Zestawy zaliczone:** ${passedS || "(brak)"}\n\n**Zestawy niezaliczone:** ${failedS || "brak"}\n\n`;
+if (missing.length) md += `**BRAK WYNIKÓW dla:** ${missing.join(", ")} (uruchomienie niekompletne).\n\n`;
+md += `## Podsumowanie\n\n| Zestaw | Zaliczone | Niezaliczone |\n|---|---|---|\n` + REQ.map((n) => `| ${n} | ${R[n] ? R[n].zaliczone : "brak"} | ${R[n] ? R[n].niezaliczone : "brak"} |`).join("\n") + `\n| **Razem** | **${zal}** | **${nie}** |\n\n`;
+md += `Uwaga: liczba asercji nie jest miarą jakości planów. Zaliczone testy oznaczają, że plany spełniają *zdefiniowane* niezmienniki; nie dowodzą, że są optymalne treningowo.\n\n`;
+if (sw) md += `## Sweep (pełna siatka)\n\n- Deklarowana liczba scenariuszy: **${sw.deklarowanaLiczbaScenariuszy}**; wykonane: **${sw.wykonane}**; unikalne: **${sw.unikalne}**.\n- Dni tygodnia jako dzień startu planu: ${JSON.stringify(sw.pokrycie.todayDow)}; dni zawodów: ${JSON.stringify(sw.pokrycie.raceDow)}.\n- Plany z krytycznym naruszeniem niezależnych niezmienników: **${sw.planyZKrytycznymNaruszeniem}** (krytycznych naruszeń: ${sw.krytyczneNaruszenia}).\n- Ostrzeżenia miernika (łącznie): ${sw.ostrzezeniaMiernika}.\n- „Ślepe plamki” audytu wewnętrznego (miernik niezależny znalazł krytyczne, audyt generatora uznał plan za zgodny): ${sw.slepePlamkiAudytuWewnetrznego}.\n- Rozkład kodów problemów: \`${JSON.stringify(sw.kodyProblemow)}\`\n\n`;
+if (bazaSweep) md += `**Ten sam sweep na V19 (linia bazowa):** plany z krytycznym: ${bazaSweep.planyZKrytycznymNaruszeniem}, krytyczne naruszenia: ${bazaSweep.krytyczneNaruszenia}, ostrzeżenia miernika: ${bazaSweep.ostrzezeniaMiernika}, ślepe plamki audytu: ${bazaSweep.slepePlamkiAudytuWewnetrznego}. (Uwaga: V19 nie ma pola \`gotowosc.rozdzielenie\`; oba generatory oceniane tym samym miernikiem.)\n\n`;
+if (bazaReg) md += `## Testy regresyjne na V19 (oczekiwane niezaliczenia)\n\nNa V19: zaliczone ${bazaReg.zaliczone}, niezaliczone ${bazaReg.niezaliczone}. Niezaliczone na V19 (wady wykryte przez regresje):\n${(bazaReg.bledy || []).map((b) => `- ${b.opis}`).join("\n")}\n\nNa V20: zaliczone ${R.regresje ? R.regresje.zaliczone : "brak"}, niezaliczone ${R.regresje ? R.regresje.niezaliczone : "brak"}. Testy R1, R2a–R2c, R6, R7 przechodzą także na V19: chronią przed regresją, ale same nie wykazały wady V19 (patrz zmiany_v19_v20.md).\n\n`;
+if (cmp) md += `## V19 vs V20 (ten sam miernik, ${cmp.scenariuszy} scenariuszy)\n\n| Dystans | Śr. ocena V19 | Śr. ocena V20 | Plany z kryt. V19 | Plany z kryt. V20 | Ostrz. V19 | Ostrz. V20 |\n|---|---|---|---|---|---|---|\n` + Object.entries(cmp.wyniki).map(([k, v]) => `| ${k} | ${v.v19.srednia} | ${v.v20.srednia} | ${v.v19.planyZKrytycznym} | ${v.v20.planyZKrytycznym} | ${v.v19.ostrzezenia} | ${v.v20.ostrzezenia} |`).join("\n") + `\n\nOceny to heurystyka (patrz ocena_jakosci_v20.md), a różnice średnich są małe: poprawki V20 dotyczą głównie krytycznych przypadków brzegowych, a nie typowego planu.\n\n`;
+md += `## Statystyki pliku głównego\n\n\`planGenerator_v20.js\`: ${lines} linii, ${size} bajtów.\n\n`;
+md += `## Co faktycznie uruchomiono\n\nUruchomiono: ${REQ.filter((n) => R[n]).join(", ")}${bazaReg ? ", linię bazową V19 (regresje, sweep)" : ""}. Nie uruchomiono: ${missing.length ? missing.join(", ") : "nic z wymaganej listy nie zostało pominięte"}.\n\n`;
+md += `### Czego ten raport NIE obejmuje\n\n- Testów V19 z folderu \`testy/\` z oryginalnego pakietu (sweep.mjs, lib.mjs itd.) — nie były dostępne; ich rolę przejęły testy napisane od zera. Zarzuty wobec starego \`sweep.mjs\` (pkt B) nie mogły być zweryfikowane na jego kodzie; zamiast tego nowy sweep ma asercje pokrycia.\n- Weryfikacji treningowej przez trenera ani badań na ludziach.\n`;
+fs.writeFileSync(path.join(ROOT, "raport_testow_v20.md"), md);
+
+let q = `# Ocena jakości planów V20\n\n**Oceny 1–10 są heurystyczne (autorskie kryteria), a nie wynikami badań naukowych.** Wynikają z funkcji \`score()\` w \`testy/lib.mjs\`:\n\n- start 10 pkt;\n- −2,0 za każde krytyczne naruszenie niezależnych niezmienników (maks. −6);\n- −0,4 za każde ostrzeżenie (maks. −2);\n- −1,0 za każdy niespełniony warunek dopasowania do dystansu (liczba biegów, najdłuższy bieg, szczyt tygodniowy; maks. −4), z sufitem oceny 10 − 1,5 × liczba braków.\n\nNiezmienniki: udział długiego biegu, progresja km i długiego biegu, liczba akcentów wg poziomu, brak dwóch mocnych dni pod rząd, skuteczność odciążeń, tapering i długi bieg przed startem, limity czasu, realność deklarowanej gotowości.\n\n`;
+if (p28) {
+  q += `## 28 planów (profil stały: ${p28.profil})\n\nZmieniają się tylko dystans i deklarowana liczba dni. Czas docelowy skaluje się z dystansem (ta sama prognoza z VDOT × 1,03).\n\n| Dystans | Dekl. | Rzecz. | Szczyt km (bez startu) | Najdł. | Jakościowe | Ostrz. | Gotowość | Problemy miernika | Ocena |\n|---|---|---|---|---|---|---|---|---|---|\n`;
+  q += p28.wiersze.map((r) => `| ${r.dystans} | ${r.zadeklarowane} | ${r.rzeczywiste} | ${r.szczytKm} | ${r.najdluzszy} | ${r.jakosciowe} | ${r.ostrzezenia} | ${r.etykietaGotowosci} | ${Object.keys(r.problemy).join(", ") || "-"} | ${r.ocena} |`).join("\n");
+  q += `\n\n### Średnie\n\n- Dla dystansów: ${Object.entries(p28.srednie.dystans).map(([k, v]) => `${k}: **${v}**`).join(", ")}\n- Dla częstotliwości (deklarowanej): ${Object.entries(p28.srednie.czestotliwosc).map(([k, v]) => `${k}: **${v}**`).join(", ")}\n- Wszystkie 28 planów: **${p28.srednie.ogolnie}**\n\n`;
+  q += `Uwagi do tabeli: przy deklaracji 6 i 7 dni plan ma 5 biegów (limit poziomu średniozaawansowanego bez podniesienia dowodem), więc plany 5/6/7 dni są identyczne — to zamierzone ograniczenie generatora, nie błąd raportu. Szczyt km liczony bez dystansu zawodów (zawody nie są w liście treningów).\n\n`;
+}
+q += `## Jak czytać ocenę\n\nWysoka ocena oznacza: brak naruszeń zdefiniowanych niezmienników i dopasowanie do minimów dystansu. Nie oznacza, że plan jest idealny: nie mierzymy np. jakości doboru akcentów (zob. znane problemy), indywidualnej tolerancji obciążeń ani dopasowania temp do formy.\n`;
+fs.writeFileSync(path.join(ROOT, "ocena_jakosci_v20.md"), q);
+console.log(`[raporty] zapisano raport_testow_v20.md i ocena_jakosci_v20.md (zaliczone ${zal}, niezaliczone ${nie})`);
+process.exit(missing.length ? 1 : 0);

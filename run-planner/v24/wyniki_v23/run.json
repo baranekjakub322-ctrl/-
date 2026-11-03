@@ -1,0 +1,131 @@
+{
+  "node": "v24.19.0",
+  "started": "2026-11-03T20:23:16.411Z",
+  "elapsedMs": 204370,
+  "hashes": {
+    "planGenerator_v23.js": "b8fd490bf71c986563ef8649152fcbe0accede4121728407cd973d7905922b7a",
+    "planGenerator_v22.js": "499b3ea7fb940e1e9764c9c2394a51fc36e96634e8a7baf39f1b9265cf599554",
+    "model/training.mjs": "dfb3fdd9e9a74dedfa90e458fa14e0e0205dd61b29a779726b7321383bd671a0",
+    "model/policy_v23.mjs": "bcfb1b68dd1ee257da0dd797059d4d3ea3b342552dbdc067fe0ca13ec4ce9c7d",
+    "model/quality_v23.mjs": "fe92d01711b079e54b9caa4dbaa5b4429a4ce00767056e1b9380413de1a82411",
+    "model/adaptation_v23.mjs": "0cd5cdee5d0449ab4ebcb442aaaa9955b849dba4ee5323b82c8e140a794952fb",
+    "scoring/v23.mjs": "a7d2cfe244bb156418e3334b917b39773c1e96ad7c0ff356aac586380aa3eb71",
+    "testy/lib.mjs": "e03387810a9827ba5076bfc0f69e3b897914ae9dc7eb710edabb93cdf0c1bf1d",
+    "testy/miernik_v22.mjs": "477aa66b72f5612bb3cd4f50b39c91303ac393eb8bcb22e112965dc1e9e24774",
+    "testy/v23.mjs": "d975154fc9a87a0a2fb70d2f69f0b767aa69280463fd0a5114cb5889b102a871",
+    "testy/benchmark_v23.mjs": "ae71473adab2919ed0e480102c22d901dbb9385e8a3259cf31af37edd086f244",
+    "testy/porownanie_v22_v23.mjs": "36c8a3475e338742cc6509c92f960526b92e3c848672593180283a6b792dcb49"
+  },
+  "results": [
+    {
+      "name": "podstawowe",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 184
+    },
+    {
+      "name": "trudne",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 588
+    },
+    {
+      "name": "czulosc",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 552
+    },
+    {
+      "name": "regresje",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 8823
+    },
+    {
+      "name": "czulosc_v21",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 450
+    },
+    {
+      "name": "jakosciowe",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 3805
+    },
+    {
+      "name": "dostepnosc",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 5104
+    },
+    {
+      "name": "porownanie28",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 751
+    },
+    {
+      "name": "porownanie_v19_v20",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 24945
+    },
+    {
+      "name": "porownanie_v20_v21",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 15745
+    },
+    {
+      "name": "sweep",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 84228
+    },
+    {
+      "name": "skrypt_bledy",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 508
+    },
+    {
+      "name": "v22",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 1517
+    },
+    {
+      "name": "porownanie_v21_v22",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 25330
+    },
+    {
+      "name": "regresje_v22_v23",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 1384
+    },
+    {
+      "name": "kalibracja_v23",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 65
+    },
+    {
+      "name": "v23",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 1387
+    },
+    {
+      "name": "porownanie_v22_v23",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 28998
+    }
+  ],
+  "passed": 18,
+  "failed": 0
+}

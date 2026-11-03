@@ -1,0 +1,650 @@
+{
+ "generator": "planGenerator_v21.js",
+ "nazwa": "porownanie28",
+ "zaliczone": 31,
+ "niezaliczone": 0,
+ "bledy": [],
+ "generatorPlik": "/home/claude/v21/planGenerator_v21.js",
+ "profil": "intermediate, 35 lat, 35 km/tydz., najdłuższy 14 km, 10 km w 52:00, start 2027-03-28, dostępne 7 dni",
+ "wiersze": [
+  {
+   "dystans": "5k",
+   "zadeklarowane": 1,
+   "rzeczywiste": 1,
+   "szczytKm": 10,
+   "najdluzszy": 10,
+   "jakosciowe": 0,
+   "ostrzezenia": 4,
+   "gotowosc": "niewystarczajace_przygotowanie",
+   "etykietaGotowosci": "niewystarczajace_przygotowanie",
+   "problemy": {},
+   "brakiDoDystansu": [
+    "biegi/tydz. 1<2",
+    "szczyt km 10<12"
+   ],
+   "ocena": 7,
+   "powodyOceny": [
+    "brak dopasowania do dystansu: biegi/tydz. 1<2; szczyt km 10<12 (-2)",
+    "sufit oceny 7 (plan nie przygotowuje do dystansu)"
+   ],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "5k",
+   "zadeklarowane": 2,
+   "rzeczywiste": 2,
+   "szczytKm": 25,
+   "najdluzszy": 14,
+   "jakosciowe": 13,
+   "ostrzezenia": 3,
+   "gotowosc": "odpowiednie_przygotowanie_do_ukonczenia",
+   "etykietaGotowosci": "przygotowanie_do_ukonczenia",
+   "problemy": {},
+   "brakiDoDystansu": [],
+   "ocena": 10,
+   "powodyOceny": [],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "5k",
+   "zadeklarowane": 3,
+   "rzeczywiste": 3,
+   "szczytKm": 34,
+   "najdluzszy": 14,
+   "jakosciowe": 13,
+   "ostrzezenia": 2,
+   "gotowosc": "odpowiednie_przygotowanie_do_wyniku",
+   "etykietaGotowosci": "przygotowanie_do_wyniku",
+   "problemy": {},
+   "brakiDoDystansu": [],
+   "ocena": 10,
+   "powodyOceny": [],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "5k",
+   "zadeklarowane": 4,
+   "rzeczywiste": 4,
+   "szczytKm": 38,
+   "najdluzszy": 14,
+   "jakosciowe": 13,
+   "ostrzezenia": 2,
+   "gotowosc": "odpowiednie_przygotowanie_do_wyniku",
+   "etykietaGotowosci": "przygotowanie_do_wyniku",
+   "problemy": {},
+   "brakiDoDystansu": [],
+   "ocena": 10,
+   "powodyOceny": [],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "5k",
+   "zadeklarowane": 5,
+   "rzeczywiste": 5,
+   "szczytKm": 39,
+   "najdluzszy": 13,
+   "jakosciowe": 17,
+   "ostrzezenia": 3,
+   "gotowosc": "odpowiednie_przygotowanie_do_wyniku",
+   "etykietaGotowosci": "przygotowanie_do_wyniku",
+   "problemy": {},
+   "brakiDoDystansu": [],
+   "ocena": 10,
+   "powodyOceny": [],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "5k",
+   "zadeklarowane": 6,
+   "rzeczywiste": 5,
+   "szczytKm": 39,
+   "najdluzszy": 13,
+   "jakosciowe": 17,
+   "ostrzezenia": 3,
+   "gotowosc": "odpowiednie_przygotowanie_do_wyniku",
+   "etykietaGotowosci": "przygotowanie_do_wyniku",
+   "problemy": {},
+   "brakiDoDystansu": [],
+   "ocena": 10,
+   "powodyOceny": [],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "5k",
+   "zadeklarowane": 7,
+   "rzeczywiste": 5,
+   "szczytKm": 39,
+   "najdluzszy": 13,
+   "jakosciowe": 17,
+   "ostrzezenia": 3,
+   "gotowosc": "odpowiednie_przygotowanie_do_wyniku",
+   "etykietaGotowosci": "przygotowanie_do_wyniku",
+   "problemy": {},
+   "brakiDoDystansu": [],
+   "ocena": 10,
+   "powodyOceny": [],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "10k",
+   "zadeklarowane": 1,
+   "rzeczywiste": 1,
+   "szczytKm": 12,
+   "najdluzszy": 12,
+   "jakosciowe": 0,
+   "ostrzezenia": 4,
+   "gotowosc": "niewystarczajace_przygotowanie",
+   "etykietaGotowosci": "niewystarczajace_przygotowanie",
+   "problemy": {},
+   "brakiDoDystansu": [
+    "biegi/tydz. 1<2",
+    "szczyt km 12<20"
+   ],
+   "ocena": 7,
+   "powodyOceny": [
+    "brak dopasowania do dystansu: biegi/tydz. 1<2; szczyt km 12<20 (-2)",
+    "sufit oceny 7 (plan nie przygotowuje do dystansu)"
+   ],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "10k",
+   "zadeklarowane": 2,
+   "rzeczywiste": 2,
+   "szczytKm": 26,
+   "najdluzszy": 14,
+   "jakosciowe": 12,
+   "ostrzezenia": 5,
+   "gotowosc": "przygotowanie_czesciowe",
+   "etykietaGotowosci": "przygotowanie_czesciowe",
+   "problemy": {},
+   "brakiDoDystansu": [],
+   "ocena": 10,
+   "powodyOceny": [],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "10k",
+   "zadeklarowane": 3,
+   "rzeczywiste": 3,
+   "szczytKm": 36,
+   "najdluzszy": 14,
+   "jakosciowe": 13,
+   "ostrzezenia": 2,
+   "gotowosc": "odpowiednie_przygotowanie_do_wyniku",
+   "etykietaGotowosci": "przygotowanie_do_wyniku",
+   "problemy": {},
+   "brakiDoDystansu": [],
+   "ocena": 10,
+   "powodyOceny": [],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "10k",
+   "zadeklarowane": 4,
+   "rzeczywiste": 4,
+   "szczytKm": 39,
+   "najdluzszy": 14,
+   "jakosciowe": 13,
+   "ostrzezenia": 2,
+   "gotowosc": "odpowiednie_przygotowanie_do_wyniku",
+   "etykietaGotowosci": "przygotowanie_do_wyniku",
+   "problemy": {},
+   "brakiDoDystansu": [],
+   "ocena": 10,
+   "powodyOceny": [],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "10k",
+   "zadeklarowane": 5,
+   "rzeczywiste": 5,
+   "szczytKm": 47,
+   "najdluzszy": 14,
+   "jakosciowe": 16,
+   "ostrzezenia": 3,
+   "gotowosc": "odpowiednie_przygotowanie_do_wyniku",
+   "etykietaGotowosci": "przygotowanie_do_wyniku",
+   "problemy": {},
+   "brakiDoDystansu": [],
+   "ocena": 10,
+   "powodyOceny": [],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "10k",
+   "zadeklarowane": 6,
+   "rzeczywiste": 5,
+   "szczytKm": 47,
+   "najdluzszy": 14,
+   "jakosciowe": 16,
+   "ostrzezenia": 3,
+   "gotowosc": "odpowiednie_przygotowanie_do_wyniku",
+   "etykietaGotowosci": "przygotowanie_do_wyniku",
+   "problemy": {},
+   "brakiDoDystansu": [],
+   "ocena": 10,
+   "powodyOceny": [],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "10k",
+   "zadeklarowane": 7,
+   "rzeczywiste": 5,
+   "szczytKm": 47,
+   "najdluzszy": 14,
+   "jakosciowe": 16,
+   "ostrzezenia": 3,
+   "gotowosc": "odpowiednie_przygotowanie_do_wyniku",
+   "etykietaGotowosci": "przygotowanie_do_wyniku",
+   "problemy": {},
+   "brakiDoDystansu": [],
+   "ocena": 10,
+   "powodyOceny": [],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "half",
+   "zadeklarowane": 1,
+   "rzeczywiste": 1,
+   "szczytKm": 14,
+   "najdluzszy": 14,
+   "jakosciowe": 0,
+   "ostrzezenia": 4,
+   "gotowosc": "niewystarczajace_przygotowanie",
+   "etykietaGotowosci": "niewystarczajace_przygotowanie",
+   "problemy": {},
+   "brakiDoDystansu": [
+    "biegi/tydz. 1<3",
+    "szczyt km 14<28"
+   ],
+   "ocena": 7,
+   "powodyOceny": [
+    "brak dopasowania do dystansu: biegi/tydz. 1<3; szczyt km 14<28 (-2)",
+    "sufit oceny 7 (plan nie przygotowuje do dystansu)"
+   ],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "half",
+   "zadeklarowane": 2,
+   "rzeczywiste": 2,
+   "szczytKm": 29,
+   "najdluzszy": 17,
+   "jakosciowe": 12,
+   "ostrzezenia": 6,
+   "gotowosc": "przygotowanie_czesciowe",
+   "etykietaGotowosci": "przygotowanie_czesciowe",
+   "problemy": {},
+   "brakiDoDystansu": [
+    "biegi/tydz. 2<3"
+   ],
+   "ocena": 8.5,
+   "powodyOceny": [
+    "brak dopasowania do dystansu: biegi/tydz. 2<3 (-1)",
+    "sufit oceny 8.5 (plan nie przygotowuje do dystansu)"
+   ],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "half",
+   "zadeklarowane": 3,
+   "rzeczywiste": 3,
+   "szczytKm": 40,
+   "najdluzszy": 18,
+   "jakosciowe": 13,
+   "ostrzezenia": 3,
+   "gotowosc": "odpowiednie_przygotowanie_do_wyniku",
+   "etykietaGotowosci": "przygotowanie_do_wyniku",
+   "problemy": {},
+   "brakiDoDystansu": [],
+   "ocena": 10,
+   "powodyOceny": [],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "half",
+   "zadeklarowane": 4,
+   "rzeczywiste": 4,
+   "szczytKm": 43,
+   "najdluzszy": 18,
+   "jakosciowe": 13,
+   "ostrzezenia": 3,
+   "gotowosc": "odpowiednie_przygotowanie_do_wyniku",
+   "etykietaGotowosci": "przygotowanie_do_wyniku",
+   "problemy": {},
+   "brakiDoDystansu": [],
+   "ocena": 10,
+   "powodyOceny": [],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "half",
+   "zadeklarowane": 5,
+   "rzeczywiste": 5,
+   "szczytKm": 54,
+   "najdluzszy": 18,
+   "jakosciowe": 13,
+   "ostrzezenia": 4,
+   "gotowosc": "odpowiednie_przygotowanie_do_wyniku",
+   "etykietaGotowosci": "przygotowanie_do_wyniku",
+   "problemy": {},
+   "brakiDoDystansu": [],
+   "ocena": 10,
+   "powodyOceny": [],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "half",
+   "zadeklarowane": 6,
+   "rzeczywiste": 5,
+   "szczytKm": 54,
+   "najdluzszy": 18,
+   "jakosciowe": 13,
+   "ostrzezenia": 4,
+   "gotowosc": "odpowiednie_przygotowanie_do_wyniku",
+   "etykietaGotowosci": "przygotowanie_do_wyniku",
+   "problemy": {},
+   "brakiDoDystansu": [],
+   "ocena": 10,
+   "powodyOceny": [],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "half",
+   "zadeklarowane": 7,
+   "rzeczywiste": 5,
+   "szczytKm": 54,
+   "najdluzszy": 18,
+   "jakosciowe": 13,
+   "ostrzezenia": 4,
+   "gotowosc": "odpowiednie_przygotowanie_do_wyniku",
+   "etykietaGotowosci": "przygotowanie_do_wyniku",
+   "problemy": {},
+   "brakiDoDystansu": [],
+   "ocena": 10,
+   "powodyOceny": [],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "marathon",
+   "zadeklarowane": 1,
+   "rzeczywiste": 1,
+   "szczytKm": 16,
+   "najdluzszy": 16,
+   "jakosciowe": 0,
+   "ostrzezenia": 5,
+   "gotowosc": "niewystarczajace_przygotowanie",
+   "etykietaGotowosci": "niewystarczajace_przygotowanie",
+   "problemy": {},
+   "brakiDoDystansu": [
+    "biegi/tydz. 1<3",
+    "najdłuższy 16<28",
+    "szczyt km 16<42"
+   ],
+   "ocena": 5.5,
+   "powodyOceny": [
+    "brak dopasowania do dystansu: biegi/tydz. 1<3; najdłuższy 16<28; szczyt km 16<42 (-3)",
+    "sufit oceny 5.5 (plan nie przygotowuje do dystansu)"
+   ],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "marathon",
+   "zadeklarowane": 2,
+   "rzeczywiste": 2,
+   "szczytKm": 34,
+   "najdluzszy": 21,
+   "jakosciowe": 11,
+   "ostrzezenia": 6,
+   "gotowosc": "przygotowanie_czesciowe",
+   "etykietaGotowosci": "przygotowanie_czesciowe",
+   "problemy": {},
+   "brakiDoDystansu": [
+    "biegi/tydz. 2<3",
+    "najdłuższy 21<28",
+    "szczyt km 34<42"
+   ],
+   "ocena": 5.5,
+   "powodyOceny": [
+    "brak dopasowania do dystansu: biegi/tydz. 2<3; najdłuższy 21<28; szczyt km 34<42 (-3)",
+    "sufit oceny 5.5 (plan nie przygotowuje do dystansu)"
+   ],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "marathon",
+   "zadeklarowane": 3,
+   "rzeczywiste": 3,
+   "szczytKm": 45,
+   "najdluzszy": 22,
+   "jakosciowe": 13,
+   "ostrzezenia": 5,
+   "gotowosc": "przygotowanie_czesciowe",
+   "etykietaGotowosci": "przygotowanie_czesciowe",
+   "problemy": {},
+   "brakiDoDystansu": [
+    "najdłuższy 22<28"
+   ],
+   "ocena": 8.5,
+   "powodyOceny": [
+    "brak dopasowania do dystansu: najdłuższy 22<28 (-1)",
+    "sufit oceny 8.5 (plan nie przygotowuje do dystansu)"
+   ],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "marathon",
+   "zadeklarowane": 4,
+   "rzeczywiste": 4,
+   "szczytKm": 51,
+   "najdluzszy": 23,
+   "jakosciowe": 13,
+   "ostrzezenia": 5,
+   "gotowosc": "przygotowanie_czesciowe",
+   "etykietaGotowosci": "przygotowanie_czesciowe",
+   "problemy": {},
+   "brakiDoDystansu": [
+    "najdłuższy 23<28"
+   ],
+   "ocena": 8.5,
+   "powodyOceny": [
+    "brak dopasowania do dystansu: najdłuższy 23<28 (-1)",
+    "sufit oceny 8.5 (plan nie przygotowuje do dystansu)"
+   ],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "marathon",
+   "zadeklarowane": 5,
+   "rzeczywiste": 5,
+   "szczytKm": 67,
+   "najdluzszy": 27,
+   "jakosciowe": 13,
+   "ostrzezenia": 6,
+   "gotowosc": "przygotowanie_czesciowe",
+   "etykietaGotowosci": "przygotowanie_czesciowe",
+   "problemy": {},
+   "brakiDoDystansu": [],
+   "ocena": 10,
+   "powodyOceny": [],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "marathon",
+   "zadeklarowane": 6,
+   "rzeczywiste": 5,
+   "szczytKm": 67,
+   "najdluzszy": 27,
+   "jakosciowe": 13,
+   "ostrzezenia": 6,
+   "gotowosc": "przygotowanie_czesciowe",
+   "etykietaGotowosci": "przygotowanie_czesciowe",
+   "problemy": {},
+   "brakiDoDystansu": [],
+   "ocena": 10,
+   "powodyOceny": [],
+   "krytyczne": 0
+  },
+  {
+   "dystans": "marathon",
+   "zadeklarowane": 7,
+   "rzeczywiste": 5,
+   "szczytKm": 67,
+   "najdluzszy": 27,
+   "jakosciowe": 13,
+   "ostrzezenia": 6,
+   "gotowosc": "przygotowanie_czesciowe",
+   "etykietaGotowosci": "przygotowanie_czesciowe",
+   "problemy": {},
+   "brakiDoDystansu": [],
+   "ocena": 10,
+   "powodyOceny": [],
+   "krytyczne": 0
+  }
+ ],
+ "srednie": {
+  "dystans": {
+   "5k": 9.57,
+   "10k": 9.57,
+   "half": 9.36,
+   "marathon": 8.29
+  },
+  "czestotliwosc": {
+   "1": 6.63,
+   "2": 8.5,
+   "3": 9.63,
+   "4": 9.63,
+   "5": 10,
+   "6": 10,
+   "7": 10
+  },
+  "ogolnie": 9.2
+ },
+ "wszystkieTesty": [
+  {
+   "opis": "5k/1d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "5k/2d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "5k/3d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "5k/4d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "5k/5d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "5k/6d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "5k/7d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "10k/1d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "10k/2d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "10k/3d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "10k/4d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "10k/5d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "10k/6d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "10k/7d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "half/1d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "half/2d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "half/3d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "half/4d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "half/5d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "half/6d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "half/7d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "marathon/1d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "marathon/2d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "marathon/3d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "marathon/4d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "marathon/5d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "marathon/6d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "marathon/7d: plan wygenerowany",
+   "ok": true
+  },
+  {
+   "opis": "wygenerowano dokładnie 28 planów",
+   "ok": true
+  },
+  {
+   "opis": "żaden z 28 planów nie ma krytycznego naruszenia",
+   "ok": true
+  },
+  {
+   "opis": "rzeczywista liczba treningów nie przekracza deklarowanej",
+   "ok": true
+  }
+ ]
+}
