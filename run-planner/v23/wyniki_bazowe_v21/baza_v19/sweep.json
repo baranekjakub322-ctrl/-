@@ -1,0 +1,524 @@
+{
+ "generator": "planGenerator_v19.js",
+ "nazwa": "sweep",
+ "zaliczone": 20,
+ "niezaliczone": 1,
+ "bledy": [
+  {
+   "opis": "brak krytycznych naruszeń niezależnych niezmienników (272 planów z krytycznym, 272 naruszeń)",
+   "szczegoly": "[{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",1,40,16,9,2,\\\"2026-11-04\\\"]\",\"kod\":\"ZA_DLUGO_BEZ_ODCIAZENIA\",\"msg\":\"8 tygodni obciążenia pod rząd\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",1,40,16,9,2,\\\"2026-11-05\\\"]\",\"kod\":\"ZA_DLUGO_BEZ_ODCIAZENIA\",\"msg\":\"8 tygodni obciążenia pod rząd\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",1,40,16,9,2,\\\"2026-11-06\\\"]\",\"kod\":\"ZA_DLUGO_BEZ_ODCIAZENIA\",\"msg\":\"8 tygodni obciążenia pod rząd\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",1,40,16,9,2,\\\"2026-11-07\\\"]\",\"kod\":\"ZA_DLUGO_BEZ_ODCIAZENIA\",\"msg\":\"8 tygodni obciążenia pod rząd\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",1,40,16,9,2,\\\"2026-11-08\\\"]\",\"kod\":\"ZA_DLUGO_BEZ_ODCIAZENIA\",\"msg\":\"8 tygodni obciążenia pod rząd\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",1,40,16,14,3,\\\"2026-11-02\\\"]\",\"kod\":\"ZA_DLUGO_BEZ_ODCIAZENIA\",\"msg\":\"12 tygodni obciążenia pod rząd\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",1,40,16,14,3,\\\"2026-11-03\\\"]\",\"kod\":\"ZA_DLUGO_BEZ_ODCIAZENIA\",\"msg\":\"12 tygodni obciążenia pod rząd\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",1,40,16,14,3,\\\"2026-11-04\\\"]\",\"kod\":\"ZA_DLUGO_BEZ_ODCIAZENIA\",\"msg\":\"12 tygodni obciążenia pod rząd\"}]"
+  }
+ ],
+ "wynikiWgDystansu": {
+  "5k": {
+   "scenariuszy": 2352,
+   "ocenaOgolna": 7.73,
+   "bezpieczenstwo": 9.73,
+   "kategorie": {
+    "bezpieczenstwo": 9.73,
+    "harmonogram": 9.65,
+    "dopasowanieDoBiegacza": 10,
+    "progresja": 9.82,
+    "jakoscTreningow": 7.02,
+    "specyfikaDystansu": 9.56,
+    "regeneracja": 6.89
+   },
+   "naruszeniaKrytyczne": 102,
+   "ostrzezenia": 30877
+  },
+  "10k": {
+   "scenariuszy": 2352,
+   "ocenaOgolna": 7.6,
+   "bezpieczenstwo": 9.68,
+   "kategorie": {
+    "bezpieczenstwo": 9.68,
+    "harmonogram": 9.92,
+    "dopasowanieDoBiegacza": 10,
+    "progresja": 9.78,
+    "jakoscTreningow": 6.92,
+    "specyfikaDystansu": 9.27,
+    "regeneracja": 6.76
+   },
+   "naruszeniaKrytyczne": 123,
+   "ostrzezenia": 31585
+  },
+  "half": {
+   "scenariuszy": 2352,
+   "ocenaOgolna": 7.53,
+   "bezpieczenstwo": 9.82,
+   "kategorie": {
+    "bezpieczenstwo": 9.82,
+    "harmonogram": 9.88,
+    "dopasowanieDoBiegacza": 10,
+    "progresja": 9.96,
+    "jakoscTreningow": 7,
+    "specyfikaDystansu": 8.3,
+    "regeneracja": 6.98
+   },
+   "naruszeniaKrytyczne": 21,
+   "ostrzezenia": 31048
+  },
+  "marathon": {
+   "scenariuszy": 2352,
+   "ocenaOgolna": 7.24,
+   "bezpieczenstwo": 9.92,
+   "kategorie": {
+    "bezpieczenstwo": 9.92,
+    "harmonogram": 9.87,
+    "dopasowanieDoBiegacza": 10,
+    "progresja": 9.97,
+    "jakoscTreningow": 6.98,
+    "specyfikaDystansu": 7.48,
+    "regeneracja": 7.1
+   },
+   "naruszeniaKrytyczne": 26,
+   "ostrzezenia": 29599
+  }
+ },
+ "wynikiWgCzestotliwosci": {
+  "1": {
+   "scenariuszy": 1344,
+   "ocenaOgolna": 7.8,
+   "bezpieczenstwo": 8.81,
+   "kategorie": {
+    "bezpieczenstwo": 8.81,
+    "harmonogram": 10,
+    "dopasowanieDoBiegacza": 10,
+    "progresja": 9.2,
+    "jakoscTreningow": 10,
+    "specyfikaDystansu": 6.34,
+    "regeneracja": 9.2
+   },
+   "naruszeniaKrytyczne": 260,
+   "ostrzezenia": 55
+  },
+  "2": {
+   "scenariuszy": 1344,
+   "ocenaOgolna": 9.14,
+   "bezpieczenstwo": 9.96,
+   "kategorie": {
+    "bezpieczenstwo": 9.96,
+    "harmonogram": 10,
+    "dopasowanieDoBiegacza": 10,
+    "progresja": 10,
+    "jakoscTreningow": 9.4,
+    "specyfikaDystansu": 8.35,
+    "regeneracja": 10
+   },
+   "naruszeniaKrytyczne": 0,
+   "ostrzezenia": 1808
+  },
+  "3": {
+   "scenariuszy": 1344,
+   "ocenaOgolna": 9.74,
+   "bezpieczenstwo": 9.93,
+   "kategorie": {
+    "bezpieczenstwo": 9.93,
+    "harmonogram": 10,
+    "dopasowanieDoBiegacza": 9.99,
+    "progresja": 9.99,
+    "jakoscTreningow": 9.9,
+    "specyfikaDystansu": 9.21,
+    "regeneracja": 10
+   },
+   "naruszeniaKrytyczne": 5,
+   "ostrzezenia": 403
+  },
+  "4": {
+   "scenariuszy": 1344,
+   "ocenaOgolna": 7.17,
+   "bezpieczenstwo": 9.95,
+   "kategorie": {
+    "bezpieczenstwo": 9.95,
+    "harmonogram": 9.91,
+    "dopasowanieDoBiegacza": 10,
+    "progresja": 10,
+    "jakoscTreningow": 5.46,
+    "specyfikaDystansu": 9.21,
+    "regeneracja": 5.45
+   },
+   "naruszeniaKrytyczne": 0,
+   "ostrzezenia": 18206
+  },
+  "5": {
+   "scenariuszy": 1344,
+   "ocenaOgolna": 6.26,
+   "bezpieczenstwo": 9.95,
+   "kategorie": {
+    "bezpieczenstwo": 9.95,
+    "harmonogram": 9.65,
+    "dopasowanieDoBiegacza": 10,
+    "progresja": 10,
+    "jakoscTreningow": 4.66,
+    "specyfikaDystansu": 9.19,
+    "regeneracja": 4.57
+   },
+   "naruszeniaKrytyczne": 0,
+   "ostrzezenia": 33841
+  },
+  "6": {
+   "scenariuszy": 1344,
+   "ocenaOgolna": 6.3,
+   "bezpieczenstwo": 9.96,
+   "kategorie": {
+    "bezpieczenstwo": 9.96,
+    "harmonogram": 9.62,
+    "dopasowanieDoBiegacza": 10,
+    "progresja": 10,
+    "jakoscTreningow": 4.74,
+    "specyfikaDystansu": 9.14,
+    "regeneracja": 4.66
+   },
+   "naruszeniaKrytyczne": 0,
+   "ostrzezenia": 34424
+  },
+  "7": {
+   "scenariuszy": 1344,
+   "ocenaOgolna": 6.26,
+   "bezpieczenstwo": 9.95,
+   "kategorie": {
+    "bezpieczenstwo": 9.95,
+    "harmonogram": 9.62,
+    "dopasowanieDoBiegacza": 10,
+    "progresja": 10,
+    "jakoscTreningow": 4.7,
+    "specyfikaDystansu": 9.13,
+    "regeneracja": 4.64
+   },
+   "naruszeniaKrytyczne": 7,
+   "ostrzezenia": 34372
+  }
+ },
+ "generatorPlik": "/workspace/runplanner/RunPlanner_Codex_V21_do_V22/projekt/v21/baza/planGenerator_v19.js",
+ "deklarowanaLiczbaScenariuszy": 9408,
+ "wykonane": 9408,
+ "unikalne": 9408,
+ "planyZKrytycznymNaruszeniem": 272,
+ "krytyczneNaruszenia": 272,
+ "ostrzezeniaMiernika": 123109,
+ "slepePlamkiAudytuWewnetrznego": 253,
+ "kodyProblemow": {
+  "ZA_DLUGO_BEZ_ODCIAZENIA:ostrzezenie": 55,
+  "ZA_DLUGO_BEZ_ODCIAZENIA:krytyczny": 260,
+  "REGENERACJA_BEZ_MOCNEGO:ostrzezenie": 54705,
+  "DLUGA_PRZERWA:ostrzezenie": 1392,
+  "BIEG_ZA_KROTKI:ostrzezenie": 1188,
+  "REGENERACJA_POZIOM:ostrzezenie": 46428,
+  "REGENERACJA_ZA_DLUGA:ostrzezenie": 16473,
+  "UDZIAL_DLUGIEGO:ostrzezenie": 2335,
+  "DLUGI_ZA_BLISKO_STARTU:ostrzezenie": 504,
+  "TAPER_PLYTKI:ostrzezenie": 6,
+  "WZROST_KM:ostrzezenie": 23,
+  "DLUGI_ZA_BLISKO_STARTU:krytyczny": 12
+ },
+ "przykladyKrytycznych": [
+  {
+   "key": "[\"beginner\",\"5k\",1,40,16,9,2,\"2026-11-04\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "8 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,40,16,9,2,\"2026-11-05\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "8 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,40,16,9,2,\"2026-11-06\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "8 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,40,16,9,2,\"2026-11-07\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "8 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,40,16,9,2,\"2026-11-08\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "8 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,40,16,14,3,\"2026-11-02\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "12 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,40,16,14,3,\"2026-11-03\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "12 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,40,16,14,3,\"2026-11-04\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "12 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,40,16,14,3,\"2026-11-05\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "13 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,40,16,14,3,\"2026-11-06\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "13 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,40,16,14,3,\"2026-11-07\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "13 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,40,16,14,3,\"2026-11-08\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "13 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,40,16,22,4,\"2026-11-02\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "20 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,40,16,22,4,\"2026-11-03\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "20 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,40,16,22,4,\"2026-11-04\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "20 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,40,16,22,4,\"2026-11-05\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "20 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,40,16,22,4,\"2026-11-06\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "21 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,40,16,22,4,\"2026-11-07\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "21 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,40,16,22,4,\"2026-11-08\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "21 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,65,26,9,6,\"2026-11-08\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "8 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,65,26,14,0,\"2026-11-02\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "12 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,65,26,14,0,\"2026-11-03\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "12 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,65,26,14,0,\"2026-11-04\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "12 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,65,26,14,0,\"2026-11-05\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "12 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,65,26,14,0,\"2026-11-06\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "12 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,65,26,14,0,\"2026-11-07\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "12 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,65,26,14,0,\"2026-11-08\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "12 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,65,26,22,1,\"2026-11-02\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "20 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,65,26,22,1,\"2026-11-03\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "21 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,65,26,22,1,\"2026-11-04\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "21 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,65,26,22,1,\"2026-11-05\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "21 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,65,26,22,1,\"2026-11-06\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "21 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,65,26,22,1,\"2026-11-07\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "21 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",1,65,26,22,1,\"2026-11-08\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "21 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"10k\",1,20,8,22,0,\"2026-11-02\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "8 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"10k\",1,20,8,22,0,\"2026-11-03\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "8 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"10k\",1,20,8,22,0,\"2026-11-04\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "8 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"10k\",1,20,8,22,0,\"2026-11-05\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "8 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"10k\",1,20,8,22,0,\"2026-11-06\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "8 tygodni obciążenia pod rząd"
+  },
+  {
+   "key": "[\"beginner\",\"10k\",1,20,8,22,0,\"2026-11-07\"]",
+   "kod": "ZA_DLUGO_BEZ_ODCIAZENIA",
+   "msg": "8 tygodni obciążenia pod rząd"
+  }
+ ],
+ "pokrycie": {
+  "todayDow": {
+   "0": 1344,
+   "1": 1344,
+   "2": 1344,
+   "3": 1344,
+   "4": 1344,
+   "5": 1344,
+   "6": 1344
+  },
+  "raceDow": {
+   "0": 1344,
+   "1": 1344,
+   "2": 1344,
+   "3": 1344,
+   "4": 1344,
+   "5": 1344,
+   "6": 1344
+  }
+ },
+ "skrotWynikow": "3941590673c381d00f90cab72e6456f76bc6b35387bf4e98f641bc61d6947d7b",
+ "wszystkieTesty": [
+  {
+   "opis": "liczba wykonanych scenariuszy (9408) == deklarowana (9408)",
+   "ok": true
+  },
+  {
+   "opis": "unikalnych scenariuszy 9408 == deklarowana 9408",
+   "ok": true
+  },
+  {
+   "opis": "wszystkie 7 dni tygodnia jako dzień startu planu",
+   "ok": true
+  },
+  {
+   "opis": "wszystkie 7 dni tygodnia jako dzień zawodów",
+   "ok": true
+  },
+  {
+   "opis": "pokryte wszystkie 49 par (dzień startu planu, dzień zawodów)",
+   "ok": true
+  },
+  {
+   "opis": "komórka 5k/beginner: 7 dni startu planu i 7 dni zawodów",
+   "ok": true
+  },
+  {
+   "opis": "komórka 10k/beginner: 7 dni startu planu i 7 dni zawodów",
+   "ok": true
+  },
+  {
+   "opis": "komórka half/beginner: 7 dni startu planu i 7 dni zawodów",
+   "ok": true
+  },
+  {
+   "opis": "komórka marathon/beginner: 7 dni startu planu i 7 dni zawodów",
+   "ok": true
+  },
+  {
+   "opis": "komórka 5k/intermediate: 7 dni startu planu i 7 dni zawodów",
+   "ok": true
+  },
+  {
+   "opis": "komórka 10k/intermediate: 7 dni startu planu i 7 dni zawodów",
+   "ok": true
+  },
+  {
+   "opis": "komórka half/intermediate: 7 dni startu planu i 7 dni zawodów",
+   "ok": true
+  },
+  {
+   "opis": "komórka marathon/intermediate: 7 dni startu planu i 7 dni zawodów",
+   "ok": true
+  },
+  {
+   "opis": "komórka 5k/advanced: 7 dni startu planu i 7 dni zawodów",
+   "ok": true
+  },
+  {
+   "opis": "komórka 10k/advanced: 7 dni startu planu i 7 dni zawodów",
+   "ok": true
+  },
+  {
+   "opis": "komórka half/advanced: 7 dni startu planu i 7 dni zawodów",
+   "ok": true
+  },
+  {
+   "opis": "komórka marathon/advanced: 7 dni startu planu i 7 dni zawodów",
+   "ok": true
+  },
+  {
+   "opis": "brak wyjątków",
+   "ok": true
+  },
+  {
+   "opis": "brak planów ok:false dla poprawnych danych",
+   "ok": true
+  },
+  {
+   "opis": "brak krytycznych naruszeń niezależnych niezmienników (272 planów z krytycznym, 272 naruszeń)",
+   "ok": false,
+   "szczegoly": "[{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",1,40,16,9,2,\\\"2026-11-04\\\"]\",\"kod\":\"ZA_DLUGO_BEZ_ODCIAZENIA\",\"msg\":\"8 tygodni obciążenia pod rząd\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",1,40,16,9,2,\\\"2026-11-05\\\"]\",\"kod\":\"ZA_DLUGO_BEZ_ODCIAZENIA\",\"msg\":\"8 tygodni obciążenia pod rząd\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",1,40,16,9,2,\\\"2026-11-06\\\"]\",\"kod\":\"ZA_DLUGO_BEZ_ODCIAZENIA\",\"msg\":\"8 tygodni obciążenia pod rząd\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",1,40,16,9,2,\\\"2026-11-07\\\"]\",\"kod\":\"ZA_DLUGO_BEZ_ODCIAZENIA\",\"msg\":\"8 tygodni obciążenia pod rząd\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",1,40,16,9,2,\\\"2026-11-08\\\"]\",\"kod\":\"ZA_DLUGO_BEZ_ODCIAZENIA\",\"msg\":\"8 tygodni obciążenia pod rząd\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",1,40,16,14,3,\\\"2026-11-02\\\"]\",\"kod\":\"ZA_DLUGO_BEZ_ODCIAZENIA\",\"msg\":\"12 tygodni obciążenia pod rząd\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",1,40,16,14,3,\\\"2026-11-03\\\"]\",\"kod\":\"ZA_DLUGO_BEZ_ODCIAZENIA\",\"msg\":\"12 tygodni obciążenia pod rząd\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",1,40,16,14,3,\\\"2026-11-04\\\"]\",\"kod\":\"ZA_DLUGO_BEZ_ODCIAZENIA\",\"msg\":\"12 tygodni obciążenia pod rząd\"}]"
+  },
+  {
+   "opis": "powtarzalność: dwukrotne uruchomienie 120 scenariuszy daje identyczne wyniki",
+   "ok": true
+  }
+ ]
+}

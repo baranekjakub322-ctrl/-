@@ -1,0 +1,1 @@
+{"name":"run-planner","version":"23.0.0","type":"module","private":true,"engines":{"node":">=18"},"scripts":{"test":"bash uruchom_wszystko.sh","test:v23":"node testy/v23.mjs","benchmark":"node testy/kalibracja_v23.mjs","compare":"node testy/porownanie_v22_v23.mjs","report":"node testy/raporty_v23.mjs"}}

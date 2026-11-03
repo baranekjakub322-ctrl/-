@@ -1,0 +1,1154 @@
+[
+  {
+    "input": {
+      "today": "2026-11-07",
+      "age": 35,
+      "level": "beginner",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 3,
+      "currentWeeklyKm": 40,
+      "longestRecentRun": 16,
+      "goal": {
+        "type": "half",
+        "raceDate": "2026-12-18"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "problems": [
+      {
+        "kod": "TAPER_PLYTKI",
+        "ciezar": "ostrzezenie",
+        "msg": "przedostatni tydzień 20 km vs szczyt 20 km"
+      }
+    ],
+    "lastWeeks": [
+      [
+        "2026-11-23",
+        "budowanie",
+        20,
+        3,
+        9
+      ],
+      [
+        "2026-11-30",
+        "szczyt",
+        22,
+        3,
+        10
+      ],
+      [
+        "2026-12-07",
+        "zwolnienie",
+        20,
+        3,
+        0
+      ],
+      [
+        "2026-12-14",
+        "zwolnienie",
+        26.1,
+        2,
+        0
+      ]
+    ]
+  },
+  {
+    "input": {
+      "today": "2026-11-08",
+      "age": 35,
+      "level": "beginner",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 3,
+      "currentWeeklyKm": 40,
+      "longestRecentRun": 16,
+      "goal": {
+        "type": "half",
+        "raceDate": "2026-12-18"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "problems": [
+      {
+        "kod": "TAPER_PLYTKI",
+        "ciezar": "ostrzezenie",
+        "msg": "przedostatni tydzień 20 km vs szczyt 20 km"
+      }
+    ],
+    "lastWeeks": [
+      [
+        "2026-11-23",
+        "budowanie",
+        20,
+        3,
+        9
+      ],
+      [
+        "2026-11-30",
+        "szczyt",
+        22,
+        3,
+        10
+      ],
+      [
+        "2026-12-07",
+        "zwolnienie",
+        20,
+        3,
+        0
+      ],
+      [
+        "2026-12-14",
+        "zwolnienie",
+        26.1,
+        2,
+        0
+      ]
+    ]
+  },
+  {
+    "input": {
+      "today": "2026-11-07",
+      "age": 35,
+      "level": "beginner",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 3,
+      "currentWeeklyKm": 40,
+      "longestRecentRun": 16,
+      "goal": {
+        "type": "half",
+        "raceDate": "2027-01-09"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "problems": [
+      {
+        "kod": "TAPER_PLYTKI",
+        "ciezar": "ostrzezenie",
+        "msg": "przedostatni tydzień 23 km vs szczyt 23 km"
+      }
+    ],
+    "lastWeeks": [
+      [
+        "2026-12-14",
+        "szczyt",
+        23,
+        3,
+        10
+      ],
+      [
+        "2026-12-21",
+        "szczyt",
+        25,
+        3,
+        11
+      ],
+      [
+        "2026-12-28",
+        "zwolnienie",
+        23,
+        3,
+        0
+      ],
+      [
+        "2027-01-04",
+        "zwolnienie",
+        29.1,
+        3,
+        0
+      ]
+    ]
+  },
+  {
+    "input": {
+      "today": "2026-11-07",
+      "age": 35,
+      "level": "beginner",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 3,
+      "currentWeeklyKm": 40,
+      "longestRecentRun": 16,
+      "goal": {
+        "type": "half",
+        "raceDate": "2027-02-14"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "problems": [
+      {
+        "kod": "TAPER_PLYTKI",
+        "ciezar": "ostrzezenie",
+        "msg": "przedostatni tydzień 30 km vs szczyt 31 km"
+      }
+    ],
+    "lastWeeks": [
+      [
+        "2027-01-18",
+        "szczyt",
+        31,
+        3,
+        14
+      ],
+      [
+        "2027-01-25",
+        "szczyt",
+        33,
+        3,
+        15
+      ],
+      [
+        "2027-02-01",
+        "zwolnienie",
+        30,
+        3,
+        12
+      ],
+      [
+        "2027-02-08",
+        "zwolnienie",
+        31.1,
+        3,
+        0
+      ]
+    ]
+  },
+  {
+    "input": {
+      "today": "2026-11-08",
+      "age": 35,
+      "level": "beginner",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 3,
+      "currentWeeklyKm": 40,
+      "longestRecentRun": 16,
+      "goal": {
+        "type": "half",
+        "raceDate": "2027-02-14"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "problems": [
+      {
+        "kod": "TAPER_PLYTKI",
+        "ciezar": "ostrzezenie",
+        "msg": "przedostatni tydzień 30 km vs szczyt 31 km"
+      }
+    ],
+    "lastWeeks": [
+      [
+        "2027-01-18",
+        "szczyt",
+        31,
+        3,
+        14
+      ],
+      [
+        "2027-01-25",
+        "szczyt",
+        33,
+        3,
+        15
+      ],
+      [
+        "2027-02-01",
+        "zwolnienie",
+        30,
+        3,
+        12
+      ],
+      [
+        "2027-02-08",
+        "zwolnienie",
+        31.1,
+        3,
+        0
+      ]
+    ]
+  },
+  {
+    "input": {
+      "today": "2026-11-07",
+      "age": 35,
+      "level": "beginner",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 3,
+      "currentWeeklyKm": 40,
+      "longestRecentRun": 16,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2026-12-18"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "problems": [
+      {
+        "kod": "TAPER_PLYTKI",
+        "ciezar": "ostrzezenie",
+        "msg": "przedostatni tydzień 19 km vs szczyt 20 km"
+      }
+    ],
+    "lastWeeks": [
+      [
+        "2026-11-23",
+        "budowanie",
+        20,
+        3,
+        10
+      ],
+      [
+        "2026-11-30",
+        "szczyt",
+        21,
+        3,
+        10
+      ],
+      [
+        "2026-12-07",
+        "zwolnienie",
+        19,
+        3,
+        0
+      ],
+      [
+        "2026-12-14",
+        "zwolnienie",
+        48.2,
+        2,
+        0
+      ]
+    ]
+  },
+  {
+    "input": {
+      "today": "2026-11-08",
+      "age": 35,
+      "level": "beginner",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 3,
+      "currentWeeklyKm": 40,
+      "longestRecentRun": 16,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2026-12-18"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "problems": [
+      {
+        "kod": "TAPER_PLYTKI",
+        "ciezar": "ostrzezenie",
+        "msg": "przedostatni tydzień 19 km vs szczyt 20 km"
+      }
+    ],
+    "lastWeeks": [
+      [
+        "2026-11-23",
+        "budowanie",
+        20,
+        3,
+        10
+      ],
+      [
+        "2026-11-30",
+        "szczyt",
+        21,
+        3,
+        10
+      ],
+      [
+        "2026-12-07",
+        "zwolnienie",
+        19,
+        3,
+        0
+      ],
+      [
+        "2026-12-14",
+        "zwolnienie",
+        48.2,
+        2,
+        0
+      ]
+    ]
+  },
+  {
+    "input": {
+      "today": "2026-11-07",
+      "age": 35,
+      "level": "intermediate",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 3,
+      "currentWeeklyKm": 40,
+      "longestRecentRun": 16,
+      "goal": {
+        "type": "half",
+        "raceDate": "2026-12-18"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "problems": [
+      {
+        "kod": "TAPER_PLYTKI",
+        "ciezar": "ostrzezenie",
+        "msg": "przedostatni tydzień 20 km vs szczyt 20 km"
+      }
+    ],
+    "lastWeeks": [
+      [
+        "2026-11-23",
+        "budowanie",
+        20,
+        3,
+        9
+      ],
+      [
+        "2026-11-30",
+        "szczyt",
+        22,
+        3,
+        10
+      ],
+      [
+        "2026-12-07",
+        "zwolnienie",
+        20,
+        3,
+        0
+      ],
+      [
+        "2026-12-14",
+        "zwolnienie",
+        26.1,
+        2,
+        0
+      ]
+    ]
+  },
+  {
+    "input": {
+      "today": "2026-11-08",
+      "age": 35,
+      "level": "intermediate",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 3,
+      "currentWeeklyKm": 40,
+      "longestRecentRun": 16,
+      "goal": {
+        "type": "half",
+        "raceDate": "2026-12-18"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "problems": [
+      {
+        "kod": "TAPER_PLYTKI",
+        "ciezar": "ostrzezenie",
+        "msg": "przedostatni tydzień 20 km vs szczyt 20 km"
+      }
+    ],
+    "lastWeeks": [
+      [
+        "2026-11-23",
+        "budowanie",
+        20,
+        3,
+        9
+      ],
+      [
+        "2026-11-30",
+        "szczyt",
+        22,
+        3,
+        10
+      ],
+      [
+        "2026-12-07",
+        "zwolnienie",
+        20,
+        3,
+        0
+      ],
+      [
+        "2026-12-14",
+        "zwolnienie",
+        26.1,
+        2,
+        0
+      ]
+    ]
+  },
+  {
+    "input": {
+      "today": "2026-11-07",
+      "age": 35,
+      "level": "intermediate",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 3,
+      "currentWeeklyKm": 40,
+      "longestRecentRun": 16,
+      "goal": {
+        "type": "half",
+        "raceDate": "2027-01-09"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "problems": [
+      {
+        "kod": "TAPER_PLYTKI",
+        "ciezar": "ostrzezenie",
+        "msg": "przedostatni tydzień 23 km vs szczyt 23 km"
+      }
+    ],
+    "lastWeeks": [
+      [
+        "2026-12-14",
+        "szczyt",
+        23,
+        3,
+        10
+      ],
+      [
+        "2026-12-21",
+        "szczyt",
+        25,
+        3,
+        11
+      ],
+      [
+        "2026-12-28",
+        "zwolnienie",
+        23,
+        3,
+        0
+      ],
+      [
+        "2027-01-04",
+        "zwolnienie",
+        29.1,
+        3,
+        0
+      ]
+    ]
+  },
+  {
+    "input": {
+      "today": "2026-11-07",
+      "age": 35,
+      "level": "intermediate",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 3,
+      "currentWeeklyKm": 40,
+      "longestRecentRun": 16,
+      "goal": {
+        "type": "half",
+        "raceDate": "2027-02-14"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "problems": [
+      {
+        "kod": "TAPER_PLYTKI",
+        "ciezar": "ostrzezenie",
+        "msg": "przedostatni tydzień 30 km vs szczyt 31 km"
+      }
+    ],
+    "lastWeeks": [
+      [
+        "2027-01-18",
+        "szczyt",
+        31,
+        3,
+        14
+      ],
+      [
+        "2027-01-25",
+        "szczyt",
+        33,
+        3,
+        15
+      ],
+      [
+        "2027-02-01",
+        "zwolnienie",
+        30,
+        3,
+        12
+      ],
+      [
+        "2027-02-08",
+        "zwolnienie",
+        31.1,
+        3,
+        0
+      ]
+    ]
+  },
+  {
+    "input": {
+      "today": "2026-11-08",
+      "age": 35,
+      "level": "intermediate",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 3,
+      "currentWeeklyKm": 40,
+      "longestRecentRun": 16,
+      "goal": {
+        "type": "half",
+        "raceDate": "2027-02-14"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "problems": [
+      {
+        "kod": "TAPER_PLYTKI",
+        "ciezar": "ostrzezenie",
+        "msg": "przedostatni tydzień 30 km vs szczyt 31 km"
+      }
+    ],
+    "lastWeeks": [
+      [
+        "2027-01-18",
+        "szczyt",
+        31,
+        3,
+        14
+      ],
+      [
+        "2027-01-25",
+        "szczyt",
+        33,
+        3,
+        15
+      ],
+      [
+        "2027-02-01",
+        "zwolnienie",
+        30,
+        3,
+        12
+      ],
+      [
+        "2027-02-08",
+        "zwolnienie",
+        31.1,
+        3,
+        0
+      ]
+    ]
+  },
+  {
+    "input": {
+      "today": "2026-11-07",
+      "age": 35,
+      "level": "intermediate",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 3,
+      "currentWeeklyKm": 40,
+      "longestRecentRun": 16,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2026-12-18"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "problems": [
+      {
+        "kod": "TAPER_PLYTKI",
+        "ciezar": "ostrzezenie",
+        "msg": "przedostatni tydzień 19 km vs szczyt 20 km"
+      }
+    ],
+    "lastWeeks": [
+      [
+        "2026-11-23",
+        "budowanie",
+        20,
+        3,
+        10
+      ],
+      [
+        "2026-11-30",
+        "szczyt",
+        21,
+        3,
+        10
+      ],
+      [
+        "2026-12-07",
+        "zwolnienie",
+        19,
+        3,
+        0
+      ],
+      [
+        "2026-12-14",
+        "zwolnienie",
+        48.2,
+        2,
+        0
+      ]
+    ]
+  },
+  {
+    "input": {
+      "today": "2026-11-08",
+      "age": 35,
+      "level": "intermediate",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 3,
+      "currentWeeklyKm": 40,
+      "longestRecentRun": 16,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2026-12-18"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "problems": [
+      {
+        "kod": "TAPER_PLYTKI",
+        "ciezar": "ostrzezenie",
+        "msg": "przedostatni tydzień 19 km vs szczyt 20 km"
+      }
+    ],
+    "lastWeeks": [
+      [
+        "2026-11-23",
+        "budowanie",
+        20,
+        3,
+        10
+      ],
+      [
+        "2026-11-30",
+        "szczyt",
+        21,
+        3,
+        10
+      ],
+      [
+        "2026-12-07",
+        "zwolnienie",
+        19,
+        3,
+        0
+      ],
+      [
+        "2026-12-14",
+        "zwolnienie",
+        48.2,
+        2,
+        0
+      ]
+    ]
+  },
+  {
+    "input": {
+      "today": "2026-11-07",
+      "age": 35,
+      "level": "advanced",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 3,
+      "currentWeeklyKm": 40,
+      "longestRecentRun": 16,
+      "goal": {
+        "type": "half",
+        "raceDate": "2026-12-18"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "problems": [
+      {
+        "kod": "TAPER_PLYTKI",
+        "ciezar": "ostrzezenie",
+        "msg": "przedostatni tydzień 23 km vs szczyt 23 km"
+      }
+    ],
+    "lastWeeks": [
+      [
+        "2026-11-23",
+        "budowanie",
+        23,
+        3,
+        10
+      ],
+      [
+        "2026-11-30",
+        "szczyt",
+        25,
+        3,
+        11
+      ],
+      [
+        "2026-12-07",
+        "zwolnienie",
+        23,
+        3,
+        0
+      ],
+      [
+        "2026-12-14",
+        "zwolnienie",
+        26.1,
+        2,
+        0
+      ]
+    ]
+  },
+  {
+    "input": {
+      "today": "2026-11-08",
+      "age": 35,
+      "level": "advanced",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 3,
+      "currentWeeklyKm": 40,
+      "longestRecentRun": 16,
+      "goal": {
+        "type": "half",
+        "raceDate": "2026-12-18"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "problems": [
+      {
+        "kod": "TAPER_PLYTKI",
+        "ciezar": "ostrzezenie",
+        "msg": "przedostatni tydzień 23 km vs szczyt 23 km"
+      }
+    ],
+    "lastWeeks": [
+      [
+        "2026-11-23",
+        "budowanie",
+        23,
+        3,
+        10
+      ],
+      [
+        "2026-11-30",
+        "szczyt",
+        25,
+        3,
+        11
+      ],
+      [
+        "2026-12-07",
+        "zwolnienie",
+        23,
+        3,
+        0
+      ],
+      [
+        "2026-12-14",
+        "zwolnienie",
+        26.1,
+        2,
+        0
+      ]
+    ]
+  },
+  {
+    "input": {
+      "today": "2026-11-07",
+      "age": 35,
+      "level": "advanced",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 3,
+      "currentWeeklyKm": 40,
+      "longestRecentRun": 16,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2026-12-18"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "problems": [
+      {
+        "kod": "TAPER_PLYTKI",
+        "ciezar": "ostrzezenie",
+        "msg": "przedostatni tydzień 23 km vs szczyt 23 km"
+      }
+    ],
+    "lastWeeks": [
+      [
+        "2026-11-23",
+        "budowanie",
+        23,
+        3,
+        11
+      ],
+      [
+        "2026-11-30",
+        "szczyt",
+        25,
+        3,
+        12
+      ],
+      [
+        "2026-12-07",
+        "zwolnienie",
+        23,
+        3,
+        0
+      ],
+      [
+        "2026-12-14",
+        "zwolnienie",
+        48.2,
+        2,
+        0
+      ]
+    ]
+  },
+  {
+    "input": {
+      "today": "2026-11-08",
+      "age": 35,
+      "level": "advanced",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 3,
+      "currentWeeklyKm": 40,
+      "longestRecentRun": 16,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2026-12-18"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "problems": [
+      {
+        "kod": "TAPER_PLYTKI",
+        "ciezar": "ostrzezenie",
+        "msg": "przedostatni tydzień 23 km vs szczyt 23 km"
+      }
+    ],
+    "lastWeeks": [
+      [
+        "2026-11-23",
+        "budowanie",
+        23,
+        3,
+        11
+      ],
+      [
+        "2026-11-30",
+        "szczyt",
+        25,
+        3,
+        12
+      ],
+      [
+        "2026-12-07",
+        "zwolnienie",
+        23,
+        3,
+        0
+      ],
+      [
+        "2026-12-14",
+        "zwolnienie",
+        48.2,
+        2,
+        0
+      ]
+    ]
+  }
+]
