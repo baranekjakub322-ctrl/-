@@ -1,0 +1,37 @@
+{
+  "target": "/workspace/-/run-planner/v25",
+  "passed": 0,
+  "failed": 6,
+  "tests": [
+    {
+      "name": "consecutive two-day calendar rotates development and endurance without adjacent hard sessions",
+      "ok": false,
+      "error": "The expression evaluated to a falsy value:\n\n  assert(p.treningi.some(t=>t.podtyp==='tempo'))\n"
+    },
+    {
+      "name": "zero-distance observation cannot provide an executed race result",
+      "ok": false,
+      "error": "The expression evaluated to a falsy value:\n\n  assert(!p.ok)\n"
+    },
+    {
+      "name": "impossible test split cannot enter adaptation evidence",
+      "ok": false,
+      "error": "The expression evaluated to a falsy value:\n\n  assert(!p.ok)\n"
+    },
+    {
+      "name": "a single long effort cannot bypass regularity in marathon stages",
+      "ok": false,
+      "error": "The expression evaluated to a falsy value:\n\n  assert(!p.readinessEvidence.gates.longRun.passed)\n"
+    },
+    {
+      "name": "quality exposures have explicit predecessor and warm/cool information",
+      "ok": false,
+      "error": "The expression evaluated to a falsy value:\n\n  assert(p.rejestrJakosci.every(x=>x.preparation&&x.predecessor!==undefined))\n"
+    },
+    {
+      "name": "independent safety invariants are exposed separately from score",
+      "ok": false,
+      "error": "The expression evaluated to a falsy value:\n\n  assert(p.safetyValidation)\n"
+    }
+  ]
+}

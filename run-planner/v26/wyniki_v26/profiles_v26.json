@@ -1,0 +1,5561 @@
+{
+  "count": 42,
+  "fullPlans": 41,
+  "internalReview": true,
+  "externalValidation": false,
+  "reviews": [
+    {
+      "name": "10k_3dni_analiza",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "currentWeeklyKm": 35,
+        "longestRecentRun": 14,
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3120
+        },
+        "goal": {
+          "type": "10k",
+          "targetTimeSec": 3214,
+          "raceDate": "2027-03-28"
+        },
+        "daysPerWeek": 3,
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "ok": true,
+      "score23": {
+        "v25": 9.456,
+        "v26": 9.456
+      },
+      "score25": {
+        "v25": 9.75,
+        "v26": 9.75
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 14 km, najdłuższa jednostka 93 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-11-11",
+          "type": "tempo",
+          "minutes": 13.458333333333334,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-11-18",
+          "type": "tempo",
+          "minutes": 18.841666666666665,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-02",
+          "type": "test",
+          "minutes": 18,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-09",
+          "type": "interwaly",
+          "minutes": 14.6,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-16",
+          "type": "tempo",
+          "minutes": 18.841666666666665,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2026-12-30",
+          "type": "tempo",
+          "minutes": 18.841666666666665,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-06",
+          "type": "interwaly",
+          "minutes": 15.573333333333334,
+          "decision": "stimulus_change"
+        },
+        {
+          "date": "2027-01-13",
+          "type": "test",
+          "minutes": 18,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-27",
+          "type": "tempo",
+          "minutes": 24.225,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-03",
+          "type": "interwaly",
+          "minutes": 15.573333333333334,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-02-10",
+          "type": "tempo_startowe",
+          "minutes": 16.049999999999997,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-02-24",
+          "type": "test",
+          "minutes": 18,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-03-03",
+          "type": "interwaly",
+          "minutes": 19.466666666666665,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-03-10",
+          "type": "tempo_startowe",
+          "minutes": 21.4,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-03-17",
+          "type": "tempo",
+          "minutes": 16.15,
+          "decision": "reduction"
+        }
+      ],
+      "specificity": "10k: 2 jednostek specyficznych; 6 progowych.",
+      "fit": "intermediate, 35 lat, 35 km, 3 deklarowanych dni; maksimum 3.",
+      "feasibility": {
+        "status": "plan_mozliwy",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-03-19",
+          "type": "latwy",
+          "km": 9,
+          "minutes": 59
+        },
+        {
+          "date": "2027-03-21",
+          "type": "dlugi",
+          "km": 11,
+          "minutes": 73
+        },
+        {
+          "date": "2027-03-24",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 26
+        },
+        {
+          "date": "2027-03-26",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 26
+        }
+      ]
+    },
+    {
+      "name": "5k_poczatkujacy",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "beginner",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 3,
+        "currentWeeklyKm": 6,
+        "longestRecentRun": 3,
+        "goal": {
+          "type": "5k",
+          "raceDate": "2027-02-28"
+        },
+        "experienceMonths": 2
+      },
+      "ok": true,
+      "score23": {
+        "v25": 8.544,
+        "v26": 8.544
+      },
+      "score25": {
+        "v25": 9.202,
+        "v26": 9.202
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 4 km, najdłuższa jednostka 60 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [],
+      "specificity": "5k: 0 jednostek specyficznych; 0 progowych.",
+      "fit": "beginner, 35 lat, 6 km, 3 deklarowanych dni; maksimum 3.",
+      "feasibility": {
+        "status": "plan_mozliwy",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-02-19",
+          "type": "latwy",
+          "km": 3,
+          "minutes": 26
+        },
+        {
+          "date": "2027-02-21",
+          "type": "dlugi",
+          "km": 3,
+          "minutes": 26
+        },
+        {
+          "date": "2027-02-24",
+          "type": "latwy",
+          "km": 3,
+          "minutes": 26
+        },
+        {
+          "date": "2027-02-26",
+          "type": "latwy",
+          "km": 3,
+          "minutes": 26
+        }
+      ]
+    },
+    {
+      "name": "5k_jeden",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 1,
+        "currentWeeklyKm": 12,
+        "longestRecentRun": 6,
+        "goal": {
+          "type": "5k",
+          "raceDate": "2027-02-28"
+        }
+      },
+      "ok": true,
+      "score23": {
+        "v25": 5.439,
+        "v26": 5.439
+      },
+      "score25": {
+        "v25": 8.657,
+        "v26": 8.657
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Niska częstotliwość ogranicza skuteczność; nie jest to wada samej poprawnej alokacji."
+      ],
+      "overloadRisk": "Najdłuższy bieg 0 km, najdłuższa jednostka 47 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [],
+      "specificity": "5k: 0 jednostek specyficznych; 0 progowych.",
+      "fit": "intermediate, 35 lat, 12 km, 1 deklarowanych dni; maksimum 1.",
+      "feasibility": {
+        "status": "ograniczona_skutecznosc",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-01-31",
+          "type": "latwy",
+          "km": 7,
+          "minutes": 47
+        },
+        {
+          "date": "2027-02-07",
+          "type": "latwy",
+          "km": 7,
+          "minutes": 47
+        },
+        {
+          "date": "2027-02-14",
+          "type": "latwy",
+          "km": 7,
+          "minutes": 47
+        },
+        {
+          "date": "2027-02-21",
+          "type": "latwy",
+          "km": 7,
+          "minutes": 47
+        }
+      ]
+    },
+    {
+      "name": "10k_dwa",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 2,
+        "currentWeeklyKm": 25,
+        "longestRecentRun": 10,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-02-28",
+          "targetTimeSec": 3000
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3120
+        }
+      },
+      "ok": true,
+      "score23": {
+        "v25": 8.097,
+        "v26": 8.097
+      },
+      "score25": {
+        "v25": 8.445,
+        "v26": 8.445
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Powtarzane ekspozycje wymagają sprawdzenia tolerancji i celu, a nie automatycznego dodawania pracy.",
+        "Niska częstotliwość ogranicza skuteczność; nie jest to wada samej poprawnej alokacji."
+      ],
+      "overloadRisk": "Najdłuższy bieg 11 km, najdłuższa jednostka 79 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-12-03",
+          "type": "tempo",
+          "minutes": 13.458333333333334,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-17",
+          "type": "tempo",
+          "minutes": 18.841666666666665,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-31",
+          "type": "tempo",
+          "minutes": 18.841666666666665,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-14",
+          "type": "tempo",
+          "minutes": 18.841666666666665,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-28",
+          "type": "tempo",
+          "minutes": 18.841666666666665,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-02-11",
+          "type": "tempo",
+          "minutes": 18.841666666666665,
+          "decision": "consolidation"
+        }
+      ],
+      "specificity": "10k: 0 jednostek specyficznych; 6 progowych.",
+      "fit": "intermediate, 35 lat, 25 km, 2 deklarowanych dni; maksimum 2.",
+      "feasibility": {
+        "status": "cel_niewykonalny",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-02-11",
+          "type": "tempo",
+          "km": 10,
+          "minutes": 62
+        },
+        {
+          "date": "2027-02-18",
+          "type": "latwy",
+          "km": 9,
+          "minutes": 59
+        },
+        {
+          "date": "2027-02-21",
+          "type": "latwy",
+          "km": 5,
+          "minutes": 33
+        },
+        {
+          "date": "2027-02-25",
+          "type": "latwy",
+          "km": 6,
+          "minutes": 40
+        }
+      ]
+    },
+    {
+      "name": "half_dwa",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 2,
+        "currentWeeklyKm": 30,
+        "longestRecentRun": 12,
+        "goal": {
+          "type": "half",
+          "raceDate": "2027-02-28"
+        }
+      },
+      "ok": true,
+      "score23": {
+        "v25": 6.802,
+        "v26": 6.802
+      },
+      "score25": {
+        "v25": 9.055,
+        "v26": 9.055
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Niska częstotliwość ogranicza skuteczność; nie jest to wada samej poprawnej alokacji."
+      ],
+      "overloadRisk": "Najdłuższy bieg 17 km, najdłuższa jednostka 117 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-12-03",
+          "type": "tempo",
+          "minutes": 13.583333333333334,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-31",
+          "type": "tempo",
+          "minutes": 19.016666666666666,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-01-28",
+          "type": "tempo_startowe",
+          "minutes": 22.066666666666666,
+          "decision": "introduction"
+        }
+      ],
+      "specificity": "half: 1 jednostek specyficznych; 2 progowych.",
+      "fit": "intermediate, 35 lat, 30 km, 2 deklarowanych dni; maksimum 2.",
+      "feasibility": {
+        "status": "ograniczona_skutecznosc",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-02-11",
+          "type": "latwy",
+          "km": 13,
+          "minutes": 88
+        },
+        {
+          "date": "2027-02-18",
+          "type": "latwy",
+          "km": 11,
+          "minutes": 74
+        },
+        {
+          "date": "2027-02-21",
+          "type": "latwy",
+          "km": 5,
+          "minutes": 34
+        },
+        {
+          "date": "2027-02-25",
+          "type": "latwy",
+          "km": 7,
+          "minutes": 47
+        }
+      ]
+    },
+    {
+      "name": "half_cztery",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 4,
+        "currentWeeklyKm": 35,
+        "longestRecentRun": 14,
+        "goal": {
+          "type": "half",
+          "raceDate": "2027-02-28"
+        },
+        "recentWeeklyKm": [
+          30,
+          32,
+          34,
+          35
+        ],
+        "experienceMonths": 24
+      },
+      "ok": true,
+      "score23": {
+        "v25": 9.365,
+        "v26": 9.365
+      },
+      "score25": {
+        "v25": 9.683,
+        "v26": 9.683
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Powtarzane ekspozycje wymagają sprawdzenia tolerancji i celu, a nie automatycznego dodawania pracy.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 18 km, najdłuższa jednostka 123 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-11-10",
+          "type": "tempo",
+          "minutes": 13.583333333333334,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-11-17",
+          "type": "tempo",
+          "minutes": 19.016666666666666,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-01",
+          "type": "test",
+          "minutes": 18,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-08",
+          "type": "tempo",
+          "minutes": 19.016666666666666,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2026-12-15",
+          "type": "tempo",
+          "minutes": 19.016666666666666,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2026-12-29",
+          "type": "tempo",
+          "minutes": 24.450000000000003,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-01-05",
+          "type": "tempo",
+          "minutes": 27.166666666666668,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-01-12",
+          "type": "test",
+          "minutes": 18,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-26",
+          "type": "tempo_startowe",
+          "minutes": 22,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-02-02",
+          "type": "tempo_startowe",
+          "minutes": 27.5,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-09",
+          "type": "tempo_startowe",
+          "minutes": 33,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-16",
+          "type": "tempo",
+          "minutes": 16.3,
+          "decision": "reduction"
+        }
+      ],
+      "specificity": "half: 3 jednostek specyficznych; 7 progowych.",
+      "fit": "intermediate, 35 lat, 35 km, 4 deklarowanych dni; maksimum 4.",
+      "feasibility": {
+        "status": "plan_mozliwy",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-02-21",
+          "type": "dlugi",
+          "km": 12,
+          "minutes": 82
+        },
+        {
+          "date": "2027-02-23",
+          "type": "latwy",
+          "km": 5,
+          "minutes": 34
+        },
+        {
+          "date": "2027-02-24",
+          "type": "latwy",
+          "km": 5,
+          "minutes": 34
+        },
+        {
+          "date": "2027-02-26",
+          "type": "latwy",
+          "km": 5,
+          "minutes": 34
+        }
+      ]
+    },
+    {
+      "name": "maraton_ukonczenie",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "advanced",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 5,
+        "currentWeeklyKm": 60,
+        "longestRecentRun": 24,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-04-04",
+          "mode": "finish"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 2700
+        },
+        "recentWeeklyKm": [
+          58,
+          60,
+          57,
+          60
+        ],
+        "experienceMonths": 48,
+        "longDistanceRaces": 2
+      },
+      "ok": true,
+      "score23": {
+        "v25": 9.307,
+        "v26": 9.307
+      },
+      "score25": {
+        "v25": 9.654,
+        "v26": 9.654
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 31 km, najdłuższa jednostka 180 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-11-11",
+          "type": "tempo",
+          "minutes": 21.15,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-11-18",
+          "type": "tempo",
+          "minutes": 23.5,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-02",
+          "type": "test",
+          "minutes": 30,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-09",
+          "type": "tempo",
+          "minutes": 25.85,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-16",
+          "type": "tempo",
+          "minutes": 25.85,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2026-12-30",
+          "type": "tempo",
+          "minutes": 30.549999999999997,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-01-06",
+          "type": "tempo_startowe",
+          "minutes": 19.666666666666668,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-01-13",
+          "type": "test",
+          "minutes": 30,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-27",
+          "type": "tempo_startowe",
+          "minutes": 29.5,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-07",
+          "type": "dlugi",
+          "minutes": 24.583333333333332,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-02-10",
+          "type": "tempo_startowe",
+          "minutes": 39.333333333333336,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-28",
+          "type": "dlugi",
+          "minutes": 24.583333333333332,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-03-03",
+          "type": "tempo_startowe",
+          "minutes": 39.333333333333336,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-03-10",
+          "type": "tempo",
+          "minutes": 21.15,
+          "decision": "reduction"
+        },
+        {
+          "date": "2027-03-17",
+          "type": "tempo",
+          "minutes": 21.15,
+          "decision": "reduction"
+        },
+        {
+          "date": "2027-03-24",
+          "type": "tempo",
+          "minutes": 21.15,
+          "decision": "reduction"
+        }
+      ],
+      "specificity": "marathon: 4 jednostek specyficznych; 8 progowych.",
+      "fit": "advanced, 35 lat, 60 km, 5 deklarowanych dni; maksimum 5.",
+      "feasibility": {
+        "status": "plan_warunkowy",
+        "gotowoscDanych": "szacowana",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-03-31",
+          "type": "latwy",
+          "km": 6,
+          "minutes": 35
+        },
+        {
+          "date": "2027-04-01",
+          "type": "latwy",
+          "km": 6,
+          "minutes": 35
+        },
+        {
+          "date": "2027-04-02",
+          "type": "latwy",
+          "km": 6,
+          "minutes": 35
+        },
+        {
+          "date": "2027-04-03",
+          "type": "regeneracja",
+          "km": 3,
+          "minutes": 20
+        }
+      ]
+    },
+    {
+      "name": "maraton_wynik",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "advanced",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 5,
+        "currentWeeklyKm": 60,
+        "longestRecentRun": 24,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-04-11",
+          "targetTimeSec": 14400
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 2700
+        },
+        "recentWeeklyKm": [
+          58,
+          60,
+          57,
+          60
+        ],
+        "experienceMonths": 48,
+        "longDistanceRaces": 2
+      },
+      "ok": true,
+      "score23": {
+        "v25": 9.413,
+        "v26": 9.413
+      },
+      "score25": {
+        "v25": 9.75,
+        "v26": 9.75
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 31 km, najdłuższa jednostka 180 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-11-11",
+          "type": "tempo",
+          "minutes": 21.15,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-11-18",
+          "type": "tempo",
+          "minutes": 23.5,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-02",
+          "type": "test",
+          "minutes": 30,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-09",
+          "type": "tempo",
+          "minutes": 25.85,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-16",
+          "type": "tempo",
+          "minutes": 25.85,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2026-12-30",
+          "type": "tempo",
+          "minutes": 30.549999999999997,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-01-06",
+          "type": "tempo_startowe",
+          "minutes": 22.733333333333334,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-01-13",
+          "type": "test",
+          "minutes": 30,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-27",
+          "type": "tempo",
+          "minutes": 32.9,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-07",
+          "type": "dlugi",
+          "minutes": 28.416666666666668,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-02-10",
+          "type": "tempo_startowe",
+          "minutes": 34.1,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-28",
+          "type": "dlugi",
+          "minutes": 28.416666666666668,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-03-03",
+          "type": "tempo_startowe",
+          "minutes": 45.46666666666667,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-03-10",
+          "type": "tempo_startowe",
+          "minutes": 45.46666666666667,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-03-17",
+          "type": "tempo",
+          "minutes": 21.15,
+          "decision": "reduction"
+        },
+        {
+          "date": "2027-03-24",
+          "type": "tempo",
+          "minutes": 21.15,
+          "decision": "reduction"
+        },
+        {
+          "date": "2027-03-31",
+          "type": "tempo",
+          "minutes": 21.15,
+          "decision": "reduction"
+        }
+      ],
+      "specificity": "marathon: 4 jednostek specyficznych; 9 progowych.",
+      "fit": "advanced, 35 lat, 60 km, 5 deklarowanych dni; maksimum 5.",
+      "feasibility": {
+        "status": "plan_warunkowy",
+        "gotowoscDanych": "szacowana",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-04-07",
+          "type": "latwy",
+          "km": 6,
+          "minutes": 35
+        },
+        {
+          "date": "2027-04-08",
+          "type": "latwy",
+          "km": 6,
+          "minutes": 35
+        },
+        {
+          "date": "2027-04-09",
+          "type": "latwy",
+          "km": 6,
+          "minutes": 35
+        },
+        {
+          "date": "2027-04-10",
+          "type": "regeneracja",
+          "km": 3,
+          "minutes": 20
+        }
+      ]
+    },
+    {
+      "name": "maraton_dwa",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 2,
+        "currentWeeklyKm": 35,
+        "longestRecentRun": 14,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-04-11"
+        }
+      },
+      "ok": true,
+      "score23": {
+        "v25": 5.194,
+        "v26": 5.194
+      },
+      "score25": {
+        "v25": 9.45,
+        "v26": 9.45
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Niska częstotliwość ogranicza skuteczność; nie jest to wada samej poprawnej alokacji."
+      ],
+      "overloadRisk": "Najdłuższy bieg 21 km, najdłuższa jednostka 144 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [],
+      "specificity": "marathon: 0 jednostek specyficznych; 0 progowych.",
+      "fit": "intermediate, 35 lat, 35 km, 2 deklarowanych dni; maksimum 2.",
+      "feasibility": {
+        "status": "cel_niewykonalny",
+        "gotowoscDanych": "cel_niewykonalny",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-03-28",
+          "type": "latwy",
+          "km": 5,
+          "minutes": 34
+        },
+        {
+          "date": "2027-04-01",
+          "type": "latwy",
+          "km": 8,
+          "minutes": 54
+        },
+        {
+          "date": "2027-04-04",
+          "type": "latwy",
+          "km": 5,
+          "minutes": 34
+        },
+        {
+          "date": "2027-04-08",
+          "type": "latwy",
+          "km": 6,
+          "minutes": 41
+        }
+      ]
+    },
+    {
+      "name": "maraton_krotki",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "beginner",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 4,
+        "currentWeeklyKm": 12,
+        "longestRecentRun": 6,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2026-12-20",
+          "targetTimeSec": 10800
+        }
+      },
+      "ok": true,
+      "score23": {
+        "v25": 3.448,
+        "v26": 3.448
+      },
+      "score25": {
+        "v25": 7.862,
+        "v26": 7.862
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 7 km, najdłuższa jednostka 61 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [],
+      "specificity": "marathon: 0 jednostek specyficznych; 0 progowych.",
+      "fit": "beginner, 35 lat, 12 km, 4 deklarowanych dni; maksimum 4.",
+      "feasibility": {
+        "status": "cel_niewykonalny",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2026-12-11",
+          "type": "latwy",
+          "km": 3,
+          "minutes": 26
+        },
+        {
+          "date": "2026-12-13",
+          "type": "latwy",
+          "km": 3,
+          "minutes": 26
+        },
+        {
+          "date": "2026-12-15",
+          "type": "latwy",
+          "km": 3,
+          "minutes": 26
+        },
+        {
+          "date": "2026-12-18",
+          "type": "latwy",
+          "km": 3,
+          "minutes": 26
+        }
+      ]
+    },
+    {
+      "name": "powrot_przerwa",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 3,
+        "currentWeeklyKm": 30,
+        "longestRecentRun": 12,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-02-28"
+        },
+        "breakDays": 60
+      },
+      "ok": true,
+      "score23": {
+        "v25": 9.077,
+        "v26": 9.077
+      },
+      "score25": {
+        "v25": 9.343,
+        "v26": 9.343
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 10 km, najdłuższa jednostka 69 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-12-30",
+          "type": "interwaly",
+          "minutes": 14.675,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-01-06",
+          "type": "tempo",
+          "minutes": 13.583333333333334,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-01-13",
+          "type": "test",
+          "minutes": 18,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-01-27",
+          "type": "interwaly",
+          "minutes": 15.653333333333334,
+          "decision": "stimulus_change"
+        },
+        {
+          "date": "2027-02-03",
+          "type": "tempo_startowe",
+          "minutes": 15.7,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-02-10",
+          "type": "interwaly",
+          "minutes": 15.653333333333334,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-02-17",
+          "type": "tempo",
+          "minutes": 10.866666666666667,
+          "decision": "reduction"
+        }
+      ],
+      "specificity": "10k: 1 jednostek specyficznych; 2 progowych.",
+      "fit": "intermediate, 35 lat, 30 km, 3 deklarowanych dni; maksimum 3.",
+      "feasibility": {
+        "status": "plan_mozliwy",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-02-19",
+          "type": "latwy",
+          "km": 6,
+          "minutes": 41
+        },
+        {
+          "date": "2027-02-21",
+          "type": "dlugi",
+          "km": 8,
+          "minutes": 55
+        },
+        {
+          "date": "2027-02-24",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 27
+        },
+        {
+          "date": "2027-02-26",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 27
+        }
+      ]
+    },
+    {
+      "name": "starszy_65",
+      "input": {
+        "today": "2026-11-02",
+        "age": 65,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 4,
+        "currentWeeklyKm": 30,
+        "longestRecentRun": 12,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-02-28"
+        }
+      },
+      "ok": true,
+      "score23": {
+        "v25": 9.27,
+        "v26": 9.27
+      },
+      "score25": {
+        "v25": 9.328,
+        "v26": 9.328
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 12 km, najdłuższa jednostka 95 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-11-10",
+          "type": "tempo",
+          "minutes": 12.55,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-11-24",
+          "type": "interwaly",
+          "minutes": 16.95,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-01",
+          "type": "test",
+          "minutes": 18,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-15",
+          "type": "tempo",
+          "minutes": 18.825,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-22",
+          "type": "interwaly",
+          "minutes": 18.08,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-01-05",
+          "type": "interwaly",
+          "minutes": 18.08,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-12",
+          "type": "test",
+          "minutes": 18,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-26",
+          "type": "tempo_startowe",
+          "minutes": 18.25,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-02-02",
+          "type": "interwaly",
+          "minutes": 22.6,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-09",
+          "type": "tempo_startowe",
+          "minutes": 24.333333333333332,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-16",
+          "type": "tempo",
+          "minutes": 12.55,
+          "decision": "reduction"
+        }
+      ],
+      "specificity": "10k: 2 jednostek specyficznych; 3 progowych.",
+      "fit": "intermediate, 65 lat, 30 km, 4 deklarowanych dni; maksimum 4.",
+      "feasibility": {
+        "status": "plan_mozliwy",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-02-21",
+          "type": "dlugi",
+          "km": 9,
+          "minutes": 71
+        },
+        {
+          "date": "2027-02-23",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 31
+        },
+        {
+          "date": "2027-02-24",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 31
+        },
+        {
+          "date": "2027-02-26",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 31
+        }
+      ]
+    },
+    {
+      "name": "mlody_16",
+      "input": {
+        "today": "2026-11-02",
+        "age": 16,
+        "level": "beginner",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 3,
+        "currentWeeklyKm": 10,
+        "longestRecentRun": 4,
+        "goal": {
+          "type": "5k",
+          "raceDate": "2027-02-28"
+        }
+      },
+      "ok": true,
+      "score23": {
+        "v25": 8.865,
+        "v26": 8.865
+      },
+      "score25": {
+        "v25": 9.623,
+        "v26": 9.623
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 8 km, najdłuższa jednostka 69 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [],
+      "specificity": "5k: 0 jednostek specyficznych; 0 progowych.",
+      "fit": "beginner, 16 lat, 10 km, 3 deklarowanych dni; maksimum 3.",
+      "feasibility": {
+        "status": "plan_mozliwy",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-02-19",
+          "type": "latwy",
+          "km": 7,
+          "minutes": 60
+        },
+        {
+          "date": "2027-02-21",
+          "type": "dlugi",
+          "km": 5,
+          "minutes": 43
+        },
+        {
+          "date": "2027-02-24",
+          "type": "latwy",
+          "km": 3,
+          "minutes": 26
+        },
+        {
+          "date": "2027-02-26",
+          "type": "latwy",
+          "km": 3,
+          "minutes": 26
+        }
+      ]
+    },
+    {
+      "name": "siedem_deklarowanych",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 7,
+        "currentWeeklyKm": 35,
+        "longestRecentRun": 14,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-02-28"
+        }
+      },
+      "ok": true,
+      "score23": {
+        "v25": 9.532,
+        "v26": 9.532
+      },
+      "score25": {
+        "v25": 9.499,
+        "v26": 9.499
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Powtarzane ekspozycje wymagają sprawdzenia tolerancji i celu, a nie automatycznego dodawania pracy.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 14 km, najdłuższa jednostka 96 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-11-11",
+          "type": "tempo",
+          "minutes": 13.583333333333334,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-11-18",
+          "type": "tempo",
+          "minutes": 19.016666666666666,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-02",
+          "type": "test",
+          "minutes": 18,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-09",
+          "type": "interwaly",
+          "minutes": 14.675,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-16",
+          "type": "tempo",
+          "minutes": 19.016666666666666,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2026-12-30",
+          "type": "tempo",
+          "minutes": 19.016666666666666,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-06",
+          "type": "interwaly",
+          "minutes": 15.653333333333334,
+          "decision": "stimulus_change"
+        },
+        {
+          "date": "2027-01-13",
+          "type": "test",
+          "minutes": 18,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-15",
+          "type": "tempo",
+          "minutes": 24.450000000000003,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-01-27",
+          "type": "tempo_startowe",
+          "minutes": 15.7,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-01-29",
+          "type": "tempo",
+          "minutes": 27.166666666666668,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-03",
+          "type": "interwaly",
+          "minutes": 15.653333333333334,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-02-05",
+          "type": "tempo",
+          "minutes": 27.166666666666668,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-02-10",
+          "type": "tempo_startowe",
+          "minutes": 20.933333333333334,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-12",
+          "type": "tempo",
+          "minutes": 27.166666666666668,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-02-17",
+          "type": "tempo",
+          "minutes": 19.016666666666666,
+          "decision": "reduction"
+        }
+      ],
+      "specificity": "10k: 2 jednostek specyficznych; 9 progowych.",
+      "fit": "intermediate, 35 lat, 35 km, 7 deklarowanych dni; maksimum 5.",
+      "feasibility": {
+        "status": "plan_mozliwy",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-02-23",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 27
+        },
+        {
+          "date": "2027-02-24",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 27
+        },
+        {
+          "date": "2027-02-25",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 27
+        },
+        {
+          "date": "2027-02-26",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 27
+        }
+      ]
+    },
+    {
+      "name": "spadek_historii",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 4,
+        "currentWeeklyKm": 35,
+        "longestRecentRun": 14,
+        "goal": {
+          "type": "half",
+          "raceDate": "2027-02-28"
+        },
+        "recentWeeklyKm": [
+          35,
+          30,
+          12,
+          5
+        ],
+        "experienceMonths": 18
+      },
+      "ok": true,
+      "score23": {
+        "v25": 6.027,
+        "v26": 6.027
+      },
+      "score25": {
+        "v25": 9.365,
+        "v26": 9.365
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 10 km, najdłuższa jednostka 69 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [],
+      "specificity": "half: 0 jednostek specyficznych; 0 progowych.",
+      "fit": "intermediate, 35 lat, 35 km, 4 deklarowanych dni; maksimum 4.",
+      "feasibility": {
+        "status": "ograniczona_skutecznosc",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-02-21",
+          "type": "dlugi",
+          "km": 7,
+          "minutes": 48
+        },
+        {
+          "date": "2027-02-23",
+          "type": "latwy",
+          "km": 3,
+          "minutes": 20
+        },
+        {
+          "date": "2027-02-24",
+          "type": "latwy",
+          "km": 3,
+          "minutes": 20
+        },
+        {
+          "date": "2027-02-26",
+          "type": "latwy",
+          "km": 3,
+          "minutes": 20
+        }
+      ]
+    },
+    {
+      "name": "niska_tolerancja",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 4,
+        "currentWeeklyKm": 30,
+        "longestRecentRun": 12,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-02-28"
+        },
+        "loadTolerance": "low",
+        "recoveryDays": 3,
+        "experienceMonths": 12
+      },
+      "ok": true,
+      "score23": {
+        "v25": 7.03,
+        "v26": 7.03
+      },
+      "score25": {
+        "v25": 7.343,
+        "v26": 7.343
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 11 km, najdłuższa jednostka 75 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [],
+      "specificity": "10k: 0 jednostek specyficznych; 0 progowych.",
+      "fit": "intermediate, 35 lat, 30 km, 4 deklarowanych dni; maksimum 4.",
+      "feasibility": {
+        "status": "plan_mozliwy",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-02-21",
+          "type": "dlugi",
+          "km": 8,
+          "minutes": 55
+        },
+        {
+          "date": "2027-02-23",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 27
+        },
+        {
+          "date": "2027-02-24",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 27
+        },
+        {
+          "date": "2027-02-26",
+          "type": "latwy",
+          "km": 3,
+          "minutes": 20
+        }
+      ]
+    },
+    {
+      "name": "dostepnosc_preferencje",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          2,
+          4,
+          6
+        ],
+        "daysPerWeek": 3,
+        "currentWeeklyKm": 30,
+        "longestRecentRun": 12,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-02-28"
+        },
+        "preferredDays": [
+          2,
+          4,
+          6
+        ],
+        "maxMinutesWeekday": 45,
+        "maxMinutesWeekend": 90
+      },
+      "ok": true,
+      "score23": {
+        "v25": 8.15,
+        "v26": 8.15
+      },
+      "score25": {
+        "v25": 8.413,
+        "v26": 8.413
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Powtarzane ekspozycje wymagają sprawdzenia tolerancji i celu, a nie automatycznego dodawania pracy.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 10 km, najdłuższa jednostka 68 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-11-10",
+          "type": "tempo",
+          "minutes": 13.583333333333334,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-11-17",
+          "type": "tempo",
+          "minutes": 13.583333333333334,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2026-12-01",
+          "type": "test",
+          "minutes": 18,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-08",
+          "type": "interwaly",
+          "minutes": 8.805000000000001,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-15",
+          "type": "tempo",
+          "minutes": 13.583333333333334,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2026-12-29",
+          "type": "tempo",
+          "minutes": 13.583333333333334,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-05",
+          "type": "interwaly",
+          "minutes": 5.87,
+          "decision": "stimulus_change"
+        },
+        {
+          "date": "2027-01-12",
+          "type": "test",
+          "minutes": 18,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-26",
+          "type": "tempo_startowe",
+          "minutes": 10.466666666666667,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-02-02",
+          "type": "interwaly",
+          "minutes": 5.87,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-02-09",
+          "type": "tempo_startowe",
+          "minutes": 10.466666666666667,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-02-16",
+          "type": "tempo",
+          "minutes": 13.583333333333334,
+          "decision": "reduction"
+        }
+      ],
+      "specificity": "10k: 2 jednostek specyficznych; 5 progowych.",
+      "fit": "intermediate, 35 lat, 30 km, 3 deklarowanych dni; maksimum 3.",
+      "feasibility": {
+        "status": "plan_mozliwy",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-02-18",
+          "type": "latwy",
+          "km": 6,
+          "minutes": 41
+        },
+        {
+          "date": "2027-02-20",
+          "type": "dlugi",
+          "km": 8,
+          "minutes": 55
+        },
+        {
+          "date": "2027-02-23",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 27
+        },
+        {
+          "date": "2027-02-25",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 27
+        }
+      ]
+    },
+    {
+      "name": "plan_52_tygodnie",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 4,
+        "currentWeeklyKm": 30,
+        "longestRecentRun": 12,
+        "goal": {
+          "type": "10k"
+        },
+        "weeks": 52
+      },
+      "ok": true,
+      "score23": {
+        "v25": 9.662,
+        "v26": 9.662
+      },
+      "score25": {
+        "v25": 9.812,
+        "v26": 9.812
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Powtarzane ekspozycje wymagają sprawdzenia tolerancji i celu, a nie automatycznego dodawania pracy.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 12 km, najdłuższa jednostka 82 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-11-10",
+          "type": "tempo",
+          "minutes": 13.583333333333334,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-11-17",
+          "type": "tempo",
+          "minutes": 19.016666666666666,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-01",
+          "type": "test",
+          "minutes": 18,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-08",
+          "type": "interwaly",
+          "minutes": 14.675,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-15",
+          "type": "tempo",
+          "minutes": 19.016666666666666,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2026-12-29",
+          "type": "tempo",
+          "minutes": 19.016666666666666,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-05",
+          "type": "interwaly",
+          "minutes": 15.653333333333334,
+          "decision": "stimulus_change"
+        },
+        {
+          "date": "2027-01-12",
+          "type": "test",
+          "minutes": 18,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-26",
+          "type": "tempo",
+          "minutes": 24.450000000000003,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-02",
+          "type": "interwaly",
+          "minutes": 15.653333333333334,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-02-09",
+          "type": "tempo",
+          "minutes": 27.166666666666668,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-23",
+          "type": "test",
+          "minutes": 18,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-03-02",
+          "type": "interwaly",
+          "minutes": 19.566666666666666,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-03-09",
+          "type": "tempo",
+          "minutes": 27.166666666666668,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-03-23",
+          "type": "tempo",
+          "minutes": 27.166666666666668,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-03-30",
+          "type": "interwaly",
+          "minutes": 24.458333333333332,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-04-06",
+          "type": "test",
+          "minutes": 18,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-04-20",
+          "type": "tempo",
+          "minutes": 27.166666666666668,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-04-27",
+          "type": "interwaly",
+          "minutes": 23.48,
+          "decision": "stimulus_change"
+        },
+        {
+          "date": "2027-05-04",
+          "type": "tempo",
+          "minutes": 27.166666666666668,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-05-18",
+          "type": "test",
+          "minutes": 18,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-05-25",
+          "type": "interwaly",
+          "minutes": 23.48,
+          "decision": "stimulus_change"
+        },
+        {
+          "date": "2027-06-01",
+          "type": "tempo",
+          "minutes": 27.166666666666668,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-06-15",
+          "type": "tempo",
+          "minutes": 27.166666666666668,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-06-22",
+          "type": "interwaly",
+          "minutes": 31.30666666666667,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-06-29",
+          "type": "test",
+          "minutes": 18,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-07-13",
+          "type": "tempo_startowe",
+          "minutes": 15.7,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-07-20",
+          "type": "interwaly",
+          "minutes": 23.48,
+          "decision": "stimulus_change"
+        },
+        {
+          "date": "2027-07-27",
+          "type": "tempo_startowe",
+          "minutes": 20.933333333333334,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-08-10",
+          "type": "test",
+          "minutes": 18,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-08-17",
+          "type": "interwaly",
+          "minutes": 23.48,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-08-24",
+          "type": "tempo_startowe",
+          "minutes": 23.549999999999997,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-09-07",
+          "type": "tempo_startowe",
+          "minutes": 23.549999999999997,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-09-14",
+          "type": "interwaly",
+          "minutes": 31.30666666666667,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-09-21",
+          "type": "test",
+          "minutes": 18,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-10-12",
+          "type": "interwaly",
+          "minutes": 23.48,
+          "decision": "stimulus_change"
+        },
+        {
+          "date": "2027-10-19",
+          "type": "tempo_startowe",
+          "minutes": 31.4,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-10-26",
+          "type": "interwaly",
+          "minutes": 31.30666666666667,
+          "decision": "dose_progression"
+        }
+      ],
+      "specificity": "10k: 5 jednostek specyficznych; 12 progowych.",
+      "fit": "intermediate, 35 lat, 30 km, 4 deklarowanych dni; maksimum 4.",
+      "feasibility": {
+        "status": "plan_mozliwy",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-10-26",
+          "type": "interwaly",
+          "km": 12,
+          "minutes": 69
+        },
+        {
+          "date": "2027-10-27",
+          "type": "regeneracja",
+          "km": 5,
+          "minutes": 39
+        },
+        {
+          "date": "2027-10-29",
+          "type": "latwy",
+          "km": 9,
+          "minutes": 61
+        },
+        {
+          "date": "2027-10-31",
+          "type": "dlugi",
+          "km": 12,
+          "minutes": 82
+        }
+      ]
+    },
+    {
+      "name": "10k_poczatkujacy_dwa",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "beginner",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 2,
+        "currentWeeklyKm": 12,
+        "longestRecentRun": 5,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-02-28"
+        },
+        "experienceMonths": 5
+      },
+      "ok": true,
+      "score23": {
+        "v25": 7.623,
+        "v26": 7.623
+      },
+      "score25": {
+        "v25": 8.984,
+        "v26": 8.984
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Niska częstotliwość ogranicza skuteczność; nie jest to wada samej poprawnej alokacji."
+      ],
+      "overloadRisk": "Najdłuższy bieg 9 km, najdłuższa jednostka 78 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-12-31",
+          "type": "tempo",
+          "minutes": 10.375,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-01-14",
+          "type": "tempo",
+          "minutes": 10.375,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-28",
+          "type": "tempo",
+          "minutes": 13.833333333333334,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-11",
+          "type": "tempo",
+          "minutes": 13.833333333333334,
+          "decision": "consolidation"
+        }
+      ],
+      "specificity": "10k: 0 jednostek specyficznych; 4 progowych.",
+      "fit": "beginner, 35 lat, 12 km, 2 deklarowanych dni; maksimum 2.",
+      "feasibility": {
+        "status": "ograniczona_skutecznosc",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-02-11",
+          "type": "tempo",
+          "km": 7,
+          "minutes": 58
+        },
+        {
+          "date": "2027-02-18",
+          "type": "latwy",
+          "km": 6,
+          "minutes": 51
+        },
+        {
+          "date": "2027-02-21",
+          "type": "latwy",
+          "km": 5,
+          "minutes": 43
+        },
+        {
+          "date": "2027-02-25",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 34
+        }
+      ]
+    },
+    {
+      "name": "5k_zaawansowany",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "advanced",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 6,
+        "currentWeeklyKm": 65,
+        "longestRecentRun": 18,
+        "goal": {
+          "type": "5k",
+          "raceDate": "2027-02-28",
+          "targetTimeSec": 1080
+        },
+        "bestResult": {
+          "distanceKm": 5,
+          "timeSec": 1100
+        },
+        "experienceMonths": 72
+      },
+      "ok": true,
+      "score23": {
+        "v25": 9.088,
+        "v26": 9.088
+      },
+      "score25": {
+        "v25": 9.128,
+        "v26": 9.128
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Powtarzane ekspozycje wymagają sprawdzenia tolerancji i celu, a nie automatycznego dodawania pracy.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 14 km, najdłuższa jednostka 70 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-11-11",
+          "type": "tempo",
+          "minutes": 20.041666666666668,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-11-18",
+          "type": "tempo",
+          "minutes": 24.05,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-02",
+          "type": "test",
+          "minutes": 30,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-06",
+          "type": "dlugi",
+          "minutes": 12.025,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-09",
+          "type": "interwaly",
+          "minutes": 8.7,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-16",
+          "type": "tempo",
+          "minutes": 26.054166666666667,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-20",
+          "type": "dlugi",
+          "minutes": 12.025,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2026-12-30",
+          "type": "tempo",
+          "minutes": 26.054166666666667,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-06",
+          "type": "interwaly",
+          "minutes": 10.15,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-01-10",
+          "type": "dlugi",
+          "minutes": 12.025,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-13",
+          "type": "test",
+          "minutes": 30,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-27",
+          "type": "interwaly",
+          "minutes": 10.875,
+          "decision": "stimulus_change"
+        },
+        {
+          "date": "2027-01-29",
+          "type": "tempo",
+          "minutes": 30.0625,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-01-31",
+          "type": "dlugi",
+          "minutes": 11,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-02-03",
+          "type": "interwaly",
+          "minutes": 13.05,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-05",
+          "type": "tempo",
+          "minutes": 32.06666666666667,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-10",
+          "type": "interwaly",
+          "minutes": 11.6,
+          "decision": "stimulus_change"
+        },
+        {
+          "date": "2027-02-12",
+          "type": "tempo",
+          "minutes": 32.06666666666667,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-02-14",
+          "type": "dlugi",
+          "minutes": 11,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-02-17",
+          "type": "interwaly",
+          "minutes": 14.5,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-19",
+          "type": "tempo",
+          "minutes": 32.06666666666667,
+          "decision": "consolidation"
+        }
+      ],
+      "specificity": "5k: 0 jednostek specyficznych; 8 progowych.",
+      "fit": "advanced, 35 lat, 65 km, 6 deklarowanych dni; maksimum 6.",
+      "feasibility": {
+        "status": "plan_mozliwy",
+        "gotowoscDanych": "szacowana",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-02-24",
+          "type": "latwy",
+          "km": 3,
+          "minutes": 15
+        },
+        {
+          "date": "2027-02-25",
+          "type": "latwy",
+          "km": 3,
+          "minutes": 15
+        },
+        {
+          "date": "2027-02-26",
+          "type": "latwy",
+          "km": 3,
+          "minutes": 15
+        },
+        {
+          "date": "2027-02-27",
+          "type": "regeneracja",
+          "km": 3,
+          "minutes": 20
+        }
+      ]
+    },
+    {
+      "name": "50_lat_zmeczenie",
+      "input": {
+        "today": "2026-11-02",
+        "age": 50,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 4,
+        "currentWeeklyKm": 40,
+        "longestRecentRun": 16,
+        "goal": {
+          "type": "half",
+          "raceDate": "2027-02-28"
+        },
+        "fatigue": 4,
+        "intensityTolerance": "low",
+        "experienceMonths": 36
+      },
+      "ok": true,
+      "score23": {
+        "v25": 8.602,
+        "v26": 8.602
+      },
+      "score25": {
+        "v25": 8.702,
+        "v26": 8.702
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 16 km, najdłuższa jednostka 116 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-12-01",
+          "type": "test",
+          "minutes": 18,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-15",
+          "type": "tempo",
+          "minutes": 11.466666666666667,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-01-12",
+          "type": "test",
+          "minutes": 18,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-26",
+          "type": "tempo_startowe",
+          "minutes": 23.266666666666666,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-02-09",
+          "type": "tempo_startowe",
+          "minutes": 29.083333333333332,
+          "decision": "dose_progression"
+        }
+      ],
+      "specificity": "half: 2 jednostek specyficznych; 1 progowych.",
+      "fit": "intermediate, 50 lat, 40 km, 4 deklarowanych dni; maksimum 4.",
+      "feasibility": {
+        "status": "plan_mozliwy",
+        "gotowoscDanych": "szacowana",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-02-21",
+          "type": "dlugi",
+          "km": 12,
+          "minutes": 87
+        },
+        {
+          "date": "2027-02-23",
+          "type": "latwy",
+          "km": 5,
+          "minutes": 36
+        },
+        {
+          "date": "2027-02-24",
+          "type": "latwy",
+          "km": 5,
+          "minutes": 36
+        },
+        {
+          "date": "2027-02-26",
+          "type": "latwy",
+          "km": 5,
+          "minutes": 36
+        }
+      ]
+    },
+    {
+      "name": "jeden_powrot",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 1,
+        "currentWeeklyKm": 30,
+        "longestRecentRun": 12,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-02-28"
+        },
+        "breakDays": 45
+      },
+      "ok": true,
+      "score23": {
+        "v25": 4.441,
+        "v26": 4.441
+      },
+      "score25": {
+        "v25": 8.564,
+        "v26": 8.564
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Niska częstotliwość ogranicza skuteczność; nie jest to wada samej poprawnej alokacji."
+      ],
+      "overloadRisk": "Najdłuższy bieg 0 km, najdłuższa jednostka 47 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [],
+      "specificity": "10k: 0 jednostek specyficznych; 0 progowych.",
+      "fit": "intermediate, 35 lat, 30 km, 1 deklarowanych dni; maksimum 1.",
+      "feasibility": {
+        "status": "ograniczona_skutecznosc",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-01-31",
+          "type": "latwy",
+          "km": 7,
+          "minutes": 47
+        },
+        {
+          "date": "2027-02-07",
+          "type": "latwy",
+          "km": 7,
+          "minutes": 47
+        },
+        {
+          "date": "2027-02-14",
+          "type": "latwy",
+          "km": 7,
+          "minutes": 47
+        },
+        {
+          "date": "2027-02-21",
+          "type": "latwy",
+          "km": 3,
+          "minutes": 20
+        }
+      ]
+    },
+    {
+      "name": "maraton_jeden",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 1,
+        "currentWeeklyKm": 35,
+        "longestRecentRun": 14,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-04-11"
+        }
+      },
+      "ok": true,
+      "score23": {
+        "v25": 3.886,
+        "v26": 3.886
+      },
+      "score25": {
+        "v25": 9.135,
+        "v26": 9.135
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Niska częstotliwość ogranicza skuteczność; nie jest to wada samej poprawnej alokacji."
+      ],
+      "overloadRisk": "Najdłuższy bieg 0 km, najdłuższa jednostka 74 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [],
+      "specificity": "marathon: 0 jednostek specyficznych; 0 progowych.",
+      "fit": "intermediate, 35 lat, 35 km, 1 deklarowanych dni; maksimum 1.",
+      "feasibility": {
+        "status": "cel_niewykonalny",
+        "gotowoscDanych": "cel_niewykonalny",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-03-14",
+          "type": "latwy",
+          "km": 11,
+          "minutes": 74
+        },
+        {
+          "date": "2027-03-21",
+          "type": "latwy",
+          "km": 11,
+          "minutes": 74
+        },
+        {
+          "date": "2027-03-28",
+          "type": "latwy",
+          "km": 5,
+          "minutes": 34
+        },
+        {
+          "date": "2027-04-04",
+          "type": "latwy",
+          "km": 3,
+          "minutes": 20
+        }
+      ]
+    },
+    {
+      "name": "10k_niska_intensywnosc",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 4,
+        "currentWeeklyKm": 35,
+        "longestRecentRun": 14,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-02-28"
+        },
+        "intensityTolerance": "low",
+        "volumeTolerance": "normal"
+      },
+      "ok": true,
+      "score23": {
+        "v25": 8.625,
+        "v26": 8.625
+      },
+      "score25": {
+        "v25": 8.59,
+        "v26": 8.59
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 14 km, najdłuższa jednostka 96 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-12-01",
+          "type": "test",
+          "minutes": 18,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-15",
+          "type": "tempo",
+          "minutes": 10.866666666666667,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-29",
+          "type": "tempo",
+          "minutes": 13.583333333333334,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-01-12",
+          "type": "test",
+          "minutes": 18,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-26",
+          "type": "tempo_startowe",
+          "minutes": 15.7,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-02-09",
+          "type": "tempo_startowe",
+          "minutes": 20.933333333333334,
+          "decision": "dose_progression"
+        }
+      ],
+      "specificity": "10k: 2 jednostek specyficznych; 2 progowych.",
+      "fit": "intermediate, 35 lat, 35 km, 4 deklarowanych dni; maksimum 4.",
+      "feasibility": {
+        "status": "plan_mozliwy",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-02-21",
+          "type": "dlugi",
+          "km": 10,
+          "minutes": 69
+        },
+        {
+          "date": "2027-02-23",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 27
+        },
+        {
+          "date": "2027-02-24",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 27
+        },
+        {
+          "date": "2027-02-26",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 27
+        }
+      ]
+    },
+    {
+      "name": "5k_sredni_trzy",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 3,
+        "currentWeeklyKm": 30,
+        "longestRecentRun": 12,
+        "goal": {
+          "type": "5k",
+          "raceDate": "2027-02-28",
+          "targetTimeSec": 1480
+        },
+        "bestResult": {
+          "distanceKm": 5,
+          "timeSec": 1500
+        }
+      },
+      "ok": true,
+      "score23": {
+        "v25": 8.806,
+        "v26": 8.806
+      },
+      "score25": {
+        "v25": 9.102,
+        "v26": 9.102
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Powtarzane ekspozycje wymagają sprawdzenia tolerancji i celu, a nie automatycznego dodawania pracy.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 12 km, najdłuższa jednostka 80 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-11-11",
+          "type": "tempo",
+          "minutes": 13.416666666666666,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-11-18",
+          "type": "tempo",
+          "minutes": 18.783333333333335,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-02",
+          "type": "test",
+          "minutes": 18,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-09",
+          "type": "interwaly",
+          "minutes": 11.639999999999999,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-16",
+          "type": "tempo",
+          "minutes": 18.783333333333335,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2026-12-30",
+          "type": "tempo",
+          "minutes": 18.783333333333335,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-06",
+          "type": "interwaly",
+          "minutes": 13.58,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-01-13",
+          "type": "test",
+          "minutes": 18,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-27",
+          "type": "interwaly",
+          "minutes": 14.55,
+          "decision": "stimulus_change"
+        },
+        {
+          "date": "2027-02-03",
+          "type": "interwaly",
+          "minutes": 17.46,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-10",
+          "type": "interwaly",
+          "minutes": 15.520000000000001,
+          "decision": "stimulus_change"
+        },
+        {
+          "date": "2027-02-17",
+          "type": "interwaly",
+          "minutes": 19.4,
+          "decision": "dose_progression"
+        }
+      ],
+      "specificity": "5k: 0 jednostek specyficznych; 4 progowych.",
+      "fit": "intermediate, 35 lat, 30 km, 3 deklarowanych dni; maksimum 3.",
+      "feasibility": {
+        "status": "plan_mozliwy",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-02-19",
+          "type": "latwy",
+          "km": 10,
+          "minutes": 66
+        },
+        {
+          "date": "2027-02-21",
+          "type": "dlugi",
+          "km": 8,
+          "minutes": 53
+        },
+        {
+          "date": "2027-02-24",
+          "type": "latwy",
+          "km": 3,
+          "minutes": 20
+        },
+        {
+          "date": "2027-02-26",
+          "type": "latwy",
+          "km": 3,
+          "minutes": 20
+        }
+      ]
+    },
+    {
+      "name": "10k_zaawansowany_szesc",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "advanced",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 6,
+        "currentWeeklyKm": 65,
+        "longestRecentRun": 20,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-02-28",
+          "targetTimeSec": 2380
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 2400
+        },
+        "experienceMonths": 72,
+        "recentWeeklyKm": [
+          62,
+          65,
+          63,
+          65
+        ]
+      },
+      "ok": true,
+      "score23": {
+        "v25": 9.706,
+        "v26": 9.706
+      },
+      "score25": {
+        "v25": 9.713,
+        "v26": 9.713
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 18 km, najdłuższa jednostka 94 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-11-11",
+          "type": "tempo",
+          "minutes": 21,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-11-18",
+          "type": "tempo",
+          "minutes": 23.1,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-02",
+          "type": "test",
+          "minutes": 30,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-09",
+          "type": "interwaly",
+          "minutes": 11.4,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-16",
+          "type": "tempo",
+          "minutes": 25.2,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-30",
+          "type": "tempo",
+          "minutes": 25.2,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-06",
+          "type": "interwaly",
+          "minutes": 12.16,
+          "decision": "stimulus_change"
+        },
+        {
+          "date": "2027-01-13",
+          "type": "test",
+          "minutes": 30,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-15",
+          "type": "tempo",
+          "minutes": 29.4,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-01-27",
+          "type": "tempo_startowe",
+          "minutes": 12,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-01-29",
+          "type": "tempo",
+          "minutes": 31.5,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-03",
+          "type": "interwaly",
+          "minutes": 12.16,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-02-05",
+          "type": "tempo",
+          "minutes": 31.5,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-02-10",
+          "type": "tempo_startowe",
+          "minutes": 16,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-12",
+          "type": "tempo",
+          "minutes": 33.6,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-17",
+          "type": "tempo",
+          "minutes": 21,
+          "decision": "reduction"
+        }
+      ],
+      "specificity": "10k: 2 jednostek specyficznych; 9 progowych.",
+      "fit": "advanced, 35 lat, 65 km, 6 deklarowanych dni; maksimum 6.",
+      "feasibility": {
+        "status": "plan_mozliwy",
+        "gotowoscDanych": "szacowana",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-02-24",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 21
+        },
+        {
+          "date": "2027-02-25",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 21
+        },
+        {
+          "date": "2027-02-26",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 21
+        },
+        {
+          "date": "2027-02-27",
+          "type": "regeneracja",
+          "km": 3,
+          "minutes": 20
+        }
+      ]
+    },
+    {
+      "name": "half_duza_baza",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "advanced",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 5,
+        "currentWeeklyKm": 65,
+        "longestRecentRun": 22,
+        "goal": {
+          "type": "half",
+          "raceDate": "2027-02-28",
+          "targetTimeSec": 6000
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 2700
+        },
+        "experienceMonths": 48,
+        "recentWeeklyKm": [
+          60,
+          62,
+          63,
+          65
+        ]
+      },
+      "ok": true,
+      "score23": {
+        "v25": 7.469,
+        "v26": 7.469
+      },
+      "score25": {
+        "v25": 9.713,
+        "v26": 9.713
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 22 km, najdłuższa jednostka 128 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-11-11",
+          "type": "tempo",
+          "minutes": 21.15,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-11-18",
+          "type": "tempo",
+          "minutes": 23.5,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-02",
+          "type": "test",
+          "minutes": 30,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-09",
+          "type": "tempo",
+          "minutes": 25.85,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-16",
+          "type": "tempo",
+          "minutes": 25.85,
+          "decision": "stimulus_change"
+        },
+        {
+          "date": "2026-12-30",
+          "type": "tempo",
+          "minutes": 30.549999999999997,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-01-06",
+          "type": "tempo",
+          "minutes": 32.9,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-01-13",
+          "type": "test",
+          "minutes": 30,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-27",
+          "type": "tempo_startowe",
+          "minutes": 18.933333333333334,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-02-03",
+          "type": "tempo_startowe",
+          "minutes": 23.666666666666668,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-10",
+          "type": "tempo_startowe",
+          "minutes": 28.4,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-17",
+          "type": "tempo",
+          "minutes": 21.15,
+          "decision": "reduction"
+        }
+      ],
+      "specificity": "half: 3 jednostek specyficznych; 7 progowych.",
+      "fit": "advanced, 35 lat, 65 km, 5 deklarowanych dni; maksimum 5.",
+      "feasibility": {
+        "status": "plan_mozliwy",
+        "gotowoscDanych": "szacowana",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-02-24",
+          "type": "latwy",
+          "km": 5,
+          "minutes": 29
+        },
+        {
+          "date": "2027-02-25",
+          "type": "latwy",
+          "km": 5,
+          "minutes": 29
+        },
+        {
+          "date": "2027-02-26",
+          "type": "latwy",
+          "km": 5,
+          "minutes": 29
+        },
+        {
+          "date": "2027-02-27",
+          "type": "regeneracja",
+          "km": 3,
+          "minutes": 20
+        }
+      ]
+    },
+    {
+      "name": "half_mala_baza",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "beginner",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 3,
+        "currentWeeklyKm": 12,
+        "longestRecentRun": 5,
+        "goal": {
+          "type": "half",
+          "raceDate": "2027-02-28"
+        },
+        "experienceMonths": 4
+      },
+      "ok": true,
+      "score23": {
+        "v25": 5.972,
+        "v26": 6.06
+      },
+      "score25": {
+        "v25": 9.06,
+        "v26": 9.06
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 7 km, najdłuższa jednostka 61 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-12-30",
+          "type": "test",
+          "minutes": 18,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-01-06",
+          "type": "tempo",
+          "minutes": 10.375,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-01-13",
+          "type": "tempo_startowe",
+          "minutes": 25.433333333333334,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-01-27",
+          "type": "tempo_startowe",
+          "minutes": 18.166666666666668,
+          "decision": "stimulus_change"
+        },
+        {
+          "date": "2027-02-03",
+          "type": "tempo_startowe",
+          "minutes": 18.166666666666668,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-02-10",
+          "type": "tempo_startowe",
+          "minutes": 25.433333333333334,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-17",
+          "type": "tempo",
+          "minutes": 10.375,
+          "decision": "reduction"
+        }
+      ],
+      "specificity": "half: 4 jednostek specyficznych; 2 progowych.",
+      "fit": "beginner, 35 lat, 12 km, 3 deklarowanych dni; maksimum 3.",
+      "feasibility": {
+        "status": "ograniczona_skutecznosc",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-02-19",
+          "type": "latwy",
+          "km": 3,
+          "minutes": 26
+        },
+        {
+          "date": "2027-02-21",
+          "type": "dlugi",
+          "km": 5,
+          "minutes": 43
+        },
+        {
+          "date": "2027-02-24",
+          "type": "latwy",
+          "km": 3,
+          "minutes": 26
+        },
+        {
+          "date": "2027-02-26",
+          "type": "latwy",
+          "km": 3,
+          "minutes": 26
+        }
+      ]
+    },
+    {
+      "name": "tylko_dwa_dostepne",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          2,
+          6
+        ],
+        "daysPerWeek": 2,
+        "currentWeeklyKm": 25,
+        "longestRecentRun": 10,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-02-28"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3120
+        }
+      },
+      "ok": true,
+      "score23": {
+        "v25": 8.057,
+        "v26": 8.057
+      },
+      "score25": {
+        "v25": 8.415,
+        "v26": 8.415
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Powtarzane ekspozycje wymagają sprawdzenia tolerancji i celu, a nie automatycznego dodawania pracy.",
+        "Niska częstotliwość ogranicza skuteczność; nie jest to wada samej poprawnej alokacji."
+      ],
+      "overloadRisk": "Najdłuższy bieg 11 km, najdłuższa jednostka 79 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-12-01",
+          "type": "tempo",
+          "minutes": 13.458333333333334,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-15",
+          "type": "tempo",
+          "minutes": 18.841666666666665,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-29",
+          "type": "tempo",
+          "minutes": 18.841666666666665,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-12",
+          "type": "tempo",
+          "minutes": 18.841666666666665,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-26",
+          "type": "tempo",
+          "minutes": 18.841666666666665,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-02-09",
+          "type": "tempo",
+          "minutes": 18.841666666666665,
+          "decision": "consolidation"
+        }
+      ],
+      "specificity": "10k: 0 jednostek specyficznych; 6 progowych.",
+      "fit": "intermediate, 35 lat, 25 km, 2 deklarowanych dni; maksimum 2.",
+      "feasibility": {
+        "status": "ograniczona_skutecznosc",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-02-09",
+          "type": "tempo",
+          "km": 10,
+          "minutes": 62
+        },
+        {
+          "date": "2027-02-16",
+          "type": "latwy",
+          "km": 9,
+          "minutes": 59
+        },
+        {
+          "date": "2027-02-20",
+          "type": "latwy",
+          "km": 5,
+          "minutes": 33
+        },
+        {
+          "date": "2027-02-23",
+          "type": "latwy",
+          "km": 6,
+          "minutes": 40
+        }
+      ]
+    },
+    {
+      "name": "tylko_jeden_dostepny",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          6
+        ],
+        "daysPerWeek": 1,
+        "currentWeeklyKm": 12,
+        "longestRecentRun": 6,
+        "goal": {
+          "type": "5k",
+          "raceDate": "2027-02-28"
+        }
+      },
+      "ok": true,
+      "score23": {
+        "v25": 5.439,
+        "v26": 5.439
+      },
+      "score25": {
+        "v25": 8.657,
+        "v26": 8.657
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Niska częstotliwość ogranicza skuteczność; nie jest to wada samej poprawnej alokacji."
+      ],
+      "overloadRisk": "Najdłuższy bieg 0 km, najdłuższa jednostka 47 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [],
+      "specificity": "5k: 0 jednostek specyficznych; 0 progowych.",
+      "fit": "intermediate, 35 lat, 12 km, 1 deklarowanych dni; maksimum 1.",
+      "feasibility": {
+        "status": "ograniczona_skutecznosc",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-01-30",
+          "type": "latwy",
+          "km": 7,
+          "minutes": 47
+        },
+        {
+          "date": "2027-02-06",
+          "type": "latwy",
+          "km": 7,
+          "minutes": 47
+        },
+        {
+          "date": "2027-02-13",
+          "type": "latwy",
+          "km": 7,
+          "minutes": 47
+        },
+        {
+          "date": "2027-02-20",
+          "type": "latwy",
+          "km": 7,
+          "minutes": 47
+        }
+      ]
+    },
+    {
+      "name": "maraton_4_60_id887",
+      "input": {
+        "today": "2026-11-07",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 4,
+        "currentWeeklyKm": 60,
+        "longestRecentRun": 24,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-04-14"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3300
+        }
+      },
+      "ok": true,
+      "score23": {
+        "v25": 9.176,
+        "v26": 9.176
+      },
+      "score25": {
+        "v25": 9.494,
+        "v26": 9.494
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Powtarzane ekspozycje wymagają sprawdzenia tolerancji i celu, a nie automatycznego dodawania pracy.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 27 km, najdłuższa jednostka 189 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-11-10",
+          "type": "tempo",
+          "minutes": 14.1875,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-11-17",
+          "type": "tempo",
+          "minutes": 17.025,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-01",
+          "type": "test",
+          "minutes": 18,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-08",
+          "type": "tempo",
+          "minutes": 19.8625,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-15",
+          "type": "tempo",
+          "minutes": 19.8625,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2026-12-29",
+          "type": "tempo",
+          "minutes": 22.7,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-01-05",
+          "type": "tempo_startowe",
+          "minutes": 23.866666666666667,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-01-12",
+          "type": "test",
+          "minutes": 18,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-26",
+          "type": "tempo",
+          "minutes": 25.5375,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-02",
+          "type": "tempo_startowe",
+          "minutes": 35.8,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-09",
+          "type": "tempo_startowe",
+          "minutes": 47.733333333333334,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-23",
+          "type": "test",
+          "minutes": 18,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-03-02",
+          "type": "tempo_startowe",
+          "minutes": 47.733333333333334,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-03-09",
+          "type": "tempo_startowe",
+          "minutes": 53.699999999999996,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-03-16",
+          "type": "tempo",
+          "minutes": 25.5375,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-03-23",
+          "type": "tempo_startowe",
+          "minutes": 59.666666666666664,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-03-30",
+          "type": "tempo",
+          "minutes": 17.025,
+          "decision": "reduction"
+        },
+        {
+          "date": "2027-04-06",
+          "type": "tempo",
+          "minutes": 17.025,
+          "decision": "reduction"
+        }
+      ],
+      "specificity": "marathon: 6 jednostek specyficznych; 9 progowych.",
+      "fit": "intermediate, 35 lat, 60 km, 4 deklarowanych dni; maksimum 4.",
+      "feasibility": {
+        "status": "plan_warunkowy",
+        "gotowoscDanych": "szacowana",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-04-07",
+          "type": "regeneracja",
+          "km": 5,
+          "minutes": 39
+        },
+        {
+          "date": "2027-04-09",
+          "type": "latwy",
+          "km": 6,
+          "minutes": 42
+        },
+        {
+          "date": "2027-04-11",
+          "type": "latwy",
+          "km": 6,
+          "minutes": 42
+        },
+        {
+          "date": "2027-04-12",
+          "type": "latwy",
+          "km": 3,
+          "minutes": 21
+        }
+      ]
+    },
+    {
+      "name": "dwa_kolejne_weekend",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          6
+        ],
+        "daysPerWeek": 2,
+        "currentWeeklyKm": 35,
+        "longestRecentRun": 14,
+        "goal": {
+          "type": "half",
+          "raceDate": "2027-02-28"
+        },
+        "experienceMonths": 24
+      },
+      "ok": true,
+      "score23": {
+        "v25": 5.612,
+        "v26": 6.273
+      },
+      "score25": {
+        "v25": 7.893,
+        "v26": 8.558
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Niska częstotliwość ogranicza skuteczność; nie jest to wada samej poprawnej alokacji."
+      ],
+      "overloadRisk": "Najdłuższy bieg 15 km, najdłuższa jednostka 103 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-12-05",
+          "type": "tempo",
+          "minutes": 13.583333333333334,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-01-16",
+          "type": "tempo",
+          "minutes": 19.016666666666666,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-06",
+          "type": "tempo",
+          "minutes": 19.016666666666666,
+          "decision": "consolidation"
+        }
+      ],
+      "specificity": "half: 0 jednostek specyficznych; 3 progowych.",
+      "fit": "intermediate, 35 lat, 35 km, 2 deklarowanych dni; maksimum 2.",
+      "feasibility": {
+        "status": "ograniczona_skutecznosc",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-02-14",
+          "type": "dlugi",
+          "km": 9,
+          "minutes": 62
+        },
+        {
+          "date": "2027-02-13",
+          "type": "latwy",
+          "km": 9,
+          "minutes": 61
+        },
+        {
+          "date": "2027-02-20",
+          "type": "latwy",
+          "km": 8,
+          "minutes": 54
+        },
+        {
+          "date": "2027-02-21",
+          "type": "latwy",
+          "km": 5,
+          "minutes": 34
+        }
+      ]
+    },
+    {
+      "name": "dwa_kolejne_przez_granice",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1
+        ],
+        "daysPerWeek": 2,
+        "currentWeeklyKm": 35,
+        "longestRecentRun": 14,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-02-28"
+        },
+        "experienceMonths": 24
+      },
+      "ok": true,
+      "score23": {
+        "v25": 7.477,
+        "v26": 8.099
+      },
+      "score25": {
+        "v25": 7.792,
+        "v26": 8.453
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Niska częstotliwość ogranicza skuteczność; nie jest to wada samej poprawnej alokacji."
+      ],
+      "overloadRisk": "Najdłuższy bieg 14 km, najdłuższa jednostka 96 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-12-06",
+          "type": "tempo",
+          "minutes": 13.583333333333334,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-01-17",
+          "type": "tempo",
+          "minutes": 19.016666666666666,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-07",
+          "type": "tempo",
+          "minutes": 19.016666666666666,
+          "decision": "consolidation"
+        }
+      ],
+      "specificity": "10k: 0 jednostek specyficznych; 3 progowych.",
+      "fit": "intermediate, 35 lat, 35 km, 2 deklarowanych dni; maksimum 2.",
+      "feasibility": {
+        "status": "ograniczona_skutecznosc",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-02-08",
+          "type": "latwy",
+          "km": 8,
+          "minutes": 54
+        },
+        {
+          "date": "2027-02-15",
+          "type": "latwy",
+          "km": 8,
+          "minutes": 54
+        },
+        {
+          "date": "2027-02-21",
+          "type": "latwy",
+          "km": 5,
+          "minutes": 34
+        },
+        {
+          "date": "2027-02-22",
+          "type": "latwy",
+          "km": 6,
+          "minutes": 41
+        }
+      ]
+    },
+    {
+      "name": "maraton_wolny",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 4,
+        "currentWeeklyKm": 40,
+        "longestRecentRun": 18,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-04-25",
+          "targetTimeSec": 23400
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 5400
+        },
+        "experienceMonths": 36
+      },
+      "ok": true,
+      "score23": {
+        "v25": 6.979,
+        "v26": 6.979
+      },
+      "score25": {
+        "v25": 8.755,
+        "v26": 8.755
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Powtarzane ekspozycje wymagają sprawdzenia tolerancji i celu, a nie automatycznego dodawania pracy.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 17 km, najdłuższa jednostka 186 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-11-10",
+          "type": "tempo",
+          "minutes": 13.5,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-11-17",
+          "type": "tempo",
+          "minutes": 18,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-01",
+          "type": "test",
+          "minutes": 18,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-08",
+          "type": "tempo",
+          "minutes": 18,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2026-12-15",
+          "type": "tempo",
+          "minutes": 18,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2026-12-29",
+          "type": "tempo",
+          "minutes": 22.5,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-01-05",
+          "type": "tempo_startowe",
+          "minutes": 56.9,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-01-12",
+          "type": "test",
+          "minutes": 18,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-26",
+          "type": "tempo",
+          "minutes": 27,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-02",
+          "type": "tempo_startowe",
+          "minutes": 56.9,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-02-09",
+          "type": "tempo",
+          "minutes": 27,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-02-23",
+          "type": "test",
+          "minutes": 18,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-03-02",
+          "type": "tempo_startowe",
+          "minutes": 37.93333333333333,
+          "decision": "stimulus_change"
+        },
+        {
+          "date": "2027-03-09",
+          "type": "tempo_startowe",
+          "minutes": 37.93333333333333,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-03-23",
+          "type": "tempo_startowe",
+          "minutes": 56.9,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-03-30",
+          "type": "tempo_startowe",
+          "minutes": 37.93333333333333,
+          "decision": "stimulus_change"
+        },
+        {
+          "date": "2027-04-06",
+          "type": "tempo",
+          "minutes": 18,
+          "decision": "reduction"
+        },
+        {
+          "date": "2027-04-13",
+          "type": "tempo",
+          "minutes": 18,
+          "decision": "reduction"
+        }
+      ],
+      "specificity": "marathon: 6 jednostek specyficznych; 9 progowych.",
+      "fit": "intermediate, 35 lat, 40 km, 4 deklarowanych dni; maksimum 4.",
+      "feasibility": {
+        "status": "cel_niewykonalny",
+        "gotowoscDanych": "szacowana",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-04-18",
+          "type": "latwy",
+          "km": 9,
+          "minutes": 97
+        },
+        {
+          "date": "2027-04-20",
+          "type": "latwy",
+          "km": 5,
+          "minutes": 54
+        },
+        {
+          "date": "2027-04-21",
+          "type": "latwy",
+          "km": 5,
+          "minutes": 54
+        },
+        {
+          "date": "2027-04-23",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 43
+        }
+      ]
+    },
+    {
+      "name": "maraton_debiut",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 4,
+        "currentWeeklyKm": 40,
+        "longestRecentRun": 18,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-04-25"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3300
+        },
+        "experienceMonths": 24,
+        "longDistanceRaces": 0
+      },
+      "ok": true,
+      "score23": {
+        "v25": 9.488,
+        "v26": 9.488
+      },
+      "score25": {
+        "v25": 9.745,
+        "v26": 9.745
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Powtarzane ekspozycje wymagają sprawdzenia tolerancji i celu, a nie automatycznego dodawania pracy.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 27 km, najdłuższa jednostka 189 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-11-10",
+          "type": "tempo",
+          "minutes": 14.1875,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-11-17",
+          "type": "tempo",
+          "minutes": 17.025,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-01",
+          "type": "test",
+          "minutes": 18,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-08",
+          "type": "tempo",
+          "minutes": 19.8625,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-15",
+          "type": "tempo",
+          "minutes": 19.8625,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2026-12-29",
+          "type": "tempo",
+          "minutes": 22.7,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-01-05",
+          "type": "tempo_startowe",
+          "minutes": 24.066666666666666,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-01-12",
+          "type": "test",
+          "minutes": 18,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-26",
+          "type": "tempo",
+          "minutes": 25.5375,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-02",
+          "type": "tempo_startowe",
+          "minutes": 36.1,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-09",
+          "type": "tempo",
+          "minutes": 25.5375,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-02-23",
+          "type": "test",
+          "minutes": 18,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-03-02",
+          "type": "tempo_startowe",
+          "minutes": 48.13333333333333,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-03-09",
+          "type": "tempo_startowe",
+          "minutes": 48.13333333333333,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-03-23",
+          "type": "tempo_startowe",
+          "minutes": 54.150000000000006,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-03-30",
+          "type": "tempo_startowe",
+          "minutes": 60.166666666666664,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-04-06",
+          "type": "tempo",
+          "minutes": 17.025,
+          "decision": "reduction"
+        },
+        {
+          "date": "2027-04-13",
+          "type": "tempo",
+          "minutes": 17.025,
+          "decision": "reduction"
+        }
+      ],
+      "specificity": "marathon: 6 jednostek specyficznych; 9 progowych.",
+      "fit": "intermediate, 35 lat, 40 km, 4 deklarowanych dni; maksimum 4.",
+      "feasibility": {
+        "status": "plan_warunkowy",
+        "gotowoscDanych": "szacowana",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-04-18",
+          "type": "latwy",
+          "km": 9,
+          "minutes": 62
+        },
+        {
+          "date": "2027-04-20",
+          "type": "latwy",
+          "km": 6,
+          "minutes": 42
+        },
+        {
+          "date": "2027-04-21",
+          "type": "latwy",
+          "km": 6,
+          "minutes": 42
+        },
+        {
+          "date": "2027-04-23",
+          "type": "latwy",
+          "km": 6,
+          "minutes": 42
+        }
+      ]
+    },
+    {
+      "name": "maraton_upal_trasa_GI",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "advanced",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 5,
+        "currentWeeklyKm": 65,
+        "longestRecentRun": 24,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-04-25"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 2700
+        },
+        "experienceMonths": 60,
+        "longDistanceRaces": 4,
+        "conditions": {
+          "temperatureC": 30,
+          "elevationGainM": 450,
+          "terrain": "hilly"
+        },
+        "nutrition": {
+          "giTolerance": "sensitive",
+          "practicedRuns": 1
+        }
+      },
+      "ok": true,
+      "score23": {
+        "v25": 9.125,
+        "v26": 9.125
+      },
+      "score25": {
+        "v25": 9.612,
+        "v26": 9.612
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 32 km, najdłuższa jednostka 186 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-11-11",
+          "type": "tempo",
+          "minutes": 21.15,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-11-18",
+          "type": "tempo",
+          "minutes": 23.5,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-02",
+          "type": "test",
+          "minutes": 30,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-09",
+          "type": "tempo",
+          "minutes": 25.85,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-16",
+          "type": "tempo",
+          "minutes": 25.85,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2026-12-30",
+          "type": "tempo",
+          "minutes": 30.549999999999997,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-01-06",
+          "type": "tempo_startowe",
+          "minutes": 19.666666666666668,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-01-13",
+          "type": "test",
+          "minutes": 30,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-27",
+          "type": "tempo",
+          "minutes": 32.9,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-03",
+          "type": "tempo_startowe",
+          "minutes": 29.5,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-10",
+          "type": "tempo_startowe",
+          "minutes": 39.333333333333336,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-28",
+          "type": "dlugi",
+          "minutes": 24.583333333333332,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-03-03",
+          "type": "tempo_startowe",
+          "minutes": 39.333333333333336,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-03-10",
+          "type": "tempo_startowe",
+          "minutes": 44.25,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-03-21",
+          "type": "dlugi",
+          "minutes": 24.583333333333332,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-03-24",
+          "type": "tempo_startowe",
+          "minutes": 49.166666666666664,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-03-31",
+          "type": "tempo",
+          "minutes": 21.15,
+          "decision": "reduction"
+        },
+        {
+          "date": "2027-04-07",
+          "type": "tempo",
+          "minutes": 21.15,
+          "decision": "reduction"
+        },
+        {
+          "date": "2027-04-14",
+          "type": "tempo",
+          "minutes": 21.15,
+          "decision": "reduction"
+        }
+      ],
+      "specificity": "marathon: 6 jednostek specyficznych; 9 progowych.",
+      "fit": "advanced, 35 lat, 65 km, 5 deklarowanych dni; maksimum 5.",
+      "feasibility": {
+        "status": "plan_warunkowy",
+        "gotowoscDanych": "szacowana",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-04-21",
+          "type": "latwy",
+          "km": 6,
+          "minutes": 35
+        },
+        {
+          "date": "2027-04-22",
+          "type": "latwy",
+          "km": 6,
+          "minutes": 35
+        },
+        {
+          "date": "2027-04-23",
+          "type": "latwy",
+          "km": 6,
+          "minutes": 35
+        },
+        {
+          "date": "2027-04-24",
+          "type": "regeneracja",
+          "km": 3,
+          "minutes": 20
+        }
+      ]
+    },
+    {
+      "name": "senior_72",
+      "input": {
+        "today": "2026-11-02",
+        "age": 72,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 3,
+        "currentWeeklyKm": 18,
+        "longestRecentRun": 7,
+        "goal": {
+          "type": "5k",
+          "raceDate": "2027-02-28"
+        },
+        "bestResult": {
+          "distanceKm": 5,
+          "timeSec": 2100
+        },
+        "experienceMonths": 48
+      },
+      "ok": true,
+      "score23": {
+        "v25": 9.334,
+        "v26": 9.334
+      },
+      "score25": {
+        "v25": 9.444,
+        "v26": 9.444
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 8 km, najdłuższa jednostka 72 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-11-25",
+          "type": "tempo",
+          "minutes": 14.766666666666667,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-02",
+          "type": "test",
+          "minutes": 18,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-16",
+          "type": "interwaly",
+          "minutes": 16.08,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-23",
+          "type": "tempo",
+          "minutes": 18.458333333333332,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-01-06",
+          "type": "tempo",
+          "minutes": 18.458333333333332,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-13",
+          "type": "test",
+          "minutes": 18,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-27",
+          "type": "interwaly",
+          "minutes": 18.759999999999998,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-03",
+          "type": "interwaly",
+          "minutes": 20.1,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-10",
+          "type": "interwaly",
+          "minutes": 20.1,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-02-17",
+          "type": "interwaly",
+          "minutes": 21.44,
+          "decision": "dose_progression"
+        }
+      ],
+      "specificity": "5k: 0 jednostek specyficznych; 3 progowych.",
+      "fit": "intermediate, 72 lat, 18 km, 3 deklarowanych dni; maksimum 3.",
+      "feasibility": {
+        "status": "plan_mozliwy",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-02-19",
+          "type": "latwy",
+          "km": 8,
+          "minutes": 72
+        },
+        {
+          "date": "2027-02-21",
+          "type": "dlugi",
+          "km": 5,
+          "minutes": 45
+        },
+        {
+          "date": "2027-02-24",
+          "type": "latwy",
+          "km": 3,
+          "minutes": 27
+        },
+        {
+          "date": "2027-02-26",
+          "type": "latwy",
+          "km": 3,
+          "minutes": 27
+        }
+      ]
+    },
+    {
+      "name": "duza_baza_90",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "advanced",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 6,
+        "currentWeeklyKm": 90,
+        "longestRecentRun": 24,
+        "goal": {
+          "type": "half",
+          "raceDate": "2027-03-28"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 2300
+        },
+        "experienceMonths": 120,
+        "recentWeeklyKm": [
+          86,
+          88,
+          90,
+          90
+        ]
+      },
+      "ok": true,
+      "score23": {
+        "v25": 8.943,
+        "v26": 8.943
+      },
+      "score25": {
+        "v25": 9.195,
+        "v26": 9.195
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Powtarzane ekspozycje wymagają sprawdzenia tolerancji i celu, a nie automatycznego dodawania pracy.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 24 km, najdłuższa jednostka 120 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-11-11",
+          "type": "tempo",
+          "minutes": 20.208333333333332,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-11-18",
+          "type": "tempo",
+          "minutes": 24.25,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-02",
+          "type": "test",
+          "minutes": 30,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-09",
+          "type": "tempo",
+          "minutes": 26.270833333333336,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-12-16",
+          "type": "tempo",
+          "minutes": 26.270833333333332,
+          "decision": "stimulus_change"
+        },
+        {
+          "date": "2026-12-30",
+          "type": "tempo",
+          "minutes": 30.3125,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-01-06",
+          "type": "tempo",
+          "minutes": 32.333333333333336,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-01-13",
+          "type": "test",
+          "minutes": 30,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-27",
+          "type": "tempo",
+          "minutes": 32.333333333333336,
+          "decision": "stimulus_change"
+        },
+        {
+          "date": "2027-02-03",
+          "type": "tempo_startowe",
+          "minutes": 16.066666666666666,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-02-10",
+          "type": "tempo_startowe",
+          "minutes": 20.083333333333332,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-02-24",
+          "type": "test",
+          "minutes": 30,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-03-03",
+          "type": "tempo_startowe",
+          "minutes": 24.1,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2027-03-10",
+          "type": "tempo_startowe",
+          "minutes": 24.1,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-03-17",
+          "type": "tempo",
+          "minutes": 22.229166666666664,
+          "decision": "reduction"
+        }
+      ],
+      "specificity": "half: 4 jednostek specyficznych; 8 progowych.",
+      "fit": "advanced, 35 lat, 90 km, 6 deklarowanych dni; maksimum 6.",
+      "feasibility": {
+        "status": "plan_mozliwy",
+        "gotowoscDanych": "szacowana",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-03-24",
+          "type": "latwy",
+          "km": 5,
+          "minutes": 25
+        },
+        {
+          "date": "2027-03-25",
+          "type": "latwy",
+          "km": 5,
+          "minutes": 25
+        },
+        {
+          "date": "2027-03-26",
+          "type": "latwy",
+          "km": 5,
+          "minutes": 25
+        },
+        {
+          "date": "2027-03-27",
+          "type": "regeneracja",
+          "km": 3,
+          "minutes": 20
+        }
+      ]
+    },
+    {
+      "name": "jeden_podtrzymanie",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 1,
+        "currentWeeklyKm": 35,
+        "longestRecentRun": 14,
+        "goal": {
+          "type": "10k",
+          "mode": "maintain",
+          "raceDate": "2027-03-28"
+        },
+        "experienceMonths": 24
+      },
+      "ok": true,
+      "score23": {
+        "v25": 0,
+        "v26": 5.782
+      },
+      "score25": {
+        "v25": 0,
+        "v26": 9.135
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Niska częstotliwość ogranicza skuteczność; nie jest to wada samej poprawnej alokacji."
+      ],
+      "overloadRisk": "Najdłuższy bieg 0 km, najdłuższa jednostka 74 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [],
+      "specificity": "10k: 0 jednostek specyficznych; 0 progowych.",
+      "fit": "intermediate, 35 lat, 35 km, 1 deklarowanych dni; maksimum 1.",
+      "feasibility": {
+        "status": "ograniczona_skutecznosc",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-02-28",
+          "type": "latwy",
+          "km": 11,
+          "minutes": 74
+        },
+        {
+          "date": "2027-03-07",
+          "type": "latwy",
+          "km": 11,
+          "minutes": 74
+        },
+        {
+          "date": "2027-03-14",
+          "type": "latwy",
+          "km": 11,
+          "minutes": 74
+        },
+        {
+          "date": "2027-03-21",
+          "type": "latwy",
+          "km": 5,
+          "minutes": 34
+        }
+      ]
+    },
+    {
+      "name": "maly_budzet_sesji",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 3,
+        "currentWeeklyKm": 24,
+        "longestRecentRun": 10,
+        "goal": {
+          "type": "half",
+          "raceDate": "2027-03-28"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3600
+        },
+        "experienceMonths": 18,
+        "maxMinutesWeekday": 40,
+        "maxMinutesWeekend": 80,
+        "planningCandidates": 4
+      },
+      "ok": true,
+      "score23": {
+        "v25": 6.115,
+        "v26": 6.43
+      },
+      "score25": {
+        "v25": 7.726,
+        "v26": 8.087
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Powtarzane ekspozycje wymagają sprawdzenia tolerancji i celu, a nie automatycznego dodawania pracy.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 9 km, najdłuższa jednostka 68 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-12-09",
+          "type": "tempo",
+          "minutes": 9.2375,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-16",
+          "type": "tempo",
+          "minutes": 9.2375,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2026-12-30",
+          "type": "tempo",
+          "minutes": 9.2375,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-06",
+          "type": "tempo",
+          "minutes": 9.2375,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-01-27",
+          "type": "tempo",
+          "minutes": 9.2375,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-02-03",
+          "type": "tempo_startowe",
+          "minutes": 9.575,
+          "decision": "introduction"
+        },
+        {
+          "date": "2027-02-10",
+          "type": "tempo_startowe",
+          "minutes": 9.575,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-03-03",
+          "type": "tempo_startowe",
+          "minutes": 9.575,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-03-10",
+          "type": "tempo_startowe",
+          "minutes": 9.575,
+          "decision": "consolidation"
+        },
+        {
+          "date": "2027-03-17",
+          "type": "tempo",
+          "minutes": 9.2375,
+          "decision": "reduction"
+        }
+      ],
+      "specificity": "half: 4 jednostek specyficznych; 6 progowych.",
+      "fit": "intermediate, 35 lat, 24 km, 3 deklarowanych dni; maksimum 3.",
+      "feasibility": {
+        "status": "ograniczona_skutecznosc",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2027-03-19",
+          "type": "latwy",
+          "km": 5,
+          "minutes": 38
+        },
+        {
+          "date": "2027-03-21",
+          "type": "dlugi",
+          "km": 7,
+          "minutes": 53
+        },
+        {
+          "date": "2027-03-24",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 30
+        },
+        {
+          "date": "2027-03-26",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "name": "krotki_plan_6",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 3,
+        "currentWeeklyKm": 30,
+        "longestRecentRun": 12,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2026-12-20",
+          "targetTimeSec": 3000
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3120
+        }
+      },
+      "ok": true,
+      "score23": {
+        "v25": 8.681,
+        "v26": 8.681
+      },
+      "score25": {
+        "v25": 9.136,
+        "v26": 9.136
+      },
+      "strengths": [
+        "Jawne dane rzeczywiste: 0 wpisów; plan nie zastępuje wykonania.",
+        "Tydzień jest walidowany w km, minutach, odstępach i dostępności; 0 naruszeń twardych."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Najdłuższy bieg 12 km, najdłuższa jednostka 80 min; limity nie są kliniczną prognozą urazu.",
+      "progression": [
+        {
+          "date": "2026-11-11",
+          "type": "tempo",
+          "minutes": 13.458333333333334,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-11-18",
+          "type": "tempo",
+          "minutes": 18.841666666666665,
+          "decision": "dose_progression"
+        },
+        {
+          "date": "2026-11-25",
+          "type": "interwaly",
+          "minutes": 14.6,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-02",
+          "type": "tempo_startowe",
+          "minutes": 20.8,
+          "decision": "introduction"
+        },
+        {
+          "date": "2026-12-09",
+          "type": "tempo",
+          "minutes": 10.766666666666667,
+          "decision": "reduction"
+        }
+      ],
+      "specificity": "10k: 1 jednostek specyficznych; 3 progowych.",
+      "fit": "intermediate, 35 lat, 30 km, 3 deklarowanych dni; maksimum 3.",
+      "feasibility": {
+        "status": "cel_niewykonalny",
+        "gotowoscDanych": "niepotwierdzona",
+        "nieJestOcenaJakosciAlgorytmu": true
+      },
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": [
+        {
+          "date": "2026-12-11",
+          "type": "latwy",
+          "km": 8,
+          "minutes": 53
+        },
+        {
+          "date": "2026-12-13",
+          "type": "dlugi",
+          "km": 9,
+          "minutes": 60
+        },
+        {
+          "date": "2026-12-16",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 26
+        },
+        {
+          "date": "2026-12-18",
+          "type": "latwy",
+          "km": 4,
+          "minutes": 26
+        }
+      ]
+    },
+    {
+      "name": "aktywny_bol_wstrzymanie",
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 3,
+        "currentWeeklyKm": 35,
+        "longestRecentRun": 14,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-02-28"
+        },
+        "activeInjury": true
+      },
+      "ok": false,
+      "score23": {
+        "v25": 0,
+        "v26": 0
+      },
+      "score25": {
+        "v25": null,
+        "v26": null
+      },
+      "strengths": [
+        "Wstrzymanie obciążeń przy zgłoszonym urazie."
+      ],
+      "weaknesses": [
+        "Brak danych o tolerancji i efekcie kolejnych planowanych tygodni.",
+        "Nie wykazano skuteczności w rzeczywistym sezonie."
+      ],
+      "overloadRisk": "Plan wstrzymany; system nie diagnozuje.",
+      "progression": [],
+      "specificity": "10k: 0 jednostek specyficznych; 0 progowych.",
+      "fit": "intermediate, 35 lat, 35 km, 3 deklarowanych dni; maksimum 0.",
+      "feasibility": [
+        "Aktywny uraz lub istotny ból: wstrzymaj generowanie obciążeń i uzgodnij powrót ze specjalistą."
+      ],
+      "nextFix": "Zweryfikować tolerancję wykonaniem i oceną trenera; nie podnosić objętości dla punktów.",
+      "lastWeek": []
+    }
+  ]
+}

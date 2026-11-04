@@ -1,0 +1,13 @@
+{
+  started: '2026-11-04T09:32:10.300Z',
+  elapsedMs: 34727,
+  inputSha256: '00ab459021dbf3100e0cc08a1b4472f7cbafa09a5425033307cdb79656ed008d',
+  scenarios: 1008,
+  distribution: { better: 179, same: 780, worse: 49 },
+  means: {
+    score23: { v24: 7.4174593253968135, v25: 7.443721230158727 },
+    score25: { v24: 9.160130952380971, v25: 9.18744345238097 }
+  },
+  allArchivedValuesReproduced: true,
+  rows: undefined
+}

@@ -1,0 +1,1 @@
+Interrupted: runner V26 did not forward TESTS_ONLY_LIGHT/EXTRA_TEST, discovered by unchanged script-failure test. Correct runner rather than weakening test.

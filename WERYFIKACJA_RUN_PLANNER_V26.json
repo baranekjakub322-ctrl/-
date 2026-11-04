@@ -1,0 +1,35 @@
+{
+  "file": "RunPlanner_V26.zip",
+  "bytes": 73836150,
+  "sha256": "92f4459e7b90ea419769f145e415c13fb697cb4410283463db6d009dd0a0c7a7",
+  "files": 621,
+  "manifestVerified": 620,
+  "zipIntegrity": "PASS",
+  "fullSourceRun": "run-planner/v26/wyniki_v26/run_v26.json",
+  "sourceChecks": 1824,
+  "sourceFailed": 0,
+  "extractedFullRun": {
+    "stagesPassed": 8,
+    "failed": 0,
+    "historicalSuitesPassed": 28,
+    "repeatedSourceChecks": 1824,
+    "separateFromSourceCheckCount": true,
+    "elapsedMs": 493353
+  },
+  "scoresReproduced": {
+    "matrix28": 28,
+    "extended": 1008,
+    "versions": [
+      "v25",
+      "v26"
+    ],
+    "meters": [
+      "23.0.0",
+      "25.0.0"
+    ],
+    "allEqual": true
+  },
+  "finalArchiveTestedSourceHashesVerified": 76,
+  "supplementaryProfilerFromFinalArchive": "PASS",
+  "scope": "Pełne testy uruchomiono z rozpakowanej paczki. Końcowy ZIP uzupełniono o raport i osobno uruchomiony profiler; wszystkie testowane pliki źródłowe i testy w końcowym ZIP mają identyczne SHA-256. Powtórzonych kontroli nie dodano ponownie do wyniku 1824 PASS."
+}

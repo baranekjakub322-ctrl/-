@@ -1,0 +1,1 @@
+Development run interrupted after discovering that the candidate selector could drop a threshold to fill kilometres. Not a completed PASS run. Logs retained.

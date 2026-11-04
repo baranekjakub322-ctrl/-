@@ -1,0 +1,155 @@
+{
+  "node": "v24.19.0",
+  "started": "2026-11-03T21:41:42.149Z",
+  "elapsedMs": 241093,
+  "hashes": {
+    "planGenerator_v24.js": "36e153f21203d0d7a5e42c7c8afc4a111720fec7f30bd14f83717cca4c567312",
+    "model/policy_v24.mjs": "2acb1c9d0450baf23abd5ada0b0984a5360bbb0e175914af9ec6cec725ebdee4",
+    "model/quality_v24.mjs": "74d22887b5c54c9b8194bb1ca69433ba5587db9f70be8bc379fd8e21483a0cb6",
+    "model/frequency_v24.mjs": "810553dcbff103a2fd88052c4c6337838b811c0c424848e69f95b3300b373295",
+    "model/ledger_v24.mjs": "34031e0d98862827f61ae8cea859eb2715cc2f8a473ee1dc62cc931d07bf890a",
+    "model/adaptation_v24.mjs": "fcbe307c33034345941f6aeaed42ae4e877d4fe326c53a4c1de3bc1b39d4a3ca",
+    "planGenerator_v23.js": "b8fd490bf71c986563ef8649152fcbe0accede4121728407cd973d7905922b7a",
+    "planGenerator_v22.js": "499b3ea7fb940e1e9764c9c2394a51fc36e96634e8a7baf39f1b9265cf599554",
+    "model/training.mjs": "dfb3fdd9e9a74dedfa90e458fa14e0e0205dd61b29a779726b7321383bd671a0",
+    "model/policy_v23.mjs": "bcfb1b68dd1ee257da0dd797059d4d3ea3b342552dbdc067fe0ca13ec4ce9c7d",
+    "model/quality_v23.mjs": "fe92d01711b079e54b9caa4dbaa5b4429a4ce00767056e1b9380413de1a82411",
+    "model/adaptation_v23.mjs": "0cd5cdee5d0449ab4ebcb442aaaa9955b849dba4ee5323b82c8e140a794952fb",
+    "scoring/v23.mjs": "a7d2cfe244bb156418e3334b917b39773c1e96ad7c0ff356aac586380aa3eb71",
+    "testy/lib.mjs": "5829b948a5f2d45eb11690478bf529c5925c4e296a40ff42edbc137bb2e3008f",
+    "testy/miernik_v22.mjs": "477aa66b72f5612bb3cd4f50b39c91303ac393eb8bcb22e112965dc1e9e24774",
+    "testy/v23.mjs": "d975154fc9a87a0a2fb70d2f69f0b767aa69280463fd0a5114cb5889b102a871",
+    "testy/benchmark_v23.mjs": "ae71473adab2919ed0e480102c22d901dbb9385e8a3259cf31af37edd086f244",
+    "testy/porownanie_v22_v23.mjs": "36c8a3475e338742cc6509c92f960526b92e3c848672593180283a6b792dcb49"
+  },
+  "results": [
+    {
+      "name": "podstawowe",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 223
+    },
+    {
+      "name": "trudne",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 709
+    },
+    {
+      "name": "czulosc",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 340
+    },
+    {
+      "name": "regresje",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 9666
+    },
+    {
+      "name": "czulosc_v21",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 504
+    },
+    {
+      "name": "jakosciowe",
+      "status": 1,
+      "signal": null,
+      "elapsedMs": 3842
+    },
+    {
+      "name": "dostepnosc",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 5499
+    },
+    {
+      "name": "porownanie28",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 559
+    },
+    {
+      "name": "porownanie_v19_v20",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 15212
+    },
+    {
+      "name": "porownanie_v20_v21",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 15150
+    },
+    {
+      "name": "sweep",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 79939
+    },
+    {
+      "name": "skrypt_bledy",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 551
+    },
+    {
+      "name": "v22",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 1636
+    },
+    {
+      "name": "porownanie_v21_v22",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 27430
+    },
+    {
+      "name": "regresje_v22_v23",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 1528
+    },
+    {
+      "name": "kalibracja_v23",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 65
+    },
+    {
+      "name": "v23",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 1543
+    },
+    {
+      "name": "porownanie_v22_v23",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 31362
+    },
+    {
+      "name": "v24_inherited",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 1624
+    },
+    {
+      "name": "v24",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 6383
+    },
+    {
+      "name": "porownanie_v23_v24",
+      "status": 0,
+      "signal": null,
+      "elapsedMs": 37320
+    }
+  ],
+  "passed": 20,
+  "failed": 1
+}

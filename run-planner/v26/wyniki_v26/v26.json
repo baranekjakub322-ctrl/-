@@ -1,0 +1,688 @@
+{
+  "passed": 170,
+  "failed": 0,
+  "longTerm": 24,
+  "blindScenarios": 64,
+  "tests": [
+    {
+      "name": "public API retained and version changed",
+      "ok": true
+    },
+    {
+      "name": "frozen sources and input corpus preserved byte for byte",
+      "ok": true
+    },
+    {
+      "name": "actual quality progression 5k/6",
+      "ok": true
+    },
+    {
+      "name": "actual quality progression 5k/8",
+      "ok": true
+    },
+    {
+      "name": "actual quality progression 5k/12",
+      "ok": true
+    },
+    {
+      "name": "actual quality progression 5k/16",
+      "ok": true
+    },
+    {
+      "name": "actual quality progression 5k/20",
+      "ok": true
+    },
+    {
+      "name": "actual quality progression 5k/24",
+      "ok": true
+    },
+    {
+      "name": "actual quality progression 10k/6",
+      "ok": true
+    },
+    {
+      "name": "actual quality progression 10k/8",
+      "ok": true
+    },
+    {
+      "name": "actual quality progression 10k/12",
+      "ok": true
+    },
+    {
+      "name": "actual quality progression 10k/16",
+      "ok": true
+    },
+    {
+      "name": "actual quality progression 10k/20",
+      "ok": true
+    },
+    {
+      "name": "actual quality progression 10k/24",
+      "ok": true
+    },
+    {
+      "name": "actual quality progression half/6",
+      "ok": true
+    },
+    {
+      "name": "actual quality progression half/8",
+      "ok": true
+    },
+    {
+      "name": "actual quality progression half/12",
+      "ok": true
+    },
+    {
+      "name": "actual quality progression half/16",
+      "ok": true
+    },
+    {
+      "name": "actual quality progression half/20",
+      "ok": true
+    },
+    {
+      "name": "actual quality progression half/24",
+      "ok": true
+    },
+    {
+      "name": "actual quality progression marathon/6",
+      "ok": true
+    },
+    {
+      "name": "actual quality progression marathon/8",
+      "ok": true
+    },
+    {
+      "name": "actual quality progression marathon/12",
+      "ok": true
+    },
+    {
+      "name": "actual quality progression marathon/16",
+      "ok": true
+    },
+    {
+      "name": "actual quality progression marathon/20",
+      "ok": true
+    },
+    {
+      "name": "actual quality progression marathon/24",
+      "ok": true
+    },
+    {
+      "name": "dedicated policy 5k/1/beginner",
+      "ok": true
+    },
+    {
+      "name": "dedicated policy 5k/1/intermediate",
+      "ok": true
+    },
+    {
+      "name": "dedicated policy 5k/1/advanced",
+      "ok": true
+    },
+    {
+      "name": "dedicated policy 5k/2/beginner",
+      "ok": true
+    },
+    {
+      "name": "dedicated policy 5k/2/intermediate",
+      "ok": true
+    },
+    {
+      "name": "dedicated policy 5k/2/advanced",
+      "ok": true
+    },
+    {
+      "name": "dedicated policy 10k/1/beginner",
+      "ok": true
+    },
+    {
+      "name": "dedicated policy 10k/1/intermediate",
+      "ok": true
+    },
+    {
+      "name": "dedicated policy 10k/1/advanced",
+      "ok": true
+    },
+    {
+      "name": "dedicated policy 10k/2/beginner",
+      "ok": true
+    },
+    {
+      "name": "dedicated policy 10k/2/intermediate",
+      "ok": true
+    },
+    {
+      "name": "dedicated policy 10k/2/advanced",
+      "ok": true
+    },
+    {
+      "name": "dedicated policy half/1/beginner",
+      "ok": true
+    },
+    {
+      "name": "dedicated policy half/1/intermediate",
+      "ok": true
+    },
+    {
+      "name": "dedicated policy half/1/advanced",
+      "ok": true
+    },
+    {
+      "name": "dedicated policy half/2/beginner",
+      "ok": true
+    },
+    {
+      "name": "dedicated policy half/2/intermediate",
+      "ok": true
+    },
+    {
+      "name": "dedicated policy half/2/advanced",
+      "ok": true
+    },
+    {
+      "name": "dedicated policy marathon/1/beginner",
+      "ok": true
+    },
+    {
+      "name": "dedicated policy marathon/1/intermediate",
+      "ok": true
+    },
+    {
+      "name": "dedicated policy marathon/1/advanced",
+      "ok": true
+    },
+    {
+      "name": "dedicated policy marathon/2/beginner",
+      "ok": true
+    },
+    {
+      "name": "dedicated policy marathon/2/intermediate",
+      "ok": true
+    },
+    {
+      "name": "dedicated policy marathon/2/advanced",
+      "ok": true
+    },
+    {
+      "name": "two available days 0,6",
+      "ok": true
+    },
+    {
+      "name": "two available days 1,2",
+      "ok": true
+    },
+    {
+      "name": "two available days 2,6",
+      "ok": true
+    },
+    {
+      "name": "two available days 0,1",
+      "ok": true
+    },
+    {
+      "name": "one-day purposeful moderate fragment replaces strides and stays within existing distance",
+      "ok": true
+    },
+    {
+      "name": "maintenance and activity explicitly avoid forced moderate work",
+      "ok": true
+    },
+    {
+      "name": "race weekday 0/5k",
+      "ok": true
+    },
+    {
+      "name": "race weekday 0/10k",
+      "ok": true
+    },
+    {
+      "name": "race weekday 0/half",
+      "ok": true
+    },
+    {
+      "name": "race weekday 0/marathon",
+      "ok": true
+    },
+    {
+      "name": "race weekday 1/5k",
+      "ok": true
+    },
+    {
+      "name": "race weekday 1/10k",
+      "ok": true
+    },
+    {
+      "name": "race weekday 1/half",
+      "ok": true
+    },
+    {
+      "name": "race weekday 1/marathon",
+      "ok": true
+    },
+    {
+      "name": "race weekday 2/5k",
+      "ok": true
+    },
+    {
+      "name": "race weekday 2/10k",
+      "ok": true
+    },
+    {
+      "name": "race weekday 2/half",
+      "ok": true
+    },
+    {
+      "name": "race weekday 2/marathon",
+      "ok": true
+    },
+    {
+      "name": "race weekday 3/5k",
+      "ok": true
+    },
+    {
+      "name": "race weekday 3/10k",
+      "ok": true
+    },
+    {
+      "name": "race weekday 3/half",
+      "ok": true
+    },
+    {
+      "name": "race weekday 3/marathon",
+      "ok": true
+    },
+    {
+      "name": "race weekday 4/5k",
+      "ok": true
+    },
+    {
+      "name": "race weekday 4/10k",
+      "ok": true
+    },
+    {
+      "name": "race weekday 4/half",
+      "ok": true
+    },
+    {
+      "name": "race weekday 4/marathon",
+      "ok": true
+    },
+    {
+      "name": "race weekday 5/5k",
+      "ok": true
+    },
+    {
+      "name": "race weekday 5/10k",
+      "ok": true
+    },
+    {
+      "name": "race weekday 5/half",
+      "ok": true
+    },
+    {
+      "name": "race weekday 5/marathon",
+      "ok": true
+    },
+    {
+      "name": "race weekday 6/5k",
+      "ok": true
+    },
+    {
+      "name": "race weekday 6/10k",
+      "ok": true
+    },
+    {
+      "name": "race weekday 6/half",
+      "ok": true
+    },
+    {
+      "name": "race weekday 6/marathon",
+      "ok": true
+    },
+    {
+      "name": "metamorphic less aggression {\"fatigue\":5}",
+      "ok": true
+    },
+    {
+      "name": "metamorphic less aggression {\"intensityTolerance\":\"low\"}",
+      "ok": true
+    },
+    {
+      "name": "metamorphic less aggression {\"volumeTolerance\":\"low\"}",
+      "ok": true
+    },
+    {
+      "name": "metamorphic less aggression {\"experienceMonths\":2}",
+      "ok": true
+    },
+    {
+      "name": "metamorphic less aggression {\"breakDays\":30}",
+      "ok": true
+    },
+    {
+      "name": "metamorphic less aggression {\"pain\":3}",
+      "ok": true
+    },
+    {
+      "name": "ambitious target does not speed threshold or intervals",
+      "ok": true
+    },
+    {
+      "name": "bounded candidates 2",
+      "ok": true
+    },
+    {
+      "name": "bounded candidates 3",
+      "ok": true
+    },
+    {
+      "name": "bounded candidates 4",
+      "ok": true
+    },
+    {
+      "name": "a declared seven-day schedule is conditional on actual frequency evidence",
+      "ok": true
+    },
+    {
+      "name": "candidate selection preserves the prescribed stimulus before filling kilometres",
+      "ok": true
+    },
+    {
+      "name": "prepared half marathon develops sustained threshold as well as cruise blocks",
+      "ok": true
+    },
+    {
+      "name": "threshold recovery has consistent distance, time and prescribed pace",
+      "ok": true
+    },
+    {
+      "name": "blind property 0",
+      "ok": true
+    },
+    {
+      "name": "blind property 1",
+      "ok": true
+    },
+    {
+      "name": "blind property 2",
+      "ok": true
+    },
+    {
+      "name": "blind property 3",
+      "ok": true
+    },
+    {
+      "name": "blind property 4",
+      "ok": true
+    },
+    {
+      "name": "blind property 5",
+      "ok": true
+    },
+    {
+      "name": "blind property 6",
+      "ok": true
+    },
+    {
+      "name": "blind property 7",
+      "ok": true
+    },
+    {
+      "name": "blind property 8",
+      "ok": true
+    },
+    {
+      "name": "blind property 9",
+      "ok": true
+    },
+    {
+      "name": "blind property 10",
+      "ok": true
+    },
+    {
+      "name": "blind property 11",
+      "ok": true
+    },
+    {
+      "name": "blind property 12",
+      "ok": true
+    },
+    {
+      "name": "blind property 13",
+      "ok": true
+    },
+    {
+      "name": "blind property 14",
+      "ok": true
+    },
+    {
+      "name": "blind property 15",
+      "ok": true
+    },
+    {
+      "name": "blind property 16",
+      "ok": true
+    },
+    {
+      "name": "blind property 17",
+      "ok": true
+    },
+    {
+      "name": "blind property 18",
+      "ok": true
+    },
+    {
+      "name": "blind property 19",
+      "ok": true
+    },
+    {
+      "name": "blind property 20",
+      "ok": true
+    },
+    {
+      "name": "blind property 21",
+      "ok": true
+    },
+    {
+      "name": "blind property 22",
+      "ok": true
+    },
+    {
+      "name": "blind property 23",
+      "ok": true
+    },
+    {
+      "name": "blind property 24",
+      "ok": true
+    },
+    {
+      "name": "blind property 25",
+      "ok": true
+    },
+    {
+      "name": "blind property 26",
+      "ok": true
+    },
+    {
+      "name": "blind property 27",
+      "ok": true
+    },
+    {
+      "name": "blind property 28",
+      "ok": true
+    },
+    {
+      "name": "blind property 29",
+      "ok": true
+    },
+    {
+      "name": "blind property 30",
+      "ok": true
+    },
+    {
+      "name": "blind property 31",
+      "ok": true
+    },
+    {
+      "name": "blind property 32",
+      "ok": true
+    },
+    {
+      "name": "blind property 33",
+      "ok": true
+    },
+    {
+      "name": "blind property 34",
+      "ok": true
+    },
+    {
+      "name": "blind property 35",
+      "ok": true
+    },
+    {
+      "name": "blind property 36",
+      "ok": true
+    },
+    {
+      "name": "blind property 37",
+      "ok": true
+    },
+    {
+      "name": "blind property 38",
+      "ok": true
+    },
+    {
+      "name": "blind property 39",
+      "ok": true
+    },
+    {
+      "name": "blind property 40",
+      "ok": true
+    },
+    {
+      "name": "blind property 41",
+      "ok": true
+    },
+    {
+      "name": "blind property 42",
+      "ok": true
+    },
+    {
+      "name": "blind property 43",
+      "ok": true
+    },
+    {
+      "name": "blind property 44",
+      "ok": true
+    },
+    {
+      "name": "blind property 45",
+      "ok": true
+    },
+    {
+      "name": "blind property 46",
+      "ok": true
+    },
+    {
+      "name": "blind property 47",
+      "ok": true
+    },
+    {
+      "name": "blind property 48",
+      "ok": true
+    },
+    {
+      "name": "blind property 49",
+      "ok": true
+    },
+    {
+      "name": "blind property 50",
+      "ok": true
+    },
+    {
+      "name": "blind property 51",
+      "ok": true
+    },
+    {
+      "name": "blind property 52",
+      "ok": true
+    },
+    {
+      "name": "blind property 53",
+      "ok": true
+    },
+    {
+      "name": "blind property 54",
+      "ok": true
+    },
+    {
+      "name": "blind property 55",
+      "ok": true
+    },
+    {
+      "name": "blind property 56",
+      "ok": true
+    },
+    {
+      "name": "blind property 57",
+      "ok": true
+    },
+    {
+      "name": "blind property 58",
+      "ok": true
+    },
+    {
+      "name": "blind property 59",
+      "ok": true
+    },
+    {
+      "name": "blind property 60",
+      "ok": true
+    },
+    {
+      "name": "blind property 61",
+      "ok": true
+    },
+    {
+      "name": "blind property 62",
+      "ok": true
+    },
+    {
+      "name": "blind property 63",
+      "ok": true
+    },
+    {
+      "name": "invalid edge {\"planningCandidates\":0}",
+      "ok": true
+    },
+    {
+      "name": "invalid edge {\"planningCandidates\":null}",
+      "ok": true
+    },
+    {
+      "name": "invalid edge {\"maxMinutes\":null}",
+      "ok": true
+    },
+    {
+      "name": "invalid edge {\"today\":\"2026-02-30\"}",
+      "ok": true
+    },
+    {
+      "name": "invalid edge {\"currentWeeklyKm\":-1}",
+      "ok": true
+    },
+    {
+      "name": "invalid edge {\"daysPerWeek\":8}",
+      "ok": true
+    },
+    {
+      "name": "invalid edge {\"activeInjury\":true}",
+      "ok": true
+    },
+    {
+      "name": "invalid edge {\"goal\":{\"type\":\"10k\",\"raceDate\":\"2026-11-01\"}}",
+      "ok": true
+    }
+  ]
+}

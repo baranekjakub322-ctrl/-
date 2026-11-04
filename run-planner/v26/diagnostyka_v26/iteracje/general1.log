@@ -1,0 +1,15 @@
+V26 165/167
+two available days 0,1 AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert(p.treningi.some(t=>t.podtyp==='tempo'))
+
+    at file:///workspace/-/run-planner/v26/testy/v26.mjs:16:230
+    at test (file:///workspace/-/run-planner/v26/testy/v26.mjs:4:115)
+    at file:///workspace/-/run-planner/v26/testy/v26.mjs:16:54
+maintenance and activity explicitly avoid forced moderate work AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert(p.ok)
+
+    at file:///workspace/-/run-planner/v26/testy/v26.mjs:18:186
+    at test (file:///workspace/-/run-planner/v26/testy/v26.mjs:4:115)
+    at file:///workspace/-/run-planner/v26/testy/v26.mjs:18:1

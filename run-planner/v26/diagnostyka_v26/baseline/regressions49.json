@@ -1,0 +1,2599 @@
+[
+  {
+    "id": 175,
+    "input": {
+      "today": "2026-11-02",
+      "age": 35,
+      "level": "advanced",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 5,
+      "currentWeeklyKm": 30,
+      "longestRecentRun": 12,
+      "goal": {
+        "type": "5k",
+        "raceDate": "2027-02-24"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 9.38,
+      "v25": 9.335
+    },
+    "score25": {
+      "v24": 9.623,
+      "v25": 9.623
+    },
+    "delta": -0.04499999999999993,
+    "delta25": 0,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -0.30100000000000016,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "zaokraglenie_dawki_lub_wczesny_prog",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 211,
+    "input": {
+      "today": "2026-11-03",
+      "age": 35,
+      "level": "advanced",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 6,
+      "currentWeeklyKm": 30,
+      "longestRecentRun": 12,
+      "goal": {
+        "type": "5k",
+        "raceDate": "2027-02-24"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 9.38,
+      "v25": 9.335
+    },
+    "score25": {
+      "v24": 9.623,
+      "v25": 9.623
+    },
+    "delta": -0.04499999999999993,
+    "delta25": 0,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -0.30100000000000016,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "zaokraglenie_dawki_lub_wczesny_prog",
+    "historicalBelowV23": true,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 247,
+    "input": {
+      "today": "2026-11-04",
+      "age": 35,
+      "level": "advanced",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 7,
+      "currentWeeklyKm": 30,
+      "longestRecentRun": 12,
+      "goal": {
+        "type": "5k",
+        "raceDate": "2027-02-24"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 9.38,
+      "v25": 9.335
+    },
+    "score25": {
+      "v24": 9.623,
+      "v25": 9.623
+    },
+    "delta": -0.04499999999999993,
+    "delta25": 0,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -0.30100000000000016,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "zaokraglenie_dawki_lub_wczesny_prog",
+    "historicalBelowV23": true,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 406,
+    "input": {
+      "today": "2026-11-02",
+      "age": 35,
+      "level": "beginner",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 5,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "10k",
+        "raceDate": "2027-02-23"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.943,
+      "v25": 8.89
+    },
+    "score25": {
+      "v24": 9.032,
+      "v25": 9.032
+    },
+    "delta": -0.05299999999999905,
+    "delta25": 0,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -0.3540000000000001,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "zaokraglenie_dawki_lub_wczesny_prog",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 413,
+    "input": {
+      "today": "2026-11-02",
+      "age": 35,
+      "level": "intermediate",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 5,
+      "currentWeeklyKm": 30,
+      "longestRecentRun": 12,
+      "goal": {
+        "type": "10k",
+        "raceDate": "2027-02-22"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 9.461,
+      "v25": 9.408
+    },
+    "score25": {
+      "v24": 9.55,
+      "v25": 9.55
+    },
+    "delta": -0.053000000000000824,
+    "delta25": 0,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -0.354000000000001,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "zaokraglenie_dawki_lub_wczesny_prog",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 414,
+    "input": {
+      "today": "2026-11-03",
+      "age": 35,
+      "level": "intermediate",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 5,
+      "currentWeeklyKm": 30,
+      "longestRecentRun": 12,
+      "goal": {
+        "type": "10k",
+        "raceDate": "2027-02-23"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 9.325,
+      "v25": 9.272
+    },
+    "score25": {
+      "v24": 9.414,
+      "v25": 9.414
+    },
+    "delta": -0.05299999999999905,
+    "delta25": 0,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -0.354000000000001,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "zaokraglenie_dawki_lub_wczesny_prog",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 431,
+    "input": {
+      "today": "2026-11-06",
+      "age": 35,
+      "level": "advanced",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 5,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "10k",
+        "raceDate": "2027-03-03"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.825,
+      "v25": 8.809
+    },
+    "score25": {
+      "v24": 8.791,
+      "v25": 8.791
+    },
+    "delta": -0.016000000000000014,
+    "delta25": 0,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -0.10500000000000043,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "zaokraglenie_dawki_lub_wczesny_prog",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 441,
+    "input": {
+      "today": "2026-11-02",
+      "age": 35,
+      "level": "beginner",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 6,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "10k",
+        "raceDate": "2027-02-22"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.943,
+      "v25": 8.89
+    },
+    "score25": {
+      "v24": 9.032,
+      "v25": 9.032
+    },
+    "delta": -0.05299999999999905,
+    "delta25": 0,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -0.3540000000000001,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "zaokraglenie_dawki_lub_wczesny_prog",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 442,
+    "input": {
+      "today": "2026-11-03",
+      "age": 35,
+      "level": "beginner",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 6,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "10k",
+        "raceDate": "2027-02-23"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.943,
+      "v25": 8.89
+    },
+    "score25": {
+      "v24": 9.032,
+      "v25": 9.032
+    },
+    "delta": -0.05299999999999905,
+    "delta25": 0,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -0.3540000000000001,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "zaokraglenie_dawki_lub_wczesny_prog",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 462,
+    "input": {
+      "today": "2026-11-02",
+      "age": 35,
+      "level": "advanced",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 6,
+      "currentWeeklyKm": 30,
+      "longestRecentRun": 12,
+      "goal": {
+        "type": "10k",
+        "raceDate": "2027-02-23"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 9.347,
+      "v25": 9.304
+    },
+    "score25": {
+      "v24": 9.491,
+      "v25": 9.491
+    },
+    "delta": -0.04299999999999926,
+    "delta25": 0,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -0.28800000000000026,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "zaokraglenie_dawki_lub_wczesny_prog",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 467,
+    "input": {
+      "today": "2026-11-07",
+      "age": 35,
+      "level": "advanced",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 6,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "10k",
+        "raceDate": "2027-03-03"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.825,
+      "v25": 8.809
+    },
+    "score25": {
+      "v24": 8.791,
+      "v25": 8.791
+    },
+    "delta": -0.016000000000000014,
+    "delta25": 0,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -0.10500000000000043,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "zaokraglenie_dawki_lub_wczesny_prog",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 490,
+    "input": {
+      "today": "2026-11-02",
+      "age": 35,
+      "level": "intermediate",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 7,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "10k",
+        "raceDate": "2027-02-23"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.943,
+      "v25": 8.89
+    },
+    "score25": {
+      "v24": 9.032,
+      "v25": 9.032
+    },
+    "delta": -0.05299999999999905,
+    "delta25": 0,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -0.3540000000000001,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "zaokraglenie_dawki_lub_wczesny_prog",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 497,
+    "input": {
+      "today": "2026-11-02",
+      "age": 35,
+      "level": "advanced",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 7,
+      "currentWeeklyKm": 30,
+      "longestRecentRun": 12,
+      "goal": {
+        "type": "10k",
+        "raceDate": "2027-02-22"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 9.347,
+      "v25": 9.304
+    },
+    "score25": {
+      "v24": 9.491,
+      "v25": 9.491
+    },
+    "delta": -0.04299999999999926,
+    "delta25": 0,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -0.28800000000000026,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "zaokraglenie_dawki_lub_wczesny_prog",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 498,
+    "input": {
+      "today": "2026-11-03",
+      "age": 35,
+      "level": "advanced",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 7,
+      "currentWeeklyKm": 30,
+      "longestRecentRun": 12,
+      "goal": {
+        "type": "10k",
+        "raceDate": "2027-02-23"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 9.347,
+      "v25": 9.304
+    },
+    "score25": {
+      "v24": 9.491,
+      "v25": 9.491
+    },
+    "delta": -0.04299999999999926,
+    "delta25": 0,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -0.28800000000000026,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "zaokraglenie_dawki_lub_wczesny_prog",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 503,
+    "input": {
+      "today": "2026-11-08",
+      "age": 35,
+      "level": "advanced",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 7,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "10k",
+        "raceDate": "2027-03-03"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 9.008,
+      "v25": 8.992
+    },
+    "score25": {
+      "v24": 8.974,
+      "v25": 8.974
+    },
+    "delta": -0.015999999999998238,
+    "delta25": 0,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -0.10500000000000043,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "zaokraglenie_dawki_lub_wczesny_prog",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 549,
+    "input": {
+      "today": "2026-11-05",
+      "age": 35,
+      "level": "beginner",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 2,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "half",
+        "raceDate": "2027-03-01"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 5.418,
+      "v25": 5.326
+    },
+    "score25": {
+      "v24": 8.722,
+      "v25": 8.749
+    },
+    "delta": -0.09200000000000053,
+    "delta25": 0.027000000000001023,
+    "deltas": {
+      "bezpieczenstwo": -1.6509999999999994,
+      "indywidualizacja": 0,
+      "progresja": 0,
+      "dystans": 2.000000000000001,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "czas_HM_lub_koncentracja",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 550,
+    "input": {
+      "today": "2026-11-06",
+      "age": 35,
+      "level": "beginner",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 2,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "half",
+        "raceDate": "2027-03-02"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 6.271,
+      "v25": 6.168
+    },
+    "score25": {
+      "v24": 8.765,
+      "v25": 9.093
+    },
+    "delta": -0.10299999999999976,
+    "delta25": 0.3279999999999994,
+    "deltas": {
+      "bezpieczenstwo": -2.9059999999999997,
+      "indywidualizacja": 0,
+      "progresja": 2.002,
+      "dystans": 2.000000000000001,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "czas_HM_lub_koncentracja",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 551,
+    "input": {
+      "today": "2026-11-07",
+      "age": 35,
+      "level": "beginner",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 2,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "half",
+        "raceDate": "2027-03-03"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 6.608,
+      "v25": 6.259
+    },
+    "score25": {
+      "v24": 9.177,
+      "v25": 9.205
+    },
+    "delta": -0.3489999999999993,
+    "delta25": 0.02800000000000047,
+    "deltas": {
+      "bezpieczenstwo": -2.9059999999999997,
+      "indywidualizacja": 0,
+      "progresja": 0,
+      "dystans": 2.000000000000001,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "czas_HM_lub_koncentracja",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 561,
+    "input": {
+      "today": "2026-11-03",
+      "age": 35,
+      "level": "intermediate",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 2,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "half",
+        "raceDate": "2027-03-01"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 5.418,
+      "v25": 5.326
+    },
+    "score25": {
+      "v24": 8.722,
+      "v25": 8.749
+    },
+    "delta": -0.09200000000000053,
+    "delta25": 0.027000000000001023,
+    "deltas": {
+      "bezpieczenstwo": -1.6509999999999994,
+      "indywidualizacja": 0,
+      "progresja": 0,
+      "dystans": 2.000000000000001,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "czas_HM_lub_koncentracja",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 562,
+    "input": {
+      "today": "2026-11-04",
+      "age": 35,
+      "level": "intermediate",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 2,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "half",
+        "raceDate": "2027-03-02"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 5.418,
+      "v25": 5.326
+    },
+    "score25": {
+      "v24": 8.722,
+      "v25": 8.749
+    },
+    "delta": -0.09200000000000053,
+    "delta25": 0.027000000000001023,
+    "deltas": {
+      "bezpieczenstwo": -1.6509999999999994,
+      "indywidualizacja": 0,
+      "progresja": 0,
+      "dystans": 2.000000000000001,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "czas_HM_lub_koncentracja",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 836,
+    "input": {
+      "today": "2026-11-05",
+      "age": 35,
+      "level": "beginner",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 3,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-11"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 7.275,
+      "v25": 7.27
+    },
+    "score25": {
+      "v24": 8.821,
+      "v25": 8.815
+    },
+    "delta": -0.005000000000000782,
+    "delta25": -0.006000000000000227,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -0.47300000000000075,
+      "dystans": 0,
+      "jakosc": 0.4369999999999994,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "nierozstrzygniete",
+    "priority": "sredni",
+    "hypothesis": "rotacja_rodzin_MP_prog_taper",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 848,
+    "input": {
+      "today": "2026-11-03",
+      "age": 35,
+      "level": "intermediate",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 3,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-11"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 7.418,
+      "v25": 7.414
+    },
+    "score25": {
+      "v24": 8.986,
+      "v25": 8.981
+    },
+    "delta": -0.004000000000000448,
+    "delta25": -0.005000000000000782,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -0.47300000000000075,
+      "dystans": 0,
+      "jakosc": 0.4369999999999994,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "nierozstrzygniete",
+    "priority": "sredni",
+    "hypothesis": "rotacja_rodzin_MP_prog_taper",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 908,
+    "input": {
+      "today": "2026-11-07",
+      "age": 35,
+      "level": "beginner",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 5,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-11"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 9.285,
+      "v25": 8.934
+    },
+    "score25": {
+      "v24": 9.544,
+      "v25": 9.452
+    },
+    "delta": -0.35100000000000087,
+    "delta25": -0.09200000000000053,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -2.3810000000000002,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "nierozstrzygniete",
+    "priority": "sredni",
+    "hypothesis": "rotacja_rodzin_MP_prog_taper",
+    "historicalBelowV23": true,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 909,
+    "input": {
+      "today": "2026-11-08",
+      "age": 35,
+      "level": "beginner",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 5,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-12"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.752,
+      "v25": 8.552
+    },
+    "score25": {
+      "v24": 9.003,
+      "v25": 9.063
+    },
+    "delta": -0.20000000000000107,
+    "delta25": 0.0600000000000005,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -1.362,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "rotacja_rodzin_MP_prog_taper",
+    "historicalBelowV23": true,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 911,
+    "input": {
+      "today": "2026-11-03",
+      "age": 35,
+      "level": "beginner",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 5,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-07"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 9.285,
+      "v25": 8.934
+    },
+    "score25": {
+      "v24": 9.544,
+      "v25": 9.452
+    },
+    "delta": -0.35100000000000087,
+    "delta25": -0.09200000000000053,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -2.3810000000000002,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "nierozstrzygniete",
+    "priority": "sredni",
+    "hypothesis": "rotacja_rodzin_MP_prog_taper",
+    "historicalBelowV23": true,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 920,
+    "input": {
+      "today": "2026-11-05",
+      "age": 35,
+      "level": "intermediate",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 5,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-11"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 9.122,
+      "v25": 8.772
+    },
+    "score25": {
+      "v24": 9.378,
+      "v25": 9.287
+    },
+    "delta": -0.34999999999999964,
+    "delta25": -0.0909999999999993,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -2.3810000000000002,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "nierozstrzygniete",
+    "priority": "sredni",
+    "hypothesis": "rotacja_rodzin_MP_prog_taper",
+    "historicalBelowV23": true,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 921,
+    "input": {
+      "today": "2026-11-06",
+      "age": 35,
+      "level": "intermediate",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 5,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-12"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.6,
+      "v25": 8.399
+    },
+    "score25": {
+      "v24": 8.847,
+      "v25": 8.908
+    },
+    "delta": -0.2010000000000005,
+    "delta25": 0.06099999999999994,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -1.362,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "rotacja_rodzin_MP_prog_taper",
+    "historicalBelowV23": true,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 922,
+    "input": {
+      "today": "2026-11-07",
+      "age": 35,
+      "level": "intermediate",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 5,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-13"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.752,
+      "v25": 8.552
+    },
+    "score25": {
+      "v24": 9.003,
+      "v25": 9.063
+    },
+    "delta": -0.20000000000000107,
+    "delta25": 0.0600000000000005,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -1.362,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "rotacja_rodzin_MP_prog_taper",
+    "historicalBelowV23": true,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 932,
+    "input": {
+      "today": "2026-11-03",
+      "age": 35,
+      "level": "advanced",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 5,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-11"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.526,
+      "v25": 8.523
+    },
+    "score25": {
+      "v24": 9.156,
+      "v25": 9.18
+    },
+    "delta": -0.0030000000000001137,
+    "delta25": 0.023999999999999133,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": 0.4170000000000007,
+      "dystans": 0,
+      "jakosc": -0.4369999999999994,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "zaokraglenie_dawki_lub_wczesny_prog",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 933,
+    "input": {
+      "today": "2026-11-04",
+      "age": 35,
+      "level": "advanced",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 5,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-12"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.222,
+      "v25": 8.192
+    },
+    "score25": {
+      "v24": 8.847,
+      "v25": 8.842
+    },
+    "delta": -0.02999999999999936,
+    "delta25": -0.004999999999999005,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": 0.23100000000000032,
+      "dystans": 0,
+      "jakosc": -0.4369999999999994,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "nierozstrzygniete",
+    "priority": "sredni",
+    "hypothesis": "zaokraglenie_dawki_lub_wczesny_prog",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 934,
+    "input": {
+      "today": "2026-11-05",
+      "age": 35,
+      "level": "advanced",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 5,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-13"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.222,
+      "v25": 8.192
+    },
+    "score25": {
+      "v24": 8.847,
+      "v25": 8.842
+    },
+    "delta": -0.02999999999999936,
+    "delta25": -0.004999999999999005,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": 0.23100000000000032,
+      "dystans": 0,
+      "jakosc": -0.4369999999999994,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "nierozstrzygniete",
+    "priority": "sredni",
+    "hypothesis": "zaokraglenie_dawki_lub_wczesny_prog",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 944,
+    "input": {
+      "today": "2026-11-08",
+      "age": 35,
+      "level": "beginner",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 6,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-11"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.582,
+      "v25": 8.402
+    },
+    "score25": {
+      "v24": 9.233,
+      "v25": 9.246
+    },
+    "delta": -0.1800000000000015,
+    "delta25": 0.0129999999999999,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -1.271,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "rotacja_rodzin_MP_prog_taper",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 947,
+    "input": {
+      "today": "2026-11-04",
+      "age": 35,
+      "level": "beginner",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 6,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-07"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.582,
+      "v25": 8.402
+    },
+    "score25": {
+      "v24": 9.233,
+      "v25": 9.246
+    },
+    "delta": -0.1800000000000015,
+    "delta25": 0.0129999999999999,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -1.271,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "rotacja_rodzin_MP_prog_taper",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 956,
+    "input": {
+      "today": "2026-11-06",
+      "age": 35,
+      "level": "intermediate",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 6,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-11"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.426,
+      "v25": 8.246
+    },
+    "score25": {
+      "v24": 9.067,
+      "v25": 9.081
+    },
+    "delta": -0.17999999999999972,
+    "delta25": 0.013999999999999346,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -1.271,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "rotacja_rodzin_MP_prog_taper",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 957,
+    "input": {
+      "today": "2026-11-07",
+      "age": 35,
+      "level": "intermediate",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 6,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-12"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.215,
+      "v25": 8.022
+    },
+    "score25": {
+      "v24": 8.844,
+      "v25": 8.844
+    },
+    "delta": -0.19299999999999962,
+    "delta25": 0,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -1.362,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "rotacja_rodzin_MP_prog_taper",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 958,
+    "input": {
+      "today": "2026-11-08",
+      "age": 35,
+      "level": "intermediate",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 6,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-13"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.361,
+      "v25": 8.168
+    },
+    "score25": {
+      "v24": 8.999,
+      "v25": 8.999
+    },
+    "delta": -0.1930000000000014,
+    "delta25": 0,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -1.362,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "rotacja_rodzin_MP_prog_taper",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 959,
+    "input": {
+      "today": "2026-11-02",
+      "age": 35,
+      "level": "intermediate",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 6,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-07"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.665,
+      "v25": 8.484
+    },
+    "score25": {
+      "v24": 9.32,
+      "v25": 9.333
+    },
+    "delta": -0.18099999999999916,
+    "delta25": 0.0129999999999999,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -1.271,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "rotacja_rodzin_MP_prog_taper",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 968,
+    "input": {
+      "today": "2026-11-04",
+      "age": 35,
+      "level": "advanced",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 6,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-11"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.67,
+      "v25": 8.664
+    },
+    "score25": {
+      "v24": 9.302,
+      "v25": 9.323
+    },
+    "delta": -0.006000000000000227,
+    "delta25": 0.021000000000000796,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": 0.399,
+      "dystans": 0,
+      "jakosc": -0.4369999999999994,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "zaokraglenie_dawki_lub_wczesny_prog",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 969,
+    "input": {
+      "today": "2026-11-05",
+      "age": 35,
+      "level": "advanced",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 6,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-12"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.222,
+      "v25": 8.192
+    },
+    "score25": {
+      "v24": 8.847,
+      "v25": 8.842
+    },
+    "delta": -0.02999999999999936,
+    "delta25": -0.004999999999999005,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": 0.23100000000000032,
+      "dystans": 0,
+      "jakosc": -0.4369999999999994,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "nierozstrzygniete",
+    "priority": "sredni",
+    "hypothesis": "zaokraglenie_dawki_lub_wczesny_prog",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 970,
+    "input": {
+      "today": "2026-11-06",
+      "age": 35,
+      "level": "advanced",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 6,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-13"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.222,
+      "v25": 8.192
+    },
+    "score25": {
+      "v24": 8.847,
+      "v25": 8.842
+    },
+    "delta": -0.02999999999999936,
+    "delta25": -0.004999999999999005,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": 0.23100000000000032,
+      "dystans": 0,
+      "jakosc": -0.4369999999999994,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "nierozstrzygniete",
+    "priority": "sredni",
+    "hypothesis": "zaokraglenie_dawki_lub_wczesny_prog",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 980,
+    "input": {
+      "today": "2026-11-02",
+      "age": 35,
+      "level": "beginner",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 7,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-11"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.665,
+      "v25": 8.484
+    },
+    "score25": {
+      "v24": 9.32,
+      "v25": 9.333
+    },
+    "delta": -0.18099999999999916,
+    "delta25": 0.0129999999999999,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -1.271,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "rotacja_rodzin_MP_prog_taper",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 981,
+    "input": {
+      "today": "2026-11-03",
+      "age": 35,
+      "level": "beginner",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 7,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-12"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.361,
+      "v25": 8.168
+    },
+    "score25": {
+      "v24": 8.999,
+      "v25": 8.999
+    },
+    "delta": -0.1930000000000014,
+    "delta25": 0,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -1.362,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "rotacja_rodzin_MP_prog_taper",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 982,
+    "input": {
+      "today": "2026-11-04",
+      "age": 35,
+      "level": "beginner",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 7,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-13"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.361,
+      "v25": 8.168
+    },
+    "score25": {
+      "v24": 8.999,
+      "v25": 8.999
+    },
+    "delta": -0.1930000000000014,
+    "delta25": 0,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -1.362,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "rotacja_rodzin_MP_prog_taper",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 992,
+    "input": {
+      "today": "2026-11-07",
+      "age": 35,
+      "level": "intermediate",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 7,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-11"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.426,
+      "v25": 8.246
+    },
+    "score25": {
+      "v24": 9.067,
+      "v25": 9.081
+    },
+    "delta": -0.17999999999999972,
+    "delta25": 0.013999999999999346,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -1.271,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "rotacja_rodzin_MP_prog_taper",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 993,
+    "input": {
+      "today": "2026-11-08",
+      "age": 35,
+      "level": "intermediate",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 7,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-12"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.361,
+      "v25": 8.168
+    },
+    "score25": {
+      "v24": 8.999,
+      "v25": 8.999
+    },
+    "delta": -0.1930000000000014,
+    "delta25": 0,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -1.362,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "rotacja_rodzin_MP_prog_taper",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 995,
+    "input": {
+      "today": "2026-11-03",
+      "age": 35,
+      "level": "intermediate",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 7,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-07"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.582,
+      "v25": 8.402
+    },
+    "score25": {
+      "v24": 9.233,
+      "v25": 9.246
+    },
+    "delta": -0.1800000000000015,
+    "delta25": 0.0129999999999999,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": -1.271,
+      "dystans": 0,
+      "jakosc": 0,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "rotacja_rodzin_MP_prog_taper",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 1004,
+    "input": {
+      "today": "2026-11-05",
+      "age": 35,
+      "level": "advanced",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 7,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-11"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.507,
+      "v25": 8.502
+    },
+    "score25": {
+      "v24": 9.137,
+      "v25": 9.158
+    },
+    "delta": -0.004999999999999005,
+    "delta25": 0.02099999999999902,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": 0.399,
+      "dystans": 0,
+      "jakosc": -0.4369999999999994,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "pozorny_spadek_miernika",
+    "priority": "sredni",
+    "hypothesis": "zaokraglenie_dawki_lub_wczesny_prog",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 1005,
+    "input": {
+      "today": "2026-11-06",
+      "age": 35,
+      "level": "advanced",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 7,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-12"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.222,
+      "v25": 8.192
+    },
+    "score25": {
+      "v24": 8.847,
+      "v25": 8.842
+    },
+    "delta": -0.02999999999999936,
+    "delta25": -0.004999999999999005,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": 0.23100000000000032,
+      "dystans": 0,
+      "jakosc": -0.4369999999999994,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "nierozstrzygniete",
+    "priority": "sredni",
+    "hypothesis": "zaokraglenie_dawki_lub_wczesny_prog",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  },
+  {
+    "id": 1006,
+    "input": {
+      "today": "2026-11-07",
+      "age": 35,
+      "level": "advanced",
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "daysPerWeek": 7,
+      "currentWeeklyKm": 60,
+      "longestRecentRun": 24,
+      "goal": {
+        "type": "marathon",
+        "raceDate": "2027-04-13"
+      },
+      "bestResult": {
+        "distanceKm": 10,
+        "timeSec": 3300
+      }
+    },
+    "score23": {
+      "v24": 8.222,
+      "v25": 8.192
+    },
+    "score25": {
+      "v24": 8.847,
+      "v25": 8.842
+    },
+    "delta": -0.02999999999999936,
+    "delta25": -0.004999999999999005,
+    "deltas": {
+      "bezpieczenstwo": 0,
+      "indywidualizacja": 0,
+      "progresja": 0.23100000000000032,
+      "dystans": 0,
+      "jakosc": -0.4369999999999994,
+      "kalendarz": 0
+    },
+    "newIssues": [],
+    "category": "nierozstrzygniete",
+    "priority": "sredni",
+    "hypothesis": "zaokraglenie_dawki_lub_wczesny_prog",
+    "historicalBelowV23": false,
+    "decision": "Wewnętrzna kwalifikacja; różnica punktów nie dowodzi różnicy fizjologicznej.",
+    "reproduced": true
+  }
+]

@@ -1,0 +1,485 @@
+{
+  "version": "26.0.0",
+  "baseCommit": "39d8466e25a35c7ef65e1ca4294decf057d7b8d0",
+  "node": "v24.19.0",
+  "started": "2026-11-04T09:59:13.042Z",
+  "elapsedMs": 494057,
+  "suites": 35,
+  "passed": 1824,
+  "failed": 0,
+  "production": [
+    {
+      "file": "planGenerator_v26.js",
+      "bytes": 253663,
+      "lines": 2668
+    },
+    {
+      "file": "model/training.mjs",
+      "bytes": 4220,
+      "lines": 69
+    },
+    {
+      "file": "model/activity_v26.mjs",
+      "bytes": 9770,
+      "lines": 108
+    },
+    {
+      "file": "model/adaptation_v26.mjs",
+      "bytes": 11415,
+      "lines": 78
+    },
+    {
+      "file": "model/constraints_v26.mjs",
+      "bytes": 6830,
+      "lines": 72
+    },
+    {
+      "file": "model/frequency_v26.mjs",
+      "bytes": 5930,
+      "lines": 56
+    },
+    {
+      "file": "model/ledger_v26.mjs",
+      "bytes": 2613,
+      "lines": 14
+    },
+    {
+      "file": "model/policy_v26.mjs",
+      "bytes": 7988,
+      "lines": 90
+    },
+    {
+      "file": "model/quality_v26.mjs",
+      "bytes": 2924,
+      "lines": 40
+    },
+    {
+      "file": "model/readiness_v26.mjs",
+      "bytes": 5106,
+      "lines": 28
+    },
+    {
+      "file": "scoring/v23.mjs",
+      "bytes": 15652,
+      "lines": 134
+    },
+    {
+      "file": "scoring/v25.mjs",
+      "bytes": 21643,
+      "lines": 166
+    }
+  ],
+  "mainLines": 2668,
+  "totalLines": 3523,
+  "totalBytes": 347754,
+  "comparison": {
+    "v25": {
+      "score23": {
+        "mean": 7.443721230158727,
+        "median": 8.364,
+        "p10": 4.758,
+        "p90": 8.998,
+        "min": 2.794,
+        "max": 9.532,
+        "histogram": [
+          0,
+          0,
+          12,
+          40,
+          55,
+          145,
+          123,
+          70,
+          465,
+          98
+        ]
+      },
+      "score25": {
+        "mean": 9.18744345238097,
+        "median": 9.098,
+        "p10": 8.745,
+        "p90": 9.594,
+        "min": 7.978,
+        "max": 9.72,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          329,
+          677
+        ]
+      }
+    },
+    "v26": {
+      "score23": {
+        "mean": 7.446662698412691,
+        "median": 8.379,
+        "p10": 4.758,
+        "p90": 8.998,
+        "min": 2.794,
+        "max": 9.532,
+        "histogram": [
+          0,
+          0,
+          12,
+          40,
+          55,
+          145,
+          122,
+          71,
+          465,
+          98
+        ]
+      },
+      "score25": {
+        "mean": 9.190388888888913,
+        "median": 9.099,
+        "p10": 8.745,
+        "p90": 9.605,
+        "min": 7.978,
+        "max": 9.72,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          322,
+          684
+        ]
+      }
+    }
+  },
+  "distribution": {
+    "better": 40,
+    "same": 968,
+    "worse": 0
+  },
+  "historicalBelowV23": 88,
+  "sweep": {
+    "generator": "planGenerator_v26.js",
+    "nazwa": "sweep",
+    "zaliczone": 21,
+    "niezaliczone": 0,
+    "bledy": [],
+    "wynikiWgDystansu": {
+      "5k": {
+        "scenariuszy": 2352,
+        "ocenaOgolna": 9.66,
+        "bezpieczenstwo": 10,
+        "kategorie": {
+          "bezpieczenstwo": 10,
+          "harmonogram": 10,
+          "dopasowanieDoBiegacza": 10,
+          "progresja": 10,
+          "jakoscTreningow": 10,
+          "specyfikaDystansu": 9.36,
+          "regeneracja": 10
+        },
+        "naruszeniaKrytyczne": 0,
+        "ostrzezenia": 0
+      },
+      "10k": {
+        "scenariuszy": 2352,
+        "ocenaOgolna": 9.58,
+        "bezpieczenstwo": 10,
+        "kategorie": {
+          "bezpieczenstwo": 10,
+          "harmonogram": 10,
+          "dopasowanieDoBiegacza": 10,
+          "progresja": 10,
+          "jakoscTreningow": 10,
+          "specyfikaDystansu": 9.13,
+          "regeneracja": 10
+        },
+        "naruszeniaKrytyczne": 0,
+        "ostrzezenia": 0
+      },
+      "half": {
+        "scenariuszy": 2352,
+        "ocenaOgolna": 9.27,
+        "bezpieczenstwo": 10,
+        "kategorie": {
+          "bezpieczenstwo": 10,
+          "harmonogram": 10,
+          "dopasowanieDoBiegacza": 10,
+          "progresja": 10,
+          "jakoscTreningow": 10,
+          "specyfikaDystansu": 8.23,
+          "regeneracja": 10
+        },
+        "naruszeniaKrytyczne": 0,
+        "ostrzezenia": 0
+      },
+      "marathon": {
+        "scenariuszy": 2352,
+        "ocenaOgolna": 8.91,
+        "bezpieczenstwo": 10,
+        "kategorie": {
+          "bezpieczenstwo": 10,
+          "harmonogram": 10,
+          "dopasowanieDoBiegacza": 10,
+          "progresja": 10,
+          "jakoscTreningow": 10,
+          "specyfikaDystansu": 7.34,
+          "regeneracja": 10
+        },
+        "naruszeniaKrytyczne": 0,
+        "ostrzezenia": 0
+      }
+    },
+    "wynikiWgCzestotliwosci": {
+      "1": {
+        "scenariuszy": 1344,
+        "ocenaOgolna": 7.53,
+        "bezpieczenstwo": 10,
+        "kategorie": {
+          "bezpieczenstwo": 10,
+          "harmonogram": 10,
+          "dopasowanieDoBiegacza": 10,
+          "progresja": 10,
+          "jakoscTreningow": 10,
+          "specyfikaDystansu": 5.53,
+          "regeneracja": 10
+        },
+        "naruszeniaKrytyczne": 0,
+        "ostrzezenia": 0
+      },
+      "2": {
+        "scenariuszy": 1344,
+        "ocenaOgolna": 9.1,
+        "bezpieczenstwo": 10,
+        "kategorie": {
+          "bezpieczenstwo": 10,
+          "harmonogram": 10,
+          "dopasowanieDoBiegacza": 10,
+          "progresja": 10,
+          "jakoscTreningow": 10,
+          "specyfikaDystansu": 8.15,
+          "regeneracja": 10
+        },
+        "naruszeniaKrytyczne": 0,
+        "ostrzezenia": 0
+      },
+      "3": {
+        "scenariuszy": 1344,
+        "ocenaOgolna": 9.77,
+        "bezpieczenstwo": 10,
+        "kategorie": {
+          "bezpieczenstwo": 10,
+          "harmonogram": 10,
+          "dopasowanieDoBiegacza": 10,
+          "progresja": 10,
+          "jakoscTreningow": 10,
+          "specyfikaDystansu": 9.18,
+          "regeneracja": 10
+        },
+        "naruszeniaKrytyczne": 0,
+        "ostrzezenia": 0
+      },
+      "4": {
+        "scenariuszy": 1344,
+        "ocenaOgolna": 9.77,
+        "bezpieczenstwo": 10,
+        "kategorie": {
+          "bezpieczenstwo": 10,
+          "harmonogram": 10,
+          "dopasowanieDoBiegacza": 10,
+          "progresja": 10,
+          "jakoscTreningow": 10,
+          "specyfikaDystansu": 9.19,
+          "regeneracja": 10
+        },
+        "naruszeniaKrytyczne": 0,
+        "ostrzezenia": 0
+      },
+      "5": {
+        "scenariuszy": 1344,
+        "ocenaOgolna": 9.77,
+        "bezpieczenstwo": 10,
+        "kategorie": {
+          "bezpieczenstwo": 10,
+          "harmonogram": 10,
+          "dopasowanieDoBiegacza": 10,
+          "progresja": 10,
+          "jakoscTreningow": 10,
+          "specyfikaDystansu": 9.23,
+          "regeneracja": 10
+        },
+        "naruszeniaKrytyczne": 0,
+        "ostrzezenia": 0
+      },
+      "6": {
+        "scenariuszy": 1344,
+        "ocenaOgolna": 9.77,
+        "bezpieczenstwo": 10,
+        "kategorie": {
+          "bezpieczenstwo": 10,
+          "harmonogram": 10,
+          "dopasowanieDoBiegacza": 10,
+          "progresja": 10,
+          "jakoscTreningow": 10,
+          "specyfikaDystansu": 9.16,
+          "regeneracja": 10
+        },
+        "naruszeniaKrytyczne": 0,
+        "ostrzezenia": 0
+      },
+      "7": {
+        "scenariuszy": 1344,
+        "ocenaOgolna": 9.77,
+        "bezpieczenstwo": 10,
+        "kategorie": {
+          "bezpieczenstwo": 10,
+          "harmonogram": 10,
+          "dopasowanieDoBiegacza": 10,
+          "progresja": 10,
+          "jakoscTreningow": 10,
+          "specyfikaDystansu": 9.17,
+          "regeneracja": 10
+        },
+        "naruszeniaKrytyczne": 0,
+        "ostrzezenia": 0
+      }
+    },
+    "generatorPlik": "/workspace/-/run-planner/v26/planGenerator_v26.js",
+    "deklarowanaLiczbaScenariuszy": 9408,
+    "wykonane": 9408,
+    "unikalne": 9408,
+    "planyZKrytycznymNaruszeniem": 0,
+    "krytyczneNaruszenia": 0,
+    "ostrzezeniaMiernika": 0,
+    "slepePlamkiAudytuWewnetrznego": 0,
+    "kodyProblemow": {},
+    "przykladyKrytycznych": [],
+    "pokrycie": {
+      "todayDow": {
+        "0": 1344,
+        "1": 1344,
+        "2": 1344,
+        "3": 1344,
+        "4": 1344,
+        "5": 1344,
+        "6": 1344
+      },
+      "raceDow": {
+        "0": 1344,
+        "1": 1344,
+        "2": 1344,
+        "3": 1344,
+        "4": 1344,
+        "5": 1344,
+        "6": 1344
+      }
+    },
+    "skrotWynikow": "d868796ddfbdceb5956fc847a6a6d006220771eb31deb43b67863390aebee0ff",
+    "wszystkieTesty": [
+      {
+        "opis": "liczba wykonanych scenariuszy (9408) == deklarowana (9408)",
+        "ok": true
+      },
+      {
+        "opis": "unikalnych scenariuszy 9408 == deklarowana 9408",
+        "ok": true
+      },
+      {
+        "opis": "wszystkie 7 dni tygodnia jako dzień startu planu",
+        "ok": true
+      },
+      {
+        "opis": "wszystkie 7 dni tygodnia jako dzień zawodów",
+        "ok": true
+      },
+      {
+        "opis": "pokryte wszystkie 49 par (dzień startu planu, dzień zawodów)",
+        "ok": true
+      },
+      {
+        "opis": "komórka 5k/beginner: 7 dni startu planu i 7 dni zawodów",
+        "ok": true
+      },
+      {
+        "opis": "komórka 10k/beginner: 7 dni startu planu i 7 dni zawodów",
+        "ok": true
+      },
+      {
+        "opis": "komórka half/beginner: 7 dni startu planu i 7 dni zawodów",
+        "ok": true
+      },
+      {
+        "opis": "komórka marathon/beginner: 7 dni startu planu i 7 dni zawodów",
+        "ok": true
+      },
+      {
+        "opis": "komórka 5k/intermediate: 7 dni startu planu i 7 dni zawodów",
+        "ok": true
+      },
+      {
+        "opis": "komórka 10k/intermediate: 7 dni startu planu i 7 dni zawodów",
+        "ok": true
+      },
+      {
+        "opis": "komórka half/intermediate: 7 dni startu planu i 7 dni zawodów",
+        "ok": true
+      },
+      {
+        "opis": "komórka marathon/intermediate: 7 dni startu planu i 7 dni zawodów",
+        "ok": true
+      },
+      {
+        "opis": "komórka 5k/advanced: 7 dni startu planu i 7 dni zawodów",
+        "ok": true
+      },
+      {
+        "opis": "komórka 10k/advanced: 7 dni startu planu i 7 dni zawodów",
+        "ok": true
+      },
+      {
+        "opis": "komórka half/advanced: 7 dni startu planu i 7 dni zawodów",
+        "ok": true
+      },
+      {
+        "opis": "komórka marathon/advanced: 7 dni startu planu i 7 dni zawodów",
+        "ok": true
+      },
+      {
+        "opis": "brak wyjątków",
+        "ok": true
+      },
+      {
+        "opis": "brak planów ok:false dla poprawnych danych",
+        "ok": true
+      },
+      {
+        "opis": "brak krytycznych naruszeń niezależnych niezmienników (0 planów z krytycznym, 0 naruszeń)",
+        "ok": true
+      },
+      {
+        "opis": "powtarzalność: dwukrotne uruchomienie 120 scenariuszy daje identyczne wyniki",
+        "ok": true
+      }
+    ]
+  },
+  "adaptation": {
+    "histories": 150,
+    "weeks": 6,
+    "passed": 151,
+    "failed": 0,
+    "elapsedMs": 37631.155662
+  },
+  "profiles": 42,
+  "fullPlans": 41,
+  "meterHashes": {
+    "v23": "a7d2cfe244bb156418e3334b917b39773c1e96ad7c0ff356aac586380aa3eb71",
+    "v25": "09dfeeb6b6ab25bdbae4065b5d2166b75f9d1c7f286408337fa8c912f65332b2"
+  },
+  "inputSha256": "00ab459021dbf3100e0cc08a1b4472f7cbafa09a5425033307cdb79656ed008d"
+}

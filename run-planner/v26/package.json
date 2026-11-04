@@ -1,0 +1,19 @@
+{
+  "name": "run-planner",
+  "version": "26.0.0",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node testy/run_v26.mjs",
+    "test:v26": "node testy/v26.mjs",
+    "test:adaptation": "node testy/historie_v26.mjs",
+    "compare": "node testy/porownanie_v25_v26.mjs",
+    "diagnosis": "node testy/diagnoza_bazy_v26.mjs",
+    "benchmark": "node testy/kalibracja_v23.mjs && node testy/kalibracja_v25.mjs",
+    "report": "node testy/raporty_v26.mjs",
+    "profile": "node narzedzia/profiling_v26.mjs"
+  }
+}

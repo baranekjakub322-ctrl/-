@@ -1,0 +1,110 @@
+{
+  "node": "v24.19.0",
+  "started": "2026-11-04T09:59:13.042Z",
+  "elapsedMs": 494057,
+  "peakRssBytes": 35258368,
+  "hashes": {
+    "planGenerator_v26.js": "905de76bbdb06cee32037908ab4389f788b4aa0ea04d5bb1cde87114fe5ab9fb",
+    "planGenerator_v25.js": "9a8dc8b019a7ad65fb7baa96a6682e840f08ff6a1610d96093f58fd151db9c8c",
+    "model/activity_v26.mjs": "f7ded45142b4c79117a3eb03bf646213c6c55019a11be3e058e281c1d2a9bb79",
+    "model/adaptation_v26.mjs": "f4e198df20be3977c2ef5a8ea26286fba48934ad053e0e2f99c95bdce4d52c87",
+    "model/constraints_v26.mjs": "18d67e000ceb84d7eee13972143116ee5058f340527b96ca7683f08f64889218",
+    "model/frequency_v26.mjs": "90638cadf78874c43575cc76874dd9880f2a2c38bec03e996c1447afbc73d472",
+    "model/ledger_v26.mjs": "6889b6ff54416374a98b49e7b343d297b7fe8c1e0f415043fc6ca46d5e51898b",
+    "model/policy_v26.mjs": "4eb5fae757c5269f4bf86317d1d5b8ff3a75717440eac37891a94a4cb75b5e83",
+    "model/quality_v26.mjs": "37260f84750082936685f4828f04e92d72a6ade8ac7f37d0cdfcfac78e588c18",
+    "model/readiness_v26.mjs": "0ef72dfcfe26bb9d8573714a58a59a2d4d2bb5f9998eb8e44b26f0c5b0118142",
+    "model/training.mjs": "dfb3fdd9e9a74dedfa90e458fa14e0e0205dd61b29a779726b7321383bd671a0",
+    "scoring/v23.mjs": "a7d2cfe244bb156418e3334b917b39773c1e96ad7c0ff356aac586380aa3eb71",
+    "scoring/v25.mjs": "09dfeeb6b6ab25bdbae4065b5d2166b75f9d1c7f286408337fa8c912f65332b2",
+    "testy/adaptacja_compat_v26.mjs": "fee7e74741929b4eeec05d41a53c59c497d406c81e158ed614192d8bb0259084",
+    "testy/adaptacja_v25.mjs": "709ee915e9194c999a00983e5eed4cafd036f011ac01871acfeccf0c7fa9d580",
+    "testy/benchmark_v23.mjs": "ae71473adab2919ed0e480102c22d901dbb9385e8a3259cf31af37edd086f244",
+    "testy/buduj_raporty.mjs": "0994afdb1c9fd84951dc6ea3eedf17756339eb50a303c1c09a8aefec3bc3dea8",
+    "testy/czulosc.mjs": "c04df49f6c132f5844bcfa8351cf3bb68df34ef84f5a2edfde1653db91212639",
+    "testy/czulosc_v21.mjs": "a25a2a536c49ce55881b97abdec01385a872d4a5ffe18acb6d2f240a108409b1",
+    "testy/diagnoza_bazy_v26.mjs": "db40c50c8ab3e2130daa500f257bd07dc9e5927d2cd160b91d6d88f6513a523c",
+    "testy/diagnoza_v23.mjs": "fdc0300bc9a6a012a27b839feed6e0c194f379892399c231cb1250120d0a32b5",
+    "testy/diagnoza_v24.mjs": "ce933753c62c961907551855aa2404e165350246ae240cac887a69132210f1a0",
+    "testy/dostepnosc.mjs": "800c6b1a50f2b2bf6d0a5766383b7fdc4ef33df1053f4622d9338edfed9bd3f9",
+    "testy/historie_v26.mjs": "01a1866e0246f88df9da2b30dbceb185dba20d1708b979caa857dcf3c44b3f7f",
+    "testy/jakosciowe.mjs": "8aec7437501e76842393ee4adc565dc8be65be377881f2e5e9d79553f3bc6644",
+    "testy/kalibracja_v23.mjs": "574992bda2f4ad24d976833d12de353db35471fed0fbbf29bbcdb59d71babe19",
+    "testy/kalibracja_v25.mjs": "65a1d4d2423c312fbb8a188ad6d3ec14738d6ce32d326be7b9718b10110d9b56",
+    "testy/lib.mjs": "7cd5f7862af4ebc0265a38b246e2cc5c75ea9eb996eb46a8e45cc4cbb19e0971",
+    "testy/miernik_v22.mjs": "477aa66b72f5612bb3cd4f50b39c91303ac393eb8bcb22e112965dc1e9e24774",
+    "testy/ostrzezenia_v24.mjs": "6401dcc23edc163f85e5bc8a04567bc55526b6f7e0119738573d377030e29d48",
+    "testy/podstawowe.mjs": "de170f0ed68ee5c93c4c2da3f7ee804d68c9396443a8c3a5db3b7488b57cb6df",
+    "testy/porownanie28.mjs": "d57863b10cd68396a90130fb5d9662acb4973a94a0607c30dbfc5d655f8282f7",
+    "testy/porownanie_v19_v20.mjs": "5d266665945fa69d55b91227d57dbfdc280d7a9fe094a3bd091582e53522a150",
+    "testy/porownanie_v20_v21.mjs": "bc4f371a8c1f1e55d02dfb94f50e06f31176e01daabcb1d905579fe30ba34223",
+    "testy/porownanie_v21_v22.mjs": "0b656343dace1710bbbf87c44d0d592c4afb8f5c81797a8122e8fdac9433c00d",
+    "testy/porownanie_v22_v23.mjs": "36c8a3475e338742cc6509c92f960526b92e3c848672593180283a6b792dcb49",
+    "testy/porownanie_v23_v24.mjs": "c5ee48d4bdf19af43a8dc615d77d585cc5f1adfba9c191f4665f63d9c7e549a1",
+    "testy/porownanie_v24_v25.mjs": "ea284d35d8c5651811f5e1ed3be0f704c22069aee0d06550cbd8d51969202a0a",
+    "testy/porownanie_v25_v26.mjs": "90720a9e65fb37e7fa80763d9d84b2e621dfd2d96d6ddc87c1b8f978f0854019",
+    "testy/profiles_v26.mjs": "c8e7bd990c4d9939dbb3d7e45e5143f7b6ce62c2bb9973d3197bd98383f39c7f",
+    "testy/regresje.mjs": "1b7b422a91d28e69a0a796f3d37483d5ed81ead11b62a0989779cad6ee45e10f",
+    "testy/regresje_v22_v23.mjs": "a3c24c6e939cc637b15ea3a47be34f05438ca0e717ad8cb1bde22cf333b95000",
+    "testy/regresje_v25.mjs": "476e5a3fef08d27d9e9e443bd60fc62a272a23a3037f086c24cff3a83b4dda7e",
+    "testy/regresje_v26.mjs": "a69b613b2c57272352ecb618e6be71e086ac3985136480b536d72bca67439e3c",
+    "testy/run.mjs": "30562addbc4c68d97da8e268de593e0f4d2a73976487e26be6b41aacaca5122a",
+    "testy/run_v26.mjs": "aabe83bafa0f63516d9b36f901cab66969d3c094d0609d25c91f2f8735d06659",
+    "testy/skrypt_bledy.mjs": "d01ebfef2d6fb2344f34bc0bcb4ecae8e760f5442f50003b7c11eea576324869",
+    "testy/sweep.mjs": "7222edc8830e12b50b8cb39e84a25d444837fba9eeb9bb4bbcc62a3ad1f5120e",
+    "testy/trudne.mjs": "5831d1606d798a3a9be9a42e8ee091ddeb62bcf3abbd0c42de03a3e4c4a3eb7b",
+    "testy/v22.mjs": "eb661892a77513e8e0f80d92aed02f2e83d9b4622377b6cdf68154d0ce30b82e",
+    "testy/v23.mjs": "d975154fc9a87a0a2fb70d2f69f0b767aa69280463fd0a5114cb5889b102a871",
+    "testy/v24.mjs": "56771472f6ef2604872dbbd0842752903a018884375c2ffe221282b681075bf8",
+    "testy/v24_inherited.mjs": "d7142ccf6fc7f0badcddc8f6b1eaa1eb5ad5ffd15b24e010666cea8aef3d5a49",
+    "testy/v25.mjs": "16f06fcc5cda8bbc5a79b6949a041c40a3166693d4985b92c89cce7c7c3b360c",
+    "testy/v25_inherited.mjs": "399d8be80d910ea3c85ea24fe43dcefa924e315ec56e5059dd5d9c5ca69e0d29",
+    "testy/v26.mjs": "c19e1e728e41c0bd183329d6560b557c2e1c0a0f088c590248275536dcc06925",
+    "testy/wydajnosc_v25.mjs": "969b41085aab10faf825035b32ea7729a6e3a56998080ff79ae083583d84b357",
+    "testy/wydajnosc_v26.mjs": "2562bc9cd7dca6f4b85555148feffc0cf80601fac965637d48de4722c9ceb4d8"
+  },
+  "results": [
+    {
+      "name": "history",
+      "status": 0,
+      "elapsedMs": 381030
+    },
+    {
+      "name": "regresje_v26",
+      "status": 0,
+      "elapsedMs": 201
+    },
+    {
+      "name": "adaptacja_compat_v26",
+      "status": 0,
+      "elapsedMs": 5999
+    },
+    {
+      "name": "v26",
+      "status": 0,
+      "elapsedMs": 8688
+    },
+    {
+      "name": "historie_v26",
+      "status": 0,
+      "elapsedMs": 39028
+    },
+    {
+      "name": "porownanie_v25_v26",
+      "status": 0,
+      "elapsedMs": 52598
+    },
+    {
+      "name": "profiles_v26",
+      "status": 0,
+      "elapsedMs": 2546
+    },
+    {
+      "name": "wydajnosc_v26",
+      "status": 0,
+      "elapsedMs": 3958
+    }
+  ],
+  "passed": 8,
+  "failed": 0
+}

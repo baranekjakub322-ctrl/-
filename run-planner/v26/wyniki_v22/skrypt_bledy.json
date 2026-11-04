@@ -1,0 +1,25 @@
+{
+ "generator": "planGenerator_v22.js",
+ "nazwa": "skrypt_bledy",
+ "zaliczone": 4,
+ "niezaliczone": 0,
+ "bledy": [],
+ "wszystkieTesty": [
+  {
+   "opis": "skrypt kończy się kodem != 0 przy oblanym teście",
+   "ok": true
+  },
+  {
+   "opis": "raport końcowy nie twierdzi sukcesu",
+   "ok": true
+  },
+  {
+   "opis": "oblany test jest wymieniony w podsumowaniu",
+   "ok": true
+  },
+  {
+   "opis": "brakujący plik testu jest błędem, a nie pominięciem",
+   "ok": true
+  }
+ ]
+}

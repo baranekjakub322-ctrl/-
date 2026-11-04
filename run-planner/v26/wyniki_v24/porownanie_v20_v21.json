@@ -1,0 +1,255 @@
+{
+ "generator": "planGenerator_v24.js",
+ "nazwa": "porownanie_v20_v21",
+ "zaliczone": 32,
+ "niezaliczone": 0,
+ "bledy": [],
+ "generatorPlik": "/workspace/-/run-planner/v24/planGenerator_v24.js",
+ "scenariuszy": 1008,
+ "wyniki": {
+  "5k": {
+   "v20": {
+    "ocenaV21": 7.875,
+    "ocenaStarym": 8.568,
+    "bezpieczenstwo": 10,
+    "planyZKrytycznym": 0,
+    "krytyczne": 0,
+    "ostrzezenia": 3409,
+    "kody": {
+     "REGENERACJA_BEZ_MOCNEGO": 1536,
+     "DLUGA_PRZERWA": 27,
+     "BIEG_ZA_KROTKI": 102,
+     "REGENERACJA_POZIOM": 1241,
+     "REGENERACJA_ZA_DLUGA": 503
+    }
+   },
+   "v21": {
+    "ocenaV21": 9.857,
+    "ocenaStarym": 9.571,
+    "bezpieczenstwo": 10,
+    "planyZKrytycznym": 0,
+    "krytyczne": 0,
+    "ostrzezenia": 0,
+    "kody": {}
+   }
+  },
+  "10k": {
+   "v20": {
+    "ocenaV21": 7.79,
+    "ocenaStarym": 8.29,
+    "bezpieczenstwo": 10,
+    "planyZKrytycznym": 0,
+    "krytyczne": 0,
+    "ostrzezenia": 3490,
+    "kody": {
+     "UDZIAL_DLUGIEGO": 37,
+     "REGENERACJA_BEZ_MOCNEGO": 1485,
+     "DLUGA_PRZERWA": 27,
+     "BIEG_ZA_KROTKI": 4,
+     "REGENERACJA_POZIOM": 1421,
+     "REGENERACJA_ZA_DLUGA": 516
+    }
+   },
+   "v21": {
+    "ocenaV21": 9.731,
+    "ocenaStarym": 9.292,
+    "bezpieczenstwo": 10,
+    "planyZKrytycznym": 0,
+    "krytyczne": 0,
+    "ostrzezenia": 0,
+    "kody": {}
+   }
+  },
+  "half": {
+   "v20": {
+    "ocenaV21": 7.576,
+    "ocenaStarym": 7.503,
+    "bezpieczenstwo": 9.994,
+    "planyZKrytycznym": 0,
+    "krytyczne": 0,
+    "ostrzezenia": 3347,
+    "kody": {
+     "UDZIAL_DLUGIEGO": 56,
+     "REGENERACJA_BEZ_MOCNEGO": 1482,
+     "DLUGA_PRZERWA": 45,
+     "TAPER_PLYTKI": 3,
+     "BIEG_ZA_KROTKI": 3,
+     "REGENERACJA_POZIOM": 1313,
+     "REGENERACJA_ZA_DLUGA": 443,
+     "WZROST_KM": 2
+    }
+   },
+   "v21": {
+    "ocenaV21": 9.376,
+    "ocenaStarym": 8.366,
+    "bezpieczenstwo": 9.992,
+    "planyZKrytycznym": 0,
+    "krytyczne": 0,
+    "ostrzezenia": 3,
+    "kody": {
+     "WZROST_KM": 3
+    }
+   }
+  },
+  "marathon": {
+   "v20": {
+    "ocenaV21": 7.295,
+    "ocenaStarym": 6.769,
+    "bezpieczenstwo": 10,
+    "planyZKrytycznym": 0,
+    "krytyczne": 0,
+    "ostrzezenia": 3283,
+    "kody": {
+     "UDZIAL_DLUGIEGO": 169,
+     "REGENERACJA_BEZ_MOCNEGO": 1499,
+     "DLUGA_PRZERWA": 45,
+     "BIEG_ZA_KROTKI": 5,
+     "REGENERACJA_POZIOM": 1201,
+     "REGENERACJA_ZA_DLUGA": 364
+    }
+   },
+   "v21": {
+    "ocenaV21": 8.925,
+    "ocenaStarym": 7.419,
+    "bezpieczenstwo": 9.987,
+    "planyZKrytycznym": 0,
+    "krytyczne": 0,
+    "ostrzezenia": 7,
+    "kody": {
+     "ZA_DLUGO_BEZ_ODCIAZENIA": 5,
+     "WZROST_KM": 2
+    }
+   }
+  }
+ },
+ "wszystkieTesty": [
+  {
+   "opis": "5k: ocena V21 (9.857) nie niższa niż V20 (7.875)",
+   "ok": true
+  },
+  {
+   "opis": "5k: krytyczne V21 (0) <= V20 (0)",
+   "ok": true
+  },
+  {
+   "opis": "5k: ostrzeżenia V21 (0) <= V20 (3409)",
+   "ok": true
+  },
+  {
+   "opis": "5k: REGENERACJA_ZA_DLUGA V21 (0) <= V20 (503)",
+   "ok": true
+  },
+  {
+   "opis": "5k: UDZIAL_DLUGIEGO V21 (0) <= V20 (0)",
+   "ok": true
+  },
+  {
+   "opis": "5k: DLUGA_PRZERWA V21 (0) <= V20 (27)",
+   "ok": true
+  },
+  {
+   "opis": "5k: BIEG_ZA_KROTKI V21 (0) <= V20 (102)",
+   "ok": true
+  },
+  {
+   "opis": "5k: TAPER_PLYTKI V21 (0) <= V20 (0)",
+   "ok": true
+  },
+  {
+   "opis": "10k: ocena V21 (9.731) nie niższa niż V20 (7.79)",
+   "ok": true
+  },
+  {
+   "opis": "10k: krytyczne V21 (0) <= V20 (0)",
+   "ok": true
+  },
+  {
+   "opis": "10k: ostrzeżenia V21 (0) <= V20 (3490)",
+   "ok": true
+  },
+  {
+   "opis": "10k: REGENERACJA_ZA_DLUGA V21 (0) <= V20 (516)",
+   "ok": true
+  },
+  {
+   "opis": "10k: UDZIAL_DLUGIEGO V21 (0) <= V20 (37)",
+   "ok": true
+  },
+  {
+   "opis": "10k: DLUGA_PRZERWA V21 (0) <= V20 (27)",
+   "ok": true
+  },
+  {
+   "opis": "10k: BIEG_ZA_KROTKI V21 (0) <= V20 (4)",
+   "ok": true
+  },
+  {
+   "opis": "10k: TAPER_PLYTKI V21 (0) <= V20 (0)",
+   "ok": true
+  },
+  {
+   "opis": "half: ocena V21 (9.376) nie niższa niż V20 (7.576)",
+   "ok": true
+  },
+  {
+   "opis": "half: krytyczne V21 (0) <= V20 (0)",
+   "ok": true
+  },
+  {
+   "opis": "half: ostrzeżenia V21 (3) <= V20 (3347)",
+   "ok": true
+  },
+  {
+   "opis": "half: REGENERACJA_ZA_DLUGA V21 (0) <= V20 (443)",
+   "ok": true
+  },
+  {
+   "opis": "half: UDZIAL_DLUGIEGO V21 (0) <= V20 (56)",
+   "ok": true
+  },
+  {
+   "opis": "half: DLUGA_PRZERWA V21 (0) <= V20 (45)",
+   "ok": true
+  },
+  {
+   "opis": "half: BIEG_ZA_KROTKI V21 (0) <= V20 (3)",
+   "ok": true
+  },
+  {
+   "opis": "half: TAPER_PLYTKI V21 (0) <= V20 (3)",
+   "ok": true
+  },
+  {
+   "opis": "marathon: ocena V21 (8.925) nie niższa niż V20 (7.295)",
+   "ok": true
+  },
+  {
+   "opis": "marathon: krytyczne V21 (0) <= V20 (0)",
+   "ok": true
+  },
+  {
+   "opis": "marathon: ostrzeżenia V21 (7) <= V20 (3283)",
+   "ok": true
+  },
+  {
+   "opis": "marathon: REGENERACJA_ZA_DLUGA V21 (0) <= V20 (364)",
+   "ok": true
+  },
+  {
+   "opis": "marathon: UDZIAL_DLUGIEGO V21 (0) <= V20 (169)",
+   "ok": true
+  },
+  {
+   "opis": "marathon: DLUGA_PRZERWA V21 (0) <= V20 (45)",
+   "ok": true
+  },
+  {
+   "opis": "marathon: BIEG_ZA_KROTKI V21 (0) <= V20 (5)",
+   "ok": true
+  },
+  {
+   "opis": "marathon: TAPER_PLYTKI V21 (0) <= V20 (0)",
+   "ok": true
+  }
+ ]
+}

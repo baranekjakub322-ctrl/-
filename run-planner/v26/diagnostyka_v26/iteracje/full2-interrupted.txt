@@ -1,0 +1,1 @@
+Stopped while checking HM threshold progression. No final PASS claimed.

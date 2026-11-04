@@ -1,0 +1,33 @@
+{"scenarios":150,"weeksPerHistory":6,"completedHistories":10,"elapsedMs":12977.275582999999,"peakRssBytes":417136640,"passed":11,"failed":140}
+multiweek history 0/0 AssertionError [ERR_ASSERTION]: ["Pełne okno wymaga coverageFrom co najmniej 14 dni wcześniej."]
+    at file:///workspace/-/run-planner/v26/testy/historie_v26.mjs:33:4
+    at test (file:///workspace/-/run-planner/v26/testy/historie_v26.mjs:4:28)
+    at file:///workspace/-/run-planner/v26/testy/historie_v26.mjs:7:52
+multiweek history 0/1 AssertionError [ERR_ASSERTION]: ["Pełne okno wymaga coverageFrom co najmniej 14 dni wcześniej."]
+    at file:///workspace/-/run-planner/v26/testy/historie_v26.mjs:33:4
+    at test (file:///workspace/-/run-planner/v26/testy/historie_v26.mjs:4:28)
+    at file:///workspace/-/run-planner/v26/testy/historie_v26.mjs:7:52
+multiweek history 0/2 AssertionError [ERR_ASSERTION]: ["Pełne okno wymaga coverageFrom co najmniej 14 dni wcześniej."]
+    at file:///workspace/-/run-planner/v26/testy/historie_v26.mjs:33:4
+    at test (file:///workspace/-/run-planner/v26/testy/historie_v26.mjs:4:28)
+    at file:///workspace/-/run-planner/v26/testy/historie_v26.mjs:7:52
+multiweek history 0/3 AssertionError [ERR_ASSERTION]: ["Pełne okno wymaga coverageFrom co najmniej 14 dni wcześniej."]
+    at file:///workspace/-/run-planner/v26/testy/historie_v26.mjs:33:4
+    at test (file:///workspace/-/run-planner/v26/testy/historie_v26.mjs:4:28)
+    at file:///workspace/-/run-planner/v26/testy/historie_v26.mjs:7:52
+multiweek history 0/4 AssertionError [ERR_ASSERTION]: ["Pełne okno wymaga coverageFrom co najmniej 14 dni wcześniej."]
+    at file:///workspace/-/run-planner/v26/testy/historie_v26.mjs:33:4
+    at test (file:///workspace/-/run-planner/v26/testy/historie_v26.mjs:4:28)
+    at file:///workspace/-/run-planner/v26/testy/historie_v26.mjs:7:52
+multiweek history 0/5 AssertionError [ERR_ASSERTION]: ["Pełne okno wymaga coverageFrom co najmniej 14 dni wcześniej."]
+    at file:///workspace/-/run-planner/v26/testy/historie_v26.mjs:33:4
+    at test (file:///workspace/-/run-planner/v26/testy/historie_v26.mjs:4:28)
+    at file:///workspace/-/run-planner/v26/testy/historie_v26.mjs:7:52
+multiweek history 0/6 AssertionError [ERR_ASSERTION]: ["Pełne okno wymaga coverageFrom co najmniej 14 dni wcześniej."]
+    at file:///workspace/-/run-planner/v26/testy/historie_v26.mjs:33:4
+    at test (file:///workspace/-/run-planner/v26/testy/historie_v26.mjs:4:28)
+    at file:///workspace/-/run-planner/v26/testy/historie_v26.mjs:7:52
+multiweek history 0/7 AssertionError [ERR_ASSERTION]: ["Pełne okno wymaga coverageFrom co najmniej 14 dni wcześniej."]
+    at file:///workspace/-/run-planner/v26/testy/historie_v26.mjs:33:4
+    at test (file:///workspace/-/run-planner/v26/testy/historie_v26.mjs:4:28)
+    at file:///workspace/-/run-planner/v26/testy/historie_v26.mjs:7:52

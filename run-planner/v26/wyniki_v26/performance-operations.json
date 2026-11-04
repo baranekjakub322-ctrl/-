@@ -1,0 +1,174 @@
+{
+  "node": "v24.19.0",
+  "imports": [
+    {
+      "name": "v25 strict 100",
+      "elapsedMs": 38.340354000000005,
+      "rssBefore": 34394112,
+      "rssAfter": 46583808,
+      "heapBefore": 6436672,
+      "heapAfter": 6940264,
+      "completed": 100,
+      "version": "v25",
+      "count": 100
+    },
+    {
+      "name": "v26 strict 100",
+      "elapsedMs": 5.761997999999991,
+      "rssBefore": 46583808,
+      "rssAfter": 48418816,
+      "heapBefore": 6942384,
+      "heapAfter": 6772160,
+      "completed": 100,
+      "version": "v26",
+      "count": 100
+    },
+    {
+      "name": "v26 quarantine 100",
+      "elapsedMs": 5.766914,
+      "rssBefore": 48418816,
+      "rssAfter": 48418816,
+      "heapBefore": 6776024,
+      "heapAfter": 7891192,
+      "completed": 100,
+      "version": "v26",
+      "count": 101
+    },
+    {
+      "name": "v25 strict 1000",
+      "elapsedMs": 145.781335,
+      "rssBefore": 48418816,
+      "rssAfter": 99143680,
+      "heapBefore": 8219528,
+      "heapAfter": 10739944,
+      "completed": 1000,
+      "version": "v25",
+      "count": 1000
+    },
+    {
+      "name": "v26 strict 1000",
+      "elapsedMs": 27.305172,
+      "rssBefore": 99143680,
+      "rssAfter": 100978688,
+      "heapBefore": 10740744,
+      "heapAfter": 12927592,
+      "completed": 1000,
+      "version": "v26",
+      "count": 1000
+    },
+    {
+      "name": "v26 quarantine 1000",
+      "elapsedMs": 52.21226999999999,
+      "rssBefore": 100978688,
+      "rssAfter": 111280128,
+      "heapBefore": 12596568,
+      "heapAfter": 15051872,
+      "completed": 1000,
+      "version": "v26",
+      "count": 1001
+    },
+    {
+      "name": "v25 strict 3000",
+      "elapsedMs": 426.31660700000003,
+      "rssBefore": 111280128,
+      "rssAfter": 248512512,
+      "heapBefore": 15957000,
+      "heapAfter": 28443912,
+      "completed": 3000,
+      "version": "v25",
+      "count": 3000
+    },
+    {
+      "name": "v26 strict 3000",
+      "elapsedMs": 137.12399900000003,
+      "rssBefore": 248512512,
+      "rssAfter": 255713280,
+      "heapBefore": 28444712,
+      "heapAfter": 22853344,
+      "completed": 3000,
+      "version": "v26",
+      "count": 3000
+    },
+    {
+      "name": "v26 quarantine 3000",
+      "elapsedMs": 140.81809900000007,
+      "rssBefore": 255713280,
+      "rssAfter": 269905920,
+      "heapBefore": 22942408,
+      "heapAfter": 27746336,
+      "completed": 3000,
+      "version": "v26",
+      "count": 3001
+    }
+  ],
+  "adaptation": [
+    {
+      "name": "v25 update 12",
+      "elapsedMs": 12.72240099999999,
+      "rssBefore": 272527360,
+      "rssAfter": 275673088,
+      "heapBefore": 33462920,
+      "heapAfter": 36771496,
+      "completed": 12,
+      "version": "v25",
+      "count": 12
+    },
+    {
+      "name": "v26 update 12",
+      "elapsedMs": 18.340922999999975,
+      "rssBefore": 284323840,
+      "rssAfter": 288780288,
+      "heapBefore": 45257240,
+      "heapAfter": 49834248,
+      "completed": 12,
+      "version": "v26",
+      "count": 12
+    },
+    {
+      "name": "v25 update 60",
+      "elapsedMs": 12.00231400000007,
+      "rssBefore": 293105664,
+      "rssAfter": 293257216,
+      "heapBefore": 24223176,
+      "heapAfter": 30606136,
+      "completed": 60,
+      "version": "v25",
+      "count": 60
+    },
+    {
+      "name": "v26 update 60",
+      "elapsedMs": 15.104743000000099,
+      "rssBefore": 293257216,
+      "rssAfter": 294567936,
+      "heapBefore": 37799616,
+      "heapAfter": 45440600,
+      "completed": 60,
+      "version": "v26",
+      "count": 60
+    },
+    {
+      "name": "v25 update 180",
+      "elapsedMs": 24.659650000000056,
+      "rssBefore": 294830080,
+      "rssAfter": 295092224,
+      "heapBefore": 49681832,
+      "heapAfter": 31488016,
+      "completed": 180,
+      "version": "v25",
+      "count": 180
+    },
+    {
+      "name": "v26 update 180",
+      "elapsedMs": 27.019092,
+      "rssBefore": 295092224,
+      "rssAfter": 295092224,
+      "heapBefore": 38610128,
+      "heapAfter": 54498824,
+      "completed": 180,
+      "version": "v26",
+      "count": 180
+    }
+  ],
+  "peakRssBytes": 295092224,
+  "limitations": "Sequential cold/warm calls in one process; heap/RSS include retained runtime and JIT, not isolated object size. No SLA claim."
+}

@@ -1,0 +1,2450 @@
+{
+  "seed": 260004,
+  "n": 64,
+  "internalHoldout": true,
+  "externallyBlinded": false,
+  "statistics": {
+    "v25": {
+      "score23": 7.295515625000002,
+      "score25": 9.114843750000002
+    },
+    "v26": {
+      "score23": 7.296546875000002,
+      "score25": 9.115875000000003
+    }
+  },
+  "rows": [
+    {
+      "id": 0,
+      "input": {
+        "today": "2026-11-02",
+        "age": 34,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 5,
+        "currentWeeklyKm": 43,
+        "longestRecentRun": 11,
+        "goal": {
+          "type": "5k",
+          "raceDate": "2026-12-27"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3744
+        },
+        "experienceMonths": 10,
+        "planningCandidates": 3
+      },
+      "v25": {
+        "score23": 8.502,
+        "score25": 8.585
+      },
+      "v26": {
+        "score23": 8.502,
+        "score25": 8.585
+      }
+    },
+    {
+      "id": 1,
+      "input": {
+        "today": "2026-11-02",
+        "age": 33,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 4,
+        "currentWeeklyKm": 23,
+        "longestRecentRun": 12.65,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-02-14"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 2906
+        },
+        "experienceMonths": 33,
+        "planningCandidates": 3
+      },
+      "v25": {
+        "score23": 9.168,
+        "score25": 9.27
+      },
+      "v26": {
+        "score23": 9.168,
+        "score25": 9.27
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "today": "2026-11-02",
+        "age": 51,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 6,
+        "currentWeeklyKm": 18,
+        "longestRecentRun": 9.9,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-01-24"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 4034
+        },
+        "experienceMonths": 65,
+        "planningCandidates": 3
+      },
+      "v25": {
+        "score23": 9.322,
+        "score25": 9.355
+      },
+      "v26": {
+        "score23": 9.322,
+        "score25": 9.355
+      }
+    },
+    {
+      "id": 3,
+      "input": {
+        "today": "2026-11-02",
+        "age": 43,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 5,
+        "currentWeeklyKm": 35,
+        "longestRecentRun": 11,
+        "goal": {
+          "type": "5k",
+          "raceDate": "2027-03-21"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3960
+        },
+        "experienceMonths": 58,
+        "planningCandidates": 2
+      },
+      "v25": {
+        "score23": 9.21,
+        "score25": 9.26
+      },
+      "v26": {
+        "score23": 9.21,
+        "score25": 9.26
+      }
+    },
+    {
+      "id": 4,
+      "input": {
+        "today": "2026-11-02",
+        "age": 48,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 5,
+        "currentWeeklyKm": 55,
+        "longestRecentRun": 3,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-03-21"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3944
+        },
+        "experienceMonths": 65,
+        "planningCandidates": 4
+      },
+      "v25": {
+        "score23": 8.939,
+        "score25": 8.87
+      },
+      "v26": {
+        "score23": 8.939,
+        "score25": 8.87
+      }
+    },
+    {
+      "id": 5,
+      "input": {
+        "today": "2026-11-02",
+        "age": 54,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 4,
+        "currentWeeklyKm": 60,
+        "longestRecentRun": 6,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-04-04"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3279
+        },
+        "experienceMonths": 29,
+        "planningCandidates": 2
+      },
+      "v25": {
+        "score23": 8.971,
+        "score25": 9.092
+      },
+      "v26": {
+        "score23": 8.971,
+        "score25": 9.092
+      }
+    },
+    {
+      "id": 6,
+      "input": {
+        "today": "2026-11-02",
+        "age": 19,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 5,
+        "currentWeeklyKm": 13,
+        "longestRecentRun": 7.15,
+        "goal": {
+          "type": "5k",
+          "raceDate": "2027-04-25"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 2767
+        },
+        "experienceMonths": 38,
+        "planningCandidates": 2
+      },
+      "v25": {
+        "score23": 9.472,
+        "score25": 9.522
+      },
+      "v26": {
+        "score23": 9.472,
+        "score25": 9.522
+      }
+    },
+    {
+      "id": 7,
+      "input": {
+        "today": "2026-11-02",
+        "age": 57,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 3,
+        "currentWeeklyKm": 28,
+        "longestRecentRun": 9,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-02-07"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 2964
+        },
+        "experienceMonths": 70,
+        "planningCandidates": 4
+      },
+      "v25": {
+        "score23": 6.617,
+        "score25": 9.31
+      },
+      "v26": {
+        "score23": 6.617,
+        "score25": 9.31
+      }
+    },
+    {
+      "id": 8,
+      "input": {
+        "today": "2026-11-02",
+        "age": 37,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 1,
+        "currentWeeklyKm": 17,
+        "longestRecentRun": 9.350000000000001,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-02-14"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3025
+        },
+        "experienceMonths": 62,
+        "planningCandidates": 3
+      },
+      "v25": {
+        "score23": 6.159,
+        "score25": 9.56
+      },
+      "v26": {
+        "score23": 6.159,
+        "score25": 9.56
+      }
+    },
+    {
+      "id": 9,
+      "input": {
+        "today": "2026-11-02",
+        "age": 33,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 5,
+        "currentWeeklyKm": 26,
+        "longestRecentRun": 13,
+        "goal": {
+          "type": "half",
+          "raceDate": "2027-02-21"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3579
+        },
+        "experienceMonths": 32,
+        "planningCandidates": 2
+      },
+      "v25": {
+        "score23": 9.021,
+        "score25": 9.401
+      },
+      "v26": {
+        "score23": 9.087,
+        "score25": 9.467
+      }
+    },
+    {
+      "id": 10,
+      "input": {
+        "today": "2026-11-02",
+        "age": 38,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 5,
+        "currentWeeklyKm": 25,
+        "longestRecentRun": 13.750000000000002,
+        "goal": {
+          "type": "half",
+          "raceDate": "2027-01-10"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3553
+        },
+        "experienceMonths": 29,
+        "planningCandidates": 2
+      },
+      "v25": {
+        "score23": 9.225,
+        "score25": 9.345
+      },
+      "v26": {
+        "score23": 9.225,
+        "score25": 9.345
+      }
+    },
+    {
+      "id": 11,
+      "input": {
+        "today": "2026-11-02",
+        "age": 70,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 2,
+        "currentWeeklyKm": 29,
+        "longestRecentRun": 7,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-02-14"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 4088
+        },
+        "experienceMonths": 37,
+        "planningCandidates": 2
+      },
+      "v25": {
+        "score23": 5.017,
+        "score25": 9.281
+      },
+      "v26": {
+        "score23": 5.017,
+        "score25": 9.281
+      }
+    },
+    {
+      "id": 12,
+      "input": {
+        "today": "2026-11-02",
+        "age": 68,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 2,
+        "currentWeeklyKm": 56,
+        "longestRecentRun": 18,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-04-25"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3967
+        },
+        "experienceMonths": 67,
+        "planningCandidates": 2
+      },
+      "v25": {
+        "score23": 4.992,
+        "score25": 9.159
+      },
+      "v26": {
+        "score23": 4.992,
+        "score25": 9.159
+      }
+    },
+    {
+      "id": 13,
+      "input": {
+        "today": "2026-11-02",
+        "age": 44,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 1,
+        "currentWeeklyKm": 50,
+        "longestRecentRun": 13,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-04-18"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3451
+        },
+        "experienceMonths": 30,
+        "planningCandidates": 4
+      },
+      "v25": {
+        "score23": 5.759,
+        "score25": 9.16
+      },
+      "v26": {
+        "score23": 5.759,
+        "score25": 9.16
+      }
+    },
+    {
+      "id": 14,
+      "input": {
+        "today": "2026-11-02",
+        "age": 21,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 6,
+        "currentWeeklyKm": 26,
+        "longestRecentRun": 12,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-03-14"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3708
+        },
+        "experienceMonths": 14,
+        "planningCandidates": 4
+      },
+      "v25": {
+        "score23": 8.086,
+        "score25": 9.401
+      },
+      "v26": {
+        "score23": 8.086,
+        "score25": 9.401
+      }
+    },
+    {
+      "id": 15,
+      "input": {
+        "today": "2026-11-02",
+        "age": 68,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 6,
+        "currentWeeklyKm": 50,
+        "longestRecentRun": 19,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-02-07"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3288
+        },
+        "experienceMonths": 61,
+        "planningCandidates": 4
+      },
+      "v25": {
+        "score23": 8.955,
+        "score25": 9.071
+      },
+      "v26": {
+        "score23": 8.955,
+        "score25": 9.071
+      }
+    },
+    {
+      "id": 16,
+      "input": {
+        "today": "2026-11-02",
+        "age": 26,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 2,
+        "currentWeeklyKm": 34,
+        "longestRecentRun": 14,
+        "goal": {
+          "type": "half",
+          "raceDate": "2027-01-03"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3968
+        },
+        "experienceMonths": 61,
+        "planningCandidates": 4
+      },
+      "v25": {
+        "score23": 4.882,
+        "score25": 8.075
+      },
+      "v26": {
+        "score23": 4.882,
+        "score25": 8.075
+      }
+    },
+    {
+      "id": 17,
+      "input": {
+        "today": "2026-11-02",
+        "age": 69,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 5,
+        "currentWeeklyKm": 62,
+        "longestRecentRun": 19,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-04-18"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3085
+        },
+        "experienceMonths": 18,
+        "planningCandidates": 3
+      },
+      "v25": {
+        "score23": 9.028,
+        "score25": 9.605
+      },
+      "v26": {
+        "score23": 9.028,
+        "score25": 9.605
+      }
+    },
+    {
+      "id": 18,
+      "input": {
+        "today": "2026-11-02",
+        "age": 21,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 5,
+        "currentWeeklyKm": 28,
+        "longestRecentRun": 11,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-03-07"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 2759
+        },
+        "experienceMonths": 48,
+        "planningCandidates": 3
+      },
+      "v25": {
+        "score23": 7.758,
+        "score25": 9.186
+      },
+      "v26": {
+        "score23": 7.758,
+        "score25": 9.186
+      }
+    },
+    {
+      "id": 19,
+      "input": {
+        "today": "2026-11-02",
+        "age": 27,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 2,
+        "currentWeeklyKm": 58,
+        "longestRecentRun": 15,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-01-31"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3596
+        },
+        "experienceMonths": 67,
+        "planningCandidates": 4
+      },
+      "v25": {
+        "score23": 8.226,
+        "score25": 8.679
+      },
+      "v26": {
+        "score23": 8.226,
+        "score25": 8.679
+      }
+    },
+    {
+      "id": 20,
+      "input": {
+        "today": "2026-11-02",
+        "age": 53,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 5,
+        "currentWeeklyKm": 49,
+        "longestRecentRun": 16,
+        "goal": {
+          "type": "5k",
+          "raceDate": "2027-03-14"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3587
+        },
+        "experienceMonths": 11,
+        "planningCandidates": 3
+      },
+      "v25": {
+        "score23": 9.235,
+        "score25": 9.285
+      },
+      "v26": {
+        "score23": 9.235,
+        "score25": 9.285
+      }
+    },
+    {
+      "id": 21,
+      "input": {
+        "today": "2026-11-02",
+        "age": 52,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 4,
+        "currentWeeklyKm": 30,
+        "longestRecentRun": 7,
+        "goal": {
+          "type": "half",
+          "raceDate": "2027-01-31"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3028
+        },
+        "experienceMonths": 22,
+        "planningCandidates": 3
+      },
+      "v25": {
+        "score23": 9.604,
+        "score25": 9.529
+      },
+      "v26": {
+        "score23": 9.604,
+        "score25": 9.529
+      }
+    },
+    {
+      "id": 22,
+      "input": {
+        "today": "2026-11-02",
+        "age": 40,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 5,
+        "currentWeeklyKm": 10,
+        "longestRecentRun": 5.5,
+        "goal": {
+          "type": "half",
+          "raceDate": "2027-01-03"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 4170
+        },
+        "experienceMonths": 36,
+        "planningCandidates": 3
+      },
+      "v25": {
+        "score23": 5.807,
+        "score25": 9.298
+      },
+      "v26": {
+        "score23": 5.807,
+        "score25": 9.298
+      }
+    },
+    {
+      "id": 23,
+      "input": {
+        "today": "2026-11-02",
+        "age": 45,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 4,
+        "currentWeeklyKm": 21,
+        "longestRecentRun": 11.55,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-03-07"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3324
+        },
+        "experienceMonths": 28,
+        "planningCandidates": 4
+      },
+      "v25": {
+        "score23": 6.596,
+        "score25": 8.706
+      },
+      "v26": {
+        "score23": 6.596,
+        "score25": 8.706
+      }
+    },
+    {
+      "id": 24,
+      "input": {
+        "today": "2026-11-02",
+        "age": 75,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 4,
+        "currentWeeklyKm": 26,
+        "longestRecentRun": 10,
+        "goal": {
+          "type": "half",
+          "raceDate": "2027-04-25"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3308
+        },
+        "experienceMonths": 35,
+        "planningCandidates": 2
+      },
+      "v25": {
+        "score23": 9.82,
+        "score25": 9.87
+      },
+      "v26": {
+        "score23": 9.82,
+        "score25": 9.87
+      }
+    },
+    {
+      "id": 25,
+      "input": {
+        "today": "2026-11-02",
+        "age": 64,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 2,
+        "currentWeeklyKm": 59,
+        "longestRecentRun": 5,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-01-31"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3547
+        },
+        "experienceMonths": 24,
+        "planningCandidates": 2
+      },
+      "v25": {
+        "score23": 8.43,
+        "score25": 8.694
+      },
+      "v26": {
+        "score23": 8.43,
+        "score25": 8.694
+      }
+    },
+    {
+      "id": 26,
+      "input": {
+        "today": "2026-11-02",
+        "age": 74,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 1,
+        "currentWeeklyKm": 63,
+        "longestRecentRun": 7,
+        "goal": {
+          "type": "5k",
+          "raceDate": "2027-05-02"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 2865
+        },
+        "experienceMonths": 65,
+        "planningCandidates": 4
+      },
+      "v25": {
+        "score23": 6.081,
+        "score25": 9.66
+      },
+      "v26": {
+        "score23": 6.081,
+        "score25": 9.66
+      }
+    },
+    {
+      "id": 27,
+      "input": {
+        "today": "2026-11-02",
+        "age": 32,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 5,
+        "currentWeeklyKm": 17,
+        "longestRecentRun": 9.350000000000001,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-01-24"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3513
+        },
+        "experienceMonths": 12,
+        "planningCandidates": 4
+      },
+      "v25": {
+        "score23": 9.35,
+        "score25": 9.456
+      },
+      "v26": {
+        "score23": 9.35,
+        "score25": 9.456
+      }
+    },
+    {
+      "id": 28,
+      "input": {
+        "today": "2026-11-02",
+        "age": 60,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 3,
+        "currentWeeklyKm": 17,
+        "longestRecentRun": 4,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-04-25"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3870
+        },
+        "experienceMonths": 60,
+        "planningCandidates": 2
+      },
+      "v25": {
+        "score23": 6.285,
+        "score25": 9.23
+      },
+      "v26": {
+        "score23": 6.285,
+        "score25": 9.23
+      }
+    },
+    {
+      "id": 29,
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 6,
+        "currentWeeklyKm": 58,
+        "longestRecentRun": 17,
+        "goal": {
+          "type": "5k",
+          "raceDate": "2027-01-10"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3640
+        },
+        "experienceMonths": 60,
+        "planningCandidates": 4
+      },
+      "v25": {
+        "score23": 8.612,
+        "score25": 8.715
+      },
+      "v26": {
+        "score23": 8.612,
+        "score25": 8.715
+      }
+    },
+    {
+      "id": 30,
+      "input": {
+        "today": "2026-11-02",
+        "age": 46,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 6,
+        "currentWeeklyKm": 58,
+        "longestRecentRun": 3,
+        "goal": {
+          "type": "half",
+          "raceDate": "2027-02-07"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 2823
+        },
+        "experienceMonths": 9,
+        "planningCandidates": 2
+      },
+      "v25": {
+        "score23": 9.083,
+        "score25": 9.068
+      },
+      "v26": {
+        "score23": 9.083,
+        "score25": 9.068
+      }
+    },
+    {
+      "id": 31,
+      "input": {
+        "today": "2026-11-02",
+        "age": 22,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 6,
+        "currentWeeklyKm": 36,
+        "longestRecentRun": 9,
+        "goal": {
+          "type": "half",
+          "raceDate": "2027-02-28"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3415
+        },
+        "experienceMonths": 28,
+        "planningCandidates": 2
+      },
+      "v25": {
+        "score23": 9.225,
+        "score25": 9.683
+      },
+      "v26": {
+        "score23": 9.225,
+        "score25": 9.683
+      }
+    },
+    {
+      "id": 32,
+      "input": {
+        "today": "2026-11-02",
+        "age": 45,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 4,
+        "currentWeeklyKm": 34,
+        "longestRecentRun": 4,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-04-25"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3076
+        },
+        "experienceMonths": 60,
+        "planningCandidates": 4
+      },
+      "v25": {
+        "score23": 6.267,
+        "score25": 8.581
+      },
+      "v26": {
+        "score23": 6.267,
+        "score25": 8.581
+      }
+    },
+    {
+      "id": 33,
+      "input": {
+        "today": "2026-11-02",
+        "age": 54,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 6,
+        "currentWeeklyKm": 28,
+        "longestRecentRun": 4,
+        "goal": {
+          "type": "half",
+          "raceDate": "2027-03-28"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3197
+        },
+        "experienceMonths": 33,
+        "planningCandidates": 4
+      },
+      "v25": {
+        "score23": 9.639,
+        "score25": 9.689
+      },
+      "v26": {
+        "score23": 9.639,
+        "score25": 9.689
+      }
+    },
+    {
+      "id": 34,
+      "input": {
+        "today": "2026-11-02",
+        "age": 49,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 1,
+        "currentWeeklyKm": 63,
+        "longestRecentRun": 19,
+        "goal": {
+          "type": "half",
+          "raceDate": "2027-02-14"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 2896
+        },
+        "experienceMonths": 69,
+        "planningCandidates": 3
+      },
+      "v25": {
+        "score23": 4.541,
+        "score25": 8.991
+      },
+      "v26": {
+        "score23": 4.541,
+        "score25": 8.991
+      }
+    },
+    {
+      "id": 35,
+      "input": {
+        "today": "2026-11-02",
+        "age": 63,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 6,
+        "currentWeeklyKm": 50,
+        "longestRecentRun": 9,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-02-14"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 2701
+        },
+        "experienceMonths": 51,
+        "planningCandidates": 3
+      },
+      "v25": {
+        "score23": 6.99,
+        "score25": 9.431
+      },
+      "v26": {
+        "score23": 6.99,
+        "score25": 9.431
+      }
+    },
+    {
+      "id": 36,
+      "input": {
+        "today": "2026-11-02",
+        "age": 51,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 3,
+        "currentWeeklyKm": 38,
+        "longestRecentRun": 9,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-01-24"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3154
+        },
+        "experienceMonths": 33,
+        "planningCandidates": 4
+      },
+      "v25": {
+        "score23": 5.502,
+        "score25": 8.67
+      },
+      "v26": {
+        "score23": 5.502,
+        "score25": 8.67
+      }
+    },
+    {
+      "id": 37,
+      "input": {
+        "today": "2026-11-02",
+        "age": 56,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 1,
+        "currentWeeklyKm": 46,
+        "longestRecentRun": 15,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-01-17"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3174
+        },
+        "experienceMonths": 7,
+        "planningCandidates": 2
+      },
+      "v25": {
+        "score23": 5.862,
+        "score25": 9.279
+      },
+      "v26": {
+        "score23": 5.862,
+        "score25": 9.279
+      }
+    },
+    {
+      "id": 38,
+      "input": {
+        "today": "2026-11-02",
+        "age": 31,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 1,
+        "currentWeeklyKm": 51,
+        "longestRecentRun": 21,
+        "goal": {
+          "type": "half",
+          "raceDate": "2027-02-28"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3369
+        },
+        "experienceMonths": 15,
+        "planningCandidates": 3
+      },
+      "v25": {
+        "score23": 4.579,
+        "score25": 8.995
+      },
+      "v26": {
+        "score23": 4.579,
+        "score25": 8.995
+      }
+    },
+    {
+      "id": 39,
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 1,
+        "currentWeeklyKm": 24,
+        "longestRecentRun": 13.200000000000001,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2026-12-27"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3954
+        },
+        "experienceMonths": 34,
+        "planningCandidates": 2
+      },
+      "v25": {
+        "score23": 3.492,
+        "score25": 8.885
+      },
+      "v26": {
+        "score23": 3.492,
+        "score25": 8.885
+      }
+    },
+    {
+      "id": 40,
+      "input": {
+        "today": "2026-11-02",
+        "age": 39,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 1,
+        "currentWeeklyKm": 54,
+        "longestRecentRun": 21,
+        "goal": {
+          "type": "5k",
+          "raceDate": "2027-05-02"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 4141
+        },
+        "experienceMonths": 68,
+        "planningCandidates": 2
+      },
+      "v25": {
+        "score23": 5.741,
+        "score25": 9.021
+      },
+      "v26": {
+        "score23": 5.741,
+        "score25": 9.021
+      }
+    },
+    {
+      "id": 41,
+      "input": {
+        "today": "2026-11-02",
+        "age": 21,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 3,
+        "currentWeeklyKm": 37,
+        "longestRecentRun": 4,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-03-28"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3533
+        },
+        "experienceMonths": 48,
+        "planningCandidates": 2
+      },
+      "v25": {
+        "score23": 5.365,
+        "score25": 8.357
+      },
+      "v26": {
+        "score23": 5.365,
+        "score25": 8.357
+      }
+    },
+    {
+      "id": 42,
+      "input": {
+        "today": "2026-11-02",
+        "age": 30,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 4,
+        "currentWeeklyKm": 28,
+        "longestRecentRun": 15.400000000000002,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-03-07"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3658
+        },
+        "experienceMonths": 47,
+        "planningCandidates": 2
+      },
+      "v25": {
+        "score23": 7.868,
+        "score25": 9.496
+      },
+      "v26": {
+        "score23": 7.868,
+        "score25": 9.496
+      }
+    },
+    {
+      "id": 43,
+      "input": {
+        "today": "2026-11-02",
+        "age": 43,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 5,
+        "currentWeeklyKm": 15,
+        "longestRecentRun": 5,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-01-31"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3350
+        },
+        "experienceMonths": 13,
+        "planningCandidates": 4
+      },
+      "v25": {
+        "score23": 5.077,
+        "score25": 8.889
+      },
+      "v26": {
+        "score23": 5.077,
+        "score25": 8.889
+      }
+    },
+    {
+      "id": 44,
+      "input": {
+        "today": "2026-11-02",
+        "age": 55,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 6,
+        "currentWeeklyKm": 63,
+        "longestRecentRun": 11,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-03-07"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 4131
+        },
+        "experienceMonths": 14,
+        "planningCandidates": 3
+      },
+      "v25": {
+        "score23": 7.504,
+        "score25": 9.173
+      },
+      "v26": {
+        "score23": 7.504,
+        "score25": 9.173
+      }
+    },
+    {
+      "id": 45,
+      "input": {
+        "today": "2026-11-02",
+        "age": 66,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 1,
+        "currentWeeklyKm": 45,
+        "longestRecentRun": 9,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-03-07"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3544
+        },
+        "experienceMonths": 6,
+        "planningCandidates": 3
+      },
+      "v25": {
+        "score23": 6.054,
+        "score25": 9.577
+      },
+      "v26": {
+        "score23": 6.054,
+        "score25": 9.577
+      }
+    },
+    {
+      "id": 46,
+      "input": {
+        "today": "2026-11-02",
+        "age": 60,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 3,
+        "currentWeeklyKm": 45,
+        "longestRecentRun": 12,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-02-07"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3932
+        },
+        "experienceMonths": 53,
+        "planningCandidates": 4
+      },
+      "v25": {
+        "score23": 8.772,
+        "score25": 8.836
+      },
+      "v26": {
+        "score23": 8.772,
+        "score25": 8.836
+      }
+    },
+    {
+      "id": 47,
+      "input": {
+        "today": "2026-11-02",
+        "age": 51,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 2,
+        "currentWeeklyKm": 54,
+        "longestRecentRun": 19,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-01-31"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 2872
+        },
+        "experienceMonths": 7,
+        "planningCandidates": 4
+      },
+      "v25": {
+        "score23": 8.421,
+        "score25": 8.886
+      },
+      "v26": {
+        "score23": 8.421,
+        "score25": 8.886
+      }
+    },
+    {
+      "id": 48,
+      "input": {
+        "today": "2026-11-02",
+        "age": 63,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 2,
+        "currentWeeklyKm": 52,
+        "longestRecentRun": 6,
+        "goal": {
+          "type": "half",
+          "raceDate": "2027-02-07"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3580
+        },
+        "experienceMonths": 52,
+        "planningCandidates": 2
+      },
+      "v25": {
+        "score23": 6.249,
+        "score25": 8.273
+      },
+      "v26": {
+        "score23": 6.249,
+        "score25": 8.273
+      }
+    },
+    {
+      "id": 49,
+      "input": {
+        "today": "2026-11-02",
+        "age": 66,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 1,
+        "currentWeeklyKm": 38,
+        "longestRecentRun": 18,
+        "goal": {
+          "type": "5k",
+          "raceDate": "2027-02-07"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3460
+        },
+        "experienceMonths": 35,
+        "planningCandidates": 3
+      },
+      "v25": {
+        "score23": 5.87,
+        "score25": 9.212
+      },
+      "v26": {
+        "score23": 5.87,
+        "score25": 9.212
+      }
+    },
+    {
+      "id": 50,
+      "input": {
+        "today": "2026-11-02",
+        "age": 69,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 5,
+        "currentWeeklyKm": 38,
+        "longestRecentRun": 4,
+        "goal": {
+          "type": "5k",
+          "raceDate": "2027-01-24"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 2791
+        },
+        "experienceMonths": 63,
+        "planningCandidates": 3
+      },
+      "v25": {
+        "score23": 9.1,
+        "score25": 9.15
+      },
+      "v26": {
+        "score23": 9.1,
+        "score25": 9.15
+      }
+    },
+    {
+      "id": 51,
+      "input": {
+        "today": "2026-11-02",
+        "age": 49,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 1,
+        "currentWeeklyKm": 44,
+        "longestRecentRun": 3,
+        "goal": {
+          "type": "5k",
+          "raceDate": "2027-05-02"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 4196
+        },
+        "experienceMonths": 37,
+        "planningCandidates": 3
+      },
+      "v25": {
+        "score23": 5.419,
+        "score25": 8.745
+      },
+      "v26": {
+        "score23": 5.419,
+        "score25": 8.745
+      }
+    },
+    {
+      "id": 52,
+      "input": {
+        "today": "2026-11-02",
+        "age": 39,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 5,
+        "currentWeeklyKm": 22,
+        "longestRecentRun": 5,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-02-21"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3774
+        },
+        "experienceMonths": 7,
+        "planningCandidates": 2
+      },
+      "v25": {
+        "score23": 9.377,
+        "score25": 9.491
+      },
+      "v26": {
+        "score23": 9.377,
+        "score25": 9.491
+      }
+    },
+    {
+      "id": 53,
+      "input": {
+        "today": "2026-11-02",
+        "age": 27,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 2,
+        "currentWeeklyKm": 42,
+        "longestRecentRun": 7,
+        "goal": {
+          "type": "half",
+          "raceDate": "2027-04-25"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3931
+        },
+        "experienceMonths": 59,
+        "planningCandidates": 4
+      },
+      "v25": {
+        "score23": 5.86,
+        "score25": 9.031
+      },
+      "v26": {
+        "score23": 5.86,
+        "score25": 9.031
+      }
+    },
+    {
+      "id": 54,
+      "input": {
+        "today": "2026-11-02",
+        "age": 61,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 1,
+        "currentWeeklyKm": 54,
+        "longestRecentRun": 6,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-04-18"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3036
+        },
+        "experienceMonths": 30,
+        "planningCandidates": 2
+      },
+      "v25": {
+        "score23": 2.952,
+        "score25": 8.657
+      },
+      "v26": {
+        "score23": 2.952,
+        "score25": 8.657
+      }
+    },
+    {
+      "id": 55,
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 2,
+        "currentWeeklyKm": 28,
+        "longestRecentRun": 11,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-01-10"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3337
+        },
+        "experienceMonths": 15,
+        "planningCandidates": 4
+      },
+      "v25": {
+        "score23": 4.901,
+        "score25": 9.041
+      },
+      "v26": {
+        "score23": 4.901,
+        "score25": 9.041
+      }
+    },
+    {
+      "id": 56,
+      "input": {
+        "today": "2026-11-02",
+        "age": 30,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 2,
+        "currentWeeklyKm": 23,
+        "longestRecentRun": 12.65,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-03-14"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3404
+        },
+        "experienceMonths": 47,
+        "planningCandidates": 4
+      },
+      "v25": {
+        "score23": 8.281,
+        "score25": 8.584
+      },
+      "v26": {
+        "score23": 8.281,
+        "score25": 8.584
+      }
+    },
+    {
+      "id": 57,
+      "input": {
+        "today": "2026-11-02",
+        "age": 46,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 3,
+        "currentWeeklyKm": 14,
+        "longestRecentRun": 7.700000000000001,
+        "goal": {
+          "type": "5k",
+          "raceDate": "2027-03-28"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 2882
+        },
+        "experienceMonths": 69,
+        "planningCandidates": 3
+      },
+      "v25": {
+        "score23": 9.159,
+        "score25": 9.504
+      },
+      "v26": {
+        "score23": 9.159,
+        "score25": 9.504
+      }
+    },
+    {
+      "id": 58,
+      "input": {
+        "today": "2026-11-02",
+        "age": 57,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 3,
+        "currentWeeklyKm": 54,
+        "longestRecentRun": 15,
+        "goal": {
+          "type": "5k",
+          "raceDate": "2027-03-14"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3424
+        },
+        "experienceMonths": 62,
+        "planningCandidates": 3
+      },
+      "v25": {
+        "score23": 9.175,
+        "score25": 9.09
+      },
+      "v26": {
+        "score23": 9.175,
+        "score25": 9.09
+      }
+    },
+    {
+      "id": 59,
+      "input": {
+        "today": "2026-11-02",
+        "age": 32,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 5,
+        "currentWeeklyKm": 13,
+        "longestRecentRun": 4,
+        "goal": {
+          "type": "half",
+          "raceDate": "2027-01-31"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3960
+        },
+        "experienceMonths": 41,
+        "planningCandidates": 4
+      },
+      "v25": {
+        "score23": 7.276,
+        "score25": 9.229
+      },
+      "v26": {
+        "score23": 7.276,
+        "score25": 9.229
+      }
+    },
+    {
+      "id": 60,
+      "input": {
+        "today": "2026-11-02",
+        "age": 21,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 3,
+        "currentWeeklyKm": 36,
+        "longestRecentRun": 19.8,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-03-07"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3601
+        },
+        "experienceMonths": 64,
+        "planningCandidates": 2
+      },
+      "v25": {
+        "score23": 7.309,
+        "score25": 8.801
+      },
+      "v26": {
+        "score23": 7.309,
+        "score25": 8.801
+      }
+    },
+    {
+      "id": 61,
+      "input": {
+        "today": "2026-11-02",
+        "age": 23,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 2,
+        "currentWeeklyKm": 35,
+        "longestRecentRun": 3,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-04-11"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3495
+        },
+        "experienceMonths": 57,
+        "planningCandidates": 2
+      },
+      "v25": {
+        "score23": 5.181,
+        "score25": 9.075
+      },
+      "v26": {
+        "score23": 5.181,
+        "score25": 9.075
+      }
+    },
+    {
+      "id": 62,
+      "input": {
+        "today": "2026-11-02",
+        "age": 60,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 2,
+        "currentWeeklyKm": 20,
+        "longestRecentRun": 6,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-02-21"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 4178
+        },
+        "experienceMonths": 60,
+        "planningCandidates": 4
+      },
+      "v25": {
+        "score23": 4.773,
+        "score25": 9.36
+      },
+      "v26": {
+        "score23": 4.773,
+        "score25": 9.36
+      }
+    },
+    {
+      "id": 63,
+      "input": {
+        "today": "2026-11-02",
+        "age": 32,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 5,
+        "currentWeeklyKm": 53,
+        "longestRecentRun": 12,
+        "goal": {
+          "type": "5k",
+          "raceDate": "2027-01-24"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3177
+        },
+        "experienceMonths": 56,
+        "planningCandidates": 4
+      },
+      "v25": {
+        "score23": 8.92,
+        "score25": 8.97
+      },
+      "v26": {
+        "score23": 8.92,
+        "score25": 8.97
+      }
+    }
+  ]
+}
