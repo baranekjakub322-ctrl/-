@@ -1,0 +1,113 @@
+=== podstawowe_v28
+[podstawowe] zaliczone 107, niezaliczone 0
+=== trudne
+[trudne] zaliczone 93, niezaliczone 0
+=== czulosc
+[czulosc] zaliczone 28, niezaliczone 0
+=== regresje
+[regresje] zaliczone 17, niezaliczone 0
+=== czulosc_v21
+[czulosc_v21] zaliczone 38, niezaliczone 0
+=== jakosciowe
+[jakosciowe] zaliczone 35, niezaliczone 0
+=== dostepnosc
+[dostepnosc] zaliczone 9, niezaliczone 0
+=== porownanie28
+[porownanie28] zaliczone 31, niezaliczone 0
+{"dystans":{"5k":9.36,"10k":9.36,"half":9.14,"marathon":8.5},"czestotliwosc":{"1":5.5,"2":8.5,"3":9.63,"4":10,"5":10,"6":10,"7":10},"ogolnie":9.09}
+5k       1d -> 1 | peak 10 long 0 Q 0 warn 4 | niewystarczajace_przygotowanie | ocena 5.5 | 
+5k       2d -> 2 | peak 25 long 14 Q 10 warn 3 | przygotowanie_do_ukonczenia | ocena 10 | 
+5k       3d -> 3 | peak 34 long 14 Q 14 warn 1 | przygotowanie_do_wyniku | ocena 10 | 
+5k       4d -> 4 | peak 35 long 14 Q 14 warn 1 | przygotowanie_do_wyniku | ocena 10 | 
+5k       5d -> 5 | peak 38 long 13 Q 18 warn 3 | przygotowanie_do_wyniku | ocena 10 | 
+5k       6d -> 5 | peak 38 long 13 Q 18 warn 3 | przygotowanie_do_wyniku | ocena 10 | 
+5k       7d -> 5 | peak 38 long 13 Q 18 warn 3 | przygotowanie_do_wyniku | ocena 10 | 
+10k      1d -> 1 | peak 11 long 0 Q 0 warn 4 | niewystarczajace_przygotowanie | ocena 5.5 | 
+10k      2d -> 2 | peak 26 long 14 Q 10 warn 5 | przygotowanie_czesciowe | ocena 10 | 
+10k      3d -> 3 | peak 35 long 14 Q 15 warn 1 | przygotowanie_do_wyniku | ocena 10 | 
+10k      4d -> 4 | peak 35 long 14 Q 15 warn 2 | przygotowanie_do_wyniku | ocena 10 | 
+10k      5d -> 5 | peak 37 long 13 Q 19 warn 3 | przygotowanie_do_wyniku | ocena 10 | 
+10k      6d -> 5 | peak 37 long 13 Q 19 warn 3 | przygotowanie_do_wyniku | ocena 10 | 
+10k      7d -> 5 | peak 37 long 13 Q 19 warn 3 | przygotowanie_do_wyniku | ocena 10 | 
+half     1d -> 1 | peak 11 long 0 Q 0 warn 4 | niewystarczajace_przygotowanie | ocena 5.5 | 
+half     2d -> 2 | peak 30 long 17 Q 5 warn 5 | przygotowanie_czesciowe | ocena 8.5 | 
+half     3d -> 3 | peak 41 long 18 Q 15 warn 1 | przygotowanie_do_wyniku | ocena 10 | 
+half     4d -> 4 | peak 55 long 18 Q 14 warn 1 | przygotowanie_do_wyniku | ocena 10 | 
+half     5d -> 5 | peak 54 long 18 Q 14 warn 2 | przygotowanie_do_wyniku | ocena 10 | 
+half     6d -> 5 | peak 54 long 18 Q 14 warn 2 | przygotowanie_do_wyniku | ocena 10 | 
+half     7d -> 5 | peak 54 long 18 Q 14 warn 2 | przygotowanie_do_wyniku | ocena 10 | 
+marathon 1d -> 1 | peak 11 long 0 Q 0 warn 5 | niewystarczajace_przygotowanie | ocena 5.5 | 
+marathon 2d -> 2 | peak 34 long 21 Q 0 warn 5 | przygotowanie_czesciowe | ocena 5.5 | 
+marathon 3d -> 3 | peak 45 long 21 Q 9 warn 6 | przygotowanie_czesciowe | ocena 8.5 | 
+marathon 4d -> 4 | peak 64 long 29 Q 13 warn 4 | przygotowanie_czesciowe | ocena 10 | 
+marathon 5d -> 5 | peak 65 long 27 Q 14 warn 5 | przygotowanie_czesciowe | ocena 10 | 
+marathon 6d -> 5 | peak 65 long 27 Q 14 warn 5 | przygotowanie_czesciowe | ocena 10 | 
+marathon 7d -> 5 | peak 65 long 27 Q 14 warn 5 | przygotowanie_czesciowe | ocena 10 | 
+=== porownanie_v19_v20
+[porownanie_v19_v20] zaliczone 12, niezaliczone 0
+{"5k":{"v19":{"srednia":8.514,"planyZKrytycznym":12,"krytyczne":12,"ostrzezenia":3447},"v20":{"srednia":8.568,"planyZKrytycznym":0,"krytyczne":0,"ostrzezenia":3409},"scenariuszy":252},"10k":{"v19":{"srednia":8.254,"planyZKrytycznym":12,"krytyczne":12,"ostrzezenia":3535},"v20":{"srednia":8.29,"planyZKrytycznym":0,"krytyczne":0,"ostrzezenia":3490},"scenariuszy":252},"half":{"v19":{"srednia":7.492,"planyZKrytycznym":0,"krytyczne":0,"ostrzezenia":3445},"v20":{"srednia":7.503,"planyZKrytycznym":0,"krytyczne":0,"ostrzezenia":3347},"scenariuszy":252},"marathon":{"v19":{"srednia":6.737,"planyZKrytycznym":3,"krytyczne":3,"ostrzezenia":3305},"v20":{"srednia":6.769,"planyZKrytycznym":0,"krytyczne":0,"ostrzezenia":3283},"scenariuszy":252}}
+=== porownanie_v20_v21
+[porownanie_v20_v21] zaliczone 32, niezaliczone 0
+{"5k":{"v20":7.875,"v21":9.857},"10k":{"v20":7.79,"v21":9.731},"half":{"v20":7.576,"v21":9.376},"marathon":{"v20":7.295,"v21":8.925}}
+=== sweep
+[sweep] zaliczone 21, niezaliczone 0
+=== skrypt_bledy
+[skrypt_bledy] zaliczone 4, niezaliczone 0
+=== v22
+V22: 73/73
+=== porownanie_v21_v22
+Comparison V21/V22: 1008 unique cases, 14 examples
+=== regresje_v22_v23
+V22: 73/73
+=== kalibracja_v23
+Kalibracja: 16/16; reference 9.122
+=== v23
+V23 82/82
+=== porownanie_v22_v23
+Comparison: 28 matrix + 1008 extended + 18 detailed; violations 0
+=== v24_inherited
+V23 82/82
+=== v24
+V24 227/227
+=== porownanie_v23_v24
+Comparison: 28 matrix + 1008 extended + 30 detailed; violations 0
+=== regresje_v25
+8/8
+=== v25_inherited
+V23 82/82
+=== adaptacja_v25
+Adaptation 140/140
+=== v25
+V25 121/121
+=== kalibracja_v25
+Calibration V25 24/24; good=8.904
+=== porownanie_v24_v25
+Comparison: 28 matrix + 1008 extended + 30 detailed; violations 0
+=== wydajnosc_v25
+[
+  {
+    version: 'v24',
+    inputSha256: '0947bb9c68a7740a707d59e17f6e2117f68b2245c188a1d00180bc87077928d0',
+    executed: 84,
+    meanMs: 12.507980166666671,
+    medianMs: 9.198949000000084,
+    p95Ms: 29.5176120000001,
+    maxMs: 39.804370999999946,
+    startRss: 59670528,
+    maxRssBytes: 142639104,
+    node: 'v24.19.0'
+  },
+  {
+    version: 'v25',
+    inputSha256: '0947bb9c68a7740a707d59e17f6e2117f68b2245c188a1d00180bc87077928d0',
+    executed: 84,
+    meanMs: 14.254524261904763,
+    medianMs: 10.856098000000003,
+    p95Ms: 33.70202400000005,
+    maxMs: 39.598399999999856,
+    startRss: 72220672,
+    maxRssBytes: 153223168,
+    node: 'v24.19.0'
+  }
+]
+WYNIK: wszystkie 28 zestawy testów zaliczone

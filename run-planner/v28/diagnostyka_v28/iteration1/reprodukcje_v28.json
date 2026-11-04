@@ -1,0 +1,11 @@
+[
+  {
+    "name": "27.0 cross-distance endurance is not capped at 110% by speed maintenance",
+    "ok": false,
+    "error": "Unjustified cross-distance maintenance cap"
+  },
+  {
+    "name": "28.0 cross-distance endurance is not capped at 110% by speed maintenance",
+    "ok": true
+  }
+]

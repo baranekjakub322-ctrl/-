@@ -1,0 +1,313 @@
+{
+  "version": "26.0.0",
+  "baseCommit": "39d8466e25a35c7ef65e1ca4294decf057d7b8d0",
+  "node": "v24.19.0",
+  "system": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "baseSourceHashes": {
+    "planGenerator_v24.js": "ebb858d173b168945539adc53512117ea0173cdade76c257dc4813ed40d98e48",
+    "planGenerator_v20.js": "f4e383ce0beda3d06145ba78b3489f7f6dc4fa15a5ed79d09b1440381af94b4c",
+    "planGenerator_v25.js": "9a8dc8b019a7ad65fb7baa96a6682e840f08ff6a1610d96093f58fd151db9c8c",
+    "package.json": "5ed69a9bc47dd52f1c6e8c837cdc1074c9af31967c00b4828ff768b034e83c3a",
+    "planGenerator_v21.js": "7c4ad13038696b4df7740369baec268ef2ae06d837901639ad2054404f34d7ba",
+    "planGenerator_v22.js": "499b3ea7fb940e1e9764c9c2394a51fc36e96634e8a7baf39f1b9265cf599554",
+    "planGenerator_v23.js": "b8fd490bf71c986563ef8649152fcbe0accede4121728407cd973d7905922b7a",
+    "testy/run.mjs": "30562addbc4c68d97da8e268de593e0f4d2a73976487e26be6b41aacaca5122a",
+    "testy/regresje.mjs": "1b7b422a91d28e69a0a796f3d37483d5ed81ead11b62a0989779cad6ee45e10f",
+    "testy/porownanie_v24_v25.mjs": "ea284d35d8c5651811f5e1ed3be0f704c22069aee0d06550cbd8d51969202a0a",
+    "testy/porownanie_v20_v21.mjs": "bc4f371a8c1f1e55d02dfb94f50e06f31176e01daabcb1d905579fe30ba34223",
+    "testy/kalibracja_v25.mjs": "65a1d4d2423c312fbb8a188ad6d3ec14738d6ce32d326be7b9718b10110d9b56",
+    "testy/adaptacja_v25.mjs": "709ee915e9194c999a00983e5eed4cafd036f011ac01871acfeccf0c7fa9d580",
+    "testy/regresje_v22_v23.mjs": "a3c24c6e939cc637b15ea3a47be34f05438ca0e717ad8cb1bde22cf333b95000",
+    "testy/buduj_raporty.mjs": "0994afdb1c9fd84951dc6ea3eedf17756339eb50a303c1c09a8aefec3bc3dea8",
+    "testy/porownanie_v23_v24.mjs": "c5ee48d4bdf19af43a8dc615d77d585cc5f1adfba9c191f4665f63d9c7e549a1",
+    "testy/diagnoza_v24.mjs": "ce933753c62c961907551855aa2404e165350246ae240cac887a69132210f1a0",
+    "testy/skrypt_bledy.mjs": "d01ebfef2d6fb2344f34bc0bcb4ecae8e760f5442f50003b7c11eea576324869",
+    "testy/regresje_v25.mjs": "476e5a3fef08d27d9e9e443bd60fc62a272a23a3037f086c24cff3a83b4dda7e",
+    "testy/raporty_v25.mjs": "db6fa4357de6dd586e63baa5b4e0ee65afc5e139754f13ac824664cb7c58b785",
+    "testy/porownanie28.mjs": "d57863b10cd68396a90130fb5d9662acb4973a94a0607c30dbfc5d655f8282f7",
+    "testy/v23.mjs": "d975154fc9a87a0a2fb70d2f69f0b767aa69280463fd0a5114cb5889b102a871",
+    "testy/ostrzezenia_v24.mjs": "6401dcc23edc163f85e5bc8a04567bc55526b6f7e0119738573d377030e29d48",
+    "testy/diagnoza_v23.mjs": "fdc0300bc9a6a012a27b839feed6e0c194f379892399c231cb1250120d0a32b5",
+    "testy/porownanie_v21_v22.mjs": "0b656343dace1710bbbf87c44d0d592c4afb8f5c81797a8122e8fdac9433c00d",
+    "testy/wydajnosc_v25.mjs": "969b41085aab10faf825035b32ea7729a6e3a56998080ff79ae083583d84b357",
+    "testy/v25.mjs": "16f06fcc5cda8bbc5a79b6949a041c40a3166693d4985b92c89cce7c7c3b360c",
+    "testy/kalibracja_v23.mjs": "574992bda2f4ad24d976833d12de353db35471fed0fbbf29bbcdb59d71babe19",
+    "testy/raporty_v24.mjs": "43d9b1c2ffecc552df5eb91ed3a6693ba04898ee061f43bfbe24650f458779ac",
+    "testy/v24.mjs": "56771472f6ef2604872dbbd0842752903a018884375c2ffe221282b681075bf8",
+    "testy/v25_inherited.mjs": "399d8be80d910ea3c85ea24fe43dcefa924e315ec56e5059dd5d9c5ca69e0d29",
+    "testy/raporty_v22.mjs": "b7b81ad008c4494a2db0e508aefc9840402b172553b3f1f45a624d663c315088",
+    "testy/trudne.mjs": "5831d1606d798a3a9be9a42e8ee091ddeb62bcf3abbd0c42de03a3e4c4a3eb7b",
+    "testy/lib.mjs": "7cd5f7862af4ebc0265a38b246e2cc5c75ea9eb996eb46a8e45cc4cbb19e0971",
+    "testy/porownanie_v19_v20.mjs": "5d266665945fa69d55b91227d57dbfdc280d7a9fe094a3bd091582e53522a150",
+    "testy/czulosc.mjs": "c04df49f6c132f5844bcfa8351cf3bb68df34ef84f5a2edfde1653db91212639",
+    "testy/porownanie_v22_v23.mjs": "36c8a3475e338742cc6509c92f960526b92e3c848672593180283a6b792dcb49",
+    "testy/miernik_v22.mjs": "477aa66b72f5612bb3cd4f50b39c91303ac393eb8bcb22e112965dc1e9e24774",
+    "testy/dostepnosc.mjs": "800c6b1a50f2b2bf6d0a5766383b7fdc4ef33df1053f4622d9338edfed9bd3f9",
+    "testy/czulosc_v21.mjs": "a25a2a536c49ce55881b97abdec01385a872d4a5ffe18acb6d2f240a108409b1",
+    "testy/jakosciowe.mjs": "8aec7437501e76842393ee4adc565dc8be65be377881f2e5e9d79553f3bc6644",
+    "testy/v22.mjs": "eb661892a77513e8e0f80d92aed02f2e83d9b4622377b6cdf68154d0ce30b82e",
+    "testy/sweep.mjs": "7222edc8830e12b50b8cb39e84a25d444837fba9eeb9bb4bbcc62a3ad1f5120e",
+    "testy/benchmark_v23.mjs": "ae71473adab2919ed0e480102c22d901dbb9385e8a3259cf31af37edd086f244",
+    "testy/podstawowe.mjs": "cdf288ab393a57f6ef3fa2c98dd6bfdef629f4ba8cb572eb6f714635a6f0913f",
+    "testy/v24_inherited.mjs": "d7142ccf6fc7f0badcddc8f6b1eaa1eb5ad5ffd15b24e010666cea8aef3d5a49",
+    "testy/raporty_v23.mjs": "0ae13d5e880b7c921ff7635877632be3e9260d3bfc112ec676eade197b41f5c1",
+    "baza/planGenerator_v20.js": "f4e383ce0beda3d06145ba78b3489f7f6dc4fa15a5ed79d09b1440381af94b4c",
+    "baza/planGenerator_v19.js": "ff6d32021ff74d6ede2500b325c4b5d5e256a6e92c1a9f5c5acd686aada16abe",
+    "baza_v21/planGenerator_v20.js": "f4e383ce0beda3d06145ba78b3489f7f6dc4fa15a5ed79d09b1440381af94b4c",
+    "baza_v21/package.json": "b5d16b38f5efe6ed3a1a020339472d6efbdc12c1608b4e5a1f0a982c59e3ad1c",
+    "baza_v21/planGenerator_v21.js": "7c4ad13038696b4df7740369baec268ef2ae06d837901639ad2054404f34d7ba",
+    "scoring/v23.mjs": "a7d2cfe244bb156418e3334b917b39773c1e96ad7c0ff356aac586380aa3eb71",
+    "scoring/v25.mjs": "09dfeeb6b6ab25bdbae4065b5d2166b75f9d1c7f286408337fa8c912f65332b2",
+    "model/quality_v24.mjs": "74d22887b5c54c9b8194bb1ca69433ba5587db9f70be8bc379fd8e21483a0cb6",
+    "model/policy_v25.mjs": "d8e7d9b60f4c880c709567e430104a8f0573ded74ad1cf52af9c6812adf35c50",
+    "model/quality_v25.mjs": "74d22887b5c54c9b8194bb1ca69433ba5587db9f70be8bc379fd8e21483a0cb6",
+    "model/frequency_v25.mjs": "30ac939bbc64b8fb3acf379e88ae1f0731a65221cd3c6b33102c9b5971530166",
+    "model/activity_v25.mjs": "f5d825efb0cc1fc61e93d4bfb839b66bb7e299763098b98d937efcae42dd2d4c",
+    "model/frequency_v24.mjs": "99f92bce0b1c19bd3a85af001f1d899a3037228584dc23bbab2f305f416cf590",
+    "model/ledger_v25.mjs": "e52639a9670173deae3698ed23cca49b862c046d42145a9a6da65d2dfa87a763",
+    "model/readiness_v25.mjs": "a5b8b79499e5269ebfbbf6e344eb0cbf7943b4bbe30658ecaf3cb21042afc646",
+    "model/adaptation_v24.mjs": "0858044dd2b5d3438b77d87082c69e09f97bf11af3c7cf9dee06500b6a8f5e91",
+    "model/adaptation_v25.mjs": "e997c9b41f43043cc71757949b7fca3f2e3eae62fcf8a86ffcc6a387bf3fb2c5",
+    "model/training.mjs": "dfb3fdd9e9a74dedfa90e458fa14e0e0205dd61b29a779726b7321383bd671a0",
+    "model/adaptation_v23.mjs": "0cd5cdee5d0449ab4ebcb442aaaa9955b849dba4ee5323b82c8e140a794952fb",
+    "model/policy_v24.mjs": "2acb1c9d0450baf23abd5ada0b0984a5360bbb0e175914af9ec6cec725ebdee4",
+    "model/ledger_v24.mjs": "13c6c12e28e9a27640ce9673b53cd7f02378122bf2216bb7624a0d1c885f67f8",
+    "model/quality_v23.mjs": "fe92d01711b079e54b9caa4dbaa5b4429a4ce00767056e1b9380413de1a82411",
+    "model/policy_v23.mjs": "bcfb1b68dd1ee257da0dd797059d4d3ea3b342552dbdc067fe0ca13ec4ce9c7d",
+    "baza_v21/testy/regresje.mjs": "1b7b422a91d28e69a0a796f3d37483d5ed81ead11b62a0989779cad6ee45e10f",
+    "baza_v21/testy/porownanie_v20_v21.mjs": "bc4f371a8c1f1e55d02dfb94f50e06f31176e01daabcb1d905579fe30ba34223",
+    "baza_v21/testy/buduj_raporty.mjs": "0994afdb1c9fd84951dc6ea3eedf17756339eb50a303c1c09a8aefec3bc3dea8",
+    "baza_v21/testy/skrypt_bledy.mjs": "d01ebfef2d6fb2344f34bc0bcb4ecae8e760f5442f50003b7c11eea576324869",
+    "baza_v21/testy/porownanie28.mjs": "d57863b10cd68396a90130fb5d9662acb4973a94a0607c30dbfc5d655f8282f7",
+    "baza_v21/testy/trudne.mjs": "5831d1606d798a3a9be9a42e8ee091ddeb62bcf3abbd0c42de03a3e4c4a3eb7b",
+    "baza_v21/testy/lib.mjs": "6ff92bc09a2c442e6356968d799d88ca484c45523336a89c3091d011ce5d1403",
+    "baza_v21/testy/porownanie_v19_v20.mjs": "5d266665945fa69d55b91227d57dbfdc280d7a9fe094a3bd091582e53522a150",
+    "baza_v21/testy/czulosc.mjs": "c04df49f6c132f5844bcfa8351cf3bb68df34ef84f5a2edfde1653db91212639",
+    "baza_v21/testy/dostepnosc.mjs": "800c6b1a50f2b2bf6d0a5766383b7fdc4ef33df1053f4622d9338edfed9bd3f9",
+    "baza_v21/testy/czulosc_v21.mjs": "a25a2a536c49ce55881b97abdec01385a872d4a5ffe18acb6d2f240a108409b1",
+    "baza_v21/testy/jakosciowe.mjs": "abb91b6314c527ef50936d5f94db2069f3a57847b910917b30b9ba78b7ed9ab9",
+    "baza_v21/testy/sweep.mjs": "7222edc8830e12b50b8cb39e84a25d444837fba9eeb9bb4bbcc62a3ad1f5120e",
+    "baza_v21/testy/podstawowe.mjs": "fcd749ff8c225104667fa6ef68bd86ff0ea74da5e8ff19ea55056f493d5fff2b",
+    "baza_v21/baza/planGenerator_v20.js": "f4e383ce0beda3d06145ba78b3489f7f6dc4fa15a5ed79d09b1440381af94b4c",
+    "baza_v21/baza/planGenerator_v19.js": "ff6d32021ff74d6ede2500b325c4b5d5e256a6e92c1a9f5c5acd686aada16abe"
+  },
+  "basePackageSha256": "f0b3094ac0e67d7c5a0707728240d4d070ae8631fe617f19d781558ec6359033",
+  "baselineStatus": "completed; 28 suites / 0 failed",
+  "archivalProvenance": "PROVENANCE.json in V25 was inherited from V23; baseCommit above is actual V25 commit.",
+  "baselineRun": {
+    "node": "v24.19.0",
+    "started": "2026-11-04T09:27:10.300Z",
+    "elapsedMs": 312249,
+    "hashes": {
+      "planGenerator_v25.js": "9a8dc8b019a7ad65fb7baa96a6682e840f08ff6a1610d96093f58fd151db9c8c",
+      "model/policy_v25.mjs": "d8e7d9b60f4c880c709567e430104a8f0573ded74ad1cf52af9c6812adf35c50",
+      "model/quality_v25.mjs": "74d22887b5c54c9b8194bb1ca69433ba5587db9f70be8bc379fd8e21483a0cb6",
+      "model/frequency_v25.mjs": "30ac939bbc64b8fb3acf379e88ae1f0731a65221cd3c6b33102c9b5971530166",
+      "model/ledger_v25.mjs": "e52639a9670173deae3698ed23cca49b862c046d42145a9a6da65d2dfa87a763",
+      "model/activity_v25.mjs": "f5d825efb0cc1fc61e93d4bfb839b66bb7e299763098b98d937efcae42dd2d4c",
+      "model/adaptation_v25.mjs": "e997c9b41f43043cc71757949b7fca3f2e3eae62fcf8a86ffcc6a387bf3fb2c5",
+      "model/readiness_v25.mjs": "a5b8b79499e5269ebfbbf6e344eb0cbf7943b4bbe30658ecaf3cb21042afc646",
+      "scoring/v25.mjs": "09dfeeb6b6ab25bdbae4065b5d2166b75f9d1c7f286408337fa8c912f65332b2",
+      "testy/regresje_v25.mjs": "476e5a3fef08d27d9e9e443bd60fc62a272a23a3037f086c24cff3a83b4dda7e",
+      "testy/v25_inherited.mjs": "399d8be80d910ea3c85ea24fe43dcefa924e315ec56e5059dd5d9c5ca69e0d29",
+      "testy/adaptacja_v25.mjs": "709ee915e9194c999a00983e5eed4cafd036f011ac01871acfeccf0c7fa9d580",
+      "testy/v25.mjs": "16f06fcc5cda8bbc5a79b6949a041c40a3166693d4985b92c89cce7c7c3b360c",
+      "testy/kalibracja_v25.mjs": "65a1d4d2423c312fbb8a188ad6d3ec14738d6ce32d326be7b9718b10110d9b56",
+      "testy/porownanie_v24_v25.mjs": "ea284d35d8c5651811f5e1ed3be0f704c22069aee0d06550cbd8d51969202a0a",
+      "testy/wydajnosc_v25.mjs": "969b41085aab10faf825035b32ea7729a6e3a56998080ff79ae083583d84b357",
+      "planGenerator_v24.js": "ebb858d173b168945539adc53512117ea0173cdade76c257dc4813ed40d98e48",
+      "model/policy_v24.mjs": "2acb1c9d0450baf23abd5ada0b0984a5360bbb0e175914af9ec6cec725ebdee4",
+      "model/quality_v24.mjs": "74d22887b5c54c9b8194bb1ca69433ba5587db9f70be8bc379fd8e21483a0cb6",
+      "model/frequency_v24.mjs": "99f92bce0b1c19bd3a85af001f1d899a3037228584dc23bbab2f305f416cf590",
+      "model/ledger_v24.mjs": "13c6c12e28e9a27640ce9673b53cd7f02378122bf2216bb7624a0d1c885f67f8",
+      "model/adaptation_v24.mjs": "0858044dd2b5d3438b77d87082c69e09f97bf11af3c7cf9dee06500b6a8f5e91",
+      "planGenerator_v23.js": "b8fd490bf71c986563ef8649152fcbe0accede4121728407cd973d7905922b7a",
+      "planGenerator_v22.js": "499b3ea7fb940e1e9764c9c2394a51fc36e96634e8a7baf39f1b9265cf599554",
+      "model/training.mjs": "dfb3fdd9e9a74dedfa90e458fa14e0e0205dd61b29a779726b7321383bd671a0",
+      "model/policy_v23.mjs": "bcfb1b68dd1ee257da0dd797059d4d3ea3b342552dbdc067fe0ca13ec4ce9c7d",
+      "model/quality_v23.mjs": "fe92d01711b079e54b9caa4dbaa5b4429a4ce00767056e1b9380413de1a82411",
+      "model/adaptation_v23.mjs": "0cd5cdee5d0449ab4ebcb442aaaa9955b849dba4ee5323b82c8e140a794952fb",
+      "scoring/v23.mjs": "a7d2cfe244bb156418e3334b917b39773c1e96ad7c0ff356aac586380aa3eb71",
+      "testy/lib.mjs": "7cd5f7862af4ebc0265a38b246e2cc5c75ea9eb996eb46a8e45cc4cbb19e0971",
+      "testy/miernik_v22.mjs": "477aa66b72f5612bb3cd4f50b39c91303ac393eb8bcb22e112965dc1e9e24774",
+      "testy/v23.mjs": "d975154fc9a87a0a2fb70d2f69f0b767aa69280463fd0a5114cb5889b102a871",
+      "testy/benchmark_v23.mjs": "ae71473adab2919ed0e480102c22d901dbb9385e8a3259cf31af37edd086f244",
+      "testy/porownanie_v22_v23.mjs": "36c8a3475e338742cc6509c92f960526b92e3c848672593180283a6b792dcb49",
+      "testy/v24.mjs": "56771472f6ef2604872dbbd0842752903a018884375c2ffe221282b681075bf8",
+      "testy/v24_inherited.mjs": "d7142ccf6fc7f0badcddc8f6b1eaa1eb5ad5ffd15b24e010666cea8aef3d5a49",
+      "testy/porownanie_v23_v24.mjs": "c5ee48d4bdf19af43a8dc615d77d585cc5f1adfba9c191f4665f63d9c7e549a1"
+    },
+    "results": [
+      {
+        "name": "podstawowe",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 195
+      },
+      {
+        "name": "trudne",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 689
+      },
+      {
+        "name": "czulosc",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 359
+      },
+      {
+        "name": "regresje",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 9393
+      },
+      {
+        "name": "czulosc_v21",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 571
+      },
+      {
+        "name": "jakosciowe",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 4537
+      },
+      {
+        "name": "dostepnosc",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 6066
+      },
+      {
+        "name": "porownanie28",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 550
+      },
+      {
+        "name": "porownanie_v19_v20",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 13891
+      },
+      {
+        "name": "porownanie_v20_v21",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 16421
+      },
+      {
+        "name": "sweep",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 104163
+      },
+      {
+        "name": "skrypt_bledy",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 644
+      },
+      {
+        "name": "v22",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 1853
+      },
+      {
+        "name": "porownanie_v21_v22",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 30098
+      },
+      {
+        "name": "regresje_v22_v23",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 1635
+      },
+      {
+        "name": "kalibracja_v23",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 69
+      },
+      {
+        "name": "v23",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 1673
+      },
+      {
+        "name": "porownanie_v22_v23",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 35259
+      },
+      {
+        "name": "v24_inherited",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 2011
+      },
+      {
+        "name": "v24",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 7657
+      },
+      {
+        "name": "porownanie_v23_v24",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 32065
+      },
+      {
+        "name": "regresje_v25",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 178
+      },
+      {
+        "name": "v25_inherited",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 1518
+      },
+      {
+        "name": "adaptacja_v25",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 4172
+      },
+      {
+        "name": "v25",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 1717
+      },
+      {
+        "name": "kalibracja_v25",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 75
+      },
+      {
+        "name": "porownanie_v24_v25",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 31862
+      },
+      {
+        "name": "wydajnosc_v25",
+        "status": 0,
+        "signal": null,
+        "elapsedMs": 2921
+      }
+    ],
+    "passed": 28,
+    "failed": 0
+  }
+}

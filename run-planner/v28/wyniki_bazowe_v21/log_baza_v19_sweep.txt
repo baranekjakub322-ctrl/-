@@ -1,0 +1,2 @@
+[sweep] zaliczone 20, niezaliczone 1
+  - brak krytycznych naruszeń niezależnych niezmienników (272 planów z krytycznym, 272 naruszeń) :: [{"key":"[\"beginner\",\"5k\",1,40,16,9,2,\"2026-11-04\"]","kod":"ZA_DLUGO_BEZ_ODCIAZENIA","msg":"8 tygodni obciążenia pod rząd"},{"key":"[\"beginner\",\"5k\",1,40,16,9,2,\"2026-11-05\"]","kod":"ZA_DL

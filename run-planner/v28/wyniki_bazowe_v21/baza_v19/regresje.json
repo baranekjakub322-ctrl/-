@@ -1,0 +1,106 @@
+{
+ "generator": "planGenerator_v19.js",
+ "nazwa": "regresje",
+ "zaliczone": 8,
+ "niezaliczone": 7,
+ "bledy": [
+  {
+   "opis": "R2d: 1 bieg/tydz. po 40 km/16 km: odciążenie w planie (V19: 8 tygodni obciążenia pod rząd)",
+   "szczegoly": ""
+  },
+  {
+   "opis": "R3: marathon w 6 tyg.: brak długiego biegu ponad pułap tuż przed startem",
+   "szczegoly": "[[\"2026-12-13\",26]]"
+  },
+  {
+   "opis": "R3: half w 6 tyg.: brak długiego biegu ponad pułap tuż przed startem",
+   "szczegoly": "[[\"2026-12-13\",19]]"
+  },
+  {
+   "opis": "R4a: wiek 58 daje inny plan niż 35",
+   "szczegoly": ""
+  },
+  {
+   "opis": "R4b: wiek 58: więcej tygodni odciążających",
+   "szczegoly": ""
+  },
+  {
+   "opis": "R5a: maraton z 10 km/5 km => brak bezpiecznej bazy, brak możliwości ukończenia",
+   "szczegoly": ""
+  },
+  {
+   "opis": "R5c: brak wyniku odniesienia => doKonkretnegoWyniku=false",
+   "szczegoly": ""
+  }
+ ],
+ "generatorPlik": "/workspace/runplanner/RunPlanner_Codex_V21_do_V22/projekt/v21/baza/planGenerator_v19.js",
+ "wszystkieTesty": [
+  {
+   "opis": "R1c: żaden z 720 planów nie przekracza limitu po cichu (plany z nieosiągniętym limitem: 0)",
+   "ok": true
+  },
+  {
+   "opis": "R2a: plan od 8 km/tydz. zawiera tydzień odciążający",
+   "ok": true
+  },
+  {
+   "opis": "R2b: nie więcej niż 5 tygodni obciążenia pod rząd (miernik niezależny, bez taperu)",
+   "ok": true
+  },
+  {
+   "opis": "R2c: półmaraton, 2 dni, 8 km/tydz., 12 tyg.: regularne odciążenia (V19: 7 tygodni obciążenia pod rząd)",
+   "ok": true
+  },
+  {
+   "opis": "R2d: 1 bieg/tydz. po 40 km/16 km: odciążenie w planie (V19: 8 tygodni obciążenia pod rząd)",
+   "ok": false,
+   "szczegoly": ""
+  },
+  {
+   "opis": "R3: marathon w 6 tyg.: brak długiego biegu ponad pułap tuż przed startem",
+   "ok": false,
+   "szczegoly": "[[\"2026-12-13\",26]]"
+  },
+  {
+   "opis": "R3: half w 6 tyg.: brak długiego biegu ponad pułap tuż przed startem",
+   "ok": false,
+   "szczegoly": "[[\"2026-12-13\",19]]"
+  },
+  {
+   "opis": "R4a: wiek 58 daje inny plan niż 35",
+   "ok": false,
+   "szczegoly": ""
+  },
+  {
+   "opis": "R4b: wiek 58: więcej tygodni odciążających",
+   "ok": false,
+   "szczegoly": ""
+  },
+  {
+   "opis": "R5a: maraton z 10 km/5 km => brak bezpiecznej bazy, brak możliwości ukończenia",
+   "ok": false,
+   "szczegoly": ""
+  },
+  {
+   "opis": "R5b: maraton z 3 biegów nigdy nie dostaje gotowości do wyniku",
+   "ok": true
+  },
+  {
+   "opis": "R5c: brak wyniku odniesienia => doKonkretnegoWyniku=false",
+   "ok": false,
+   "szczegoly": ""
+  },
+  {
+   "opis": "R5d: maraton początkujący: gotowość do ukończenia tylko przy długim biegu >= ~26 km",
+   "ok": true
+  },
+  {
+   "opis": "R6: dzień startu planu zmienia daty treningów",
+   "ok": true
+  },
+  {
+   "opis": "R7: brak mocnych treningów w 2 dniach przed startem (28 planów)",
+   "ok": true
+  }
+ ]
+}

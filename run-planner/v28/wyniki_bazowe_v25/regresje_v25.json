@@ -1,0 +1,38 @@
+{
+  "passed": 8,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "two identified runs on the same day remain distinct",
+      "ok": true
+    },
+    {
+      "name": "explicit correction retains original and recalculates execution",
+      "ok": true
+    },
+    {
+      "name": "cancelled activity cannot silently reappear on import",
+      "ok": true
+    },
+    {
+      "name": "timestamp with time zone has stable import identity",
+      "ok": true
+    },
+    {
+      "name": "identical update is idempotent including journal revision",
+      "ok": true
+    },
+    {
+      "name": "planned marathon peak is not completed evidence",
+      "ok": true
+    },
+    {
+      "name": "prepared marathon specific phase prioritises MP over threshold",
+      "ok": true
+    },
+    {
+      "name": "quality register explicitly distinguishes planned from completed",
+      "ok": true
+    }
+  ]
+}

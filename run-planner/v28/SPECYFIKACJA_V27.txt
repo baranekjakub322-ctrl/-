@@ -1,0 +1,141 @@
+RUN PLANNER V27 — ZADANIE DLA CODEX
+WERSJA: 1.0 | JĘZYK: POLSKI | PRIORYTET: REALNY SKOK JAKOŚCI PLANÓW, NIE KOSMETYKA
+
+ROLA I CEL
+Jesteś zespołem: senior engineer JS/Node, architekt algorytmów, trener biegowy specjalizujący się w 5 km, 10 km, HM i maratonie, specjalista testów i niezależny audytor. Masz pełny kod Run Planner V26 oraz archiwalne baseline'y. Nie ograniczaj się do analizy, raportu lub propozycji. Zaimplementuj, przetestuj i dostarcz kompletny, działający RunPlanner_V27.zip. Dopuszczalne są duże zmiany architektury i recept, jeśli wynikają z logicznej poprawy jakości i są weryfikowane. Nie naruszaj bezpieczeństwa dla wyniku w benchmarku.
+
+GŁÓWNY PROBLEM DO ROZWIĄZANIA
+V25 -> V26: historyczny scorer 23.0.0 średnia 7.443721 -> około 7.447; 40 poprawionych, 968 remisów, 0 pogorszonych na 1008. W scorerze 25.0.0 około 9.187 -> 9.190. 418 rzeczywistych planów zmieniło jednostki, ale nie dowodzi to poprawy. Wewnętrzny holdout 64 profili wzrósł minimalnie (7.2955 -> 7.2965). Wydajność 14.146 -> 26.442 ms. Dotychczasowe ulepszenia często otaczały stary silnik dodatkowymi warstwami; brak globalnego projektowania progresji sezonu. W V27 potrzebny jest rzeczywisty skok jakości treningowej, nie +0.003, nie zmiana miernika, nie sztuczne warianty ani zmiana nazw sesji.
+
+PRZECZYTAJ PRZED ZMIANAMI
+AGENTS.md, README_V26.md, SPECYFIKACJA_V26.txt, REKOMENDACJE_V27.md, OGRANICZENIA_V26.md, DIAGNOZA_V25_V26.md, BENCHMARK_1008_V25_V26.md i JSON, BENCHMARK_28_V25_V26.md, ANALIZA_10KM_3DNI_V26.md, ANALIZA_MARATON_V26.md, RAPORT_ADAPTACJI_V26.md, AUDYT_BEZPIECZENSTWA_V26.md, SYSTEM_OCENIANIA_V23.md. Zweryfikuj rzeczywiste API i ścieżki testów, nie zakładaj ich nazw. Zachowaj kopię czystego V26 i sprawdź checksumy danych/scorerów. Najpierw uruchom bazę i odtwórz wyniki. Gdy brak zasobu lub wynik się nie zgadza, wyjaśnij i napraw procedurę, nie fabrykuj liczb.
+
+ZASADY NIEPODLEGAJĄCE NEGOCJACJI
+1. Nie modyfikuj scorerów 23.0.0 i 25.0.0, ich wag, hashy, wejść frozen-1008-v24 ani warunków porównania. Traktuj je jako niezależne, historyczne termometry. Nowy audyt jakości może powstać jako OSOBNY scorer V27, wyraźnie oznaczony i niewykorzystywany do deklarowania poprawy historycznej.
+2. Nie optymalizuj pod wynik kosztem bezpieczeństwa. Nie zwiększaj objętości lub intensywności bez podstawy. Nie fałszuj liczby dni, celu, historii wykonania, czasu jednostki, intensywności, taperu i gotowości.
+3. Nie twierdź, że da się poprawić 1008/1008: dobre plany mogą pozostać bez zmian, a pewne ograniczenia są fizjologiczne. Każdy remis i regresja wymagają klasyfikacji; priorytet to poprawa rzeczywistych wad.
+4. Nie zastępuj wykonania planem. Nie interpretuj szacowanego HRmax jako zmierzonego progu. Nie przedstawiaj heurystyk jako klinicznie zwalidowanych.
+5. Zachowaj publiczne API i deterministyczność albo dostarcz zgodny adapter i testy migracyjne. Brak utraty istniejących funkcji V25/V26 (activity, corrections, adaptation, readiness, constraints).
+6. Nie kończ prac po pierwszej nieudanej iteracji ani nie wybieraj wariantu tylko na podstawie starego scorera. Ustal budżet iteracji i raportuj prawdziwy rezultat.
+
+ETAP 0 — FORENSIC BASELINE I PRIORYTETY
+A. Odtwórz na czystym V26 wszystkie 1008 par z identycznymi wejściami i hashami. Wylicz średnią, medianę, P10, P90, najgorsze 10%, dystanse, dni 1..7, poziomy, objętości, długość przygotowań, tempo celu. Osobno 28 referencyjnych.
+B. Zmapuj 88 historycznych przypadków V26 poniżej V23, 49 przypadków V25 poniżej V24 oraz wszystkie remisy o niskiej ocenie. Zbiory częściowo się nakładają — nie sumuj ich.
+C. Dla KAŻDEGO z 1008 profili zapisuj: profil, pełne sesje, cechy tygodni, komponenty obu ocen, wykryte błędy, ograniczenia, ryzyko, możliwą poprawkę, jej oczekiwany wpływ, werdykt. Wybierz najgorszy decyl, maraton, 1–2 dni i największe wady rzeczywiste do pracy jako pierwsze.
+D. Sprawdź, czy wysokie oceny V25 (~9–10) nie maskują błędów: rozkład, rozdzielczość, przypadki z wyraźnymi wadami i wysoką oceną. Nie zmieniaj starego miernika.
+E. Przygotuj przed zmianami tabelę hipotez i plan testów przyczynowych. Ustal architekturę do wymiany, nie tylko nowe wrappery.
+
+ETAP 1 — NOWY RDZEŃ: PROJEKTOWANIE CAŁEGO SEZONU
+Zastąp podejście 'najpierw szablon, potem lokalne poprawki' wielopoziomowym planowaniem:
+1) profil i wiarygodność danych;
+2) wykonalność celu i limity obciążeń;
+3) cele adaptacyjne na fazy/mezocykle;
+4) trajektoria objętości, długiego biegu, jakości, regeneracji i taperu w całym horyzoncie;
+5) tygodniowy budżet i rozkład sesji;
+6) dobór konkretnych bodźców oraz ich dawek;
+7) kontrola konfliktów i zmęczenia;
+8) walidacja i korekta z zachowaniem intencji fizjologicznej;
+9) wyjaśnienie decyzji i scenariusze warunkowe.
+Nie buduj nieograniczonego kosztownego optymalizatora. Zastosuj deterministyczne, ograniczone planowanie z pamięcią sezonową, przeszukiwaniem lokalnym/beam search tylko tam, gdzie poprawia wynik, cache i pruning. Kandydaci muszą być oceniani przez niezależne reguły bezpieczeństwa i spójności, a nie przez historyczny scorer. Utrzymuj jawny obiekt 'seasonState' i kontrakt modułów.
+
+ETAP 2 — MODEL BODŹCA I REJESTR POSTĘPU
+Każda jednostka jakościowa ma mieć jawne: cel fizjologiczny (np. próg, VO2, ekonomia, tempo startowe, wytrzymałość specyficzna), poziom trudności, czas efektywnej pracy, intensywność, przerwę, tolerancję, poprzednią ekspozycję, planowany kolejny krok i warunki progresji. Stwórz 'stimulusLedger' dla całego planu, oddzielony od completedHistory. Nie dodawaj fikcyjnej adaptacji. Progresja może obejmować: liczbę powtórzeń, długość odcinka, łączną dawkę, skrócenie przerwy lub intensywność, ale NIE wszystko naraz. Powtórzenia identycznego bodźca są dozwolone jako konsolidacja, jeśli jawnie uzasadnione. Zaimplementuj blokowanie skoków dawki i wymuszanie lżejszych okresów tam, gdzie uzasadnione. Nie stosuj sztywnego '10% tygodniowo' jako uniwersalnej reguły.
+
+ETAP 3 — JAKOŚĆ RECEPT DLA 5 KM I 10 KM
+Wprowadź bibliotekę celowych progresji, a nie losową różnorodność. Dla 5 km: baza tlenowa, ekonomia/neuromotoryka, odpowiednie odcinki interwałowe i tempo specyficzne z kontrolą obciążenia. Dla 10 km: progresja progowa, interwałowa i race-pace dopasowana do stażu oraz liczby dni. Dla obu: rozgrzewka/schłodzenie, całkowity czas i dystans, prawidłowe przerwy, sensowne rozmieszczenie ciężkich dni. Uwzględnij cel utrzymania formy lub start wolniejszy od PB: nie zmuszaj do niepotrzebnej agresywnej progresji ani trzech maksymalnych testów 3 km. Testy tylko wtedy, gdy dostarczają informacji istotnej dla decyzji; umożliwiaj trening kontrolny submaksymalny i dane z regularnych treningów. Dla 10 km/3 dni usuń bezcelowe powtarzanie 4x800 m, ale nie wymuszaj zmiany, jeśli służy konsolidacji.
+
+ETAP 4 — PÓŁMARATON I MARATON: PRAWDZIWA SPECYFIKA
+Półmaraton: projektuj rozwój długiego biegu, dawki progu i tempa startowego, relację jakości do całej objętości, progresję odcinków ciągłych vs podzielonych, właściwy taper. Użyj modelu czasu na nogach, a nie jedynie dystansu. Usuń arbitralne limity, gdy dane uzasadniają zmianę, lecz nie wydłużaj biegu ponad tolerancję.
+Maraton: etapowe przygotowanie (baza, rozwój wytrzymałości, specyfika, taper), indywidualne bramki gotowości, ciągłość wykonania, długie biegi o ograniczonej proporcji do tygodniowej objętości i limitach czasu, rozsądne MP w odpowiednim kontekście, odżywianie/nawodnienie jako edukacja i próby podczas treningu, bez fałszywych wyliczeń. 1–2 dni tygodniowo: uczciwie komunikuj ograniczenia; nie symuluj pełnej gotowości maratońskiej. Dla wysokiej bazy 60 km/4 dni nie obniżaj bez powodu objętości do 56 km, ale też nie narzucaj 60 km bez dowodów tolerancji. Krótki maksymalny test 3 km nie powinien być domyślnym głównym testem maratońskim.
+
+ETAP 5 — 1–2 DNI ORAZ 3–7 DNI: OSOBNE STRATEGIE
+1 dzień: cel to najkorzystniejsza bezpieczna jednostka i uczciwa komunikacja ograniczeń, a nie udawanie pełnego cyklu. Nie poprawiaj starej oceny przez absurdalne wydłużenie jedynego biegu.
+2 dni: planuj realny kompromis 'baza/długi bieg + akcent', naprzemienność i fazy; unikaj dwóch ciężkich dni, zapewnij odpowiedni odstęp; przy HM/maratonie osobno oceniaj wykonalność.
+3 dni: co najmniej sensowny rozdział easy/quality/long w typowych przypadkach, lecz nie sztywno dla wszystkich.
+4–7 dni: zwiększaj częstotliwość tylko przy potwierdzonej tolerancji i wystarczającej bazie; nie upychaj dodatkowej intensywności. Wyjaśniaj, czemu 6–7 deklarowanych dni może oznaczać mniej rzeczywistych jednostek.
+
+ETAP 6 — PERIODYZACJA, TAPER, REGENERACJA
+Wprowadź logiczny harmonogram bloków: wprowadzający, rozwijający, specyficzny, regeneracyjny, taper; zależny od długości cyklu, dystansu, stażu, liczby sesji, celu i historii. Kontroluj monotonność, kumulację trudnych jednostek, zmianę dawki, obciążenie mięśniowo-ścięgniste i czas regeneracji. Taper ma obniżać zmęczenie, zachowując rozsądną ekspozycję na intensywność; historyczny scorer może błędnie karać taper jako brak progresji — odnotuj to bez oszukiwania. Nie wprowadzaj automatycznych, sztywnych schematów 3:1 dla wszystkich. Sprawdź całe przejścia między blokami, nie tylko pojedyncze tygodnie.
+
+ETAP 7 — INDYWIDUALIZACJA I NIEPEWNOŚĆ
+Wykorzystuj rzeczywistą tygodniową objętość, historię najdłuższych biegów, ostatnie wyniki, staż, dostępne dni, regenerację, preferencje, ograniczenia, termin, cel i zaufanie do danych. Jeśli dane niepełne: zakresy, ostrożne założenia, prośba o doprecyzowanie przy istotnych lukach; nie udawaj precyzji. Rozróżniaj cel ukończenia, poprawę PB, podtrzymanie i powrót do biegania. Nie uznawaj zadeklarowanego PB za świeży dowód formy. Tempo i HR powinny mieć pochodzenie (pomiar/test/szacowanie) i stopień pewności. Brak testu nie może prowadzić do sztucznej dokładności.
+
+ETAP 8 — ADAPTACJA NA PODSTAWIE WYKONANIA
+Zachowaj korekty, revocations, deduplication, strefy czasowe, wiele aktywności jednego dnia i rozróżnienie plan/wykonanie. Rozszerz reakcje na 2–6 tygodni wiarygodnych ekspozycji, RPE, samopoczucie, sen/zmęczenie jeśli dostępne, frekwencję, opuszczone treningi i zmianę formy. Nie nadrabiaj pominiętych akcentów. Wykonanie szybkiego odcinka raz nie może automatycznie przyspieszać całego planu. Przy spadku tolerancji wprowadź odpowiednią regresję i ostrożny powrót. Zapewnij idempotencję i poprawną ponowną kalkulację po korekcie. Zrób testy chronologii i danych częściowo sprzecznych.
+
+ETAP 9 — AUDYT 10 KRYTERIÓW AUTORSKICH: KONKRETNE BRAKI DO 10/10
+Utwórz NIEZALEŻNY od historycznych scorerów audyt jakości V27. Każdy wymiar oceniaj 0–10, z wykazem dowodów, tygodni i sesji, które obniżają ocenę, przyczyną, propozycją poprawki i testem akceptacyjnym. Wymiary:
+1 bezpieczeństwo (obciążenie, skoki, przeciążenie, niepewne dane);
+2 indywidualizacja (rzeczywiste dane, tolerancja, cel, poziom);
+3 progresja kilometrażu (logika całego sezonu, nie tylko procent tygodniowy);
+4 progresja jakościowa (dawka i sens bodźców, powtórzenia vs rozwój);
+5 specyfika dystansu (5/10/HM/maraton i cel);
+6 regeneracja (rozstawienie, kumulacja, redukcje);
+7 periodyzacja (fazy, przejścia, bodźce);
+8 taper (zachowanie gotowości, zmniejszenie zmęczenia);
+9 adaptacja (wykonanie, niepewność, korekty);
+10 wykonalność celu (uczciwość, warunki, alternatywy).
+Dodatkowo osobno: spójność jednostek/tempa/dystansu/czasu, przejrzystość dla biegacza, techniczna jakość kodu, walidacja zewnętrzna. NIE wymyślaj, że wszystkie mają 10/10. Ocena ma być wyjaśnialna i niezależna od generatora; testuj audyt na ręcznie skonstruowanych planach celowo dobrych i złych. Przy każdym wymiarze poniżej 10/10 wymagaj 'czego konkretnie brakuje' i 'co zmienić w kodzie'.
+
+ETAP 10 — EKSPERCKI PRZEGLĄD KONKRETNYCH PLANÓW
+Wygeneruj i zapisz pełne tygodnie co najmniej 40 zróżnicowanych profili (5k, 10k, HM, maraton; 1–7 dni; początkujący/średni/zaawansowany; niska/wysoka baza; realistyczny/nierealistyczny cel; 6/12/20/24 tygodni). Obowiązkowo: referencyjne 10 km, 3 dni, 35 km/tydz., PB 52:00, cel 53:34, ~21 tygodni; maraton 60 km/4 dni; HM 2 dni; 5 km 2 dni; maraton 1 dzień; powrót po przerwie; zawodnik z nieregularnym wykonaniem. Wybierz 10 najgorszych planów wg audytu, przeczytaj sesje po sesji i napraw źródłową logikę. Nie oceniaj jedynie syntetycznych cech. Raportuj liczbę tygodni, rozkład akcentów, przykłady progresji i taperu. Jeśli nie ma dostępu do niezależnego trenera, nie nazywaj wewnętrznego audytu 'zewnętrznym' ani 'zaślepionym'.
+
+ETAP 11 — TESTY PRZYCZYNOWE I METAMORFICZNE
+Przygotuj testy, w których zmienia się jeden parametr: 1->2->3 dni, 20->35->60 km bazy, krótszy/dłuższy horyzont, większa/mniejsza tolerancja, nowy wynik, opuszczenie długiego biegu, kilka ciężkich tygodni, ograniczenia dni, cel łatwy/trudny, brak danych, ból/ostrzeżenie, import/korekta, strefy czasowe. Weryfikuj, że generator zmienia dokładnie to, co powinien, a nie tylko etykietę. Zdefiniuj inwarianty: brak ujemnych dystansów, logiczne przerwy, zgodność czasu/dystansu/tempa, brak dwóch ciężkich dni bez uzasadnienia, zachowanie celu treningu przy korektach budżetu, brak nadrabiania, bezpieczne limity, idempotencja, deterministyczność. Testy 6–24 tygodni i minimum 150 historii adaptacyjnych, z dodatkowymi długimi sekwencjami.
+
+ETAP 12 — REALNY BENCHMARK I KRYTERIA SUKCESU
+Uruchom ten sam zamrożony zestaw 1008, macierz 28 i holdout 64; osobno nowy holdout >=200 profili utworzonych PRZED finalną optymalizacją, z jawnym seedem, bez strojenia do tych samych danych. Porównaj V26/V27 tym samym historycznym scorerem 23.0.0 i 25.0.0; osobno audyt V27 stosowany symetrycznie do obu. Raportuj każdą parę, liczbę lepszych/równych/gorszych, sumę i rozkład zmian, wyniki na dystans, częstotliwość, poziom, bazę, horyzont, najgorszy decyl i wykonalność. W przypadku regresji przeprowadź audyt fizjologiczny: poprawna, błąd miernika, regresja rzeczywista, nierozstrzygnięta. Regresje rzeczywiste o znaczeniu bezpieczeństwa blokują wydanie.
+
+AMBITNE CELE, NIE OBIECANE REZULTATY:
+- historyczna średnia 1008: docelowo >=7.70 (minimum ambitne), aspiracyjnie >=7.90; jeśli nieosiągalne bez szkody, uczciwie to udowodnij i raportuj osiągnięty wynik;
+- minimum 300/1008 rzeczywistych ulepszeń treningowych, nie jedynie punktowych, przy jak najmniejszej liczbie uzasadnionych regresji; nie zmieniaj na siłę dobrych planów;
+- poprawa P10 i najgorszego decyla, nie tylko średniej; szczególnie HM, maraton, 1–2 dni;
+- istotna poprawa 5 km i 10 km również, a nie tylko 40 przypadków zaawansowanego HM;
+- co najmniej 80% ocenianych ekspercko przypadków z rzeczywistymi wadami ma mieć udokumentowaną poprawę lub uczciwy powód braku zmiany;
+- brak krytycznych naruszeń bezpieczeństwa, pełna zgodność API, wszystkie testy PASS;
+- wydajność zbliżona do V25/V26: zprofiluj koszt, cel średniej <=20 ms w porównywalnym środowisku, nie poświęcając jakości. Nie ukrywaj, gdy jest wolniej.
+Cele są 'stretch', nie pozwoleniem na gaming. Gdy benchmark i audyt są sprzeczne, pokaż sprzeczność i daj pierwszeństwo jakości i bezpieczeństwu.
+
+ETAP 13 — PRACA ITERACYJNA, KTÓRA NAPRAWDĘ ZMIENIA SILNIK
+Zaplanuj 3–6 pełnych iteracji, z osobnym hipoteza->zmiana->test->benchmark->audyt. Pierwsza iteracja: rdzeń sezonowy; druga: progresja jakości; trzecia: HM/maraton; czwarta: 1–2 dni i indywidualizacja; piąta: adaptacja i regresje; szósta: optymalizacja i kalibracja. Możesz zmienić kolejność na podstawie diagnozy. Nie kończ po 40 poprawionych profilach. Jeżeli koszt pełnej macierzy jest duży, iteruj na reprezentatywnych profilach, ale końcowy benchmark MUSI być pełny i identyczny. Prowadź dziennik zmian i efektów; nie oznaczaj przerwanych testów jako PASS. Zidentyfikuj wąskie gardła zamiast dodawać kosztowne wrappery.
+
+ETAP 14 — ARCHITEKTURA, WYDAJNOŚĆ, API
+Wydziel z monolitu logiczne komponenty: profile/uncertainty, feasibility, season planner, phase planner, workload budgets, stimulus ledger, workout recipes, schedule constraints, adaptation, readiness, validator, explanation. Nie rób pozornej modularności. Typuj/udokumentuj struktury danych, dodaj testy kontraktów i kompatybilności, deterministyczny seed i profilowanie. Cache powtarzalnych obliczeń, odcinanie nieopłacalnych kandydatów, bez magazynowania całych 1008 planów w RAM podczas generowania. Nie dodawaj zależności bez uzasadnienia. Testuj błędne wejścia, ekstremalne długości, brak historii, niepełne dane i serializację.
+
+ETAP 15 — RAPORTY I ARTEFAKTY KOŃCOWE
+Dostarcz pełny RunPlanner_V27.zip z kodem i testami oraz:
+01_START_TUTAJ_V27.md — jak uruchomić, API, co się zmieniło;
+02_ARCHITEKTURA_V27.md — stare vs nowe podejście, decyzje;
+03_BENCHMARK_1008_V26_V27.md + JSON/CSV z każdą parą;
+04_BENCHMARK_28_V26_V27.md;
+05_AUDYT_10_KRYTERIOW_V27.md — osobne oceny i dokładne braki do 10/10;
+06_ANALIZA_10KM_3DNI_V26_V27.md — sesje/tygodnie, różnice;
+07_ANALIZA_MARATON_V26_V27.md;
+08_ANALIZA_40_PROFILI.md — przykłady, najgorsze przypadki;
+09_REGRESJE_I_REMY_V27.md — przyczyny i decyzje;
+10_ADAPTACJA_V27.md — realne scenariusze i testy;
+11_RAPORT_TESTOW_V27.md — co uruchomiono, co nie;
+12_WYDAJNOSC_V27.md — profil CPU/RAM, identyczne środowisko;
+13_OGRANICZENIA_V27.md — czego nie potwierdzono;
+14_REKOMENDACJE_V28.md — konkretne przyszłe kroki;
+15_CHANGELOG_V27.md — mapowanie zmian kodu na poprawę planów;
+PROVENANCE_V27.json, SHA256SUMS, niezmienione historyczne baseline'y i instrukcja reprodukcji.
+
+W raportach podawaj pełne precyzyjne liczby i rozróżniaj: 'niezależnie uruchomione', 'wynik własnego testu', 'wynik raportu z archiwum', 'ekspercka ocena heurystyczna'. Nie deklaruj poprawy wyników sportowych bez prospektywnych danych. Nie pisz 'gotowe', dopóki ZIP nie istnieje i nie można go uruchomić.
+
+ETAP 16 — FINALNA LISTA KONTROLNA PRZED WYDANIEM
+[ ] Porównanie V26/V27 z identycznymi scorerami i wejściami.
+[ ] Oceniono faktyczne recepty, nie tylko liczby punktów.
+[ ] Istotnie przebudowano rdzeń planowania sezonu i pamięć bodźców.
+[ ] Sprawdzono 5k, 10k, HM, maraton, 1–7 dni i różne poziomy.
+[ ] Każdy z 10 wymiarów audytu ma konkretne dowody i luki do 10/10.
+[ ] Regresje bezpieczeństwa = 0; pozostałe opisane.
+[ ] Plan 10k/3 dni nie jest kopiowany bez refleksji.
+[ ] Gotowość maratońska nie wynika wyłącznie z planu.
+[ ] Testy wykonania, korekt, opuszczeń i niepewności przechodzą.
+[ ] Wyniki na holdoucie, najgorszym decylu i według dystansu są jawne.
+[ ] Wydajność została realnie zmierzona i porównana.
+[ ] ZIP, raporty, surowe wyniki i instrukcja odtworzenia istnieją.
+
+KOŃCOWA INSTRUKCJA
+W V26 wykonano dużo pracy technicznej przy wzroście historycznej średniej zaledwie +0.003. W V27 nie powtarzaj tego błędu. Twoim zadaniem jest poprawić proces projektowania treningu: dlaczego ta sesja, w tym tygodniu, o tej dawce, po poprzednich bodźcach, dla tego zawodnika, z tym celem i ryzykiem. Pokaż to w kodzie, pełnych planach, audycie i porównaniach. Dopuszczaj uzasadnione remisy i błędy historycznego scorera, ale nie używaj ich jako wymówki do braku postępu. Jeśli nie uda się osiągnąć ambitnych progów, przedstaw uczciwe wyniki i konkretną diagnozę; nie manipuluj testami.

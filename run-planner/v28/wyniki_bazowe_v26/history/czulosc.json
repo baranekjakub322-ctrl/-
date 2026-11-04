@@ -1,0 +1,272 @@
+{
+ "generator": "planGenerator_v26.js",
+ "nazwa": "czulosc",
+ "zaliczone": 28,
+ "niezaliczone": 0,
+ "bledy": [],
+ "generatorPlik": "/workspace/-/run-planner/v26/planGenerator_v26.js",
+ "tabela": [
+  {
+   "parametr": "wiek 35→58",
+   "oczekiwanie": "zmiana",
+   "planZmienionyStrukturalnie": true,
+   "dSzczyt": -1,
+   "dNajdluzszy": -1,
+   "dPierwszyDlugi": 0
+  },
+  {
+   "parametr": "wiek 35→22",
+   "oczekiwanie": "brak_zmiany_struktury",
+   "planZmienionyStrukturalnie": false,
+   "dSzczyt": 0,
+   "dNajdluzszy": 0,
+   "dPierwszyDlugi": 0
+  },
+  {
+   "parametr": "płeć M→K",
+   "oczekiwanie": "brak_zmiany_struktury",
+   "planZmienionyStrukturalnie": false,
+   "dSzczyt": 0,
+   "dNajdluzszy": 0,
+   "dPierwszyDlugi": 0
+  },
+  {
+   "parametr": "HRmax 188→170",
+   "oczekiwanie": "brak_zmiany_struktury",
+   "planZmienionyStrukturalnie": false,
+   "dSzczyt": 0,
+   "dNajdluzszy": 0,
+   "dPierwszyDlugi": 0
+  },
+  {
+   "parametr": "poziom → beginner",
+   "oczekiwanie": "zmiana",
+   "planZmienionyStrukturalnie": true,
+   "dSzczyt": -6,
+   "dNajdluzszy": -3,
+   "dPierwszyDlugi": 0
+  },
+  {
+   "parametr": "poziom → advanced",
+   "oczekiwanie": "zmiana",
+   "planZmienionyStrukturalnie": true,
+   "dSzczyt": 2,
+   "dNajdluzszy": 1,
+   "dPierwszyDlugi": 0
+  },
+  {
+   "parametr": "kilometraż 25→45",
+   "oczekiwanie": "zmiana",
+   "planZmienionyStrukturalnie": true,
+   "dSzczyt": 0,
+   "dNajdluzszy": 0,
+   "dPierwszyDlugi": 2
+  },
+  {
+   "parametr": "kilometraż 25→10",
+   "oczekiwanie": "zmiana",
+   "planZmienionyStrukturalnie": true,
+   "dSzczyt": -17,
+   "dNajdluzszy": -7,
+   "dPierwszyDlugi": -6
+  },
+  {
+   "parametr": "najdłuższy bieg 8→12→16 (przy 40 km/tydz.)",
+   "oczekiwanie": "zmiana",
+   "planZmienionyStrukturalnie": true,
+   "dSzczyt": 1,
+   "dNajdluzszy": 1,
+   "dPierwszyDlugi": 6
+  },
+  {
+   "parametr": "najdłuższy bieg 10→16 przy 25 km/tydz. (limit udziału skraca)",
+   "oczekiwanie": "zmiana",
+   "planZmienionyStrukturalnie": true,
+   "dSzczyt": 1,
+   "dNajdluzszy": 1,
+   "dPierwszyDlugi": 0
+  },
+  {
+   "parametr": "wynik 55:00→50:00",
+   "oczekiwanie": "zmiana",
+   "planZmienionyStrukturalnie": true,
+   "dSzczyt": 0,
+   "dNajdluzszy": 0,
+   "dPierwszyDlugi": 0
+  },
+  {
+   "parametr": "liczba dni 4→3",
+   "oczekiwanie": "zmiana",
+   "planZmienionyStrukturalnie": true,
+   "dSzczyt": -3,
+   "dNajdluzszy": 0,
+   "dPierwszyDlugi": 0
+  },
+  {
+   "parametr": "liczba dni 4→5",
+   "oczekiwanie": "zmiana",
+   "planZmienionyStrukturalnie": true,
+   "dSzczyt": 4,
+   "dNajdluzszy": -1,
+   "dPierwszyDlugi": -1
+  },
+  {
+   "parametr": "limit czasu 120→60 min",
+   "oczekiwanie": "zmiana",
+   "planZmienionyStrukturalnie": true,
+   "dSzczyt": -14,
+   "dNajdluzszy": -9,
+   "dPierwszyDlugi": -2
+  },
+  {
+   "parametr": "kontuzja",
+   "oczekiwanie": "zmiana",
+   "planZmienionyStrukturalnie": true,
+   "dSzczyt": -13,
+   "dNajdluzszy": -5,
+   "dPierwszyDlugi": 0
+  },
+  {
+   "parametr": "historia przeciążeń",
+   "oczekiwanie": "zmiana",
+   "planZmienionyStrukturalnie": true,
+   "dSzczyt": 0,
+   "dNajdluzszy": 0,
+   "dPierwszyDlugi": 0
+  },
+  {
+   "parametr": "przerwa 60 dni",
+   "oczekiwanie": "zmiana",
+   "planZmienionyStrukturalnie": true,
+   "dSzczyt": -17,
+   "dNajdluzszy": -7,
+   "dPierwszyDlugi": -6
+  },
+  {
+   "parametr": "liczba tygodni 16→24",
+   "oczekiwanie": "zmiana",
+   "planZmienionyStrukturalnie": true,
+   "dSzczyt": 3,
+   "dNajdluzszy": 1,
+   "dPierwszyDlugi": 0
+  }
+ ],
+ "plikBazowy": {
+  "szczytKm": 42,
+  "najdluzszy": 17
+ },
+ "wszystkieTesty": [
+  {
+   "opis": "wiek 35→58: plan powinien się zmienić",
+   "ok": true
+  },
+  {
+   "opis": "wiek 58: szczyt nie wyższy niż dla 35 lat",
+   "ok": true
+  },
+  {
+   "opis": "wiek 35→22: struktura (dystanse/daty/typy) bez zmian z założenia projektowego",
+   "ok": true
+  },
+  {
+   "opis": "płeć M→K: struktura (dystanse/daty/typy) bez zmian z założenia projektowego",
+   "ok": true
+  },
+  {
+   "opis": "HRmax 188→170: struktura (dystanse/daty/typy) bez zmian z założenia projektowego",
+   "ok": true
+  },
+  {
+   "opis": "HRmax zmienia strefy tętna (jedyny zamierzony wpływ)",
+   "ok": true
+  },
+  {
+   "opis": "poziom → beginner: plan powinien się zmienić",
+   "ok": true
+  },
+  {
+   "opis": "beginner: szczyt nie wyższy",
+   "ok": true
+  },
+  {
+   "opis": "poziom → advanced: plan powinien się zmienić",
+   "ok": true
+  },
+  {
+   "opis": "kilometraż 25→45: plan powinien się zmienić",
+   "ok": true
+  },
+  {
+   "opis": "większy kilometraż: szczyt nie niższy",
+   "ok": true
+  },
+  {
+   "opis": "kilometraż 25→10: plan powinien się zmienić",
+   "ok": true
+  },
+  {
+   "opis": "mniejszy kilometraż: szczyt nie wyższy",
+   "ok": true
+  },
+  {
+   "opis": "dłuższy ostatni bieg => nie krótszy, a powyżej progu 30% objętości dłuższy pierwszy długi bieg (8<=12<16)",
+   "ok": true
+  },
+  {
+   "opis": "różnica pierwszego długiego biegu >= 3 km przy różnicy historii 8 km",
+   "ok": true
+  },
+  {
+   "opis": "najdłuższy bieg 10→16 przy 25 km/tydz. (limit udziału skraca): plan powinien się zmienić",
+   "ok": true
+  },
+  {
+   "opis": "wynik 55:00→50:00: plan powinien się zmienić",
+   "ok": true
+  },
+  {
+   "opis": "liczba dni 4→3: plan powinien się zmienić",
+   "ok": true
+  },
+  {
+   "opis": "liczba dni 4→5: plan powinien się zmienić",
+   "ok": true
+  },
+  {
+   "opis": "limit czasu 120→60 min: plan powinien się zmienić",
+   "ok": true
+  },
+  {
+   "opis": "limit 60 min obniża szczyt",
+   "ok": true
+  },
+  {
+   "opis": "kontuzja: plan powinien się zmienić",
+   "ok": true
+  },
+  {
+   "opis": "kontuzja obniża szczyt",
+   "ok": true
+  },
+  {
+   "opis": "historia przeciążeń: plan powinien się zmienić",
+   "ok": true
+  },
+  {
+   "opis": "przerwa 60 dni: plan powinien się zmienić",
+   "ok": true
+  },
+  {
+   "opis": "przerwa obniża szczyt",
+   "ok": true
+  },
+  {
+   "opis": "liczba tygodni 16→24: plan powinien się zmienić",
+   "ok": true
+  },
+  {
+   "opis": "wiek 58: więcej tygodni odciążających niż przy 35 latach",
+   "ok": true
+  }
+ ]
+}

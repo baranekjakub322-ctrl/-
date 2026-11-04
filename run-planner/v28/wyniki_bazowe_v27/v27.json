@@ -1,0 +1,483 @@
+{
+  "passed": 119,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "V26 public exports remain compatible",
+      "ok": true
+    },
+    {
+      "name": "historical scorers and baseline source remain immutable",
+      "ok": true
+    },
+    {
+      "name": "season 5k/6",
+      "ok": true
+    },
+    {
+      "name": "season 5k/8",
+      "ok": true
+    },
+    {
+      "name": "season 5k/12",
+      "ok": true
+    },
+    {
+      "name": "season 5k/16",
+      "ok": true
+    },
+    {
+      "name": "season 5k/20",
+      "ok": true
+    },
+    {
+      "name": "season 5k/24",
+      "ok": true
+    },
+    {
+      "name": "season 10k/6",
+      "ok": true
+    },
+    {
+      "name": "season 10k/8",
+      "ok": true
+    },
+    {
+      "name": "season 10k/12",
+      "ok": true
+    },
+    {
+      "name": "season 10k/16",
+      "ok": true
+    },
+    {
+      "name": "season 10k/20",
+      "ok": true
+    },
+    {
+      "name": "season 10k/24",
+      "ok": true
+    },
+    {
+      "name": "season half/6",
+      "ok": true
+    },
+    {
+      "name": "season half/8",
+      "ok": true
+    },
+    {
+      "name": "season half/12",
+      "ok": true
+    },
+    {
+      "name": "season half/16",
+      "ok": true
+    },
+    {
+      "name": "season half/20",
+      "ok": true
+    },
+    {
+      "name": "season half/24",
+      "ok": true
+    },
+    {
+      "name": "season marathon/6",
+      "ok": true
+    },
+    {
+      "name": "season marathon/8",
+      "ok": true
+    },
+    {
+      "name": "season marathon/12",
+      "ok": true
+    },
+    {
+      "name": "season marathon/16",
+      "ok": true
+    },
+    {
+      "name": "season marathon/20",
+      "ok": true
+    },
+    {
+      "name": "season marathon/24",
+      "ok": true
+    },
+    {
+      "name": "frequency contract 5k/1",
+      "ok": true
+    },
+    {
+      "name": "frequency contract 5k/2",
+      "ok": true
+    },
+    {
+      "name": "frequency contract 5k/3",
+      "ok": true
+    },
+    {
+      "name": "frequency contract 5k/4",
+      "ok": true
+    },
+    {
+      "name": "frequency contract 5k/5",
+      "ok": true
+    },
+    {
+      "name": "frequency contract 5k/6",
+      "ok": true
+    },
+    {
+      "name": "frequency contract 5k/7",
+      "ok": true
+    },
+    {
+      "name": "frequency contract 10k/1",
+      "ok": true
+    },
+    {
+      "name": "frequency contract 10k/2",
+      "ok": true
+    },
+    {
+      "name": "frequency contract 10k/3",
+      "ok": true
+    },
+    {
+      "name": "frequency contract 10k/4",
+      "ok": true
+    },
+    {
+      "name": "frequency contract 10k/5",
+      "ok": true
+    },
+    {
+      "name": "frequency contract 10k/6",
+      "ok": true
+    },
+    {
+      "name": "frequency contract 10k/7",
+      "ok": true
+    },
+    {
+      "name": "frequency contract half/1",
+      "ok": true
+    },
+    {
+      "name": "frequency contract half/2",
+      "ok": true
+    },
+    {
+      "name": "frequency contract half/3",
+      "ok": true
+    },
+    {
+      "name": "frequency contract half/4",
+      "ok": true
+    },
+    {
+      "name": "frequency contract half/5",
+      "ok": true
+    },
+    {
+      "name": "frequency contract half/6",
+      "ok": true
+    },
+    {
+      "name": "frequency contract half/7",
+      "ok": true
+    },
+    {
+      "name": "frequency contract marathon/1",
+      "ok": true
+    },
+    {
+      "name": "frequency contract marathon/2",
+      "ok": true
+    },
+    {
+      "name": "frequency contract marathon/3",
+      "ok": true
+    },
+    {
+      "name": "frequency contract marathon/4",
+      "ok": true
+    },
+    {
+      "name": "frequency contract marathon/5",
+      "ok": true
+    },
+    {
+      "name": "frequency contract marathon/6",
+      "ok": true
+    },
+    {
+      "name": "frequency contract marathon/7",
+      "ok": true
+    },
+    {
+      "name": "submaximal maintenance does not request repeated all-out tests",
+      "ok": true
+    },
+    {
+      "name": "maximum test remains an explicit opt-in with at most one occurrence",
+      "ok": true
+    },
+    {
+      "name": "no controls can be requested explicitly",
+      "ok": true
+    },
+    {
+      "name": "purposeful recipes evolve actual work, never a scheduled automatic pace gain",
+      "ok": true
+    },
+    {
+      "name": "actual dose guards prevent a two-kilometre specific-work trap",
+      "ok": true
+    },
+    {
+      "name": "short base evolves into real deloads",
+      "ok": true
+    },
+    {
+      "name": "taper long run is bounded by retained preceding long rather than theoretical target",
+      "ok": true
+    },
+    {
+      "name": "intent finish",
+      "ok": true
+    },
+    {
+      "name": "intent maintain",
+      "ok": true
+    },
+    {
+      "name": "intent activity",
+      "ok": true
+    },
+    {
+      "name": "causal tolerance {\"age\":65}",
+      "ok": true
+    },
+    {
+      "name": "causal tolerance {\"experienceMonths\":2}",
+      "ok": true
+    },
+    {
+      "name": "causal tolerance {\"fatigue\":5}",
+      "ok": true
+    },
+    {
+      "name": "causal tolerance {\"intensityTolerance\":\"low\"}",
+      "ok": true
+    },
+    {
+      "name": "causal tolerance {\"volumeTolerance\":\"low\"}",
+      "ok": true
+    },
+    {
+      "name": "causal tolerance {\"breakDays\":28}",
+      "ok": true
+    },
+    {
+      "name": "causal tolerance {\"pain\":3}",
+      "ok": true
+    },
+    {
+      "name": "single-parameter base 20",
+      "ok": true
+    },
+    {
+      "name": "single-parameter base 35",
+      "ok": true
+    },
+    {
+      "name": "single-parameter base 60",
+      "ok": true
+    },
+    {
+      "name": "race calendar 5k/0",
+      "ok": true
+    },
+    {
+      "name": "race calendar 10k/0",
+      "ok": true
+    },
+    {
+      "name": "race calendar half/0",
+      "ok": true
+    },
+    {
+      "name": "race calendar marathon/0",
+      "ok": true
+    },
+    {
+      "name": "race calendar 5k/1",
+      "ok": true
+    },
+    {
+      "name": "race calendar 10k/1",
+      "ok": true
+    },
+    {
+      "name": "race calendar half/1",
+      "ok": true
+    },
+    {
+      "name": "race calendar marathon/1",
+      "ok": true
+    },
+    {
+      "name": "race calendar 5k/2",
+      "ok": true
+    },
+    {
+      "name": "race calendar 10k/2",
+      "ok": true
+    },
+    {
+      "name": "race calendar half/2",
+      "ok": true
+    },
+    {
+      "name": "race calendar marathon/2",
+      "ok": true
+    },
+    {
+      "name": "race calendar 5k/3",
+      "ok": true
+    },
+    {
+      "name": "race calendar 10k/3",
+      "ok": true
+    },
+    {
+      "name": "race calendar half/3",
+      "ok": true
+    },
+    {
+      "name": "race calendar marathon/3",
+      "ok": true
+    },
+    {
+      "name": "race calendar 5k/4",
+      "ok": true
+    },
+    {
+      "name": "race calendar 10k/4",
+      "ok": true
+    },
+    {
+      "name": "race calendar half/4",
+      "ok": true
+    },
+    {
+      "name": "race calendar marathon/4",
+      "ok": true
+    },
+    {
+      "name": "race calendar 5k/5",
+      "ok": true
+    },
+    {
+      "name": "race calendar 10k/5",
+      "ok": true
+    },
+    {
+      "name": "race calendar half/5",
+      "ok": true
+    },
+    {
+      "name": "race calendar marathon/5",
+      "ok": true
+    },
+    {
+      "name": "race calendar 5k/6",
+      "ok": true
+    },
+    {
+      "name": "race calendar 10k/6",
+      "ok": true
+    },
+    {
+      "name": "race calendar half/6",
+      "ok": true
+    },
+    {
+      "name": "race calendar marathon/6",
+      "ok": true
+    },
+    {
+      "name": "an ambitious target does not speed current threshold/interval paces",
+      "ok": true
+    },
+    {
+      "name": "bounded deterministic candidate pruning 2",
+      "ok": true
+    },
+    {
+      "name": "bounded deterministic candidate pruning 3",
+      "ok": true
+    },
+    {
+      "name": "bounded deterministic candidate pruning 4",
+      "ok": true
+    },
+    {
+      "name": "undeclared and dated PB have explicit uncertainty without invented measurement",
+      "ok": true
+    },
+    {
+      "name": "two-day sessions are chronological",
+      "ok": true
+    },
+    {
+      "name": "full activity duration alone never certifies effective quality work",
+      "ok": true
+    },
+    {
+      "name": "missing date with a season context returns validation errors rather than throwing",
+      "ok": true
+    },
+    {
+      "name": "input and output serialize without corrupting contract",
+      "ok": true
+    },
+    {
+      "name": "invalid {\"controlTests\":\"bad\"}",
+      "ok": true
+    },
+    {
+      "name": "invalid {\"planningCandidates\":null}",
+      "ok": true
+    },
+    {
+      "name": "invalid {\"seasonContext\":{\"originStart\":\"2027-12-01\"}}",
+      "ok": true
+    },
+    {
+      "name": "invalid {\"seasonContext\":{\"originStart\":\"2026-02-30\"}}",
+      "ok": true
+    },
+    {
+      "name": "invalid {\"currentWeeklyKm\":null}",
+      "ok": true
+    },
+    {
+      "name": "invalid {\"longestRecentRun\":-1}",
+      "ok": true
+    },
+    {
+      "name": "invalid {\"today\":\"2026-02-30\"}",
+      "ok": true
+    },
+    {
+      "name": "invalid {\"activeInjury\":true}",
+      "ok": true
+    }
+  ],
+  "longTerm": 24
+}

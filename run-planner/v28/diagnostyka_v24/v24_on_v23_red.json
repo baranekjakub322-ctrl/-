@@ -1,0 +1,949 @@
+{
+  "passed": 200,
+  "failed": 27,
+  "stressExecuted": 128,
+  "node": "v24.19.0",
+  "timing": {
+    "elapsedCheckMs": 10283.027380000009,
+    "maxCheckMs": 326.59174399999984,
+    "medianCheckMs": 14.25980699999991,
+    "rssBytes": 435097600
+  },
+  "tests": [
+    {
+      "name": "frozen V23 meter has original SHA256",
+      "ok": true
+    },
+    {
+      "name": "historical production sources remain identical to V23 branch baseline",
+      "ok": true
+    },
+    {
+      "name": "race 5k weekday 0: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race 5k weekday 1: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race 5k weekday 2: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race 5k weekday 3: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race 5k weekday 4: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race 5k weekday 5: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race 5k weekday 6: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race 10k weekday 0: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race 10k weekday 1: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race 10k weekday 2: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race 10k weekday 3: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race 10k weekday 4: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race 10k weekday 5: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race 10k weekday 6: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race half weekday 0: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race half weekday 1: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race half weekday 2: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race half weekday 3: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race half weekday 4: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race half weekday 5: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race half weekday 6: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race marathon weekday 0: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race marathon weekday 1: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race marathon weekday 2: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race marathon weekday 3: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race marathon weekday 4: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race marathon weekday 5: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race marathon weekday 6: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "dedicated 5k/1/beginner",
+      "ok": true
+    },
+    {
+      "name": "dedicated 5k/1/intermediate",
+      "ok": true
+    },
+    {
+      "name": "dedicated 5k/1/advanced",
+      "ok": true
+    },
+    {
+      "name": "dedicated 5k/2/beginner",
+      "ok": true
+    },
+    {
+      "name": "dedicated 5k/2/intermediate",
+      "ok": true
+    },
+    {
+      "name": "dedicated 5k/2/advanced",
+      "ok": true
+    },
+    {
+      "name": "dedicated 10k/1/beginner",
+      "ok": true
+    },
+    {
+      "name": "dedicated 10k/1/intermediate",
+      "ok": true
+    },
+    {
+      "name": "dedicated 10k/1/advanced",
+      "ok": true
+    },
+    {
+      "name": "dedicated 10k/2/beginner",
+      "ok": true
+    },
+    {
+      "name": "dedicated 10k/2/intermediate",
+      "ok": true
+    },
+    {
+      "name": "dedicated 10k/2/advanced",
+      "ok": true
+    },
+    {
+      "name": "dedicated half/1/beginner",
+      "ok": true
+    },
+    {
+      "name": "dedicated half/1/intermediate",
+      "ok": true
+    },
+    {
+      "name": "dedicated half/1/advanced",
+      "ok": true
+    },
+    {
+      "name": "dedicated half/2/beginner",
+      "ok": true
+    },
+    {
+      "name": "dedicated half/2/intermediate",
+      "ok": true
+    },
+    {
+      "name": "dedicated half/2/advanced",
+      "ok": true
+    },
+    {
+      "name": "dedicated marathon/1/beginner",
+      "ok": true
+    },
+    {
+      "name": "dedicated marathon/1/intermediate",
+      "ok": true
+    },
+    {
+      "name": "dedicated marathon/1/advanced",
+      "ok": true
+    },
+    {
+      "name": "dedicated marathon/2/beginner",
+      "ok": true
+    },
+    {
+      "name": "dedicated marathon/2/intermediate",
+      "ok": true
+    },
+    {
+      "name": "dedicated marathon/2/advanced",
+      "ok": true
+    },
+    {
+      "name": "two consecutive available days do not receive an accent beside a long run",
+      "ok": true
+    },
+    {
+      "name": "two-day quality never uses inflated warm/cool to consume volume",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(t.kroki.find(k=>k.etap==='Schłodzenie').dystans_km<=2)\n\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:14:232\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:14:1"
+    },
+    {
+      "name": "one day continuity can progress cautiously from 3 km",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(peak(p)>3)\n\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:15:167\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:15:1"
+    },
+    {
+      "name": "fit evidence avoids frozen beginner threshold dose",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(new Set(q.map(t=>workOf(t).km)).size>=3)\n\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:16:263\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:16:1"
+    },
+    {
+      "name": "specific doses evolve across retained sessions",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(new Set(q.map(t=>workOf(t).recipe)).size>=2)\n\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:17:207\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:17:1"
+    },
+    {
+      "name": "quality ledger corresponds to retained corrected work",
+      "ok": false,
+      "error": "TypeError: Cannot read properties of undefined (reading 'length')\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:18:94\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:18:1"
+    },
+    {
+      "name": "pace does not accelerate from elapsed weeks or faster target",
+      "ok": true
+    },
+    {
+      "name": "volumeTolerance validation",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\ntrue !== false\n\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:20:95\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:20:59"
+    },
+    {
+      "name": "intensityTolerance validation",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\ntrue !== false\n\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:20:95\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:20:59"
+    },
+    {
+      "name": "fatigue validation and real reduction",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\ntrue !== false\n\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:21:58\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:21:1"
+    },
+    {
+      "name": "low intensity tolerance lowers work without raising volume in compensation",
+      "ok": true
+    },
+    {
+      "name": "volume tolerance alias equals established load tolerance",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n... Skipped lines\n\n  [\n    {\n      cel: 'Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.',\n+     czas_min: 72,\n-     czas_min: 66,\n      data: '2026-11-04',\n      dlaczego: 'Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.',\n+     dystans_km: 11,\n-     dystans_km: 10,\n      etykieta: 'Bieg spokojny Z2 · tlen i regeneracja',\n      faza_planu: 'base',\n      intensywnosc: {\n        celFizjologiczny: 'Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.',\n+       obciazenieSzacunkowe: 216,\n-       obciazenieSzacunkowe: 198,\n        priorytet: 'aktualna forma i odczucie',\n        rpeOrientacyjne: 3,\n        tempoOrientacyjne: false,\n        wiarygodnoscTetna: 'szacowane'\n      },\n      kroki: [\n        {\n+         dystans_km: 11,\n-         dystans_km: 10,\n          etap: 'Bieg spokojny',\n          tempo: '6:12-6:58',\n          tetno: '110-129 (Z2)',\n          uwagi: 'Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz'\n        }\n...\n      odciazenie: false,\n+     opis: '1. Bieg spokojny: 11 km, tempo 6:12-6:58 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz',\n-     opis: '1. Bieg spokojny: 10 km, tempo 6:12-6:58 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz',\n      podtyp: 'latwy',\n      raportuj: 'Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.',\n      rpe: '3-4/10 (rozmowa pełnymi zdaniami)',\n      strefa_tetna: 'Z2',\n      tempo_zakres: '6:12-6:58',\n      typ: 'Bieg spokojny Z2',\n      warianty: {\n+       skrocony: 'Skróć do ok. 7.7 km w tym samym tempie.',\n-       skrocony: 'Skróć do ok. 7 km w tym samym tempie.',\n        zla_pogoda: 'Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.',\n        zmeczenie: 'Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce.'\n      }\n    },\n    {\n      cel: 'Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.',\n+     czas_min: 66,\n-     czas_min: 59,\n      data: '2026-11-06',\n      dlaczego: 'Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.',\n+     dystans_km: 10,\n-     dystans_km: 9,\n      etykieta: 'Bieg spokojny Z2 · tlen i regeneracja',\n      faza_planu: 'base',\n      intensywnosc: {\n        celFizjologiczny: 'Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.',\n+       obciazenieSzacunkowe: 198,\n-       obciazenieSzacunkowe: 177,\n        priorytet: 'aktualna forma i odczucie',\n        rpeOrientacyjne: 3,\n        tempoOrientacyjne: false,\n        wiarygodnoscTetna: 'szacowane'\n      },\n      kroki: [\n        {\n+         dystans_km: 10,\n-         dystans_km: 9,\n          etap: 'Bieg spokojny',\n          tempo: '6:12-6:58',\n          tetno: '110-129 (Z2)',\n          uwagi: 'Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz'\n        }\n...\n      odciazenie: false,\n+     opis: '1. Bieg spokojny: 10 km, tempo 6:12-6:58 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz',\n-     opis: '1. Bieg spokojny: 9 km, tempo 6:12-6:58 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz',\n      podtyp: 'latwy',\n      raportuj: 'Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.',\n      rpe: '3-4/10 (rozmowa pełnymi zdaniami)',\n      strefa_tetna: 'Z2',\n      tempo_zakres: '6:12-6:58',\n      typ: 'Bieg spokojny Z2',\n      warianty: {\n+       skrocony: 'Skróć do ok. 7 km w tym samym tempie.',\n-       skrocony: 'Skróć do ok. 6.3 km w tym samym tempie.',\n        zla_pogoda: 'Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.',\n        zmeczenie: 'Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce.'\n      }\n    },\n    {\n...\n    {\n+     cel: 'Podniesienie progu mleczanowego, czyli tempa, które możesz utrzymać coraz dłużej.',\n+     czas_min: 37,\n-     cel: 'Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.',\n-     czas_min: 66,\n      data: '2026-11-11',\n+     dlaczego: 'Praca w tempie progowym podnosi tempo, które możesz utrzymać dłużej; jedna taka jednostka tygodniowo wystarcza.',\n+     dystans_km: 6,\n+     etykieta: 'Tempo progowe · próg mleczanowy',\n-     dlaczego: 'Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.',\n-     dystans_km: 10,\n-     etykieta: 'Bieg spokojny Z2 · tlen i regeneracja',\n      faza_planu: 'base',\n      intensywnosc: {\n+       celFizjologiczny: 'Podniesienie progu mleczanowego, czyli tempa, które możesz utrzymać coraz dłużej.',\n+       obciazenieSzacunkowe: 164,\n-       celFizjologiczny: 'Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.',\n-       obciazenieSzacunkowe: 198,\n        priorytet: 'aktualna forma i odczucie',\n+       rpeOrientacyjne: 7,\n-       rpeOrientacyjne: 3,\n        tempoOrientacyjne: false,\n        wiarygodnoscTetna: 'szacowane'\n      },\n      kroki: [\n        {\n+         dystans_km: 2,\n+         etap: 'Rozgrzewka',\n-         dystans_km: 10,\n-         etap: 'Bieg spokojny',\n          tempo: '6:12-6:58',\n          tetno: '110-129 (Z2)',\n+         uwagi: 'pod koniec 4 przebieżki po 20 s'\n-         uwagi: 'Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz'\n        },\n+       {\n+         czas_odcinka: '13:27',\n+         dystans_km: 2.5,\n+         etap: 'Część główna',\n+         tempo: '5:17-5:29',\n+         tetno: '129-166 (Z3-Z4)',\n+         uwagi: 'równe tempo, wysiłek ok. 7/10, możesz mówić tylko pojedyncze słowa'\n+       },\n+       {\n+         dystans_km: 1.5,\n+         etap: 'Schłodzenie',\n+         tempo: '6:48-7:20',\n+         tetno: '92-110 (Z1)',\n+         uwagi: 'na koniec 5 min spokojnego marszu i rozciąganie'\n+       }\n      ],\n+     kryteria_przerwania: 'Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę. W treningu jakościowym: jeśli w pierwszych dwóch powtórzeniach tętno jest wyraźnie powyżej zakresu albo nie utrzymujesz tempa mimo wysiłku 9/10, zakończ część główną wcześniej i dobiegnij spokojnie.',\n-     kryteria_przerwania: 'Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.',\n      odciazenie: false,\n+     opis: '1. Rozgrzewka: 2 km, tempo 6:12-6:58 min/km, tętno 110-129 (Z2), pod koniec 4 przebieżki po 20 s\\n' +\n+       '2. Część główna: 2.5 km, tempo 5:17-5:29 min/km, czas odcinka 13:27, tętno 129-166 (Z3-Z4), równe tempo, wysiłek ok. 7/10, możesz mówić tylko pojedyncze słowa\\n' +\n+       '3. Schłodzenie: 1.5 km, tempo 6:48-7:20 min/km, tętno 92-110 (Z1), na koniec 5 min spokojnego marszu i rozciąganie',\n+     podtyp: 'tempo',\n+     raportuj: 'Wpisz całość (dystans, czas, średnie tętno, odczucie 1-5, RPE) oraz część główną: łączny dystans i czas samych odcinków lub bloków.',\n+     rpe: '6-7/10',\n+     strefa_tetna: 'Z3-Z4',\n+     tempo_zakres: '5:17-5:29',\n+     typ: 'Tempo',\n-     opis: '1. Bieg spokojny: 10 km, tempo 6:12-6:58 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz',\n-     podtyp: 'latwy',\n-     raportuj: 'Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.',\n-     rpe: '3-4/10 (rozmowa pełnymi zdaniami)',\n-     strefa_tetna: 'Z2',\n-     tempo_zakres: '6:12-6:58',\n-     typ: 'Bieg spokojny Z2',\n      warianty: {\n+       skrocony: 'Skróć część tempową do ok. 8 min.',\n-       skrocony: 'Skróć do ok. 7 km w tym samym tempie.',\n        zla_pogoda: 'Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.',\n+       zmeczenie: 'Zamień na spokojny bieg ok. 4.2 km (Z2), mocny trening przełóż o 1-2 dni.'\n-       zmeczenie: 'Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce.'\n      }\n    },\n    {\n      cel: 'Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.',\n+     czas_min: 72,\n-     czas_min: 59,\n      data: '2026-11-13',\n      dlaczego: 'Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.',\n+     dystans_km: 11,\n-     dystans_km: 9,\n      etykieta: 'Bieg spokojny Z2 · tlen i regeneracja',\n      faza_planu: 'base',\n      intensywnosc: {\n        celFizjologiczny: 'Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.',\n+       obciazenieSzacunkowe: 216,\n-       obciazenieSzacunkowe: 177,\n        priorytet: 'aktualna forma i odczucie',\n        rpeOrientacyjne: 3,\n        tempoOrientacyjne: false,\n        wiarygodnoscTetna: 'szacowane'\n      },\n      kroki: [\n        {\n+         dystans_km: 11,\n-         dystans_km: 9,\n          etap: 'Bieg spokojny',\n          tempo: '6:12-6:58',\n          tetno: '110-129 (Z2)',\n          uwagi: 'Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz'\n        }\n...\n      odciazenie: false,\n+     opis: '1. Bieg spokojny: 11 km, tempo 6:12-6:58 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz',\n-     opis: '1. Bieg spokojny: 9 km, tempo 6:12-6:58 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz',\n      podtyp: 'latwy',\n      raportuj: 'Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.',\n      rpe: '3-4/10 (rozmowa pełnymi zdaniami)',\n      strefa_tetna: 'Z2',\n      tempo_zakres: '6:12-6:58',\n      typ: 'Bieg spokojny Z2',\n      warianty: {\n+       skrocony: 'Skróć do ok. 7.7 km w tym samym tempie.',\n-       skrocony: 'Skróć do ok. 6.3 km w tym samym tempie.',\n        zla_pogoda: 'Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.',\n        zmeczenie: 'Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce.'\n      }\n    },\n    {\n...\n    {\n+     cel: 'Podniesienie progu mleczanowego, czyli tempa, które możesz utrzymać coraz dłużej.',\n+     czas_min: 37,\n-     cel: 'Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.',\n-     czas_min: 66,\n      data: '2026-11-18',\n+     dlaczego: 'Praca w tempie progowym podnosi tempo, które możesz utrzymać dłużej; jedna taka jednostka tygodniowo wystarcza.',\n+     dystans_km: 6,\n+     etykieta: 'Tempo progowe · próg mleczanowy',\n-     dlaczego: 'Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.',\n-     dystans_km: 10,\n-     etykieta: 'Bieg spokojny Z2 · tlen i regeneracja',\n      faza_planu: 'build',\n      intensywnosc: {\n+       celFizjologiczny: 'Podniesienie progu mleczanowego, czyli tempa, które możesz utrzymać coraz dłużej.',\n+       obciazenieSzacunkowe: 164,\n-       celFizjologiczny: 'Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.',\n-       obciazenieSzacunkowe: 198,\n        priorytet: 'aktualna forma i odczucie',\n+       rpeOrientacyjne: 7,\n-       rpeOrientacyjne: 3,\n        tempoOrientacyjne: false,\n        wiarygodnoscTetna: 'szacowane'\n      },\n      kroki: [\n        {\n+         dystans_km: 2,\n+         etap: 'Rozgrzewka',\n-         dystans_km: 10,\n-         etap: 'Bieg spokojny',\n          tempo: '6:12-6:58',\n          tetno: '110-129 (Z2)',\n+         uwagi: 'pod koniec 4 przebieżki po 20 s'\n-         uwagi: 'Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz'\n        },\n+       {\n+         czas_odcinka: '13:27',\n+         dystans_km: 2.5,\n+         etap: 'Część główna',\n+         tempo: '5:17-5:29',\n+         tetno: '129-166 (Z3-Z4)',\n+         uwagi: 'równe tempo, wysiłek ok. 7/10, możesz mówić tylko pojedyncze słowa'\n+       },\n+       {\n+         dystans_km: 1.5,\n+         etap: 'Schłodzenie',\n+         tempo: '6:48-7:20',\n+         tetno: '92-110 (Z1)',\n+         uwagi: 'na koniec 5 min spokojnego marszu i rozciąganie'\n+       }\n      ],\n+     kryteria_przerwania: 'Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę. W treningu jakościowym: jeśli w pierwszych dwóch powtórzeniach tętno jest wyraźnie powyżej zakresu albo nie utrzymujesz tempa mimo wysiłku 9/10, zakończ część główną wcześniej i dobiegnij spokojnie.',\n-     kryteria_przerwania: 'Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.',\n      odciazenie: false,\n+     opis: '1. Rozgrzewka: 2 km, tempo 6:12-6:58 min/km, tętno 110-129 (Z2), pod koniec 4 przebieżki po 20 s\\n' +\n+       '2. Część główna: 2.5 km, tempo 5:17-5:29 min/km, czas odcinka 13:27, tętno 129-166 (Z3-Z4), równe tempo, wysiłek ok. 7/10, możesz mówić tylko pojedyncze słowa\\n' +\n+       '3. Schłodzenie: 1.5 km, tempo 6:48-7:20 min/km, tętno 92-110 (Z1), na koniec 5 min spokojnego marszu i rozciąganie',\n+     podtyp: 'tempo',\n+     raportuj: 'Wpisz całość (dystans, czas, średnie tętno, odczucie 1-5, RPE) oraz część główną: łączny dystans i czas samych odcinków lub bloków.',\n+     rpe: '6-7/10',\n+     strefa_tetna: 'Z3-Z4',\n+     tempo_zakres: '5:17-5:29',\n+     typ: 'Tempo',\n-     opis: '1. Bieg spokojny: 10 km, tempo 6:12-6:58 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz',\n-     podtyp: 'latwy',\n-     raportuj: 'Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.',\n-     rpe: '3-4/10 (rozmowa pełnymi zdaniami)',\n-     strefa_tetna: 'Z2',\n-     tempo_zakres: '6:12-6:58',\n-     typ: 'Bieg spokojny Z2',\n      warianty: {\n+       skrocony: 'Skróć część tempową do ok. 8 min.',\n-       skrocony: 'Skróć do ok. 7 km w tym samym tempie.',\n        zla_pogoda: 'Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.',\n+       zmeczenie: 'Zamień na spokojny bieg ok. 4.2 km (Z2), mocny trening przełóż o 1-2 dni.'\n-       zmeczenie: 'Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce.'\n      }\n    },\n    {\n      cel: 'Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.',\n+     czas_min: 72,\n-     czas_min: 59,\n      data: '2026-11-20',\n      dlaczego: 'Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.',\n+     dystans_km: 11,\n-     dystans_km: 9,\n      etykieta: 'Bieg spokojny Z2 · tlen i regeneracja',\n      faza_planu: 'build',\n      intensywnosc: {\n        celFizjologiczny: 'Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.',\n+       obciazenieSzacunkowe: 216,\n-       obciazenieSzacunkowe: 177,\n        priorytet: 'aktualna forma i odczucie',\n        rpeOrientacyjne: 3,\n        tempoOrientacyjne: false,\n        wiarygodnoscTetna: 'szacowane'\n      },\n      kroki: [\n        {\n+         dystans_km: 11,\n-         dystans_km: 9,\n          etap: 'Bieg spokojny',\n          tempo: '6:12-6:58',\n          tetno: '110-129 (Z2)',\n          uwagi: 'Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz'\n        }\n...\n      odciazenie: false,\n+     opis: '1. Bieg spokojny: 11 km, tempo 6:12-6:58 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz',\n-     opis: '1. Bieg spokojny: 9 km, tempo 6:12-6:58 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz',\n      podtyp: 'latwy',\n      raportuj: 'Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.',\n      rpe: '3-4/10 (rozmowa pełnymi zdaniami)',\n      strefa_tetna: 'Z2',\n      tempo_zakres: '6:12-6:58',\n      typ: 'Bieg spokojny Z2',\n      warianty: {\n+       skrocony: 'Skróć do ok. 7.7 km w tym samym tempie.',\n-       skrocony: 'Skróć do ok. 6.3 km w tym samym tempie.',\n        zla_pogoda: 'Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.',\n        zmeczenie: 'Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce.'\n      }\n    },\n    {\n...\n      cel: 'Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.',\n+     czas_min: 46,\n-     czas_min: 53,\n      data: '2026-11-27',\n      dlaczego: 'Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy. To tydzień odciążający: objętość jest celowo niższa, żeby organizm się zaadaptował.',\n+     dystans_km: 7,\n-     dystans_km: 8,\n      etykieta: 'Bieg spokojny Z2 · tlen i regeneracja',\n      faza_planu: 'build',\n      intensywnosc: {\n        celFizjologiczny: 'Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.',\n+       obciazenieSzacunkowe: 138,\n-       obciazenieSzacunkowe: 159,\n        priorytet: 'aktualna forma i odczucie',\n        rpeOrientacyjne: 3,\n        tempoOrientacyjne: false,\n        wiarygodnoscTetna: 'szacowane'\n      },\n      kroki: [\n        {\n+         dystans_km: 7,\n-         dystans_km: 8,\n          etap: 'Bieg spokojny',\n          tempo: '6:12-6:58',\n          tetno: '110-129 (Z2)',\n          uwagi: 'Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz'\n        }\n...\n      odciazenie: true,\n+     opis: '1. Bieg spokojny: 7 km, tempo 6:12-6:58 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz',\n-     opis: '1. Bieg spokojny: 8 km, tempo 6:12-6:58 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz',\n      podtyp: 'latwy',\n      raportuj: 'Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.',\n      rpe: '3-4/10 (rozmowa pełnymi zdaniami)',\n      strefa_tetna: 'Z2',\n      tempo_zakres: '6:12-6:58',\n      typ: 'Bieg spokojny Z2',\n      warianty: {\n+       skrocony: 'Skróć do ok. 4.9 km w tym samym tempie.',\n-       skrocony: 'Skróć do ok. 5.6 km w tym samym tempie.',\n        zla_pogoda: 'Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.',\n        zmeczenie: 'Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce.'\n      }\n    },\n    {\n...\n      cel: 'Podniesienie progu mleczanowego, czyli tempa, które możesz utrzymać coraz dłużej.',\n+     czas_min: 43,\n-     czas_min: 37,\n      data: '2026-12-16',\n      dlaczego: 'Praca w tempie progowym podnosi tempo, które możesz utrzymać dłużej; jedna taka jednostka tygodniowo wystarcza.',\n+     dystans_km: 7,\n-     dystans_km: 6,\n      etykieta: 'Tempo progowe · próg mleczanowy',\n      faza_planu: 'build',\n      intensywnosc: {\n        celFizjologiczny: 'Podniesienie progu mleczanowego, czyli tempa, które możesz utrzymać coraz dłużej.',\n+       obciazenieSzacunkowe: 192,\n-       obciazenieSzacunkowe: 164,\n        priorytet: 'aktualna forma i odczucie',\n        rpeOrientacyjne: 7,\n        tempoOrientacyjne: false,\n        wiarygodnoscTetna: 'szacowane'\n      },\n...\n        {\n+         czas_odcinka: '16:09',\n+         dystans_km: 3,\n-         czas_odcinka: '13:27',\n-         dystans_km: 2.5,\n          etap: 'Część główna',\n          tempo: '5:17-5:29',\n          tetno: '129-166 (Z3-Z4)',\n          uwagi: 'równe tempo, wysiłek ok. 7/10, możesz mówić tylko pojedyncze słowa'\n        },\n        {\n+         dystans_km: 2,\n-         dystans_km: 1.5,\n          etap: 'Schłodzenie',\n          tempo: '6:48-7:20',\n          tetno: '92-110 (Z1)',\n          uwagi: 'na koniec 5 min spokojnego marszu i rozciąganie'\n        }\n...\n      opis: '1. Rozgrzewka: 2 km, tempo 6:12-6:58 min/km, tętno 110-129 (Z2), pod koniec 4 przebieżki po 20 s\\n' +\n+       '2. Część główna: 3 km, tempo 5:17-5:29 min/km, czas odcinka 16:09, tętno 129-166 (Z3-Z4), równe tempo, wysiłek ok. 7/10, możesz mówić tylko pojedyncze słowa\\n' +\n+       '3. Schłodzenie: 2 km, tempo 6:48-7:20 min/km, tętno 92-110 (Z1), na koniec 5 min spokojnego marszu i rozciąganie',\n-       '2. Część główna: 2.5 km, tempo 5:17-5:29 min/km, czas odcinka 13:27, tętno 129-166 (Z3-Z4), równe tempo, wysiłek ok. 7/10, możesz mówić tylko pojedyncze słowa\\n' +\n-       '3. Schłodzenie: 1.5 km, tempo 6:48-7:20 min/km, tętno 92-110 (Z1), na koniec 5 min spokojnego marszu i rozciąganie',\n      podtyp: 'tempo',\n      raportuj: 'Wpisz całość (dystans, czas, średnie tętno, odczucie 1-5, RPE) oraz część główną: łączny dystans i czas samych odcinków lub bloków.',\n      rpe: '6-7/10',\n      strefa_tetna: 'Z3-Z4',\n      tempo_zakres: '5:17-5:29',\n...\n        zla_pogoda: 'Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.',\n+       zmeczenie: 'Zamień na spokojny bieg ok. 4.9 km (Z2), mocny trening przełóż o 1-2 dni.'\n-       zmeczenie: 'Zamień na spokojny bieg ok. 4.2 km (Z2), mocny trening przełóż o 1-2 dni.'\n      }\n    },\n    {\n      cel: 'Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.',\n      czas_min: 72,\n...\n      cel: 'Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.',\n+     czas_min: 53,\n-     czas_min: 46,\n      data: '2026-12-25',\n      dlaczego: 'Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy. To tydzień odciążający: objętość jest celowo niższa, żeby organizm się zaadaptował.',\n+     dystans_km: 8,\n-     dystans_km: 7,\n      etykieta: 'Bieg spokojny Z2 · tlen i regeneracja',\n      faza_planu: 'build',\n      intensywnosc: {\n        celFizjologiczny: 'Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.',\n+       obciazenieSzacunkowe: 159,\n-       obciazenieSzacunkowe: 138,\n        priorytet: 'aktualna forma i odczucie',\n        rpeOrientacyjne: 3,\n        tempoOrientacyjne: false,\n        wiarygodnoscTetna: 'szacowane'\n      },\n      kroki: [\n        {\n+         dystans_km: 8,\n-         dystans_km: 7,\n          etap: 'Bieg spokojny',\n          tempo: '6:12-6:58',\n          tetno: '110-129 (Z2)',\n          uwagi: 'Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz'\n        }\n...\n      odciazenie: true,\n+     opis: '1. Bieg spokojny: 8 km, tempo 6:12-6:58 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz',\n-     opis: '1. Bieg spokojny: 7 km, tempo 6:12-6:58 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz',\n      podtyp: 'latwy',\n      raportuj: 'Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.',\n      rpe: '3-4/10 (rozmowa pełnymi zdaniami)',\n      strefa_tetna: 'Z2',\n      tempo_zakres: '6:12-6:58',\n      typ: 'Bieg spokojny Z2',\n      warianty: {\n+       skrocony: 'Skróć do ok. 5.6 km w tym samym tempie.',\n-       skrocony: 'Skróć do ok. 4.9 km w tym samym tempie.',\n        zla_pogoda: 'Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.',\n        zmeczenie: 'Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce.'\n      }\n    },\n    {\n...\n      cel: 'Podniesienie progu mleczanowego, czyli tempa, które możesz utrzymać coraz dłużej.',\n+     czas_min: 43,\n-     czas_min: 37,\n      data: '2026-12-30',\n      dlaczego: 'Praca w tempie progowym podnosi tempo, które możesz utrzymać dłużej; jedna taka jednostka tygodniowo wystarcza.',\n+     dystans_km: 7,\n-     dystans_km: 6,\n      etykieta: 'Tempo progowe · próg mleczanowy',\n      faza_planu: 'build',\n      intensywnosc: {\n        celFizjologiczny: 'Podniesienie progu mleczanowego, czyli tempa, które możesz utrzymać coraz dłużej.',\n+       obciazenieSzacunkowe: 192,\n-       obciazenieSzacunkowe: 164,\n        priorytet: 'aktualna forma i odczucie',\n        rpeOrientacyjne: 7,\n        tempoOrientacyjne: false,\n        wiarygodnoscTetna: 'szacowane'\n      },\n...\n        {\n+         czas_odcinka: '16:09',\n+         dystans_km: 3,\n-         czas_odcinka: '13:27',\n-         dystans_km: 2.5,\n          etap: 'Część główna',\n          tempo: '5:17-5:29',\n          tetno: '129-166 (Z3-Z4)',\n          uwagi: 'równe tempo, wysiłek ok. 7/10, możesz mówić tylko pojedyncze słowa'\n        },\n        {\n+         dystans_km: 2,\n-         dystans_km: 1.5,\n          etap: 'Schłodzenie',\n          tempo: '6:48-7:20',\n          tetno: '92-110 (Z1)',\n          uwagi: 'na koniec 5 min spokojnego marszu i rozciąganie'\n        }\n...\n      opis: '1. Rozgrzewka: 2 km, tempo 6:12-6:58 min/km, tętno 110-129 (Z2), pod koniec 4 przebieżki po 20 s\\n' +\n+       '2. Część główna: 3 km, tempo 5:17-5:29 min/km, czas odcinka 16:09, tętno 129-166 (Z3-Z4), równe tempo, wysiłek ok. 7/10, możesz mówić tylko pojedyncze słowa\\n' +\n+       '3. Schłodzenie: 2 km, tempo 6:48-7:20 min/km, tętno 92-110 (Z1), na koniec 5 min spokojnego marszu i rozciąganie',\n-       '2. Część główna: 2.5 km, tempo 5:17-5:29 min/km, czas odcinka 13:27, tętno 129-166 (Z3-Z4), równe tempo, wysiłek ok. 7/10, możesz mówić tylko pojedyncze słowa\\n' +\n-       '3. Schłodzenie: 1.5 km, tempo 6:48-7:20 min/km, tętno 92-110 (Z1), na koniec 5 min spokojnego marszu i rozciąganie',\n      podtyp: 'tempo',\n      raportuj: 'Wpisz całość (dystans, czas, średnie tętno, odczucie 1-5, RPE) oraz część główną: łączny dystans i czas samych odcinków lub bloków.',\n      rpe: '6-7/10',\n      strefa_tetna: 'Z3-Z4',\n      tempo_zakres: '5:17-5:29',\n...\n        zla_pogoda: 'Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.',\n+       zmeczenie: 'Zamień na spokojny bieg ok. 4.9 km (Z2), mocny trening przełóż o 1-2 dni.'\n-       zmeczenie: 'Zamień na spokojny bieg ok. 4.2 km (Z2), mocny trening przełóż o 1-2 dni.'\n      }\n    },\n    {\n      cel: 'Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.',\n      czas_min: 72,\n...\n      cel: 'Podniesienie progu mleczanowego, czyli tempa, które możesz utrzymać coraz dłużej.',\n+     czas_min: 42,\n-     czas_min: 43,\n      data: '2027-01-27',\n      dlaczego: 'Praca w tempie progowym podnosi tempo, które możesz utrzymać dłużej; jedna taka jednostka tygodniowo wystarcza.',\n      dystans_km: 7,\n      etykieta: 'Tempo progowe · próg mleczanowy',\n      faza_planu: 'build',\n      intensywnosc: {\n        celFizjologiczny: 'Podniesienie progu mleczanowego, czyli tempa, które możesz utrzymać coraz dłużej.',\n+       obciazenieSzacunkowe: 200,\n-       obciazenieSzacunkowe: 192,\n        priorytet: 'aktualna forma i odczucie',\n        rpeOrientacyjne: 7,\n        tempoOrientacyjne: false,\n        wiarygodnoscTetna: 'szacowane'\n      },\n...\n        {\n+         czas_odcinka: '18:50',\n+         dystans_km: 3.5,\n-         czas_odcinka: '16:09',\n-         dystans_km: 3,\n          etap: 'Część główna',\n          tempo: '5:17-5:29',\n          tetno: '129-166 (Z3-Z4)',\n          uwagi: 'równe tempo, wysiłek ok. 7/10, możesz mówić tylko pojedyncze słowa'\n        },\n        {\n+         dystans_km: 1.5,\n-         dystans_km: 2,\n          etap: 'Schłodzenie',\n          tempo: '6:48-7:20',\n          tetno: '92-110 (Z1)',\n          uwagi: 'na koniec 5 min spokojnego marszu i rozciąganie'\n        }\n...\n      opis: '1. Rozgrzewka: 2 km, tempo 6:12-6:58 min/km, tętno 110-129 (Z2), pod koniec 4 przebieżki po 20 s\\n' +\n+       '2. Część główna: 3.5 km, tempo 5:17-5:29 min/km, czas odcinka 18:50, tętno 129-166 (Z3-Z4), równe tempo, wysiłek ok. 7/10, możesz mówić tylko pojedyncze słowa\\n' +\n+       '3. Schłodzenie: 1.5 km, tempo 6:48-7:20 min/km, tętno 92-110 (Z1), na koniec 5 min spokojnego marszu i rozciąganie',\n-       '2. Część główna: 3 km, tempo 5:17-5:29 min/km, czas odcinka 16:09, tętno 129-166 (Z3-Z4), równe tempo, wysiłek ok. 7/10, możesz mówić tylko pojedyncze słowa\\n' +\n-       '3. Schłodzenie: 2 km, tempo 6:48-7:20 min/km, tętno 92-110 (Z1), na koniec 5 min spokojnego marszu i rozciąganie',\n      podtyp: 'tempo',\n      raportuj: 'Wpisz całość (dystans, czas, średnie tętno, odczucie 1-5, RPE) oraz część główną: łączny dystans i czas samych odcinków lub bloków.',\n      rpe: '6-7/10',\n      strefa_tetna: 'Z3-Z4',\n      tempo_zakres: '5:17-5:29',\n...\n      cel: 'Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.',\n+     czas_min: 59,\n-     czas_min: 53,\n      data: '2027-02-17',\n      dlaczego: 'Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy. To tydzień odciążający: objętość jest celowo niższa, żeby organizm się zaadaptował.',\n+     dystans_km: 9,\n-     dystans_km: 8,\n      etykieta: 'Bieg spokojny Z2 · tlen i regeneracja',\n      faza_planu: 'peak',\n      intensywnosc: {\n        celFizjologiczny: 'Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.',\n+       obciazenieSzacunkowe: 177,\n-       obciazenieSzacunkowe: 159,\n        priorytet: 'aktualna forma i odczucie',\n        rpeOrientacyjne: 3,\n        tempoOrientacyjne: false,\n        wiarygodnoscTetna: 'szacowane'\n      },\n      kroki: [\n        {\n+         dystans_km: 9,\n-         dystans_km: 8,\n          etap: 'Bieg spokojny',\n          tempo: '6:12-6:58',\n          tetno: '110-129 (Z2)',\n          uwagi: 'Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz'\n        }\n...\n      odciazenie: true,\n+     opis: '1. Bieg spokojny: 9 km, tempo 6:12-6:58 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz',\n-     opis: '1. Bieg spokojny: 8 km, tempo 6:12-6:58 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz',\n      podtyp: 'latwy',\n      raportuj: 'Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.',\n      rpe: '3-4/10 (rozmowa pełnymi zdaniami)',\n      strefa_tetna: 'Z2',\n      tempo_zakres: '6:12-6:58',\n      typ: 'Bieg spokojny Z2',\n      warianty: {\n+       skrocony: 'Skróć do ok. 6.3 km w tym samym tempie.',\n-       skrocony: 'Skróć do ok. 5.6 km w tym samym tempie.',\n        zla_pogoda: 'Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.',\n        zmeczenie: 'Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce.'\n      }\n    },\n    {\n...\n      cel: 'Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.',\n+     czas_min: 72,\n-     czas_min: 66,\n      data: '2027-03-05',\n      dlaczego: 'Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.',\n+     dystans_km: 11,\n-     dystans_km: 10,\n      etykieta: 'Bieg spokojny Z2 · tlen i regeneracja',\n      faza_planu: 'peak',\n      intensywnosc: {\n        celFizjologiczny: 'Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.',\n+       obciazenieSzacunkowe: 216,\n-       obciazenieSzacunkowe: 198,\n        priorytet: 'aktualna forma i odczucie',\n        rpeOrientacyjne: 3,\n        tempoOrientacyjne: false,\n        wiarygodnoscTetna: 'szacowane'\n      },\n      kroki: [\n        {\n+         dystans_km: 11,\n-         dystans_km: 10,\n          etap: 'Bieg spokojny',\n          tempo: '6:12-6:58',\n          tetno: '110-129 (Z2)',\n          uwagi: 'Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz'\n        }\n...\n      odciazenie: false,\n+     opis: '1. Bieg spokojny: 11 km, tempo 6:12-6:58 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz',\n-     opis: '1. Bieg spokojny: 10 km, tempo 6:12-6:58 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz',\n      podtyp: 'latwy',\n      raportuj: 'Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.',\n      rpe: '3-4/10 (rozmowa pełnymi zdaniami)',\n      strefa_tetna: 'Z2',\n      tempo_zakres: '6:12-6:58',\n      typ: 'Bieg spokojny Z2',\n      warianty: {\n+       skrocony: 'Skróć do ok. 7.7 km w tym samym tempie.',\n-       skrocony: 'Skróć do ok. 7 km w tym samym tempie.',\n        zla_pogoda: 'Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.',\n        zmeczenie: 'Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce.'\n      }\n    },\n    {\n\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:23:76\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:23:1"
+    },
+    {
+      "name": "age 25 maintains independent safety",
+      "ok": true
+    },
+    {
+      "name": "age 50 maintains independent safety",
+      "ok": true
+    },
+    {
+      "name": "age 65 maintains independent safety",
+      "ok": true
+    },
+    {
+      "name": "1 misses: no catch-up",
+      "ok": true
+    },
+    {
+      "name": "2 misses: no catch-up",
+      "ok": true
+    },
+    {
+      "name": "return after 7 days",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(p.indywidualizacja.bazaKm<base.indywidualizacja.bazaKm)\n\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:26:114\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:26:28"
+    },
+    {
+      "name": "return after 14 days",
+      "ok": true
+    },
+    {
+      "name": "return after 60 days",
+      "ok": true
+    },
+    {
+      "name": "reduced intensity is actionable and does not erase completed work",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(!p.treningi.filter(t=>t.data<'2027-01-17').some(quality))\n\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:27:198\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:27:1"
+    },
+    {
+      "name": "change race date after old event creates future taper",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(p.ok)\n\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:28:129\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:28:1"
+    },
+    {
+      "name": "date earlier than journal and invalid new race rejected",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\ntrue !== false\n\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:29:178\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:29:1"
+    },
+    {
+      "name": "completed past persists through repeated updates, not rewritten as new plan",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ undefined\n- {\n-   cel: 'Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.',\n-   czas_min: 72,\n-   data: '2026-11-04',\n-   dlaczego: 'Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.',\n-   dystans_km: 11,\n-   etykieta: 'Bieg spokojny Z2 · tlen i regeneracja',\n-   faza_planu: 'base',\n-   intensywnosc: {\n-     celFizjologiczny: 'Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.',\n-     obciazenieSzacunkowe: 216,\n-     priorytet: 'aktualna forma i odczucie',\n-     rpeOrientacyjne: 3,\n-     tempoOrientacyjne: false,\n-     wiarygodnoscTetna: 'szacowane'\n-   },\n-   kroki: [\n-     {\n-       dystans_km: 11,\n-       etap: 'Bieg spokojny',\n-       tempo: '6:12-6:58',\n-       tetno: '110-129 (Z2)',\n-       uwagi: 'Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz'\n-     }\n-   ],\n-   kryteria_przerwania: 'Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.',\n-   odciazenie: false,\n-   opis: '1. Bieg spokojny: 11 km, tempo 6:12-6:58 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz',\n-   podtyp: 'latwy',\n-   raportuj: 'Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.',\n-   rpe: '3-4/10 (rozmowa pełnymi zdaniami)',\n-   strefa_tetna: 'Z2',\n-   tempo_zakres: '6:12-6:58',\n-   typ: 'Bieg spokojny Z2',\n-   warianty: {\n-     skrocony: 'Skróć do ok. 7.7 km w tym samym tempie.',\n-     zla_pogoda: 'Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.',\n-     zmeczenie: 'Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce.'\n-   }\n- }\n\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:30:324\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:30:1"
+    },
+    {
+      "name": "retransmitting same test cannot ratchet VDOT or reapply fatigue reduction",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 55.12888190573854\n- 38.977261354760905\n\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:31:299\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:31:1"
+    },
+    {
+      "name": "observation history cannot be silently replaced",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\ntrue !== false\n\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:32:148\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:32:1"
+    },
+    {
+      "name": "second new record improves capped used VDOT, not previous raw result",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(b.adaptacja.inputUsed.vdotOverride<=a.adaptacja.inputUsed.vdotOverride*1.02+.0001)\n\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:33:378\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:33:1"
+    },
+    {
+      "name": "new race within days: no extra quality or race-week frequency overflow",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(!p.treningi.filter(t=>t.data>='2027-01-12').some(quality))\n\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:34:180\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:34:1"
+    },
+    {
+      "name": "pain persists and only explicit symptom clearance releases it",
+      "ok": true
+    },
+    {
+      "name": "fatigue, high RPE and shortened sessions reduce load",
+      "ok": true
+    },
+    {
+      "name": "adaptation deterministic and inputs immutable",
+      "ok": true
+    },
+    {
+      "name": "prepared marathon retains specific work, fuel instructions and duration guards",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(p.treningi.some(t=>t.podtyp==='dlugi'&&/30–60 g/.test(t.opis)))\n\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:38:331\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:38:1"
+    },
+    {
+      "name": "conditional marathon specificity does not claim observed readiness",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(p.treningi.some(t=>t.podtyp==='tempo_startowe'))\n\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:39:194\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:39:1"
+    },
+    {
+      "name": "reusing original input still preserves latest effective pace and new race date",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ '2027-03-28'\n- '2027-04-04'\n         ^\n\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:40:364\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:40:1"
+    },
+    {
+      "name": "same observation with different key ordering is idempotent",
+      "ok": true
+    },
+    {
+      "name": "already completed today is not scheduled a second time",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(p.treningi.every(t=>t.data>'2027-01-10'))\n\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:42:161\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:42:1"
+    },
+    {
+      "name": "prepared marathon controlled MP finish replaces standalone quality",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(specific.length>0)\n\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:43:328\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:43:1"
+    },
+    {
+      "name": "two-day HM taper reflects actual run dates near midweek event",
+      "ok": true
+    },
+    {
+      "name": "repeat update after completed workout today remains valid",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(b.treningi.every(t=>t.data>'2027-01-10'))\n\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:45:237\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:45:1"
+    },
+    {
+      "name": "positive observed distance cannot have zero elapsed time",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\ntrue !== false\n\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:46:76\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:46:1"
+    },
+    {
+      "name": "two-day side race week respects no-long allocation",
+      "ok": true
+    },
+    {
+      "name": "marathon MP guidance agrees with its estimated effort",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /5/. Input:\n\n'6-7/10'\n\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:48:323\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:48:1"
+    },
+    {
+      "name": "two-day half low-base taper respects shared weekly budget",
+      "ok": true
+    },
+    {
+      "name": "two-day marathon low-base taper respects shared weekly budget",
+      "ok": true
+    },
+    {
+      "name": "availability update removes unavailable old preferences without mutating the past",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: [\"Preferowane dni muszą należeć do dostępnych dni.\"]\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:50:251\n    at test (file:///workspace/-/run-planner/v24/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v24/testy/v24.mjs:50:1"
+    },
+    {
+      "name": "stress 0",
+      "ok": true
+    },
+    {
+      "name": "stress 1",
+      "ok": true
+    },
+    {
+      "name": "stress 2",
+      "ok": true
+    },
+    {
+      "name": "stress 3",
+      "ok": true
+    },
+    {
+      "name": "stress 4",
+      "ok": true
+    },
+    {
+      "name": "stress 5",
+      "ok": true
+    },
+    {
+      "name": "stress 6",
+      "ok": true
+    },
+    {
+      "name": "stress 7",
+      "ok": true
+    },
+    {
+      "name": "stress 8",
+      "ok": true
+    },
+    {
+      "name": "stress 9",
+      "ok": true
+    },
+    {
+      "name": "stress 10",
+      "ok": true
+    },
+    {
+      "name": "stress 11",
+      "ok": true
+    },
+    {
+      "name": "stress 12",
+      "ok": true
+    },
+    {
+      "name": "stress 13",
+      "ok": true
+    },
+    {
+      "name": "stress 14",
+      "ok": true
+    },
+    {
+      "name": "stress 15",
+      "ok": true
+    },
+    {
+      "name": "stress 16",
+      "ok": true
+    },
+    {
+      "name": "stress 17",
+      "ok": true
+    },
+    {
+      "name": "stress 18",
+      "ok": true
+    },
+    {
+      "name": "stress 19",
+      "ok": true
+    },
+    {
+      "name": "stress 20",
+      "ok": true
+    },
+    {
+      "name": "stress 21",
+      "ok": true
+    },
+    {
+      "name": "stress 22",
+      "ok": true
+    },
+    {
+      "name": "stress 23",
+      "ok": true
+    },
+    {
+      "name": "stress 24",
+      "ok": true
+    },
+    {
+      "name": "stress 25",
+      "ok": true
+    },
+    {
+      "name": "stress 26",
+      "ok": true
+    },
+    {
+      "name": "stress 27",
+      "ok": true
+    },
+    {
+      "name": "stress 28",
+      "ok": true
+    },
+    {
+      "name": "stress 29",
+      "ok": true
+    },
+    {
+      "name": "stress 30",
+      "ok": true
+    },
+    {
+      "name": "stress 31",
+      "ok": true
+    },
+    {
+      "name": "stress 32",
+      "ok": true
+    },
+    {
+      "name": "stress 33",
+      "ok": true
+    },
+    {
+      "name": "stress 34",
+      "ok": true
+    },
+    {
+      "name": "stress 35",
+      "ok": true
+    },
+    {
+      "name": "stress 36",
+      "ok": true
+    },
+    {
+      "name": "stress 37",
+      "ok": true
+    },
+    {
+      "name": "stress 38",
+      "ok": true
+    },
+    {
+      "name": "stress 39",
+      "ok": true
+    },
+    {
+      "name": "stress 40",
+      "ok": true
+    },
+    {
+      "name": "stress 41",
+      "ok": true
+    },
+    {
+      "name": "stress 42",
+      "ok": true
+    },
+    {
+      "name": "stress 43",
+      "ok": true
+    },
+    {
+      "name": "stress 44",
+      "ok": true
+    },
+    {
+      "name": "stress 45",
+      "ok": true
+    },
+    {
+      "name": "stress 46",
+      "ok": true
+    },
+    {
+      "name": "stress 47",
+      "ok": true
+    },
+    {
+      "name": "stress 48",
+      "ok": true
+    },
+    {
+      "name": "stress 49",
+      "ok": true
+    },
+    {
+      "name": "stress 50",
+      "ok": true
+    },
+    {
+      "name": "stress 51",
+      "ok": true
+    },
+    {
+      "name": "stress 52",
+      "ok": true
+    },
+    {
+      "name": "stress 53",
+      "ok": true
+    },
+    {
+      "name": "stress 54",
+      "ok": true
+    },
+    {
+      "name": "stress 55",
+      "ok": true
+    },
+    {
+      "name": "stress 56",
+      "ok": true
+    },
+    {
+      "name": "stress 57",
+      "ok": true
+    },
+    {
+      "name": "stress 58",
+      "ok": true
+    },
+    {
+      "name": "stress 59",
+      "ok": true
+    },
+    {
+      "name": "stress 60",
+      "ok": true
+    },
+    {
+      "name": "stress 61",
+      "ok": true
+    },
+    {
+      "name": "stress 62",
+      "ok": true
+    },
+    {
+      "name": "stress 63",
+      "ok": true
+    },
+    {
+      "name": "stress 64",
+      "ok": true
+    },
+    {
+      "name": "stress 65",
+      "ok": true
+    },
+    {
+      "name": "stress 66",
+      "ok": true
+    },
+    {
+      "name": "stress 67",
+      "ok": true
+    },
+    {
+      "name": "stress 68",
+      "ok": true
+    },
+    {
+      "name": "stress 69",
+      "ok": true
+    },
+    {
+      "name": "stress 70",
+      "ok": true
+    },
+    {
+      "name": "stress 71",
+      "ok": true
+    },
+    {
+      "name": "stress 72",
+      "ok": true
+    },
+    {
+      "name": "stress 73",
+      "ok": true
+    },
+    {
+      "name": "stress 74",
+      "ok": true
+    },
+    {
+      "name": "stress 75",
+      "ok": true
+    },
+    {
+      "name": "stress 76",
+      "ok": true
+    },
+    {
+      "name": "stress 77",
+      "ok": true
+    },
+    {
+      "name": "stress 78",
+      "ok": true
+    },
+    {
+      "name": "stress 79",
+      "ok": true
+    },
+    {
+      "name": "stress 80",
+      "ok": true
+    },
+    {
+      "name": "stress 81",
+      "ok": true
+    },
+    {
+      "name": "stress 82",
+      "ok": true
+    },
+    {
+      "name": "stress 83",
+      "ok": true
+    },
+    {
+      "name": "stress 84",
+      "ok": true
+    },
+    {
+      "name": "stress 85",
+      "ok": true
+    },
+    {
+      "name": "stress 86",
+      "ok": true
+    },
+    {
+      "name": "stress 87",
+      "ok": true
+    },
+    {
+      "name": "stress 88",
+      "ok": true
+    },
+    {
+      "name": "stress 89",
+      "ok": true
+    },
+    {
+      "name": "stress 90",
+      "ok": true
+    },
+    {
+      "name": "stress 91",
+      "ok": true
+    },
+    {
+      "name": "stress 92",
+      "ok": true
+    },
+    {
+      "name": "stress 93",
+      "ok": true
+    },
+    {
+      "name": "stress 94",
+      "ok": true
+    },
+    {
+      "name": "stress 95",
+      "ok": true
+    },
+    {
+      "name": "stress 96",
+      "ok": true
+    },
+    {
+      "name": "stress 97",
+      "ok": true
+    },
+    {
+      "name": "stress 98",
+      "ok": true
+    },
+    {
+      "name": "stress 99",
+      "ok": true
+    },
+    {
+      "name": "stress 100",
+      "ok": true
+    },
+    {
+      "name": "stress 101",
+      "ok": true
+    },
+    {
+      "name": "stress 102",
+      "ok": true
+    },
+    {
+      "name": "stress 103",
+      "ok": true
+    },
+    {
+      "name": "stress 104",
+      "ok": true
+    },
+    {
+      "name": "stress 105",
+      "ok": true
+    },
+    {
+      "name": "stress 106",
+      "ok": true
+    },
+    {
+      "name": "stress 107",
+      "ok": true
+    },
+    {
+      "name": "stress 108",
+      "ok": true
+    },
+    {
+      "name": "stress 109",
+      "ok": true
+    },
+    {
+      "name": "stress 110",
+      "ok": true
+    },
+    {
+      "name": "stress 111",
+      "ok": true
+    },
+    {
+      "name": "stress 112",
+      "ok": true
+    },
+    {
+      "name": "stress 113",
+      "ok": true
+    },
+    {
+      "name": "stress 114",
+      "ok": true
+    },
+    {
+      "name": "stress 115",
+      "ok": true
+    },
+    {
+      "name": "stress 116",
+      "ok": true
+    },
+    {
+      "name": "stress 117",
+      "ok": true
+    },
+    {
+      "name": "stress 118",
+      "ok": true
+    },
+    {
+      "name": "stress 119",
+      "ok": true
+    },
+    {
+      "name": "stress 120",
+      "ok": true
+    },
+    {
+      "name": "stress 121",
+      "ok": true
+    },
+    {
+      "name": "stress 122",
+      "ok": true
+    },
+    {
+      "name": "stress 123",
+      "ok": true
+    },
+    {
+      "name": "stress 124",
+      "ok": true
+    },
+    {
+      "name": "stress 125",
+      "ok": true
+    },
+    {
+      "name": "stress 126",
+      "ok": true
+    },
+    {
+      "name": "stress 127",
+      "ok": true
+    }
+  ]
+}

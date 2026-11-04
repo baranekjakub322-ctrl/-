@@ -1,0 +1,151 @@
+{
+ "generator": "planGenerator_v21.js",
+ "nazwa": "jakosciowe",
+ "zaliczone": 35,
+ "niezaliczone": 0,
+ "bledy": [],
+ "planow": 336,
+ "liczniki": {},
+ "wszystkieTesty": [
+  {
+   "opis": "siatka jakościowa: 336 planów",
+   "ok": true
+  },
+  {
+   "opis": "jakość: plan_nie_ok = 0",
+   "ok": true
+  },
+  {
+   "opis": "jakość: regeneracja_za_dluga_dla_poziomu = 0",
+   "ok": true
+  },
+  {
+   "opis": "jakość: regeneracja_bez_mocnej_jednostki = 0",
+   "ok": true
+  },
+  {
+   "opis": "jakość: trzy_regeneracje_pod_rzad = 0",
+   "ok": true
+  },
+  {
+   "opis": "jakość: bieg_krotszy_niz_2_5km = 0",
+   "ok": true
+  },
+  {
+   "opis": "jakość: dwa_mocne_dni_pod_rzad = 0",
+   "ok": true
+  },
+  {
+   "opis": "jakość: naruszenia_krytyczne = 0",
+   "ok": true
+  },
+  {
+   "opis": "jakość: kod_REGENERACJA_ZA_DLUGA = 0",
+   "ok": true
+  },
+  {
+   "opis": "jakość: kod_DLUGA_PRZERWA = 0",
+   "ok": true
+  },
+  {
+   "opis": "jakość: kod_UDZIAL_DLUGIEGO = 0",
+   "ok": true
+  },
+  {
+   "opis": "jakość: kod_BIEG_ZA_KROTKI = 0",
+   "ok": true
+  },
+  {
+   "opis": "jakość: kod_REGENERACJA_POZIOM = 0",
+   "ok": true
+  },
+  {
+   "opis": "jakość: kod_REGENERACJA_BEZ_MOCNEGO = 0",
+   "ok": true
+  },
+  {
+   "opis": "jakość: 2dni_wiecej_niz_2_biegi = 0",
+   "ok": true
+  },
+  {
+   "opis": "jakość: 2dni_dlugi_ponad_66proc = 0",
+   "ok": true
+  },
+  {
+   "opis": "jakość: 1dzien_wiecej_niz_1_bieg = 0",
+   "ok": true
+  },
+  {
+   "opis": "jakość: ocena_poza_zakresem = 0",
+   "ok": true
+  },
+  {
+   "opis": "jakość: brak_wykonalnosci = 0",
+   "ok": true
+  },
+  {
+   "opis": "jakość: maraton_2dni_nie_oznaczony = 0",
+   "ok": true
+  },
+  {
+   "opis": "jakość: brak_taperingu_przed_startem = 0",
+   "ok": true
+  },
+  {
+   "opis": "ocena: 0 < 1 < 10 < 100 ostrzeżeń = ściśle niższa ocena (V20 nasycała się po kilku), tysiące nie poprawiają wyniku",
+   "ok": true
+  },
+  {
+   "opis": "ocena: pojedyncze ostrzeżenie prawie nie zmienia oceny",
+   "ok": true
+  },
+  {
+   "opis": "ocena: tysiąc ostrzeżeń = ocena ≤ 2 (V20: kara max 2 pkt)",
+   "ok": true
+  },
+  {
+   "opis": "ocena: jedno naruszenie krytyczne obniża bezpieczeństwo do ≤4 i ocenę ogólną do ≤6",
+   "ok": true
+  },
+  {
+   "opis": "ocena: ostrzeżenia harmonogramu nie psują oceny bezpieczeństwa (rozdzielenie kategorii)",
+   "ok": true
+  },
+  {
+   "opis": "ocena: krytyczne obniżają ocenę ogólną",
+   "ok": true
+  },
+  {
+   "opis": "trimWeekRuns bez minRuns: nie usuwa biegów, zgłasza niepowodzenie (13 > 12)",
+   "ok": true
+  },
+  {
+   "opis": "trimWeekRuns z minRuns=3: zdejmuje dokładnie jeden dodatkowy bieg",
+   "ok": true
+  },
+  {
+   "opis": "trimWeekRuns: nigdy poniżej minRuns",
+   "ok": true
+  },
+  {
+   "opis": "trimWeekRuns: skracanie biegów do limitu działa",
+   "ok": true
+  },
+  {
+   "opis": "regeneracja: istnieje i ≤45 min dla średniozaawansowanego",
+   "ok": true
+  },
+  {
+   "opis": "regeneracja: biegów spokojnych więcej niż regeneracyjnych (regeneracja to wyjątek, nie reguła)",
+   "ok": true
+  },
+  {
+   "opis": "regeneracja: limit zależy od poziomu (zaawansowany ma dłuższy limit niż średniozaawansowany)",
+   "ok": true
+  },
+  {
+   "opis": "regeneracja: początkujący ≤35 min",
+   "ok": true
+  }
+ ]
+}

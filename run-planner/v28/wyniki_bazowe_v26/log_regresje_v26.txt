@@ -1,0 +1,31 @@
+{
+  target: '/workspace/-/run-planner/v26',
+  passed: 6,
+  failed: 0,
+  tests: [
+    {
+      name: 'consecutive two-day calendar rotates development and endurance without adjacent hard sessions',
+      ok: true
+    },
+    {
+      name: 'zero-distance observation cannot provide an executed race result',
+      ok: true
+    },
+    {
+      name: 'impossible test split cannot enter adaptation evidence',
+      ok: true
+    },
+    {
+      name: 'a single long effort cannot bypass regularity in marathon stages',
+      ok: true
+    },
+    {
+      name: 'quality exposures have explicit predecessor and warm/cool information',
+      ok: true
+    },
+    {
+      name: 'independent safety invariants are exposed separately from score',
+      ok: true
+    }
+  ]
+}

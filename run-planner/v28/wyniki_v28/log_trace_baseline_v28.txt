@@ -1,0 +1,1060 @@
+v26 28-17 [
+  {
+    week: '2026-11-02',
+    desired: { km: 35, longKm: 14 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-11-09',
+    desired: { km: 37.1, longKm: 14 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-11-16',
+    desired: { km: 37.1, longKm: 15 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-11-23',
+    desired: { km: 29.6, longKm: 11 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-11-30',
+    desired: { km: 39.22, longKm: 15 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-12-07',
+    desired: { km: 40.28, longKm: 15 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-12-14',
+    desired: { km: 40.28, longKm: 15 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-12-21',
+    desired: { km: 30.4, longKm: 11 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  }
+]
+v26 28-18 [
+  {
+    week: '2026-11-02',
+    desired: { km: 35, longKm: 14 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-11-09',
+    desired: { km: 37.1, longKm: 14 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-11-16',
+    desired: { km: 39.326, longKm: 15 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-11-23',
+    desired: { km: 31.4608, longKm: 11 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-11-30',
+    desired: { km: 41.68556, longKm: 15 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-12-07',
+    desired: { km: 44.52, longKm: 15 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-12-14',
+    desired: { km: 47.19120000000001, longKm: 15 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-12-21',
+    desired: { km: 36, longKm: 11 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  }
+]
+v26 28-24 [
+  {
+    week: '2026-11-02',
+    desired: { km: 35, longKm: 14 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-11-09',
+    desired: { km: 37.1, longKm: 15 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-11-16',
+    desired: { km: 38.160000000000004, longKm: 16 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-11-23',
+    desired: { km: 30.528000000000002, longKm: 12 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-11-30',
+    desired: { km: 40.449600000000004, longKm: 17 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-12-07',
+    desired: { km: 42.400000000000006, longKm: 18 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-12-14',
+    desired: { km: 44.52, longKm: 20 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-12-21',
+    desired: { km: 35.616, longKm: 14 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  }
+]
+v26 28-25 [
+  {
+    week: '2026-11-02',
+    desired: { km: 35, longKm: 14 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-11-09',
+    desired: { km: 37.1, longKm: 15 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-11-16',
+    desired: { km: 39.326, longKm: 16 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-11-23',
+    desired: { km: 31.4608, longKm: 12 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-11-30',
+    desired: { km: 41.68556, longKm: 17 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-12-07',
+    desired: { km: 44.52, longKm: 18 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-12-14',
+    desired: { km: 47.7, longKm: 19 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-12-21',
+    desired: { km: 38.4, longKm: 14 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  }
+]
+v26 887-reference [
+  {
+    week: '2026-11-02',
+    desired: { km: 60, longKm: 24 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-11-09',
+    desired: { km: 63.6, longKm: 24 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-11-16',
+    desired: { km: 53, longKm: 25 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-11-23',
+    desired: { km: 40.8, longKm: 17 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-11-30',
+    desired: { km: 54.06, longKm: 25 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-12-07',
+    desired: { km: 54.06, longKm: 25 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-12-14',
+    desired: { km: 55.120000000000005, longKm: 25 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    week: '2026-12-21',
+    desired: { km: 41.6, longKm: 17 },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  }
+]
+v27 28-17 [
+  {
+    week: '2026-11-02',
+    desired: {
+      km: 35,
+      longKm: 14,
+      longMinutes: 93.14731198624158,
+      qualityMinutes: 10
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-11-09',
+    desired: {
+      km: 35.26923076923077,
+      longKm: 14.307692307692308,
+      longMinutes: 95.19450565626886,
+      qualityMinutes: 10
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-11-16',
+    desired: {
+      km: 35.53846153846154,
+      longKm: 14.615384615384615,
+      longMinutes: 97.24169932629614,
+      qualityMinutes: 15.6
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-11-23',
+    desired: {
+      km: 29.14153846153846,
+      longKm: 10.961538461538462,
+      longMinutes: 72.93127449472212,
+      qualityMinutes: 15.6
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-11-30',
+    desired: {
+      km: 35.80769230769231,
+      longKm: 14.923076923076923,
+      longMinutes: 99.28889299632344,
+      qualityMinutes: 16.8
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-12-07',
+    desired: {
+      km: 36.07692307692308,
+      longKm: 15.23076923076923,
+      longMinutes: 101.33608666635071,
+      qualityMinutes: 18
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-12-14',
+    desired: {
+      km: 36.34615384615385,
+      longKm: 15.538461538461538,
+      longMinutes: 103.38328033637801,
+      qualityMinutes: 19.2
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-12-21',
+    desired: {
+      km: 29.803846153846152,
+      longKm: 11.653846153846153,
+      longMinutes: 77.53746025228351,
+      qualityMinutes: 19.2
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  }
+]
+v27 28-18 [
+  {
+    week: '2026-11-02',
+    desired: {
+      km: 35,
+      longKm: 14,
+      longMinutes: 93.14731198624158,
+      qualityMinutes: 10
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-11-09',
+    desired: {
+      km: 35.26923076923077,
+      longKm: 14.307692307692308,
+      longMinutes: 95.19450565626886,
+      qualityMinutes: 10
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-11-16',
+    desired: {
+      km: 35.53846153846154,
+      longKm: 14.615384615384615,
+      longMinutes: 97.24169932629614,
+      qualityMinutes: 15.6
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-11-23',
+    desired: {
+      km: 29.14153846153846,
+      longKm: 10.961538461538462,
+      longMinutes: 72.93127449472212,
+      qualityMinutes: 15.6
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-11-30',
+    desired: {
+      km: 35.80769230769231,
+      longKm: 14.923076923076923,
+      longMinutes: 99.28889299632344,
+      qualityMinutes: 16.8
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-12-07',
+    desired: {
+      km: 36.07692307692308,
+      longKm: 15.23076923076923,
+      longMinutes: 101.33608666635071,
+      qualityMinutes: 18
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-12-14',
+    desired: {
+      km: 36.34615384615385,
+      longKm: 15.538461538461538,
+      longMinutes: 103.38328033637801,
+      qualityMinutes: 19.2
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-12-21',
+    desired: {
+      km: 29.803846153846152,
+      longKm: 11.653846153846153,
+      longMinutes: 77.53746025228351,
+      qualityMinutes: 19.2
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  }
+]
+v27 28-24 [
+  {
+    week: '2026-11-02',
+    desired: {
+      km: 35,
+      longKm: 14,
+      longMinutes: 93.14731198624158,
+      qualityMinutes: 10
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-11-09',
+    desired: {
+      km: 35.26923076923077,
+      longKm: 15.201426446218855,
+      longMinutes: 101.14085798727508,
+      qualityMinutes: 10
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-11-16',
+    desired: {
+      km: 35.53846153846154,
+      longKm: 16.40285289243771,
+      longMinutes: 109.13440398830859,
+      qualityMinutes: 10
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-11-23',
+    desired: {
+      km: 29.14153846153846,
+      longKm: 12.302139669328284,
+      longMinutes: 81.85080299123145,
+      qualityMinutes: 10
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-11-30',
+    desired: {
+      km: 35.80769230769231,
+      longKm: 17.604279338656568,
+      longMinutes: 117.12794998934213,
+      qualityMinutes: 10
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-12-07',
+    desired: {
+      km: 36.07692307692308,
+      longKm: 18.80570578487542,
+      longMinutes: 125.12149599037562,
+      qualityMinutes: 18
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-12-14',
+    desired: {
+      km: 36.34615384615385,
+      longKm: 20.00713223109428,
+      longMinutes: 133.11504199140916,
+      qualityMinutes: 19.2
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-12-21',
+    desired: {
+      km: 29.803846153846152,
+      longKm: 15.00534917332071,
+      longMinutes: 99.83628149355687,
+      qualityMinutes: 19.2
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  }
+]
+v27 28-25 [
+  {
+    week: '2026-11-02',
+    desired: {
+      km: 35,
+      longKm: 14,
+      longMinutes: 93.14731198624158,
+      qualityMinutes: 10
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-11-09',
+    desired: {
+      km: 35.26923076923077,
+      longKm: 15.076923076923077,
+      longMinutes: 100.31248983133706,
+      qualityMinutes: 10
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-11-16',
+    desired: {
+      km: 35.53846153846154,
+      longKm: 16.153846153846153,
+      longMinutes: 107.47766767643257,
+      qualityMinutes: 10
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-11-23',
+    desired: {
+      km: 29.14153846153846,
+      longKm: 12.115384615384615,
+      longMinutes: 80.60825075732443,
+      qualityMinutes: 10
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-11-30',
+    desired: {
+      km: 35.80769230769231,
+      longKm: 17.23076923076923,
+      longMinutes: 114.64284552152807,
+      qualityMinutes: 10
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-12-07',
+    desired: {
+      km: 36.07692307692308,
+      longKm: 18.307692307692307,
+      longMinutes: 121.80802336662357,
+      qualityMinutes: 18
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-12-14',
+    desired: {
+      km: 36.34615384615385,
+      longKm: 19.384615384615383,
+      longMinutes: 128.9732012117191,
+      qualityMinutes: 19.2
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-12-21',
+    desired: {
+      km: 29.803846153846152,
+      longKm: 14.538461538461537,
+      longMinutes: 96.7299009087893,
+      qualityMinutes: 19.2
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  }
+]
+v27 887-reference [
+  {
+    week: '2026-11-02',
+    desired: {
+      km: 60,
+      longKm: 24,
+      longMinutes: 168.113285437385,
+      qualityMinutes: 10
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-11-09',
+    desired: {
+      km: 60.475414443346516,
+      longKm: 24.275414443346513,
+      longMinutes: 170.04248655938045,
+      qualityMinutes: 10
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-11-16',
+    desired: {
+      km: 60.950828886693024,
+      longKm: 24.550828886693026,
+      longMinutes: 171.9716876813759,
+      qualityMinutes: 10
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-11-23',
+    desired: {
+      km: 49.97967968708828,
+      longKm: 18.41312166501977,
+      longMinutes: 128.97876576103192,
+      qualityMinutes: 10
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-11-30',
+    desired: {
+      km: 61.42624333003954,
+      longKm: 24.826243330039542,
+      longMinutes: 173.90088880337137,
+      qualityMinutes: 16.8
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-12-07',
+    desired: {
+      km: 61.901657773386056,
+      longKm: 25.101657773386055,
+      longMinutes: 175.83008992536682,
+      qualityMinutes: 18
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-12-14',
+    desired: {
+      km: 62.377072216732564,
+      longKm: 25.377072216732568,
+      longMinutes: 177.75929104736227,
+      qualityMinutes: 19.2
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-12-21',
+    desired: {
+      km: 51.1491992177207,
+      longKm: 19.032804162549425,
+      longMinutes: 133.3194682855217,
+      qualityMinutes: 19.2
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  }
+]

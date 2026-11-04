@@ -1,0 +1,129 @@
+RUN PLANNER V28 — SPECYFIKACJA NAPRAWCZA I PROJEKTOWA DLA CODEX
+Wersja dokumentu: 1.0 | Podstawa: audyt RunPlanner_V27.zip
+
+CEL I SPOSÓB PRACY
+Nie wykonuj kolejnej kosmetycznej iteracji. Zbuduj V28 na podstawie V27, zachowując API, deterministyczność, historię wykonania, zgodność eksportu i bezpieczeństwo. Niniejszy dokument zawiera już diagnozę, hipotezy mechaniczne, proponowane algorytmy, konkretne scenariusze i kryteria odbioru. Twoim zadaniem jest zweryfikować wskazane hipotezy w kodzie, wdrożyć rozwiązania, przeprowadzić eksperymenty i udokumentować wyjątki — nie zastępować tego planu własnym ogólnym backlogiem.
+
+NIE ZMIENIAJ starych scorerów 23.0.0 i 25.0.0, wejść frozen-1008 ani sposobu obliczania historycznych wyników. Nie optymalizuj wyłącznie pod wynik, nie osłabiaj limitów bezpieczeństwa, nie udawaj potwierdzonej adaptacji i nie deklaruj medycznej walidacji. V28 ma dawać lepsze, uzasadnione treningowo plany i nie pogarszać drastycznie innych.
+
+I. WNIOSKI Z AUDYTU V27 — DANE, KTÓRYCH NIE WOLNO ZIGNOROWAĆ
+- Benchmark 1008: V26 7.4467 -> V27 7.4922 (około +0.0455); 532 poprawy, 226 remisów, 250 pogorszeń.
+- Dystanse: 5 km 8.307->8.364; 10 km 8.229->8.240; HM 6.880->6.984; maraton 6.371->6.381.
+- 2 dni/tydzień: 7.101->7.333 (+0.232); 4 dni i 5 dni nieznacznie pogorszone. Chroń rzeczywisty postęp przy 2 dniach.
+- Macierz 28: maraton 4 dni 8.928->6.839; 5/6/7 dni 9.341->6.611. W badanym profilu szczyt 69->39 km, long 27->16 km. To krytyczna regresja planistyczna wymagająca śledzenia przyczyny.
+- Audyt 10 kryteriów: indywidualizacja 6.988->6.977; wykonalność 6.150->6.139; specyfika 6.808->6.916; jakość 7.049->7.140; taper 8.526->8.821; adaptacja statyczna 5.0 (brak historii, a nie dowód słabej implementacji).
+- Stary holdout 64: 7.2965->7.2801; nowy 224: 7.1252->7.1727. 120 przypadków V27 poniżej V23 vs 88 V26. Wewnętrzny wskaźnik poprawy rzeczywistych jednostek 233/1008, poniżej celu 300.
+- Raport V27 przyznaje: planer sezonowy jest ograniczony, zachowuje alokator i naprawiacze V26; qualityMinutes jest celem miękkim; realized oznacza PLANOWANE zaalokowanie, nie wykonanie.
+
+II. DIAGNOZA ARCHITEKTONICZNA — NAJWAŻNIEJSZA HIPOTEZA
+V27 projektuje sezonowe cele w model/season_v27.mjs, lecz przekazuje je do starego alokatora i naprawiaczy. Jeśli alokacja obetnie tygodniowy budżet lub długi bieg, kolejna logika może utrwalić zbyt niski poziom zamiast wrócić do wykonalnej trajektorii. To hipoteza wynikająca z obserwowanego 69->39 i 27->16, a NIE potwierdzona jeszcze pojedynczą linią kodu. Zweryfikuj ją instrumentacją pośrednich wartości. Nie zakładaj z góry, że jedyną przyczyną jest limiter sezonu.
+
+Wprowadź w debug/trace (bez ciężkich danych w domyślnym API) następujący łańcuch na każdy tydzień:
+profile evidence -> season desired -> feasible envelope -> allocated before repair -> repaired -> final actual plan -> delta/reason. Rejestruj km, min, longKm, longMinutes, workMinutes per stimulus family, sesje, dni, hard load i powody każdej redukcji. Przypisz kod przyczyny: SAFETY_LIMIT, SCHEDULE, RECOVERY, INPUT_UNCERTAINTY, PHASE, ALLOCATOR_CAP, REPAIR, ROUNDING, TAPER, RACE_WEEK. Raport ma pokazywać pierwszą operację, która utraciła bodziec, i czy strata była konieczna.
+
+III. NOWY KONTRAKT PLANOWANIA: INTENCJA -> KOPERTA -> ALOKACJA -> WERYFIKACJA
+1. DesiredPlan: optymalna, warunkowa trajektoria przy założeniu tolerancji deklarowanej bazy, bez traktowania jej jako wykonania.
+2. FeasibleEnvelope: zakres minimalny/zalecany/maksymalny km, minut i long run zależny od historii, poziomu, liczby dni, czasu do startu, tolerancji i bezpieczeństwa. NIE jeden arbitralny procent tygodniowy. Dane niepewne obniżają pewność, nie zawsze automatycznie kilometraż do poziomu początkującego.
+3. AllocatedPlan: realne dni i jednostki. Użyj ograniczonego deterministycznego wyszukiwania kandydatów z priorytetami leksykograficznymi: (a) zero naruszeń krytycznych; (b) zachowanie realistycznej specyfiki dystansu; (c) adekwatność całej objętości; (d) rytm jakości i regeneracji; (e) wygoda kalendarza. Nie zamieniaj tych celów na jedną sumę punktów pozwalającą 'kupić' bezpieczeństwo.
+4. Verification: porównanie intencji i finalnego tygodnia. Jeśli long run, sesje lub objętość zostały drastycznie obcięte, spróbuj alternatywnej alokacji, przesuń łatwe km, zmień podział sesji albo jawnie zdegraduj cel. NIE maskuj niedoboru dodaniem przypadkowych kilometrów jakości.
+5. Nie obiecuj, że każda deklarowana baza jest bezpieczna: dla sprzecznych lub niewiarygodnych danych oznacz 'wymaga potwierdzenia', zaproponuj konserwatywną ścieżkę i nie przypisuj jej tej samej gotowości.
+
+IV. NAPRAWA MARATONU — KONKRETNY PRZYPADEK REGRESJI
+Przypadek referencyjny z 07_ANALIZA_MARATON_V26_V27.md: wiek 35, intermediate, 4 dni, deklarowane 60 km/tydz., longestRecentRun 24 km, 10 km PB 55:00 bez daty, start 2027-04-14, dziś 2026-11-07. Drugi przypadek: podstawowa macierz 28 dla 5 dni i maratonu.
+
+A. Zapisz trace pierwszych 8, środkowych 8 i ostatnich 4 tygodni dla V26/V27/V28; identyfikuj dokładny moment utraty kilometrażu i long run. Rozróżnij poziom planowany od potwierdzonej tolerancji.
+B. Ustal dla każdego tygodnia spójne limity: long run z tolerancji dystansu ORAZ czasu, proporcja long do całego tygodnia, łączna objętość, dostępność 3–5 dni, zmęczenie i odciążenie. Żaden limit nie może w izolacji wymuszać 16 km long dla biegacza deklarującego 24 km, jeśli nie ma udokumentowanej przesłanki; ale 24 km deklaracji nie gwarantuje gotowości do 27 km.
+C. Jeśli plan z 4–5 dni nie może pomieścić długiego biegu, najpierw przenieś lub zmniejsz mniej istotne sesje, nie redukuj automatycznie najważniejszej ekspozycji. W szczególności zachowaj sensowne rozłożenie pozostałych km, zamiast zwiększać udział long do skrajnego procentu tygodnia.
+D. Modeluj bloki maratońskie: regularność -> tolerancja objętości -> długi bieg -> praca specyficzna -> taper. Bramka następnego etapu jest warunkowa i oparta na wykonaniu, jeśli historia istnieje. Bez historii generuj plan warunkowy, nie 'gotowość osiągnięta'.
+E. Specyfika: wytrzymałość długiego biegu, opcjonalne umiarkowane fragmenty w tempie maratońskim tylko przy tolerancji, trening żywienia/nawodnienia jako wskazówka do praktyki, bez uniwersalnych dawek i bez twierdzeń klinicznych. Krótkie testy maksymalne 3 km nie mogą być automatycznym domyślnym narzędziem w maratonie.
+F. Dla 1–2 dni nie próbuj udawać pełnego przygotowania; zaproponuj realistyczny wariant bazowy, zmianę celu lub wydłużenie czasu.
+
+V. PÓŁMARATON — NIE WYLEWAJ DZIECKA Z KĄPIELĄ
+V27 poprawia wiele przypadków HM, ale w części profili obcina 54->39 km i 18->15 km. Zbadaj, czy wynika to z niepewności danych, ograniczeń long, czy błędu alokacji. Nie przywracaj 54 km automatycznie. Opracuj warianty zależne od tolerancji, fazy i celu: utrzymanie, progresja, start dla ukończenia, wynik. Long run powinien rosnąć adekwatnie do poziomu, z wyraźną fazą odciążenia. Dawkę progową mierz czasem pracy, nie całkowitym czasem sesji.
+
+VI. 5 KM I 10 KM — JAKOŚĆ BODŹCA, NIE PRZYPADKOWA RÓŻNORODNOŚĆ
+Wprowadź stateful progression per family (threshold, VO2/interval, race-pace, hill, strides) opartą na dawce pracy, liczbie ekspozycji i dostępnej regeneracji. Powtórzenie 4x800 m może być prawidłowe jako utrwalenie; nie karz za samo powtórzenie. Każde powtórzenie ma jednak powód: consolidation, insufficient evidence, fatigue, planned variation lub progression.
+
+Proponowany mechanizm: po 2–3 porównywalnych, dobrze tolerowanych wykonaniach rozważ jeden mały krok: liczba powtórzeń LUB długość odcinka LUB skrócenie przerwy LUB intensywność — nie wszystkie naraz. Bez wykonania pozostaw progresję warunkową i konserwatywną. Nie przyspieszaj automatycznie tempa z kalendarzem. Przed zawodami priorytetem jest świeżość i specyfika, nie mechaniczne zwiększanie dawki.
+
+W 10 km / 3 dni (profil 35 lat, 35 km/tydz., PB 52:00, cel 53:34) audyt wskazał 9.439 w mierniku historycznym i 8.310 w audycie V27. Nie zmieniaj go na siłę dla średniej: zaproponuj dwa warianty eksperckie i porównaj, czy testy 3 km są niezbędne, czy dawka progowa ma logiczną progresję, czy dni odpoczynku są właściwe, i czy łatwe km zachowują cel. Trzy maksymalne testy nie powinny być domyślne bez uzasadnienia.
+
+VII. DWA TRENINGI TYGODNIOWO — OCHRONA SUKCESU V27
+V27 uzyskała +0.232 na tej grupie. Wprowadź test antyregresyjny dla wszystkich 144 przypadków 2-dniowych. Priorytet: jeden spokojny/dłuższy bieg i jeden rozsądny bodziec, ale zależnie od celu dopuszczaj rotację akcentów i tygodnie wyłącznie łatwe. Nie wciskaj dwóch mocnych sesji. Nie nazywaj 2-dniowego maratonu pełnym przygotowaniem. Zwiększanie objętości powinno uwzględniać fakt, że każda jednostka stanowi duży udział tygodnia.
+
+VIII. INDYWIDUALIZACJA — KONKRETNY MODEL DANYCH
+W model/profile_v27.mjs (lub nowym module V28) jawnie rozróżnij:
+- observed: ukończone sesje, świeżość, regularność, ostatnie 4–8 tygodni;
+- declared: bieżący km, najdłuższy bieg, PB z datą lub bez;
+- inferred: tempo, HR, tolerancja, niepewność;
+- goal: dystans, ukończenie/wynik, priorytet, termin;
+- constraints: dni, maksymalny czas jednostki, przerwa, preferencje, doświadczenie.
+Wynik ma zawierać provenance i confidence, ale nie pseudo-probabilistyczne '87% szans' bez kalibracji. Dwa profile o tej samej liczbie dni, ale 20 vs 60 km/tydz. nie powinny bez uzasadnienia mieć tego samego sufitu long run i tygodniowej objętości. Odwrotnie, samo wpisanie 60 km bez historii nie może potwierdzać wykonania.
+
+IX. PERIODYZACJA I REGENERACJA
+Wprowadź sezonową kontrolę równowagi: rozbudowa -> konsolidacja -> odciążenie -> specyfika -> taper. Nie wymuszaj '3 tygodnie + 1' dla każdego. Użyj ryzyka, dostępności i obciążeń. Rozpoznawaj, czy redukcja wynika z taperu, odciążenia, choroby, brakujących dni czy ograniczeń. Dla tygodnia startowego licz zawody w budżecie. Nie planuj intensywnej jednostki bezpośrednio po ciężkim longu, jeśli nie jest to uzasadniony przypadek zaawansowanego biegacza.
+
+X. ADAPTACJA — ODDZIELNY BENCHMARK, NIE KARA ZA BRAK DANYCH
+Nie próbuj podnosić 5/10 w statycznym audycie przez fałszowanie obserwacji. Przy braku historii raportuj NOT_ASSESSABLE lub neutralną ocenę z jawną adnotacją; nie zmieniaj historycznego miernika. Zbuduj benchmark adaptacyjny z historiami 6–12 tygodni: regularny sukces, niedobór snu, narastające RPE, opuszczone longi, nadmiar intensywności, powrót po przerwie, korekta aktywności, import duplikatów, różne strefy czasowe, dwie sesje jednego dnia. Sprawdzaj, że updatePlan jest idempotentne, nie nadrabia opuszczonych sesji, nie podnosi dawki po pojedynczym dobrym wyniku i nie uznaje planu za wykonany.
+
+XI. DZIESIĘĆ KRYTERIÓW — WSKAZÓWKI NAPRAWCZE
+1 Safety: twarde granice, brak skoków, obciążenie skumulowane, dane niepewne; nie myl bezpieczeństwa z minimalizowaniem km.
+2 Individualization: źródło i świeżość danych wpływają na receptę; test par różniących się jednym parametrem.
+3 Mileage: trajektoria w granicach tolerancji, nie spłaszczać sezonu przez jeden lokalny limit.
+4 Quality: porównywalna dawka workMinutes, progresja rodziny, rozgrzewka/schłodzenie i przerwy spójne.
+5 Specificity: priorytety zależne od dystansu; HM/M wymagają rozwijanej wytrzymałości, 5/10 km jakości szybkościowo-tlenowej.
+6 Recovery: spacing i obciążenie między tygodniami, sygnały zmęczenia, dni wolne.
+7 Periodization: zmiana realnych bodźców między fazami, bez resetu przy aktualizacji.
+8 Taper: dystans i wcześniejsze obciążenie, start wliczony, bez niepotrzebnego ciężkiego longu.
+9 Adaptation: oceniaj wyłącznie przy danych wykonania, zachowaj provenance.
+10 Feasibility: odrębnie jakość bezpiecznego planu i osiągalność wyniku; alternatywy dla nierealistycznych celów.
+Dla każdej oceny poniżej 10 w raporcie V28 wypisz: konkretny dowód w planie, mechanizm odpowiedzialny, możliwą korektę, ryzyko uboczne i test weryfikujący. Nie dawaj ogólnika 'ulepszyć'.
+
+XII. SPÓJNOŚĆ JEDNOSTEK I KOMUNIKATÓW
+Sprawdź sumę km etapów vs km sesji, tempo i czas vs dystans, workMinutes bez rozgrzewki, rzeczywistą przerwę w interwałach, poprawność stref HR i ich źródła. Jeśli HRmax/progi są estymowane, pokazuj zakres jako orientacyjny, preferuj odczucie wysiłku/talk test; nie przedstawiaj Z2 110–129 jako zmierzonej fizjologii bez danych. Dodaj walidator round-trip serializacji JSON i dat lokalnych.
+
+XIII. ALGORYTM KANDYDATÓW — PROPONOWANA IMPLEMENTACJA
+Nie rób pełnego kosztownego global search. Dla każdego tygodnia wygeneruj 3–8 sensownych wariantów: różne rozłożenie easy km, położenie long, wariant jednej jakości, wariant ostrożny. Odrzuć naruszające twarde warunki. Oceń w kolejności: specyficzna minimalna dawka, zgodność z tolerancją, bliskość trajektorii, regeneracja, stabilność sezonu. Dla całego bloku 3–6 tygodni użyj ograniczonego beam search lub dynamic programming z pamięcią ostatnich bodźców; deterministyczne tie-break. Zachowaj szybki fallback dla prostych profili. W logach pokaż, dlaczego wybrano wariant B zamiast A. To propozycja implementacyjna, nie nakaz, jeśli lepsza metoda przejdzie te same testy.
+
+XIV. REGRESJE — METODA TRIAGE, NIE MASKOWANIE
+Zamroź wyniki V27 i V26. Podziel 250 regresji V27 na: (1) poważne zmniejszenie dawki/long, (2) brak specyfiki, (3) pogorszenie progresji, (4) taper/tydzień startu, (5) artefakt starego scorera, (6) niejednoznaczne. Każdy przypadek ma identyfikator, profile, pierwszą różnicę w tygodniu, ocenę trzech scorerów, ryzyko i decyzję. Najpierw napraw 20 największych spadków i wszystkie maratony 4–7 dni w macierzy 28. Dla regresji uzasadnionych bezpieczeństwem udokumentuj konkretny powód, a nie ogólne 'zachowano bezpieczeństwo'. Nie wolno sztucznie poprawiać starego scorera przez niepotrzebne km lub ciężkie treningi.
+
+XV. TESTY AKCEPTACYJNE I PROGI JAKOŚCI
+A. Obowiązkowo uruchom 28, 1008, holdout 64, holdout 224, 40 profili eksperckich, wszystkie testy V27 i nowe testy V28. Zachowaj identyczne wejścia i scorer dla porównań.
+B. Osobne testy metamorf.: więcej dostępnych dni nie musi wymuszać więcej km; lepsza potwierdzona tolerancja nie powinna bez powodu pogarszać planu; mniej czasu do startu nie może prowadzić do niebezpiecznego nadrabiania; brak danych nie może udawać wykonania; korekta aktywności zmienia tylko uzasadnione przyszłe decyzje.
+C. Dla maratonu 4–5 dni, 60 km deklarowane i long 24 km: porównaj 8 pierwszych tygodni i szczyt. Nie wymuszaj z góry 69 km ani 27 km; wymagaj uzasadnienia każdego dużego obcięcia. Jeżeli powrót do większej dawki jest niebezpieczny, zaproponuj wariant i wyjaśnij.
+D. Dla 10 km 3 dni: brak nadmiernych maksymalnych testów, czytelna progresja progu/interwałów, prawidłowe przerwy, spokojne dni.
+E. Dla 2 dni: ochrona większości 114 poprawionych przypadków, analiza każdej nowej regresji.
+F. Brak krytycznych naruszeń bezpieczeństwa, NaN, niestabilnych dat, duplikatów i rozjazdu sum etapów.
+G. Cele aspiracyjne: wynik frozen-1008 wyraźnie >7.492, docelowo >=7.70; zmniejszyć 250 regresji co najmniej o połowę; odzyskać maratońskie regresje; poprawić średnią audytu 10 kryteriów i liczbę rzeczywistych popraw jednostek >233. To cele, NIE licencja na tuning pod testy. Jeśli nieosiągnięte, wyjaśnij ograniczenie i nie nazywaj V28 przełomem.
+H. Osobny blind review 30–50 planów z próbką pogorszeń i losowych remisów; opis treningów i przyczyn, bez sugerowania wersji oceniającemu. Nie przedstawiaj samooceny modelu jako niezależnego trenera.
+
+XVI. PRZEBIEG WDROŻENIA — WYMAGANE ETAPY
+1. Zrób snapshot V27 i zarejestruj hashe/scorery, baseline oraz odtwarzalne komendy.
+2. Instrumentuj trace i znajdź przyczynę 69->39 i 27->16; opisz dokładne funkcje/warunki i reproduktor.
+3. Napraw interfejs season->allocator->repair, dodaj invarianty zachowania celu i bezpieczny fallback.
+4. Zaimplementuj kopertę tolerancji i specyfikę HM/M, z ochroną 2-dniowych postępów.
+5. Dodaj rejestr porównywalnych dawek, ograniczoną progresję i kontrolę testów.
+6. Wzmocnij adaptację i spójność jednostek; przetestuj aktualizacje planów.
+7. Po KAŻDYM etapie uruchom 28 + reprezentatywne 1008; jeśli duża regresja, cofaj eksperyment lub dokumentuj konflikt, nie kumuluj błędów.
+8. Uruchom pełne zestawy i holdout; zrób analizę błędów oraz niezależny audyt 10 kryteriów.
+9. Dopiero potem uporządkuj moduły i optymalizuj wydajność, bez naruszania API.
+
+XVII. OBOWIĄZKOWE ARTEFAKTY V28
+- RunPlanner_V28.zip z pełnym działającym kodem, testami i instrukcją uruchomienia.
+- START_TUTAJ_V28.md: jak uruchomić, co zmieniono, co NIE zostało poprawione.
+- DIAGNOZA_PRZYCZYN_V27.md: dokładne funkcje i warunki powodujące regresje; dowody trace przed/po.
+- MARATON_4_5_DNI_PRZED_PO.md: pełne tygodnie i długie biegi, ocena bezpieczeństwa.
+- BENCHMARK_28_V27_V28.csv/.md i BENCHMARK_1008_V27_V28.csv/.json/.md; identyfikatory i delta.
+- HOLDOUT_64_224_V27_V28.md; liczba popraw/remis/regresji i przypadki najgorsze.
+- AUDYT_10_KRYTERIOW_V28.md: per kryterium, dowody, braki, testy, oddzielnie dane statyczne i adaptacyjne.
+- ANALIZA_10KM_3DNI_V27_V28.md: realne treningi, nie tylko score.
+- ADAPTACJA_V28.md: 6–12-tygodniowe historie i zachowanie updatePlan.
+- RAPORT_REGRESJI_V28.md: pełny rejestr, przyczyny i nierozstrzygnięte wyjątki.
+- RAPORT_TESTOW_V28.md, WYDAJNOSC_V28.md, OGRANICZENIA_V28.md, REKOMENDACJE_V29.md.
+- Krótka tabela decyzji projektowych: problem -> zmiana kodu -> dowód poprawy -> koszt/ryzyko -> nierozwiązane.
+
+XVIII. ZASADA KOŃCOWA
+V28 ma być faktycznie lepszym trenerem-algorytmem, a nie lepszym graczem w scoring. Nie dodawaj setek linii dla pozoru. Nie uznawaj bezpiecznego, ale zbyt słabego planu za sukces, ani agresywnego, ale punktowanego wysoko za dobry. Gdy reguły konfliktują, przedstaw wybór i jego konsekwencje. W razie braku zewnętrznych danych nie wymyślaj walidacji. Dostarcz działający ZIP i uczciwy raport.
+
+KONTEKST: podstawą są konkretne pliki z V27: 02_ARCHITEKTURA_V27.md, 03_BENCHMARK_1008_V26_V27.csv, 04_BENCHMARK_28_V26_V27.md, 05_AUDYT_10_KRYTERIOW_V27.md, 06_ANALIZA_10KM_3DNI_V26_V27.md, 07_ANALIZA_MARATON_V26_V27.md, 09_REGRESJE_I_REMISY_V27.md, 13_OGRANICZENIA_V27.md, 14_REKOMENDACJE_V28.md oraz model/season_v27.mjs, model/constraints_v27.mjs, model/quality_v27.mjs, model/ledger_v27.mjs, model/readiness_v27.mjs, scoring/v27.mjs. Wskazane moduły są punktami startowymi, nie dowodem, że przyczyna leży wyłącznie w nich.

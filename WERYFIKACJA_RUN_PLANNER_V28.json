@@ -1,0 +1,64 @@
+{
+  "version": "28.0.0",
+  "checkedAtUTC": "2026-11-04T19:10:38.625745+00:00",
+  "archive": {
+    "file": "RunPlanner_V28.zip",
+    "bytes": 30903316,
+    "sha256": "c5b1f203829b315fe35a7b7f29a4d26fb72b31312bc82f1e91a7e7ec8ad01dea",
+    "files": 858,
+    "manifestFilesVerified": 857,
+    "crc": "PASS",
+    "integrity": "PASS"
+  },
+  "crc": "PASS",
+  "allManifestEntriesVerified": 857,
+  "sourceHashesMatchFullPrimaryRun": true,
+  "primaryFullRun": {
+    "stagesPassed": 17,
+    "stagesFailed": 0,
+    "checksPassed": 2144,
+    "checksFailed": 0,
+    "node": "v24.19.0"
+  },
+  "extractedZipVerification": {
+    "commands": [
+      {
+        "name": "v28",
+        "status": 0
+      },
+      {
+        "name": "v28_inherited",
+        "status": 0
+      },
+      {
+        "name": "adaptacja_compat_v28",
+        "status": 0
+      },
+      {
+        "name": "chronologia_v28",
+        "status": 0
+      },
+      {
+        "name": "kalibracja_v28",
+        "status": 0
+      },
+      {
+        "name": "benchmark_v28",
+        "status": 0
+      }
+    ],
+    "allComparisonRowsExactlyReproduced": {
+      "matrix28": 28,
+      "extended": 1008,
+      "holdout64": 64,
+      "holdout224": 224
+    },
+    "allManifestEntriesStillMatchAfterTests": true,
+    "isFull17StageRepeat": false,
+    "scope": "Focused API, training, activity/chronology, calibration contracts and all 1324 comparison inputs; the complete 17 stages ran in the primary tree.",
+    "repeatNotAddedToPassCount": true
+  },
+  "githubDownload": {
+    "status": "not_checked_yet"
+  }
+}
