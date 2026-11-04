@@ -59,6 +59,13 @@
     "repeatNotAddedToPassCount": true
   },
   "githubDownload": {
-    "status": "not_checked_yet"
-  }
+    "status": "PASS",
+    "url": "https://github.com/baranekjakub322-ctrl/-/raw/refs/heads/runplanner-v28/RunPlanner_V28.zip",
+    "checkedAtUTC": "2026-11-04T19:13:29.170354+00:00",
+    "bytes": 30903316,
+    "sha256": "c5b1f203829b315fe35a7b7f29a4d26fb72b31312bc82f1e91a7e7ec8ad01dea",
+    "crc": "PASS",
+    "manifestEntriesVerified": 857
+  },
+  "sourceCommit": "45a143187440392c0df1df73756c9e3d42352a7d"
 }
