@@ -1,0 +1,46 @@
+{
+  "passed": 0,
+  "failed": 8,
+  "tests": [
+    {
+      "name": "two identified runs on the same day remain distinct",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(p.ok)\n\n    at file:///workspace/-/run-planner/v25/testy/regresje_v25.mjs:6:223\n    at test (file:///workspace/-/run-planner/v25/testy/regresje_v25.mjs:4:60)\n    at file:///workspace/-/run-planner/v25/testy/regresje_v25.mjs:6:1"
+    },
+    {
+      "name": "explicit correction retains original and recalculates execution",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(b.ok)\n\n    at file:///workspace/-/run-planner/v25/testy/regresje_v25.mjs:7:291\n    at test (file:///workspace/-/run-planner/v25/testy/regresje_v25.mjs:4:60)\n    at file:///workspace/-/run-planner/v25/testy/regresje_v25.mjs:7:1"
+    },
+    {
+      "name": "cancelled activity cannot silently reappear on import",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(b.ok&&c.ok)\n\n    at file:///workspace/-/run-planner/v25/testy/regresje_v25.mjs:8:273\n    at test (file:///workspace/-/run-planner/v25/testy/regresje_v25.mjs:4:60)\n    at file:///workspace/-/run-planner/v25/testy/regresje_v25.mjs:8:1"
+    },
+    {
+      "name": "timestamp with time zone has stable import identity",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(a.ok&&b.ok)\n\n    at file:///workspace/-/run-planner/v25/testy/regresje_v25.mjs:9:326\n    at test (file:///workspace/-/run-planner/v25/testy/regresje_v25.mjs:4:60)\n    at file:///workspace/-/run-planner/v25/testy/regresje_v25.mjs:9:1"
+    },
+    {
+      "name": "identical update is idempotent including journal revision",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n... Skipped lines\n\n  {\n    adaptacja: {\n      completedHistory: [],\n      date: '2027-01-10',\n      history: [\n...\n        },\n-       {\n-         date: '2027-01-10',\n-         missed: 0,\n-         observations: 1,\n-         reasons: [\n-           'Podtrzymano plan na podstawie dostępnych danych.'\n-         ],\n-         revision: 2,\n-         shortened: 0,\n-         volumeFactor: 1\n-       }\n      ],\n      inputUsed: {\n        age: 35,\n        availableDays: [\n          0,\n...\n      ],\n+     revision: 1\n-     revision: 2\n    },\n    decyzjePlanera: {\n      biegiZdjeteDlaLimituPowrotu: 0,\n      dlugiBiegSkroconyDlaUdzialu: 0,\n      jakoscPominietaBoSasiedztwoZDlugimBiegiem: 0,\n...\n    ostrzezenia: [\n+     'Pominięte jednostki (1) nie są przenoszone ani nadrabiane.',\n-     'Podtrzymano plan na podstawie dostępnych danych.',\n      'Tętno maksymalne jest szacowane wzorem 208 − 0,7 × wiek. Jeśli znasz swoje prawdziwe HRmax, wpisz je w profilu.'\n    ],\n    periodyzacja: {\n      bazaTygodnie: 2,\n      budowanieTygodnie: 5,\n\n    at file:///workspace/-/run-planner/v25/testy/regresje_v25.mjs:10:185\n    at test (file:///workspace/-/run-planner/v25/testy/regresje_v25.mjs:4:60)\n    at file:///workspace/-/run-planner/v25/testy/regresje_v25.mjs:10:1"
+    },
+    {
+      "name": "planned marathon peak is not completed evidence",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(p.readinessEvidence)\n\n    at file:///workspace/-/run-planner/v25/testy/regresje_v25.mjs:11:203\n    at test (file:///workspace/-/run-planner/v25/testy/regresje_v25.mjs:4:60)\n    at file:///workspace/-/run-planner/v25/testy/regresje_v25.mjs:11:1"
+    },
+    {
+      "name": "prepared marathon specific phase prioritises MP over threshold",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(q.filter(t=>t.podtyp==='tempo_startowe').length/q.length>=.6)\n\n    at file:///workspace/-/run-planner/v25/testy/regresje_v25.mjs:12:357\n    at test (file:///workspace/-/run-planner/v25/testy/regresje_v25.mjs:4:60)\n    at file:///workspace/-/run-planner/v25/testy/regresje_v25.mjs:12:1"
+    },
+    {
+      "name": "quality register explicitly distinguishes planned from completed",
+      "ok": false,
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(base.rejestrJakosci.every(r=>r.status==='planned'))\n\n    at file:///workspace/-/run-planner/v25/testy/regresje_v25.mjs:13:78\n    at test (file:///workspace/-/run-planner/v25/testy/regresje_v25.mjs:4:60)\n    at file:///workspace/-/run-planner/v25/testy/regresje_v25.mjs:13:1"
+    }
+  ]
+}

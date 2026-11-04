@@ -1,0 +1,20 @@
+{
+  "name": "run-planner",
+  "version": "25.0.0",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "bash uruchom_wszystko.sh",
+    "test:v23": "node testy/v23.mjs",
+    "benchmark": "node testy/kalibracja_v25.mjs",
+    "compare": "node testy/porownanie_v24_v25.mjs",
+    "report": "node testy/raporty_v25.mjs",
+    "test:v24": "node testy/v24.mjs",
+    "diagnosis": "node testy/diagnoza_v24.mjs",
+    "test:v25": "node testy/v25.mjs",
+    "test:adaptation": "node testy/adaptacja_v25.mjs"
+  }
+}

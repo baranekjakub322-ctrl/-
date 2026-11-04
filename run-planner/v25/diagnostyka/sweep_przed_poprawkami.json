@@ -1,0 +1,515 @@
+{
+ "generator": "planGenerator_v23.js",
+ "nazwa": "sweep",
+ "zaliczone": 20,
+ "niezaliczone": 1,
+ "bledy": [
+  {
+   "opis": "brak krytycznych naruszeń niezależnych niezmienników (118 planów z krytycznym, 130 naruszeń)",
+   "szczegoly": "[{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",3,40,16,5,5,\\\"2026-11-07\\\"]\",\"kod\":\"UDZIAL_DLUGIEGO\",\"msg\":\"2026-11-23: 79% przy 2 biegach (limit 60%)\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",3,40,16,5,5,\\\"2026-11-08\\\"]\",\"kod\":\"UDZIAL_DLUGIEGO\",\"msg\":\"2026-11-23: 79% przy 2 biegach (limit 60%)\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",3,40,16,9,6,\\\"2026-11-07\\\"]\",\"kod\":\"UDZIAL_DLUGIEGO\",\"msg\":\"2026-11-23: 79% przy 2 biegach (limit 60%)\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",3,40,16,9,6,\\\"2026-11-08\\\"]\",\"kod\":\"UDZIAL_DLUGIEGO\",\"msg\":\"2026-11-23: 79% przy 2 biegach (limit 60%)\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",3,40,16,14,0,\\\"2026-11-07\\\"]\",\"kod\":\"UDZIAL_DLUGIEGO\",\"msg\":\"2026-11-23: 79% przy 2 biegach (limit 60%)\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",3,40,16,14,0,\\\"2026-11-08\\\"]\",\"kod\":\"UDZIAL_DLUGIEGO\",\"msg\":\"2026-11-23: 79% przy 2 biegach (limit 60%)\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",3,40,16,22,1,\\\"2026-11-07\\\"]\",\"kod\":\"UDZIAL_DLUGIEGO\",\"msg\":\"2026-11-23: 79% przy 2 biegach (limit 60%)\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",3,40,16,22,1,\\\"2026-11-08\\\"]\",\"kod\":\"UDZIAL_DLUGIEGO\",\"msg\":\"2026-11-23: 79% przy 2 biegach (limit 60%)\"}]"
+  }
+ ],
+ "wynikiWgDystansu": {
+  "5k": {
+   "scenariuszy": 2352,
+   "ocenaOgolna": 9.62,
+   "bezpieczenstwo": 10,
+   "kategorie": {
+    "bezpieczenstwo": 10,
+    "harmonogram": 10,
+    "dopasowanieDoBiegacza": 10,
+    "progresja": 10,
+    "jakoscTreningow": 9.95,
+    "specyfikaDystansu": 9.35,
+    "regeneracja": 10
+   },
+   "naruszeniaKrytyczne": 28,
+   "ostrzezenia": 21
+  },
+  "10k": {
+   "scenariuszy": 2352,
+   "ocenaOgolna": 9.56,
+   "bezpieczenstwo": 10,
+   "kategorie": {
+    "bezpieczenstwo": 10,
+    "harmonogram": 9.97,
+    "dopasowanieDoBiegacza": 10,
+    "progresja": 10,
+    "jakoscTreningow": 9.92,
+    "specyfikaDystansu": 9.15,
+    "regeneracja": 10
+   },
+   "naruszeniaKrytyczne": 30,
+   "ostrzezenia": 105
+  },
+  "half": {
+   "scenariuszy": 2352,
+   "ocenaOgolna": 9.24,
+   "bezpieczenstwo": 10,
+   "kategorie": {
+    "bezpieczenstwo": 10,
+    "harmonogram": 9.97,
+    "dopasowanieDoBiegacza": 10,
+    "progresja": 10,
+    "jakoscTreningow": 9.92,
+    "specyfikaDystansu": 8.21,
+    "regeneracja": 10
+   },
+   "naruszeniaKrytyczne": 30,
+   "ostrzezenia": 117
+  },
+  "marathon": {
+   "scenariuszy": 2352,
+   "ocenaOgolna": 8.88,
+   "bezpieczenstwo": 10,
+   "kategorie": {
+    "bezpieczenstwo": 10,
+    "harmonogram": 9.95,
+    "dopasowanieDoBiegacza": 10,
+    "progresja": 10,
+    "jakoscTreningow": 9.9,
+    "specyfikaDystansu": 7.32,
+    "regeneracja": 10
+   },
+   "naruszeniaKrytyczne": 42,
+   "ostrzezenia": 195
+  }
+ },
+ "wynikiWgCzestotliwosci": {
+  "1": {
+   "scenariuszy": 1344,
+   "ocenaOgolna": 7.5,
+   "bezpieczenstwo": 10,
+   "kategorie": {
+    "bezpieczenstwo": 10,
+    "harmonogram": 9.8,
+    "dopasowanieDoBiegacza": 10,
+    "progresja": 10,
+    "jakoscTreningow": 9.8,
+    "specyfikaDystansu": 5.5,
+    "regeneracja": 10
+   },
+   "naruszeniaKrytyczne": 0,
+   "ostrzezenia": 420
+  },
+  "2": {
+   "scenariuszy": 1344,
+   "ocenaOgolna": 9.11,
+   "bezpieczenstwo": 10,
+   "kategorie": {
+    "bezpieczenstwo": 10,
+    "harmonogram": 10,
+    "dopasowanieDoBiegacza": 10,
+    "progresja": 10,
+    "jakoscTreningow": 10,
+    "specyfikaDystansu": 8.17,
+    "regeneracja": 10
+   },
+   "naruszeniaKrytyczne": 0,
+   "ostrzezenia": 0
+  },
+  "3": {
+   "scenariuszy": 1344,
+   "ocenaOgolna": 9.58,
+   "bezpieczenstwo": 10,
+   "kategorie": {
+    "bezpieczenstwo": 10,
+    "harmonogram": 10,
+    "dopasowanieDoBiegacza": 10,
+    "progresja": 10,
+    "jakoscTreningow": 9.65,
+    "specyfikaDystansu": 9.11,
+    "regeneracja": 10
+   },
+   "naruszeniaKrytyczne": 130,
+   "ostrzezenia": 18
+  },
+  "4": {
+   "scenariuszy": 1344,
+   "ocenaOgolna": 9.77,
+   "bezpieczenstwo": 10,
+   "kategorie": {
+    "bezpieczenstwo": 10,
+    "harmonogram": 10,
+    "dopasowanieDoBiegacza": 10,
+    "progresja": 10,
+    "jakoscTreningow": 10,
+    "specyfikaDystansu": 9.15,
+    "regeneracja": 10
+   },
+   "naruszeniaKrytyczne": 0,
+   "ostrzezenia": 0
+  },
+  "5": {
+   "scenariuszy": 1344,
+   "ocenaOgolna": 9.77,
+   "bezpieczenstwo": 10,
+   "kategorie": {
+    "bezpieczenstwo": 10,
+    "harmonogram": 10,
+    "dopasowanieDoBiegacza": 10,
+    "progresja": 10,
+    "jakoscTreningow": 10,
+    "specyfikaDystansu": 9.23,
+    "regeneracja": 10
+   },
+   "naruszeniaKrytyczne": 0,
+   "ostrzezenia": 0
+  },
+  "6": {
+   "scenariuszy": 1344,
+   "ocenaOgolna": 9.77,
+   "bezpieczenstwo": 10,
+   "kategorie": {
+    "bezpieczenstwo": 10,
+    "harmonogram": 10,
+    "dopasowanieDoBiegacza": 10,
+    "progresja": 10,
+    "jakoscTreningow": 10,
+    "specyfikaDystansu": 9.18,
+    "regeneracja": 10
+   },
+   "naruszeniaKrytyczne": 0,
+   "ostrzezenia": 0
+  },
+  "7": {
+   "scenariuszy": 1344,
+   "ocenaOgolna": 9.77,
+   "bezpieczenstwo": 10,
+   "kategorie": {
+    "bezpieczenstwo": 10,
+    "harmonogram": 10,
+    "dopasowanieDoBiegacza": 10,
+    "progresja": 10,
+    "jakoscTreningow": 10,
+    "specyfikaDystansu": 9.19,
+    "regeneracja": 10
+   },
+   "naruszeniaKrytyczne": 0,
+   "ostrzezenia": 0
+  }
+ },
+ "generatorPlik": "/workspace/-/run-planner/v23/planGenerator_v23.js",
+ "deklarowanaLiczbaScenariuszy": 9408,
+ "wykonane": 9408,
+ "unikalne": 9408,
+ "planyZKrytycznymNaruszeniem": 118,
+ "krytyczneNaruszenia": 130,
+ "ostrzezeniaMiernika": 438,
+ "slepePlamkiAudytuWewnetrznego": 0,
+ "kodyProblemow": {
+  "BIEG_ZA_KROTKI:ostrzezenie": 420,
+  "UDZIAL_DLUGIEGO:krytyczny": 130,
+  "TAPER_PLYTKI:ostrzezenie": 18
+ },
+ "przykladyKrytycznych": [
+  {
+   "key": "[\"beginner\",\"5k\",3,40,16,5,5,\"2026-11-07\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 79% przy 2 biegach (limit 60%)"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",3,40,16,5,5,\"2026-11-08\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 79% przy 2 biegach (limit 60%)"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",3,40,16,9,6,\"2026-11-07\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 79% przy 2 biegach (limit 60%)"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",3,40,16,9,6,\"2026-11-08\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 79% przy 2 biegach (limit 60%)"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",3,40,16,14,0,\"2026-11-07\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 79% przy 2 biegach (limit 60%)"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",3,40,16,14,0,\"2026-11-08\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 79% przy 2 biegach (limit 60%)"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",3,40,16,22,1,\"2026-11-07\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 79% przy 2 biegach (limit 60%)"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",3,40,16,22,1,\"2026-11-08\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 79% przy 2 biegach (limit 60%)"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",3,65,26,9,3,\"2026-11-07\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 79% przy 2 biegach (limit 60%)"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",3,65,26,9,3,\"2026-11-08\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 79% przy 2 biegach (limit 60%)"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",3,65,26,14,4,\"2026-11-07\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 79% przy 2 biegach (limit 60%)"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",3,65,26,14,4,\"2026-11-08\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 79% przy 2 biegach (limit 60%)"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",3,65,26,22,5,\"2026-11-07\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 79% przy 2 biegach (limit 60%)"
+  },
+  {
+   "key": "[\"beginner\",\"5k\",3,65,26,22,5,\"2026-11-08\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 79% przy 2 biegach (limit 60%)"
+  },
+  {
+   "key": "[\"beginner\",\"10k\",3,40,16,9,6,\"2026-11-07\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 79% przy 2 biegach (limit 60%)"
+  },
+  {
+   "key": "[\"beginner\",\"10k\",3,40,16,9,6,\"2026-11-08\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 79% przy 2 biegach (limit 60%)"
+  },
+  {
+   "key": "[\"beginner\",\"10k\",3,40,16,14,0,\"2026-11-07\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 79% przy 2 biegach (limit 60%)"
+  },
+  {
+   "key": "[\"beginner\",\"10k\",3,40,16,14,0,\"2026-11-08\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 79% przy 2 biegach (limit 60%)"
+  },
+  {
+   "key": "[\"beginner\",\"10k\",3,40,16,22,1,\"2026-11-07\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 79% przy 2 biegach (limit 60%)"
+  },
+  {
+   "key": "[\"beginner\",\"10k\",3,40,16,22,1,\"2026-11-08\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 79% przy 2 biegach (limit 60%)"
+  },
+  {
+   "key": "[\"beginner\",\"10k\",3,65,26,9,3,\"2026-11-07\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 79% przy 2 biegach (limit 60%)"
+  },
+  {
+   "key": "[\"beginner\",\"10k\",3,65,26,9,3,\"2026-11-08\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 79% przy 2 biegach (limit 60%)"
+  },
+  {
+   "key": "[\"beginner\",\"10k\",3,65,26,14,4,\"2026-11-07\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 79% przy 2 biegach (limit 60%)"
+  },
+  {
+   "key": "[\"beginner\",\"10k\",3,65,26,14,4,\"2026-11-08\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 79% przy 2 biegach (limit 60%)"
+  },
+  {
+   "key": "[\"beginner\",\"10k\",3,65,26,22,5,\"2026-11-07\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 79% przy 2 biegach (limit 60%)"
+  },
+  {
+   "key": "[\"beginner\",\"10k\",3,65,26,22,5,\"2026-11-08\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 79% przy 2 biegach (limit 60%)"
+  },
+  {
+   "key": "[\"beginner\",\"half\",3,40,16,9,6,\"2026-11-07\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 80% przy 2 biegach (limit 62%)"
+  },
+  {
+   "key": "[\"beginner\",\"half\",3,40,16,9,6,\"2026-11-08\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 80% przy 2 biegach (limit 62%)"
+  },
+  {
+   "key": "[\"beginner\",\"half\",3,40,16,14,0,\"2026-11-07\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 80% przy 2 biegach (limit 62%)"
+  },
+  {
+   "key": "[\"beginner\",\"half\",3,40,16,14,0,\"2026-11-08\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 80% przy 2 biegach (limit 62%)"
+  },
+  {
+   "key": "[\"beginner\",\"half\",3,40,16,22,1,\"2026-11-07\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 80% przy 2 biegach (limit 62%)"
+  },
+  {
+   "key": "[\"beginner\",\"half\",3,40,16,22,1,\"2026-11-08\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 80% przy 2 biegach (limit 62%)"
+  },
+  {
+   "key": "[\"beginner\",\"half\",3,65,26,9,3,\"2026-11-07\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 80% przy 2 biegach (limit 62%)"
+  },
+  {
+   "key": "[\"beginner\",\"half\",3,65,26,9,3,\"2026-11-08\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 80% przy 2 biegach (limit 62%)"
+  },
+  {
+   "key": "[\"beginner\",\"half\",3,65,26,14,4,\"2026-11-07\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 80% przy 2 biegach (limit 62%)"
+  },
+  {
+   "key": "[\"beginner\",\"half\",3,65,26,14,4,\"2026-11-08\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 80% przy 2 biegach (limit 62%)"
+  },
+  {
+   "key": "[\"beginner\",\"half\",3,65,26,22,5,\"2026-11-07\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 80% przy 2 biegach (limit 62%)"
+  },
+  {
+   "key": "[\"beginner\",\"half\",3,65,26,22,5,\"2026-11-08\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 80% przy 2 biegach (limit 62%)"
+  },
+  {
+   "key": "[\"beginner\",\"marathon\",3,40,16,9,6,\"2026-11-07\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 80% przy 2 biegach (limit 64%)"
+  },
+  {
+   "key": "[\"beginner\",\"marathon\",3,40,16,9,6,\"2026-11-08\"]",
+   "kod": "UDZIAL_DLUGIEGO",
+   "msg": "2026-11-23: 80% przy 2 biegach (limit 64%)"
+  }
+ ],
+ "pokrycie": {
+  "todayDow": {
+   "0": 1344,
+   "1": 1344,
+   "2": 1344,
+   "3": 1344,
+   "4": 1344,
+   "5": 1344,
+   "6": 1344
+  },
+  "raceDow": {
+   "0": 1344,
+   "1": 1344,
+   "2": 1344,
+   "3": 1344,
+   "4": 1344,
+   "5": 1344,
+   "6": 1344
+  }
+ },
+ "skrotWynikow": "06231f0aee5e1d5f37380d697d4c710d0d4129fddd5b4e023987ce241f6f87e1",
+ "wszystkieTesty": [
+  {
+   "opis": "liczba wykonanych scenariuszy (9408) == deklarowana (9408)",
+   "ok": true
+  },
+  {
+   "opis": "unikalnych scenariuszy 9408 == deklarowana 9408",
+   "ok": true
+  },
+  {
+   "opis": "wszystkie 7 dni tygodnia jako dzień startu planu",
+   "ok": true
+  },
+  {
+   "opis": "wszystkie 7 dni tygodnia jako dzień zawodów",
+   "ok": true
+  },
+  {
+   "opis": "pokryte wszystkie 49 par (dzień startu planu, dzień zawodów)",
+   "ok": true
+  },
+  {
+   "opis": "komórka 5k/beginner: 7 dni startu planu i 7 dni zawodów",
+   "ok": true
+  },
+  {
+   "opis": "komórka 10k/beginner: 7 dni startu planu i 7 dni zawodów",
+   "ok": true
+  },
+  {
+   "opis": "komórka half/beginner: 7 dni startu planu i 7 dni zawodów",
+   "ok": true
+  },
+  {
+   "opis": "komórka marathon/beginner: 7 dni startu planu i 7 dni zawodów",
+   "ok": true
+  },
+  {
+   "opis": "komórka 5k/intermediate: 7 dni startu planu i 7 dni zawodów",
+   "ok": true
+  },
+  {
+   "opis": "komórka 10k/intermediate: 7 dni startu planu i 7 dni zawodów",
+   "ok": true
+  },
+  {
+   "opis": "komórka half/intermediate: 7 dni startu planu i 7 dni zawodów",
+   "ok": true
+  },
+  {
+   "opis": "komórka marathon/intermediate: 7 dni startu planu i 7 dni zawodów",
+   "ok": true
+  },
+  {
+   "opis": "komórka 5k/advanced: 7 dni startu planu i 7 dni zawodów",
+   "ok": true
+  },
+  {
+   "opis": "komórka 10k/advanced: 7 dni startu planu i 7 dni zawodów",
+   "ok": true
+  },
+  {
+   "opis": "komórka half/advanced: 7 dni startu planu i 7 dni zawodów",
+   "ok": true
+  },
+  {
+   "opis": "komórka marathon/advanced: 7 dni startu planu i 7 dni zawodów",
+   "ok": true
+  },
+  {
+   "opis": "brak wyjątków",
+   "ok": true
+  },
+  {
+   "opis": "brak planów ok:false dla poprawnych danych",
+   "ok": true
+  },
+  {
+   "opis": "brak krytycznych naruszeń niezależnych niezmienników (118 planów z krytycznym, 130 naruszeń)",
+   "ok": false,
+   "szczegoly": "[{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",3,40,16,5,5,\\\"2026-11-07\\\"]\",\"kod\":\"UDZIAL_DLUGIEGO\",\"msg\":\"2026-11-23: 79% przy 2 biegach (limit 60%)\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",3,40,16,5,5,\\\"2026-11-08\\\"]\",\"kod\":\"UDZIAL_DLUGIEGO\",\"msg\":\"2026-11-23: 79% przy 2 biegach (limit 60%)\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",3,40,16,9,6,\\\"2026-11-07\\\"]\",\"kod\":\"UDZIAL_DLUGIEGO\",\"msg\":\"2026-11-23: 79% przy 2 biegach (limit 60%)\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",3,40,16,9,6,\\\"2026-11-08\\\"]\",\"kod\":\"UDZIAL_DLUGIEGO\",\"msg\":\"2026-11-23: 79% przy 2 biegach (limit 60%)\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",3,40,16,14,0,\\\"2026-11-07\\\"]\",\"kod\":\"UDZIAL_DLUGIEGO\",\"msg\":\"2026-11-23: 79% przy 2 biegach (limit 60%)\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",3,40,16,14,0,\\\"2026-11-08\\\"]\",\"kod\":\"UDZIAL_DLUGIEGO\",\"msg\":\"2026-11-23: 79% przy 2 biegach (limit 60%)\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",3,40,16,22,1,\\\"2026-11-07\\\"]\",\"kod\":\"UDZIAL_DLUGIEGO\",\"msg\":\"2026-11-23: 79% przy 2 biegach (limit 60%)\"},{\"key\":\"[\\\"beginner\\\",\\\"5k\\\",3,40,16,22,1,\\\"2026-11-08\\\"]\",\"kod\":\"UDZIAL_DLUGIEGO\",\"msg\":\"2026-11-23: 79% przy 2 biegach (limit 60%)\"}]"
+  },
+  {
+   "opis": "powtarzalność: dwukrotne uruchomienie 120 scenariuszy daje identyczne wyniki",
+   "ok": true
+  }
+ ]
+}

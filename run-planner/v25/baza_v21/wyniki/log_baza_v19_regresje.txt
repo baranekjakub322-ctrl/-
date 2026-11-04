@@ -1,0 +1,8 @@
+[regresje] zaliczone 8, niezaliczone 7
+  - R2d: 1 bieg/tydz. po 40 km/16 km: odciążenie w planie (V19: 8 tygodni obciążenia pod rząd)
+  - R3: marathon w 6 tyg.: brak długiego biegu ponad pułap tuż przed startem :: [["2026-12-13",26]]
+  - R3: half w 6 tyg.: brak długiego biegu ponad pułap tuż przed startem :: [["2026-12-13",19]]
+  - R4a: wiek 58 daje inny plan niż 35
+  - R4b: wiek 58: więcej tygodni odciążających
+  - R5a: maraton z 10 km/5 km => brak bezpiecznej bazy, brak możliwości ukończenia
+  - R5c: brak wyniku odniesienia => doKonkretnegoWyniku=false

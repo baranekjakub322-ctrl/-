@@ -1,0 +1,78 @@
+{
+ "generator": "planGenerator_v21.js",
+ "nazwa": "regresje",
+ "zaliczone": 17,
+ "niezaliczone": 0,
+ "bledy": [],
+ "generatorPlik": "/home/claude/v21/planGenerator_v21.js",
+ "wszystkieTesty": [
+  {
+   "opis": "R1a: trimWeekRuns zwraca false przy niemożliwym limicie",
+   "ok": true
+  },
+  {
+   "opis": "R1b: trimWeekRuns zwraca true, gdy limit osiągalny",
+   "ok": true
+  },
+  {
+   "opis": "R1c: żaden z 720 planów nie przekracza limitu po cichu (plany z nieosiągniętym limitem: 0)",
+   "ok": true
+  },
+  {
+   "opis": "R2a: plan od 8 km/tydz. zawiera tydzień odciążający",
+   "ok": true
+  },
+  {
+   "opis": "R2b: nie więcej niż 5 tygodni obciążenia pod rząd (miernik niezależny, bez taperu)",
+   "ok": true
+  },
+  {
+   "opis": "R2c: półmaraton, 2 dni, 8 km/tydz., 12 tyg.: regularne odciążenia (V19: 7 tygodni obciążenia pod rząd)",
+   "ok": true
+  },
+  {
+   "opis": "R2d: 1 bieg/tydz. po 40 km/16 km: odciążenie w planie (V19: 8 tygodni obciążenia pod rząd)",
+   "ok": true
+  },
+  {
+   "opis": "R3: marathon w 6 tyg.: brak długiego biegu ponad pułap tuż przed startem",
+   "ok": true
+  },
+  {
+   "opis": "R3: half w 6 tyg.: brak długiego biegu ponad pułap tuż przed startem",
+   "ok": true
+  },
+  {
+   "opis": "R4a: wiek 58 daje inny plan niż 35",
+   "ok": true
+  },
+  {
+   "opis": "R4b: wiek 58: więcej tygodni odciążających",
+   "ok": true
+  },
+  {
+   "opis": "R5a: maraton z 10 km/5 km => brak bezpiecznej bazy, brak możliwości ukończenia",
+   "ok": true
+  },
+  {
+   "opis": "R5b: maraton z 3 biegów nigdy nie dostaje gotowości do wyniku",
+   "ok": true
+  },
+  {
+   "opis": "R5c: brak wyniku odniesienia => doKonkretnegoWyniku=false",
+   "ok": true
+  },
+  {
+   "opis": "R5d: maraton początkujący: gotowość do ukończenia tylko przy długim biegu >= ~26 km",
+   "ok": true
+  },
+  {
+   "opis": "R6: dzień startu planu zmienia daty treningów",
+   "ok": true
+  },
+  {
+   "opis": "R7: brak mocnych treningów w 2 dniach przed startem (28 planów)",
+   "ok": true
+  }
+ ]
+}

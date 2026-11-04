@@ -1,0 +1,25 @@
+{
+  "file": "RunPlanner_V25.zip",
+  "bytes": 21412249,
+  "sha256": "f0b3094ac0e67d7c5a0707728240d4d070ae8631fe617f19d781558ec6359033",
+  "zipIntegrity": "PASS",
+  "manifestFilesVerified": 654,
+  "extractedChecks": {
+    "v25": {
+      "passed": 121,
+      "failed": 0
+    },
+    "adaptacja_v25": {
+      "passed": 140,
+      "failed": 0
+    },
+    "kalibracja_v25": {
+      "passed": 24,
+      "failed": 0
+    }
+  },
+  "repeatedChecks": 285,
+  "fullSourceRun": "run-planner/v25/wyniki_v25/run.json",
+  "fullChecks": 1356,
+  "scope": "Testy rozpakowanej paczki powtórzono osobno i nie dodano ponownie do liczby kontroli pełnego przebiegu."
+}

@@ -1,0 +1,52 @@
+=== podstawowe
+[podstawowe] zaliczone 107, niezaliczone 0
+=== trudne
+[trudne] zaliczone 93, niezaliczone 0
+=== czulosc
+[czulosc] zaliczone 28, niezaliczone 0
+=== regresje
+[regresje] zaliczone 17, niezaliczone 0
+=== czulosc_v21
+[czulosc_v21] zaliczone 38, niezaliczone 0
+=== jakosciowe
+[jakosciowe] zaliczone 35, niezaliczone 0
+=== dostepnosc
+[dostepnosc] zaliczone 9, niezaliczone 0
+=== porownanie28
+[porownanie28] zaliczone 31, niezaliczone 0
+{"dystans":{"5k":9.36,"10k":9.36,"half":9.14,"marathon":8.29},"czestotliwosc":{"1":5.5,"2":8.5,"3":9.63,"4":9.63,"5":10,"6":10,"7":10},"ogolnie":9.04}
+5k       1d -> 1 | peak 11 long 0 Q 0 warn 4 | przygotowanie_czesciowe | ocena 5.5 | 
+5k       2d -> 2 | peak 25 long 14 Q 8 warn 3 | przygotowanie_do_ukonczenia | ocena 10 | 
+5k       3d -> 3 | peak 34 long 14 Q 15 warn 1 | przygotowanie_do_wyniku | ocena 10 | 
+5k       4d -> 4 | peak 37 long 14 Q 15 warn 1 | przygotowanie_do_wyniku | ocena 10 | 
+5k       5d -> 5 | peak 39 long 13 Q 20 warn 2 | przygotowanie_do_wyniku | ocena 10 | 
+5k       6d -> 5 | peak 39 long 13 Q 20 warn 2 | przygotowanie_do_wyniku | ocena 10 | 
+5k       7d -> 5 | peak 39 long 13 Q 20 warn 2 | przygotowanie_do_wyniku | ocena 10 | 
+10k      1d -> 1 | peak 11 long 0 Q 0 warn 4 | niewystarczajace_przygotowanie | ocena 5.5 | 
+10k      2d -> 2 | peak 26 long 14 Q 8 warn 5 | przygotowanie_czesciowe | ocena 10 | 
+10k      3d -> 3 | peak 35 long 14 Q 15 warn 1 | przygotowanie_do_wyniku | ocena 10 | 
+10k      4d -> 4 | peak 37 long 14 Q 15 warn 1 | przygotowanie_do_wyniku | ocena 10 | 
+10k      5d -> 5 | peak 41 long 14 Q 20 warn 2 | przygotowanie_do_wyniku | ocena 10 | 
+10k      6d -> 5 | peak 41 long 14 Q 20 warn 2 | przygotowanie_do_wyniku | ocena 10 | 
+10k      7d -> 5 | peak 41 long 14 Q 20 warn 2 | przygotowanie_do_wyniku | ocena 10 | 
+half     1d -> 1 | peak 11 long 0 Q 0 warn 4 | niewystarczajace_przygotowanie | ocena 5.5 | 
+half     2d -> 2 | peak 31 long 18 Q 4 warn 5 | przygotowanie_czesciowe | ocena 8.5 | 
+half     3d -> 3 | peak 40 long 17 Q 15 warn 3 | przygotowanie_do_wyniku | ocena 10 | 
+half     4d -> 4 | peak 42 long 17 Q 15 warn 3 | przygotowanie_do_wyniku | ocena 10 | 
+half     5d -> 5 | peak 54 long 18 Q 15 warn 3 | przygotowanie_do_wyniku | ocena 10 | 
+half     6d -> 5 | peak 54 long 18 Q 15 warn 3 | przygotowanie_do_wyniku | ocena 10 | 
+half     7d -> 5 | peak 54 long 18 Q 15 warn 3 | przygotowanie_do_wyniku | ocena 10 | 
+marathon 1d -> 1 | peak 11 long 0 Q 0 warn 5 | niewystarczajace_przygotowanie | ocena 5.5 | 
+marathon 2d -> 2 | peak 34 long 21 Q 0 warn 5 | przygotowanie_czesciowe | ocena 5.5 | 
+marathon 3d -> 3 | peak 48 long 24 Q 9 warn 4 | przygotowanie_czesciowe | ocena 8.5 | 
+marathon 4d -> 4 | peak 56 long 25 Q 11 warn 5 | przygotowanie_czesciowe | ocena 8.5 | 
+marathon 5d -> 5 | peak 69 long 27 Q 11 warn 5 | przygotowanie_czesciowe | ocena 10 | 
+marathon 6d -> 5 | peak 69 long 27 Q 11 warn 5 | przygotowanie_czesciowe | ocena 10 | 
+marathon 7d -> 5 | peak 69 long 27 Q 11 warn 5 | przygotowanie_czesciowe | ocena 10 | 
+=== porownanie_v19_v20
+[porownanie_v19_v20] zaliczone 12, niezaliczone 0
+{"5k":{"v19":{"srednia":8.514,"planyZKrytycznym":12,"krytyczne":12,"ostrzezenia":3447},"v20":{"srednia":8.568,"planyZKrytycznym":0,"krytyczne":0,"ostrzezenia":3409},"scenariuszy":252},"10k":{"v19":{"srednia":8.254,"planyZKrytycznym":12,"krytyczne":12,"ostrzezenia":3535},"v20":{"srednia":8.29,"planyZKrytycznym":0,"krytyczne":0,"ostrzezenia":3490},"scenariuszy":252},"half":{"v19":{"srednia":7.492,"planyZKrytycznym":0,"krytyczne":0,"ostrzezenia":3445},"v20":{"srednia":7.503,"planyZKrytycznym":0,"krytyczne":0,"ostrzezenia":3347},"scenariuszy":252},"marathon":{"v19":{"srednia":6.737,"planyZKrytycznym":3,"krytyczne":3,"ostrzezenia":3305},"v20":{"srednia":6.769,"planyZKrytycznym":0,"krytyczne":0,"ostrzezenia":3283},"scenariuszy":252}}
+=== porownanie_v20_v21
+[porownanie_v20_v21] zaliczone 32, niezaliczone 0
+{"5k":{"v20":7.875,"v21":9.857},"10k":{"v20":7.79,"v21":9.731},"half":{"v20":7.576,"v21":9.376},"marathon":{"v20":7.295,"v21":8.925}}
+=== sweep

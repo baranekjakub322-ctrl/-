@@ -1,0 +1,186 @@
+{
+  "version": "25.0",
+  "node": "v24.19.0",
+  "runStarted": "2026-11-04T08:48:51.412Z",
+  "suites": 28,
+  "passed": 1356,
+  "failed": 0,
+  "mainLines": 2650,
+  "totalLines": 3373,
+  "totalBytes": 330593,
+  "statistics": [
+    {
+      "file": "planGenerator_v25.js",
+      "lines": 2650,
+      "bytes": 251251,
+      "sha256": "9a8dc8b019a7ad65fb7baa96a6682e840f08ff6a1610d96093f58fd151db9c8c"
+    },
+    {
+      "file": "model/training.mjs",
+      "lines": 69,
+      "bytes": 4220,
+      "sha256": "dfb3fdd9e9a74dedfa90e458fa14e0e0205dd61b29a779726b7321383bd671a0"
+    },
+    {
+      "file": "model/policy_v25.mjs",
+      "lines": 84,
+      "bytes": 6894,
+      "sha256": "d8e7d9b60f4c880c709567e430104a8f0573ded74ad1cf52af9c6812adf35c50"
+    },
+    {
+      "file": "model/quality_v25.mjs",
+      "lines": 30,
+      "bytes": 1925,
+      "sha256": "74d22887b5c54c9b8194bb1ca69433ba5587db9f70be8bc379fd8e21483a0cb6"
+    },
+    {
+      "file": "model/frequency_v25.mjs",
+      "lines": 45,
+      "bytes": 4126,
+      "sha256": "30ac939bbc64b8fb3acf379e88ae1f0731a65221cd3c6b33102c9b5971530166"
+    },
+    {
+      "file": "model/ledger_v25.mjs",
+      "lines": 10,
+      "bytes": 1693,
+      "sha256": "e52639a9670173deae3698ed23cca49b862c046d42145a9a6da65d2dfa87a763"
+    },
+    {
+      "file": "model/activity_v25.mjs",
+      "lines": 80,
+      "bytes": 7454,
+      "sha256": "f5d825efb0cc1fc61e93d4bfb839b66bb7e299763098b98d937efcae42dd2d4c"
+    },
+    {
+      "file": "model/adaptation_v25.mjs",
+      "lines": 77,
+      "bytes": 10785,
+      "sha256": "e997c9b41f43043cc71757949b7fca3f2e3eae62fcf8a86ffcc6a387bf3fb2c5"
+    },
+    {
+      "file": "model/readiness_v25.mjs",
+      "lines": 28,
+      "bytes": 4950,
+      "sha256": "a5b8b79499e5269ebfbbf6e344eb0cbf7943b4bbe30658ecaf3cb21042afc646"
+    },
+    {
+      "file": "scoring/v23.mjs",
+      "lines": 134,
+      "bytes": 15652,
+      "sha256": "a7d2cfe244bb156418e3334b917b39773c1e96ad7c0ff356aac586380aa3eb71"
+    },
+    {
+      "file": "scoring/v25.mjs",
+      "lines": 166,
+      "bytes": 21643,
+      "sha256": "09dfeeb6b6ab25bdbae4065b5d2166b75f9d1c7f286408337fa8c912f65332b2"
+    }
+  ],
+  "sweep": {
+    "executed": 9408,
+    "unique": 9408,
+    "critical": 0,
+    "warnings": 0
+  },
+  "adaptiveScenarios": 128,
+  "adaptivePassed": 140,
+  "profiles": 30,
+  "meanFrozen": {
+    "v24": 7.4174593253968135,
+    "v25": 7.443721230158727
+  },
+  "meanDiagnostic": {
+    "v24": 9.160130952380971,
+    "v25": 9.18744345238097
+  },
+  "distribution": {
+    "better": 179,
+    "same": 780,
+    "worse": 49
+  },
+  "versusV23": {
+    "better": 546,
+    "same": 374,
+    "worse": 88,
+    "newBelowV23": 8
+  },
+  "recovery": {
+    "original": 89,
+    "improved": 18,
+    "recovered": 9,
+    "remaining": 80
+  },
+  "meterSha256": "a7d2cfe244bb156418e3334b917b39773c1e96ad7c0ff356aac586380aa3eb71",
+  "inputSha256": "00ab459021dbf3100e0cc08a1b4472f7cbafa09a5425033307cdb79656ed008d",
+  "sourceHashes": {
+    "planGenerator_v25.js": "9a8dc8b019a7ad65fb7baa96a6682e840f08ff6a1610d96093f58fd151db9c8c",
+    "model/policy_v25.mjs": "d8e7d9b60f4c880c709567e430104a8f0573ded74ad1cf52af9c6812adf35c50",
+    "model/quality_v25.mjs": "74d22887b5c54c9b8194bb1ca69433ba5587db9f70be8bc379fd8e21483a0cb6",
+    "model/frequency_v25.mjs": "30ac939bbc64b8fb3acf379e88ae1f0731a65221cd3c6b33102c9b5971530166",
+    "model/ledger_v25.mjs": "e52639a9670173deae3698ed23cca49b862c046d42145a9a6da65d2dfa87a763",
+    "model/activity_v25.mjs": "f5d825efb0cc1fc61e93d4bfb839b66bb7e299763098b98d937efcae42dd2d4c",
+    "model/adaptation_v25.mjs": "e997c9b41f43043cc71757949b7fca3f2e3eae62fcf8a86ffcc6a387bf3fb2c5",
+    "model/readiness_v25.mjs": "a5b8b79499e5269ebfbbf6e344eb0cbf7943b4bbe30658ecaf3cb21042afc646",
+    "scoring/v25.mjs": "09dfeeb6b6ab25bdbae4065b5d2166b75f9d1c7f286408337fa8c912f65332b2",
+    "testy/regresje_v25.mjs": "476e5a3fef08d27d9e9e443bd60fc62a272a23a3037f086c24cff3a83b4dda7e",
+    "testy/v25_inherited.mjs": "399d8be80d910ea3c85ea24fe43dcefa924e315ec56e5059dd5d9c5ca69e0d29",
+    "testy/adaptacja_v25.mjs": "709ee915e9194c999a00983e5eed4cafd036f011ac01871acfeccf0c7fa9d580",
+    "testy/v25.mjs": "16f06fcc5cda8bbc5a79b6949a041c40a3166693d4985b92c89cce7c7c3b360c",
+    "testy/kalibracja_v25.mjs": "65a1d4d2423c312fbb8a188ad6d3ec14738d6ce32d326be7b9718b10110d9b56",
+    "testy/porownanie_v24_v25.mjs": "ea284d35d8c5651811f5e1ed3be0f704c22069aee0d06550cbd8d51969202a0a",
+    "testy/wydajnosc_v25.mjs": "969b41085aab10faf825035b32ea7729a6e3a56998080ff79ae083583d84b357",
+    "planGenerator_v24.js": "ebb858d173b168945539adc53512117ea0173cdade76c257dc4813ed40d98e48",
+    "model/policy_v24.mjs": "2acb1c9d0450baf23abd5ada0b0984a5360bbb0e175914af9ec6cec725ebdee4",
+    "model/quality_v24.mjs": "74d22887b5c54c9b8194bb1ca69433ba5587db9f70be8bc379fd8e21483a0cb6",
+    "model/frequency_v24.mjs": "99f92bce0b1c19bd3a85af001f1d899a3037228584dc23bbab2f305f416cf590",
+    "model/ledger_v24.mjs": "13c6c12e28e9a27640ce9673b53cd7f02378122bf2216bb7624a0d1c885f67f8",
+    "model/adaptation_v24.mjs": "0858044dd2b5d3438b77d87082c69e09f97bf11af3c7cf9dee06500b6a8f5e91",
+    "planGenerator_v23.js": "b8fd490bf71c986563ef8649152fcbe0accede4121728407cd973d7905922b7a",
+    "planGenerator_v22.js": "499b3ea7fb940e1e9764c9c2394a51fc36e96634e8a7baf39f1b9265cf599554",
+    "model/training.mjs": "dfb3fdd9e9a74dedfa90e458fa14e0e0205dd61b29a779726b7321383bd671a0",
+    "model/policy_v23.mjs": "bcfb1b68dd1ee257da0dd797059d4d3ea3b342552dbdc067fe0ca13ec4ce9c7d",
+    "model/quality_v23.mjs": "fe92d01711b079e54b9caa4dbaa5b4429a4ce00767056e1b9380413de1a82411",
+    "model/adaptation_v23.mjs": "0cd5cdee5d0449ab4ebcb442aaaa9955b849dba4ee5323b82c8e140a794952fb",
+    "scoring/v23.mjs": "a7d2cfe244bb156418e3334b917b39773c1e96ad7c0ff356aac586380aa3eb71",
+    "testy/lib.mjs": "7cd5f7862af4ebc0265a38b246e2cc5c75ea9eb996eb46a8e45cc4cbb19e0971",
+    "testy/miernik_v22.mjs": "477aa66b72f5612bb3cd4f50b39c91303ac393eb8bcb22e112965dc1e9e24774",
+    "testy/v23.mjs": "d975154fc9a87a0a2fb70d2f69f0b767aa69280463fd0a5114cb5889b102a871",
+    "testy/benchmark_v23.mjs": "ae71473adab2919ed0e480102c22d901dbb9385e8a3259cf31af37edd086f244",
+    "testy/porownanie_v22_v23.mjs": "36c8a3475e338742cc6509c92f960526b92e3c848672593180283a6b792dcb49",
+    "testy/v24.mjs": "56771472f6ef2604872dbbd0842752903a018884375c2ffe221282b681075bf8",
+    "testy/v24_inherited.mjs": "d7142ccf6fc7f0badcddc8f6b1eaa1eb5ad5ffd15b24e010666cea8aef3d5a49",
+    "testy/porownanie_v23_v24.mjs": "c5ee48d4bdf19af43a8dc615d77d585cc5f1adfba9c191f4665f63d9c7e549a1"
+  },
+  "performance": {
+    "passed": 1,
+    "failed": 0,
+    "results": [
+      {
+        "version": "v24",
+        "inputSha256": "0947bb9c68a7740a707d59e17f6e2117f68b2245c188a1d00180bc87077928d0",
+        "executed": 84,
+        "meanMs": 12.460450857142863,
+        "medianMs": 9.389439000000039,
+        "p95Ms": 29.895570000000134,
+        "maxMs": 37.403661,
+        "startRss": 71331840,
+        "maxRssBytes": 139501568,
+        "node": "v24.19.0"
+      },
+      {
+        "version": "v25",
+        "inputSha256": "0947bb9c68a7740a707d59e17f6e2117f68b2245c188a1d00180bc87077928d0",
+        "executed": 84,
+        "meanMs": 13.407982011904762,
+        "medianMs": 9.757701999999995,
+        "p95Ms": 32.641662999999994,
+        "maxMs": 33.46822900000001,
+        "startRss": 71630848,
+        "maxRssBytes": 149356544,
+        "node": "v24.19.0"
+      }
+    ],
+    "ratioMean": 1.0760430874954041,
+    "limitations": "Osobne świeże procesy, ten sam zestaw, jedno środowisko; pomiar RSS jest maksimum procesu, nie rozmiar samego planu."
+  }
+}

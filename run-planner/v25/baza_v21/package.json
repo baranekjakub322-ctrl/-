@@ -1,0 +1,1 @@
+{ "name": "plan-generator", "version": "21.0.0", "type": "module", "private": true, "scripts": { "test": "bash uruchom_wszystko.sh" } }
