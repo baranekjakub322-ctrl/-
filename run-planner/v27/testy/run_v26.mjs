@@ -1,0 +1,11 @@
+import fs from 'node:fs';import crypto from 'node:crypto';import path from 'node:path';import {spawnSync} from 'node:child_process';
+if(process.env.TESTS_ONLY_LIGHT==='1'){const r=spawnSync(process.execPath,['testy/run.mjs'],{env:{...process.env,GEN:'planGenerator_v26.js'},stdio:'inherit'});process.exit(r.status??2);}
+const out=path.resolve(process.env.WYNIKI||'wyniki_v26');fs.mkdirSync(out,{recursive:true});const start=Date.now();
+const sources=['planGenerator_v26.js','planGenerator_v25.js',...fs.readdirSync('model').filter(f=>f.endsWith('_v26.mjs')).map(f=>'model/'+f),'model/training.mjs','scoring/v23.mjs','scoring/v25.mjs',...fs.readdirSync('testy').filter(f=>f.endsWith('.mjs')&&!f.startsWith('raporty')).map(f=>'testy/'+f)];
+const digest=f=>crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex'),hashes=Object.fromEntries(sources.map(f=>[f,digest(f)]));
+const names=['history','regresje_v26','adaptacja_compat_v26','v26','historie_v26','porownanie_v25_v26','profiles_v26','wydajnosc_v26'],results=[];
+for(const name of names){console.log('=== '+name);const t=Date.now(),dir=name==='history'?path.join(out,'history'):out;fs.mkdirSync(dir,{recursive:true});const file=name==='history'?'testy/run.mjs':`testy/${name}.mjs`;
+ const r=spawnSync(process.execPath,[file],{env:{...process.env,GEN:'planGenerator_v26.js',WYNIKI:dir},encoding:'utf8',maxBuffer:12*1024*1024});fs.writeFileSync(path.join(out,'log_'+name+'.txt'),(r.stdout||'')+(r.stderr||'')+(r.error?.message||''));console.log((r.stdout||'').slice(-2200));if(r.status!==0)console.error((r.stderr||r.error?.message||'').slice(-4000));results.push({name,status:r.status??2,elapsedMs:Date.now()-t});
+}
+for(const [f,h]of Object.entries(hashes))if(digest(f)!==h)results.push({name:'SOURCE_CHANGED:'+f,status:2});
+const result={node:process.version,started:new Date(start).toISOString(),elapsedMs:Date.now()-start,peakRssBytes:process.resourceUsage().maxRSS*1024,hashes,results,passed:results.filter(r=>r.status===0).length,failed:results.filter(r=>r.status!==0).length};fs.writeFileSync(path.join(out,'run_v26.json'),JSON.stringify(result,null,2));console.log(JSON.stringify({...result,hashes:undefined,results:undefined}));if(result.failed)process.exitCode=1;

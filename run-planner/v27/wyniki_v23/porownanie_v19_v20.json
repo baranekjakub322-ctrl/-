@@ -1,0 +1,121 @@
+{
+ "generator": "planGenerator_v23.js",
+ "nazwa": "porownanie_v19_v20",
+ "zaliczone": 12,
+ "niezaliczone": 0,
+ "bledy": [],
+ "generatorPlik": "/workspace/-/run-planner/v23/planGenerator_v23.js",
+ "scenariuszy": 1008,
+ "wyniki": {
+  "5k": {
+   "v19": {
+    "srednia": 8.514,
+    "planyZKrytycznym": 12,
+    "krytyczne": 12,
+    "ostrzezenia": 3447
+   },
+   "v20": {
+    "srednia": 8.568,
+    "planyZKrytycznym": 0,
+    "krytyczne": 0,
+    "ostrzezenia": 3409
+   },
+   "scenariuszy": 252
+  },
+  "10k": {
+   "v19": {
+    "srednia": 8.254,
+    "planyZKrytycznym": 12,
+    "krytyczne": 12,
+    "ostrzezenia": 3535
+   },
+   "v20": {
+    "srednia": 8.29,
+    "planyZKrytycznym": 0,
+    "krytyczne": 0,
+    "ostrzezenia": 3490
+   },
+   "scenariuszy": 252
+  },
+  "half": {
+   "v19": {
+    "srednia": 7.492,
+    "planyZKrytycznym": 0,
+    "krytyczne": 0,
+    "ostrzezenia": 3445
+   },
+   "v20": {
+    "srednia": 7.503,
+    "planyZKrytycznym": 0,
+    "krytyczne": 0,
+    "ostrzezenia": 3347
+   },
+   "scenariuszy": 252
+  },
+  "marathon": {
+   "v19": {
+    "srednia": 6.737,
+    "planyZKrytycznym": 3,
+    "krytyczne": 3,
+    "ostrzezenia": 3305
+   },
+   "v20": {
+    "srednia": 6.769,
+    "planyZKrytycznym": 0,
+    "krytyczne": 0,
+    "ostrzezenia": 3283
+   },
+   "scenariuszy": 252
+  }
+ },
+ "wszystkieTesty": [
+  {
+   "opis": "5k: średnia ocena V20 (8.568) nie niższa niż V19 (8.514)",
+   "ok": true
+  },
+  {
+   "opis": "5k: krytyczne V20 (0) <= V19 (12)",
+   "ok": true
+  },
+  {
+   "opis": "5k: ostrzeżenia miernika V20 (3409) nie wzrosły o >5% względem V19 (3447)",
+   "ok": true
+  },
+  {
+   "opis": "10k: średnia ocena V20 (8.29) nie niższa niż V19 (8.254)",
+   "ok": true
+  },
+  {
+   "opis": "10k: krytyczne V20 (0) <= V19 (12)",
+   "ok": true
+  },
+  {
+   "opis": "10k: ostrzeżenia miernika V20 (3490) nie wzrosły o >5% względem V19 (3535)",
+   "ok": true
+  },
+  {
+   "opis": "half: średnia ocena V20 (7.503) nie niższa niż V19 (7.492)",
+   "ok": true
+  },
+  {
+   "opis": "half: krytyczne V20 (0) <= V19 (0)",
+   "ok": true
+  },
+  {
+   "opis": "half: ostrzeżenia miernika V20 (3347) nie wzrosły o >5% względem V19 (3445)",
+   "ok": true
+  },
+  {
+   "opis": "marathon: średnia ocena V20 (6.769) nie niższa niż V19 (6.737)",
+   "ok": true
+  },
+  {
+   "opis": "marathon: krytyczne V20 (0) <= V19 (3)",
+   "ok": true
+  },
+  {
+   "opis": "marathon: ostrzeżenia miernika V20 (3283) nie wzrosły o >5% względem V19 (3305)",
+   "ok": true
+  }
+ ]
+}

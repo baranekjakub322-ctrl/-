@@ -1,0 +1,202 @@
+RUN PLANNER V26 — KOMPLETNY PROMPT IMPLEMENTACYJNY DLA CODEX
+Wersja: 1.0 | Język: polski | Cel: gruntowna poprawa generatora V25
+
+====================================================================
+0. MISJA, ZASADY I DEFINICJA SUKCESU
+====================================================================
+Jesteś głównym architektem silnika treningowego, starszym inżynierem JavaScript/Node.js, specjalistą od testowania systemów decyzyjnych i analitykiem treningu biegowego. Masz bezpośrednio ZMIENIĆ KOD istniejącego Run Planner V25 i dostarczyć działającą V26. Nie poprzestawaj na raporcie ani planie prac. Nie buduj interfejsu, nie przepisuj projektu od zera.
+
+Priorytet: znacznie lepsze RZECZYWISTE PLANY dla możliwie wszystkich profili, a nie większe oceny uzyskane przez manipulowanie miernikiem. Wymagaj uczciwych porównań na dokładnie tych samych wejściach. Nie zmieniaj historycznych benchmarków ani mierników. Zachowaj zgodność publicznego API. Nie osłabiaj zasad bezpieczeństwa.
+
+Ambicja: poprawić jak najwięcej z 1008 scenariuszy, ograniczyć regresje do minimum, istotnie poprawić średnie dla 5 km, 10 km, półmaratonu i maratonu oraz podnieść jakość faktycznych planów ocenianych przez eksperta. Cel „wszystkie 1008 lepsze” traktuj jako kierunek optymalizacji, NIE bezwzględny warunek: część planów już jest optymalna w ramach ograniczeń, część ma niewykonalne cele, a niektóre różnice wynikają z niedoskonałego miernika. Nigdy nie pogarszaj bezpieczeństwa ani nie fabrykuj różnic dla uzyskania 1008/1008.
+
+Nie wolno: zmieniać wejść benchmarku, usuwać trudnych profili, podnosić intensywności dla punktów, ukrywać FAIL, nazywać wewnętrznej oceny „niezależną”, twierdzić że testy heurystyczne dowodzą skuteczności klinicznej, uznawać planowanych treningów za wykonane.
+
+====================================================================
+1. ODTWORZENIE V25 I AUDYT BAZY
+====================================================================
+1.1. Przeczytaj AGENTS.md, README_V25.md, REKOMENDACJE_V26.md, OGRANICZENIA_V25.md, RAPORT_TESTOW_V25.md, BENCHMARK_1008_V24_V25.md, BENCHMARK_28_V24_V25.md, DIAGNOZA_89_REGRESJI_V24.md, ANALIZA_10KM_3DNI_V25.md, ANALIZA_MARATON_V25.md, SYSTEM_OCENIANIA_V23.md, SYSTEM_OCENIANIA_V25.md, PROVENANCE.json i istniejące testy.
+1.2. Odkryj faktyczną strukturę repozytorium i eksporty. Nie zakładaj, że nazwy modułów w dokumentach są kompletne. Sprawdź generator, frequency, quality, ledger, activity, adaptation, readiness, policy, training, scoring i testy.
+1.3. Zachowaj V25 w nienaruszonym commicie/tagu, utwórz branch V26, zapisz SHA-256 plików bazowych i identyfikator commit.
+1.4. Uruchom testy bazowe; zapisz Node, system, komendy, czas, PASS/FAIL, błędy, kompletność. Odtwórz dokładnie 28 i 1008 przypadków. Jeśli wyniki różnią się od raportu, zdiagnozuj różnicę przed dalszą pracą.
+1.5. Wcześniej raportowane punkty odniesienia do weryfikacji: 1008 scenariuszy V24=7,417 i V25=7,444 według zamrożonego miernika V23.0.0; V25 vs V24: 179 lepszych, 780 remisów, 49 gorszych. Według nowego miernika V25.0.0: V24=9,160, V25=9,187. To dane historyczne, NIE zastępują ponownego wykonania.
+1.6. W raporcie wyraźnie odróżniaj wyniki uruchomione teraz od wyników odczytanych z archiwum.
+
+====================================================================
+2. DIAGNOSTYKA KAŻDEGO SCENARIUSZA I ANALIZA PRZYCZYN
+====================================================================
+2.1. Wygeneruj dla każdego z 1008 wejść pełne plany V24 i V25, oceny V23.0.0 i V25.0.0, breakdown kar, tygodnie, daty, km, minuty, intensywności, jednostki, długie biegi, taper, ostrzeżenia, status wykonalności.
+2.2. Podziel przypadki na: realne pogorszenie; realna poprawa; uzasadniony remis; możliwa poprawa; nierozstrzygnięte; pozorny spadek wynikający z ograniczeń miernika; cel niewykonalny.
+2.3. Zbadaj osobno 49 regresji V25 vs V24 i pozostałe historyczne spadki V25 względem V23. Nie mieszaj tych dwóch zbiorów. Użyj stabilnych ID i przechowuj pełne wejścia oraz różnice.
+2.4. Z dokumentu DIAGNOZA_89_REGRESJI_V24.md wynikają historyczne rodziny problemów: alokacja/konsolidacja przy dwóch dniach (14), porównywanie różnych bodźców i taperu (56), domyślny limit miernika 120 minut (12), rotacja progu w maratonie (7). Zweryfikuj, które problemy nadal dotyczą V25; nie uznawaj starych kar za automatyczne błędy treningowe.
+2.5. Zidentyfikuj regresje po wymiarach: dystans, liczba dni, poziom, tygodniowy kilometraż, długość przygotowań, ambicja celu, doświadczenie, historia, dni dostępności, długość długiego biegu, profil intensywności, taper, adaptacja.
+2.6. Zapisz DIAGNOZA_V25_V26.md oraz JSON/CSV: każdy przypadek z ID, wejściem, kategorią, priorytetem, hipotezą, zmianą, wynikiem testu i decyzją.
+2.7. Nie stosuj jednego globalnego mnożnika obciążenia do naprawy wszystkich problemów.
+
+====================================================================
+3. DUŻA ZMIANA: ARCHITEKTURA PLANOWANIA OPARTA NA OGRANICZENIACH
+====================================================================
+3.1. Oddziel: (A) profil i wiarygodność danych, (B) wykonalność celu, (C) tygodniowy budżet obciążenia, (D) dobór bodźców, (E) rozkład kalendarza, (F) progresję, (G) taper, (H) walidację, (I) wyjaśnienie decyzji.
+3.2. Wprowadź czytelny model ograniczeń twardych i miękkich. Twarde: dostępne dni, niepoprawne daty, ograniczenia zdrowotne, nieprzekraczalne limity podane przez użytkownika, bezpieczeństwo. Miękkie: preferencje jednostek, rozkład, pożądana różnorodność, progresja. Nie łam twardych dla poprawy wyniku.
+3.3. Zastosuj wieloetapowe generowanie z walidacją po każdej fazie. Jeśli plan jest niewykonalny, zwróć najlepszy bezpieczny wariant i wyjaśnienie ograniczeń, zamiast arbitralnie generować „idealny” plan.
+3.4. Zapewnij możliwość porównania 2–4 bezpiecznych wariantów tygodnia i wyboru według uzasadnionych kryteriów, bez kosztownego przeszukiwania całej przestrzeni. Ogranicz liczbę kandydatów, zachowaj deterministyczność i nie używaj historycznego scoringu jako funkcji celu optymalizatora.
+3.5. Zaprojektuj niezależną walidację inwariantów bezpieczeństwa, która nie zależy od oceny 0–10. Raportuj naruszenia osobno od oceny jakości.
+3.6. Uporządkuj starszy monolit tylko w miejscach faktycznie poprawiających testowalność. Zachowaj wrappery zgodności i formaty wejścia/wyjścia.
+
+====================================================================
+4. NOWY MODEL OBCIĄŻENIA I MIKROCYKLU
+====================================================================
+4.1. Zamiast samych kilometrów oceniaj równolegle: minuty, czas intensywnej pracy, liczbę sesji, czas długiego biegu, gęstość trudnych dni, obciążenie subiektywne (jeśli dane są), zmęczenie i niepewność.
+4.2. Nie stosuj magicznej reguły 10% ani pojedynczego wskaźnika ryzyka jako dowodu bezpieczeństwa. Granice mają zależeć od poziomu, historii, celu, okresu i wiarygodności danych; udokumentuj je.
+4.3. Zaplanuj osobno progresję, stabilizację, odciążenie, powrót po przerwie i taper. Zadbaj o łagodne przejścia między fazami i tygodniami.
+4.4. Przy małym kilometrażu unikaj nieuzasadnionego dominowania długiego biegu; przy dużej bazie nie obcinaj arbitralnie tolerowanej objętości tylko przez ogólny limit.
+4.5. Zadbaj o harmonogram: odległość czasowa między mocnymi jednostkami, kumulacja bodźców, dostępne dni, bieg długi po akcencie, dwa kolejne trudne dni, tydzień startowy.
+4.6. Wprowadź opisową przyczynę każdej istotnej redukcji lub zwiększenia obciążenia.
+
+====================================================================
+5. NOWY SILNIK PROGRESJI TRENINGÓW JAKOŚCIOWYCH
+====================================================================
+5.1. Przechowuj dla każdej jednostki: cel, typ, intensywność/tempo/RPE, czas pracy, dystans pracy, liczbę i długość odcinków, przerwy, rozgrzewkę, schłodzenie, fazę, status planowany/wykonany, poprzednią porównywalną ekspozycję i uzasadnienie.
+5.2. Porównuj podobne bodźce, nie mieszaj krótkich interwałów z progiem, długim biegiem i taperem w jeden licznik progresji.
+5.3. Dopuszczaj: więcej powtórzeń, dłuższe odcinki, krótszą przerwę, dłuższy czas pracy, stabilizację, regresję obciążenia. Nie zwiększaj automatycznie wszystkich parametrów naraz.
+5.4. Rozróżnij powtórzenie celowe od stagnacji. Dwa identyczne 4x800 m mogą być uzasadnione, ale wymagają kontekstu; przy długim planie brak rozwoju musi być rozpoznany.
+5.5. Dla 5 km: baza tlenowa, praca specyficzna, odpowiednie interwały, kontrola intensywności. Dla 10 km: próg, odcinki dłuższe, czas pracy w pobliżu tempa startowego. Dla HM: próg i wytrzymałość specyficzna. Dla maratonu: długi bieg, tempo MP, tolerancja objętości, odżywianie.
+5.6. Nie zwiększaj tempa automatycznie z upływem tygodni; uwzględniaj aktualną formę i jakość danych. Nie traktuj tętna jako celu krótkich interwałów.
+5.7. Opracuj osobne testy progresji dla planów 6, 8, 12, 16, 20 i 24 tygodni; badaj rzeczywiste jednostki, a nie tylko liczbę akcentów.
+
+====================================================================
+6. JEDEN I DWA TRENINGI TYGODNIOWO — REKONSTRUKCJA POLITYKI
+====================================================================
+6.1. Dla jednego dnia osobno planuj utrzymanie aktywności, utrzymanie formy, ukończenie krótkiego biegu, poprawę rekordu. Nie udawaj pełnego przygotowania maratońskiego. Rozdziel jakość planu od niewykonalności celu.
+6.2. Dla dwóch dni zaprojektuj sensowną rotację bodźca rozwojowego i wytrzymałościowego z odpowiednią regeneracją; nie wymuszaj dwóch mocnych jednostek.
+6.3. Zbadaj pary dostępnych dni (np. sobota+niedziela vs wtorek+sobota) i zmieniaj układ, nie tylko nazwę dnia.
+6.4. Kontroluj długi bieg jako udział tygodnia i czas, ale nie traktuj jednej granicy procentowej jako absolutnego zakazu.
+6.5. Dla HM i maratonu zwracaj czytelny status ograniczenia i alternatywy: więcej dni, dłuższy okres przygotowań lub mniej ambitny cel.
+6.6. Dla 3–5 dni popraw rozdział łatwych, jakościowych i długich biegów; dla 6–7 dni nie zwiększaj częstotliwości tylko dlatego, że jest dostępna, ale usuń arbitralne ograniczenia u odpowiednio przygotowanych zawodników.
+6.7. Szczególnie testuj spadki dla dwóch dni oraz plany jednodniowe, których średnia V25 nie poprawiła się względem V24.
+
+====================================================================
+7. MARATON — GŁĘBOKA REKONSTRUKCJA MODELU
+====================================================================
+7.1. Rozdziel profil: debiutant / doświadczenie maratońskie, cel ukończenia / wynik, baza mała / średnia / wysoka, historia wykonania kompletna / niepełna.
+7.2. Wprowadź etapy: regularność, rozwój tolerancji objętości, rozwój długiego biegu, przygotowanie specyficzne, taper, start. Przejście do kolejnego etapu nie może wynikać wyłącznie z zaplanowania treningów.
+7.3. Ustal budżet długiego biegu w minutach i kilometrach, z uwzględnieniem czasu biegu, tygodniowej objętości, doświadczenia i zmęczenia. Nie narzucaj jednego maksymalnego dystansu wszystkim.
+7.4. Zadbaj o logiczną progresję jednostek MP, rozkład progu i MP, regenerację, taper 2–3 tygodni zależnie od profilu, realistyczny tydzień startowy.
+7.5. Przetestuj osobno historyczny przypadek maraton / 4 dni / 60 km, ale nie optymalizuj tylko pod niego.
+7.6. Dodaj opcjonalne dane o upale, przewyższeniach, nawierzchni, żywieniu i tolerancji przewodu pokarmowego. Bez danych nie wymyślaj dokładnych korekt tempa ani strat potu.
+7.7. Oddziel gotowość do wykonania bieżącego tygodnia od gotowości do maratonu i od prawdopodobieństwa uzyskania czasu. Nie deklaruj klinicznego dopuszczenia.
+7.8. Wysoki wynik maratonu w benchmarku ma wynikać z lepszego planu, nie z przekroczenia bezpiecznej objętości.
+
+====================================================================
+8. PÓŁMARATON, 10 KM I 5 KM — OSOBNE POLITYKI
+====================================================================
+8.1. HM: odpowiednia rola długiego biegu, dłuższe bloki progowe, specyfika HM, progresja i taper; nie stosuj mechanicznie planu 10 km z dłuższym long runem.
+8.2. 10 km: zrównoważ próg, interwały, bazę, pracę specyficzną; wykryj stagnację i niepotrzebne zmiany akcentów. Wykonaj szczegółowy audyt planu 10 km / 3 dni / 35 km / PB 52:00 / cel 53:34 / 2026-11-02 do 2027-03-28.
+8.3. 5 km: rozwój wytrzymałości tlenowej i specyficznej, krótsze/dłuższe odcinki, proporcjonalny koszt intensywności, właściwy taper.
+8.4. Zbadaj cele wolniejsze od aktualnego PB, ambitniejsze od formy, cele bez czasu, bardzo krótki i długi okres przygotowań.
+8.5. Nie wymuszaj identycznej struktury dla początkujących i zaawansowanych.
+
+====================================================================
+9. ADAPTACJA V26 — ZAMKNIĘTA PĘTLA OPARTA NA DANYCH
+====================================================================
+9.1. Zachowaj rozdział plannedWorkouts, completedHistory, adaptationDecisions i readinessEvidence lub równoważnych struktur.
+9.2. Wzmocnij import: idempotencja, wiele aktywności jednego dnia, zewnętrzne ID, poprawki, anulowanie, brak czasu, różne strefy, duże importy, częściowo błędne dane, niekompletna historia. Nigdy nie utożsamiaj braku wpisu w niekompletnym oknie z niewykonaniem.
+9.3. Adaptuj na podstawie kilku porównywalnych ekspozycji, trendu RPE, regularności, regeneracji i jakości danych. Jedna szybka sesja nie może wywoływać agresywnego wzrostu temp.
+9.4. Po pominięciu, przerwie, wysokim RPE, zmęczeniu lub bólu nie nadrabiaj akcentów mechanicznie. Ochrona wykonanej przeszłości jest obowiązkowa.
+9.5. Wprowadź jawne confidence/uncertainty i powody decyzji, bez udawania naukowo skalibrowanego prawdopodobieństwa sukcesu.
+9.6. Umożliwiaj odwracalną korektę błędnej aktywności z audytem; przeliczaj tylko przyszłość.
+9.7. Testuj wielokrotne updatePlan, korektę po korekcie, idempotencję, deterministyczność, duże importy i wydajność.
+9.8. Zbuduj co najmniej 150 realistycznych historii symulowanych, nie tylko pojedynczych zdarzeń; każda powinna mieć wiele tygodni i różne przebiegi wykonania.
+
+====================================================================
+10. MIERNIKI — NIEZALEŻNOŚĆ I KALIBRACJA
+====================================================================
+10.1. Zachowaj BEZ ZMIAN historyczne mierniki V23.0.0 i V25.0.0, ich wagi, progi i SHA-256. Zamroź zestawy 28 i 1008 oraz ich wejścia.
+10.2. Stwórz opcjonalny miernik diagnostyczny V26.0.0 wyłącznie jako osobny moduł. Miernik ma rozdzielać: jakość planowania, wykonalność celu, bezpieczeństwo, indywidualizację, progresję, specyfikę dystansu, taper, adaptację, niepewność.
+10.3. Nie kalibruj nowego miernika pod przewagę V26. Kalibruj na kontrolowanych planach dobrych, błędnych i granicznych, w tym planach z celowo zbyt dużą intensywnością, złym taperem, stagnacją, zbyt długim biegiem, niewykonalnym celem i poprawną ostrożną redukcją.
+10.4. Sprawdź, czy miernik nie daje automatycznie 9–10 wszystkim planom. Raportuj rozkłady i czułość. Nie myl wysokiego wyniku jakości jednej sesji z przygotowaniem do maratonu.
+10.5. Porównaj V25 i V26 tym SAMYM miernikiem V23.0.0, następnie tym SAMYM V25.0.0 i ewentualnie tym SAMYM V26.0.0. Nigdy nie zestawiaj wyników z różnych skal jako poprawy.
+10.6. W każdej tabeli podaj wersję miernika, wersję wejść, liczbę scenariuszy i warunki.
+
+====================================================================
+11. PEŁNY PLAN TESTOWANIA I KRYTERIA JAKOŚCI
+====================================================================
+11.1. Uruchom wszystkie historyczne testy V25; napraw realne regresje bez osłabiania asercji.
+11.2. Uruchom dokładnie 28 podstawowych kombinacji (4 dystanse x 1–7 dni) i dokładnie 1008 zamrożonych scenariuszy.
+11.3. Dla KAŻDEGO z 1008 przypadków zapisz: ID, pełne wejście, V25/V26 oceny 23.0.0 i 25.0.0, różnice, kategorie, tygodnie, jednostki, kilometraż, intensywność, ostrzeżenia, status wykonalności, decyzję czy rzeczywiście lepiej, gorzej lub remis.
+11.4. Podaj średnie i mediany, percentyle, rozkład ocen, liczbę popraw/remisów/regresji, osobno według dystansu, częstotliwości, poziomu i celu.
+11.5. Wprowadź regresyjne testy jednostkowe dla każdej odrębnej klasy naprawionych błędów; dołącz scenariusze skrajne, metamorfczne i property-based, w tym daty graniczne, NaN/Infinity, ujemne wartości, nierealne cele, krótkie i długie plany.
+11.6. Wykonaj co najmniej 40 zróżnicowanych profili do oceny eksperckiej, w tym 10 km/3 dni, HM/2 dni, maraton/4 dni/60 km, maraton/1 dzień, początkujący 5 km, senior, powrót po przerwie, duży kilometraż i bardzo wolny biegacz.
+11.7. Oceniaj faktyczne jednostki: bodziec, progresję, regenerację, rozkład tygodnia, taper, realność tempa, zgodność z celem, obciążenie, ostrzeżenia. Nie nazywaj wewnętrznej oceny zewnętrzną walidacją.
+11.8. Wykonaj osobny test adaptacyjny z historiami wielotygodniowymi. Statyczna macierz 1008 nie sprawdza updatePlan.
+11.9. Testy metamorfczne: większe zmęczenie nie zwiększa agresji; brak treningu nie oznacza sukcesu; ambitniejszy cel nie przyspiesza automatycznie wszystkich temp; mniej dostępnych dni nie powoduje nadmiernej koncentracji; aktywny ból nie zwiększa intensywności; korekta wpisu zmienia tylko przyszłość; identyczne dane dają identyczny plan.
+11.10. Uruchom testy bezpieczeństwa po KAŻDEJ istotnej zmianie oraz pełny sweep końcowy. Raportuj krytyczne naruszenia oddzielnie od punktacji.
+11.11. Zmierz czas i pamięć dla generowania, benchmarków, adaptacji i importów; nie dopuść do niekontrolowanego wzrostu kosztu obliczeń.
+
+====================================================================
+12. ITERACYJNY PROCES NAPRAWY — BEZ OPTYMALIZACJI POD JEDEN TEST
+====================================================================
+Pracuj w iteracjach:
+A. Odtwórz bazę i diagnozę.
+B. Wybierz rodzinę problemów o największym wpływie i najwyższym ryzyku.
+C. Dodaj test reprodukujący.
+D. Zmień logikę planowania.
+E. Uruchom test jednostkowy i sąsiednie profile.
+F. Uruchom 28 + 1008 i sweep bezpieczeństwa.
+G. Zachowaj zmianę tylko wtedy, gdy daje sensowny efekt netto bez niedopuszczalnych regresji; jeśli nie, popraw albo wycofaj.
+H. Powtórz dla kolejnych rodzin problemów.
+I. Przeprowadź końcowy niezależny audyt przypadków największego pogorszenia.
+
+Nie kończ po jednej udanej iteracji. Nie optymalizuj tylko średniej: obserwuj najgorszy decyl, maraton, 1–2 dni, poziomy początkujące, regresje i naruszenia bezpieczeństwa. W razie konfliktu wybierz bezpieczeństwo i uczciwy raport.
+
+====================================================================
+13. AMBITNE CELE V26 — NIE OSZUKUJ TESTÓW
+====================================================================
+Cele aspiracyjne, a NIE wymuszone wyniki:
+- Istotnie większa średnia V26 niż 7,444 na zamrożonym mierniku V23.0.0 i identycznych 1008 wejściach.
+- Wyraźna poprawa maratonu (V25 historycznie ~6,371) i HM (~6,868) bez nadmiernego obciążenia.
+- Poprawa 10 km (V25 ~8,229) i 5 km (~8,307).
+- Wyraźnie mniej niż 49 regresji względem V25, po oddzieleniu rzeczywistych regresji od ograniczeń miernika.
+- Zmniejszenie liczby historycznych obniżeń względem V23, ale nie przez dopasowanie do wad zamrożonego miernika.
+- Więcej popraw niż remisów, o ile wynika to z rzeczywistej jakości; nie generuj sztucznych różnic.
+- Lepsza jakość planów 1–2 dni, poprawa progresji 3–5 dni i sensowna obsługa 6–7 dni.
+- Zero nowych krytycznych naruszeń bezpieczeństwa; zachowanie zgodności API i pełnego audytu aktywności.
+- Przewaga potwierdzona zarówno na historycznych, jak i nowych ślepych scenariuszach, a nie tylko w benchmarku rozwojowym.
+
+Nie deklaruj 10/10 bez zewnętrznej walidacji i rzeczywistych danych o efektach. Jeśli jakiś cel nie został osiągnięty, przedstaw prawdziwe liczby i uzasadnienie.
+
+====================================================================
+14. RAPORTY I WERYFIKOWALNE ARTEFAKTY
+====================================================================
+Utwórz co najmniej:
+README_V26.md
+ZMIANY_V25_V26.md
+DIAGNOZA_V25_V26.md
+BENCHMARK_28_V25_V26.md
+BENCHMARK_1008_V25_V26.md
+BENCHMARK_1008_V25_V26.json
+REGRESJE_V26.json
+ANALIZA_10KM_3DNI_V26.md
+ANALIZA_MARATON_V26.md
+RAPORT_ADAPTACJI_V26.md
+RAPORT_TESTOW_V26.md
+AUDYT_BEZPIECZENSTWA_V26.md
+SYSTEM_OCENIANIA_V26.md (jeśli powstanie nowy miernik)
+OGRANICZENIA_V26.md
+REKOMENDACJE_V27.md
+
+Raport końcowy: liczba linii kodu głównego generatora i modułów, rozmiary, wykaz zmian, uruchomione komendy, PASS/FAIL, czasy, 28x4 wyniki, 1008 par, wszystkie regresje, poprawy według dystansu i dni, oceny kilku rzeczywistych planów, krytyczne naruszenia, nieukończone zadania i różnice między raportem archiwalnym a wykonanym.
+
+Zapisz kompletne dane do odtworzenia, nie tylko zaokrąglone średnie. Dołącz testy, skrypty i konfigurację. Zabezpiecz wersję bazową i sumy SHA-256.
+
+====================================================================
+15. DOSTARCZENIE V26
+====================================================================
+1. Zaimplementuj, przetestuj i zatwierdź zmiany w repozytorium.
+2. Przygotuj kompletny RunPlanner_V26.zip z kodem, modułami, testami, skryptami, raportami, JSON i instrukcją uruchomienia.
+3. Zweryfikuj integralność ZIP i możliwość odtworzenia testów z jego zawartości.
+4. Nie dodawaj do ZIP zbędnych wielkich kopii wcześniejszych archiwów, jeśli nie są potrzebne do odtworzenia; podaj jednoznaczne referencje do baz i sprawdź, czy porównanie działa bez ukrytych plików.
+5. Jeśli środowisko nie pozwala dokończyć, zachowaj stan roboczy i jawnie oznacz, co jest wykonane, co nie i jakie testy rzeczywiście uruchomiono. Nie ogłaszaj niekompletnej V26 jako gotowej.
+
+KOŃCOWE POLECENIE:
+Nie odpowiadaj samym opisem zmian. Przeprowadź pełny cykl implementacja → test → porównanie → naprawa regresji → walidacja → dokumentacja → ZIP. Przeznacz większość pracy na rzeczywistą jakość generowanych jednostek i planów. Głównym miernikiem sukcesu jest lepszy, bezpieczniejszy i bardziej indywidualny trening dla szerokiej populacji profili, a nie maksymalna liczba automatycznych punktów.

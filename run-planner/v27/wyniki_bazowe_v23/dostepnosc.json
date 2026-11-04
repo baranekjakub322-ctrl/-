@@ -1,0 +1,47 @@
+{
+ "generator": "planGenerator_v23.js",
+ "nazwa": "dostepnosc",
+ "zaliczone": 9,
+ "niezaliczone": 0,
+ "bledy": [],
+ "kombinacji": 762,
+ "pary": 196,
+ "wszystkieTesty": [
+  {
+   "opis": "przetestowano 762 kombinacji (127 podzbiorów x 2 dystanse x 3 deklaracje)",
+   "ok": true
+  },
+  {
+   "opis": "kombinacje dni: wyjatek = 0",
+   "ok": true
+  },
+  {
+   "opis": "kombinacje dni: nieOk = 0",
+   "ok": true
+  },
+  {
+   "opis": "kombinacje dni: krytyczne = 0",
+   "ok": true
+  },
+  {
+   "opis": "kombinacje dni: niedostepny = 0",
+   "ok": true
+  },
+  {
+   "opis": "kombinacje dni: wiecejNizDostepne = 0",
+   "ok": true
+  },
+  {
+   "opis": "kombinacje dni: wiecejNizDekl = 0",
+   "ok": true
+  },
+  {
+   "opis": "kombinacje dni: przerwyBezPowodu = 0",
+   "ok": true
+  },
+  {
+   "opis": "196 par (start x zawody x dystans): bez krytycznych 196/196",
+   "ok": true
+  }
+ ]
+}

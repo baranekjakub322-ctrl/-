@@ -1,0 +1,30 @@
+[porownanie28] zaliczone 31, niezaliczone 0
+{"dystans":{"5k":9.36,"10k":9.36,"half":9.14,"marathon":6.57},"czestotliwosc":{"1":5.5,"2":8.5,"3":9.25,"4":9.25,"5":9.25,"6":9.25,"7":9.25},"ogolnie":8.61}
+5k       1d -> 1 | peak 10 long 0 Q 0 warn 4 | niewystarczajace_przygotowanie | ocena 5.5 | 
+5k       2d -> 2 | peak 25 long 14 Q 10 warn 3 | przygotowanie_do_ukonczenia | ocena 10 | 
+5k       3d -> 3 | peak 34 long 14 Q 14 warn 1 | przygotowanie_do_wyniku | ocena 10 | 
+5k       4d -> 4 | peak 35 long 14 Q 14 warn 1 | przygotowanie_do_wyniku | ocena 10 | 
+5k       5d -> 5 | peak 38 long 13 Q 18 warn 3 | przygotowanie_do_wyniku | ocena 10 | 
+5k       6d -> 5 | peak 38 long 13 Q 18 warn 3 | przygotowanie_do_wyniku | ocena 10 | 
+5k       7d -> 5 | peak 38 long 13 Q 18 warn 3 | przygotowanie_do_wyniku | ocena 10 | 
+10k      1d -> 1 | peak 11 long 0 Q 0 warn 4 | niewystarczajace_przygotowanie | ocena 5.5 | 
+10k      2d -> 2 | peak 26 long 14 Q 10 warn 5 | przygotowanie_czesciowe | ocena 10 | 
+10k      3d -> 3 | peak 35 long 14 Q 15 warn 1 | przygotowanie_do_wyniku | ocena 10 | 
+10k      4d -> 4 | peak 35 long 14 Q 15 warn 2 | przygotowanie_do_wyniku | ocena 10 | 
+10k      5d -> 5 | peak 37 long 13 Q 19 warn 3 | przygotowanie_do_wyniku | ocena 10 | 
+10k      6d -> 5 | peak 37 long 13 Q 19 warn 3 | przygotowanie_do_wyniku | ocena 10 | 
+10k      7d -> 5 | peak 37 long 13 Q 19 warn 3 | przygotowanie_do_wyniku | ocena 10 | 
+half     1d -> 1 | peak 11 long 0 Q 0 warn 4 | niewystarczajace_przygotowanie | ocena 5.5 | 
+half     2d -> 2 | peak 30 long 17 Q 5 warn 5 | przygotowanie_czesciowe | ocena 8.5 | 
+half     3d -> 3 | peak 39 long 18 Q 15 warn 1 | przygotowanie_do_wyniku | ocena 10 | 
+half     4d -> 4 | peak 39 long 16 Q 15 warn 1 | przygotowanie_do_ukonczenia | ocena 10 | 
+half     5d -> 5 | peak 39 long 15 Q 15 warn 4 | przygotowanie_czesciowe | ocena 10 | 
+half     6d -> 5 | peak 39 long 15 Q 15 warn 4 | przygotowanie_czesciowe | ocena 10 | 
+half     7d -> 5 | peak 39 long 15 Q 15 warn 4 | przygotowanie_czesciowe | ocena 10 | 
+marathon 1d -> 1 | peak 11 long 0 Q 0 warn 5 | niewystarczajace_przygotowanie | ocena 5.5 | 
+marathon 2d -> 2 | peak 34 long 21 Q 0 warn 5 | przygotowanie_czesciowe | ocena 5.5 | 
+marathon 3d -> 3 | peak 39 long 19 Q 11 warn 4 | niewystarczajace_przygotowanie | ocena 7 | 
+marathon 4d -> 4 | peak 39 long 17 Q 15 warn 4 | niewystarczajace_przygotowanie | ocena 7 | 
+marathon 5d -> 5 | peak 39 long 16 Q 15 warn 5 | niewystarczajace_przygotowanie | ocena 7 | 
+marathon 6d -> 5 | peak 39 long 16 Q 15 warn 5 | niewystarczajace_przygotowanie | ocena 7 | 
+marathon 7d -> 5 | peak 39 long 16 Q 15 warn 5 | niewystarczajace_przygotowanie | ocena 7 | 

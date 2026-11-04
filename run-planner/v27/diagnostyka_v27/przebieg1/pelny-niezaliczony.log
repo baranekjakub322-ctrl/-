@@ -1,0 +1,156 @@
+
+> run-planner@27.0.0 test
+> node testy/run_v27.mjs
+
+=== history
+e":0,"ostrzezenia":3445},"v20":{"srednia":7.503,"planyZKrytycznym":0,"krytyczne":0,"ostrzezenia":3347},"scenariuszy":252},"marathon":{"v19":{"srednia":6.737,"planyZKrytycznym":3,"krytyczne":3,"ostrzezenia":3305},"v20":{"srednia":6.769,"planyZKrytycznym":0,"krytyczne":0,"ostrzezenia":3283},"scenariuszy":252}}
+=== porownanie_v20_v21
+[porownanie_v20_v21] zaliczone 32, niezaliczone 0
+{"5k":{"v20":7.875,"v21":9.857},"10k":{"v20":7.79,"v21":9.731},"half":{"v20":7.576,"v21":9.376},"marathon":{"v20":7.295,"v21":8.925}}
+=== sweep
+[sweep] zaliczone 21, niezaliczone 0
+=== skrypt_bledy
+[skrypt_bledy] zaliczone 4, niezaliczone 0
+=== v22
+V22: 73/73
+=== porownanie_v21_v22
+Comparison V21/V22: 1008 unique cases, 14 examples
+=== regresje_v22_v23
+V22: 73/73
+=== kalibracja_v23
+Kalibracja: 16/16; reference 9.122
+=== v23
+V23 82/82
+=== porownanie_v22_v23
+Comparison: 28 matrix + 1008 extended + 18 detailed; violations 0
+=== v24_inherited
+V23 82/82
+=== v24
+V24 227/227
+=== porownanie_v23_v24
+Comparison: 28 matrix + 1008 extended + 30 detailed; violations 0
+=== regresje_v25
+8/8
+=== v25_inherited
+V23 82/82
+=== adaptacja_v25
+Adaptation 140/140
+=== v25
+V25 121/121
+=== kalibracja_v25
+Calibration V25 24/24; good=8.904
+=== porownanie_v24_v25
+Comparison: 28 matrix + 1008 extended + 30 detailed; violations 0
+=== wydajnosc_v25
+[
+  {
+    version: 'v24',
+    inputSha256: '0947bb9c68a7740a707d59e17f6e2117f68b2245c188a1d00180bc87077928d0',
+    executed: 84,
+    meanMs: 14.64547133333334,
+    medianMs: 10.46993500000002,
+    p95Ms: 36.368472999999994,
+    maxMs: 57.106109999999944,
+    startRss: 66523136,
+    maxRssBytes: 140054528,
+    node: 'v24.19.0'
+  },
+  {
+    version: 'v25',
+    inputSha256: '0947bb9c68a7740a707d59e17f6e2117f68b2245c188a1d00180bc87077928d0',
+    executed: 84,
+    meanMs: 13.538837428571432,
+    medianMs: 9.971009000000038,
+    p95Ms: 33.29207700000006,
+    maxMs: 39.02634599999993,
+    startRss: 67928064,
+    maxRssBytes: 150761472,
+    node: 'v24.19.0'
+  }
+]
+NIEPOWODZENIE: czulosc
+
+
+=== regresje_v27
+[
+  {
+    name: 'season trajectory exists before local session allocation',
+    ok: true
+  },
+  { name: 'maintenance does not repeat maximal 3 km tests', ok: true },
+  {
+    name: 'stimulus ledger includes next step and conditional progression',
+    ok: true
+  },
+  { name: 'weekly replan preserves original season phase', ok: true },
+  { name: 'undated PB has explicitly declared provenance', ok: true }
+]
+
+=== adaptacja_compat_v27
+Adaptation 140/140
+
+=== kalibracja_v27
+Audit calibration 16/16
+
+=== v27
+V27 118/118
+
+=== historie_v27
+{"scenarios":150,"weeksPerHistory":6,"completedHistories":150,"elapsedMs":30070.276165,"peakRssBytes":525414400,"passed":151,"failed":0}
+
+=== chronologia_v27
+Chronology 8/8
+
+=== profiles_v27
+{
+  profiles: 47,
+  fullPlans: 46,
+  worst: [
+    'maraton_krotki',
+    'jeden_powrot',
+    'jeden_podtrzymanie',
+    '5k_jeden',
+    'tylko_jeden_dostepny',
+    'maraton_jeden',
+    'spadek_historii',
+    '5k_poczatkujacy',
+    'maraton_dwa',
+    'niska_tolerancja'
+  ]
+}
+
+=== benchmark_v27
+,42]},"audit":{"n":64,"mean":7.371421875000001,"median":7.517999999999999,"p10":6.55,"p90":7.965000000000001,"min":6.024,"max":8.11,"worstDecileMean":6.327285714285714,"histogram":[0,0,0,0,0,0,15,46,3,0]}},"v27":{"score23":{"n":64,"mean":7.280078124999997,"median":8.049,"p10":5.005,"p90":9.252,"min":3.387,"max":9.76,"worstDecileMean":4.431571428571428,"histogram":[0,0,0,2,4,13,10,3,23,9]},"score25":{"n":64,"mean":9.23171875,"median":9.212,"p10":8.763,"p90":9.754,"min":8.493,"max":9.87,"worstDecileMean":8.60357142857143,"histogram":[0,0,0,0,0,0,0,0,18,46]},"audit":{"n":64,"mean":7.513499999999996,"median":7.76,"p10":6.558,"p90":8.059999999999999,"min":6.332,"max":8.209999999999999,"worstDecileMean":6.4595714285714285,"histogram":[0,0,0,0,0,0,14,32,18,0]}}},"holdout224Stats":{"v26":{"score23":{"n":224,"mean":7.125232142857141,"median":7.845,"p10":4.149,"p90":9.302,"min":2.534,"max":9.896,"worstDecileMean":3.4696521739130444,"histogram":[0,0,4,15,32,18,18,33,62,42]},"score25":{"n":224,"mean":8.94098214285714,"median":9.038,"p10":8.108,"p90":9.678,"min":7.252,"max":9.9,"worstDecileMean":7.757999999999998,"histogram":[0,0,0,0,0,0,0,14,90,120]},"audit":{"n":224,"mean":7.357812499999996,"median":7.474000000000001,"p10":6.519,"p90":8.01,"min":5.879,"max":8.26,"worstDecileMean":6.242739130434782,"histogram":[0,0,0,0,0,2,55,144,23,0]}},"v27":{"score23":{"n":224,"mean":7.1726964285714265,"median":8.046,"p10":4.239,"p90":9.219,"min":2.55,"max":9.788,"worstDecileMean":3.589478260869566,"histogram":[0,0,3,16,22,27,23,20,73,40]},"score25":{"n":224,"mean":9.04901339285714,"median":9.096,"p10":8.374,"p90":9.711,"min":7.387,"max":9.87,"worstDecileMean":7.947695652173913,"histogram":[0,0,0,0,0,0,0,11,84,129]},"audit":{"n":224,"mean":7.437799107142856,"median":7.550999999999999,"p10":6.5969999999999995,"p90":8.093,"min":6.226,"max":8.327,"worstDecileMean":6.482956521739131,"histogram":[0,0,0,0,0,0,58,120,46,0]}}},"historicalBelowV23":120,"internalEvidenceImprovements":233,"errors":[]}
+
+=== wydajnosc_v27
+[
+  {
+    version: 'v26',
+    inputSha256: '0947bb9c68a7740a707d59e17f6e2117f68b2245c188a1d00180bc87077928d0',
+    executed: 84,
+    meanMs: 29.9041057857143,
+    medianMs: 23.709047000000055,
+    p95Ms: 66.59365700000035,
+    maxMs: 82.2504980000001,
+    startRss: 73490432,
+    maxRssBytes: 185425920,
+    node: 'v24.19.0'
+  },
+  {
+    version: 'v27',
+    inputSha256: '0947bb9c68a7740a707d59e17f6e2117f68b2245c188a1d00180bc87077928d0',
+    executed: 84,
+    meanMs: 18.701942083333343,
+    medianMs: 12.635215000000017,
+    p95Ms: 39.96711499999992,
+    maxMs: 42.21052000000009,
+    startRss: 72704000,
+    maxRssBytes: 230252544,
+    node: 'v24.19.0'
+  }
+]
+
+=== profiling_v27
+:52.227171999999996,"rssBefore":57024512,"rssAfter":67268608,"heapBefore":12753720,"heapAfter":18399240,"completed":1000,"version":"v27","count":1001},{"name":"v26 strict 3000","elapsedMs":65.89136400000001,"rssBefore":68055040,"rssAfter":77492224,"heapBefore":12796752,"heapAfter":28100736,"completed":3000,"version":"v26","count":3000},{"name":"v27 strict 3000","elapsedMs":86.37739699999997,"rssBefore":77492224,"rssAfter":94756864,"heapBefore":28101536,"heapAfter":24773008,"completed":3000,"version":"v27","count":3000},{"name":"v26 quarantine 3000","elapsedMs":140.424956,"rssBefore":94756864,"rssAfter":94093312,"heapBefore":24834088,"heapAfter":28374480,"completed":3000,"version":"v27","count":3001}],"adaptation":[{"name":"v26 update 12","elapsedMs":14.651862999999935,"rssBefore":99205120,"rssAfter":103923712,"heapBefore":37208912,"heapAfter":41863072,"completed":12,"version":"v26","count":12},{"name":"v27 update 12","elapsedMs":11.981272999999987,"rssBefore":109690880,"rssAfter":113491968,"heapBefore":47891600,"heapAfter":51529912,"completed":12,"version":"v27","count":12},{"name":"v26 update 60","elapsedMs":13.42877999999996,"rssBefore":116506624,"rssAfter":116768768,"heapBefore":27283096,"heapAfter":34984288,"completed":60,"version":"v26","count":60},{"name":"v27 update 60","elapsedMs":15.078691000000049,"rssBefore":118865920,"rssAfter":126730240,"heapBefore":39782040,"heapAfter":46737776,"completed":60,"version":"v27","count":60},{"name":"v26 update 180","elapsedMs":28.013273000000027,"rssBefore":133808128,"rssAfter":135118848,"heapBefore":53919008,"heapAfter":36911872,"completed":180,"version":"v26","count":180},{"name":"v27 update 180","elapsedMs":30.82906600000001,"rssBefore":135118848,"rssAfter":135380992,"heapBefore":41636544,"heapAfter":24503768,"completed":180,"version":"v27","count":180}],"peakRssBytes":135380992,"limitations":"Sequential cold/warm calls in one process; heap/RSS include retained runtime and JIT, not isolated object size. No SLA claim."}
+
+{"node":"v24.19.0","started":"2026-11-04T14:13:09.167Z","elapsedMs":431992,"passed":10,"failed":3}

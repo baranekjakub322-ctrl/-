@@ -1,0 +1,596 @@
+{
+  "version": "27.0.0",
+  "started": "2026-11-04T14:22:14.104Z",
+  "node": "v24.19.0",
+  "elapsedMs": 429778,
+  "stages": 11,
+  "suites": 38,
+  "passed": 1796,
+  "failed": 0,
+  "mainLines": 2671,
+  "totalLines": 3647,
+  "totalBytes": 371749,
+  "production": [
+    {
+      "file": "planGenerator_v27.js",
+      "bytes": 255003,
+      "lines": 2671,
+      "sha256": "2f6f4522bac5f29b9808f9103bbdc7b34b94bbe31cc81295f6b83c5c6c1fbe9f"
+    },
+    {
+      "file": "model/training.mjs",
+      "bytes": 4220,
+      "lines": 69,
+      "sha256": "dfb3fdd9e9a74dedfa90e458fa14e0e0205dd61b29a779726b7321383bd671a0"
+    },
+    {
+      "file": "model/activity_v27.mjs",
+      "bytes": 9982,
+      "lines": 109,
+      "sha256": "0bad4ee00ea1e552983919bd032d766a68fc76bafee2ea05c5c2db6f788ec74e"
+    },
+    {
+      "file": "model/adaptation_v27.mjs",
+      "bytes": 11838,
+      "lines": 81,
+      "sha256": "c718711a5a1a351ccd5cfd58e476e3e1b0fefcb4dd30205426a9243069bbdca5"
+    },
+    {
+      "file": "model/constraints_v27.mjs",
+      "bytes": 7242,
+      "lines": 76,
+      "sha256": "b4e6b6c095f2942808b86e4ebdfa3d617c47d986f87a7e683f3a8c3bab6ec581"
+    },
+    {
+      "file": "model/frequency_v27.mjs",
+      "bytes": 6052,
+      "lines": 56,
+      "sha256": "a4214e6196c7528221ad9580826efdd0c66e95189af02e5ba0bd0d95748585b4"
+    },
+    {
+      "file": "model/ledger_v27.mjs",
+      "bytes": 2706,
+      "lines": 14,
+      "sha256": "bd95e967b7a351c547ff25d4c1bdbc6a699012420fac16ef243ee4c5f2c6d8be"
+    },
+    {
+      "file": "model/policy_v27.mjs",
+      "bytes": 8980,
+      "lines": 103,
+      "sha256": "a849211a814da0a1fd300d81599f690a9c9dfa9935509eca28218e90298bbee4"
+    },
+    {
+      "file": "model/profile_v27.mjs",
+      "bytes": 1625,
+      "lines": 12,
+      "sha256": "9794f4f31e272c7fe3f1a875f429d159efb3f431aa1bfd48e335f9668ad39ace"
+    },
+    {
+      "file": "model/quality_v27.mjs",
+      "bytes": 2503,
+      "lines": 30,
+      "sha256": "ad1774f5f68d65afe6baf517586de0e71d48cc7798b92ff150e1c362290a4807"
+    },
+    {
+      "file": "model/readiness_v27.mjs",
+      "bytes": 5106,
+      "lines": 28,
+      "sha256": "12b4cad33abbdb43ba6aea12a8b4821ad7473117fe6e5a87a233839f773cad45"
+    },
+    {
+      "file": "model/season_v27.mjs",
+      "bytes": 5104,
+      "lines": 41,
+      "sha256": "27b2f4bcfd342046fe5252b16978d91dbedcc6e351346a610cdaa6550d8fae06"
+    },
+    {
+      "file": "scoring/v23.mjs",
+      "bytes": 15652,
+      "lines": 134,
+      "sha256": "a7d2cfe244bb156418e3334b917b39773c1e96ad7c0ff356aac586380aa3eb71"
+    },
+    {
+      "file": "scoring/v25.mjs",
+      "bytes": 21643,
+      "lines": 166,
+      "sha256": "09dfeeb6b6ab25bdbae4065b5d2166b75f9d1c7f286408337fa8c912f65332b2"
+    },
+    {
+      "file": "scoring/v27.mjs",
+      "bytes": 14093,
+      "lines": 57,
+      "sha256": "f267bf8bd66c34f026bb44fe2e7592716bfe522018f3499b5219aa8aa7ae8235"
+    }
+  ],
+  "statistics": {
+    "v26": {
+      "score23": {
+        "n": 1008,
+        "mean": 7.446662698412702,
+        "median": 8.379,
+        "p10": 4.758,
+        "p90": 8.998,
+        "min": 2.794,
+        "max": 9.532,
+        "worstDecileMean": 3.9542376237623755,
+        "histogram": [
+          0,
+          0,
+          12,
+          40,
+          55,
+          145,
+          122,
+          71,
+          465,
+          98
+        ]
+      },
+      "score25": {
+        "n": 1008,
+        "mean": 9.190388888888933,
+        "median": 9.099,
+        "p10": 8.745,
+        "p90": 9.605,
+        "min": 7.978,
+        "max": 9.72,
+        "worstDecileMean": 8.613544554455448,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          322,
+          684
+        ]
+      },
+      "audit": {
+        "n": 1008,
+        "mean": 7.363991071428585,
+        "median": 7.5200000000000005,
+        "p10": 6.507,
+        "p90": 8.097,
+        "min": 6.11,
+        "max": 8.309999999999999,
+        "worstDecileMean": 6.297594059405943,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          341,
+          477,
+          190,
+          0
+        ]
+      }
+    },
+    "v27": {
+      "score23": {
+        "n": 1008,
+        "mean": 7.492177579365069,
+        "median": 8.461,
+        "p10": 4.864,
+        "p90": 9.05,
+        "min": 2.794,
+        "max": 9.532,
+        "worstDecileMean": 3.9733762376237616,
+        "histogram": [
+          0,
+          0,
+          12,
+          40,
+          50,
+          138,
+          120,
+          79,
+          438,
+          131
+        ]
+      },
+      "score25": {
+        "n": 1008,
+        "mean": 9.315775793650845,
+        "median": 9.3,
+        "p10": 8.894,
+        "p90": 9.716,
+        "min": 8.212,
+        "max": 9.87,
+        "worstDecileMean": 8.68863366336634,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          166,
+          842
+        ]
+      },
+      "audit": {
+        "n": 1008,
+        "mean": 7.419160714285722,
+        "median": 7.630000000000001,
+        "p10": 6.543000000000001,
+        "p90": 8.11,
+        "min": 6.11,
+        "max": 8.309999999999999,
+        "worstDecileMean": 6.3200594059405955,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          296,
+          472,
+          240,
+          0
+        ]
+      }
+    }
+  },
+  "distribution": {
+    "better": 532,
+    "same": 226,
+    "worse": 250
+  },
+  "distribution25": {
+    "better": 667,
+    "same": 256,
+    "worse": 85
+  },
+  "distributionAudit": {
+    "better": 409,
+    "same": 362,
+    "worse": 237
+  },
+  "historicalBelowV23": 120,
+  "internalEvidenceImprovements": 233,
+  "sweep": {
+    "executed": 9408,
+    "unique": 9408,
+    "critical": 0,
+    "warnings": 156
+  },
+  "adaptation": {
+    "histories": 150,
+    "weeks": 6,
+    "passed": 151,
+    "failed": 0,
+    "longSequences": 4
+  },
+  "profiles": 47,
+  "fullPlans": 46,
+  "holdout64": {
+    "v26": {
+      "score23": {
+        "n": 64,
+        "mean": 7.296546875000002,
+        "median": 7.758,
+        "p10": 4.901,
+        "p90": 9.322,
+        "min": 2.952,
+        "max": 9.82,
+        "worstDecileMean": 4.302857142857143,
+        "histogram": [
+          0,
+          0,
+          1,
+          1,
+          6,
+          12,
+          9,
+          5,
+          12,
+          18
+        ]
+      },
+      "score25": {
+        "n": 64,
+        "mean": 9.115874999999999,
+        "median": 9.16,
+        "p10": 8.657,
+        "p90": 9.56,
+        "min": 8.075,
+        "max": 9.87,
+        "worstDecileMean": 8.44457142857143,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          22,
+          42
+        ]
+      },
+      "audit": {
+        "n": 64,
+        "mean": 7.371421875000001,
+        "median": 7.517999999999999,
+        "p10": 6.55,
+        "p90": 7.965000000000001,
+        "min": 6.024,
+        "max": 8.11,
+        "worstDecileMean": 6.327285714285714,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          15,
+          46,
+          3,
+          0
+        ]
+      }
+    },
+    "v27": {
+      "score23": {
+        "n": 64,
+        "mean": 7.280078124999997,
+        "median": 8.049,
+        "p10": 5.005,
+        "p90": 9.252,
+        "min": 3.387,
+        "max": 9.76,
+        "worstDecileMean": 4.431571428571428,
+        "histogram": [
+          0,
+          0,
+          0,
+          2,
+          4,
+          13,
+          10,
+          3,
+          23,
+          9
+        ]
+      },
+      "score25": {
+        "n": 64,
+        "mean": 9.23171875,
+        "median": 9.212,
+        "p10": 8.763,
+        "p90": 9.754,
+        "min": 8.493,
+        "max": 9.87,
+        "worstDecileMean": 8.60357142857143,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          18,
+          46
+        ]
+      },
+      "audit": {
+        "n": 64,
+        "mean": 7.513499999999996,
+        "median": 7.76,
+        "p10": 6.558,
+        "p90": 8.059999999999999,
+        "min": 6.332,
+        "max": 8.209999999999999,
+        "worstDecileMean": 6.4595714285714285,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          14,
+          32,
+          18,
+          0
+        ]
+      }
+    }
+  },
+  "holdout224": {
+    "v26": {
+      "score23": {
+        "n": 224,
+        "mean": 7.125232142857141,
+        "median": 7.845,
+        "p10": 4.149,
+        "p90": 9.302,
+        "min": 2.534,
+        "max": 9.896,
+        "worstDecileMean": 3.4696521739130444,
+        "histogram": [
+          0,
+          0,
+          4,
+          15,
+          32,
+          18,
+          18,
+          33,
+          62,
+          42
+        ]
+      },
+      "score25": {
+        "n": 224,
+        "mean": 8.94098214285714,
+        "median": 9.038,
+        "p10": 8.108,
+        "p90": 9.678,
+        "min": 7.252,
+        "max": 9.9,
+        "worstDecileMean": 7.757999999999998,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          14,
+          90,
+          120
+        ]
+      },
+      "audit": {
+        "n": 224,
+        "mean": 7.357812499999996,
+        "median": 7.474000000000001,
+        "p10": 6.519,
+        "p90": 8.01,
+        "min": 5.879,
+        "max": 8.26,
+        "worstDecileMean": 6.242739130434782,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          55,
+          144,
+          23,
+          0
+        ]
+      }
+    },
+    "v27": {
+      "score23": {
+        "n": 224,
+        "mean": 7.1726964285714265,
+        "median": 8.046,
+        "p10": 4.239,
+        "p90": 9.219,
+        "min": 2.55,
+        "max": 9.788,
+        "worstDecileMean": 3.589478260869566,
+        "histogram": [
+          0,
+          0,
+          3,
+          16,
+          22,
+          27,
+          23,
+          20,
+          73,
+          40
+        ]
+      },
+      "score25": {
+        "n": 224,
+        "mean": 9.04901339285714,
+        "median": 9.096,
+        "p10": 8.374,
+        "p90": 9.711,
+        "min": 7.387,
+        "max": 9.87,
+        "worstDecileMean": 7.947695652173913,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          84,
+          129
+        ]
+      },
+      "audit": {
+        "n": 224,
+        "mean": 7.437799107142856,
+        "median": 7.550999999999999,
+        "p10": 6.5969999999999995,
+        "p90": 8.093,
+        "min": 6.226,
+        "max": 8.327,
+        "worstDecileMean": 6.482956521739131,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          58,
+          120,
+          46,
+          0
+        ]
+      }
+    }
+  },
+  "performance": {
+    "passed": 1,
+    "failed": 0,
+    "results": [
+      {
+        "version": "v26",
+        "inputSha256": "0947bb9c68a7740a707d59e17f6e2117f68b2245c188a1d00180bc87077928d0",
+        "executed": 84,
+        "meanMs": 29.084572607142853,
+        "medianMs": 23.005829999999833,
+        "p95Ms": 61.6039609999998,
+        "maxMs": 66.98252400000001,
+        "startRss": 69931008,
+        "maxRssBytes": 184619008,
+        "node": "v24.19.0"
+      },
+      {
+        "version": "v27",
+        "inputSha256": "0947bb9c68a7740a707d59e17f6e2117f68b2245c188a1d00180bc87077928d0",
+        "executed": 84,
+        "meanMs": 19.316267380952382,
+        "medianMs": 12.972861000000023,
+        "p95Ms": 41.57766199999992,
+        "maxMs": 49.473545,
+        "startRss": 69242880,
+        "maxRssBytes": 188518400,
+        "node": "v24.19.0"
+      }
+    ],
+    "ratioMean": 0.6641413522510734,
+    "limitations": "Osobne świeże procesy, ten sam zestaw, jedno środowisko; pomiar RSS jest maksimum procesu, nie rozmiar samego planu."
+  },
+  "baseCommit": "7bf1f87aca375baeac3869dfaccf6817ce782a22",
+  "inputSha256": "00ab459021dbf3100e0cc08a1b4472f7cbafa09a5425033307cdb79656ed008d",
+  "meterHashes": {
+    "v23": "a7d2cfe244bb156418e3334b917b39773c1e96ad7c0ff356aac586380aa3eb71",
+    "v25": "09dfeeb6b6ab25bdbae4065b5d2166b75f9d1c7f286408337fa8c912f65332b2",
+    "v27": "f267bf8bd66c34f026bb44fe2e7592716bfe522018f3499b5219aa8aa7ae8235"
+  },
+  "holdout": {
+    "seed": 270041,
+    "sha256": "26cb57103c2f0df9229e55d0936fb190b6c0cd7a12312c5e2143c51fa0c6dc61",
+    "createdBeforeOptimization": true,
+    "externallyBlinded": false
+  }
+}

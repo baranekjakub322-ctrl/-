@@ -1,0 +1,9 @@
+# Ocena w wydaniu V26
+
+Baza V25: commit 39d8466e25a35c7ef65e1ca4294decf057d7b8d0. Node v24.19.0, system Linux-6.18.57-x86_64-with-glibc2.41. Wejścia frozen-1008-v24, SHA-256 00ab459021dbf3100e0cc08a1b4472f7cbafa09a5425033307cdb79656ed008d. Mierniki 23.0.0 (a7d2cfe244bb156418e3334b917b39773c1e96ad7c0ff356aac586380aa3eb71) i 25.0.0 (09dfeeb6b6ab25bdbae4065b5d2166b75f9d1c7f286408337fa8c912f65332b2) pozostały bajtowo niezmienione. Daty, cele, profile i warunki obu wersji są identyczne. To heurystyki, bez walidacji klinicznej.
+
+Nie utworzono miernika 26.0.0. Wydanie używa dwóch zamrożonych skal 23.0.0 i 25.0.0 oraz osobnego walidatora bezpieczeństwa, który nie wystawia oceny 0–10. Nie zwiększano wag, kar ani progów na korzyść V26.
+
+Metodologię historyczną opisują SYSTEM_OCENIANIA_V23.md i SYSTEM_OCENIANIA_V25.md. Zachowano i ponownie uruchomiono kontrolowane wzorce kalibracyjne dobry/monotonny/nadmierny/brak progresji/zły taper/za długi/nierealny cel/podtrzymanie/zła adaptacja/niepotwierdzona gotowość. Dane: wyniki_v26/history/kalibracja_v23.json i kalibracja_v25.json.
+
+Rozkłady dla 1008: {"v25":{"score23":{"mean":7.443721230158727,"median":8.364,"p10":4.758,"p90":8.998,"min":2.794,"max":9.532,"histogram":[0,0,12,40,55,145,123,70,465,98]},"score25":{"mean":9.18744345238097,"median":9.098,"p10":8.745,"p90":9.594,"min":7.978,"max":9.72,"histogram":[0,0,0,0,0,0,0,2,329,677]}},"v26":{"score23":{"mean":7.446662698412691,"median":8.379,"p10":4.758,"p90":8.998,"min":2.794,"max":9.532,"histogram":[0,0,12,40,55,145,122,71,465,98]},"score25":{"mean":9.190388888888913,"median":9.099,"p10":8.745,"p90":9.605,"min":7.978,"max":9.72,"histogram":[0,0,0,0,0,0,0,2,322,684]}}}. Miernik V25 często przyznaje 9–10; nie traktujemy tego jako dowodu zbliżenia do fizjologicznego ideału. Ocena jakości planowania i wykonalność celu są oddzielne, podobnie niepewność oraz krytyczne naruszenia. Nie ukrywa się słabej dyskryminacji skali.

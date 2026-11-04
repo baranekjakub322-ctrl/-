@@ -1,0 +1,13 @@
+[
+  {
+    name: 'season trajectory exists before local session allocation',
+    ok: true
+  },
+  { name: 'maintenance does not repeat maximal 3 km tests', ok: true },
+  {
+    name: 'stimulus ledger includes next step and conditional progression',
+    ok: true
+  },
+  { name: 'weekly replan preserves original season phase', ok: true },
+  { name: 'undated PB has explicitly declared provenance', ok: true }
+]

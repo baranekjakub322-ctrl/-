@@ -1,0 +1,161 @@
+{
+ "generator": "planGenerator_v23.js",
+ "nazwa": "czulosc_v21",
+ "zaliczone": 38,
+ "niezaliczone": 0,
+ "bledy": [],
+ "wszystkieTesty": [
+  {
+   "opis": "wiek 60 vs 30: ten sam punkt startu (starszy ≠ początkujący)",
+   "ok": true
+  },
+  {
+   "opis": "wiek 60: szczyt nie wyższy, odciążeń co najmniej tyle",
+   "ok": true
+  },
+  {
+   "opis": "wiek 60: plan nadal zawiera akcenty (nie jest sprowadzony do samego truchtu)",
+   "ok": true
+  },
+  {
+   "opis": "najdłuższy bieg 6 vs 16 km: pierwszy długi bieg krótszy",
+   "ok": true
+  },
+  {
+   "opis": "najdłuższy bieg 6 km: pierwszy długi bieg nie skacze ponad ~1,5x",
+   "ok": true
+  },
+  {
+   "opis": "aktualny kilometraż 15/30/50: start rośnie monotonicznie",
+   "ok": true
+  },
+  {
+   "opis": "15 km tyg.: start nie przekracza ~130% bazy",
+   "ok": true
+  },
+  {
+   "opis": "50 km tyg.: plan nie spada poniżej bazy bez powodu",
+   "ok": true
+  },
+  {
+   "opis": "2/3/5 dni: liczba biegów w tygodniu odpowiada deklaracji",
+   "ok": true
+  },
+  {
+   "opis": "objętość szczytowa rośnie z liczbą dni (2 < 4 ≤ 5)",
+   "ok": true
+  },
+  {
+   "opis": "2 dni: długi bieg nie zjada >66% tygodnia i udział jest ≥ niż przy 5 dniach",
+   "ok": true
+  },
+  {
+   "opis": "2 dni: plan zawiera długi bieg jako jeden z dwóch celów tygodnia",
+   "ok": true
+  },
+  {
+   "opis": "2 dni: najwyżej jeden akcent na tydzień",
+   "ok": true
+  },
+  {
+   "opis": "dostępne tylko pn/śr/sob: żaden trening poza nimi",
+   "ok": true
+  },
+  {
+   "opis": "kontuzje: szczyt nie wyższy niż bez nich (tolerancja zaokrągleń 5%)",
+   "ok": true
+  },
+  {
+   "opis": "kontuzje: brak interwałów i podbiegów",
+   "ok": true
+  },
+  {
+   "opis": "powrót po 60 dniach przerwy: start nie wyższy niż bez przerwy",
+   "ok": true
+  },
+  {
+   "opis": "tempa łatwe: szybszy wynik = szybsze tempo (monotonicznie)",
+   "ok": true
+  },
+  {
+   "opis": "wynik 10 km nie zmienia objętości drastycznie (o objętości decyduje baza, nie tempo)",
+   "ok": true
+  },
+  {
+   "opis": "szczyt długiego biegu: 5 ≤ 10 ≤ półmaraton < maraton",
+   "ok": true
+  },
+  {
+   "opis": "szczyt tygodnia: 5 km ≤ półmaraton ≤ maraton",
+   "ok": true
+  },
+  {
+   "opis": "24 vs 8 tygodni: dłuższe przygotowanie nie daje niższego szczytu",
+   "ok": true
+  },
+  {
+   "opis": "8 tygodni na półmaraton z bazą 30 km: albo ostrzeżenie o gotowości, albo realny długi bieg",
+   "ok": true
+  },
+  {
+   "opis": "początkujący (10 km) vs zaawansowany (60 km): szczyt wyraźnie niższy",
+   "ok": true
+  },
+  {
+   "opis": "początkujący ma nie więcej akcentów niż zaawansowany",
+   "ok": true
+  },
+  {
+   "opis": "HRmax nie zmienia kilometrów",
+   "ok": true
+  },
+  {
+   "opis": "HRmax zmienia strefy tętna w opisach",
+   "ok": true
+  },
+  {
+   "opis": "płeć nie wpływa na plan (świadoma decyzja: brak uzasadnienia treningowego, patrz dokumentacja)",
+   "ok": true
+  },
+  {
+   "opis": "1 dzień: najwyżej jeden bieg tygodniowo",
+   "ok": true
+  },
+  {
+   "opis": "1 dzień na 10 km: wykonalność oznaczona jako ograniczona",
+   "ok": true
+  },
+  {
+   "opis": "1 dzień na maraton: niewykonalne",
+   "ok": true
+  },
+  {
+   "opis": "1 dzień: pojedynczy bieg nie rośnie do przesadnej długości",
+   "ok": true
+  },
+  {
+   "opis": "maraton 2 dni: niewykonalny",
+   "ok": true
+  },
+  {
+   "opis": "maraton zaawansowany 5 dni z bazą: wykonalny",
+   "ok": true
+  },
+  {
+   "opis": "maraton: mała baza i 10 tyg. = niewykonalny + propozycje zmian",
+   "ok": true
+  },
+  {
+   "opis": "tryb ścisły: niewykonalny cel zwraca czytelny błąd zamiast pozornie poprawnego planu",
+   "ok": true
+  },
+  {
+   "opis": "maraton z małej bazy: brak gwałtownej kompensacji kilometrażem",
+   "ok": true
+  },
+  {
+   "opis": "maraton zaawansowany: długi ≥28 km i szczyt ≥70 km",
+   "ok": true
+  }
+ ]
+}

@@ -1,0 +1,567 @@
+{
+  "passed": 140,
+  "failed": 0,
+  "scenarios": 128,
+  "tests": [
+    {
+      "name": "adapt 0/0",
+      "ok": true
+    },
+    {
+      "name": "adapt 0/1",
+      "ok": true
+    },
+    {
+      "name": "adapt 0/2",
+      "ok": true
+    },
+    {
+      "name": "adapt 0/3",
+      "ok": true
+    },
+    {
+      "name": "adapt 0/4",
+      "ok": true
+    },
+    {
+      "name": "adapt 0/5",
+      "ok": true
+    },
+    {
+      "name": "adapt 0/6",
+      "ok": true
+    },
+    {
+      "name": "adapt 0/7",
+      "ok": true
+    },
+    {
+      "name": "adapt 0/8",
+      "ok": true
+    },
+    {
+      "name": "adapt 0/9",
+      "ok": true
+    },
+    {
+      "name": "adapt 0/10",
+      "ok": true
+    },
+    {
+      "name": "adapt 0/11",
+      "ok": true
+    },
+    {
+      "name": "adapt 0/12",
+      "ok": true
+    },
+    {
+      "name": "adapt 0/13",
+      "ok": true
+    },
+    {
+      "name": "adapt 0/14",
+      "ok": true
+    },
+    {
+      "name": "adapt 0/15",
+      "ok": true
+    },
+    {
+      "name": "adapt 1/0",
+      "ok": true
+    },
+    {
+      "name": "adapt 1/1",
+      "ok": true
+    },
+    {
+      "name": "adapt 1/2",
+      "ok": true
+    },
+    {
+      "name": "adapt 1/3",
+      "ok": true
+    },
+    {
+      "name": "adapt 1/4",
+      "ok": true
+    },
+    {
+      "name": "adapt 1/5",
+      "ok": true
+    },
+    {
+      "name": "adapt 1/6",
+      "ok": true
+    },
+    {
+      "name": "adapt 1/7",
+      "ok": true
+    },
+    {
+      "name": "adapt 1/8",
+      "ok": true
+    },
+    {
+      "name": "adapt 1/9",
+      "ok": true
+    },
+    {
+      "name": "adapt 1/10",
+      "ok": true
+    },
+    {
+      "name": "adapt 1/11",
+      "ok": true
+    },
+    {
+      "name": "adapt 1/12",
+      "ok": true
+    },
+    {
+      "name": "adapt 1/13",
+      "ok": true
+    },
+    {
+      "name": "adapt 1/14",
+      "ok": true
+    },
+    {
+      "name": "adapt 1/15",
+      "ok": true
+    },
+    {
+      "name": "adapt 2/0",
+      "ok": true
+    },
+    {
+      "name": "adapt 2/1",
+      "ok": true
+    },
+    {
+      "name": "adapt 2/2",
+      "ok": true
+    },
+    {
+      "name": "adapt 2/3",
+      "ok": true
+    },
+    {
+      "name": "adapt 2/4",
+      "ok": true
+    },
+    {
+      "name": "adapt 2/5",
+      "ok": true
+    },
+    {
+      "name": "adapt 2/6",
+      "ok": true
+    },
+    {
+      "name": "adapt 2/7",
+      "ok": true
+    },
+    {
+      "name": "adapt 2/8",
+      "ok": true
+    },
+    {
+      "name": "adapt 2/9",
+      "ok": true
+    },
+    {
+      "name": "adapt 2/10",
+      "ok": true
+    },
+    {
+      "name": "adapt 2/11",
+      "ok": true
+    },
+    {
+      "name": "adapt 2/12",
+      "ok": true
+    },
+    {
+      "name": "adapt 2/13",
+      "ok": true
+    },
+    {
+      "name": "adapt 2/14",
+      "ok": true
+    },
+    {
+      "name": "adapt 2/15",
+      "ok": true
+    },
+    {
+      "name": "adapt 3/0",
+      "ok": true
+    },
+    {
+      "name": "adapt 3/1",
+      "ok": true
+    },
+    {
+      "name": "adapt 3/2",
+      "ok": true
+    },
+    {
+      "name": "adapt 3/3",
+      "ok": true
+    },
+    {
+      "name": "adapt 3/4",
+      "ok": true
+    },
+    {
+      "name": "adapt 3/5",
+      "ok": true
+    },
+    {
+      "name": "adapt 3/6",
+      "ok": true
+    },
+    {
+      "name": "adapt 3/7",
+      "ok": true
+    },
+    {
+      "name": "adapt 3/8",
+      "ok": true
+    },
+    {
+      "name": "adapt 3/9",
+      "ok": true
+    },
+    {
+      "name": "adapt 3/10",
+      "ok": true
+    },
+    {
+      "name": "adapt 3/11",
+      "ok": true
+    },
+    {
+      "name": "adapt 3/12",
+      "ok": true
+    },
+    {
+      "name": "adapt 3/13",
+      "ok": true
+    },
+    {
+      "name": "adapt 3/14",
+      "ok": true
+    },
+    {
+      "name": "adapt 3/15",
+      "ok": true
+    },
+    {
+      "name": "adapt 4/0",
+      "ok": true
+    },
+    {
+      "name": "adapt 4/1",
+      "ok": true
+    },
+    {
+      "name": "adapt 4/2",
+      "ok": true
+    },
+    {
+      "name": "adapt 4/3",
+      "ok": true
+    },
+    {
+      "name": "adapt 4/4",
+      "ok": true
+    },
+    {
+      "name": "adapt 4/5",
+      "ok": true
+    },
+    {
+      "name": "adapt 4/6",
+      "ok": true
+    },
+    {
+      "name": "adapt 4/7",
+      "ok": true
+    },
+    {
+      "name": "adapt 4/8",
+      "ok": true
+    },
+    {
+      "name": "adapt 4/9",
+      "ok": true
+    },
+    {
+      "name": "adapt 4/10",
+      "ok": true
+    },
+    {
+      "name": "adapt 4/11",
+      "ok": true
+    },
+    {
+      "name": "adapt 4/12",
+      "ok": true
+    },
+    {
+      "name": "adapt 4/13",
+      "ok": true
+    },
+    {
+      "name": "adapt 4/14",
+      "ok": true
+    },
+    {
+      "name": "adapt 4/15",
+      "ok": true
+    },
+    {
+      "name": "adapt 5/0",
+      "ok": true
+    },
+    {
+      "name": "adapt 5/1",
+      "ok": true
+    },
+    {
+      "name": "adapt 5/2",
+      "ok": true
+    },
+    {
+      "name": "adapt 5/3",
+      "ok": true
+    },
+    {
+      "name": "adapt 5/4",
+      "ok": true
+    },
+    {
+      "name": "adapt 5/5",
+      "ok": true
+    },
+    {
+      "name": "adapt 5/6",
+      "ok": true
+    },
+    {
+      "name": "adapt 5/7",
+      "ok": true
+    },
+    {
+      "name": "adapt 5/8",
+      "ok": true
+    },
+    {
+      "name": "adapt 5/9",
+      "ok": true
+    },
+    {
+      "name": "adapt 5/10",
+      "ok": true
+    },
+    {
+      "name": "adapt 5/11",
+      "ok": true
+    },
+    {
+      "name": "adapt 5/12",
+      "ok": true
+    },
+    {
+      "name": "adapt 5/13",
+      "ok": true
+    },
+    {
+      "name": "adapt 5/14",
+      "ok": true
+    },
+    {
+      "name": "adapt 5/15",
+      "ok": true
+    },
+    {
+      "name": "adapt 6/0",
+      "ok": true
+    },
+    {
+      "name": "adapt 6/1",
+      "ok": true
+    },
+    {
+      "name": "adapt 6/2",
+      "ok": true
+    },
+    {
+      "name": "adapt 6/3",
+      "ok": true
+    },
+    {
+      "name": "adapt 6/4",
+      "ok": true
+    },
+    {
+      "name": "adapt 6/5",
+      "ok": true
+    },
+    {
+      "name": "adapt 6/6",
+      "ok": true
+    },
+    {
+      "name": "adapt 6/7",
+      "ok": true
+    },
+    {
+      "name": "adapt 6/8",
+      "ok": true
+    },
+    {
+      "name": "adapt 6/9",
+      "ok": true
+    },
+    {
+      "name": "adapt 6/10",
+      "ok": true
+    },
+    {
+      "name": "adapt 6/11",
+      "ok": true
+    },
+    {
+      "name": "adapt 6/12",
+      "ok": true
+    },
+    {
+      "name": "adapt 6/13",
+      "ok": true
+    },
+    {
+      "name": "adapt 6/14",
+      "ok": true
+    },
+    {
+      "name": "adapt 6/15",
+      "ok": true
+    },
+    {
+      "name": "adapt 7/0",
+      "ok": true
+    },
+    {
+      "name": "adapt 7/1",
+      "ok": true
+    },
+    {
+      "name": "adapt 7/2",
+      "ok": true
+    },
+    {
+      "name": "adapt 7/3",
+      "ok": true
+    },
+    {
+      "name": "adapt 7/4",
+      "ok": true
+    },
+    {
+      "name": "adapt 7/5",
+      "ok": true
+    },
+    {
+      "name": "adapt 7/6",
+      "ok": true
+    },
+    {
+      "name": "adapt 7/7",
+      "ok": true
+    },
+    {
+      "name": "adapt 7/8",
+      "ok": true
+    },
+    {
+      "name": "adapt 7/9",
+      "ok": true
+    },
+    {
+      "name": "adapt 7/10",
+      "ok": true
+    },
+    {
+      "name": "adapt 7/11",
+      "ok": true
+    },
+    {
+      "name": "adapt 7/12",
+      "ok": true
+    },
+    {
+      "name": "adapt 7/13",
+      "ok": true
+    },
+    {
+      "name": "adapt 7/14",
+      "ok": true
+    },
+    {
+      "name": "adapt 7/15",
+      "ok": true
+    },
+    {
+      "name": "consistent two-test trend differs from a single good day",
+      "ok": true
+    },
+    {
+      "name": "RPE correction releases false fatigue while keeping original audit",
+      "ok": true
+    },
+    {
+      "name": "cancellation, restore and duplicate restore retain stable identity",
+      "ok": true
+    },
+    {
+      "name": "rising RPE over comparable executed sessions reduces load",
+      "ok": true
+    },
+    {
+      "name": "missed regularity prevents confirmation by two fast tests alone",
+      "ok": true
+    },
+    {
+      "name": "paused injury ledger accepts explicit later symptom clearance",
+      "ok": true
+    },
+    {
+      "name": "raw offset observation stays unchanged in original audit",
+      "ok": true
+    },
+    {
+      "name": "complete executed window can re-establish base after old break",
+      "ok": true
+    },
+    {
+      "name": "ambiguous date-only same-day clearance cannot cancel a pain report by ID order",
+      "ok": true
+    },
+    {
+      "name": "explicit timestamp order allows a later symptom clearance without modifying its original",
+      "ok": true
+    },
+    {
+      "name": "date-only value pretending to be timestamp is rejected",
+      "ok": true
+    },
+    {
+      "name": "explicit rest-day symptom clearance remains observed without becoming a completed run",
+      "ok": true
+    }
+  ]
+}

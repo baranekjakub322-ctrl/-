@@ -1,0 +1,18 @@
+{
+  "name": "run-planner",
+  "version": "27.0.0",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node testy/run_v27.mjs",
+    "test:v27": "node testy/v27.mjs",
+    "test:adaptation": "node testy/historie_v27.mjs",
+    "benchmark": "node testy/kalibracja_v27.mjs",
+    "compare": "node testy/benchmark_v27.mjs",
+    "profile": "node testy/wydajnosc_v27.mjs && node narzedzia/profiling_v27.mjs",
+    "report": "node testy/raporty_v27.mjs"
+  }
+}

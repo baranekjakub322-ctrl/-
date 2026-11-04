@@ -1,0 +1,49 @@
+{
+  "iterations": 6,
+  "hypotheses": [
+    [
+      "H1",
+      "sezon",
+      "Brak wspólnej trajektorii daje nieuzasadnione plateaux i restart faz przy updatePlan.",
+      "Jawny seasonState z zakotwiczeniem i planem mezocykli; rzeczywiste jednostki mają używać trajektorii.",
+      "Przejście base→build→specific także przy cotygodniowych aktualizacjach; brak nadrabiania."
+    ],
+    [
+      "H2",
+      "jakosc",
+      "Stałe recepty obcinane budżetem i przeskoki między rodzinami.",
+      "Biblioteka progresji powiązana z planem sezonu, dziennik poprzedniej i kolejnej dawki.",
+      "Kontrolowane dawki, jedna zmienna, rzeczywista rozgrzewka/schłodzenie; brak automatycznych temp."
+    ],
+    [
+      "H3",
+      "testy",
+      "Powtarzane maksymalne 3 km są słabym kontrolnym bodźcem dla utrzymania i maratonu.",
+      "Submaksymalny trening kontrolny; maksymalny test wyłącznie przy świadomej potrzebie.",
+      "Brak serii maksymalnych testów u utrzymującego; forma zmienia się tylko po wykonaniu."
+    ],
+    [
+      "H4",
+      "dlugie",
+      "Odciążenia i powroty blokują długi bieg/objętość; minima celu nie są dowodem gotowości.",
+      "Planowanie makrotrajektorii i osobne bramki wykonania.",
+      "Wolny biegacz respektuje minuty; 1–2 dni nie udają maratonu; 60/4 bez wymuszania."
+    ],
+    [
+      "H5",
+      "wydajnosc",
+      "Klony historii kandydatów i duplikacja identycznych wariantów.",
+      "Kopiowanie tylko stanu mutowanego; pruning identycznych kontekstów, jedna budowa zwykłego tygodnia.",
+      "Identyczny wynik, izolacja kandydatów i średni czas zmierzony bez zmiany scoringu."
+    ],
+    [
+      "H6",
+      "dowody",
+      "PB bez daty jest deklaracją, nie świeżym testem; słabe dane nie uzasadniają precyzji.",
+      "Pochodzenie intensywności i niepewność; 2–6 tygodni trendów RPE/snu, bez sukcesu z braku wpisu.",
+      "Testy czułości i symulacje wielotygodniowe; korekty/audyt/idempotencja bez zmian."
+    ]
+  ],
+  "holdoutSeed": 270041,
+  "rule": "No historical scorer is an optimization objective. Benchmark gains never override safety."
+}

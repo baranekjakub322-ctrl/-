@@ -1,0 +1,438 @@
+{
+ "generator": "planGenerator_v22.js",
+ "nazwa": "podstawowe",
+ "zaliczone": 107,
+ "niezaliczone": 0,
+ "bledy": [],
+ "generatorPlik": "/workspace/RunPlanner_V22/v22/planGenerator_v22.js",
+ "wszystkieTesty": [
+  {
+   "opis": "eksport JAK_RAPORTOWAC zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport JAK_RAPORTOWAC ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport KODY_BLEDOW zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport KODY_BLEDOW ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport addDays zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport addDays ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport analyzeHistory zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport analyzeHistory ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport applyExtraRace zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport applyExtraRace ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport assessGoal zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport assessGoal ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport auditPlan zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport auditPlan ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport buildInput zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport buildInput ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport diffDays zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport diffDays ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport dodajStartDoPlanu zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport dodajStartDoPlanu ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport feedbackDecision zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport feedbackDecision ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport fitWorkoutToLimit zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport fitWorkoutToLimit ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport fmtPace zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport fmtPace ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport fmtTime zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport fmtTime ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport generateFromData zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport generateFromData ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport generatePlan zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport generatePlan ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport hrZones zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport hrZones ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport maxLongShare zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport maxLongShare ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport planPoStarcie zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport planPoStarcie ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport raceTimeFromVdot zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport raceTimeFromVdot ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport repairPlan zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport repairPlan ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport replan zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport replan ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport shiftPlan zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport shiftPlan ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport skorygujTempoPogoda zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport skorygujTempoPogoda ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport sprawdzBezpieczenstwo zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport sprawdzBezpieczenstwo ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport strategiaStartu zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport strategiaStartu ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport summarizeHistory zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport summarizeHistory ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport validateInput zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport validateInput ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport validateInputDetailed zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport validateInputDetailed ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport vdotFrom zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport vdotFrom ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "eksport weeklyReview zachowany",
+   "ok": true
+  },
+  {
+   "opis": "eksport weeklyReview ma ten sam typ",
+   "ok": true
+  },
+  {
+   "opis": "VERSION zaczyna się od 22.",
+   "ok": true
+  },
+  {
+   "opis": "poprawne dane => ok:true",
+   "ok": true
+  },
+  {
+   "opis": "pole wyniku wersja",
+   "ok": true
+  },
+  {
+   "opis": "pole wyniku plan",
+   "ok": true
+  },
+  {
+   "opis": "pole wyniku treningi",
+   "ok": true
+  },
+  {
+   "opis": "pole wyniku tygodnie",
+   "ok": true
+  },
+  {
+   "opis": "pole wyniku kontrola",
+   "ok": true
+  },
+  {
+   "opis": "pole wyniku gotowosc",
+   "ok": true
+  },
+  {
+   "opis": "pole wyniku ostrzezenia",
+   "ok": true
+  },
+  {
+   "opis": "pole wyniku tempa",
+   "ok": true
+  },
+  {
+   "opis": "pole wyniku strefyTetna",
+   "ok": true
+  },
+  {
+   "opis": "pole wyniku limityNieosiagniete",
+   "ok": true
+  },
+  {
+   "opis": "plan.start zawiera datę zawodów",
+   "ok": true
+  },
+  {
+   "opis": "gotowość zawiera rozdzielone poziomy (V20)",
+   "ok": true
+  },
+  {
+   "opis": "null => ok:false bez wyjątku",
+   "ok": true
+  },
+  {
+   "opis": "string => ok:false",
+   "ok": true
+  },
+  {
+   "opis": "tablica => ok:false",
+   "ok": true
+  },
+  {
+   "opis": "pusty obiekt => ok:false",
+   "ok": true
+  },
+  {
+   "opis": "nieistniejąca data => ok:false",
+   "ok": true
+  },
+  {
+   "opis": "brak dni => ok:false",
+   "ok": true
+  },
+  {
+   "opis": "dzień 9 => ok:false",
+   "ok": true
+  },
+  {
+   "opis": "9 dni => ok:false",
+   "ok": true
+  },
+  {
+   "opis": "wiek 5 => ok:false",
+   "ok": true
+  },
+  {
+   "opis": "ujemny kilometraż => ok:false",
+   "ok": true
+  },
+  {
+   "opis": "nierealny kilometraż => ok:false",
+   "ok": true
+  },
+  {
+   "opis": "start w przeszłości => ok:false",
+   "ok": true
+  },
+  {
+   "opis": "nieznany dystans => ok:false",
+   "ok": true
+  },
+  {
+   "opis": "czas maratonu 1:06 (tempo 1:34/km) => ok:false",
+   "ok": true
+  },
+  {
+   "opis": "limit czasu 10 min => ok:false",
+   "ok": true
+  },
+  {
+   "opis": "HRmax 50 => ok:false",
+   "ok": true
+  },
+  {
+   "opis": "currentWeeklyKm=abc nie rzuca wyjątku",
+   "ok": true
+  },
+  {
+   "opis": "currentWeeklyKm=NaN nie rzuca wyjątku",
+   "ok": true
+  },
+  {
+   "opis": "currentWeeklyKm=Infinity nie rzuca wyjątku",
+   "ok": true
+  },
+  {
+   "opis": "determinizm: dwa wywołania dają identyczny wynik",
+   "ok": true
+  },
+  {
+   "opis": "generatePlan nie mutuje obiektu wejściowego",
+   "ok": true
+  },
+  {
+   "opis": "limit 45 min w dni robocze: żaden bieg nie przekracza limitu",
+   "ok": true
+  },
+  {
+   "opis": "limit 50 min w weekend: żaden bieg nie przekracza limitu",
+   "ok": true
+  },
+  {
+   "opis": "limit 60 min ogółem: żaden bieg nie przekracza limitu",
+   "ok": true
+  },
+  {
+   "opis": "biegi tylko w dostępne dni (wt, czw, sob)",
+   "ok": true
+  },
+  {
+   "opis": "vdotFrom: szybszy czas => wyższy VDOT",
+   "ok": true
+  },
+  {
+   "opis": "shiftPlan przesuwa daty o 7 dni",
+   "ok": true
+  },
+  {
+   "opis": "shiftPlan z fixedRace odmawia przesunięcia",
+   "ok": true
+  },
+  {
+   "opis": "sprawdzBezpieczenstwo: silny ból nie jest 'ok'",
+   "ok": true
+  },
+  {
+   "opis": "sprawdzBezpieczenstwo: brak objawów => ok",
+   "ok": true
+  },
+  {
+   "opis": "fmtTime(3725) = 1:02:05",
+   "ok": true
+  }
+ ]
+}

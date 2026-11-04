@@ -1,0 +1,382 @@
+{
+ "generator": "planGenerator_v21.js",
+ "nazwa": "trudne",
+ "zaliczone": 93,
+ "niezaliczone": 0,
+ "bledy": [],
+ "generatorPlik": "/workspace/runplanner/RunPlanner_Codex_V21_do_V22/projekt/v21/planGenerator_v21.js",
+ "wszystkieTesty": [
+  {
+   "opis": "bardzo niski kilometraż (0 km, 0 km najdłuższy), 10 km, 14 tyg.: brak wyjątku",
+   "ok": true
+  },
+  {
+   "opis": "bardzo niski kilometraż (0 km, 0 km najdłuższy), 10 km, 14 tyg.: plan wygenerowany (ok:true)",
+   "ok": true
+  },
+  {
+   "opis": "bardzo niski kilometraż (0 km, 0 km najdłuższy), 10 km, 14 tyg.: 0 krytycznych naruszeń niezależnych",
+   "ok": true
+  },
+  {
+   "opis": "start nie wyższy niż 15 km",
+   "ok": true
+  },
+  {
+   "opis": "bez wyniku i bez bazy brak gotowości do wyniku",
+   "ok": true
+  },
+  {
+   "opis": "wysoka objętość początkowa (120 km, 40 km), maraton, advanced, 6 dni: brak wyjątku",
+   "ok": true
+  },
+  {
+   "opis": "wysoka objętość początkowa (120 km, 40 km), maraton, advanced, 6 dni: plan wygenerowany (ok:true)",
+   "ok": true
+  },
+  {
+   "opis": "wysoka objętość początkowa (120 km, 40 km), maraton, advanced, 6 dni: 0 krytycznych naruszeń niezależnych",
+   "ok": true
+  },
+  {
+   "opis": "tydzień 1 nie przekracza ~130% dotychczasowego",
+   "ok": true
+  },
+  {
+   "opis": "krótki okres przygotowania: maraton w 3 tyg., 40 km: brak wyjątku",
+   "ok": true
+  },
+  {
+   "opis": "krótki okres przygotowania: maraton w 3 tyg., 40 km: plan wygenerowany (ok:true)",
+   "ok": true
+  },
+  {
+   "opis": "krótki okres przygotowania: maraton w 3 tyg., 40 km: 0 krytycznych naruszeń niezależnych",
+   "ok": true
+  },
+  {
+   "opis": "maraton w 3 tyg.: brak deklaracji gotowości",
+   "ok": true
+  },
+  {
+   "opis": "są ostrzeżenia",
+   "ok": true
+  },
+  {
+   "opis": "krótki okres: 5 km w 2 tyg.: brak wyjątku",
+   "ok": true
+  },
+  {
+   "opis": "krótki okres: 5 km w 2 tyg.: plan wygenerowany (ok:true)",
+   "ok": true
+  },
+  {
+   "opis": "krótki okres: 5 km w 2 tyg.: 0 krytycznych naruszeń niezależnych",
+   "ok": true
+  },
+  {
+   "opis": "długi okres przygotowania: półmaraton za ~50 tyg.: brak wyjątku",
+   "ok": true
+  },
+  {
+   "opis": "długi okres przygotowania: półmaraton za ~50 tyg.: plan wygenerowany (ok:true)",
+   "ok": true
+  },
+  {
+   "opis": "długi okres przygotowania: półmaraton za ~50 tyg.: 0 krytycznych naruszeń niezależnych",
+   "ok": true
+  },
+  {
+   "opis": "w długim planie regularne odciążenia (>=8)",
+   "ok": true
+  },
+  {
+   "opis": "jeden dostępny trening tygodniowo (1 dzień): brak wyjątku",
+   "ok": true
+  },
+  {
+   "opis": "jeden dostępny trening tygodniowo (1 dzień): plan wygenerowany (ok:true)",
+   "ok": true
+  },
+  {
+   "opis": "jeden dostępny trening tygodniowo (1 dzień): 0 krytycznych naruszeń niezależnych",
+   "ok": true
+  },
+  {
+   "opis": "nie więcej niż 1 bieg tygodniowo",
+   "ok": true
+  },
+  {
+   "opis": "ostrzeżenie o ograniczonej skuteczności 1 treningu",
+   "ok": true
+  },
+  {
+   "opis": "dwa dostępne treningi tygodniowo: brak wyjątku",
+   "ok": true
+  },
+  {
+   "opis": "dwa dostępne treningi tygodniowo: plan wygenerowany (ok:true)",
+   "ok": true
+  },
+  {
+   "opis": "dwa dostępne treningi tygodniowo: 0 krytycznych naruszeń niezależnych",
+   "ok": true
+  },
+  {
+   "opis": "nie więcej niż 2 biegi tygodniowo",
+   "ok": true
+  },
+  {
+   "opis": "półmaraton z 2 biegów: brak gotowości do wyniku",
+   "ok": true
+  },
+  {
+   "opis": "maksymalna dostępność: 7 dni, beginner: brak wyjątku",
+   "ok": true
+  },
+  {
+   "opis": "maksymalna dostępność: 7 dni, beginner: plan wygenerowany (ok:true)",
+   "ok": true
+  },
+  {
+   "opis": "maksymalna dostępność: 7 dni, beginner: 0 krytycznych naruszeń niezależnych",
+   "ok": true
+  },
+  {
+   "opis": "komunikat o ograniczeniu liczby biegów względem deklaracji",
+   "ok": true
+  },
+  {
+   "opis": "maksymalna dostępność: 7 dni, advanced, wysoka objętość: brak wyjątku",
+   "ok": true
+  },
+  {
+   "opis": "maksymalna dostępność: 7 dni, advanced, wysoka objętość: plan wygenerowany (ok:true)",
+   "ok": true
+  },
+  {
+   "opis": "maksymalna dostępność: 7 dni, advanced, wysoka objętość: 0 krytycznych naruszeń niezależnych",
+   "ok": true
+  },
+  {
+   "opis": "limit czasu 45 min w dni robocze: brak wyjątku",
+   "ok": true
+  },
+  {
+   "opis": "limit czasu 45 min w dni robocze: plan wygenerowany (ok:true)",
+   "ok": true
+  },
+  {
+   "opis": "limit czasu 45 min w dni robocze: 0 krytycznych naruszeń niezależnych",
+   "ok": true
+  },
+  {
+   "opis": "limit czasu 40 min w weekend: brak wyjątku",
+   "ok": true
+  },
+  {
+   "opis": "limit czasu 40 min w weekend: plan wygenerowany (ok:true)",
+   "ok": true
+  },
+  {
+   "opis": "limit czasu 40 min w weekend: 0 krytycznych naruszeń niezależnych",
+   "ok": true
+  },
+  {
+   "opis": "kontuzja zgłoszona: brak wyjątku",
+   "ok": true
+  },
+  {
+   "opis": "kontuzja zgłoszona: plan wygenerowany (ok:true)",
+   "ok": true
+  },
+  {
+   "opis": "kontuzja zgłoszona: 0 krytycznych naruszeń niezależnych",
+   "ok": true
+  },
+  {
+   "opis": "kontuzja: brak interwałów i podbiegów",
+   "ok": true
+  },
+  {
+   "opis": "przerwa 60 dni: brak wyjątku",
+   "ok": true
+  },
+  {
+   "opis": "przerwa 60 dni: plan wygenerowany (ok:true)",
+   "ok": true
+  },
+  {
+   "opis": "przerwa 60 dni: 0 krytycznych naruszeń niezależnych",
+   "ok": true
+  },
+  {
+   "opis": "po przerwie 60 dni start ok. 40% objętości",
+   "ok": true
+  },
+  {
+   "opis": "ostrzeżenie o przerwie",
+   "ok": true
+  },
+  {
+   "opis": "brak aktualnego wyniku (maraton, 20 tyg.): brak wyjątku",
+   "ok": true
+  },
+  {
+   "opis": "brak aktualnego wyniku (maraton, 20 tyg.): plan wygenerowany (ok:true)",
+   "ok": true
+  },
+  {
+   "opis": "brak aktualnego wyniku (maraton, 20 tyg.): 0 krytycznych naruszeń niezależnych",
+   "ok": true
+  },
+  {
+   "opis": "brak wyniku => brak gotowości do konkretnego wyniku",
+   "ok": true
+  },
+  {
+   "opis": "brak historii (bez poziomu, km i najdłuższego biegu): plan powstaje",
+   "ok": true
+  },
+  {
+   "opis": "brak historii: 0 krytycznych",
+   "ok": true
+  },
+  {
+   "opis": "komunikat o braku danych o kilometrażu",
+   "ok": true
+  },
+  {
+   "opis": "brak historii: ostrożny start (<=20 km)",
+   "ok": true
+  },
+  {
+   "opis": "brak historii: brak gotowości do wyniku",
+   "ok": true
+  },
+  {
+   "opis": "ambitny cel nieadekwatny: maraton 3:00 z 20 km/tydz., 8 tyg., bez wyniku: brak wyjątku",
+   "ok": true
+  },
+  {
+   "opis": "ambitny cel nieadekwatny: maraton 3:00 z 20 km/tydz., 8 tyg., bez wyniku: plan wygenerowany (ok:true)",
+   "ok": true
+  },
+  {
+   "opis": "ambitny cel nieadekwatny: maraton 3:00 z 20 km/tydz., 8 tyg., bez wyniku: 0 krytycznych naruszeń niezależnych",
+   "ok": true
+  },
+  {
+   "opis": "werdykt celu nie jest 'realny'",
+   "ok": true
+  },
+  {
+   "opis": "ambitny cel: brak deklaracji gotowości",
+   "ok": true
+  },
+  {
+   "opis": "doKonkretnegoWyniku=false",
+   "ok": true
+  },
+  {
+   "opis": "cel nierealny numerycznie (maraton w 1:30): brak wyjątku",
+   "ok": true
+  },
+  {
+   "opis": "cel nierealny numerycznie (maraton w 1:30): odrzucone jako niepoprawne",
+   "ok": true
+  },
+  {
+   "opis": "maraton, 1 bieg tygodniowo: brak wyjątku",
+   "ok": true
+  },
+  {
+   "opis": "maraton, 1 bieg tygodniowo: plan wygenerowany (ok:true)",
+   "ok": true
+  },
+  {
+   "opis": "maraton, 1 bieg tygodniowo: 0 krytycznych naruszeń niezależnych",
+   "ok": true
+  },
+  {
+   "opis": "maraton z 1 biegu: gotowość niewystarczająca/częściowa",
+   "ok": true
+  },
+  {
+   "opis": "maraton bez bazy (10 km/tydz., 5 km najdłuższy), 20 tyg.: brak wyjątku",
+   "ok": true
+  },
+  {
+   "opis": "maraton bez bazy (10 km/tydz., 5 km najdłuższy), 20 tyg.: plan wygenerowany (ok:true)",
+   "ok": true
+  },
+  {
+   "opis": "maraton bez bazy (10 km/tydz., 5 km najdłuższy), 20 tyg.: 0 krytycznych naruszeń niezależnych",
+   "ok": true
+  },
+  {
+   "opis": "marathon bez bazy: bazaBezpieczna=false",
+   "ok": true
+  },
+  {
+   "opis": "etykieta: brak_bezpiecznej_bazy",
+   "ok": true
+  },
+  {
+   "opis": "ostrzeżenie o braku bezpiecznej bazy",
+   "ok": true
+  },
+  {
+   "opis": "maraton z dobrą bazą (50 km, 24 km najdłuższy), 5 dni, 20 tyg. + wynik: brak wyjątku",
+   "ok": true
+  },
+  {
+   "opis": "maraton z dobrą bazą (50 km, 24 km najdłuższy), 5 dni, 20 tyg. + wynik: plan wygenerowany (ok:true)",
+   "ok": true
+  },
+  {
+   "opis": "maraton z dobrą bazą (50 km, 24 km najdłuższy), 5 dni, 20 tyg. + wynik: 0 krytycznych naruszeń niezależnych",
+   "ok": true
+  },
+  {
+   "opis": "dobra baza: bazaBezpieczna=true",
+   "ok": true
+  },
+  {
+   "opis": "start dzień po dniu startu planu (race za 1 dzień): brak wyjątku",
+   "ok": true
+  },
+  {
+   "opis": "start dzień po dniu startu planu (race za 1 dzień): plan wygenerowany (ok:true)",
+   "ok": true
+  },
+  {
+   "opis": "start dzień po dniu startu planu (race za 1 dzień): 0 krytycznych naruszeń niezależnych",
+   "ok": true
+  },
+  {
+   "opis": "start za 8 dni, 10 km: brak wyjątku",
+   "ok": true
+  },
+  {
+   "opis": "start za 8 dni, 10 km: plan wygenerowany (ok:true)",
+   "ok": true
+  },
+  {
+   "opis": "start za 8 dni, 10 km: 0 krytycznych naruszeń niezależnych",
+   "ok": true
+  },
+  {
+   "opis": "start za dwa lata (730 dni): brak wyjątku",
+   "ok": true
+  },
+  {
+   "opis": "start za dwa lata (730 dni): plan wygenerowany (ok:true)",
+   "ok": true
+  },
+  {
+   "opis": "start za dwa lata (730 dni): 0 krytycznych naruszeń niezależnych",
+   "ok": true
+  }
+ ]
+}

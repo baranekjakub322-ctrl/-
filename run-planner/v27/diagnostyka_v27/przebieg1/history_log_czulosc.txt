@@ -1,0 +1,2 @@
+[czulosc] zaliczone 27, niezaliczone 1
+  - historia przeciążeń: plan powinien się zmienić
