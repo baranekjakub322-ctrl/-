@@ -1104,6 +1104,7 @@ function generateCore(inp) {
       ctxW.noQuality = true; ctxW.noLong = true; ctxW.budget = ctxW.vol; // w tygodniu ze startem sam start jest najdłuższym wysiłkiem
       if (raceKmWeek + 3 > capW) warnings.push(`Start poboczny w tygodniu od ${weekStart} (${r1(raceKmWeek - extra.filter((r) => r.date >= weekStart && r.date < addDays(weekStart, 7)).length * 3)} km) jest długi względem Twojego obecnego kilometrażu: tydzień wyniesie ok. ${Math.round(raceKmWeek + 3)} km zamiast bezpiecznych ${capW} km. Potraktuj go jako spokojny bieg albo go pomiń.`);
     }
+    ctxW.futureWeeks=extra.length?[]:seasonState.weeks.slice(w+1,w+3);
     ctxW.traceEnabled=planningTrace.enabled;ctxW.envelope=feasibleEnvelope(I,ctxW);
     planningTrace.record(weekStart,'feasible_envelope',{envelope:ctxW.envelope,budget:{km:ctxW.budget,minutes:ctxW.budget*easyMid/60,longKm:ctxW.longKm,sessions:chosen.length,workMinutes:{}}},ctxW.envelope.codes);
     let wk = constrainedWeek(ctxW,buildWeek);

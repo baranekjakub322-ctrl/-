@@ -1,0 +1,402 @@
+{
+  "passed": 99,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "beam rejects local winner whose next-week cost is worse",
+      "ok": true
+    },
+    {
+      "name": "continuous endurance gap and feasibility 1",
+      "ok": true
+    },
+    {
+      "name": "continuous endurance gap and feasibility 2",
+      "ok": true
+    },
+    {
+      "name": "continuous endurance gap and feasibility 3",
+      "ok": true
+    },
+    {
+      "name": "continuous endurance gap and feasibility 5",
+      "ok": true
+    },
+    {
+      "name": "blocks actual safety and deterministic 5k-2",
+      "ok": true
+    },
+    {
+      "name": "blocks actual safety and deterministic 5k-3",
+      "ok": true
+    },
+    {
+      "name": "blocks actual safety and deterministic 5k-5",
+      "ok": true
+    },
+    {
+      "name": "blocks actual safety and deterministic 10k-2",
+      "ok": true
+    },
+    {
+      "name": "blocks actual safety and deterministic 10k-3",
+      "ok": true
+    },
+    {
+      "name": "blocks actual safety and deterministic 10k-5",
+      "ok": true
+    },
+    {
+      "name": "blocks actual safety and deterministic half-2",
+      "ok": true
+    },
+    {
+      "name": "blocks actual safety and deterministic half-3",
+      "ok": true
+    },
+    {
+      "name": "blocks actual safety and deterministic half-5",
+      "ok": true
+    },
+    {
+      "name": "blocks actual safety and deterministic marathon-2",
+      "ok": true
+    },
+    {
+      "name": "blocks actual safety and deterministic marathon-3",
+      "ok": true
+    },
+    {
+      "name": "blocks actual safety and deterministic marathon-5",
+      "ok": true
+    },
+    {
+      "name": "blocks actual safety and deterministic beginner",
+      "ok": true
+    },
+    {
+      "name": "blocks actual safety and deterministic advanced",
+      "ok": true
+    },
+    {
+      "name": "blocks actual safety and deterministic maintenance",
+      "ok": true
+    },
+    {
+      "name": "blocks actual safety and deterministic ambitious",
+      "ok": true
+    },
+    {
+      "name": "blocks actual safety and deterministic return",
+      "ok": true
+    },
+    {
+      "name": "blocks actual safety and deterministic marathon60",
+      "ok": true
+    },
+    {
+      "name": "horizon 5k/6",
+      "ok": true
+    },
+    {
+      "name": "horizon 5k/8",
+      "ok": true
+    },
+    {
+      "name": "horizon 5k/12",
+      "ok": true
+    },
+    {
+      "name": "horizon 5k/16",
+      "ok": true
+    },
+    {
+      "name": "horizon 5k/20",
+      "ok": true
+    },
+    {
+      "name": "horizon 5k/24",
+      "ok": true
+    },
+    {
+      "name": "horizon 10k/6",
+      "ok": true
+    },
+    {
+      "name": "horizon 10k/8",
+      "ok": true
+    },
+    {
+      "name": "horizon 10k/12",
+      "ok": true
+    },
+    {
+      "name": "horizon 10k/16",
+      "ok": true
+    },
+    {
+      "name": "horizon 10k/20",
+      "ok": true
+    },
+    {
+      "name": "horizon 10k/24",
+      "ok": true
+    },
+    {
+      "name": "horizon half/6",
+      "ok": true
+    },
+    {
+      "name": "horizon half/8",
+      "ok": true
+    },
+    {
+      "name": "horizon half/12",
+      "ok": true
+    },
+    {
+      "name": "horizon half/16",
+      "ok": true
+    },
+    {
+      "name": "horizon half/20",
+      "ok": true
+    },
+    {
+      "name": "horizon half/24",
+      "ok": true
+    },
+    {
+      "name": "horizon marathon/6",
+      "ok": true
+    },
+    {
+      "name": "horizon marathon/8",
+      "ok": true
+    },
+    {
+      "name": "horizon marathon/12",
+      "ok": true
+    },
+    {
+      "name": "horizon marathon/16",
+      "ok": true
+    },
+    {
+      "name": "horizon marathon/20",
+      "ok": true
+    },
+    {
+      "name": "horizon marathon/24",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-0",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-1",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-2",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-3",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-4",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-5",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-6",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-7",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-8",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-9",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-10",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-11",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-12",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-13",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-14",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-15",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-16",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-17",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-18",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-19",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-20",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-21",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-22",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-23",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-24",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-25",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-26",
+      "ok": true
+    },
+    {
+      "name": "matrix28 safety 28-27",
+      "ok": true
+    },
+    {
+      "name": "race weekday 0/2",
+      "ok": true
+    },
+    {
+      "name": "race weekday 0/3",
+      "ok": true
+    },
+    {
+      "name": "race weekday 0/5",
+      "ok": true
+    },
+    {
+      "name": "race weekday 1/2",
+      "ok": true
+    },
+    {
+      "name": "race weekday 1/3",
+      "ok": true
+    },
+    {
+      "name": "race weekday 1/5",
+      "ok": true
+    },
+    {
+      "name": "race weekday 2/2",
+      "ok": true
+    },
+    {
+      "name": "race weekday 2/3",
+      "ok": true
+    },
+    {
+      "name": "race weekday 2/5",
+      "ok": true
+    },
+    {
+      "name": "race weekday 3/2",
+      "ok": true
+    },
+    {
+      "name": "race weekday 3/3",
+      "ok": true
+    },
+    {
+      "name": "race weekday 3/5",
+      "ok": true
+    },
+    {
+      "name": "race weekday 4/2",
+      "ok": true
+    },
+    {
+      "name": "race weekday 4/3",
+      "ok": true
+    },
+    {
+      "name": "race weekday 4/5",
+      "ok": true
+    },
+    {
+      "name": "race weekday 5/2",
+      "ok": true
+    },
+    {
+      "name": "race weekday 5/3",
+      "ok": true
+    },
+    {
+      "name": "race weekday 5/5",
+      "ok": true
+    },
+    {
+      "name": "race weekday 6/2",
+      "ok": true
+    },
+    {
+      "name": "race weekday 6/3",
+      "ok": true
+    },
+    {
+      "name": "race weekday 6/5",
+      "ok": true
+    },
+    {
+      "name": "marathon V28 fixes remain: distance development, not speed maintenance cap",
+      "ok": true
+    },
+    {
+      "name": "reference marathon60 tolerance protected",
+      "ok": true
+    },
+    {
+      "name": "explicit marathon maintenance still limits development",
+      "ok": true
+    }
+  ]
+}
