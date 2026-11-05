@@ -9,6 +9,7 @@ export function seasonPhases(I,{W,T,rwLen=0,startMon}){
  const prepared=I.currentWeeklyKm>=25&&I.longestRecentRun>=8&&(I.experienceMonths==null||I.experienceMonths>=6),longReady=I.currentWeeklyKm>=35&&I.longestRecentRun>=16;
  let base=Math.max(rwLen,prepared?2:I.currentWeeklyKm>=12?3:Math.min(6,Math.ceil(R*.35)));
  if(I.goal.type==='marathon')base=Math.max(base,longReady?Math.min(4,Math.max(2,Math.floor(R*.2))):Math.min(6,Math.max(3,Math.floor(R*.3))));
+ if(['half','marathon'].includes(I.goal.type))base=Math.max(base,Math.round(2+3*enduranceIntent(I).enduranceGap.value));
  base=Math.min(base,Math.max(0,R-3));
  const specific=Math.min(Math.max(1,R-base-2),Math.max(I.goal.type==='marathon'?4:3,Math.round(R*(I.goal.type==='marathon'?.36:.30))));
  const build=Math.max(0,R-base-specific),returnWeeks=Number(I.breakDays??I.przerwaDni)>=14?Math.min(3,W-T):0;
