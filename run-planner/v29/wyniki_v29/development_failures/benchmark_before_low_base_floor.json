@@ -1,0 +1,814 @@
+{
+  "sourceCommit": "149c6cc",
+  "technicalStatus": "11/11 PASS",
+  "statistics": {
+    "v28": {
+      "score23": {
+        "n": 1008,
+        "mean": 7.547015873015859,
+        "median": 8.517,
+        "min": 2.794,
+        "max": 9.572
+      },
+      "score25": {
+        "n": 1008,
+        "mean": 9.325792658730215,
+        "median": 9.303,
+        "min": 8.212,
+        "max": 9.87
+      },
+      "audit27": {
+        "n": 1008,
+        "mean": 7.424633928571438,
+        "median": 7.702000000000001,
+        "min": 6.11,
+        "max": 8.309999999999999
+      },
+      "audit28": {
+        "n": 1008,
+        "mean": 7.883758680555583,
+        "median": 8.0375,
+        "min": 6.8875,
+        "max": 8.7625
+      }
+    },
+    "v29": {
+      "score23": {
+        "n": 1008,
+        "mean": 6.867859126984126,
+        "median": 7.329,
+        "min": 2.794,
+        "max": 9.65
+      },
+      "score25": {
+        "n": 1008,
+        "mean": 9.208558531745984,
+        "median": 9.162,
+        "min": 8.126,
+        "max": 9.81
+      },
+      "audit27": {
+        "n": 1008,
+        "mean": 7.349676587301599,
+        "median": 7.76,
+        "min": 6.11,
+        "max": 8.309999999999999
+      },
+      "audit28": {
+        "n": 1008,
+        "mean": 7.900824652777783,
+        "median": 8.11625,
+        "min": 6.92875,
+        "max": 8.7625
+      }
+    }
+  },
+  "distribution": {
+    "better": 211,
+    "same": 161,
+    "worse": 636
+  },
+  "finding": "Real low-base stagnation: percent-only development steps rounded away, e.g.6km/3km recent long \u2192 peak7km/4km long after long preparation. Correct conditional absolute small-step floor, not scorer weights.",
+  "worst20": [
+    {
+      "id": 289,
+      "input": {
+        "today": "2026-11-04",
+        "age": 35,
+        "level": "beginner",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 2,
+        "currentWeeklyKm": 6,
+        "longestRecentRun": 3,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-03-01"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3300
+        }
+      },
+      "delta23": -4.104,
+      "before": [
+        20,
+        11
+      ],
+      "after": [
+        7,
+        4
+      ]
+    },
+    {
+      "id": 290,
+      "input": {
+        "today": "2026-11-05",
+        "age": 35,
+        "level": "beginner",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 2,
+        "currentWeeklyKm": 6,
+        "longestRecentRun": 3,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-03-02"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3300
+        }
+      },
+      "delta23": -4.104,
+      "before": [
+        20,
+        11
+      ],
+      "after": [
+        7,
+        4
+      ]
+    },
+    {
+      "id": 291,
+      "input": {
+        "today": "2026-11-06",
+        "age": 35,
+        "level": "beginner",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 2,
+        "currentWeeklyKm": 6,
+        "longestRecentRun": 3,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-03-03"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3300
+        }
+      },
+      "delta23": -4.095000000000001,
+      "before": [
+        20,
+        11
+      ],
+      "after": [
+        7,
+        4
+      ]
+    },
+    {
+      "id": 288,
+      "input": {
+        "today": "2026-11-03",
+        "age": 35,
+        "level": "beginner",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 2,
+        "currentWeeklyKm": 6,
+        "longestRecentRun": 3,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-02-28"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3300
+        }
+      },
+      "delta23": -4.018,
+      "before": [
+        20,
+        11
+      ],
+      "after": [
+        7,
+        4
+      ]
+    },
+    {
+      "id": 420,
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "advanced",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 5,
+        "currentWeeklyKm": 6,
+        "longestRecentRun": 3,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-02-28"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3300
+        }
+      },
+      "delta23": -3.936,
+      "before": [
+        23,
+        8
+      ],
+      "after": [
+        8,
+        4
+      ]
+    },
+    {
+      "id": 408,
+      "input": {
+        "today": "2026-11-04",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 5,
+        "currentWeeklyKm": 6,
+        "longestRecentRun": 3,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-02-28"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3300
+        }
+      },
+      "delta23": -3.8520000000000003,
+      "before": [
+        23,
+        8
+      ],
+      "after": [
+        8,
+        4
+      ]
+    },
+    {
+      "id": 409,
+      "input": {
+        "today": "2026-11-05",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 5,
+        "currentWeeklyKm": 6,
+        "longestRecentRun": 3,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-03-01"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3300
+        }
+      },
+      "delta23": -3.8520000000000003,
+      "before": [
+        23,
+        8
+      ],
+      "after": [
+        8,
+        4
+      ]
+    },
+    {
+      "id": 421,
+      "input": {
+        "today": "2026-11-03",
+        "age": 35,
+        "level": "advanced",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 5,
+        "currentWeeklyKm": 6,
+        "longestRecentRun": 3,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-03-01"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3300
+        }
+      },
+      "delta23": -3.8520000000000003,
+      "before": [
+        23,
+        8
+      ],
+      "after": [
+        8,
+        4
+      ]
+    },
+    {
+      "id": 444,
+      "input": {
+        "today": "2026-11-05",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 6,
+        "currentWeeklyKm": 6,
+        "longestRecentRun": 3,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-02-28"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3300
+        }
+      },
+      "delta23": -3.8520000000000003,
+      "before": [
+        23,
+        8
+      ],
+      "after": [
+        8,
+        4
+      ]
+    },
+    {
+      "id": 445,
+      "input": {
+        "today": "2026-11-06",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 6,
+        "currentWeeklyKm": 6,
+        "longestRecentRun": 3,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-03-01"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3300
+        }
+      },
+      "delta23": -3.8520000000000003,
+      "before": [
+        23,
+        8
+      ],
+      "after": [
+        8,
+        4
+      ]
+    },
+    {
+      "id": 456,
+      "input": {
+        "today": "2026-11-03",
+        "age": 35,
+        "level": "advanced",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 6,
+        "currentWeeklyKm": 6,
+        "longestRecentRun": 3,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-02-28"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3300
+        }
+      },
+      "delta23": -3.8520000000000003,
+      "before": [
+        23,
+        8
+      ],
+      "after": [
+        8,
+        4
+      ]
+    },
+    {
+      "id": 457,
+      "input": {
+        "today": "2026-11-04",
+        "age": 35,
+        "level": "advanced",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 6,
+        "currentWeeklyKm": 6,
+        "longestRecentRun": 3,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-03-01"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3300
+        }
+      },
+      "delta23": -3.8520000000000003,
+      "before": [
+        23,
+        8
+      ],
+      "after": [
+        8,
+        4
+      ]
+    },
+    {
+      "id": 480,
+      "input": {
+        "today": "2026-11-06",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 7,
+        "currentWeeklyKm": 6,
+        "longestRecentRun": 3,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-02-28"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3300
+        }
+      },
+      "delta23": -3.8520000000000003,
+      "before": [
+        23,
+        8
+      ],
+      "after": [
+        8,
+        4
+      ]
+    },
+    {
+      "id": 481,
+      "input": {
+        "today": "2026-11-07",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 7,
+        "currentWeeklyKm": 6,
+        "longestRecentRun": 3,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-03-01"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3300
+        }
+      },
+      "delta23": -3.8520000000000003,
+      "before": [
+        23,
+        8
+      ],
+      "after": [
+        8,
+        4
+      ]
+    },
+    {
+      "id": 492,
+      "input": {
+        "today": "2026-11-04",
+        "age": 35,
+        "level": "advanced",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 7,
+        "currentWeeklyKm": 6,
+        "longestRecentRun": 3,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-02-28"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3300
+        }
+      },
+      "delta23": -3.8520000000000003,
+      "before": [
+        23,
+        8
+      ],
+      "after": [
+        8,
+        4
+      ]
+    },
+    {
+      "id": 493,
+      "input": {
+        "today": "2026-11-05",
+        "age": 35,
+        "level": "advanced",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 7,
+        "currentWeeklyKm": 6,
+        "longestRecentRun": 3,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-03-01"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3300
+        }
+      },
+      "delta23": -3.8520000000000003,
+      "before": [
+        23,
+        8
+      ],
+      "after": [
+        8,
+        4
+      ]
+    },
+    {
+      "id": 483,
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 7,
+        "currentWeeklyKm": 6,
+        "longestRecentRun": 3,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-02-24"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3300
+        }
+      },
+      "delta23": -3.7329999999999997,
+      "before": [
+        23,
+        8
+      ],
+      "after": [
+        8,
+        4
+      ]
+    },
+    {
+      "id": 411,
+      "input": {
+        "today": "2026-11-07",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 5,
+        "currentWeeklyKm": 6,
+        "longestRecentRun": 3,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-03-03"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3300
+        }
+      },
+      "delta23": -3.718000000000001,
+      "before": [
+        23,
+        8
+      ],
+      "after": [
+        8,
+        4
+      ]
+    },
+    {
+      "id": 423,
+      "input": {
+        "today": "2026-11-05",
+        "age": 35,
+        "level": "advanced",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 5,
+        "currentWeeklyKm": 6,
+        "longestRecentRun": 3,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-03-03"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3300
+        }
+      },
+      "delta23": -3.718000000000001,
+      "before": [
+        23,
+        8
+      ],
+      "after": [
+        8,
+        4
+      ]
+    },
+    {
+      "id": 447,
+      "input": {
+        "today": "2026-11-08",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 6,
+        "currentWeeklyKm": 6,
+        "longestRecentRun": 3,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-03-03"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3300
+        }
+      },
+      "delta23": -3.718000000000001,
+      "before": [
+        23,
+        8
+      ],
+      "after": [
+        8,
+        4
+      ]
+    }
+  ]
+}

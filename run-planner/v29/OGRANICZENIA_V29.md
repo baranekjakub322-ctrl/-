@@ -13,3 +13,5 @@
 - Początkujący z deklaracją bardzo krótkiego stażu może dostać cały spokojny plan bez agresywnych akcentów. Aktualizacja po rzeczywistej realizacji jest właściwym miejscem potwierdzenia tolerancji. Brak nowych danych nie jest automatycznym awansem stażu/gotowości.
 
 Dalszy rozwój: zewnętrzna ocena planów i obserwacja realizacji; lepiej zbadane bramki rozwoju długiego biegu przy trzech dniach; stopniowe dłuższe bloki 10 km/HM po potwierdzonym wykonaniu; pełna strukturyzacja dawnych jednostek; profilowanie przeszukiwania na długich historiach. Historyczne wyniki pozostają punktami odniesienia bez zmiany progów.
+
+Minimalny krok przy małej bazie jest heurystyką warunkowej propozycji, zależną od częstotliwości/tolerancji, nie gwarancją bezpieczeństwa ani obowiązkiem wykonania. Nie omija sufitu profilu, regeneracji i strażników obciążenia.

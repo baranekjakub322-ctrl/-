@@ -31,5 +31,11 @@
     "criticalPlans": 0,
     "reason": "Two minimum runs caused taper growth 4\u21926km; repair may remove a surplus easy session. Historical audit thresholds unchanged.",
     "evidence": "development_failures/sweep_before_small_taper_fix.json"
+  },
+  "lowBaseContentReview": {
+    "status": "TECHNICAL_PASS_BUT_CONTENT_REGRESSION_FOUND",
+    "sourceCommit": "149c6cc",
+    "reason": "Percent-only steps were rounded away at6km/week. Added small absolute conditional step floor within existing profile/load limits.",
+    "evidence": "development_failures/benchmark_before_low_base_floor.json"
   }
 }

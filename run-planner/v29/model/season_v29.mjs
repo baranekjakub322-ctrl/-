@@ -35,7 +35,8 @@ export function buildSeason(I,c){
   else if(deload){volume=lastRegular*(risk?.78:.82);lr=lastLong*.75;}
   else if(role==='development'&&!maintenance){
     const tolerance=(risk?.7:1)*(I.fatigue>=4?.5:1),rate=(I.level==='advanced'?.075:I.level==='beginner'?.04:.06)*tolerance;
-    const residual=Math.max(0,peak-lastRegular),step=Math.min(residual,Math.max(0,Math.min(Math.max(1,residual*.22),lastRegular*rate)));
+    const residual=Math.max(0,peak-lastRegular),absoluteFloor=(I.daysPerWeek<=2?.75:1)*tolerance;
+    const step=Math.min(residual,Math.max(0,Math.min(Math.max(1,residual*.22),Math.max(lastRegular*rate,absoluteFloor))));
     volume=Math.min(peak,lastRegular+step);
     const longStep=Math.min(I.goal.type==='marathon'?1.5:1.25,Math.max(0,c.Lpeak-lastLong)*.32)*tolerance;
     lr=w>peakWeek?Math.min(lastLong,c.Lpeak*.88**(w-peakWeek)):Math.min(c.Lpeak,lastLong+longStep);

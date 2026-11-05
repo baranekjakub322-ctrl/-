@@ -1,5 +1,5 @@
 {
-  "passed": 56,
+  "passed": 60,
   "failed": 0,
   "tests": [
     {
@@ -224,6 +224,22 @@
     },
     {
       "name": "tiny-base taper does not force two minimum runs advanced/6",
+      "ok": true
+    },
+    {
+      "name": "small conditional volume does not plateau solely through rounding beginner",
+      "ok": true
+    },
+    {
+      "name": "small conditional volume does not plateau solely through rounding intermediate",
+      "ok": true
+    },
+    {
+      "name": "small conditional volume does not plateau solely through rounding advanced",
+      "ok": true
+    },
+    {
+      "name": "small-step floor does not override reduced load tolerance",
       "ok": true
     }
   ]
