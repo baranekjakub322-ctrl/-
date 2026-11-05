@@ -28,7 +28,7 @@ export function measureWorkout(t){
   // Hill distance includes the return descent, whereas effective work time is ascent only.
   const hillReturn=0;
   const km=stepKm(s);if(km>0&&!embedded){distance+=km;knownDistance=true;}
-  const intensity=rpeFor(role,family,t.podtyp),estimated=source!=='native'||p.length>0||role==='easy';
+  const intensity=finite(s.effortRpe)?Math.max(1,Math.min(10,s.effortRpe)):rpeFor(role,family,t.podtyp),estimated=source!=='native'||p.length>0||role==='easy';
   if(minutes!=null){if(!embedded){elapsed+=minutes;knownTime=true;}load+=minutes*(embedded?Math.max(0,intensity-2.5):intensity);}
   else unknown.push({index,field:'duration',source});
   if(restMin!=null&&!embedded){elapsed+=restMin+hillReturn;load+=(restMin+hillReturn)*2;}else if(restKm>0)unknown.push({index,field:'recovery_duration',source});

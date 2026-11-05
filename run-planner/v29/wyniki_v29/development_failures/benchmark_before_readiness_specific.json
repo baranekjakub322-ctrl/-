@@ -1,0 +1,579 @@
+{
+  "sourceCommit": "daf25a4",
+  "status": "FAIL",
+  "statistics": {
+    "v28": {
+      "score23": {
+        "n": 1008,
+        "mean": 7.547015873015859,
+        "median": 8.517,
+        "min": 2.794,
+        "max": 9.572
+      },
+      "score25": {
+        "n": 1008,
+        "mean": 9.325792658730215,
+        "median": 9.303,
+        "min": 8.212,
+        "max": 9.87
+      },
+      "audit27": {
+        "n": 1008,
+        "mean": 7.424633928571438,
+        "median": 7.702000000000001,
+        "min": 6.11,
+        "max": 8.309999999999999
+      },
+      "audit28": {
+        "n": 1008,
+        "mean": 7.883758680555583,
+        "median": 8.0375,
+        "min": 6.8875,
+        "max": 8.7625
+      }
+    },
+    "v29": {
+      "score23": {
+        "n": 1008,
+        "mean": 6.900429563492063,
+        "median": 7.473,
+        "min": 2.794,
+        "max": 9.44
+      },
+      "score25": {
+        "n": 1008,
+        "mean": 9.183964285714257,
+        "median": 9.151,
+        "min": 8.126,
+        "max": 9.81
+      },
+      "audit27": {
+        "n": 1008,
+        "mean": 7.328330357142854,
+        "median": 7.744,
+        "min": 6.11,
+        "max": 8.309999999999999
+      },
+      "audit28": {
+        "n": 1008,
+        "mean": 7.869053819444455,
+        "median": 8.096250000000001,
+        "min": 6.92875,
+        "max": 8.7625
+      }
+    }
+  },
+  "distribution": {
+    "better": 130,
+    "same": 158,
+    "worse": 720
+  },
+  "errors": [
+    {
+      "collection": "holdout224",
+      "id": 149,
+      "input": {
+        "today": "2026-11-05",
+        "age": 57,
+        "level": "advanced",
+        "currentWeeklyKm": 74,
+        "longestRecentRun": 6,
+        "daysPerWeek": 3,
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "experienceMonths": 86,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2026-12-31"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 2927,
+          "date": "2025-10-29"
+        }
+      },
+      "safety": {
+        "version": "26.0.0",
+        "independentOfScoring": true,
+        "clinicalPrediction": false,
+        "critical": 0,
+        "issues": [],
+        "weekly": [
+          {
+            "from": "2026-11-02",
+            "longKm": 0,
+            "workMinutes": {},
+            "days": [
+              "2026-11-06",
+              "2026-11-08"
+            ],
+            "hardSessions": 0,
+            "km": 22,
+            "minutes": 132,
+            "sessions": 2,
+            "qualityMinutes": 0,
+            "longMinutes": 0,
+            "estimatedLoad": 332.336
+          },
+          {
+            "from": "2026-11-09",
+            "longKm": 6,
+            "workMinutes": {},
+            "days": [
+              "2026-11-11",
+              "2026-11-13",
+              "2026-11-15"
+            ],
+            "hardSessions": 1,
+            "km": 28,
+            "minutes": 169,
+            "sessions": 3,
+            "qualityMinutes": 0,
+            "longMinutes": 37,
+            "estimatedLoad": 461.214
+          },
+          {
+            "from": "2026-11-16",
+            "longKm": 5,
+            "workMinutes": {
+              "strides": 2
+            },
+            "days": [
+              "2026-11-18",
+              "2026-11-20",
+              "2026-11-22"
+            ],
+            "hardSessions": 1,
+            "km": 23,
+            "minutes": 139,
+            "sessions": 3,
+            "qualityMinutes": 0,
+            "longMinutes": 31,
+            "estimatedLoad": 386.308
+          },
+          {
+            "from": "2026-11-23",
+            "longKm": 7,
+            "workMinutes": {
+              "threshold": 16.021
+            },
+            "days": [
+              "2026-11-25",
+              "2026-11-27",
+              "2026-11-29"
+            ],
+            "hardSessions": 2,
+            "km": 25,
+            "minutes": 148,
+            "sessions": 3,
+            "qualityMinutes": 16.021,
+            "longMinutes": 43,
+            "estimatedLoad": 473.057
+          },
+          {
+            "from": "2026-11-30",
+            "longKm": 7,
+            "workMinutes": {
+              "threshold": 16.021
+            },
+            "days": [
+              "2026-12-02",
+              "2026-12-04",
+              "2026-12-06"
+            ],
+            "hardSessions": 2,
+            "km": 25,
+            "minutes": 148,
+            "sessions": 3,
+            "qualityMinutes": 16.021,
+            "longMinutes": 43,
+            "estimatedLoad": 473.057
+          },
+          {
+            "from": "2026-12-07",
+            "longKm": 5,
+            "workMinutes": {},
+            "days": [
+              "2026-12-09",
+              "2026-12-11",
+              "2026-12-13"
+            ],
+            "hardSessions": 1,
+            "km": 21,
+            "minutes": 127,
+            "sessions": 3,
+            "qualityMinutes": 0,
+            "longMinutes": 31,
+            "estimatedLoad": 349.096
+          },
+          {
+            "from": "2026-12-14",
+            "longKm": 7,
+            "workMinutes": {
+              "specific": 9.267
+            },
+            "days": [
+              "2026-12-16",
+              "2026-12-18",
+              "2026-12-20"
+            ],
+            "hardSessions": 2,
+            "km": 24,
+            "minutes": 144,
+            "sessions": 3,
+            "qualityMinutes": 9.267,
+            "longMinutes": 43,
+            "estimatedLoad": 424.19100000000003
+          },
+          {
+            "from": "2026-12-21",
+            "longKm": 0,
+            "workMinutes": {
+              "threshold": 9.224
+            },
+            "days": [
+              "2026-12-23",
+              "2026-12-25",
+              "2026-12-27"
+            ],
+            "hardSessions": 1,
+            "km": 13,
+            "minutes": 76,
+            "sessions": 3,
+            "qualityMinutes": 9.224,
+            "longMinutes": 0,
+            "estimatedLoad": 225.37400000000002
+          },
+          {
+            "from": "2026-12-28",
+            "longKm": 0,
+            "workMinutes": {
+              "strides": 2
+            },
+            "days": [
+              "2026-12-29"
+            ],
+            "hardSessions": 0,
+            "km": 4,
+            "minutes": 24,
+            "sessions": 1,
+            "qualityMinutes": 0,
+            "longMinutes": 0,
+            "estimatedLoad": 67.425
+          }
+        ]
+      },
+      "coherence": {
+        "version": "28.0.0",
+        "critical": 0,
+        "issues": [],
+        "warnings": [],
+        "roundTripDates": true
+      },
+      "problems": [
+        {
+          "kod": "GOTOWOSC_ZAWYZONA",
+          "ciezar": "krytyczny",
+          "msg": "deklaruje gotowo\u015b\u0107 do uko\u0144czenia, a: najd\u0142u\u017cszy 7<8"
+        }
+      ]
+    },
+    {
+      "collection": "holdout224",
+      "id": 156,
+      "input": {
+        "today": "2026-11-08",
+        "age": 35,
+        "level": "beginner",
+        "currentWeeklyKm": 48,
+        "longestRecentRun": 5,
+        "daysPerWeek": 5,
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "experienceMonths": 94,
+        "goal": {
+          "type": "5k",
+          "raceDate": "2027-01-31",
+          "targetTimeSec": 1802
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3579
+        },
+        "intensityTolerance": "low"
+      },
+      "safety": {
+        "version": "26.0.0",
+        "independentOfScoring": true,
+        "clinicalPrediction": false,
+        "critical": 0,
+        "issues": [],
+        "weekly": [
+          {
+            "from": "2026-11-02",
+            "longKm": 5,
+            "workMinutes": {},
+            "days": [
+              "2026-11-08"
+            ],
+            "hardSessions": 1,
+            "km": 5,
+            "minutes": 38,
+            "sessions": 1,
+            "qualityMinutes": 0,
+            "longMinutes": 38,
+            "estimatedLoad": 132.011
+          },
+          {
+            "from": "2026-11-09",
+            "longKm": 5,
+            "workMinutes": {},
+            "days": [
+              "2026-11-10",
+              "2026-11-11",
+              "2026-11-13",
+              "2026-11-15"
+            ],
+            "hardSessions": 1,
+            "km": 37,
+            "minutes": 277,
+            "sessions": 4,
+            "qualityMinutes": 0,
+            "longMinutes": 38,
+            "estimatedLoad": 729.2679999999999
+          },
+          {
+            "from": "2026-11-16",
+            "longKm": 5,
+            "workMinutes": {},
+            "days": [
+              "2026-11-17",
+              "2026-11-18",
+              "2026-11-20",
+              "2026-11-22"
+            ],
+            "hardSessions": 1,
+            "km": 37,
+            "minutes": 277,
+            "sessions": 4,
+            "qualityMinutes": 0,
+            "longMinutes": 38,
+            "estimatedLoad": 729.2679999999999
+          },
+          {
+            "from": "2026-11-23",
+            "longKm": 4,
+            "workMinutes": {},
+            "days": [
+              "2026-11-24",
+              "2026-11-25",
+              "2026-11-27",
+              "2026-11-29"
+            ],
+            "hardSessions": 1,
+            "km": 30,
+            "minutes": 224,
+            "sessions": 4,
+            "qualityMinutes": 0,
+            "longMinutes": 30,
+            "estimatedLoad": 590.879
+          },
+          {
+            "from": "2026-11-30",
+            "longKm": 5,
+            "workMinutes": {},
+            "days": [
+              "2026-12-01",
+              "2026-12-02",
+              "2026-12-04",
+              "2026-12-06"
+            ],
+            "hardSessions": 1,
+            "km": 37,
+            "minutes": 277,
+            "sessions": 4,
+            "qualityMinutes": 0,
+            "longMinutes": 38,
+            "estimatedLoad": 729.2679999999999
+          },
+          {
+            "from": "2026-12-07",
+            "longKm": 5,
+            "workMinutes": {
+              "threshold": 9.796
+            },
+            "days": [
+              "2026-12-08",
+              "2026-12-09",
+              "2026-12-11",
+              "2026-12-13"
+            ],
+            "hardSessions": 2,
+            "km": 24,
+            "minutes": 181,
+            "sessions": 4,
+            "qualityMinutes": 9.796,
+            "longMinutes": 38,
+            "estimatedLoad": 523.028
+          },
+          {
+            "from": "2026-12-14",
+            "longKm": 5,
+            "workMinutes": {},
+            "days": [
+              "2026-12-15",
+              "2026-12-16",
+              "2026-12-18",
+              "2026-12-20"
+            ],
+            "hardSessions": 1,
+            "km": 27,
+            "minutes": 202,
+            "sessions": 4,
+            "qualityMinutes": 0,
+            "longMinutes": 38,
+            "estimatedLoad": 542.625
+          },
+          {
+            "from": "2026-12-21",
+            "longKm": 4,
+            "workMinutes": {},
+            "days": [
+              "2026-12-22",
+              "2026-12-23",
+              "2026-12-25",
+              "2026-12-27"
+            ],
+            "hardSessions": 1,
+            "km": 22,
+            "minutes": 165,
+            "sessions": 4,
+            "qualityMinutes": 0,
+            "longMinutes": 30,
+            "estimatedLoad": 441.567
+          },
+          {
+            "from": "2026-12-28",
+            "longKm": 5,
+            "workMinutes": {},
+            "days": [
+              "2026-12-29",
+              "2026-12-30",
+              "2027-01-01",
+              "2027-01-03"
+            ],
+            "hardSessions": 1,
+            "km": 29,
+            "minutes": 218,
+            "sessions": 4,
+            "qualityMinutes": 0,
+            "longMinutes": 38,
+            "estimatedLoad": 579.953
+          },
+          {
+            "from": "2027-01-04",
+            "longKm": 5,
+            "workMinutes": {
+              "interval": 8.867
+            },
+            "days": [
+              "2027-01-05",
+              "2027-01-06",
+              "2027-01-08",
+              "2027-01-10"
+            ],
+            "hardSessions": 2,
+            "km": 25,
+            "minutes": 188,
+            "sessions": 4,
+            "qualityMinutes": 8.867,
+            "longMinutes": 38,
+            "estimatedLoad": 541.459
+          },
+          {
+            "from": "2027-01-11",
+            "longKm": 5,
+            "workMinutes": {},
+            "days": [
+              "2027-01-12",
+              "2027-01-13",
+              "2027-01-15",
+              "2027-01-17"
+            ],
+            "hardSessions": 1,
+            "km": 28,
+            "minutes": 210,
+            "sessions": 4,
+            "qualityMinutes": 0,
+            "longMinutes": 38,
+            "estimatedLoad": 561.289
+          },
+          {
+            "from": "2027-01-18",
+            "longKm": 3,
+            "workMinutes": {},
+            "days": [
+              "2027-01-19",
+              "2027-01-20",
+              "2027-01-22",
+              "2027-01-24"
+            ],
+            "hardSessions": 1,
+            "km": 23,
+            "minutes": 172,
+            "sessions": 4,
+            "qualityMinutes": 0,
+            "longMinutes": 23,
+            "estimatedLoad": 452.492
+          },
+          {
+            "from": "2027-01-25",
+            "longKm": 0,
+            "workMinutes": {},
+            "days": [
+              "2027-01-26",
+              "2027-01-27",
+              "2027-01-29"
+            ],
+            "hardSessions": 0,
+            "km": 9,
+            "minutes": 66,
+            "sessions": 3,
+            "qualityMinutes": 0,
+            "longMinutes": 0,
+            "estimatedLoad": 167.979
+          }
+        ]
+      },
+      "coherence": {
+        "version": "28.0.0",
+        "critical": 0,
+        "issues": [],
+        "warnings": [],
+        "roundTripDates": true
+      },
+      "problems": [
+        {
+          "kod": "GOTOWOSC_ZAWYZONA",
+          "ciezar": "krytyczny",
+          "msg": "deklaruje gotowo\u015b\u0107 do wyniku, a: najd\u0142u\u017cszy 5<7"
+        }
+      ]
+    }
+  ],
+  "reason": "Two inflated readiness messages; content audit also found underdosed initial specific work. Historical scorers unchanged."
+}

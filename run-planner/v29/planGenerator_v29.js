@@ -409,7 +409,7 @@ function qualitySession(c,family) {
   if(!p.feasible){const km=Math.max(3,Math.floor(Math.min(c.qMax||5,5)));return {typ:'Bieg spokojny Z2',podtyp:'latwy',strefa:'Z2',tempo:range(c.P.easy),dist:km,min:km*c.easyMid/60,kroki:easyKroki(c,km,false,false,false)};}
   const pace=family==='threshold'?c.P.tempo:family==='interval'?c.P.interval:{fast:p.paceSecPerKm,slow:p.paceSecPerKm};
   const recoveryPace=(c.P.recovery.fast+c.P.recovery.slow)/2;
-  const main=nativeStep('work',{etap:'Część główna',powtorzenia:p.reps,dystans_m:p.metres,tempo:range(pace),czas_odcinka:fmtTime(p.metres/1000*p.paceSecPerKm),przerwa:p.rest?`${p.rest} s spokojnego truchtu`:'bez przerwy',przerwa_km:p.rest/recoveryPace,liczba_przerw:Math.max(0,p.reps-1),czas_przerwy_s:p.rest,recoveryType:p.restType,tetno:family==='interval'?'RPE i równe odcinki; HR narasta z opóźnieniem':c.I.hrMaxEstimated?'RPE/test rozmowy; HR jest szacowane':`${c.Z[2].od}-${c.Z[3].do} (orientacyjnie)`,uwagi:p.reason+' Jeśli nie wyszło: nie nadrabiaj; skróć lub biegnij spokojnie.'},[pace.fast,pace.slow],family);
+  const main=nativeStep('work',{etap:'Część główna',powtorzenia:p.reps,dystans_m:p.metres,tempo:range(pace),czas_odcinka:fmtTime(p.metres/1000*p.paceSecPerKm),przerwa:p.rest?`${p.rest} s spokojnego truchtu`:'bez przerwy',przerwa_km:p.rest/recoveryPace,liczba_przerw:Math.max(0,p.reps-1),czas_przerwy_s:p.rest,recoveryType:p.restType,effortRpe:family==='specific'?({'5k':8,'10k':7,half:6,marathon:5}[c.I.goal.type]||5.5):family==='interval'?7.5:6.5,tetno:family==='interval'?'RPE i równe odcinki; HR narasta z opóźnieniem':c.I.hrMaxEstimated?'RPE/test rozmowy; HR jest szacowane':`${c.Z[2].od}-${c.Z[3].do} (orientacyjnie)`,uwagi:p.reason+' Jeśli nie wyszło: nie nadrabiaj; skróć lub biegnij spokojnie.'},[pace.fast,pace.slow],family);
   const kroki=[warmStep(c,'Spokojnie, następnie mobilizacja; bez obowiązkowego dodatkowego akcentu.'),main,coolStep(c)];
   const podtyp={threshold:'tempo',interval:'interwaly',specific:'tempo_startowe'}[family],d=measureWorkout({podtyp,kroki});
   return {typ:family==='interval'?'Interwały':'Tempo',podtyp,strefa:family==='interval'?'Z5':'Z3-Z4',tempo:range(pace),dist:r1(d.total.distanceKm),min:Math.round(d.total.minutes),kroki,prescription:p};
@@ -723,7 +723,7 @@ function buildWeek(c) {
   const lvlE = I.level; // v21: limity regeneracji wg poziomu DEKLAROWANEGO (ostrożniej niż poziom efektywny z wyniku)
   const capRace = { "5k": 3, "10k": 4, half: 5, marathon: 6 }[I.goal.type] || 4;
   const enduranceRoom=I.goal.type==='marathon' && I.daysPerWeek>=4 && I.currentWeeklyKm>=45 && I.longestRecentRun>=18 && !I.injuries && I.loadTolerance!=='low'?Math.min(18,I.currentWeeklyKm/I.daysPerWeek):0;
-  const eachMax = Math.max(E0 * 1.4, mEasy, c.easyCapKm || 0,enduranceRoom);
+  const eachMax = Math.min(c.runDistanceCap??Infinity,Math.max(E0 * 1.4, mEasy, c.easyCapKm || 0,enduranceRoom));
   const totalEasy = nEz ? Math.max(nEz * minAny, Math.min(left, nEz * eachMax)) : 0;
   // limit czasu biegu regeneracyjnego (min) zależny od poziomu i objętości; nigdy ponad 60 min
   const recCapMin = Math.min(60, { beginner: 30, intermediate: 40, advanced: 50 }[lvlE] + (lvlE === "advanced" && B2 >= 75 ? 5 : 0));
@@ -731,7 +731,7 @@ function buildWeek(c) {
   const items = easyDates.map((x) => {
     const capD = Math.max(2, Math.floor(capFor(x.date)));
     const rec = prevDayHard(x.date);
-    let hi = dr(x.date) < 7 ? Math.min(capD, capRace) : Math.min(capD, Math.ceil(eachMax));
+    let hi = dr(x.date) < 7 ? Math.min(capD, capRace) : Math.min(capD, Math.ceil(eachMax),Math.floor(c.runDistanceCap??Infinity));
     if (rec) hi = Math.max(2, Math.min(hi, Math.floor((recCapMin * 60) / c.P.recovery.slow)));
     const m = Math.min(mOf(x.date), capD);
     if (capD < mOf(x.date)) tn.latwySkrocony++;
@@ -1097,6 +1097,8 @@ function generateCore(inp) {
     const isTestWeek = I.controlTests!=='none' && (I.controlTests==='maximal'?lastTest<0:w-lastTest>=8) && I.daysPerWeek >= 3 && w >= 4 && w - rwLen >= 4 && lastBuild >= 15 && w - lastTest >= 6 && (phase === "build" || phase === "peak") && !recovery && !raceWeek && !rw && (!hasRace || diffDays(addDays(weekStart, 6), g.raceDate) >= 21) && !I.injuries;
     if (isTestWeek) lastTest = w;
     const ctxW = { I, seasonWeek, P: Pweek, isTestWeek, crossN, goalTimed: hasRace && !!g.targetTimeSec, longMid: (Pweek.long.fast + Pweek.long.slow) / 2, weekIdx:w+phaseDefinition.offset, easyCapKm: Math.min({ beginner: 9, intermediate: 13, advanced: 18 }[effLevel(I)], Math.max(7, Math.round((Math.max(startVol, I.currentWeeklyKm, vol) / Math.max(I.daysPerWeek, 2)) * 0.9)) /* v18-P2: limit biegu łatwego rośnie razem z celem tygodnia */, I.daysPerWeek <= 2 ? qualityCap + 3 : I.daysPerWeek === 3 ? qualityCap + 2 : 99), budget, longKm, minEasy, prevRuns, allowDayAdd, easyBaseKm: { beginner: 4, intermediate: 5, advanced: 6 }[effLevel(I)], longTarget: hasRace && REQLONG[g.type] ? REQLONG[g.type] * (I.level === "beginner" && !fitEvidence ? 0.85 : 1) * Math.min(1, (w + 1) / Math.max(R - 1, 1)) : 0, lateBase: phase === "base" && !rw && (readyForEarlyQuality(I) ? w>=1 : nBase >= 3 && w >= Math.ceil(nBase / 2)), silaN, Z, warm: I.warm, cool: I.cool, easyMid, goalPace, specificPace, weekStart, vol, startDate, raceDate: hasRace ? g.raceDate : null, chosen, longDow, state, capLong, longMin:longDurationLimit(I,w,longMin,easyMid), phase, recovery, taper: phase === "taper", raceWeek, rw, rwStage: rwSt, kQuality: Math.max(0,w+phaseDefinition.offset-nBase) };
+    ctxW.runDistanceCap=Math.max(minEasy,I.longestRecentRun,ctxW.longKm);
+    ctxW.easyCapKm=Math.min(ctxW.easyCapKm,ctxW.runDistanceCap);
     const snap={tempoK:state.tempoK,intervalK:state.intervalK,raceK:state.raceK,hillK:state.hillK};
     const raceKmWeek = extra.filter((r) => r.date >= weekStart && r.date < addDays(weekStart, 7)).reduce((a, r) => a + r.distanceKm + 3, 0);
     if (raceKmWeek > 0 && phase !== "taper") {
@@ -1303,7 +1305,7 @@ function generateCore(inp) {
   if (hasRace && REQ[g.type] && przygotowanie) {
     const f = I.level === "beginner" && !fitEvidence && g.type !== "marathon" ? 0.85 : 1; // v20-F3: ulga dla poczatkujacych nie dotyczy maratonu (V19: ukonczenie maratonu deklarowane juz przy dlugim biegu ok. 24 km)
     const need = { najdluzszyBiegKm: r1(REQ[g.type].long * f), kmTygodniowo: Math.round(REQ[g.type].week * f) };
-    const runs = treningi.filter((t) => ["latwy", "dlugi", "marszobieg"].includes(t.podtyp));
+    const runs = treningi.filter((t) => t.podtyp === "dlugi");
     const got = { najdluzszyBiegKm: r1(Math.max(0, ...runs.map((t) => t.dystans_km))), kmTygodniowo: Math.round(Math.max(0, ...tygodnie.filter((t) => !t.faza.startsWith("zwoln")).map((t) => t.km))) };
     const longRatio = got.najdluzszyBiegKm / Math.max(need.najdluzszyBiegKm, 1);
     const volumeRatio = got.kmTygodniowo / Math.max(need.kmTygodniowo, 1);

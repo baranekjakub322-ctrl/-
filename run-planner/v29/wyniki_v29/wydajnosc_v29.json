@@ -1,0 +1,32 @@
+{
+  "passed": 1,
+  "failed": 0,
+  "results": [
+    {
+      "version": "v28",
+      "inputSha256": "0947bb9c68a7740a707d59e17f6e2117f68b2245c188a1d00180bc87077928d0",
+      "executed": 84,
+      "meanMs": 20.82127110714287,
+      "medianMs": 13.510857999999985,
+      "p95Ms": 54.46849999999995,
+      "maxMs": 82.95427399999994,
+      "startRss": 73019392,
+      "maxRssBytes": 196382720,
+      "node": "v24.19.0"
+    },
+    {
+      "version": "v29",
+      "inputSha256": "0947bb9c68a7740a707d59e17f6e2117f68b2245c188a1d00180bc87077928d0",
+      "executed": 84,
+      "meanMs": 48.07306611904758,
+      "medianMs": 32.173883999999816,
+      "p95Ms": 129.011119,
+      "maxMs": 178.6783650000002,
+      "startRss": 76652544,
+      "maxRssBytes": 280727552,
+      "node": "v24.19.0"
+    }
+  ],
+  "ratioMean": 2.3088439640246463,
+  "limitations": "Osobne świeże procesy, ten sam zestaw, jedno środowisko; pomiar RSS jest maksimum procesu, nie rozmiar samego planu."
+}

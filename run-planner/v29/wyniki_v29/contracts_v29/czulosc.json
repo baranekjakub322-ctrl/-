@@ -1,14 +1,9 @@
 {
  "generator": "planGenerator_v29.js",
  "nazwa": "czulosc",
- "zaliczone": 27,
- "niezaliczone": 1,
- "bledy": [
-  {
-   "opis": "najdłuższy bieg 10→16 przy 25 km/tydz. (limit udziału skraca): plan powinien się zmienić",
-   "szczegoly": ""
-  }
- ],
+ "zaliczone": 28,
+ "niezaliczone": 0,
+ "bledy": [],
  "generatorPlik": "/workspace/-/run-planner/v29/planGenerator_v29.js",
  "tabela": [
   {
@@ -55,15 +50,15 @@
    "parametr": "poziom → advanced",
    "oczekiwanie": "zmiana",
    "planZmienionyStrukturalnie": true,
-   "dSzczyt": 0,
-   "dNajdluzszy": 0,
+   "dSzczyt": 2,
+   "dNajdluzszy": 1,
    "dPierwszyDlugi": 0
   },
   {
    "parametr": "kilometraż 25→45",
    "oczekiwanie": "zmiana",
    "planZmienionyStrukturalnie": true,
-   "dSzczyt": 13,
+   "dSzczyt": 12,
    "dNajdluzszy": 1,
    "dPierwszyDlugi": 0
   },
@@ -86,7 +81,7 @@
   {
    "parametr": "najdłuższy bieg 10→16 przy 25 km/tydz. (limit udziału skraca)",
    "oczekiwanie": "zmiana",
-   "planZmienionyStrukturalnie": false,
+   "planZmienionyStrukturalnie": true,
    "dSzczyt": 0,
    "dNajdluzszy": 0,
    "dPierwszyDlugi": 0
@@ -95,16 +90,16 @@
    "parametr": "wynik 55:00→50:00",
    "oczekiwanie": "zmiana",
    "planZmienionyStrukturalnie": true,
-   "dSzczyt": -2,
-   "dNajdluzszy": -1,
+   "dSzczyt": 0,
+   "dNajdluzszy": 0,
    "dPierwszyDlugi": 0
   },
   {
    "parametr": "liczba dni 4→3",
    "oczekiwanie": "zmiana",
    "planZmienionyStrukturalnie": true,
-   "dSzczyt": -2,
-   "dNajdluzszy": 1,
+   "dSzczyt": -3,
+   "dNajdluzszy": 0,
    "dPierwszyDlugi": 0
   },
   {
@@ -151,7 +146,7 @@
    "parametr": "liczba tygodni 16→24",
    "oczekiwanie": "zmiana",
    "planZmienionyStrukturalnie": true,
-   "dSzczyt": 7,
+   "dSzczyt": 8,
    "dNajdluzszy": 2,
    "dPierwszyDlugi": 0
   }
@@ -223,8 +218,7 @@
   },
   {
    "opis": "najdłuższy bieg 10→16 przy 25 km/tydz. (limit udziału skraca): plan powinien się zmienić",
-   "ok": false,
-   "szczegoly": ""
+   "ok": true
   },
   {
    "opis": "wynik 55:00→50:00: plan powinien się zmienić",

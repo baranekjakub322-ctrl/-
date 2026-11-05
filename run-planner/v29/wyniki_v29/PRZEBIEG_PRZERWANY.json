@@ -17,5 +17,12 @@
     "status": "DEVELOPMENT_FAIL_UNCHANGED_TEST",
     "cause": "Endurance gap affected labels but not sufficient base phase duration for a lower long-run history; integrated the continuous gap into long-distance base preparation.",
     "evidence": "development_failures/before_gap_phase_czulosc.json"
+  },
+  "firstCompleteV29Run": {
+    "status": "10_PASS_STAGES_1_FAIL_STAGE",
+    "stage": "benchmark_v29",
+    "errors": 2,
+    "reason": "Inflated readiness for holdout224 IDs149,156; fixed without increasing volume",
+    "sourceCommit": "daf25a4"
   }
 }

@@ -25,13 +25,19 @@ export function prescribeQuality(c,family){
  const previous=c.state?.familyRecipes?.[family],mode=adaptive?'adaptive':'initial_conditional',maintenance=['utrzymanie','aktywnosc'].includes(I.trainingIntent)&&['5k','10k'].includes(I.goal.type);
  const pace=family==='threshold'?(c.P.tempo.fast+c.P.tempo.slow)/2:family==='interval'?(c.P.interval.fast+c.P.interval.slow)/2:c.specificPace||c.goalPace;
  const weeklyMinutes=Math.max(0,(c.vol??I.currentWeeklyKm)*c.easyMid/60),slots=Math.max(1,c.qualitySlots||1),phaseDose=(c.seasonWeek||I.seasonWeek)?.targets?.qualityMinutes;
- const levelCap=level==='advanced'?family==='threshold'?36:28:level==='beginner'?14:family==='threshold'?28:24;
+ const levelIndex=level==='advanced'?2:level==='beginner'?0:1;
+ const specificCaps={'5k':[8,16,20],'10k':[12,24,30],half:[14,32,40],marathon:[16,40,50]};
+ const levelCap=family==='specific'?(specificCaps[I.goal.type]||[10,24,30])[levelIndex]:(family==='threshold'?[14,28,36]:[10,24,28])[levelIndex];
  const capacity=Math.max(6,Math.min(levelCap,weeklyMinutes*(phase==='base'?.075:.13)/slots,phaseDose>0?phaseDose/slots:levelCap));
  const tolerance=I.intensityTolerance==='low'||I.loadTolerance==='low'||I.fatigue>=4?.75:1;
  const budget=Math.max(0,Math.min(c.qMax??12,Number.isFinite(c.dayMinutes)?c.dayMinutes*60/c.easyMid:Infinity)-c.warm-c.cool);
- let reps=family==='threshold'?1:family==='interval'?I.goal.type==='5k'?6:4:2;
+ let reps=family==='threshold'?1:family==='interval'?I.goal.type==='5k'?6:4:['5k','10k'].includes(I.goal.type)?3:2;
  let metres=family==='threshold'?Math.round((level==='advanced'?16:12)*60/pace*1000/100)*100:family==='interval'?I.goal.type==='5k'?(I.currentWeeklyKm>=35?400:300):800:['half','marathon'].includes(I.goal.type)?2000:I.goal.type==='5k'?600:1000;
  let rest=family==='threshold'?0:family==='specific'?(['half','marathon'].includes(I.goal.type)?120:90):Math.round(clamp(metres/1000*pace*.5,60,150)/15)*15;
+ if(family==='specific'&&!previous&&!(adaptive&&observed.structureKnown)){
+  const desired=capacity*(phase==='peak'?.85:.70)*tolerance,maxBout={'5k':1000,'10k':2000,half:6000,marathon:8000}[I.goal.type]||2000;
+  metres=Math.max(300,Math.min(maxBout,Math.floor(desired*60/pace/reps*10)*100));
+ }
  if(previous){reps=previous.reps;metres=previous.metres;rest=previous.rest;}
  else if(adaptive&&observed.executedDose?.structure){const s=observed.executedDose.structure;reps=s.repetitions||1;metres=s.intervalMeters||Math.round(observed.executedDose.workMin*60/pace/reps*10)*100;rest=s.restSeconds||0;}
  let action=previous?'consolidation':'introduction',axis=null;

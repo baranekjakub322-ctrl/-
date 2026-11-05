@@ -1,5 +1,5 @@
 {
-  "passed": 35,
+  "passed": 42,
   "failed": 0,
   "tests": [
     {
@@ -140,6 +140,34 @@
     },
     {
       "name": "six-week mean excludes older activities outside its denominator window",
+      "ok": true
+    },
+    {
+      "name": "readiness follows designated long-run preparation, holdout 149",
+      "ok": true
+    },
+    {
+      "name": "readiness follows designated long-run preparation, holdout 156",
+      "ok": true
+    },
+    {
+      "name": "specific prescription uses phase capacity and distance intensity 5k",
+      "ok": true
+    },
+    {
+      "name": "specific prescription uses phase capacity and distance intensity 10k",
+      "ok": true
+    },
+    {
+      "name": "specific prescription uses phase capacity and distance intensity half",
+      "ok": true
+    },
+    {
+      "name": "specific prescription uses phase capacity and distance intensity marathon",
+      "ok": true
+    },
+    {
+      "name": "large weekly declaration cannot conceal an abrupt ordinary-run jump",
       "ok": true
     }
   ]
