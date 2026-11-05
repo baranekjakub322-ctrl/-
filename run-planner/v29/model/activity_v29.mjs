@@ -32,6 +32,16 @@ function normalise(raw,today,defaultZone='UTC',fixedId=null){
  if(o.status==='missed'&&o.testResult)fail('Pominięcie nie jest wykonanym testem.');
  if(o.testResult&&(!Number.isFinite(o.testResult.distanceKm)||o.testResult.distanceKm<.1||o.testResult.distanceKm>100||!Number.isFinite(o.testResult.timeSec)||o.testResult.timeSec<=0||o.testResult.timeSec>86400))fail('Nieprawidłowy wynik testu.');
  if(o.testResult && (o.distanceKm<o.testResult.distanceKm-.05 || o.durationMin*60<o.testResult.timeSec-5 || o.testResult.timeSec/o.testResult.distanceKm<150 || o.testResult.timeSec/o.testResult.distanceKm>1200))fail('Wynik testu musi być rzeczywistym, spójnym odcinkiem wykonanej aktywności.');
+ if(o.stimulus!=null){
+  const v=o.stimulus;if(typeof v!=='object'||Array.isArray(v))fail('stimulus wymaga obiektu struktury wykonanej części głównej.');
+  for(const [k,a,b]of [['repetitions',1,100],['intervalMeters',10,50000],['intervalSeconds',1,18000],['restSeconds',0,1800]])if(v[k]!=null&&(!Number.isFinite(v[k])||typeof v[k]!=='number'||v[k]<a||v[k]>b))fail(`Niepoprawny parametr wykonanej struktury: ${k}.`);
+  if(v.repetitions!=null&&!Number.isInteger(v.repetitions))fail('Liczba powtórzeń musi być całkowita.');
+  if(v.restType!=null&&!['jog','walk','passive','none'].includes(v.restType))fail('Nieprawidłowy rodzaj przerwy.');
+  if(v.targetDistance!=null&&!['5k','10k','half','marathon','health'].includes(v.targetDistance))fail('Nieprawidłowy dystans docelowy ekspozycji.');
+  if(v.intervalSeconds>0&&v.repetitions>0&&o.workMinutes!=null&&Math.abs(v.intervalSeconds*v.repetitions/60-o.workMinutes)>.5)fail('Struktura odcinków jest sprzeczna z czasem wykonanej pracy.');
+  if(v.conditions!=null){const q=v.conditions;if(typeof q!=='object'||Array.isArray(q))fail('Warunki wymagają obiektu.');if(q.temperatureC!=null&&(!Number.isFinite(q.temperatureC)||q.temperatureC< -50||q.temperatureC>60))fail('Nieprawidłowa temperatura.');if(q.surface!=null&&!['road','track','trail','treadmill'].includes(q.surface))fail('Nieprawidłowa nawierzchnia.');}
+ }
+ if(o.illness!=null&&typeof o.illness!=='boolean')fail('illness musi być logiczne.');
  if(o.id!=null&&(typeof o.id!=='string'||!o.id.trim()||o.id.length>160))fail('id aktywności musi być niepustym tekstem do 160 znaków.');
  if(o.externalId!=null&&(!['string','number'].includes(typeof o.externalId)||typeof o.externalId==='number'&&!Number.isFinite(o.externalId)))fail('externalId musi być tekstem lub liczbą.');
  if(o.source!=null&&(typeof o.source!=='string'||!o.source.trim()||o.source.length>80))fail('Nieprawidłowe źródło importu.');

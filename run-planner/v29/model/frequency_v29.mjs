@@ -1,3 +1,4 @@
+import {nativeStep} from './dose_v29.mjs';
 // Dedicated low-frequency allocation. No deletion from a five-day template.
 export function lowFrequencyWeek(c,dates,V,h) {
   const {I,state}=c, out=[];
@@ -26,7 +27,7 @@ export function lowFrequencyWeek(c,dates,V,h) {
     if(longItem && I.goal.type==='half' && c.raceDate && (Date.parse(c.raceDate)-Date.parse(longItem.date))/86400000<=14)L=Math.max(3,Math.floor(L*.85));
     let development=other?Math.max(floor,Math.min(Math.floor((budget-L)/(longItem?1:dates.length)),c.easyCapKm,h.fit(other.date,c.easyMid))):0;
     if(longItem&&other)L=Math.min(L,Math.floor(development*h.share(I.goal.type,2)/(1-h.share(I.goal.type,2))));
-    if(longItem){emit(longItem,easy(longItem,L,true));if(!c.recovery){state.lastLong=Math.max(state.lastLong,L);state.plannedLong=Math.max(state.plannedLong,L);}}
+    if(longItem){const long=easy(longItem,L,true);long.kroki[0]=nativeStep('easy',{...long.kroki[0],tempo:h.range(c.P.long)},[c.P.long.fast,c.P.long.slow]);emit(longItem,long);if(!c.recovery){state.lastLong=Math.max(state.lastLong,L);state.plannedLong=Math.max(state.plannedLong,L);}}
     if(other){
       const distance=longItem?Math.abs(Date.parse(other.date)-Date.parse(longItem.date))/86400000:7;
       const kind=developmentWeek?'tempo':h.policy(I,c.phase,c.kQuality,c.recovery,c.raceWeek,c.lateBase)[0];
@@ -39,7 +40,7 @@ export function lowFrequencyWeek(c,dates,V,h) {
           s=q;if(developmentWeek)s.kroki[0].uwagi='Tydzień rozwojowy zamiast długiego biegu; jutro tylko krótko i spokojnie.';if(kind==='interval')state.intervalK++;else if(kind==='racepace')state.raceK++;else state.tempoK++;
           // Additional easy running is explicit, limited, and never replaces warm-up/cool-down.
           const extra=Math.max(0,Math.min(3,Math.floor(development-s.dist),Math.floor((h.limit(other.date)-s.min)*60/c.easyMid)));
-          if(extra>=1){s.kroki.splice(s.kroki.length-1,0,{etap:'Uzupełnienie tlenowe',dystans_km:extra,tempo:h.range(c.P.easy),uwagi:'Spokojny odcinek po akcencie; pomiń przy zmęczeniu.'});s.dist+=extra;s.min+=extra*c.easyMid/60;}
+          if(extra>=1){s.kroki.splice(s.kroki.length-1,0,nativeStep('easy',{etap:'Uzupełnienie tlenowe',dystans_km:extra,tempo:h.range(c.P.easy),uwagi:'Spokojny odcinek po akcencie; pomiń przy zmęczeniu.'},[c.P.easy.fast,c.P.easy.slow]));s.dist+=extra;s.min+=extra*c.easyMid/60;}
         }
       }
       emit(other,s);

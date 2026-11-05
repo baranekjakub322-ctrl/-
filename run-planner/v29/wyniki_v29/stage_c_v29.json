@@ -1,0 +1,94 @@
+{
+  "passed": 22,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "adaptive proposals are backed by actual evidence, bounded to one step/family",
+      "ok": true
+    },
+    {
+      "name": "adaptation no false confirmation missingRpe",
+      "ok": true
+    },
+    {
+      "name": "adaptation no false confirmation missingFatigue",
+      "ok": true
+    },
+    {
+      "name": "adaptation no false confirmation missingShape",
+      "ok": true
+    },
+    {
+      "name": "adaptation no false confirmation emptyShape",
+      "ok": true
+    },
+    {
+      "name": "adaptation no false confirmation shortened",
+      "ok": true
+    },
+    {
+      "name": "adaptation no false confirmation differentShape",
+      "ok": true
+    },
+    {
+      "name": "adaptation no false confirmation highRpe",
+      "ok": true
+    },
+    {
+      "name": "adaptation no false confirmation fatigue",
+      "ok": true
+    },
+    {
+      "name": "adaptation no false confirmation illness",
+      "ok": true
+    },
+    {
+      "name": "correction recalculates future and preserves the audit/original observation",
+      "ok": true
+    },
+    {
+      "name": "cancel evidence is not replaced by planned doses",
+      "ok": true
+    },
+    {
+      "name": "invalid executed structure {\"repetitions\":null}",
+      "ok": true
+    },
+    {
+      "name": "invalid executed structure {\"intervalMeters\":-5}",
+      "ok": true
+    },
+    {
+      "name": "invalid executed structure {\"restSeconds\":null}",
+      "ok": true
+    },
+    {
+      "name": "invalid executed structure {\"restType\":\"sprint\"}",
+      "ok": true
+    },
+    {
+      "name": "invalid executed structure {\"conditions\":{\"temperatureC\":null}}",
+      "ok": true
+    },
+    {
+      "name": "invalid executed structure {\"repetitions\":4,\"intervalSeconds\":300}",
+      "ok": true
+    },
+    {
+      "name": "no RPE/fatigue in repeated fast tests cannot raise VDOT",
+      "ok": true
+    },
+    {
+      "name": "estimated HR gives RPE first and does not pose as measured bpm zones",
+      "ok": true
+    },
+    {
+      "name": "raw declarations survive conservative normalization separately",
+      "ok": true
+    },
+    {
+      "name": "initial progression never adds completed history",
+      "ok": true
+    }
+  ]
+}

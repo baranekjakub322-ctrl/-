@@ -22,10 +22,11 @@ export function measureWorkout(t){
   let workKm=hasReps?repeat*s.dystans_m/1000:finite(s.dystans_km)?s.dystans_km:null;
   if(family==='hill')workKm=finite(s.workDistanceKm)?s.workDistanceKm:null;
   let minutes=finite(s.praca_min)?s.praca_min:finite(s.czas_min)?s.czas_min:s.czas_odcinka_s>0?repeat*s.czas_odcinka_s/60:workKm!=null&&p.length?workKm*means(p)/60:null;
-  const restKm=hasReps&&finite(s.przerwa_km)?restCount*s.przerwa_km:0;
-  const restMin=hasReps&&s.czas_przerwy_s!=null?restCount*s.czas_przerwy_s/60:hasReps&&restKm>0?null:0;
+  const hasRecovery=s.powtorzenia&&(s.czas_przerwy_s!=null||s.przerwa_km!=null);
+  const restKm=hasRecovery&&finite(s.przerwa_km)?restCount*s.przerwa_km:0;
+  const restMin=hasRecovery&&s.czas_przerwy_s!=null?restCount*s.czas_przerwy_s/60:hasRecovery&&restKm>0?null:0;
   // Hill distance includes the return descent, whereas effective work time is ascent only.
-  const hillReturn=family==='hill'&&s.czas_przerwy_s!=null?repeat*s.czas_przerwy_s/60:0;
+  const hillReturn=0;
   const km=stepKm(s);if(km>0&&!embedded){distance+=km;knownDistance=true;}
   const intensity=rpeFor(role,family,t.podtyp),estimated=source!=='native'||p.length>0||role==='easy';
   if(minutes!=null){if(!embedded){elapsed+=minutes;knownTime=true;}load+=minutes*(embedded?Math.max(0,intensity-2.5):intensity);}
@@ -46,7 +47,7 @@ export function workDose(t){const d=measureWorkout(t),a=Object.entries(d.familie
 export function syncStructure(t,{recomputeTime=false}={}){
  if(t.prescription&&familyOf(t)!==t.prescription.family)delete t.prescription;
  const d=measureWorkout(t);t.structuredDose=d;
- if(recomputeTime&&t.prescription&&d.total.minutes!=null)t.czas_min=Math.max(1,Math.round(d.total.minutes));
+ if(recomputeTime&&(t.prescription||d.segments.length>0&&d.segments.every(s=>s.source==='native'))&&d.total.minutes!=null)t.czas_min=Math.max(1,Math.round(d.total.minutes));
  return d;
 }
 export function retainFamilyRecipes(state,units){

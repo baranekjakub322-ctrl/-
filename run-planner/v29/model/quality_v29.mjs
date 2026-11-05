@@ -2,20 +2,21 @@
 const clamp=(x,a,b)=>Math.max(a,Math.min(b,x)),day=(a,b)=>(Date.parse(b)-Date.parse(a))/86400000;
 export function comparableExposureState(history=[],today,family){
  const rows=history.filter(o=>o.status==='done'&&o.sessionType===family&&o.workMinutes>0&&o.date<=today&&day(o.date,today)<=56).sort((a,b)=>a.date.localeCompare(b.date)),latest=rows.at(-1),shape=latest?.stimulus;
- const comparable=shape?rows.filter(o=>{
-  const s=o.stimulus;if(!s||s.restType!==shape.restType)return false;
+ const known=s=>!!s&&s.repetitions>0&&(s.intervalMeters>0||s.intervalSeconds>0)&&s.restSeconds!=null&&['jog','walk','passive','none'].includes(s.restType);
+ const comparable=known(shape)?rows.filter(o=>{
+  const s=o.stimulus;if(!known(s)||s.restType!==shape.restType)return false;
   if(Math.abs(o.workMinutes/latest.workMinutes-1)>.20)return false;
   for(const k of ['repetitions','intervalMeters','intervalSeconds'])if(shape[k]!=null&&(!(s[k]>0)||Math.abs(s[k]/shape[k]-1)>.20))return false;
   if(Math.abs((s.restSeconds||0)-(shape.restSeconds||0))>Math.max(15,(shape.restSeconds||0)*.2))return false;
   if(s.targetDistance&&shape.targetDistance&&s.targetDistance!==shape.targetDistance)return false;
-  const a=s.conditions||{},b=shape.conditions||{};if(a.surface&&b.surface&&a.surface!==b.surface)return false;if(a.temperatureC!=null&&b.temperatureC!=null&&Math.abs(a.temperatureC-b.temperatureC)>5)return false;
+  const a=s.conditions||{},b=shape.conditions||{};if(!!a.surface!==!!b.surface||(a.temperatureC!=null)!==(b.temperatureC!=null))return false;if(a.surface&&b.surface&&a.surface!==b.surface)return false;if(a.temperatureC!=null&&b.temperatureC!=null&&Math.abs(a.temperatureC-b.temperatureC)>5)return false;
   return true;
  }):[];
- const good=comparable.filter(o=>o.rpe!=null&&o.fatigue!=null&&o.rpe<=8&&o.fatigue<=3&&!(o.pain>=3)&&!o.activeInjury&&(o.sleepHours==null||o.sleepHours>=6)&&(o.wellbeing==null||o.wellbeing>=3));
- const days=[...new Set(good.map(o=>o.date))],span=days.length?day(days[0],days.at(-1)):0,fatigued=!!latest&&(latest.rpe>=9||latest.fatigue>=4||latest.pain>=3||latest.activeInjury),canProgress=days.length>=2&&span>=7&&!fatigued;
+ const good=comparable.filter(o=>o.rpe!=null&&o.fatigue!=null&&o.rpe<=8&&o.fatigue<=3&&!(o.pain>=3)&&!o.activeInjury&&!o.illness&&(o.sleepHours==null||o.sleepHours>=6)&&(o.wellbeing==null||o.wellbeing>=3));
+ const days=[...new Set(good.map(o=>o.date))],span=days.length?day(days[0],days.at(-1)):0,fatigued=!!latest&&(latest.rpe>=9||latest.fatigue>=4||latest.pain>=3||latest.activeInjury||latest.illness),canProgress=days.length>=2&&span>=7&&!fatigued;
  return {family,status:fatigued?'fatigue':canProgress?'progression_consideration':'insufficient_evidence',observed:rows.length,comparable:days.length,spanDays:span,canProgress,introductoryStep:canProgress?1:0,
   retainedDoseMinutes:latest?latest.workMinutes*(fatigued?.8:1):null,executedDose:latest?{workMin:latest.workMinutes,structure:latest.stimulus||null,date:latest.date}:null,
-  predecessor:latest?{id:latest.id,date:latest.date,workMinutes:latest.workMinutes,status:'completed'}:null,evidenceIds:good.map(o=>o.id),structureKnown:!!shape,
+  predecessor:latest?{id:latest.id,date:latest.date,workMinutes:latest.workMinutes,status:'completed'}:null,evidenceIds:good.map(o=>o.id),structureKnown:known(shape),
   confidence:canProgress?'limited':'low',plannedExposuresAreEvidence:false,reason:'Porównujemy wykonaną rodzinę, strukturę, przerwy, dawkę i RPE/zmęczenie; brak danych nie potwierdza tolerancji.'};
 }
 const goals={threshold:'wytrzymałość progowa',interval:'wydolność tlenowa i ekonomia',specific:'wytrzymałość w intensywności docelowego dystansu'};
@@ -44,6 +45,7 @@ export function prescribeQuality(c,family){
  }
  if(c.taper||phase==='taper'||c.recovery||observed.status==='fatigue'||tolerance<1){if(family==='threshold')metres=Math.max(800,Math.floor(metres*(c.taper?.6:.8)/100)*100);else reps=Math.max(2,Math.floor(reps*(c.taper?.6:.8)));action='reduction';axis='work_duration';}
  let cap=capacity*tolerance;
+ if(adaptive&&!observed.structureKnown&&previous==null)cap=Math.min(cap,12);
  if(adaptive&&observed.retainedDoseMinutes){const executed=observed.retainedDoseMinutes;cap=Math.min(cap,progress?executed+Math.min(2,executed*.12):executed);}
  if(previous)cap=Math.min(cap,Math.max(previous.workMin*1.18,previous.workMin+2));
  if(previous&&progress&&axis==='repetitions'&&reps*metres/1000*pace/60>cap){reps=previous.reps;metres=previous.metres+100;axis='interval_length';}
@@ -51,6 +53,7 @@ export function prescribeQuality(c,family){
  while((total()>budget+.01||minutes()>cap+.01)&&reps>Math.min(2,reps))reps--;
  while((total()>budget+.01||minutes()>cap+.01)&&metres> (family==='threshold'?600:200))metres-=100;
  if(previous&&minutes()<=previous.workMin+.5&&action.includes('progression')){action='consolidation';axis=null;}
+ if(adaptive&&action==='progression'&&observed.executedDose&&minutes()<=observed.executedDose.workMin+.5){action='consolidation';axis=null;}
  const workKm=reps*metres/1000,workMin=workKm*pace/60,feasible=total()<=budget+.05&&workMin<=cap+.1&&workMin>= (family==='threshold'?4:3);
  const reason=action==='consolidation'?(adaptive&&!observed.canProgress?'Brak porównywalnego wykonania: utrzymaj bezpieczną dawkę.':maintenance?'Podtrzymanie formy: konsolidacja zamiast obowiązkowego wzrostu.':'Konsolidacja dawki lub ograniczenie budżetu, bez przypadkowej rotacji.'):action==='reduction'?'Redukcja pracy dla regeneracji, taperu lub niższej tolerancji.':action.includes('progression')?`Mały krok jednej osi (${axis}); tempo i przerwy pozostają bez zaostrzenia.`:'Pierwsza dawka dobrana do fazy, bazy i dostępnego czasu.';
  return {family,phase,mode,action,axis,reps,metres,rest,restType:'jog',workKm,workMin,paceSecPerKm:pace,feasible,

@@ -17,7 +17,7 @@ export function adaptWith(generate,physics,input,previousPlan,events=[],opts={})
  const active=ledger.observations,done=ledger.completedHistory,recent=active.filter(o=>dayDiff(o.date,today)<=14),recentDone=recent.filter(o=>o.status!=='missed');
  const symptom=latestSymptom(active);
  if(symptom&&(symptom.pain>=4||symptom.activeInjury))return {...failure('Ból lub uraz: wstrzymano harmonogram obciążeń; nie jest to diagnoza.'),completedHistory:done,adaptacja:{...clone(previous),...ledger,originInput:origin,inputUsed:source,date:today,wstrzymana:true,powod:'bol_lub_uraz',lastValidPlan:clone(priorSchedule)}};
- const p={...clone(origin),today,seasonContext:{originStart:previous.originInput?.today||input.today},goal:{...clone(source.goal),...(raceDate?{raceDate}:{})}},reasons=[];
+ const p={...clone(origin),__fromAdaptation:true,today,seasonContext:{originStart:previous.originInput?.today||input.today},goal:{...clone(source.goal),...(raceDate?{raceDate}:{})}},reasons=[];
  // Start from original measured/declarative base, not a repeatedly discounted prior prescription.
  p.currentWeeklyKm=Math.min(Number(origin.currentWeeklyKm||0),previous.originEffectiveBase??priorSchedule.indywidualizacja?.bazaKm??Number(origin.currentWeeklyKm||0));
  p.longestRecentRun=Math.min(Number(origin.longestRecentRun||0),previous.originEffectiveLong??priorSchedule.indywidualizacja?.najdluzszyKm??Number(origin.longestRecentRun||0));
@@ -41,7 +41,7 @@ export function adaptWith(generate,physics,input,previousPlan,events=[],opts={})
  const wellbeing=recoveryTrend(active,today);
  const risingRpe=exposureTrend.some(g=>g.exposures>=3&&g.rpeDelta>=1.5);
  const fatigued=recent.slice(-3).filter(o=>o.fatigue>=4||o.rpe>=9).length,shortened=recent.filter(o=>o.status==='shortened').length,missed=recent.filter(o=>o.status==='missed').length;
- let factor=fatigued>=2?.8:fatigued===1||risingRpe?.9:1;if(shortened>=2||missed>=2||wellbeing.reduce)factor=Math.min(factor,.9);
+ let factor=recent.some(o=>o.illness)?.8:fatigued>=2?.8:fatigued===1||risingRpe?.9:1;if(shortened>=2||missed>=2||wellbeing.reduce)factor=Math.min(factor,.9);
  if(wellbeing.reduce){p.qualityNotBefore=addDate(today,7);p.intensityTolerance='low';reasons.push('Powtarzane niskie samopoczucie lub krótki sen: ostrożna regresja, bez diagnozowania.');}
  const lastDone=done.at(-1),realGap=Math.max(gap,coverage.completeWindow&&lastDone?dayDiff(lastDone.date,today):0);
  delete p.breakDays;delete p.przerwaDni;
@@ -50,7 +50,7 @@ export function adaptWith(generate,physics,input,previousPlan,events=[],opts={})
  p.currentWeeklyKm*=factor;
  if(previous.revision && opts.completeWindow!==true && !events.some(e=>['correct','cancel','restore'].includes(e?.op))){p.currentWeeklyKm=Math.min(p.currentWeeklyKm,priorSchedule.indywidualizacja?.bazaKm??p.currentWeeklyKm);p.longestRecentRun=Math.min(p.longestRecentRun,priorSchedule.indywidualizacja?.najdluzszyKm??p.longestRecentRun);}
  if(factor<1){p.longestRecentRun=Math.min(p.longestRecentRun,p.currentWeeklyKm);p.loadTolerance='low';p.volumeTolerance='low';reasons.push(`Zmęczenie/skracanie/pominięcia: redukcja objętości ×${factor}.`);}
- if(fatigued||risingRpe||recent.some(o=>o.pain>=3)||opts.reducedIntensity||recent.some(o=>o.reducedIntensity)){p.qualityNotBefore=addDate(today,7);p.intensityTolerance='low';reasons.push('Niższa tolerancja: pierwszy tydzień bez jakości, bez kompensacji kilometrami.');}
+ if(fatigued||risingRpe||recent.some(o=>o.illness)||recent.some(o=>o.pain>=3)||opts.reducedIntensity||recent.some(o=>o.reducedIntensity)){p.qualityNotBefore=addDate(today,7);p.intensityTolerance='low';reasons.push('Niższa tolerancja: pierwszy tydzień bez jakości, bez kompensacji kilometrami.');}
  const originVdot=origin.vdotOverride||(origin.bestResult?physics.vdotFrom(origin.bestResult.distanceKm*1000,origin.bestResult.timeSec):previous.originVdot??priorSchedule.ocena?.vdot);
  const tests=done.filter(o=>o.testResult&&dayDiff(o.date,today)<=42).map(o=>({...o,value:physics.vdotFrom(o.testResult.distanceKm*1000,o.testResult.timeSec)}));
  let trend={status:'brak_potwierdzenia',comparable:0,usedVdot:originVdot,capPct:0};
@@ -59,13 +59,13 @@ export function adaptWith(generate,physics,input,previousPlan,events=[],opts={})
   const distinct=new Set(comparable.map(o=>o.date)),spread=comparable.length?(Math.max(...comparable.map(o=>o.value))/Math.min(...comparable.map(o=>o.value))-1):Infinity;
   const observedDays=new Set(recentDone.filter(o=>o.distanceKm>0&&o.durationMin>0).map(o=>o.date)).size;
   const regularEnough=observedDays>=3 && missed<2 && (!coverage.completeWindow||observedDays>=Math.max(3,Math.floor(Number(p.daysPerWeek||3)*1.4)));
-  const confirmed=regularEnough&&!risingRpe&&distinct.size>=2&&dayDiff(comparable[0].date,comparable.at(-1).date)>=7&&spread<=.04&&!fatigued;
-  const cap=confirmed?.02:.005,observed=confirmed?comparable.reduce((s,o)=>s+o.value,0)/comparable.length:latest.value;
+  const confirmed=regularEnough&&!risingRpe&&comparable.every(o=>o.rpe!=null&&o.fatigue!=null&&o.fatigue<=3&&!o.illness)&&distinct.size>=2&&dayDiff(comparable[0].date,comparable.at(-1).date)>=7&&spread<=.04&&!fatigued;
+  const cap=confirmed?.02:0,observed=confirmed?comparable.reduce((s,o)=>s+o.value,0)/comparable.length:latest.value;
   const value=originVdot?Math.min(observed,originVdot*(1+cap)):observed;
   p.vdotOverride=fatigued||recent.some(o=>o.pain>=3)?Math.min(value,originVdot||value):value;
   p.bestResult={...latest.testResult,date:latest.date};p.vdotSource='wykonane testy: trend, limit zmiany względem bazowego VDOT';
   trend={observedDays,regularEnough,exposureTrend,status:observed<(originVdot||observed)?'pogorszenie':confirmed?'trend_potwierdzony':'pojedynczy_test',comparable:comparable.length,spread,usedVdot:p.vdotOverride,capPct:cap*100};
-  reasons.push(confirmed?'Kilka zgodnych ekspozycji potwierdza trend; ograniczono zmianę VDOT do 2%.':'Pojedynczy test nie dowodzi trwałej poprawy; wzrost VDOT najwyżej 0,5%, pogorszenie uwzględniane od razu.');
+  reasons.push(confirmed?'Kilka zgodnych ekspozycji potwierdza trend; ograniczono zmianę VDOT do 2%.':'Pojedynczy test nie dowodzi trwałej poprawy; bez wzrostu VDOT do potwierdzenia RPE i regeneracją, pogorszenie uwzględniane od razu.');
  }
  if(missed)reasons.push('Pominięte treningi pozostają pominięte, bez nadrabiania.');
  if(ledger.activityAudit.some(a=>['correct','cancel','restore'].includes(a.op)))reasons.push('Przeliczono przyszłość z aktywnych wersji obserwacji; oryginały i korekty zachowano w audycie.');

@@ -474,7 +474,7 @@ function mkCross(c) {
 }
 const easyKroki = (c, d, strides, recovery, consec) => {
   const z = recovery ? 0 : 1;
-  const k = [nativeStep("easy",{ etap: recovery ? "Bieg regeneracyjny" : "Bieg spokojny", dystans_km: d, tempo: range(recovery ? c.P.recovery : c.P.easy), tetno: `${zr(c, z)} (Z${z + 1})`, uwagi: recovery ? "bardzo lekko, bez presji na tempo" : `Tempo rozmowy/RPE ma pierwszeństwo; tętno ${c.I?.hrMaxEstimated !== false ? "szacowane, orientacyjne" : "według podanego HRmax"}. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz${consec ? ". Drugi dzień biegowy z rzędu: trzymaj dolną część zakresu tempa" : ""}` },Object.values(recovery?c.P.recovery:c.P.easy))];
+  const k = [nativeStep("easy",{ etap: recovery ? "Bieg regeneracyjny" : "Bieg spokojny", dystans_km: d, tempo: range(recovery ? c.P.recovery : c.P.easy), tetno: `${zr(c, z)} (Z${z + 1})`, uwagi: recovery ? "bardzo lekko, bez presji na tempo" : `Tempo rozmowy/RPE ma pierwszeństwo; tętno ${c.I?.hrMaxEstimated !== false ? "szacowane, orientacyjne" : "według podanego HRmax"}. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz${consec ? ". Drugi dzień biegowy z rzędu: trzymaj dolną część zakresu tempa" : ""}` },recovery?[c.P.recovery.slow,c.P.recovery.slow]:[c.P.easy.fast,c.P.easy.slow])];
   if (strides) k.push(nativeStep("economy",{ etap: "Przebieżki", powtorzenia:6,czas_odcinka_s:20,czas_przerwy_s:75,liczba_przerw:5,wliczoneWDystansBiegu:true,uwagi: "Wpleć 6× 20 s szybko, ale swobodnie, w końcowy fragment biegu; między odcinkami 60-90 s truchtu. Nie dodawaj tego dystansu ponownie." },null,"strides"));
   return k;
 };
@@ -679,6 +679,7 @@ function buildWeek(c) {
            ? { etap: "Końcówka w tempie startowym", dystans_km: fin, tempo: fmtPace(c.specificPace || c.goalPace), czas_odcinka: fmtTime(fin * (c.specificPace || c.goalPace)), tetno: `${c.Z[2].od}-${c.Z[3].do} (Z3-Z4)`, uwagi: I.goal.type==="marathon"?"Warunkowo po bezobjawowej realizacji bazy: kontrolowane MP, RPE 5; przy zmęczeniu cały bieg spokojnie. Próba żywienia, bez sprintu na końcu.":"pierwsze ok. 75% dystansu spokojnie w Z2, końcówka w tempie startowym na zmęczonych nogach" }
            : { etap: "Końcówka progresywna (tempo progowe)", dystans_km: fin, tempo: range(c.P.tempo), czas_odcinka: fmtTime(fin * ((c.P.tempo.fast + c.P.tempo.slow) / 2)), tetno: `${c.Z[2].od}-${c.Z[3].do} (Z3-Z4)`, uwagi: "pierwsze ok. 75% dystansu spokojnie w Z2, końcówka podciągnięta do tempa progowego" }]
       : [{ etap: "Długi bieg ciągły", dystans_km: L, tempo: range(c.P.long || c.P.easy), tetno: zr(c, 1) + " (Z2)", uwagi: ("buduje wytrzymałość: tempo rozmowy, równo od początku do końca. " + fuel).trim() }];
+    kroki.forEach((s,index)=>Object.assign(s,nativeStep(acc&&index===1?'work':'easy',s,acc&&index===1?(acc==='start'?[c.specificPace||c.goalPace,c.specificPace||c.goalPace]:[c.P.tempo.fast,c.P.tempo.slow]):[c.P.long.fast,c.P.long.slow],acc&&index===1?(acc==='start'?'specific':'threshold'):null)));
     push(longItem.date, { typ: "Długi bieg", podtyp: "dlugi", dist: L, min: (L * lm) / 60, strefa: acc ? "Z2-Z4" : "Z2", tempo: range(c.P.long || c.P.easy), kroki, progresywny: !!acc });
   }
   qItems.forEach((q) => push(q.it.date, q.s));
@@ -1554,7 +1555,9 @@ export function generatePlan(input) {
   result.ocenaWykonalnosci={status:result.wykonalnosc.poziom==='niewykonalna'?'cel_niewykonalny':input.goal?.type==='marathon'&&result.readinessEvidence.status!=='potwierdzona_danymi'?'plan_warunkowy':result.wykonalnosc.poziom==='ograniczona'?'ograniczona_skutecznosc':'plan_mozliwy',gotowoscDanych:result.readinessEvidence.status,nieJestOcenaJakosciAlgorytmu:true};
   for(const t of result.treningi){
     for(const step of t.kroki||[])if(step.uwagi)step.uwagi=step.uwagi.replace(/Próba żywienia:.*?(?= $|$)/u,'').replace(/Bieg powyżej 75 min:.*$/u,'').trim();
-    for(const step of t.kroki||[])if(step.tetno){step.zrodlo_tetna=result.intensityEvidence?.heartRate?.source||(input.tetnoProgowe?'reported_threshold':input.hrMax?'reported_maximum':'estimated');if(!input.hrMax&&!input.tetnoProgowe)step.tetno+=' [orientacyjnie; szacunek, RPE/rozmowa]';}
+    for(const step of t.kroki||[])if(step.tetno){step.zrodlo_tetna=intensityEvidence(input,ledger.observations).heartRate.source;if(step.zrodlo_tetna==='estimated')step.tetno=step.family==='interval'?'RPE i równe odcinki; HR narasta z opóźnieniem':'RPE / test rozmowy; tętno szacowane, nie zmierzona strefa bpm';}
+    syncStructure(t,{recomputeTime:true});if(t.intensywnosc)t.intensywnosc.obciazenieStrukturalne=t.structuredDose.load;
+    if(t.prescription)t.feedback=t.prescription.reason+' Przy wysokim RPE skróć; po pominięciu nie nadrabiaj; przy bólu przerwij.';
     t.opis=descr(t.kroki||[]);
     const guidance=supportGuidance(input,t);t.zaleceniaZywieniowe=guidance.nutrition;t.warunki=guidance.conditions;
     t.status='planned';

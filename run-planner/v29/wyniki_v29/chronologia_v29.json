@@ -1,0 +1,672 @@
+{
+  "passed": 8,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "sixteen-week season chronology 0",
+      "ok": true
+    },
+    {
+      "name": "sixteen-week season chronology 1",
+      "ok": true
+    },
+    {
+      "name": "sixteen-week season chronology 2",
+      "ok": true
+    },
+    {
+      "name": "sixteen-week season chronology 3",
+      "ok": true
+    },
+    {
+      "name": "several poor sleep reports reduce only future load",
+      "ok": true
+    },
+    {
+      "name": "correction after correction retains original activity and recalculates the future",
+      "ok": true
+    },
+    {
+      "name": "invalid optional recovery data rejected without modifying history",
+      "ok": true
+    },
+    {
+      "name": "race-date change preserves season anchor and revises taper",
+      "ok": true
+    }
+  ],
+  "longSequences": [
+    {
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 4,
+        "currentWeeklyKm": 35,
+        "longestRecentRun": 14,
+        "goal": {
+          "type": "5k",
+          "raceDate": "2027-04-25"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3120
+        },
+        "experienceMonths": 36
+      },
+      "records": [
+        {
+          "week": 0,
+          "date": "2026-11-08",
+          "phase": "base",
+          "base": 35,
+          "firstId": "0/0/0",
+          "revision": 1
+        },
+        {
+          "week": 1,
+          "date": "2026-11-15",
+          "phase": "build",
+          "base": 35,
+          "firstId": "0/0/0",
+          "revision": 2
+        },
+        {
+          "week": 2,
+          "date": "2026-11-22",
+          "phase": "build",
+          "base": 34.5,
+          "firstId": "0/0/0",
+          "revision": 3
+        },
+        {
+          "week": 3,
+          "date": "2026-11-29",
+          "phase": "build",
+          "base": 34.5,
+          "firstId": "0/0/0",
+          "revision": 4
+        },
+        {
+          "week": 4,
+          "date": "2026-12-06",
+          "phase": "build",
+          "base": 35,
+          "firstId": "0/0/0",
+          "revision": 5
+        },
+        {
+          "week": 5,
+          "date": "2026-12-13",
+          "phase": "build",
+          "base": 35,
+          "firstId": "0/0/0",
+          "revision": 6
+        },
+        {
+          "week": 6,
+          "date": "2026-12-20",
+          "phase": "build",
+          "base": 35,
+          "firstId": "0/0/0",
+          "revision": 7
+        },
+        {
+          "week": 7,
+          "date": "2026-12-27",
+          "phase": "build",
+          "base": 35,
+          "firstId": "0/0/0",
+          "revision": 8
+        },
+        {
+          "week": 8,
+          "date": "2027-01-03",
+          "phase": "build",
+          "base": 35,
+          "firstId": "0/0/0",
+          "revision": 9
+        },
+        {
+          "week": 9,
+          "date": "2027-01-10",
+          "phase": "build",
+          "base": 35,
+          "firstId": "0/0/0",
+          "revision": 10
+        },
+        {
+          "week": 10,
+          "date": "2027-01-17",
+          "phase": "build",
+          "base": 35,
+          "firstId": "0/0/0",
+          "revision": 11
+        },
+        {
+          "week": 11,
+          "date": "2027-01-24",
+          "phase": "build",
+          "base": 35,
+          "firstId": "0/0/0",
+          "revision": 12
+        },
+        {
+          "week": 12,
+          "date": "2027-01-31",
+          "phase": "build",
+          "base": 35,
+          "firstId": "0/0/0",
+          "revision": 13
+        },
+        {
+          "week": 13,
+          "date": "2027-02-07",
+          "phase": "build",
+          "base": 35,
+          "firstId": "0/0/0",
+          "revision": 14
+        },
+        {
+          "week": 14,
+          "date": "2027-02-14",
+          "phase": "build",
+          "base": 35,
+          "firstId": "0/0/0",
+          "revision": 15
+        },
+        {
+          "week": 15,
+          "date": "2027-02-21",
+          "phase": "build",
+          "base": 35,
+          "firstId": "0/0/0",
+          "revision": 16
+        }
+      ]
+    },
+    {
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 4,
+        "currentWeeklyKm": 35,
+        "longestRecentRun": 14,
+        "goal": {
+          "type": "10k",
+          "raceDate": "2027-04-25"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3120
+        },
+        "experienceMonths": 36
+      },
+      "records": [
+        {
+          "week": 0,
+          "date": "2026-11-08",
+          "phase": "base",
+          "base": 35,
+          "firstId": "1/0/0",
+          "revision": 1
+        },
+        {
+          "week": 1,
+          "date": "2026-11-15",
+          "phase": "build",
+          "base": 35,
+          "firstId": "1/0/0",
+          "revision": 2
+        },
+        {
+          "week": 2,
+          "date": "2026-11-22",
+          "phase": "build",
+          "base": 35,
+          "firstId": "1/0/0",
+          "revision": 3
+        },
+        {
+          "week": 3,
+          "date": "2026-11-29",
+          "phase": "build",
+          "base": 35.5,
+          "firstId": "1/0/0",
+          "revision": 4
+        },
+        {
+          "week": 4,
+          "date": "2026-12-06",
+          "phase": "build",
+          "base": 36,
+          "firstId": "1/0/0",
+          "revision": 5
+        },
+        {
+          "week": 5,
+          "date": "2026-12-13",
+          "phase": "build",
+          "base": 36,
+          "firstId": "1/0/0",
+          "revision": 6
+        },
+        {
+          "week": 6,
+          "date": "2026-12-20",
+          "phase": "build",
+          "base": 36.5,
+          "firstId": "1/0/0",
+          "revision": 7
+        },
+        {
+          "week": 7,
+          "date": "2026-12-27",
+          "phase": "build",
+          "base": 36.5,
+          "firstId": "1/0/0",
+          "revision": 8
+        },
+        {
+          "week": 8,
+          "date": "2027-01-03",
+          "phase": "build",
+          "base": 36,
+          "firstId": "1/0/0",
+          "revision": 9
+        },
+        {
+          "week": 9,
+          "date": "2027-01-10",
+          "phase": "build",
+          "base": 36.5,
+          "firstId": "1/0/0",
+          "revision": 10
+        },
+        {
+          "week": 10,
+          "date": "2027-01-17",
+          "phase": "build",
+          "base": 36.5,
+          "firstId": "1/0/0",
+          "revision": 11
+        },
+        {
+          "week": 11,
+          "date": "2027-01-24",
+          "phase": "build",
+          "base": 36,
+          "firstId": "1/0/0",
+          "revision": 12
+        },
+        {
+          "week": 12,
+          "date": "2027-01-31",
+          "phase": "build",
+          "base": 36.5,
+          "firstId": "1/0/0",
+          "revision": 13
+        },
+        {
+          "week": 13,
+          "date": "2027-02-07",
+          "phase": "build",
+          "base": 36.5,
+          "firstId": "1/0/0",
+          "revision": 14
+        },
+        {
+          "week": 14,
+          "date": "2027-02-14",
+          "phase": "build",
+          "base": 36,
+          "firstId": "1/0/0",
+          "revision": 15
+        },
+        {
+          "week": 15,
+          "date": "2027-02-21",
+          "phase": "peak",
+          "base": 36.5,
+          "firstId": "1/0/0",
+          "revision": 16
+        }
+      ]
+    },
+    {
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 4,
+        "currentWeeklyKm": 35,
+        "longestRecentRun": 14,
+        "goal": {
+          "type": "half",
+          "raceDate": "2027-04-25"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3120
+        },
+        "experienceMonths": 36
+      },
+      "records": [
+        {
+          "week": 0,
+          "date": "2026-11-08",
+          "phase": "base",
+          "base": 35,
+          "firstId": "2/0/0",
+          "revision": 1
+        },
+        {
+          "week": 1,
+          "date": "2026-11-15",
+          "phase": "build",
+          "base": 35,
+          "firstId": "2/0/0",
+          "revision": 2
+        },
+        {
+          "week": 2,
+          "date": "2026-11-22",
+          "phase": "build",
+          "base": 35,
+          "firstId": "2/0/0",
+          "revision": 3
+        },
+        {
+          "week": 3,
+          "date": "2026-11-29",
+          "phase": "build",
+          "base": 35,
+          "firstId": "2/0/0",
+          "revision": 4
+        },
+        {
+          "week": 4,
+          "date": "2026-12-06",
+          "phase": "build",
+          "base": 35,
+          "firstId": "2/0/0",
+          "revision": 5
+        },
+        {
+          "week": 5,
+          "date": "2026-12-13",
+          "phase": "build",
+          "base": 35,
+          "firstId": "2/0/0",
+          "revision": 6
+        },
+        {
+          "week": 6,
+          "date": "2026-12-20",
+          "phase": "build",
+          "base": 35,
+          "firstId": "2/0/0",
+          "revision": 7
+        },
+        {
+          "week": 7,
+          "date": "2026-12-27",
+          "phase": "build",
+          "base": 35,
+          "firstId": "2/0/0",
+          "revision": 8
+        },
+        {
+          "week": 8,
+          "date": "2027-01-03",
+          "phase": "build",
+          "base": 35,
+          "firstId": "2/0/0",
+          "revision": 9
+        },
+        {
+          "week": 9,
+          "date": "2027-01-10",
+          "phase": "build",
+          "base": 31.5,
+          "firstId": "2/0/0",
+          "revision": 10
+        },
+        {
+          "week": 10,
+          "date": "2027-01-17",
+          "phase": "build",
+          "base": 32.5,
+          "firstId": "2/0/0",
+          "revision": 11
+        },
+        {
+          "week": 11,
+          "date": "2027-01-24",
+          "phase": "build",
+          "base": 31.5,
+          "firstId": "2/0/0",
+          "revision": 12
+        },
+        {
+          "week": 12,
+          "date": "2027-01-31",
+          "phase": "build",
+          "base": 32.5,
+          "firstId": "2/0/0",
+          "revision": 13
+        },
+        {
+          "week": 13,
+          "date": "2027-02-07",
+          "phase": "build",
+          "base": 29.25,
+          "firstId": "2/0/0",
+          "revision": 14
+        },
+        {
+          "week": 14,
+          "date": "2027-02-14",
+          "phase": "build",
+          "base": 30.5,
+          "firstId": "2/0/0",
+          "revision": 15
+        },
+        {
+          "week": 15,
+          "date": "2027-02-21",
+          "phase": "peak",
+          "base": 29.5,
+          "firstId": "2/0/0",
+          "revision": 16
+        }
+      ]
+    },
+    {
+      "input": {
+        "today": "2026-11-02",
+        "age": 35,
+        "level": "intermediate",
+        "availableDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "daysPerWeek": 4,
+        "currentWeeklyKm": 50,
+        "longestRecentRun": 20,
+        "goal": {
+          "type": "marathon",
+          "raceDate": "2027-04-25"
+        },
+        "bestResult": {
+          "distanceKm": 10,
+          "timeSec": 3120
+        },
+        "experienceMonths": 36
+      },
+      "records": [
+        {
+          "week": 0,
+          "date": "2026-11-08",
+          "phase": "base",
+          "base": 50,
+          "firstId": "3/0/0",
+          "revision": 1
+        },
+        {
+          "week": 1,
+          "date": "2026-11-15",
+          "phase": "base",
+          "base": 50,
+          "firstId": "3/0/0",
+          "revision": 2
+        },
+        {
+          "week": 2,
+          "date": "2026-11-22",
+          "phase": "base",
+          "base": 50,
+          "firstId": "3/0/0",
+          "revision": 3
+        },
+        {
+          "week": 3,
+          "date": "2026-11-29",
+          "phase": "build",
+          "base": 50,
+          "firstId": "3/0/0",
+          "revision": 4
+        },
+        {
+          "week": 4,
+          "date": "2026-12-06",
+          "phase": "build",
+          "base": 50,
+          "firstId": "3/0/0",
+          "revision": 5
+        },
+        {
+          "week": 5,
+          "date": "2026-12-13",
+          "phase": "build",
+          "base": 50,
+          "firstId": "3/0/0",
+          "revision": 6
+        },
+        {
+          "week": 6,
+          "date": "2026-12-20",
+          "phase": "build",
+          "base": 50,
+          "firstId": "3/0/0",
+          "revision": 7
+        },
+        {
+          "week": 7,
+          "date": "2026-12-27",
+          "phase": "build",
+          "base": 50,
+          "firstId": "3/0/0",
+          "revision": 8
+        },
+        {
+          "week": 8,
+          "date": "2027-01-03",
+          "phase": "build",
+          "base": 50,
+          "firstId": "3/0/0",
+          "revision": 9
+        },
+        {
+          "week": 9,
+          "date": "2027-01-10",
+          "phase": "build",
+          "base": 50,
+          "firstId": "3/0/0",
+          "revision": 10
+        },
+        {
+          "week": 10,
+          "date": "2027-01-17",
+          "phase": "build",
+          "base": 50,
+          "firstId": "3/0/0",
+          "revision": 11
+        },
+        {
+          "week": 11,
+          "date": "2027-01-24",
+          "phase": "build",
+          "base": 50,
+          "firstId": "3/0/0",
+          "revision": 12
+        },
+        {
+          "week": 12,
+          "date": "2027-01-31",
+          "phase": "build",
+          "base": 50,
+          "firstId": "3/0/0",
+          "revision": 13
+        },
+        {
+          "week": 13,
+          "date": "2027-02-07",
+          "phase": "peak",
+          "base": 50,
+          "firstId": "3/0/0",
+          "revision": 14
+        },
+        {
+          "week": 14,
+          "date": "2027-02-14",
+          "phase": "peak",
+          "base": 50,
+          "firstId": "3/0/0",
+          "revision": 15
+        },
+        {
+          "week": 15,
+          "date": "2027-02-21",
+          "phase": "peak",
+          "base": 50,
+          "firstId": "3/0/0",
+          "revision": 16
+        }
+      ]
+    }
+  ]
+}
