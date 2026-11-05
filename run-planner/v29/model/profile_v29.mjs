@@ -18,8 +18,9 @@ export function enduranceIntent(I) {
  const covered=I.executionCoverage?.completeWindow===true&&I.executionCoverage.coverageFrom&&I.executionCoverage.coverageTo>=I.today;
  const span=covered?Math.min(56,(Date.parse(I.today)-Date.parse(I.executionCoverage.coverageFrom))/86400000):0;
  const weeks=Array.from({length:8},(_,k)=>actual.filter(o=>{const d=(Date.parse(I.today)-Date.parse(o.date))/86400000;return d>=k*7&&d<(k+1)*7;}));
- const mean=actual.reduce((n,o)=>n+o.distanceKm,0)/Math.max(1,span/7),longest=Math.max(0,...actual.map(o=>o.distanceKm));
- const useActual=span>=42,volume=useActual?mean:I.currentWeeklyKm,longKm=useActual?longest:I.longestRecentRun;
+ const useActual=span>=42,windowActual=useActual?actual.filter(o=>(Date.parse(I.today)-Date.parse(o.date))/86400000<span):actual;
+ const mean=windowActual.reduce((n,o)=>n+o.distanceKm,0)/Math.max(1,span/7),longest=Math.max(0,...windowActual.map(o=>o.distanceKm));
+ const volume=useActual?mean:I.currentWeeklyKm,longKm=useActual?longest:I.longestRecentRun;
  const volumeGap=Math.max(0,1-volume/needs.km),longGap=Math.max(0,1-longKm/needs.longKm),regularityGap=useActual?weeks.slice(0,6).filter(w=>new Set(w.map(o=>o.date)).size<Math.min(3,I.daysPerWeek)).length/6:null;
  const gap=Math.min(1,.45*volumeGap+.45*longGap+.1*(regularityGap??.5));
  const weeksLeft=I.goal?.raceDate?Math.max(0,(Date.parse(I.goal.raceDate)-Date.parse(I.today))/604800000):12;

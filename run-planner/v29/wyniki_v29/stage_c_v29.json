@@ -1,5 +1,5 @@
 {
-  "passed": 34,
+  "passed": 35,
   "failed": 0,
   "tests": [
     {
@@ -136,6 +136,10 @@
     },
     {
       "name": "missed demanding report is never a completed load",
+      "ok": true
+    },
+    {
+      "name": "six-week mean excludes older activities outside its denominator window",
       "ok": true
     }
   ]
