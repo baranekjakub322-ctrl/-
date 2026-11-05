@@ -12,3 +12,5 @@
 Bez nowego miernika, UI lub zależności. Scorery 23.0.0/25.0.0 i wejścia benchmarków pozostały identyczne. Benchmark jest alarmem, nie celem do strojenia. Wewnętrzny audyt 18 planów wskazuje także ograniczenia: niższy szczyt długiego biegu w części maratonów z niższą bazą i zachowawczą specyfikę 10 km/HM. Nie deklarujemy poprawy każdego planu ani jakości klinicznej 10/10.
 
 Zwykły bieg nie omija też limitu wynikającego z ostatniego/dopuszczonego długiego biegu przy wysokiej deklaracji kilometrażu i krótkim ostatnim najdłuższym biegu. Naprawiono zawyżone komunikaty gotowości: wymagania długiego biegu sprawdzane są na zaplanowanym długim biegu, bez podbijania kilometrów dla oceny.
+
+Przy bardzo małej bazie taper może zmniejszyć także liczbę biegów; minimum dwóch jednostek nie wymusza wzrostu objętości tuż przed startem.

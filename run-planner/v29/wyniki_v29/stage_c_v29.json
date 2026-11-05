@@ -1,5 +1,5 @@
 {
-  "passed": 42,
+  "passed": 56,
   "failed": 0,
   "tests": [
     {
@@ -168,6 +168,62 @@
     },
     {
       "name": "large weekly declaration cannot conceal an abrupt ordinary-run jump",
+      "ok": true
+    },
+    {
+      "name": "tiny-base taper does not force two minimum runs intermediate/0",
+      "ok": true
+    },
+    {
+      "name": "tiny-base taper does not force two minimum runs intermediate/1",
+      "ok": true
+    },
+    {
+      "name": "tiny-base taper does not force two minimum runs intermediate/2",
+      "ok": true
+    },
+    {
+      "name": "tiny-base taper does not force two minimum runs intermediate/3",
+      "ok": true
+    },
+    {
+      "name": "tiny-base taper does not force two minimum runs intermediate/4",
+      "ok": true
+    },
+    {
+      "name": "tiny-base taper does not force two minimum runs intermediate/5",
+      "ok": true
+    },
+    {
+      "name": "tiny-base taper does not force two minimum runs intermediate/6",
+      "ok": true
+    },
+    {
+      "name": "tiny-base taper does not force two minimum runs advanced/0",
+      "ok": true
+    },
+    {
+      "name": "tiny-base taper does not force two minimum runs advanced/1",
+      "ok": true
+    },
+    {
+      "name": "tiny-base taper does not force two minimum runs advanced/2",
+      "ok": true
+    },
+    {
+      "name": "tiny-base taper does not force two minimum runs advanced/3",
+      "ok": true
+    },
+    {
+      "name": "tiny-base taper does not force two minimum runs advanced/4",
+      "ok": true
+    },
+    {
+      "name": "tiny-base taper does not force two minimum runs advanced/5",
+      "ok": true
+    },
+    {
+      "name": "tiny-base taper does not force two minimum runs advanced/6",
       "ok": true
     }
   ]

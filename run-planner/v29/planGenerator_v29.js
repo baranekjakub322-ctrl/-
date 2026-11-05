@@ -2534,7 +2534,7 @@ export function repairPlan(treningi, opts = {}) {
       const lg = weekRuns(k).filter((t) => t.podtyp === "dlugi" && t.dystans_km > 5)[0];
       if (lg) { const z = lg.dystans_km; if (setRunKm(lg, z - 1)) { log(kod, lg.data, `skrócono długi bieg ${z} → ${lg.dystans_km} km`); continue; } }
       const runs = weekRuns(k), shortest = runs.filter((t) => t.podtyp === "latwy" || t.podtyp === "regeneracja").sort((a, b) => a.dystans_km - b.dystans_km)[0];
-      if (shortest && runs.length > 2) { tr = tr.filter((x) => x !== shortest); log(kod, shortest.data, `usunięto najkrótszy bieg ${shortest.dystans_km} km (nie da się zmieścić w limicie objętości inaczej)`); continue; }
+      if (shortest && runs.length > (kod==='TAPER_BRAK_SPADKU'?(limit<3?0:1):2)) { tr = tr.filter((x) => x !== shortest); log(kod, shortest.data, `usunięto najkrótszy bieg ${shortest.dystans_km} km (nie da się zmieścić w limicie objętości inaczej)`); continue; }
       break;
     }
     return weekKm(k) <= limit + 0.5;

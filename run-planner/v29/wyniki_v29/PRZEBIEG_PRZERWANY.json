@@ -24,5 +24,12 @@
     "errors": 2,
     "reason": "Inflated readiness for holdout224 IDs149,156; fixed without increasing volume",
     "sourceCommit": "daf25a4"
+  },
+  "tinyTaperRegression": {
+    "status": "DEVELOPMENT_FAIL",
+    "cases": 14,
+    "criticalPlans": 0,
+    "reason": "Two minimum runs caused taper growth 4\u21926km; repair may remove a surplus easy session. Historical audit thresholds unchanged.",
+    "evidence": "development_failures/sweep_before_small_taper_fix.json"
   }
 }

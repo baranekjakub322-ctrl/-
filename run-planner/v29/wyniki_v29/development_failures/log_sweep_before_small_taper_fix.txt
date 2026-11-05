@@ -1,0 +1,2 @@
+[sweep] zaliczone 20, niezaliczone 1
+  - brak planów ok:false dla poprawnych danych :: 14
