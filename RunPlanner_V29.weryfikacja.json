@@ -27,5 +27,16 @@
     "comparisonPairs": 1324,
     "internalAuditedPlans": 18
   },
-  "qualification": "Technical PASS does not establish universal training superiority or clinical validation. Historical score23 is lower than V28; regressions are preserved in reports."
+  "qualification": "Technical PASS does not establish universal training superiority or clinical validation. Historical score23 is lower than V28; regressions are preserved in reports.",
+  "githubDownload": {
+    "url": "https://github.com/baranekjakub322-ctrl/-/raw/refs/heads/runplanner-v29/RunPlanner_V29.zip",
+    "httpStatus": 200,
+    "contentType": "application/zip",
+    "bytes": 50653835,
+    "sha256": "2d15b993854f826bc52fd15fb98b92508caeff07c6f6cdee9d55d5c720dae2bf",
+    "matchesLocalArchive": true,
+    "crc": "PASS",
+    "artifactCommit": "4fa57c6e0fe49feb57a2d77570af1ec3971aad1b",
+    "verifiedAtUtc": "2026-11-05T18:49:42.745713+00:00"
+  }
 }
