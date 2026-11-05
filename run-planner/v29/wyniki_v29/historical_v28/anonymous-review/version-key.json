@@ -1,0 +1,245 @@
+{
+  "seed": 280019,
+  "key": [
+    {
+      "anonymousId": "1105f052f5b30ffd",
+      "scenarioId": 632,
+      "version": "v27",
+      "stratum": "regression"
+    },
+    {
+      "anonymousId": "d0a34407a7159a22",
+      "scenarioId": 632,
+      "version": "v28",
+      "stratum": "regression"
+    },
+    {
+      "anonymousId": "19894a51e2c9eda1",
+      "scenarioId": 620,
+      "version": "v27",
+      "stratum": "regression"
+    },
+    {
+      "anonymousId": "4cc17d7aa6b2f1ae",
+      "scenarioId": 620,
+      "version": "v28",
+      "stratum": "regression"
+    },
+    {
+      "anonymousId": "9b0276f23f509ade",
+      "scenarioId": 635,
+      "version": "v27",
+      "stratum": "regression"
+    },
+    {
+      "anonymousId": "36f4cc648cf948c0",
+      "scenarioId": 635,
+      "version": "v28",
+      "stratum": "regression"
+    },
+    {
+      "anonymousId": "c8357e0596bc2356",
+      "scenarioId": 621,
+      "version": "v27",
+      "stratum": "regression"
+    },
+    {
+      "anonymousId": "d9595f4fc1bdb579",
+      "scenarioId": 621,
+      "version": "v28",
+      "stratum": "regression"
+    },
+    {
+      "anonymousId": "2fdfc7c7346a712c",
+      "scenarioId": 633,
+      "version": "v27",
+      "stratum": "regression"
+    },
+    {
+      "anonymousId": "24d384ee97d4ce20",
+      "scenarioId": 633,
+      "version": "v28",
+      "stratum": "regression"
+    },
+    {
+      "anonymousId": "5e5d94fe6c5a473a",
+      "scenarioId": 622,
+      "version": "v27",
+      "stratum": "regression"
+    },
+    {
+      "anonymousId": "213e9755d06d2b29",
+      "scenarioId": 622,
+      "version": "v28",
+      "stratum": "regression"
+    },
+    {
+      "anonymousId": "a65325053dc0bef9",
+      "scenarioId": 634,
+      "version": "v27",
+      "stratum": "regression"
+    },
+    {
+      "anonymousId": "7786adc6fa84546d",
+      "scenarioId": 634,
+      "version": "v28",
+      "stratum": "regression"
+    },
+    {
+      "anonymousId": "d465ea44b9a7e4fb",
+      "scenarioId": 647,
+      "version": "v27",
+      "stratum": "regression"
+    },
+    {
+      "anonymousId": "035397eb2ea835f4",
+      "scenarioId": 647,
+      "version": "v28",
+      "stratum": "regression"
+    },
+    {
+      "anonymousId": "85943c900c4988da",
+      "scenarioId": 220,
+      "version": "v27",
+      "stratum": "random_tie"
+    },
+    {
+      "anonymousId": "8027f1a0b4643690",
+      "scenarioId": 220,
+      "version": "v28",
+      "stratum": "random_tie"
+    },
+    {
+      "anonymousId": "50ec0784906aaf4b",
+      "scenarioId": 553,
+      "version": "v27",
+      "stratum": "random_tie"
+    },
+    {
+      "anonymousId": "328c2589b64b82f0",
+      "scenarioId": 553,
+      "version": "v28",
+      "stratum": "random_tie"
+    },
+    {
+      "anonymousId": "150b64a34943f337",
+      "scenarioId": 464,
+      "version": "v27",
+      "stratum": "random_tie"
+    },
+    {
+      "anonymousId": "fbecd92d18877937",
+      "scenarioId": 464,
+      "version": "v28",
+      "stratum": "random_tie"
+    },
+    {
+      "anonymousId": "f1ce537f8f7bd0d9",
+      "scenarioId": 64,
+      "version": "v27",
+      "stratum": "random_tie"
+    },
+    {
+      "anonymousId": "2039b596a0b0cf29",
+      "scenarioId": 64,
+      "version": "v28",
+      "stratum": "random_tie"
+    },
+    {
+      "anonymousId": "6fb3118c60c2f065",
+      "scenarioId": 75,
+      "version": "v27",
+      "stratum": "random_tie"
+    },
+    {
+      "anonymousId": "a6b70219fe885057",
+      "scenarioId": 75,
+      "version": "v28",
+      "stratum": "random_tie"
+    },
+    {
+      "anonymousId": "6ff53b6bdcf12d9e",
+      "scenarioId": 962,
+      "version": "v27",
+      "stratum": "random_tie"
+    },
+    {
+      "anonymousId": "2c8b5b72c9571d63",
+      "scenarioId": 962,
+      "version": "v28",
+      "stratum": "random_tie"
+    },
+    {
+      "anonymousId": "e708d331f0eb9553",
+      "scenarioId": 869,
+      "version": "v27",
+      "stratum": "improvement"
+    },
+    {
+      "anonymousId": "39e784052078653c",
+      "scenarioId": 869,
+      "version": "v28",
+      "stratum": "improvement"
+    },
+    {
+      "anonymousId": "cfae414a0795ba3e",
+      "scenarioId": 905,
+      "version": "v27",
+      "stratum": "improvement"
+    },
+    {
+      "anonymousId": "f44bbfaffc59f54f",
+      "scenarioId": 905,
+      "version": "v28",
+      "stratum": "improvement"
+    },
+    {
+      "anonymousId": "a78d0d59cf88c227",
+      "scenarioId": 941,
+      "version": "v27",
+      "stratum": "improvement"
+    },
+    {
+      "anonymousId": "44b3454ffed29e09",
+      "scenarioId": 941,
+      "version": "v28",
+      "stratum": "improvement"
+    },
+    {
+      "anonymousId": "b4cc3af54d6821d6",
+      "scenarioId": 977,
+      "version": "v27",
+      "stratum": "improvement"
+    },
+    {
+      "anonymousId": "79f4d5443c1881fb",
+      "scenarioId": 977,
+      "version": "v28",
+      "stratum": "improvement"
+    },
+    {
+      "anonymousId": "8563f9349a5ad869",
+      "scenarioId": 904,
+      "version": "v27",
+      "stratum": "improvement"
+    },
+    {
+      "anonymousId": "9f8015f5d6fc2472",
+      "scenarioId": 904,
+      "version": "v28",
+      "stratum": "improvement"
+    },
+    {
+      "anonymousId": "477f0d92c09c4997",
+      "scenarioId": 940,
+      "version": "v27",
+      "stratum": "improvement"
+    },
+    {
+      "anonymousId": "cd8f1f4b53d0b9bb",
+      "scenarioId": 940,
+      "version": "v28",
+      "stratum": "improvement"
+    }
+  ]
+}

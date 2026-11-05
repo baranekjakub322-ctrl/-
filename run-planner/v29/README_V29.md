@@ -17,7 +17,7 @@ npm run profile
 python3 testy/pakuj_v29.py /tmp/RunPlanner_V29.zip
 ```
 
-`npm test` uruchamia pełną zamrożoną walidację V28, ogólne testy z generatorem V29, etapy A/B/C, adaptację, historie 8–12 tygodni, benchmark 1324 par, audyt 18 planów i wydajność. Zajmuje kilka–kilkanaście minut. `WYNIKI=/inna/sciezka` zmienia katalog wyników; ustaw tę samą wartość dla testów i raportu. `npm run compare` pozostaje aliasem benchmarku. Historyczne scorery/testy i silniki nie zostały zmienione. Bazowy commit oraz punkty cofnięcia etapów A/B/C są w PROVENANCE_V29.json.
+`npm test` uruchamia pełną zamrożoną walidację V28, ogólne testy z generatorem V29, etapy A/B/C, adaptację, historie 8–12 tygodni, benchmark 1324 par, audyt 18 planów i wydajność. Zajmuje kilka–kilkanaście minut. `WYNIKI=/inna/sciezka` zmienia katalog wyników; ustaw tę samą wartość dla testów i raportu. Po rzeczywistym ukończeniu 17 etapów V28 można jawnie użyć `REUSE_FROZEN_V28=1 npm test`: wynik jest przyjęty tylko przy identycznym Node i SHA-256 wszystkich zamrożonych zależności, a raport odróżnia ponowną weryfikację od nowego wykonania. Domyślne `npm test` wykonuje całość. `npm run compare` pozostaje aliasem benchmarku. Historyczne scorery/testy i silniki nie zostały zmienione. Bazowy commit oraz punkty cofnięcia etapów A/B/C są w PROVENANCE_V29.json.
 
 ## API
 
@@ -65,3 +65,5 @@ node --input-type=module -e "import fs from 'node:fs';import {brotliDecompressSy
 ```
 
 `SHA256SUMS` w ZIP-ie pozwala sprawdzić pliki poleceniem `sha256sum -c SHA256SUMS`. Archiwum jest sprawdzane przez CRC i SHA-256 każdego pliku, a ZIP ma osobną sumę `.zip.sha256`.
+
+Manifestem bieżącej wersji jest PROVENANCE_V29.json i hashe z końcowego run_v29.json. Starszy PROVENANCE.json zachowano historycznie; jego hash dawnego testy/lib.mjs był już nieaktualny w V28. Bieżąca odziedziczona biblioteka testów jest identyczna z V28.

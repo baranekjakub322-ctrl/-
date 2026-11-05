@@ -7,6 +7,7 @@ const gap = (a,b) => Math.abs((Date.parse(a)-Date.parse(b))/DAY);
 const day = d => new Date(d+'T00:00:00Z').getUTCDay();
 const mon = d => new Date(Date.parse(d)-((day(d)+6)%7)*DAY).toISOString().slice(0,10);
 const validDate = s => typeof s==='string' && /^\d{4}-\d{2}-\d{2}$/.test(s) && Number.isFinite(Date.parse(s)) && new Date(s+'T00:00:00Z').toISOString().slice(0,10)===s;
+export function completedHardDates(rows=[],today){return [...new Set(rows.filter(o=>['done','shortened'].includes(o.status)&&validDate(o.date)&&o.date<=today&&gap(o.date,today)<=14&&(['threshold','interval','specific','hill','test','race','long'].includes(o.sessionType)||o.rpe>=7||o.durationMin>=90)).map(o=>o.date))].sort();}
 export {workDose} from './dose_v29.mjs';
 export function weekBudget(units) {
  const runs=units.filter(t=>!aux(t)),families={};let qualityMinutes=0,load=0;
@@ -93,6 +94,8 @@ export function validateSafety(input,plan) {
     if(!aux(t)){const key=mon(t.data),w=weeks.get(key)||[];w.push(t);weeks.set(key,w);}
   }
   for(const [date,rows]of weeks){const race=input.goal?.raceDate&&mon(input.goal.raceDate)===date?1:0;if(rows.length+race>Number(input.daysPerWeek||3))issue('FREQUENCY',{data:date},'Start wlicza się do częstotliwości.');}
+  const actualHard=completedHardDates(input.completedHistory||input.executionObservations||[],input.today);
+  for(const t of units.filter(hard))if(actualHard.some(d=>d<=t.data&&gap(d,t.data)<Number(input.recoveryDays||2)))issue('OBSERVED_RECOVERY',t,'Zbyt krótki odstęp od faktycznie wykonanego wymagającego treningu.');
   const demanding=units.filter(hard).sort((a,b)=>a.data.localeCompare(b.data)),rest=Number(input.recoveryDays||2);
   for(let n=1;n<demanding.length;n++)if(gap(demanding[n-1].data,demanding[n].data)<rest)issue('HARD_DENSITY',demanding[n],'Zbyt krótki odstęp między wymagającymi jednostkami.');
   if((input.activeInjury||Number(input.pain)>=4)&&units.length)issue('ACTIVE_SYMPTOMS',units[0],'Harmonogram przy zgłoszonych objawach.');

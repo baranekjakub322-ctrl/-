@@ -1,0 +1,3757 @@
+{
+  "input": {
+    "today": "2026-11-02",
+    "age": 35,
+    "level": "beginner",
+    "availableDays": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "daysPerWeek": 4,
+    "currentWeeklyKm": 12,
+    "longestRecentRun": 6,
+    "goal": {
+      "type": "marathon",
+      "raceDate": "2026-12-20",
+      "targetTimeSec": 10800
+    }
+  },
+  "v23": {
+    "ok": true,
+    "wersja": "23.0",
+    "wiarygodnoscIntensywnosci": {
+      "hrMax": "szacowane",
+      "priorytet": "RPE/test rozmowy i aktualny wynik; HRmax szacowane ma charakter orientacyjny"
+    },
+    "periodyzacja": {
+      "bazaTygodnie": 2,
+      "budowanieTygodnie": 2,
+      "specyfikaTygodnie": 1,
+      "taperTygodnie": 2
+    },
+    "plan": {
+      "intencjaTreningowa": "wynik_niepotwierdzony",
+      "cel": "maraton 2026-12-20, cel 4:55:39",
+      "data_startu": "2026-11-03",
+      "data_konca": "2026-12-20",
+      "uzasadnienie": "Forma wyjściowa VDOT 28 (szacunek). Plan na 7 tyg.: 2 tyg. baza, 2 tyg. budowanie, 1 tyg. szczyt, 2 tyg. zwolnienie. Najcięższy tydzień ok. 16 km, maksymalnie 4 faktycznych biegów w tygodniu (cel: 4), razem 130.2 km. Preferowane dni: wtorek, środa, piątek, niedziela (odstępy 1/2/2/2 dni, długi bieg: niedziela).",
+      "zawody_docelowe": "maraton",
+      "start": {
+        "data": "2026-12-20",
+        "dzien": "niedziela",
+        "nazwa": "maraton"
+      },
+      "tryb": "nowy",
+      "dni_treningowe": [
+        "wtorek",
+        "środa",
+        "piątek",
+        "niedziela"
+      ],
+      "preferowaneDniTreningowe": [
+        "wtorek",
+        "środa",
+        "piątek",
+        "niedziela"
+      ],
+      "czestotliwosc": {
+        "komunikat": "Zadeklarowano 4; plan osiąga maksymalnie 4 treningów biegowych tygodniowo. Liczba dni jest limitem, nie obowiązkiem w każdym tygodniu.",
+        "powodyOgraniczenia": [],
+        "maksymalnieZeStartem": 4,
+        "zadeklarowaneDni": 4,
+        "limitWybranychDni": 4,
+        "zaplanowaneDniTygodnia": 4,
+        "dostepneDni": 7,
+        "limitPoziomu": 4,
+        "ograniczonoPrzezPoziom": false,
+        "ograniczonoPrzezDostepnosc": false,
+        "dzienBezBieganiaZachowany": true
+      },
+      "dzien_dlugiego_biegu": "niedziela",
+      "odstepy_miedzy_treningami_dni": [
+        1,
+        2,
+        2,
+        2
+      ]
+    },
+    "modelMaratonu": {
+      "tryb": "odbudowa_bazy",
+      "bazaPotwierdzona": false,
+      "limitDlugiegoMin": 180,
+      "odzywianie": "Na długich biegach ćwicz tolerowane 30–60 g węglowodanów/h i indywidualne nawodnienie; bez eksperymentów na zawodach.",
+      "zastrzezenie": "Heurystyka treningowa, bez gwarancji ukończenia; przy braku bazy wybierz późniejszy start lub krótszy dystans.",
+      "gotowoscHistorii": "deklarowana",
+      "doswiadczenieDystansowe": null,
+      "ograniczenia": [
+        "Najpierw etap bazowy: maraton nie jest aktualnie potwierdzonym celem."
+      ],
+      "celFizjologiczny": "Wytrzymałość tlenowa, ekonomia tempa maratońskiego i tolerancja żywienia; długi bieg pozostaje spokojny."
+    },
+    "korektyObciazen": [],
+    "korektyTygodniaStartowego": [],
+    "indywidualizacja": {
+      "bazaKm": 12,
+      "najdluzszyKm": 6,
+      "stazMiesiace": null,
+      "historiaTygodni": null,
+      "tryb": "przygotowanie",
+      "tempaBezAutomatycznejProgresji": true
+    },
+    "treningi": [
+      {
+        "data": "2026-11-03",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 4,
+        "czas_min": 34,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 4 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 4,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "base",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.8 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 102
+        }
+      },
+      {
+        "data": "2026-11-06",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 3,
+        "czas_min": 26,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 3 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 3,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "base",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 78
+        }
+      },
+      {
+        "data": "2026-11-08",
+        "typ": "Długi bieg",
+        "dystans_km": 5,
+        "czas_min": 43,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "8:04-9:17",
+        "opis": "1. Długi bieg ciągły: 5 km, tempo 8:04-9:17 min/km, tętno 110-129 (Z2), buduje wytrzymałość: tempo rozmowy, równo od początku do końca.",
+        "kroki": [
+          {
+            "etap": "Długi bieg ciągły",
+            "dystans_km": 5,
+            "tempo": "8:04-9:17",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "buduje wytrzymałość: tempo rozmowy, równo od początku do końca."
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "base",
+        "podtyp": "dlugi",
+        "dlaczego": "Długi bieg to główny bodziec wytrzymałościowy tygodnia; jego długość rośnie stopniowo i zależy od objętości tygodnia, dystansu i Twoich limitów czasu.",
+        "etykieta": "Długi bieg · wytrzymałość",
+        "cel": "Wytrzymałość, ekonomia biegu i odporność mięśni na długi wysiłek.",
+        "rpe": "4-5/10",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 4 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Skróć do ok. 60% dystansu albo zamień na 40-50 min biegu Z1-Z2. Nie nadrabiaj później."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Wytrzymałość, ekonomia biegu i odporność mięśni na długi wysiłek.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 4,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 172
+        }
+      },
+      {
+        "data": "2026-11-10",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 4,
+        "czas_min": 34,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 4 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 4,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "base",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.8 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 102
+        }
+      },
+      {
+        "data": "2026-11-13",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 4,
+        "czas_min": 34,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 4 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 4,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "base",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.8 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 102
+        }
+      },
+      {
+        "data": "2026-11-15",
+        "typ": "Długi bieg",
+        "dystans_km": 5,
+        "czas_min": 43,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "8:04-9:17",
+        "opis": "1. Długi bieg ciągły: 5 km, tempo 8:04-9:17 min/km, tętno 110-129 (Z2), buduje wytrzymałość: tempo rozmowy, równo od początku do końca.",
+        "kroki": [
+          {
+            "etap": "Długi bieg ciągły",
+            "dystans_km": 5,
+            "tempo": "8:04-9:17",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "buduje wytrzymałość: tempo rozmowy, równo od początku do końca."
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "base",
+        "podtyp": "dlugi",
+        "dlaczego": "Długi bieg to główny bodziec wytrzymałościowy tygodnia; jego długość rośnie stopniowo i zależy od objętości tygodnia, dystansu i Twoich limitów czasu.",
+        "etykieta": "Długi bieg · wytrzymałość",
+        "cel": "Wytrzymałość, ekonomia biegu i odporność mięśni na długi wysiłek.",
+        "rpe": "4-5/10",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 4 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Skróć do ok. 60% dystansu albo zamień na 40-50 min biegu Z1-Z2. Nie nadrabiaj później."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Wytrzymałość, ekonomia biegu i odporność mięśni na długi wysiłek.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 4,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 172
+        }
+      },
+      {
+        "data": "2026-11-17",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 4,
+        "czas_min": 34,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 4 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 4,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "build",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.8 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 102
+        }
+      },
+      {
+        "data": "2026-11-20",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 4,
+        "czas_min": 34,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 4 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 4,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "build",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.8 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 102
+        }
+      },
+      {
+        "data": "2026-11-22",
+        "typ": "Długi bieg",
+        "dystans_km": 6,
+        "czas_min": 52,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "8:04-9:17",
+        "opis": "1. Długi bieg ciągły: 6 km, tempo 8:04-9:17 min/km, tętno 110-129 (Z2), buduje wytrzymałość: tempo rozmowy, równo od początku do końca.",
+        "kroki": [
+          {
+            "etap": "Długi bieg ciągły",
+            "dystans_km": 6,
+            "tempo": "8:04-9:17",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "buduje wytrzymałość: tempo rozmowy, równo od początku do końca."
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "build",
+        "podtyp": "dlugi",
+        "dlaczego": "Długi bieg to główny bodziec wytrzymałościowy tygodnia; jego długość rośnie stopniowo i zależy od objętości tygodnia, dystansu i Twoich limitów czasu.",
+        "etykieta": "Długi bieg · wytrzymałość",
+        "cel": "Wytrzymałość, ekonomia biegu i odporność mięśni na długi wysiłek.",
+        "rpe": "4-5/10",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 4.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Skróć do ok. 60% dystansu albo zamień na 40-50 min biegu Z1-Z2. Nie nadrabiaj później."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Wytrzymałość, ekonomia biegu i odporność mięśni na długi wysiłek.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 4,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 208
+        }
+      },
+      {
+        "data": "2026-11-24",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 3,
+        "czas_min": 26,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 3 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 3,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "build",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 78
+        }
+      },
+      {
+        "data": "2026-11-25",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 3,
+        "czas_min": 26,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 3 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz. Drugi dzień biegowy z rzędu: trzymaj dolną część zakresu tempa",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 3,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz. Drugi dzień biegowy z rzędu: trzymaj dolną część zakresu tempa"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "build",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 78
+        }
+      },
+      {
+        "data": "2026-11-27",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 3,
+        "czas_min": 26,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 3 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 3,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "build",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 78
+        }
+      },
+      {
+        "data": "2026-11-29",
+        "typ": "Długi bieg",
+        "dystans_km": 6,
+        "czas_min": 52,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "8:04-9:17",
+        "opis": "1. Długi bieg ciągły: 6 km, tempo 8:04-9:17 min/km, tętno 110-129 (Z2), buduje wytrzymałość: tempo rozmowy, równo od początku do końca.",
+        "kroki": [
+          {
+            "etap": "Długi bieg ciągły",
+            "dystans_km": 6,
+            "tempo": "8:04-9:17",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "buduje wytrzymałość: tempo rozmowy, równo od początku do końca."
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "build",
+        "podtyp": "dlugi",
+        "dlaczego": "Długi bieg to główny bodziec wytrzymałościowy tygodnia; jego długość rośnie stopniowo i zależy od objętości tygodnia, dystansu i Twoich limitów czasu.",
+        "etykieta": "Długi bieg · wytrzymałość",
+        "cel": "Wytrzymałość, ekonomia biegu i odporność mięśni na długi wysiłek.",
+        "rpe": "4-5/10",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 4.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Skróć do ok. 60% dystansu albo zamień na 40-50 min biegu Z1-Z2. Nie nadrabiaj później."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Wytrzymałość, ekonomia biegu i odporność mięśni na długi wysiłek.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 4,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 208
+        }
+      },
+      {
+        "data": "2026-12-01",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 3,
+        "czas_min": 26,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 3 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 3,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "peak",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 78
+        }
+      },
+      {
+        "data": "2026-12-02",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 3,
+        "czas_min": 26,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 3 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz. Drugi dzień biegowy z rzędu: trzymaj dolną część zakresu tempa",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 3,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz. Drugi dzień biegowy z rzędu: trzymaj dolną część zakresu tempa"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "peak",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 78
+        }
+      },
+      {
+        "data": "2026-12-04",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 3,
+        "czas_min": 26,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 3 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 3,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "peak",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 78
+        }
+      },
+      {
+        "data": "2026-12-06",
+        "typ": "Długi bieg",
+        "dystans_km": 7,
+        "czas_min": 61,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "8:04-9:17",
+        "opis": "1. Długi bieg ciągły: 7 km, tempo 8:04-9:17 min/km, tętno 110-129 (Z2), buduje wytrzymałość: tempo rozmowy, równo od początku do końca.",
+        "kroki": [
+          {
+            "etap": "Długi bieg ciągły",
+            "dystans_km": 7,
+            "tempo": "8:04-9:17",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "buduje wytrzymałość: tempo rozmowy, równo od początku do końca."
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "peak",
+        "podtyp": "dlugi",
+        "dlaczego": "Długi bieg to główny bodziec wytrzymałościowy tygodnia; jego długość rośnie stopniowo i zależy od objętości tygodnia, dystansu i Twoich limitów czasu.",
+        "etykieta": "Długi bieg · wytrzymałość",
+        "cel": "Wytrzymałość, ekonomia biegu i odporność mięśni na długi wysiłek.",
+        "rpe": "4-5/10",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 5.3 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Skróć do ok. 60% dystansu albo zamień na 40-50 min biegu Z1-Z2. Nie nadrabiaj później."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Wytrzymałość, ekonomia biegu i odporność mięśni na długi wysiłek.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 4,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 244
+        }
+      },
+      {
+        "data": "2026-12-08",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 3,
+        "czas_min": 26,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 3 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 3,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "taper",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy. Zmniejszona objętość przed startem ma dać świeżość.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 78
+        }
+      },
+      {
+        "data": "2026-12-09",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 3,
+        "czas_min": 26,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 3 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz. Drugi dzień biegowy z rzędu: trzymaj dolną część zakresu tempa",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 3,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz. Drugi dzień biegowy z rzędu: trzymaj dolną część zakresu tempa"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "taper",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy. Zmniejszona objętość przed startem ma dać świeżość.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 78
+        }
+      },
+      {
+        "data": "2026-12-11",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 3,
+        "czas_min": 26,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 3 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 3,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "taper",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy. Zmniejszona objętość przed startem ma dać świeżość.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 78
+        }
+      },
+      {
+        "data": "2026-12-13",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 3,
+        "czas_min": 26,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 3 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 3,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "taper",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy. Zmniejszona objętość przed startem ma dać świeżość.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 78
+        }
+      },
+      {
+        "data": "2026-12-15",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 3,
+        "czas_min": 26,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 3 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 3,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "taper",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy. Zmniejszona objętość przed startem ma dać świeżość.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 78
+        }
+      },
+      {
+        "data": "2026-12-18",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 3,
+        "czas_min": 26,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 3 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 3,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "taper",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy. Zmniejszona objętość przed startem ma dać świeżość.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 78
+        }
+      }
+    ],
+    "tygodnie": [
+      {
+        "tydzien": 1,
+        "od": "2026-11-02",
+        "faza": "baza",
+        "km": 12,
+        "treningi": 3,
+        "biegi": 3,
+        "dni_biegowe": [
+          "2026-11-03",
+          "2026-11-06",
+          "2026-11-08"
+        ],
+        "uzupelniajace": 0,
+        "dlugiBiegKm": 5,
+        "obciazenieSzacunkowe": 352,
+        "obciazenieTreningow": 352,
+        "obciazenieZawodowSzacunkowe": 0,
+        "obciazenieUwzgledniaZawody": false,
+        "obciazenieZrodlo": "szacunek min×RPE; zawody według czasu planu, nie pomiaru"
+      },
+      {
+        "tydzien": 2,
+        "od": "2026-11-09",
+        "faza": "baza",
+        "km": 13,
+        "treningi": 3,
+        "biegi": 3,
+        "dni_biegowe": [
+          "2026-11-10",
+          "2026-11-13",
+          "2026-11-15"
+        ],
+        "uzupelniajace": 0,
+        "dlugiBiegKm": 5,
+        "obciazenieSzacunkowe": 376,
+        "obciazenieTreningow": 376,
+        "obciazenieZawodowSzacunkowe": 0,
+        "obciazenieUwzgledniaZawody": false,
+        "obciazenieZrodlo": "szacunek min×RPE; zawody według czasu planu, nie pomiaru"
+      },
+      {
+        "tydzien": 3,
+        "od": "2026-11-16",
+        "faza": "budowanie",
+        "km": 14,
+        "treningi": 3,
+        "biegi": 3,
+        "dni_biegowe": [
+          "2026-11-17",
+          "2026-11-20",
+          "2026-11-22"
+        ],
+        "uzupelniajace": 0,
+        "dlugiBiegKm": 6,
+        "obciazenieSzacunkowe": 412,
+        "obciazenieTreningow": 412,
+        "obciazenieZawodowSzacunkowe": 0,
+        "obciazenieUwzgledniaZawody": false,
+        "obciazenieZrodlo": "szacunek min×RPE; zawody według czasu planu, nie pomiaru"
+      },
+      {
+        "tydzien": 4,
+        "od": "2026-11-23",
+        "faza": "budowanie",
+        "km": 15,
+        "treningi": 4,
+        "biegi": 4,
+        "dni_biegowe": [
+          "2026-11-24",
+          "2026-11-25",
+          "2026-11-27",
+          "2026-11-29"
+        ],
+        "uzupelniajace": 0,
+        "dlugiBiegKm": 6,
+        "obciazenieSzacunkowe": 442,
+        "obciazenieTreningow": 442,
+        "obciazenieZawodowSzacunkowe": 0,
+        "obciazenieUwzgledniaZawody": false,
+        "obciazenieZrodlo": "szacunek min×RPE; zawody według czasu planu, nie pomiaru"
+      },
+      {
+        "tydzien": 5,
+        "od": "2026-11-30",
+        "faza": "szczyt",
+        "km": 16,
+        "treningi": 4,
+        "biegi": 4,
+        "dni_biegowe": [
+          "2026-12-01",
+          "2026-12-02",
+          "2026-12-04",
+          "2026-12-06"
+        ],
+        "uzupelniajace": 0,
+        "dlugiBiegKm": 7,
+        "obciazenieSzacunkowe": 478,
+        "obciazenieTreningow": 478,
+        "obciazenieZawodowSzacunkowe": 0,
+        "obciazenieUwzgledniaZawody": false,
+        "obciazenieZrodlo": "szacunek min×RPE; zawody według czasu planu, nie pomiaru"
+      },
+      {
+        "tydzien": 6,
+        "od": "2026-12-07",
+        "faza": "zwolnienie",
+        "km": 12,
+        "treningi": 4,
+        "biegi": 4,
+        "dni_biegowe": [
+          "2026-12-08",
+          "2026-12-09",
+          "2026-12-11",
+          "2026-12-13"
+        ],
+        "uzupelniajace": 0,
+        "dlugiBiegKm": 0,
+        "obciazenieSzacunkowe": 312,
+        "obciazenieTreningow": 312,
+        "obciazenieZawodowSzacunkowe": 0,
+        "obciazenieUwzgledniaZawody": false,
+        "obciazenieZrodlo": "szacunek min×RPE; zawody według czasu planu, nie pomiaru"
+      },
+      {
+        "tydzien": 7,
+        "od": "2026-12-14",
+        "faza": "zwolnienie",
+        "km": 48.2,
+        "treningi": 3,
+        "biegi": 3,
+        "dni_biegowe": [
+          "2026-12-15",
+          "2026-12-18",
+          "2026-12-20"
+        ],
+        "uzupelniajace": 0,
+        "dlugiBiegKm": 0,
+        "start": {
+          "data": "2026-12-20",
+          "dystans_km": 42.2,
+          "uwzglednionyWKilometrazu": true
+        },
+        "obciazenieSzacunkowe": 2226,
+        "obciazenieTreningow": 156,
+        "obciazenieZawodowSzacunkowe": 2070,
+        "obciazenieUwzgledniaZawody": true,
+        "obciazenieZrodlo": "szacunek min×RPE; zawody według czasu planu, nie pomiaru"
+      }
+    ],
+    "limityNieosiagniete": [],
+    "wykonalnosc": {
+      "poziom": "niewykonalna",
+      "konflikty": [
+        {
+          "kod": "CEL_CZASOWY",
+          "opis": "Cel czasowy przekracza ocenioną gotowość; zwykły plan jest alternatywą według aktualnej formy.",
+          "poziom": "niewykonalna"
+        },
+        {
+          "kod": "BRAK_CZASU_NA_ADAPTACJE",
+          "opis": "Termin i obecna baza nie pozwalają bezpiecznie zbudować przygotowania; plan służy podtrzymaniu, rozważ rezygnację ze startu.",
+          "poziom": "niewykonalna"
+        },
+        {
+          "kod": "MARATON_BRAK_BAZY",
+          "opis": "Maraton przy bazie 12 km tygodniowo i najdłuższym biegu 6 km w 6.9 tyg. wymagałby zbyt szybkiego wzrostu obciążeń (plan nie kompensuje braku bazy gwałtownym zwiększaniem kilometrażu).",
+          "poziom": "niewykonalna"
+        }
+      ],
+      "zalecenia": [
+        "Rozważ półmaraton albo maraton w późniejszym terminie (min. 4 biegi tygodniowo i baza min. ok. 38 km tygodniowo oraz najdłuższy bieg ok. 22 km).",
+        "Dodaj 5. trening biegowy w tygodniu",
+        "Przesuń start o 4 tygodnie (2027-01-17)",
+        "Zmień cel na półmaraton w tym samym terminie (bezpieczniejszy przy obecnej bazie i liczbie biegów)"
+      ]
+    },
+    "dlugieSkroconePrzedStartem": [],
+    "ocena": {
+      "vdot": 28,
+      "zrodloVdot": "szacunek",
+      "prognoza": {
+        "5k": 1949,
+        "10k": 4056,
+        "half": 9208,
+        "marathon": 19439
+      },
+      "tygodnie": 7,
+      "werdykt": "nierealny",
+      "sugerowanyCzas": 17739,
+      "wiadomosci": [
+        "Brak wiarygodnego aktualnego wyniku: prognoza tempa i konkretnego czasu jest orientacyjna.",
+        "Cel 3:00:00 wymaga poprawy formy o ok. 91.2%, a w tym czasie realnie da się uzyskać ok. 5.6%. Proponowany czas: 4:55:39."
+      ],
+      "pewnoscOceny": "niska",
+      "minimalneTygodnie": 24,
+      "wymaganyWzrost": "91.2%",
+      "mozliwyWzrost": "5.6%",
+      "cel": {
+        "zadany": "3:00:00",
+        "tempoZadane": "4:16",
+        "planowany": "4:55:39",
+        "tempoPlanowane": "7:00",
+        "zgodny": false
+      }
+    },
+    "kontrola": {
+      "zgodny": true,
+      "problemy": [],
+      "szczegoly": [],
+      "bledy": [
+        {
+          "kod": "TAPER_BEZ_BODZCOW",
+          "poziom": "sugestia",
+          "dataLubTydzien": null,
+          "tydzien": null,
+          "data": null,
+          "trening": null,
+          "rodzaj": "tapering",
+          "przyczyna": "W taperingu nie ma żadnego krótkiego bodźca intensywności; spadek objętości powinien iść w parze z zachowaniem krótkich odcinków w tempie startowym.",
+          "opis": "W taperingu nie ma żadnego krótkiego bodźca intensywności; spadek objętości powinien iść w parze z zachowaniem krótkich odcinków w tempie startowym.",
+          "naprawa": null,
+          "dane": null,
+          "mozliwaKonsekwencja": "Opcjonalna poprawa jakości planu."
+        }
+      ],
+      "bledyKrytyczne": [],
+      "ostrzezenia": [],
+      "sugestie": [
+        "W taperingu nie ma żadnego krótkiego bodźca intensywności; spadek objętości powinien iść w parze z zachowaniem krótkich odcinków w tempie startowym."
+      ],
+      "liczbaBledowKrytycznych": 0,
+      "liczbaOstrzezen": 0,
+      "liczbaSugestii": 1,
+      "kodyBledow": {
+        "TAPER_BEZ_BODZCOW": 1
+      },
+      "czestotliwosc": {
+        "zadeklarowaneDni": 4,
+        "doceloweDni": 4,
+        "zaplanowaneDni": 4,
+        "maksymalnaFaktycznaLiczbaBiegowWTygodniu": 4,
+        "sredniaBiegowWTydzien": 3.3
+      },
+      "szczytDlugiegoBiegu": {
+        "km": 7,
+        "data": "2026-12-06",
+        "dniPrzedStartem": 14,
+        "liczbaPowtorzenSzczytu": 1,
+        "pierwszeWystapienie": "2026-12-06",
+        "ostatnieWystapienie": "2026-12-06"
+      },
+      "szczytTygodniowegoKilometrazu": {
+        "km": 48.2,
+        "tydzienOd": "2026-12-14"
+      },
+      "dlugieProgresywne": {
+        "dlugichWBudowieISzczycie": 3,
+        "progresywnych": 0
+      },
+      "udzialMocnychProc": 0,
+      "maxWzrostTygodniowyProc": 8.3,
+      "najdluzszyBiegKm": 7,
+      "maxTygodniowyKm": 48.2
+    },
+    "naprawa": null,
+    "ograniczeniaCzasowe": {
+      "limitDniRoboczychMin": 120,
+      "limitWeekendMin": 210,
+      "limitPodanyPrzezUzytkownika": false,
+      "skroconeDlugieBiegi": 0,
+      "pominiteDlugieBiegi": 0,
+      "pominieteAkcentyZPowoduCzasu": 0,
+      "skroconeBiegiSpokojne": 0,
+      "zmianyPoZaokragleniu": 0,
+      "pominieteUzupelniajace": 0,
+      "komunikat": null
+    },
+    "decyzjePlanera": {
+      "jakoscPominietaBoSasiedztwoZDlugimBiegiem": 0,
+      "testyPominieteBoNieMiescilySieWBudzecie": 0,
+      "kmDopelnionychWJednostkachJakosciowych": 0,
+      "kmPonadLimityBiegowSpokojnych": 0,
+      "dlugiBiegSkroconyDlaUdzialu": 0,
+      "biegiZdjeteDlaLimituPowrotu": 0
+    },
+    "ocenaCelu": {
+      "mozliwoscPlanu": {
+        "status": "plan_wygenerowany",
+        "uzasadnienie": [
+          "Audyt: 0 błędów krytycznych, 0 ostrzeżeń."
+        ]
+      },
+      "mozliwoscUkonczenia": {
+        "status": "niewystarczajace_przygotowanie",
+        "uzasadnienie": [
+          "Plan osiąga najdłuższy bieg 7 km (kryterium orientacyjne 28 km) i 16 km tygodniowo (kryterium 45 km).",
+          "Czas przygotowań (6.9 tyg.) jest krótszy niż minimum 24 tyg.",
+          "Obecna baza (kilometraż i najdłuższy bieg) jest zbyt mała na maraton."
+        ]
+      },
+      "realnoscWyniku": {
+        "status": "niewystarczajace_dane",
+        "uzasadnienie": [
+          "Brak aktualnego wyniku lub testu: nie da się wiarygodnie ocenić, czy czas docelowy jest realny. Wykonaj bieg testowy 3-5 km lub podaj ostatni wynik zawodów."
+        ]
+      },
+      "pewnosc": "niska",
+      "zastrzezenie": "Ocena jest szacunkiem na podstawie podanych danych i nie gwarantuje wyniku.",
+      "rekomendacja": {
+        "status": "cel_niezalecany_przy_obecnych_danych",
+        "opis": "Przy tych danych plan nie przygotuje do bezpiecznego ukończenia dystansu. Rozważ krótszy dystans, późniejszy termin albo więcej dni biegowych (patrz proponowaneZmiany).",
+        "alternatywy": [
+          "Dodaj 5. trening biegowy w tygodniu",
+          "Przesuń start o 4 tygodnie (2027-01-17)",
+          "Zmień cel na półmaraton w tym samym terminie (bezpieczniejszy przy obecnej bazie i liczbie biegów)",
+          "Zmień cel czasowy na 4:55:39 (realny przy obecnej formie)",
+          "Zostań przy swoich ustawieniach: plan i tak powstaje, ale cel może być nie do osiągnięcia"
+        ]
+      },
+      "klasyfikacja": {
+        "przygotowanieDoUkonczenia": false,
+        "przygotowanieDoKonkretnegoCzasu": false,
+        "bazaNiewystarczajacaDoBezpiecznegoStartu": true,
+        "mozliwePrzygotowanieOdpowiedzialne": false,
+        "powody": [
+          "Obecna baza (12 km tygodniowo, najdłuższy bieg 6 km) jest za mała, by odpowiedzialnie zacząć przygotowania do maratonu w tym terminie.",
+          "Czas przygotowań (6.9 tyg.) jest krótszy niż minimum 24 tyg."
+        ]
+      }
+    },
+    "spojnoscTemp": {
+      "ok": true,
+      "maxOdchylenieProc": 0,
+      "sprawdzone": 0
+    },
+    "kompletnosc": {
+      "poziom1_wymagane": {
+        "podane": 7,
+        "razem": 10,
+        "brakuje": [
+          "ostatni wynik lub ocena formy",
+          "kontuzje i ograniczenia",
+          "dostępność czasowa"
+        ]
+      },
+      "poziom2_personalizacja": {
+        "podane": 0,
+        "razem": 9,
+        "brakuje": [
+          "historia treningów z 8-12 tygodni",
+          "tempo spokojnego biegu z historii",
+          "tętno maksymalne i spoczynkowe",
+          "wyniki na kilku dystansach",
+          "preferowane dni lub dzień długiego biegu",
+          "teren i podbiegi",
+          "trening siłowy",
+          "sen i regeneracja (samopoczucie po treningach)",
+          "historia przeciążeń"
+        ]
+      },
+      "poziom3_opcjonalne": {
+        "podane": 0,
+        "razem": 5,
+        "brakuje": [
+          "tętno progowe",
+          "tempo progowe",
+          "VO2max z wiarygodnego testu",
+          "HRV",
+          "import plików FIT/GPX"
+        ]
+      },
+      "pewnosc": "niska",
+      "uwaga": "Uzupełnienie brakujących danych poprawi dokładność planu i prognoz. Brak danych opcjonalnych nie blokuje planu."
+    },
+    "jakoscDanych": {
+      "tetnoMaksymalne": "szacowane (208 − 0,7 × wiek)",
+      "tetnoSpoczynkowe": "brak",
+      "tetnoProgowe": "brak",
+      "forma": "szacunek (brak wiarygodnego wyniku)",
+      "zrodloFormy": null,
+      "tempaSpokojne": "z modelu",
+      "historia": "brak",
+      "uwaga": "Wartości z zegarka (VO2max, tętno nadgarstkowe) traktuj jako szacunki, nie pomiar laboratoryjny."
+    },
+    "regeneracjaPoStarcie": {
+      "zalecenia": [
+        {
+          "dni": "1-8",
+          "opis": "Bez biegania: spacer, lekki rower lub pływanie bez wysiłku, dużo snu."
+        },
+        {
+          "dni": "9-15",
+          "opis": "Powrót do biegania: 20-30 min bardzo spokojnie (Z1-Z2), tylko jeśli nic nie boli. Bez przebieżek, interwałów i długich biegów. Objętość ok. 50-70% sprzed startu."
+        },
+        {
+          "dni": "od 29",
+          "opis": "Stopniowy powrót do mocniejszych treningów, jeśli zmęczenie minęło. Zacznij od planu na nowy cel."
+        }
+      ],
+      "uwaga": "Jeśli ból utrzymuje się dłużej niż kilka dni albo nasila się, skonsultuj się z lekarzem lub fizjoterapeutą."
+    },
+    "przygotowanie": {
+      "dostepneTygodnie": 6.9,
+      "dniDoStartu": 48,
+      "minimum": 24,
+      "optymalnie": 24,
+      "tryb": "skrócony",
+      "ryzyko": "wysokie",
+      "komunikat": "Do startu zostało 6.9 tyg., a na maraton zalecamy 24 tyg. przygotowań (minimum 24). Plan jest skrócony: utrzymuje i delikatnie rozwija formę, nie buduje jej od zera. Ryzyko startu jest wysokie: rozważ krótszy dystans, start bez parcia na czas (z marszobiegiem) albo późniejszy termin. Bezpieczeństwo jest ważniejsze niż wynik."
+    },
+    "gotowosc": {
+      "ok": false,
+      "status": "niewystarczajace_przygotowanie",
+      "rozdzielenie": {
+        "bazaBezpieczna": false,
+        "bazaMinimalna": {
+          "kmTygodniowo": 24,
+          "najdluzszyBiegKm": 12
+        },
+        "mozliwoscUkonczenia": false,
+        "ukonczenieBezLimituCzasu": false,
+        "doKonkretnegoWyniku": false,
+        "etykieta": "brak_bezpiecznej_bazy",
+        "wynikBrakuje": [
+          "wiarygodny, aktualny wynik odniesienia",
+          "progi do wyniku (najdluzszy bieg 30 km, 50 km/tydz., min. 4 biegi)"
+        ]
+      },
+      "wynikWiarygodnyPowody": [
+        "brak wiarygodnego i aktualnego wyniku odniesienia"
+      ],
+      "wskaznik": 0.3,
+      "czestotliwoscOk": true,
+      "minimalnaCzestotliwosc": 4,
+      "czasPrzygotowaniaOk": false,
+      "minimalneTygodnie": 24,
+      "taperTygodnie": 2,
+      "taperOk": true,
+      "dlugiBiegOk": false,
+      "kilometrazOk": false,
+      "bazaMaratonskaOk": false,
+      "pewnoscOceny": "niska",
+      "wymagane": {
+        "najdluzszyBiegKm": 28,
+        "kmTygodniowo": 45
+      },
+      "wPlanie": {
+        "najdluzszyBiegKm": 7,
+        "kmTygodniowo": 16
+      }
+    },
+    "proponowaneZmiany": [
+      {
+        "opis": "Dodaj 5. trening biegowy w tygodniu",
+        "zmiana": {
+          "daysPerWeek": 5
+        },
+        "wynik": {
+          "werdykt": "nierealny",
+          "najdluzszyBiegKm": 7,
+          "kmTygodniowo": 16,
+          "gotowosc": "nadal za mała"
+        }
+      },
+      {
+        "opis": "Przesuń start o 4 tygodnie (2027-01-17)",
+        "zmiana": {
+          "goal": {
+            "type": "marathon",
+            "raceDate": "2027-01-17",
+            "targetTimeSec": 10800
+          }
+        },
+        "wynik": {
+          "werdykt": "nierealny",
+          "najdluzszyBiegKm": 8,
+          "kmTygodniowo": 18,
+          "gotowosc": "nadal za mała"
+        }
+      },
+      {
+        "opis": "Zmień cel na półmaraton w tym samym terminie (bezpieczniejszy przy obecnej bazie i liczbie biegów)",
+        "zmiana": {
+          "goal": {
+            "type": "half",
+            "raceDate": "2026-12-20"
+          }
+        },
+        "wynik": {
+          "werdykt": "brak celu czasowego",
+          "najdluzszyBiegKm": 6,
+          "kmTygodniowo": 16,
+          "gotowosc": "nadal za mała"
+        }
+      },
+      {
+        "opis": "Zmień cel czasowy na 4:55:39 (realny przy obecnej formie)",
+        "zmiana": {
+          "goal": {
+            "type": "marathon",
+            "raceDate": "2026-12-20",
+            "targetTimeSec": 17739
+          }
+        }
+      },
+      {
+        "opis": "Zostań przy swoich ustawieniach: plan i tak powstaje, ale cel może być nie do osiągnięcia",
+        "zmiana": {}
+      }
+    ],
+    "zmianyPrzezStarty": [],
+    "jakRaportowac": "Po treningu wpisz: dystans, czas, średnie tętno, odczucie 1-5, RPE 1-10 oraz ewentualny ból (miejsce i siła 0-10). Przy treningach tempowych, interwałach, podbiegach, testach i startach dodaj część główną: łączny dystans i czas samych odcinków lub bloków. Dane z zegarka oznaczaj jako szacunki.",
+    "strategiaStartu": {
+      "dystansKm": 42.2,
+      "czasDocelowy": "4:55:39",
+      "sredniePace": "7:00",
+      "odcinki": [
+        {
+          "odcinek": "0-5 km",
+          "tempo": "7:08",
+          "czasNaKoncuOdcinka": "35:39",
+          "uwaga": "spokojny początek, nie daj się ponieść tłumowi"
+        },
+        {
+          "odcinek": "5-32 km",
+          "tempo": "6:59",
+          "czasNaKoncuOdcinka": "3:44:23",
+          "uwaga": "równe, kontrolowane tempo"
+        },
+        {
+          "odcinek": "32-42.2 km",
+          "tempo": "6:59",
+          "czasNaKoncuOdcinka": "4:55:39",
+          "uwaga": "równe, kontrolowane tempo"
+        }
+      ],
+      "czasyPosrednie": [
+        {
+          "km": 5,
+          "czas": "35:39"
+        },
+        {
+          "km": 10,
+          "czas": "1:10:36"
+        },
+        {
+          "km": 15,
+          "czas": "1:45:33"
+        },
+        {
+          "km": 20,
+          "czas": "2:20:30"
+        },
+        {
+          "km": 25,
+          "czas": "2:55:27"
+        },
+        {
+          "km": 30,
+          "czas": "3:30:24"
+        },
+        {
+          "km": 35,
+          "czas": "4:05:21"
+        },
+        {
+          "km": 40,
+          "czas": "4:40:18"
+        },
+        {
+          "km": 42.2,
+          "czas": "4:55:39"
+        }
+      ],
+      "kontrolaTetna": "Przez pierwszą 1/3 dystansu trzymaj tętno poniżej 166 (górna granica Z4). Jeśli jest wyżej, zwolnij.",
+      "odzywianie": "30-60 g węglowodanów na godzinę: żel co 30-40 min, pierwszy po ok. 40 min. Woda lub napój izotoniczny na każdym punkcie, nie czekaj na pragnienie. Przetestuj ten sam żel na długich biegach.",
+      "rozgrzewka": "Tylko 5 min truchtu i mobilizacja, oszczędzaj siły.",
+      "wskazowki": [
+        "Nie zmieniaj niczego w dniu startu: buty, jedzenie, żele.",
+        "Śniadanie 2,5-3 h przed startem, znane i lekkostrawne.",
+        "Zacznij wolniej niż plan. Kto zaczyna za szybko, płaci w końcówce."
+      ]
+    },
+    "strefyTetna": [
+      {
+        "strefa": "Z1",
+        "od": 92,
+        "do": 110
+      },
+      {
+        "strefa": "Z2",
+        "od": 110,
+        "do": 129
+      },
+      {
+        "strefa": "Z3",
+        "od": 129,
+        "do": 147
+      },
+      {
+        "strefa": "Z4",
+        "od": 147,
+        "do": 166
+      },
+      {
+        "strefa": "Z5",
+        "od": 166,
+        "do": 184
+      }
+    ],
+    "tempaPlanu": {
+      "czasPlanu": "4:55:39",
+      "vdotPlanu": 28,
+      "tempoProgowe": "6:46-7:01",
+      "interwal": "6:07-6:22",
+      "startowe": "7:00"
+    },
+    "tempa": {
+      "regeneracyjne": "8:38-9:45",
+      "latwe": "7:54-9:11",
+      "dlugieWybieganie": "8:04-9:17",
+      "umiarkowane": "7:08-7:58",
+      "tempo": "6:37-7:13",
+      "progowe": "6:37-7:13",
+      "interwal": "5:56-6:33",
+      "startowe": "7:00",
+      "sterowanie": "RPE i test rozmowy mają pierwszeństwo; zakresy tempa to orientacyjny szacunek",
+      "rpe": {
+        "regeneracja": "1–2",
+        "latwy": "2–3",
+        "dlugi": "3–4",
+        "tempo": "6–7",
+        "interwaly": "7–8",
+        "rytmy": "swobodnie, bez sprintu"
+      },
+      "pewnosc": "niska: zakresy poszerzone, bo brak wiarygodnego wyniku lub testu",
+      "uwaga": "Tempa docelowego nie używa się na zwykłych treningach: pojawia się tylko w jednostkach w tempie startowym."
+    },
+    "ostrzezenia": [
+      "Wykonalność celu: niewykonalna. Cel czasowy przekracza ocenioną gotowość; zwykły plan jest alternatywą według aktualnej formy. Termin i obecna baza nie pozwalają bezpiecznie zbudować przygotowania; plan służy podtrzymaniu, rozważ rezygnację ze startu. Maraton przy bazie 12 km tygodniowo i najdłuższym biegu 6 km w 6.9 tyg. wymagałby zbyt szybkiego wzrostu obciążeń (plan nie kompensuje braku bazy gwałtownym zwiększaniem kilometrażu).",
+      "Brak wiarygodnego aktualnego wyniku: prognoza tempa i konkretnego czasu jest orientacyjna.",
+      "Cel 3:00:00 wymaga poprawy formy o ok. 91.2%, a w tym czasie realnie da się uzyskać ok. 5.6%. Proponowany czas: 4:55:39.",
+      "Do startu zostało 6.9 tyg., a na maraton zalecamy 24 tyg. przygotowań (minimum 24). Plan jest skrócony: utrzymuje i delikatnie rozwija formę, nie buduje jej od zera. Ryzyko startu jest wysokie: rozważ krótszy dystans, start bez parcia na czas (z marszobiegiem) albo późniejszy termin. Bezpieczeństwo jest ważniejsze niż wynik.",
+      "Plan jest zbudowany pod czas 4:55:39 (7:00 min/km), bo cel 3:00:00 (4:16 min/km) jest dla obecnej formy i czasu przygotowań zbyt ambitny. Jeśli chcesz zostać przy swoim celu mimo ryzyka, ustaw trzymajCel: true.",
+      "Wskazówka: przy Twoim profilu warto dodać 1 trening siłowy w tygodniu. Możesz to włączyć w ustawieniach planu.",
+      "Brak bezpiecznej bazy do dystansu maraton: potrzeba co najmniej 24 km tygodniowo i najdluzszego biegu 12 km (masz 12 km i 6 km). Plan odbudowuje baze stopniowo, ale do startu nie da sie z niej bezpiecznie dojsc do pelnej gotowosci: rozwaz pozniejszy start albo krotszy dystans.",
+      "Ocena przygotowania: niewystarczajace przygotowanie. Przy 4 biegach tygodniowo plan osiąga najdłuższy bieg 7 km i 16 km tygodniowo; kryteria orientacyjne to 28 km i 45 km. Niespełnione kryteria: czas krótszy niż 24 tyg.; za krótki długi bieg; za mała objętość tygodniowa; niewystarczająca baza maratońska. Ocena gotowości nie gwarantuje wyniku.",
+      "Tętno maksymalne jest szacowane wzorem 208 − 0,7 × wiek. Jeśli znasz swoje prawdziwe HRmax, wpisz je w profilu."
+    ]
+  },
+  "v24": {
+    "ok": true,
+    "wersja": "24.0",
+    "wiarygodnoscIntensywnosci": {
+      "hrMax": "szacowane",
+      "priorytet": "RPE/test rozmowy i aktualny wynik; HRmax szacowane ma charakter orientacyjny"
+    },
+    "periodyzacja": {
+      "bazaTygodnie": 2,
+      "budowanieTygodnie": 2,
+      "specyfikaTygodnie": 1,
+      "taperTygodnie": 2
+    },
+    "plan": {
+      "intencjaTreningowa": "wynik_niepotwierdzony",
+      "cel": "maraton 2026-12-20, cel 4:55:39",
+      "data_startu": "2026-11-03",
+      "data_konca": "2026-12-20",
+      "uzasadnienie": "Forma wyjściowa VDOT 28 (szacunek). Plan na 7 tyg.: 2 tyg. baza, 2 tyg. budowanie, 1 tyg. szczyt, 2 tyg. zwolnienie. Najcięższy tydzień ok. 16 km, maksymalnie 4 faktycznych biegów w tygodniu (cel: 4), razem 130.2 km. Preferowane dni: wtorek, środa, piątek, niedziela (odstępy 1/2/2/2 dni, długi bieg: niedziela).",
+      "zawody_docelowe": "maraton",
+      "start": {
+        "data": "2026-12-20",
+        "dzien": "niedziela",
+        "nazwa": "maraton"
+      },
+      "tryb": "nowy",
+      "dni_treningowe": [
+        "wtorek",
+        "środa",
+        "piątek",
+        "niedziela"
+      ],
+      "preferowaneDniTreningowe": [
+        "wtorek",
+        "środa",
+        "piątek",
+        "niedziela"
+      ],
+      "czestotliwosc": {
+        "komunikat": "Zadeklarowano 4; plan osiąga maksymalnie 4 treningów biegowych tygodniowo. Liczba dni jest limitem, nie obowiązkiem w każdym tygodniu.",
+        "powodyOgraniczenia": [],
+        "maksymalnieZeStartem": 4,
+        "zadeklarowaneDni": 4,
+        "limitWybranychDni": 4,
+        "zaplanowaneDniTygodnia": 4,
+        "dostepneDni": 7,
+        "limitPoziomu": 4,
+        "ograniczonoPrzezPoziom": false,
+        "ograniczonoPrzezDostepnosc": false,
+        "dzienBezBieganiaZachowany": true
+      },
+      "dzien_dlugiego_biegu": "niedziela",
+      "odstepy_miedzy_treningami_dni": [
+        1,
+        2,
+        2,
+        2
+      ]
+    },
+    "modelMaratonu": {
+      "tryb": "odbudowa_bazy",
+      "bazaPotwierdzona": false,
+      "limitDlugiegoMin": 180,
+      "odzywianie": "Na długich biegach ćwicz tolerowane 30–60 g węglowodanów/h i indywidualne nawodnienie; bez eksperymentów na zawodach.",
+      "zastrzezenie": "Heurystyka treningowa, bez gwarancji ukończenia; przy braku bazy wybierz późniejszy start lub krótszy dystans.",
+      "gotowoscHistorii": "deklarowana",
+      "doswiadczenieDystansowe": null,
+      "ograniczenia": [
+        "Najpierw etap bazowy: maraton nie jest aktualnie potwierdzonym celem."
+      ],
+      "specyfikaWarunkowa": "Bloki MP po bazie są warunkowe: tylko po wykonaniu poprzednich tygodni bez bólu i nadmiernego zmęczenia; planowana adaptacja nie jest potwierdzoną gotowością.",
+      "celFizjologiczny": "Wytrzymałość tlenowa, ekonomia tempa maratońskiego i tolerancja żywienia; długi bieg pozostaje spokojny."
+    },
+    "korektyObciazen": [],
+    "korektyTygodniaStartowego": [],
+    "rejestrJakosci": [],
+    "modelNiskiejCzestotliwosci": null,
+    "indywidualizacja": {
+      "poziomJakosci": "beginner",
+      "tolerancjaIntensywnosci": "normal",
+      "tolerancjaObjetosci": "normal",
+      "zmeczenie": null,
+      "bazaKm": 12,
+      "najdluzszyKm": 6,
+      "stazMiesiace": null,
+      "historiaTygodni": null,
+      "tryb": "przygotowanie",
+      "tempaBezAutomatycznejProgresji": true
+    },
+    "treningi": [
+      {
+        "data": "2026-11-03",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 4,
+        "czas_min": 34,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 4 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 4,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "base",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.8 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 102
+        }
+      },
+      {
+        "data": "2026-11-06",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 3,
+        "czas_min": 26,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 3 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 3,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "base",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 78
+        }
+      },
+      {
+        "data": "2026-11-08",
+        "typ": "Długi bieg",
+        "dystans_km": 5,
+        "czas_min": 43,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "8:04-9:17",
+        "opis": "1. Długi bieg ciągły: 5 km, tempo 8:04-9:17 min/km, tętno 110-129 (Z2), buduje wytrzymałość: tempo rozmowy, równo od początku do końca.",
+        "kroki": [
+          {
+            "etap": "Długi bieg ciągły",
+            "dystans_km": 5,
+            "tempo": "8:04-9:17",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "buduje wytrzymałość: tempo rozmowy, równo od początku do końca."
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "base",
+        "podtyp": "dlugi",
+        "dlaczego": "Długi bieg to główny bodziec wytrzymałościowy tygodnia; jego długość rośnie stopniowo i zależy od objętości tygodnia, dystansu i Twoich limitów czasu.",
+        "etykieta": "Długi bieg · wytrzymałość",
+        "cel": "Wytrzymałość, ekonomia biegu i odporność mięśni na długi wysiłek.",
+        "rpe": "4-5/10",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 4 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Skróć do ok. 60% dystansu albo zamień na 40-50 min biegu Z1-Z2. Nie nadrabiaj później."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Wytrzymałość, ekonomia biegu i odporność mięśni na długi wysiłek.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 4,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 172
+        }
+      },
+      {
+        "data": "2026-11-10",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 4,
+        "czas_min": 34,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 4 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 4,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "base",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.8 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 102
+        }
+      },
+      {
+        "data": "2026-11-13",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 4,
+        "czas_min": 34,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 4 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 4,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "base",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.8 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 102
+        }
+      },
+      {
+        "data": "2026-11-15",
+        "typ": "Długi bieg",
+        "dystans_km": 5,
+        "czas_min": 43,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "8:04-9:17",
+        "opis": "1. Długi bieg ciągły: 5 km, tempo 8:04-9:17 min/km, tętno 110-129 (Z2), buduje wytrzymałość: tempo rozmowy, równo od początku do końca.",
+        "kroki": [
+          {
+            "etap": "Długi bieg ciągły",
+            "dystans_km": 5,
+            "tempo": "8:04-9:17",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "buduje wytrzymałość: tempo rozmowy, równo od początku do końca."
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "base",
+        "podtyp": "dlugi",
+        "dlaczego": "Długi bieg to główny bodziec wytrzymałościowy tygodnia; jego długość rośnie stopniowo i zależy od objętości tygodnia, dystansu i Twoich limitów czasu.",
+        "etykieta": "Długi bieg · wytrzymałość",
+        "cel": "Wytrzymałość, ekonomia biegu i odporność mięśni na długi wysiłek.",
+        "rpe": "4-5/10",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 4 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Skróć do ok. 60% dystansu albo zamień na 40-50 min biegu Z1-Z2. Nie nadrabiaj później."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Wytrzymałość, ekonomia biegu i odporność mięśni na długi wysiłek.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 4,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 172
+        }
+      },
+      {
+        "data": "2026-11-17",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 4,
+        "czas_min": 34,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 4 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 4,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "build",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.8 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 102
+        }
+      },
+      {
+        "data": "2026-11-20",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 4,
+        "czas_min": 34,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 4 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 4,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "build",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.8 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 102
+        }
+      },
+      {
+        "data": "2026-11-22",
+        "typ": "Długi bieg",
+        "dystans_km": 6,
+        "czas_min": 52,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "8:04-9:17",
+        "opis": "1. Długi bieg ciągły: 6 km, tempo 8:04-9:17 min/km, tętno 110-129 (Z2), buduje wytrzymałość: tempo rozmowy, równo od początku do końca.",
+        "kroki": [
+          {
+            "etap": "Długi bieg ciągły",
+            "dystans_km": 6,
+            "tempo": "8:04-9:17",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "buduje wytrzymałość: tempo rozmowy, równo od początku do końca."
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "build",
+        "podtyp": "dlugi",
+        "dlaczego": "Długi bieg to główny bodziec wytrzymałościowy tygodnia; jego długość rośnie stopniowo i zależy od objętości tygodnia, dystansu i Twoich limitów czasu.",
+        "etykieta": "Długi bieg · wytrzymałość",
+        "cel": "Wytrzymałość, ekonomia biegu i odporność mięśni na długi wysiłek.",
+        "rpe": "4-5/10",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 4.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Skróć do ok. 60% dystansu albo zamień na 40-50 min biegu Z1-Z2. Nie nadrabiaj później."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Wytrzymałość, ekonomia biegu i odporność mięśni na długi wysiłek.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 4,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 208
+        }
+      },
+      {
+        "data": "2026-11-24",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 3,
+        "czas_min": 26,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 3 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 3,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "build",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 78
+        }
+      },
+      {
+        "data": "2026-11-25",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 3,
+        "czas_min": 26,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 3 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz. Drugi dzień biegowy z rzędu: trzymaj dolną część zakresu tempa",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 3,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz. Drugi dzień biegowy z rzędu: trzymaj dolną część zakresu tempa"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "build",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 78
+        }
+      },
+      {
+        "data": "2026-11-27",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 3,
+        "czas_min": 26,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 3 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 3,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "build",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 78
+        }
+      },
+      {
+        "data": "2026-11-29",
+        "typ": "Długi bieg",
+        "dystans_km": 6,
+        "czas_min": 52,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "8:04-9:17",
+        "opis": "1. Długi bieg ciągły: 6 km, tempo 8:04-9:17 min/km, tętno 110-129 (Z2), buduje wytrzymałość: tempo rozmowy, równo od początku do końca.",
+        "kroki": [
+          {
+            "etap": "Długi bieg ciągły",
+            "dystans_km": 6,
+            "tempo": "8:04-9:17",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "buduje wytrzymałość: tempo rozmowy, równo od początku do końca."
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "build",
+        "podtyp": "dlugi",
+        "dlaczego": "Długi bieg to główny bodziec wytrzymałościowy tygodnia; jego długość rośnie stopniowo i zależy od objętości tygodnia, dystansu i Twoich limitów czasu.",
+        "etykieta": "Długi bieg · wytrzymałość",
+        "cel": "Wytrzymałość, ekonomia biegu i odporność mięśni na długi wysiłek.",
+        "rpe": "4-5/10",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 4.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Skróć do ok. 60% dystansu albo zamień na 40-50 min biegu Z1-Z2. Nie nadrabiaj później."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Wytrzymałość, ekonomia biegu i odporność mięśni na długi wysiłek.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 4,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 208
+        }
+      },
+      {
+        "data": "2026-12-01",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 3,
+        "czas_min": 26,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 3 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 3,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "peak",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 78
+        }
+      },
+      {
+        "data": "2026-12-02",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 3,
+        "czas_min": 26,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 3 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz. Drugi dzień biegowy z rzędu: trzymaj dolną część zakresu tempa",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 3,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz. Drugi dzień biegowy z rzędu: trzymaj dolną część zakresu tempa"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "peak",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 78
+        }
+      },
+      {
+        "data": "2026-12-04",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 3,
+        "czas_min": 26,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 3 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 3,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "peak",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 78
+        }
+      },
+      {
+        "data": "2026-12-06",
+        "typ": "Długi bieg",
+        "dystans_km": 7,
+        "czas_min": 61,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "8:04-9:17",
+        "opis": "1. Długi bieg ciągły: 7 km, tempo 8:04-9:17 min/km, tętno 110-129 (Z2), buduje wytrzymałość: tempo rozmowy, równo od początku do końca.",
+        "kroki": [
+          {
+            "etap": "Długi bieg ciągły",
+            "dystans_km": 7,
+            "tempo": "8:04-9:17",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "buduje wytrzymałość: tempo rozmowy, równo od początku do końca."
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "peak",
+        "podtyp": "dlugi",
+        "dlaczego": "Długi bieg to główny bodziec wytrzymałościowy tygodnia; jego długość rośnie stopniowo i zależy od objętości tygodnia, dystansu i Twoich limitów czasu.",
+        "etykieta": "Długi bieg · wytrzymałość",
+        "cel": "Wytrzymałość, ekonomia biegu i odporność mięśni na długi wysiłek.",
+        "rpe": "4-5/10",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 5.3 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Skróć do ok. 60% dystansu albo zamień na 40-50 min biegu Z1-Z2. Nie nadrabiaj później."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Wytrzymałość, ekonomia biegu i odporność mięśni na długi wysiłek.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 4,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 244
+        }
+      },
+      {
+        "data": "2026-12-08",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 3,
+        "czas_min": 26,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 3 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 3,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "taper",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy. Zmniejszona objętość przed startem ma dać świeżość.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 78
+        }
+      },
+      {
+        "data": "2026-12-09",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 3,
+        "czas_min": 26,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 3 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz. Drugi dzień biegowy z rzędu: trzymaj dolną część zakresu tempa",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 3,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz. Drugi dzień biegowy z rzędu: trzymaj dolną część zakresu tempa"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "taper",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy. Zmniejszona objętość przed startem ma dać świeżość.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 78
+        }
+      },
+      {
+        "data": "2026-12-11",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 3,
+        "czas_min": 26,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 3 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 3,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "taper",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy. Zmniejszona objętość przed startem ma dać świeżość.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 78
+        }
+      },
+      {
+        "data": "2026-12-13",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 3,
+        "czas_min": 26,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 3 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 3,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "taper",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy. Zmniejszona objętość przed startem ma dać świeżość.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 78
+        }
+      },
+      {
+        "data": "2026-12-15",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 3,
+        "czas_min": 26,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 3 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 3,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "taper",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy. Zmniejszona objętość przed startem ma dać świeżość.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 78
+        }
+      },
+      {
+        "data": "2026-12-18",
+        "typ": "Bieg spokojny Z2",
+        "dystans_km": 3,
+        "czas_min": 26,
+        "strefa_tetna": "Z2",
+        "tempo_zakres": "7:54-9:11",
+        "opis": "1. Bieg spokojny: 3 km, tempo 7:54-9:11 min/km, tętno 110-129 (Z2), Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz",
+        "kroki": [
+          {
+            "etap": "Bieg spokojny",
+            "dystans_km": 3,
+            "tempo": "7:54-9:11",
+            "tetno": "110-129 (Z2)",
+            "uwagi": "Tempo rozmowy/RPE ma pierwszeństwo; tętno szacowane, orientacyjne. Jeśli czujesz nadmierny wysiłek, zwolnij lub wstaw krótki marsz"
+          }
+        ],
+        "odciazenie": false,
+        "faza_planu": "taper",
+        "podtyp": "latwy",
+        "dlaczego": "Spokojny bieg tlenowy buduje bazę przy niewielkim koszcie zmęczenia; ma być w tempie rozmowy. Zmniejszona objętość przed startem ma dać świeżość.",
+        "etykieta": "Bieg spokojny Z2 · tlen i regeneracja",
+        "cel": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+        "rpe": "3-4/10 (rozmowa pełnymi zdaniami)",
+        "kryteria_przerwania": "Przerwij trening, gdy pojawi się ból narastający w trakcie biegu, ból w klatce piersiowej, zawroty głowy, nietypowa duszność lub ból stawu zmieniający sposób biegu. Nie dokańczaj treningu na siłę.",
+        "warianty": {
+          "skrocony": "Skróć do ok. 2.5 km w tym samym tempie.",
+          "zla_pogoda": "Bieżnia mechaniczna z nachyleniem 1% (te same tempa) lub bezpieczna pętla blisko domu. Przy burzy, gołoledzi lub silnym upale zamień na 30-40 min szybkiego marszu.",
+          "zmeczenie": "Biegnij 20-30 min bardzo spokojnie (Z1) albo zrób dzień wolny, jeśli zmęczenie nie mija po rozgrzewce."
+        },
+        "raportuj": "Wpisz dystans, czas, średnie tętno, odczucie 1-5 i RPE.",
+        "intensywnosc": {
+          "celFizjologiczny": "Rozwój bazy tlenowej i regeneracja przy niskim koszcie zmęczenia.",
+          "wiarygodnoscTetna": "szacowane",
+          "rpeOrientacyjne": 3,
+          "tempoOrientacyjne": true,
+          "priorytet": "RPE i test rozmowy",
+          "obciazenieSzacunkowe": 78
+        }
+      }
+    ],
+    "tygodnie": [
+      {
+        "tydzien": 1,
+        "od": "2026-11-02",
+        "faza": "baza",
+        "km": 12,
+        "treningi": 3,
+        "biegi": 3,
+        "dni_biegowe": [
+          "2026-11-03",
+          "2026-11-06",
+          "2026-11-08"
+        ],
+        "uzupelniajace": 0,
+        "dlugiBiegKm": 5,
+        "obciazenieSzacunkowe": 352,
+        "obciazenieTreningow": 352,
+        "obciazenieZawodowSzacunkowe": 0,
+        "obciazenieUwzgledniaZawody": false,
+        "obciazenieZrodlo": "szacunek min×RPE; zawody według czasu planu, nie pomiaru"
+      },
+      {
+        "tydzien": 2,
+        "od": "2026-11-09",
+        "faza": "baza",
+        "km": 13,
+        "treningi": 3,
+        "biegi": 3,
+        "dni_biegowe": [
+          "2026-11-10",
+          "2026-11-13",
+          "2026-11-15"
+        ],
+        "uzupelniajace": 0,
+        "dlugiBiegKm": 5,
+        "obciazenieSzacunkowe": 376,
+        "obciazenieTreningow": 376,
+        "obciazenieZawodowSzacunkowe": 0,
+        "obciazenieUwzgledniaZawody": false,
+        "obciazenieZrodlo": "szacunek min×RPE; zawody według czasu planu, nie pomiaru"
+      },
+      {
+        "tydzien": 3,
+        "od": "2026-11-16",
+        "faza": "budowanie",
+        "km": 14,
+        "treningi": 3,
+        "biegi": 3,
+        "dni_biegowe": [
+          "2026-11-17",
+          "2026-11-20",
+          "2026-11-22"
+        ],
+        "uzupelniajace": 0,
+        "dlugiBiegKm": 6,
+        "obciazenieSzacunkowe": 412,
+        "obciazenieTreningow": 412,
+        "obciazenieZawodowSzacunkowe": 0,
+        "obciazenieUwzgledniaZawody": false,
+        "obciazenieZrodlo": "szacunek min×RPE; zawody według czasu planu, nie pomiaru"
+      },
+      {
+        "tydzien": 4,
+        "od": "2026-11-23",
+        "faza": "budowanie",
+        "km": 15,
+        "treningi": 4,
+        "biegi": 4,
+        "dni_biegowe": [
+          "2026-11-24",
+          "2026-11-25",
+          "2026-11-27",
+          "2026-11-29"
+        ],
+        "uzupelniajace": 0,
+        "dlugiBiegKm": 6,
+        "obciazenieSzacunkowe": 442,
+        "obciazenieTreningow": 442,
+        "obciazenieZawodowSzacunkowe": 0,
+        "obciazenieUwzgledniaZawody": false,
+        "obciazenieZrodlo": "szacunek min×RPE; zawody według czasu planu, nie pomiaru"
+      },
+      {
+        "tydzien": 5,
+        "od": "2026-11-30",
+        "faza": "szczyt",
+        "km": 16,
+        "treningi": 4,
+        "biegi": 4,
+        "dni_biegowe": [
+          "2026-12-01",
+          "2026-12-02",
+          "2026-12-04",
+          "2026-12-06"
+        ],
+        "uzupelniajace": 0,
+        "dlugiBiegKm": 7,
+        "obciazenieSzacunkowe": 478,
+        "obciazenieTreningow": 478,
+        "obciazenieZawodowSzacunkowe": 0,
+        "obciazenieUwzgledniaZawody": false,
+        "obciazenieZrodlo": "szacunek min×RPE; zawody według czasu planu, nie pomiaru"
+      },
+      {
+        "tydzien": 6,
+        "od": "2026-12-07",
+        "faza": "zwolnienie",
+        "km": 12,
+        "treningi": 4,
+        "biegi": 4,
+        "dni_biegowe": [
+          "2026-12-08",
+          "2026-12-09",
+          "2026-12-11",
+          "2026-12-13"
+        ],
+        "uzupelniajace": 0,
+        "dlugiBiegKm": 0,
+        "obciazenieSzacunkowe": 312,
+        "obciazenieTreningow": 312,
+        "obciazenieZawodowSzacunkowe": 0,
+        "obciazenieUwzgledniaZawody": false,
+        "obciazenieZrodlo": "szacunek min×RPE; zawody według czasu planu, nie pomiaru"
+      },
+      {
+        "tydzien": 7,
+        "od": "2026-12-14",
+        "faza": "zwolnienie",
+        "km": 48.2,
+        "treningi": 3,
+        "biegi": 3,
+        "dni_biegowe": [
+          "2026-12-15",
+          "2026-12-18",
+          "2026-12-20"
+        ],
+        "uzupelniajace": 0,
+        "dlugiBiegKm": 0,
+        "start": {
+          "data": "2026-12-20",
+          "dystans_km": 42.2,
+          "uwzglednionyWKilometrazu": true
+        },
+        "obciazenieSzacunkowe": 2226,
+        "obciazenieTreningow": 156,
+        "obciazenieZawodowSzacunkowe": 2070,
+        "obciazenieUwzgledniaZawody": true,
+        "obciazenieZrodlo": "szacunek min×RPE; zawody według czasu planu, nie pomiaru"
+      }
+    ],
+    "limityNieosiagniete": [],
+    "wykonalnosc": {
+      "poziom": "niewykonalna",
+      "konflikty": [
+        {
+          "kod": "CEL_CZASOWY",
+          "opis": "Cel czasowy przekracza ocenioną gotowość; zwykły plan jest alternatywą według aktualnej formy.",
+          "poziom": "niewykonalna"
+        },
+        {
+          "kod": "BRAK_CZASU_NA_ADAPTACJE",
+          "opis": "Termin i obecna baza nie pozwalają bezpiecznie zbudować przygotowania; plan służy podtrzymaniu, rozważ rezygnację ze startu.",
+          "poziom": "niewykonalna"
+        },
+        {
+          "kod": "MARATON_BRAK_BAZY",
+          "opis": "Maraton przy bazie 12 km tygodniowo i najdłuższym biegu 6 km w 6.9 tyg. wymagałby zbyt szybkiego wzrostu obciążeń (plan nie kompensuje braku bazy gwałtownym zwiększaniem kilometrażu).",
+          "poziom": "niewykonalna"
+        }
+      ],
+      "zalecenia": [
+        "Rozważ półmaraton albo maraton w późniejszym terminie (min. 4 biegi tygodniowo i baza min. ok. 38 km tygodniowo oraz najdłuższy bieg ok. 22 km).",
+        "Dodaj 5. trening biegowy w tygodniu",
+        "Przesuń start o 4 tygodnie (2027-01-17)",
+        "Zmień cel na półmaraton w tym samym terminie (bezpieczniejszy przy obecnej bazie i liczbie biegów)"
+      ]
+    },
+    "dlugieSkroconePrzedStartem": [],
+    "ocena": {
+      "vdot": 28,
+      "zrodloVdot": "szacunek",
+      "prognoza": {
+        "5k": 1949,
+        "10k": 4056,
+        "half": 9208,
+        "marathon": 19439
+      },
+      "tygodnie": 7,
+      "werdykt": "nierealny",
+      "sugerowanyCzas": 17739,
+      "wiadomosci": [
+        "Brak wiarygodnego aktualnego wyniku: prognoza tempa i konkretnego czasu jest orientacyjna.",
+        "Cel 3:00:00 wymaga poprawy formy o ok. 91.2%, a w tym czasie realnie da się uzyskać ok. 5.6%. Proponowany czas: 4:55:39."
+      ],
+      "pewnoscOceny": "niska",
+      "minimalneTygodnie": 24,
+      "wymaganyWzrost": "91.2%",
+      "mozliwyWzrost": "5.6%",
+      "cel": {
+        "zadany": "3:00:00",
+        "tempoZadane": "4:16",
+        "planowany": "4:55:39",
+        "tempoPlanowane": "7:00",
+        "zgodny": false
+      }
+    },
+    "kontrola": {
+      "zgodny": true,
+      "problemy": [],
+      "szczegoly": [],
+      "bledy": [
+        {
+          "kod": "TAPER_BEZ_BODZCOW",
+          "poziom": "sugestia",
+          "dataLubTydzien": null,
+          "tydzien": null,
+          "data": null,
+          "trening": null,
+          "rodzaj": "tapering",
+          "przyczyna": "W taperingu nie ma żadnego krótkiego bodźca intensywności; spadek objętości powinien iść w parze z zachowaniem krótkich odcinków w tempie startowym.",
+          "opis": "W taperingu nie ma żadnego krótkiego bodźca intensywności; spadek objętości powinien iść w parze z zachowaniem krótkich odcinków w tempie startowym.",
+          "naprawa": null,
+          "dane": null,
+          "mozliwaKonsekwencja": "Opcjonalna poprawa jakości planu."
+        }
+      ],
+      "bledyKrytyczne": [],
+      "ostrzezenia": [],
+      "sugestie": [
+        "W taperingu nie ma żadnego krótkiego bodźca intensywności; spadek objętości powinien iść w parze z zachowaniem krótkich odcinków w tempie startowym."
+      ],
+      "liczbaBledowKrytycznych": 0,
+      "liczbaOstrzezen": 0,
+      "liczbaSugestii": 1,
+      "kodyBledow": {
+        "TAPER_BEZ_BODZCOW": 1
+      },
+      "czestotliwosc": {
+        "zadeklarowaneDni": 4,
+        "doceloweDni": 4,
+        "zaplanowaneDni": 4,
+        "maksymalnaFaktycznaLiczbaBiegowWTygodniu": 4,
+        "sredniaBiegowWTydzien": 3.3
+      },
+      "szczytDlugiegoBiegu": {
+        "km": 7,
+        "data": "2026-12-06",
+        "dniPrzedStartem": 14,
+        "liczbaPowtorzenSzczytu": 1,
+        "pierwszeWystapienie": "2026-12-06",
+        "ostatnieWystapienie": "2026-12-06"
+      },
+      "szczytTygodniowegoKilometrazu": {
+        "km": 48.2,
+        "tydzienOd": "2026-12-14"
+      },
+      "dlugieProgresywne": {
+        "dlugichWBudowieISzczycie": 3,
+        "progresywnych": 0
+      },
+      "udzialMocnychProc": 0,
+      "maxWzrostTygodniowyProc": 8.3,
+      "najdluzszyBiegKm": 7,
+      "maxTygodniowyKm": 48.2
+    },
+    "naprawa": null,
+    "ograniczeniaCzasowe": {
+      "limitDniRoboczychMin": 120,
+      "limitWeekendMin": 210,
+      "limitPodanyPrzezUzytkownika": false,
+      "skroconeDlugieBiegi": 0,
+      "pominiteDlugieBiegi": 0,
+      "pominieteAkcentyZPowoduCzasu": 0,
+      "skroconeBiegiSpokojne": 0,
+      "zmianyPoZaokragleniu": 0,
+      "pominieteUzupelniajace": 0,
+      "komunikat": null
+    },
+    "decyzjePlanera": {
+      "jakoscPominietaBoSasiedztwoZDlugimBiegiem": 0,
+      "testyPominieteBoNieMiescilySieWBudzecie": 0,
+      "kmDopelnionychWJednostkachJakosciowych": 0,
+      "kmPonadLimityBiegowSpokojnych": 0,
+      "dlugiBiegSkroconyDlaUdzialu": 0,
+      "biegiZdjeteDlaLimituPowrotu": 0
+    },
+    "ocenaCelu": {
+      "mozliwoscPlanu": {
+        "status": "plan_wygenerowany",
+        "uzasadnienie": [
+          "Audyt: 0 błędów krytycznych, 0 ostrzeżeń."
+        ]
+      },
+      "mozliwoscUkonczenia": {
+        "status": "niewystarczajace_przygotowanie",
+        "uzasadnienie": [
+          "Plan osiąga najdłuższy bieg 7 km (kryterium orientacyjne 28 km) i 16 km tygodniowo (kryterium 45 km).",
+          "Czas przygotowań (6.9 tyg.) jest krótszy niż minimum 24 tyg.",
+          "Obecna baza (kilometraż i najdłuższy bieg) jest zbyt mała na maraton."
+        ]
+      },
+      "realnoscWyniku": {
+        "status": "niewystarczajace_dane",
+        "uzasadnienie": [
+          "Brak aktualnego wyniku lub testu: nie da się wiarygodnie ocenić, czy czas docelowy jest realny. Wykonaj bieg testowy 3-5 km lub podaj ostatni wynik zawodów."
+        ]
+      },
+      "pewnosc": "niska",
+      "zastrzezenie": "Ocena jest szacunkiem na podstawie podanych danych i nie gwarantuje wyniku.",
+      "rekomendacja": {
+        "status": "cel_niezalecany_przy_obecnych_danych",
+        "opis": "Przy tych danych plan nie przygotuje do bezpiecznego ukończenia dystansu. Rozważ krótszy dystans, późniejszy termin albo więcej dni biegowych (patrz proponowaneZmiany).",
+        "alternatywy": [
+          "Dodaj 5. trening biegowy w tygodniu",
+          "Przesuń start o 4 tygodnie (2027-01-17)",
+          "Zmień cel na półmaraton w tym samym terminie (bezpieczniejszy przy obecnej bazie i liczbie biegów)",
+          "Zmień cel czasowy na 4:55:39 (realny przy obecnej formie)",
+          "Zostań przy swoich ustawieniach: plan i tak powstaje, ale cel może być nie do osiągnięcia"
+        ]
+      },
+      "klasyfikacja": {
+        "przygotowanieDoUkonczenia": false,
+        "przygotowanieDoKonkretnegoCzasu": false,
+        "bazaNiewystarczajacaDoBezpiecznegoStartu": true,
+        "mozliwePrzygotowanieOdpowiedzialne": false,
+        "powody": [
+          "Obecna baza (12 km tygodniowo, najdłuższy bieg 6 km) jest za mała, by odpowiedzialnie zacząć przygotowania do maratonu w tym terminie.",
+          "Czas przygotowań (6.9 tyg.) jest krótszy niż minimum 24 tyg."
+        ]
+      }
+    },
+    "spojnoscTemp": {
+      "ok": true,
+      "maxOdchylenieProc": 0,
+      "sprawdzone": 0
+    },
+    "kompletnosc": {
+      "poziom1_wymagane": {
+        "podane": 7,
+        "razem": 10,
+        "brakuje": [
+          "ostatni wynik lub ocena formy",
+          "kontuzje i ograniczenia",
+          "dostępność czasowa"
+        ]
+      },
+      "poziom2_personalizacja": {
+        "podane": 0,
+        "razem": 9,
+        "brakuje": [
+          "historia treningów z 8-12 tygodni",
+          "tempo spokojnego biegu z historii",
+          "tętno maksymalne i spoczynkowe",
+          "wyniki na kilku dystansach",
+          "preferowane dni lub dzień długiego biegu",
+          "teren i podbiegi",
+          "trening siłowy",
+          "sen i regeneracja (samopoczucie po treningach)",
+          "historia przeciążeń"
+        ]
+      },
+      "poziom3_opcjonalne": {
+        "podane": 0,
+        "razem": 5,
+        "brakuje": [
+          "tętno progowe",
+          "tempo progowe",
+          "VO2max z wiarygodnego testu",
+          "HRV",
+          "import plików FIT/GPX"
+        ]
+      },
+      "pewnosc": "niska",
+      "uwaga": "Uzupełnienie brakujących danych poprawi dokładność planu i prognoz. Brak danych opcjonalnych nie blokuje planu."
+    },
+    "jakoscDanych": {
+      "tetnoMaksymalne": "szacowane (208 − 0,7 × wiek)",
+      "tetnoSpoczynkowe": "brak",
+      "tetnoProgowe": "brak",
+      "forma": "szacunek (brak wiarygodnego wyniku)",
+      "zrodloFormy": null,
+      "tempaSpokojne": "z modelu",
+      "historia": "brak",
+      "uwaga": "Wartości z zegarka (VO2max, tętno nadgarstkowe) traktuj jako szacunki, nie pomiar laboratoryjny."
+    },
+    "regeneracjaPoStarcie": {
+      "zalecenia": [
+        {
+          "dni": "1-8",
+          "opis": "Bez biegania: spacer, lekki rower lub pływanie bez wysiłku, dużo snu."
+        },
+        {
+          "dni": "9-15",
+          "opis": "Powrót do biegania: 20-30 min bardzo spokojnie (Z1-Z2), tylko jeśli nic nie boli. Bez przebieżek, interwałów i długich biegów. Objętość ok. 50-70% sprzed startu."
+        },
+        {
+          "dni": "od 29",
+          "opis": "Stopniowy powrót do mocniejszych treningów, jeśli zmęczenie minęło. Zacznij od planu na nowy cel."
+        }
+      ],
+      "uwaga": "Jeśli ból utrzymuje się dłużej niż kilka dni albo nasila się, skonsultuj się z lekarzem lub fizjoterapeutą."
+    },
+    "przygotowanie": {
+      "dostepneTygodnie": 6.9,
+      "dniDoStartu": 48,
+      "minimum": 24,
+      "optymalnie": 24,
+      "tryb": "skrócony",
+      "ryzyko": "wysokie",
+      "komunikat": "Do startu zostało 6.9 tyg., a na maraton zalecamy 24 tyg. przygotowań (minimum 24). Plan jest skrócony: utrzymuje i delikatnie rozwija formę, nie buduje jej od zera. Ryzyko startu jest wysokie: rozważ krótszy dystans, start bez parcia na czas (z marszobiegiem) albo późniejszy termin. Bezpieczeństwo jest ważniejsze niż wynik."
+    },
+    "gotowosc": {
+      "ok": false,
+      "status": "niewystarczajace_przygotowanie",
+      "rozdzielenie": {
+        "bazaBezpieczna": false,
+        "bazaMinimalna": {
+          "kmTygodniowo": 24,
+          "najdluzszyBiegKm": 12
+        },
+        "mozliwoscUkonczenia": false,
+        "ukonczenieBezLimituCzasu": false,
+        "doKonkretnegoWyniku": false,
+        "etykieta": "brak_bezpiecznej_bazy",
+        "wynikBrakuje": [
+          "wiarygodny, aktualny wynik odniesienia",
+          "progi do wyniku (najdluzszy bieg 30 km, 50 km/tydz., min. 4 biegi)"
+        ]
+      },
+      "wynikWiarygodnyPowody": [
+        "brak wiarygodnego i aktualnego wyniku odniesienia"
+      ],
+      "wskaznik": 0.3,
+      "czestotliwoscOk": true,
+      "minimalnaCzestotliwosc": 4,
+      "czasPrzygotowaniaOk": false,
+      "minimalneTygodnie": 24,
+      "taperTygodnie": 2,
+      "taperOk": true,
+      "dlugiBiegOk": false,
+      "kilometrazOk": false,
+      "bazaMaratonskaOk": false,
+      "pewnoscOceny": "niska",
+      "wymagane": {
+        "najdluzszyBiegKm": 28,
+        "kmTygodniowo": 45
+      },
+      "wPlanie": {
+        "najdluzszyBiegKm": 7,
+        "kmTygodniowo": 16
+      }
+    },
+    "proponowaneZmiany": [
+      {
+        "opis": "Dodaj 5. trening biegowy w tygodniu",
+        "zmiana": {
+          "daysPerWeek": 5
+        },
+        "wynik": {
+          "werdykt": "nierealny",
+          "najdluzszyBiegKm": 7,
+          "kmTygodniowo": 16,
+          "gotowosc": "nadal za mała"
+        }
+      },
+      {
+        "opis": "Przesuń start o 4 tygodnie (2027-01-17)",
+        "zmiana": {
+          "goal": {
+            "type": "marathon",
+            "raceDate": "2027-01-17",
+            "targetTimeSec": 10800
+          }
+        },
+        "wynik": {
+          "werdykt": "nierealny",
+          "najdluzszyBiegKm": 8,
+          "kmTygodniowo": 18,
+          "gotowosc": "nadal za mała"
+        }
+      },
+      {
+        "opis": "Zmień cel na półmaraton w tym samym terminie (bezpieczniejszy przy obecnej bazie i liczbie biegów)",
+        "zmiana": {
+          "goal": {
+            "type": "half",
+            "raceDate": "2026-12-20"
+          }
+        },
+        "wynik": {
+          "werdykt": "brak celu czasowego",
+          "najdluzszyBiegKm": 6,
+          "kmTygodniowo": 16,
+          "gotowosc": "nadal za mała"
+        }
+      },
+      {
+        "opis": "Zmień cel czasowy na 4:55:39 (realny przy obecnej formie)",
+        "zmiana": {
+          "goal": {
+            "type": "marathon",
+            "raceDate": "2026-12-20",
+            "targetTimeSec": 17739
+          }
+        }
+      },
+      {
+        "opis": "Zostań przy swoich ustawieniach: plan i tak powstaje, ale cel może być nie do osiągnięcia",
+        "zmiana": {}
+      }
+    ],
+    "zmianyPrzezStarty": [],
+    "jakRaportowac": "Po treningu wpisz: dystans, czas, średnie tętno, odczucie 1-5, RPE 1-10 oraz ewentualny ból (miejsce i siła 0-10). Przy treningach tempowych, interwałach, podbiegach, testach i startach dodaj część główną: łączny dystans i czas samych odcinków lub bloków. Dane z zegarka oznaczaj jako szacunki.",
+    "strategiaStartu": {
+      "dystansKm": 42.2,
+      "czasDocelowy": "4:55:39",
+      "sredniePace": "7:00",
+      "odcinki": [
+        {
+          "odcinek": "0-5 km",
+          "tempo": "7:08",
+          "czasNaKoncuOdcinka": "35:39",
+          "uwaga": "spokojny początek, nie daj się ponieść tłumowi"
+        },
+        {
+          "odcinek": "5-32 km",
+          "tempo": "6:59",
+          "czasNaKoncuOdcinka": "3:44:23",
+          "uwaga": "równe, kontrolowane tempo"
+        },
+        {
+          "odcinek": "32-42.2 km",
+          "tempo": "6:59",
+          "czasNaKoncuOdcinka": "4:55:39",
+          "uwaga": "równe, kontrolowane tempo"
+        }
+      ],
+      "czasyPosrednie": [
+        {
+          "km": 5,
+          "czas": "35:39"
+        },
+        {
+          "km": 10,
+          "czas": "1:10:36"
+        },
+        {
+          "km": 15,
+          "czas": "1:45:33"
+        },
+        {
+          "km": 20,
+          "czas": "2:20:30"
+        },
+        {
+          "km": 25,
+          "czas": "2:55:27"
+        },
+        {
+          "km": 30,
+          "czas": "3:30:24"
+        },
+        {
+          "km": 35,
+          "czas": "4:05:21"
+        },
+        {
+          "km": 40,
+          "czas": "4:40:18"
+        },
+        {
+          "km": 42.2,
+          "czas": "4:55:39"
+        }
+      ],
+      "kontrolaTetna": "Przez pierwszą 1/3 dystansu trzymaj tętno poniżej 166 (górna granica Z4). Jeśli jest wyżej, zwolnij.",
+      "odzywianie": "30-60 g węglowodanów na godzinę: żel co 30-40 min, pierwszy po ok. 40 min. Woda lub napój izotoniczny na każdym punkcie, nie czekaj na pragnienie. Przetestuj ten sam żel na długich biegach.",
+      "rozgrzewka": "Tylko 5 min truchtu i mobilizacja, oszczędzaj siły.",
+      "wskazowki": [
+        "Nie zmieniaj niczego w dniu startu: buty, jedzenie, żele.",
+        "Śniadanie 2,5-3 h przed startem, znane i lekkostrawne.",
+        "Zacznij wolniej niż plan. Kto zaczyna za szybko, płaci w końcówce."
+      ]
+    },
+    "strefyTetna": [
+      {
+        "strefa": "Z1",
+        "od": 92,
+        "do": 110
+      },
+      {
+        "strefa": "Z2",
+        "od": 110,
+        "do": 129
+      },
+      {
+        "strefa": "Z3",
+        "od": 129,
+        "do": 147
+      },
+      {
+        "strefa": "Z4",
+        "od": 147,
+        "do": 166
+      },
+      {
+        "strefa": "Z5",
+        "od": 166,
+        "do": 184
+      }
+    ],
+    "tempaPlanu": {
+      "czasPlanu": "4:55:39",
+      "vdotPlanu": 28,
+      "tempoProgowe": "6:46-7:01",
+      "interwal": "6:07-6:22",
+      "startowe": "7:00"
+    },
+    "tempa": {
+      "regeneracyjne": "8:38-9:45",
+      "latwe": "7:54-9:11",
+      "dlugieWybieganie": "8:04-9:17",
+      "umiarkowane": "7:08-7:58",
+      "tempo": "6:37-7:13",
+      "progowe": "6:37-7:13",
+      "interwal": "5:56-6:33",
+      "startowe": "7:00",
+      "sterowanie": "RPE i test rozmowy mają pierwszeństwo; zakresy tempa to orientacyjny szacunek",
+      "rpe": {
+        "regeneracja": "1–2",
+        "latwy": "2–3",
+        "dlugi": "3–4",
+        "tempo": "6–7",
+        "interwaly": "7–8",
+        "rytmy": "swobodnie, bez sprintu"
+      },
+      "pewnosc": "niska: zakresy poszerzone, bo brak wiarygodnego wyniku lub testu",
+      "uwaga": "Tempa docelowego nie używa się na zwykłych treningach: pojawia się tylko w jednostkach w tempie startowym."
+    },
+    "ostrzezenia": [
+      "Wykonalność celu: niewykonalna. Cel czasowy przekracza ocenioną gotowość; zwykły plan jest alternatywą według aktualnej formy. Termin i obecna baza nie pozwalają bezpiecznie zbudować przygotowania; plan służy podtrzymaniu, rozważ rezygnację ze startu. Maraton przy bazie 12 km tygodniowo i najdłuższym biegu 6 km w 6.9 tyg. wymagałby zbyt szybkiego wzrostu obciążeń (plan nie kompensuje braku bazy gwałtownym zwiększaniem kilometrażu).",
+      "Brak wiarygodnego aktualnego wyniku: prognoza tempa i konkretnego czasu jest orientacyjna.",
+      "Cel 3:00:00 wymaga poprawy formy o ok. 91.2%, a w tym czasie realnie da się uzyskać ok. 5.6%. Proponowany czas: 4:55:39.",
+      "Do startu zostało 6.9 tyg., a na maraton zalecamy 24 tyg. przygotowań (minimum 24). Plan jest skrócony: utrzymuje i delikatnie rozwija formę, nie buduje jej od zera. Ryzyko startu jest wysokie: rozważ krótszy dystans, start bez parcia na czas (z marszobiegiem) albo późniejszy termin. Bezpieczeństwo jest ważniejsze niż wynik.",
+      "Plan jest zbudowany pod czas 4:55:39 (7:00 min/km), bo cel 3:00:00 (4:16 min/km) jest dla obecnej formy i czasu przygotowań zbyt ambitny. Jeśli chcesz zostać przy swoim celu mimo ryzyka, ustaw trzymajCel: true.",
+      "Wskazówka: przy Twoim profilu warto dodać 1 trening siłowy w tygodniu. Możesz to włączyć w ustawieniach planu.",
+      "Brak bezpiecznej bazy do dystansu maraton: potrzeba co najmniej 24 km tygodniowo i najdluzszego biegu 12 km (masz 12 km i 6 km). Plan odbudowuje baze stopniowo, ale do startu nie da sie z niej bezpiecznie dojsc do pelnej gotowosci: rozwaz pozniejszy start albo krotszy dystans.",
+      "Ocena przygotowania: niewystarczajace przygotowanie. Przy 4 biegach tygodniowo plan osiąga najdłuższy bieg 7 km i 16 km tygodniowo; kryteria orientacyjne to 28 km i 45 km. Niespełnione kryteria: czas krótszy niż 24 tyg.; za krótki długi bieg; za mała objętość tygodniowa; niewystarczająca baza maratońska. Ocena gotowości nie gwarantuje wyniku.",
+      "Tętno maksymalne jest szacowane wzorem 208 − 0,7 × wiek. Jeśli znasz swoje prawdziwe HRmax, wpisz je w profilu."
+    ]
+  },
+  "assessmentV23": {
+    "version": "23.0.0",
+    "total": 3.448,
+    "weightedTotal": 6.895,
+    "goalFactor": 0.5,
+    "components": {
+      "bezpieczenstwo": {
+        "weight": 25,
+        "criteria": [
+          {
+            "code": "OGLEDNOSC",
+            "weight": 0.4,
+            "value": 1,
+            "reason": "Brak naruszeń to podstawa bezpieczeństwa, nie dowód skuteczności."
+          },
+          {
+            "code": "ODCIAZENIA",
+            "weight": 0.3,
+            "value": 1,
+            "reason": "Lżejsze tygodnie w dłuższym planie."
+          },
+          {
+            "code": "REGENERACJA_POWYSILKOWA",
+            "weight": 0.3,
+            "value": 1,
+            "reason": "Odstępy między ciężkimi jednostkami sprawdzane osobno."
+          }
+        ],
+        "issues": [],
+        "positive": 10,
+        "score": 10
+      },
+      "indywidualizacja": {
+        "weight": 20,
+        "criteria": [
+          {
+            "code": "BAZA_REALNA",
+            "weight": 0.25,
+            "value": 1,
+            "reason": "Porównanie pierwszego pełnego tygodnia z efektywną bazą."
+          },
+          {
+            "code": "OGRANICZENIA",
+            "weight": 0.25,
+            "value": 1,
+            "reason": "Rzeczywista dostępność."
+          },
+          {
+            "code": "HISTORIA_I_STAZ",
+            "weight": 0.2,
+            "value": 0.4,
+            "reason": "Nieznana historia/staż zmniejsza pewność oceny, nie udaje personalizacji."
+          },
+          {
+            "code": "INTENSYWNOSC_I_NIEPEWNOSC",
+            "weight": 0.2,
+            "value": 1,
+            "reason": "Oddzielenie RPE i wiarygodności danych."
+          },
+          {
+            "code": "CEL",
+            "weight": 0.1,
+            "value": 0.4,
+            "reason": "Ocena kontekstu celu na podstawie wejścia i wyniku; sama etykieta generatora nie daje punktów."
+          }
+        ],
+        "issues": [],
+        "positive": 8.2,
+        "score": 8.2
+      },
+      "progresja": {
+        "weight": 15,
+        "criteria": [
+          {
+            "code": "OBJETOSC_W_KONTEKSCIE_CELU",
+            "weight": 0.35,
+            "value": 0.385,
+            "reason": "Utrzymanie formy nie wymaga wzrostu km; poprawa/ukończenie ocenia rozwój odpowiedniej bazy."
+          },
+          {
+            "code": "EWOLUCJA_BODZCA",
+            "weight": 0.35,
+            "value": 0.3,
+            "reason": "Zmiana dawki części głównej, bez wymogu ciągłego wzrostu."
+          },
+          {
+            "code": "STABILIZACJA",
+            "weight": 0.3,
+            "value": 1,
+            "reason": "Stabilizacja i odciążenie, zamiast wzrostu wszystkiego naraz."
+          }
+        ],
+        "issues": [],
+        "positive": 5.397,
+        "score": 5.397
+      },
+      "dystans": {
+        "weight": 15,
+        "criteria": [
+          {
+            "code": "BAZA_DO_DYSTANSU",
+            "weight": 0.6,
+            "value": 0.25,
+            "reason": "Efektywna częstotliwość, objętość i najdłuższa jednostka; progi są heurystyczne."
+          },
+          {
+            "code": "SPECYFICZNY_BODZIEC",
+            "weight": 0.4,
+            "value": 0.2,
+            "reason": "Odcinki właściwe dla dystansu, z ostrożnym ograniczeniem przy niskiej gotowości."
+          }
+        ],
+        "issues": [
+          {
+            "code": "ZA_KROTKI_HORYZONT",
+            "severity": 0.5,
+            "reason": "Horyzont poniżej orientacyjnego minimum dla dystansu.",
+            "date": null
+          }
+        ],
+        "positive": 2.3,
+        "score": 1.904
+      },
+      "jakosc": {
+        "weight": 15,
+        "criteria": [
+          {
+            "code": "CELOWA_ROZNORODNOSC",
+            "weight": 0.35,
+            "value": 0.4,
+            "reason": "Różne recepty części głównej; rozgrzewki ani nazwy nie zwiększają różnorodności."
+          },
+          {
+            "code": "DAWKA_BEZ_NADMIARU",
+            "weight": 0.35,
+            "value": 0,
+            "reason": "Oczekiwanie jakości dotyczy przygotowanego biegacza; nadmiar jest karany osobno."
+          },
+          {
+            "code": "WEJSCIE_W_JAKOSC",
+            "weight": 0.3,
+            "value": 1,
+            "reason": "Wczesny łagodny bodziec dla przygotowanych; początkujący nie jest karany za bazę."
+          }
+        ],
+        "issues": [],
+        "positive": 4.4,
+        "score": 4.4
+      },
+      "kalendarz": {
+        "weight": 10,
+        "criteria": [
+          {
+            "code": "TAPER",
+            "weight": 0.5,
+            "value": 1,
+            "reason": "Redukcja objętości treningów przed startem; dystans zawodów raportowany osobno."
+          },
+          {
+            "code": "LIMIT_JEDNOSTEK_Z_ZAWODAMI",
+            "weight": 0.3,
+            "value": 1,
+            "reason": "Zawody wliczają się do liczby jednostek."
+          },
+          {
+            "code": "ODSTEPY",
+            "weight": 0.2,
+            "value": 1,
+            "reason": "Każda kolizja i jednostka tuż przed startem jest osobną karą."
+          }
+        ],
+        "issues": [],
+        "positive": 10,
+        "score": 10
+      }
+    },
+    "issues": [
+      {
+        "code": "ZA_KROTKI_HORYZONT",
+        "severity": 0.5,
+        "reason": "Horyzont poniżej orientacyjnego minimum dla dystansu.",
+        "date": null,
+        "category": "dystans"
+      }
+    ],
+    "metrics": {
+      "intent": "ukonczenie",
+      "weeks": 7,
+      "peakKm": 16,
+      "meanKm": 12.571,
+      "longest": 7,
+      "maxTrainingDays": 4,
+      "maxDaysWithRace": 4,
+      "quality": 0,
+      "uniqueRecipes": 0,
+      "recipeDiversity": 0,
+      "firstQualityDay": null,
+      "adequacy": 0.25,
+      "taperReferenceKm": 16
+    },
+    "heuristic": true,
+    "clinicalValidation": false,
+    "limitations": [
+      "Punktacja nie dowodzi skuteczności na biegaczach.",
+      "Indywidualizacja między profilami wymaga także testów metamorfcznych.",
+      "Minima dystansowe, RPE i wagi jakości są heurystykami."
+    ]
+  },
+  "assessmentV24": {
+    "version": "23.0.0",
+    "total": 3.448,
+    "weightedTotal": 6.895,
+    "goalFactor": 0.5,
+    "components": {
+      "bezpieczenstwo": {
+        "weight": 25,
+        "criteria": [
+          {
+            "code": "OGLEDNOSC",
+            "weight": 0.4,
+            "value": 1,
+            "reason": "Brak naruszeń to podstawa bezpieczeństwa, nie dowód skuteczności."
+          },
+          {
+            "code": "ODCIAZENIA",
+            "weight": 0.3,
+            "value": 1,
+            "reason": "Lżejsze tygodnie w dłuższym planie."
+          },
+          {
+            "code": "REGENERACJA_POWYSILKOWA",
+            "weight": 0.3,
+            "value": 1,
+            "reason": "Odstępy między ciężkimi jednostkami sprawdzane osobno."
+          }
+        ],
+        "issues": [],
+        "positive": 10,
+        "score": 10
+      },
+      "indywidualizacja": {
+        "weight": 20,
+        "criteria": [
+          {
+            "code": "BAZA_REALNA",
+            "weight": 0.25,
+            "value": 1,
+            "reason": "Porównanie pierwszego pełnego tygodnia z efektywną bazą."
+          },
+          {
+            "code": "OGRANICZENIA",
+            "weight": 0.25,
+            "value": 1,
+            "reason": "Rzeczywista dostępność."
+          },
+          {
+            "code": "HISTORIA_I_STAZ",
+            "weight": 0.2,
+            "value": 0.4,
+            "reason": "Nieznana historia/staż zmniejsza pewność oceny, nie udaje personalizacji."
+          },
+          {
+            "code": "INTENSYWNOSC_I_NIEPEWNOSC",
+            "weight": 0.2,
+            "value": 1,
+            "reason": "Oddzielenie RPE i wiarygodności danych."
+          },
+          {
+            "code": "CEL",
+            "weight": 0.1,
+            "value": 0.4,
+            "reason": "Ocena kontekstu celu na podstawie wejścia i wyniku; sama etykieta generatora nie daje punktów."
+          }
+        ],
+        "issues": [],
+        "positive": 8.2,
+        "score": 8.2
+      },
+      "progresja": {
+        "weight": 15,
+        "criteria": [
+          {
+            "code": "OBJETOSC_W_KONTEKSCIE_CELU",
+            "weight": 0.35,
+            "value": 0.385,
+            "reason": "Utrzymanie formy nie wymaga wzrostu km; poprawa/ukończenie ocenia rozwój odpowiedniej bazy."
+          },
+          {
+            "code": "EWOLUCJA_BODZCA",
+            "weight": 0.35,
+            "value": 0.3,
+            "reason": "Zmiana dawki części głównej, bez wymogu ciągłego wzrostu."
+          },
+          {
+            "code": "STABILIZACJA",
+            "weight": 0.3,
+            "value": 1,
+            "reason": "Stabilizacja i odciążenie, zamiast wzrostu wszystkiego naraz."
+          }
+        ],
+        "issues": [],
+        "positive": 5.397,
+        "score": 5.397
+      },
+      "dystans": {
+        "weight": 15,
+        "criteria": [
+          {
+            "code": "BAZA_DO_DYSTANSU",
+            "weight": 0.6,
+            "value": 0.25,
+            "reason": "Efektywna częstotliwość, objętość i najdłuższa jednostka; progi są heurystyczne."
+          },
+          {
+            "code": "SPECYFICZNY_BODZIEC",
+            "weight": 0.4,
+            "value": 0.2,
+            "reason": "Odcinki właściwe dla dystansu, z ostrożnym ograniczeniem przy niskiej gotowości."
+          }
+        ],
+        "issues": [
+          {
+            "code": "ZA_KROTKI_HORYZONT",
+            "severity": 0.5,
+            "reason": "Horyzont poniżej orientacyjnego minimum dla dystansu.",
+            "date": null
+          }
+        ],
+        "positive": 2.3,
+        "score": 1.904
+      },
+      "jakosc": {
+        "weight": 15,
+        "criteria": [
+          {
+            "code": "CELOWA_ROZNORODNOSC",
+            "weight": 0.35,
+            "value": 0.4,
+            "reason": "Różne recepty części głównej; rozgrzewki ani nazwy nie zwiększają różnorodności."
+          },
+          {
+            "code": "DAWKA_BEZ_NADMIARU",
+            "weight": 0.35,
+            "value": 0,
+            "reason": "Oczekiwanie jakości dotyczy przygotowanego biegacza; nadmiar jest karany osobno."
+          },
+          {
+            "code": "WEJSCIE_W_JAKOSC",
+            "weight": 0.3,
+            "value": 1,
+            "reason": "Wczesny łagodny bodziec dla przygotowanych; początkujący nie jest karany za bazę."
+          }
+        ],
+        "issues": [],
+        "positive": 4.4,
+        "score": 4.4
+      },
+      "kalendarz": {
+        "weight": 10,
+        "criteria": [
+          {
+            "code": "TAPER",
+            "weight": 0.5,
+            "value": 1,
+            "reason": "Redukcja objętości treningów przed startem; dystans zawodów raportowany osobno."
+          },
+          {
+            "code": "LIMIT_JEDNOSTEK_Z_ZAWODAMI",
+            "weight": 0.3,
+            "value": 1,
+            "reason": "Zawody wliczają się do liczby jednostek."
+          },
+          {
+            "code": "ODSTEPY",
+            "weight": 0.2,
+            "value": 1,
+            "reason": "Każda kolizja i jednostka tuż przed startem jest osobną karą."
+          }
+        ],
+        "issues": [],
+        "positive": 10,
+        "score": 10
+      }
+    },
+    "issues": [
+      {
+        "code": "ZA_KROTKI_HORYZONT",
+        "severity": 0.5,
+        "reason": "Horyzont poniżej orientacyjnego minimum dla dystansu.",
+        "date": null,
+        "category": "dystans"
+      }
+    ],
+    "metrics": {
+      "intent": "ukonczenie",
+      "weeks": 7,
+      "peakKm": 16,
+      "meanKm": 12.571,
+      "longest": 7,
+      "maxTrainingDays": 4,
+      "maxDaysWithRace": 4,
+      "quality": 0,
+      "uniqueRecipes": 0,
+      "recipeDiversity": 0,
+      "firstQualityDay": null,
+      "adequacy": 0.25,
+      "taperReferenceKm": 16
+    },
+    "heuristic": true,
+    "clinicalValidation": false,
+    "limitations": [
+      "Punktacja nie dowodzi skuteczności na biegaczach.",
+      "Indywidualizacja między profilami wymaga także testów metamorfcznych.",
+      "Minima dystansowe, RPE i wagi jakości są heurystykami."
+    ]
+  }
+}

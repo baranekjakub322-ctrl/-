@@ -1,0 +1,26 @@
+[
+  {
+    version: 'v24',
+    inputSha256: '0947bb9c68a7740a707d59e17f6e2117f68b2245c188a1d00180bc87077928d0',
+    executed: 84,
+    meanMs: 26.36911632142859,
+    medianMs: 20.002312000000074,
+    p95Ms: 63.94495000000006,
+    maxMs: 83.464383,
+    startRss: 70717440,
+    maxRssBytes: 143986688,
+    node: 'v24.19.0'
+  },
+  {
+    version: 'v25',
+    inputSha256: '0947bb9c68a7740a707d59e17f6e2117f68b2245c188a1d00180bc87077928d0',
+    executed: 84,
+    meanMs: 27.508454488095232,
+    medianMs: 20.479588999999578,
+    p95Ms: 63.95114599999988,
+    maxMs: 69.58563700000013,
+    startRss: 69558272,
+    maxRssBytes: 150802432,
+    node: 'v24.19.0'
+  }
+]

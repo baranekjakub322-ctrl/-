@@ -6,5 +6,11 @@
     "status": "FAIL_UNFINISHED_RESOLVED",
     "cause": "Missing original baseline/v23-source.sha256 and v24-source.sha256 in copied package; restored byte-for-byte from V28. No test was weakened.",
     "supersededBy": "complete run_v29.json"
+  },
+  "observedRecoveryFix": {
+    "status": "V28_COMPLETE_17_PASS_V29_INTERRUPTED",
+    "reason": "Observed Tuesday interval could be followed by Wednesday threshold. V29 now carries actual demanding dates into scheduling and final validation.",
+    "historicalResultPreserved": "historical_v28/run_v28.json",
+    "newV29Run": "run_v29.json"
   }
 }

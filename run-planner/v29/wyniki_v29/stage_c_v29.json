@@ -1,5 +1,5 @@
 {
-  "passed": 30,
+  "passed": 34,
   "failed": 0,
   "tests": [
     {
@@ -120,6 +120,22 @@
     },
     {
       "name": "single VO2 bout duration fits current pace 4200",
+      "ok": true
+    },
+    {
+      "name": "actual Tuesday accent prevents Wednesday hard session",
+      "ok": true
+    },
+    {
+      "name": "actual Friday accent prevents Sunday long when recoveryDays is three",
+      "ok": true
+    },
+    {
+      "name": "canonical execution-only timezone import affects scheduling",
+      "ok": true
+    },
+    {
+      "name": "missed demanding report is never a completed load",
       "ok": true
     }
   ]

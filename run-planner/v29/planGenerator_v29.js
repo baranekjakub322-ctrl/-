@@ -3,7 +3,7 @@ import {validateUnitCoherence} from './model/units_v29.mjs';
 import {createPlanningTrace,feasibleEnvelope,verifyWeekIntent,reconcileFinalAllocation} from './model/planning_v29.mjs';
 import {intensityEvidence,athleteEvidence} from "./model/profile_v29.mjs";
 import {buildSeason,seasonPhases,recordSeasonWeek} from "./model/season_v29.mjs";
-import {constrainedWeek,validateSafety,weekBudget,workDose} from "./model/constraints_v29.mjs";
+import {constrainedWeek,validateSafety,weekBudget,workDose,completedHardDates} from "./model/constraints_v29.mjs";
 // functions/_lib/planGenerator.js
 // Run Planner V29, rozwinięcie V26 z zachowaniem historycznego silnika i API. Czyste funkcje ESM.
 // v19: zmiany opisane w zmiany_v18_v19.md; każdy blok zmian oznaczony komentarzem „v19-Cn".
@@ -556,7 +556,7 @@ function buildWeek(c) {
   const raceWeek = c.raceWeek, shake = raceDate && I.przedStartem === "trucht" ? addDays(raceDate, -1) : null;
   const dr = (d) => (raceDate ? diffDays(d, raceDate) : 99);
   const gateLong = { "5k": 3, "10k": 4, half: 6, marathon: 8 }[I.goal.type] || 4;
-  let longItem = !raceWeek && !c.noLong ? dates.find((x) => x.dow === longDow && x.date !== shake && dr(x.date) > gateLong) : null;
+  let longItem = !raceWeek && !c.noLong ? dates.find((x) => !state.hardDates.some(d=>d<=x.date&&diffDays(d,x.date)<I.recoveryDays) && x.dow === longDow && x.date !== shake && dr(x.date) > gateLong) : null;
 
   const shakeItem = dates.find((x) => x.date === shake);
   const shakeKm = shakeItem ? 3 : 0;
@@ -991,7 +991,7 @@ function generateCore(inp) {
 
   if (I.loadTolerance === "low") ramp=1+(ramp-1)*.75;
   if (I.loadTolerance === "high" && I.recentWeeklyKm?.length>=4 && I.experienceMonths>=12 && !I.injuries) ramp=1+(ramp-1)*1.1;
-  const state = { hardDates:[], lastLong: Math.max(I.longestRecentRun, startVol * 0.3, 3), plannedLong: 0, timeNotes: { dlugiSkrocony: 0, dlugiPominiety: 0, jakoscPominietaPrzezCzas: 0, latwySkrocony: 0, auxSkrocony: 0, auxPominiety: 0 }, tempoK: 0, intervalK: 0, raceK: 0, longK: 0, hillK: 0, silaK: 0, slotK: 0, longB: 0, longProg: 0 };
+  const state = { hardDates:completedHardDates(I.completedHistory||[],I.today), lastLong: Math.max(I.longestRecentRun, startVol * 0.3, 3), plannedLong: 0, timeNotes: { dlugiSkrocony: 0, dlugiPominiety: 0, jakoscPominietaPrzezCzas: 0, latwySkrocony: 0, auxSkrocony: 0, auxPominiety: 0 }, tempoK: 0, intervalK: 0, raceK: 0, longK: 0, hillK: 0, silaK: 0, slotK: 0, longB: 0, longProg: 0 };
   state.doseByFamily={};state.familyRecipes={};state.executedProgressions={};
   for(const [key,type,family]of [['tempoK','threshold','tempo'],['intervalK','interval','interwaly'],['raceK','specific','tempo_startowe'],['hillK','hill','podbiegi']]){
     const actual=(I.completedHistory||[]).filter(o=>o.status!=='missed'&&o.sessionType===type&&o.workMinutes>0&&diffDays(o.date,I.today)<=42);
@@ -1509,7 +1509,7 @@ function generateCore(inp) {
       dzien_dlugiego_biegu: DAYNAMES[longDow],
       odstepy_miedzy_treningami_dni: gaps,
     },
-    seasonState, intentVerification, ...(planningTrace.enabled?{debugTrace:planningTrace.finish(treningi,seasonState,(DIST[g.type]||0)/1000,naprawa?.zmiany||[])}:{}), athleteEvidence:athleteEvidence(I,inp.executionObservations||inp.completedHistory||[],inp), modelMaratonu, korektyObciazen, korektyTygodniaStartowego,
+    seasonState, intentVerification, ...(planningTrace.enabled?{debugTrace:planningTrace.finish(treningi,seasonState,(DIST[g.type]||0)/1000,naprawa?.zmiany||[])}:{}), athleteEvidence:athleteEvidence(I,I.completedHistory||[],inp), modelMaratonu, korektyObciazen, korektyTygodniaStartowego,
     rejestrJakosci: qualityLedger(I,treningi),
     modelNiskiejCzestotliwosci: I.daysPerWeek<=2 ? {dni:I.daysPerWeek,cel:I.daysPerWeek===1?(gt==="health"?"aktywnosc":I.trainingIntent==="utrzymanie"?"utrzymanie_formy":["half","marathon"].includes(gt)?"baza_zamiast_pelnego_przygotowania":I.trainingIntent==="poprawa"?"poprawa_niepotwierdzona":"ukonczenie_krotkiego_dystansu"):"rozwoj_lub_latwy_plus_wytrzymalosc",pelnePrzygotowanie:false,ograniczenia:"Mała częstotliwość ogranicza rozwój; dodatkowej objętości nie wymusza się w pojedynczej jednostce."}:null,
     indywidualizacja: { poziomJakosci:I.qualityLevel || I.level,tolerancjaIntensywnosci:I.intensityTolerance || "normal",tolerancjaObjetosci:I.loadTolerance || "normal",zmeczenie:I.fatigue ?? null,bazaKm: I.currentWeeklyKm, najdluzszyKm: I.longestRecentRun, stazMiesiace: I.experienceMonths ?? null, historiaTygodni: inp.recentWeeklyKm || null, tryb: I.daysPerWeek === 1 ? "podtrzymanie" : I.daysPerWeek === 2 ? "ograniczona_rotacja" : "przygotowanie", tempaBezAutomatycznejProgresji: true },
@@ -1529,7 +1529,7 @@ export function generatePlan(input) {
   const ledger=processActivityLedger({},input.executionObservations||input.completedHistory||[],input.today,{timeZone:input.timeZone||'UTC'});if(!ledger.ok)return ledger;
   const lastSymptom=latestSymptom(ledger.observations);
   const recentFatigue=ledger.observations.filter(o=>diffDays(o.date,input.today)<=14).slice(-3).reduce((m,o)=>Math.max(m,Number(o.fatigue)||0),0);
-  const trainingInput={...input,...(lastSymptom?.pain>=3?{pain:Math.max(Number(input.pain)||0,lastSymptom.pain)}:{}),...(recentFatigue>=4?{fatigue:Math.max(Number(input.fatigue)||1,recentFatigue)}:{})};
+  const trainingInput={...input,completedHistory:ledger.completedHistory,...(lastSymptom?.pain>=3?{pain:Math.max(Number(input.pain)||0,lastSymptom.pain)}:{}),...(recentFatigue>=4?{fatigue:Math.max(Number(input.fatigue)||1,recentFatigue)}:{})};
   const planningInput=ledger.completedHistory.some(o=>o.date===input.today)?{...trainingInput,today:addDays(input.today,1)}:trainingInput;
   const result=generateCore(planningInput);if(!result.ok)return result;
   reconcileFinalAllocation(result,planningInput);
@@ -1563,7 +1563,7 @@ export function generatePlan(input) {
     t.status='planned';
   }
   result.coherenceValidation=validateUnitCoherence(result.treningi);
-  result.safetyValidation=validateSafety(input,result);
+  result.safetyValidation=validateSafety({...input,completedHistory:ledger.completedHistory},result);
   result.weekReadiness={status:result.safetyValidation.critical?'niewykonalny_harmonogram':Number(trainingInput.fatigue)>=4?'ostrozny_powrot':'warunkowo_mozliwy',evidence:ledger.completedHistory.length?'wykonanie_i_deklaracje':'tylko_deklaracje',marathonReadinessIsSeparate:true,clinicalClearance:false};
   const phases=[...new Set(result.treningi.map(t=>t.faza_planu))];
   result.planningStages=[

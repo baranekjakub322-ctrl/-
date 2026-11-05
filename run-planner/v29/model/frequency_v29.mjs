@@ -19,7 +19,7 @@ export function lowFrequencyWeek(c,dates,V,h) {
     const span=dates.length===2?Math.abs(Date.parse(dates[0].date)-Date.parse(dates[1].date))/86400000:7;
     const adjacent=dates.length===2 && Math.min(span,7-span)<I.recoveryDays;
     const developmentWeek=adjacent && I.goal.type!=='marathon' && I.currentWeeklyKm>=20 && I.longestRecentRun>=8 && (I.experienceMonths==null||I.experienceMonths>=12) && !I.injuries && I.loadTolerance!=='low' && I.intensityTolerance!=='low' && !c.noQuality && !c.recovery && !c.taper && !c.raceWeek && ['build','peak'].includes(c.phase) && c.weekIdx%3===1;
-    const longItem=!developmentWeek&&!c.noLong&&!c.raceWeek&&!c.taper?dates.find(x=>x.dow===c.longDow):null;
+    const longItem=!developmentWeek&&!c.noLong&&!c.raceWeek&&!c.taper?dates.find(x=>x.dow===c.longDow&&!state.hardDates.some(d=>d<=x.date&&(Date.parse(x.date)-Date.parse(d))/86400000<I.recoveryDays)):null;
     const other=developmentWeek&&span>3?dates.at(-1):dates.find(x=>x!==longItem);
     const budget=Math.min(V,c.budget ?? V),floor=3;
     let L=longItem?Math.max(floor,Math.min(Math.round(c.longKm),Math.floor(budget*h.share(I.goal.type,2)),h.fit(longItem.date,c.longMid),Math.floor(c.longMin*60/c.longMid))):0;
