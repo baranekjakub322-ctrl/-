@@ -1,0 +1,5 @@
+Run Planner 29.0.0
+Source commit:20de645
+V28 base:5ca57498a462007f46655982e2aaebdf5bcdc84c
+Final validation:11/11 stages,4011 PASS,0 FAIL; frozen V28 reuse is explicit in run_v29.json.
+No new scorer.

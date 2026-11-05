@@ -7,7 +7,7 @@
  "wynikiWgDystansu": {
   "5k": {
    "scenariuszy": 2352,
-   "ocenaOgolna": 9.49,
+   "ocenaOgolna": 9.57,
    "bezpieczenstwo": 10,
    "kategorie": {
     "bezpieczenstwo": 10,
@@ -15,15 +15,15 @@
     "dopasowanieDoBiegacza": 10,
     "progresja": 10,
     "jakoscTreningow": 10,
-    "specyfikaDystansu": 8.84,
+    "specyfikaDystansu": 9.06,
     "regeneracja": 10
    },
    "naruszeniaKrytyczne": 0,
-   "ostrzezenia": 0
+   "ostrzezenia": 14
   },
   "10k": {
    "scenariuszy": 2352,
-   "ocenaOgolna": 9.42,
+   "ocenaOgolna": 9.44,
    "bezpieczenstwo": 10,
    "kategorie": {
     "bezpieczenstwo": 10,
@@ -31,31 +31,31 @@
     "dopasowanieDoBiegacza": 10,
     "progresja": 10,
     "jakoscTreningow": 10,
-    "specyfikaDystansu": 8.69,
+    "specyfikaDystansu": 8.7,
+    "regeneracja": 10
+   },
+   "naruszeniaKrytyczne": 0,
+   "ostrzezenia": 14
+  },
+  "half": {
+   "scenariuszy": 2352,
+   "ocenaOgolna": 9.12,
+   "bezpieczenstwo": 10,
+   "kategorie": {
+    "bezpieczenstwo": 10,
+    "harmonogram": 10,
+    "dopasowanieDoBiegacza": 10,
+    "progresja": 10,
+    "jakoscTreningow": 10,
+    "specyfikaDystansu": 7.97,
     "regeneracja": 10
    },
    "naruszeniaKrytyczne": 0,
    "ostrzezenia": 28
   },
-  "half": {
-   "scenariuszy": 2352,
-   "ocenaOgolna": 9.03,
-   "bezpieczenstwo": 10,
-   "kategorie": {
-    "bezpieczenstwo": 10,
-    "harmonogram": 10,
-    "dopasowanieDoBiegacza": 10,
-    "progresja": 10,
-    "jakoscTreningow": 10,
-    "specyfikaDystansu": 7.88,
-    "regeneracja": 10
-   },
-   "naruszeniaKrytyczne": 0,
-   "ostrzezenia": 70
-  },
   "marathon": {
    "scenariuszy": 2352,
-   "ocenaOgolna": 8.69,
+   "ocenaOgolna": 8.82,
    "bezpieczenstwo": 10,
    "kategorie": {
     "bezpieczenstwo": 10,
@@ -63,11 +63,11 @@
     "dopasowanieDoBiegacza": 10,
     "progresja": 10,
     "jakoscTreningow": 10,
-    "specyfikaDystansu": 7.07,
+    "specyfikaDystansu": 7.2,
     "regeneracja": 10
    },
    "naruszeniaKrytyczne": 0,
-   "ostrzezenia": 129
+   "ostrzezenia": 56
   }
  },
  "wynikiWgCzestotliwosci": {
@@ -89,7 +89,7 @@
   },
   "2": {
    "scenariuszy": 1344,
-   "ocenaOgolna": 8.98,
+   "ocenaOgolna": 9,
    "bezpieczenstwo": 10,
    "kategorie": {
     "bezpieczenstwo": 10,
@@ -97,7 +97,7 @@
     "dopasowanieDoBiegacza": 10,
     "progresja": 10,
     "jakoscTreningow": 10,
-    "specyfikaDystansu": 7.84,
+    "specyfikaDystansu": 7.89,
     "regeneracja": 10
    },
    "naruszeniaKrytyczne": 0,
@@ -105,7 +105,7 @@
   },
   "3": {
    "scenariuszy": 1344,
-   "ocenaOgolna": 9.52,
+   "ocenaOgolna": 9.64,
    "bezpieczenstwo": 10,
    "kategorie": {
     "bezpieczenstwo": 10,
@@ -113,15 +113,15 @@
     "dopasowanieDoBiegacza": 10,
     "progresja": 10,
     "jakoscTreningow": 10,
-    "specyfikaDystansu": 8.67,
+    "specyfikaDystansu": 8.85,
     "regeneracja": 10
    },
    "naruszeniaKrytyczne": 0,
-   "ostrzezenia": 7
+   "ostrzezenia": 0
   },
   "4": {
    "scenariuszy": 1344,
-   "ocenaOgolna": 9.57,
+   "ocenaOgolna": 9.67,
    "bezpieczenstwo": 10,
    "kategorie": {
     "bezpieczenstwo": 10,
@@ -129,15 +129,15 @@
     "dopasowanieDoBiegacza": 10,
     "progresja": 10,
     "jakoscTreningow": 10,
-    "specyfikaDystansu": 8.81,
+    "specyfikaDystansu": 8.96,
     "regeneracja": 10
    },
    "naruszeniaKrytyczne": 0,
-   "ostrzezenia": 70
+   "ostrzezenia": 21
   },
   "5": {
    "scenariuszy": 1344,
-   "ocenaOgolna": 9.51,
+   "ocenaOgolna": 9.61,
    "bezpieczenstwo": 10,
    "kategorie": {
     "bezpieczenstwo": 10,
@@ -145,7 +145,7 @@
     "dopasowanieDoBiegacza": 10,
     "progresja": 10,
     "jakoscTreningow": 10,
-    "specyfikaDystansu": 8.69,
+    "specyfikaDystansu": 8.85,
     "regeneracja": 10
    },
    "naruszeniaKrytyczne": 0,
@@ -153,7 +153,7 @@
   },
   "6": {
    "scenariuszy": 1344,
-   "ocenaOgolna": 9.5,
+   "ocenaOgolna": 9.6,
    "bezpieczenstwo": 10,
    "kategorie": {
     "bezpieczenstwo": 10,
@@ -161,15 +161,15 @@
     "dopasowanieDoBiegacza": 10,
     "progresja": 10,
     "jakoscTreningow": 10,
-    "specyfikaDystansu": 8.64,
+    "specyfikaDystansu": 8.78,
     "regeneracja": 10
    },
    "naruszeniaKrytyczne": 0,
-   "ostrzezenia": 17
+   "ostrzezenia": 0
   },
   "7": {
    "scenariuszy": 1344,
-   "ocenaOgolna": 9.51,
+   "ocenaOgolna": 9.59,
    "bezpieczenstwo": 10,
    "kategorie": {
     "bezpieczenstwo": 10,
@@ -177,11 +177,11 @@
     "dopasowanieDoBiegacza": 10,
     "progresja": 10,
     "jakoscTreningow": 10,
-    "specyfikaDystansu": 8.64,
+    "specyfikaDystansu": 8.77,
     "regeneracja": 10
    },
    "naruszeniaKrytyczne": 0,
-   "ostrzezenia": 133
+   "ostrzezenia": 91
   }
  },
  "generatorPlik": "/workspace/-/run-planner/v29/planGenerator_v29.js",
@@ -190,10 +190,10 @@
  "unikalne": 9408,
  "planyZKrytycznymNaruszeniem": 0,
  "krytyczneNaruszenia": 0,
- "ostrzezeniaMiernika": 227,
+ "ostrzezeniaMiernika": 112,
  "slepePlamkiAudytuWewnetrznego": 0,
  "kodyProblemow": {
-  "TAPER_PLYTKI:ostrzezenie": 227
+  "TAPER_PLYTKI:ostrzezenie": 112
  },
  "przykladyKrytycznych": [],
  "pokrycie": {
@@ -216,7 +216,7 @@
    "6": 1344
   }
  },
- "skrotWynikow": "0da8ff0d2bccd75bd231b48441e521fdca1c1e02327b507e84922788a5e9c4cc",
+ "skrotWynikow": "496018b177e7de1cb19f82b9dfe41e80132a3bb0f194935f4df3e30bee099896",
  "wszystkieTesty": [
   {
    "opis": "liczba wykonanych scenariuszy (9408) == deklarowana (9408)",

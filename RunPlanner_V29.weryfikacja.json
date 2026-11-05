@@ -1,0 +1,31 @@
+{
+  "version": "29.0.0",
+  "sourceCommit": "20de645",
+  "archive": {
+    "file": "/workspace/-/RunPlanner_V29.zip",
+    "bytes": 50653835,
+    "sha256": "2d15b993854f826bc52fd15fb98b92508caeff07c6f6cdee9d55d5c720dae2bf",
+    "files": 687,
+    "crc": "PASS",
+    "allFilesSha256": "PASS",
+    "ready": true
+  },
+  "extractedBundle": {
+    "package": "RunPlanner_V29",
+    "generatedPlans": 56,
+    "matchingFrozenScores": 112,
+    "api": "PASS",
+    "determinism": "PASS",
+    "adaptation": "PASS",
+    "duplicate": "PASS"
+  },
+  "validation": {
+    "checksPass": 4011,
+    "checksFail": 0,
+    "stages": 11,
+    "sweep": 9408,
+    "comparisonPairs": 1324,
+    "internalAuditedPlans": 18
+  },
+  "qualification": "Technical PASS does not establish universal training superiority or clinical validation. Historical score23 is lower than V28; regressions are preserved in reports."
+}

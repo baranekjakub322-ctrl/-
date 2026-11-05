@@ -1,7 +1,7 @@
 {
   "node": "v24.19.0",
-  "started": "2026-11-05T17:18:03.001Z",
-  "elapsedMs": 797014,
+  "started": "2026-11-05T18:24:59.489Z",
+  "elapsedMs": 899600,
   "hashes": {
     "package.json": "a964c5e33ff340ee8d9e2f0895a9bd402d09f5e6ae87bdb6b43f092498fb31ef",
     "PROVENANCE_V29.json": "5a99d4a5d599932a518325fa502189c92535d0f9a9c161440f8c4461cd2edb2a",
@@ -17,7 +17,7 @@
     "planGenerator_v26.js": "905de76bbdb06cee32037908ab4389f788b4aa0ea04d5bb1cde87114fe5ab9fb",
     "planGenerator_v27.js": "2f6f4522bac5f29b9808f9103bbdc7b34b94bbe31cc81295f6b83c5c6c1fbe9f",
     "planGenerator_v28.js": "37d6e02aa5668b8dd173a1cbe628019c20a67fa3326dad04194deadbe80e0a02",
-    "planGenerator_v29.js": "44537fa17280495fe264a99ac7928e475cc970c3f21404e75e5b899d94551886",
+    "planGenerator_v29.js": "812c04e9710054226da6c000c1af227e6b64441780c7634c95bfda83358ee8fb",
     "model/activity_v25.mjs": "f5d825efb0cc1fc61e93d4bfb839b66bb7e299763098b98d937efcae42dd2d4c",
     "model/activity_v26.mjs": "f7ded45142b4c79117a3eb03bf646213c6c55019a11be3e058e281c1d2a9bb79",
     "model/activity_v27.mjs": "0bad4ee00ea1e552983919bd032d766a68fc76bafee2ea05c5c2db6f788ec74e",
@@ -34,7 +34,7 @@
     "model/constraints_v27.mjs": "b4e6b6c095f2942808b86e4ebdfa3d617c47d986f87a7e683f3a8c3bab6ec581",
     "model/constraints_v28.mjs": "545469c621aa9a4af8b100e7e2d59597981767d85c68bcca3d2d0618178703c3",
     "model/constraints_v29.mjs": "bf8f5d38751fa0925c310dd1c88cb7d312b0c83847ff45b1a292d346f5929abb",
-    "model/dose_v29.mjs": "1d58243d5c034350b5382835ae568e7baecd818ed83113c48a5d6062bf574efb",
+    "model/dose_v29.mjs": "adaea50499160f1859a994bb06893a59e643e203ca5a2f2a02550b42735f636a",
     "model/frequency_v24.mjs": "99f92bce0b1c19bd3a85af001f1d899a3037228584dc23bbab2f305f416cf590",
     "model/frequency_v25.mjs": "30ac939bbc64b8fb3acf379e88ae1f0731a65221cd3c6b33102c9b5971530166",
     "model/frequency_v26.mjs": "90638cadf78874c43575cc76874dd9880f2a2c38bec03e996c1447afbc73d472",
@@ -65,7 +65,7 @@
     "model/quality_v26.mjs": "37260f84750082936685f4828f04e92d72a6ade8ac7f37d0cdfcfac78e588c18",
     "model/quality_v27.mjs": "ad1774f5f68d65afe6baf517586de0e71d48cc7798b92ff150e1c362290a4807",
     "model/quality_v28.mjs": "065b41bf85f97f8f400b30099bb7311fcb04165bd16b7c5f883f39c048f49ab6",
-    "model/quality_v29.mjs": "1ac969db971274ddc5ff3f959e3613712dce92ae7559138275ce071e63ee9ee3",
+    "model/quality_v29.mjs": "23f34f4b266218867bb101c983ef69b39100ff7bd8eec62852a7433041085ceb",
     "model/readiness_v25.mjs": "a5b8b79499e5269ebfbbf6e344eb0cbf7943b4bbe30658ecaf3cb21042afc646",
     "model/readiness_v26.mjs": "0ef72dfcfe26bb9d8573714a58a59a2d4d2bb5f9998eb8e44b26f0c5b0118142",
     "model/readiness_v27.mjs": "12b4cad33abbdb43ba6aea12a8b4821ad7473117fe6e5a87a233839f773cad45",
@@ -73,7 +73,7 @@
     "model/readiness_v29.mjs": "7626c9fd66f2db6b3ce0feda2479b2db06571331a55e9783cd8a27d2be34a25f",
     "model/season_v27.mjs": "27b2f4bcfd342046fe5252b16978d91dbedcc6e351346a610cdaa6550d8fae06",
     "model/season_v28.mjs": "fd7a1f0571d75ed781f7ffab0d8209417fea4d0f7cc1ad1dd1f03f831f911264",
-    "model/season_v29.mjs": "26c906ad0304186e24aca99710e0eadc88fcbc1c3219446109ef0504e5a42b1e",
+    "model/season_v29.mjs": "28e51c2795207408a840db2f4ecd1c6e23793edea889a98af6bfb5ff1c999fcd",
     "model/training.mjs": "dfb3fdd9e9a74dedfa90e458fa14e0e0205dd61b29a779726b7321383bd671a0",
     "model/units_v28.mjs": "0d860eda8a3309570feaedc8d8f3d372a8d774b293bf8bf21576905f06750f85",
     "model/units_v29.mjs": "0d860eda8a3309570feaedc8d8f3d372a8d774b293bf8bf21576905f06750f85",
@@ -153,7 +153,7 @@
     "testy/skrypt_bledy.mjs": "d01ebfef2d6fb2344f34bc0bcb4ecae8e760f5442f50003b7c11eea576324869",
     "testy/stage_a_v29.mjs": "20add41b227fc9afa27d3c5db1491f9b15bb883ff6584d2d3122a4566a13ec88",
     "testy/stage_b_v29.mjs": "2134a02ea067a63affdfc153ae9c2b4fc573e3811b3b59c0983899b3b316dcd9",
-    "testy/stage_c_v29.mjs": "d0f59044ac4e199352ea4222934d29bc2e208ec0166ac5161ad6f879bd0d9118",
+    "testy/stage_c_v29.mjs": "ed5269a5a0eb673154d85aa5aae0d960841d376ca45468c5c1d7a6b478b60704",
     "testy/sweep.mjs": "7222edc8830e12b50b8cb39e84a25d444837fba9eeb9bb4bbcc62a3ad1f5120e",
     "testy/triage_v28.mjs": "63290210ecea3879d6d862cbca596ac9cbad5a15ce2e3dde2a804e6e56927f96",
     "testy/trudne.mjs": "5831d1606d798a3a9be9a42e8ee091ddeb62bcf3abbd0c42de03a3e4c4a3eb7b",
@@ -179,7 +179,7 @@
     "narzedzia/profiling_v27.mjs": "236f2bb945003be6378ad656eb00abe833fe845e4196a4638e5d69e1afeb1ce7",
     "narzedzia/profiling_v28.mjs": "812c2343ebaf74a8fdb0a40ea27cebb736b2af01f6ab09cdf7d86805f0a06171",
     "narzedzia/read_plans_v27.mjs": "3e1ded53e73ee82357090d6d4c17d9e2c0d283cc5486773fff56a3befe0a1bf3",
-    "narzedzia/report_v29.mjs": "d07e99bc4488b9556359428ee34a3ed4746413624bfc84f650a47f21001ec116",
+    "narzedzia/report_v29.mjs": "bd6f17557de58ac698bfe7c4c91c52bb4474fa9a21bc04f33ae2416013cb1680",
     "narzedzia/review_anonymous_v28.mjs": "2a14685449b0e5adac78453348efdfc429c13d1e7297e68b727da6e1956c2337",
     "narzedzia/trace_baseline_v28.mjs": "8ccc3238bd06364579cb70e92ce67ee091046270ebe3ed31f927eb4e47b03e3a",
     "dane/audit18_v29.json": "1ade0d51b708c122497a867b5d0cc7051b5baa217fc997b3b990947529602725",
@@ -204,54 +204,54 @@
     {
       "name": "contracts_v29",
       "status": 0,
-      "elapsedMs": 546385
+      "elapsedMs": 621500
     },
     {
       "name": "stage_a_v29",
       "status": 0,
-      "elapsedMs": 2456
+      "elapsedMs": 2784
     },
     {
       "name": "stage_b_v29",
       "status": 0,
-      "elapsedMs": 6049
+      "elapsedMs": 7053
     },
     {
       "name": "stage_c_v29",
       "status": 0,
-      "elapsedMs": 1269
+      "elapsedMs": 3401
     },
     {
       "name": "adaptacja_v29",
       "status": 0,
-      "elapsedMs": 12408
+      "elapsedMs": 14090
     },
     {
       "name": "chronologia_v29",
       "status": 0,
-      "elapsedMs": 5119
+      "elapsedMs": 5662
     },
     {
       "name": "historie_v29",
       "status": 0,
-      "elapsedMs": 114764
+      "elapsedMs": 125713
     },
     {
       "name": "benchmark_v29",
-      "status": 1,
-      "elapsedMs": 99661
+      "status": 0,
+      "elapsedMs": 109628
     },
     {
       "name": "audit18_v29",
       "status": 0,
-      "elapsedMs": 2198
+      "elapsedMs": 2312
     },
     {
       "name": "wydajnosc_v29",
       "status": 0,
-      "elapsedMs": 6437
+      "elapsedMs": 7039
     }
   ],
-  "passed": 10,
-  "failed": 1
+  "passed": 11,
+  "failed": 0
 }

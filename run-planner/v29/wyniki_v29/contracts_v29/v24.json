@@ -4,10 +4,10 @@
   "stressExecuted": 128,
   "node": "v24.19.0",
   "timing": {
-    "elapsedCheckMs": 9897.968812000006,
-    "maxCheckMs": 270.3133660000003,
-    "medianCheckMs": 14.209703999999988,
-    "rssBytes": 368222208
+    "elapsedCheckMs": 9307.623545999999,
+    "maxCheckMs": 277.5507870000001,
+    "medianCheckMs": 13.42271000000028,
+    "rssBytes": 364892160
   },
   "tests": [
     {

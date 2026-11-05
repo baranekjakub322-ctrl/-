@@ -15,3 +15,5 @@
 Dalszy rozwój: zewnętrzna ocena planów i obserwacja realizacji; lepiej zbadane bramki rozwoju długiego biegu przy trzech dniach; stopniowe dłuższe bloki 10 km/HM po potwierdzonym wykonaniu; pełna strukturyzacja dawnych jednostek; profilowanie przeszukiwania na długich historiach. Historyczne wyniki pozostają punktami odniesienia bez zmiany progów.
 
 Minimalny krok przy małej bazie jest heurystyką warunkowej propozycji, zależną od częstotliwości/tolerancji, nie gwarancją bezpieczeństwa ani obowiązkiem wykonania. Nie omija sufitu profilu, regeneracji i strażników obciążenia.
+
+W końcowym benchmarku score23 spadł z 7,547 do 7.135; 585 z 1008 przypadków ma niższą ocenę. Nie przypisujemy wszystkich spadków wadom miernika: część wynika z rzeczywiście niższej objętości/długiego biegu. Użycie V29 jako ogólnie lepszego zamiennika V28 wymaga dalszej oceny treści i realizacji. Pomiar generowania był 2.70× wolniejszy średnio w tej samej macierzy; szczegóły w raporcie.

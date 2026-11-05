@@ -66,8 +66,8 @@
    "parametr": "kilometraż 25→10",
    "oczekiwanie": "zmiana",
    "planZmienionyStrukturalnie": true,
-   "dSzczyt": -23,
-   "dNajdluzszy": -10,
+   "dSzczyt": -21,
+   "dNajdluzszy": -9,
    "dPierwszyDlugi": -6
   },
   {
@@ -82,8 +82,8 @@
    "parametr": "najdłuższy bieg 10→16 przy 25 km/tydz. (limit udziału skraca)",
    "oczekiwanie": "zmiana",
    "planZmienionyStrukturalnie": true,
-   "dSzczyt": 0,
-   "dNajdluzszy": 0,
+   "dSzczyt": -2,
+   "dNajdluzszy": -1,
    "dPierwszyDlugi": 0
   },
   {
@@ -98,7 +98,7 @@
    "parametr": "liczba dni 4→3",
    "oczekiwanie": "zmiana",
    "planZmienionyStrukturalnie": true,
-   "dSzczyt": -3,
+   "dSzczyt": -4,
    "dNajdluzszy": 0,
    "dPierwszyDlugi": 0
   },
@@ -138,8 +138,8 @@
    "parametr": "przerwa 60 dni",
    "oczekiwanie": "zmiana",
    "planZmienionyStrukturalnie": true,
-   "dSzczyt": -23,
-   "dNajdluzszy": -10,
+   "dSzczyt": -21,
+   "dNajdluzszy": -9,
    "dPierwszyDlugi": -6
   },
   {

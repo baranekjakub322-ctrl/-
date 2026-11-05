@@ -1,9 +1,9 @@
 {
   "node": "v24.19.0",
-  "started": "2026-11-05T17:18:03.297Z",
-  "elapsedMs": 546332,
+  "started": "2026-11-05T18:24:59.960Z",
+  "elapsedMs": 621424,
   "hashes": {
-    "planGenerator_v29.js": "44537fa17280495fe264a99ac7928e475cc970c3f21404e75e5b899d94551886",
+    "planGenerator_v29.js": "812c04e9710054226da6c000c1af227e6b64441780c7634c95bfda83358ee8fb",
     "model/policy_v25.mjs": "d8e7d9b60f4c880c709567e430104a8f0573ded74ad1cf52af9c6812adf35c50",
     "model/quality_v25.mjs": "74d22887b5c54c9b8194bb1ca69433ba5587db9f70be8bc379fd8e21483a0cb6",
     "model/frequency_v25.mjs": "30ac939bbc64b8fb3acf379e88ae1f0731a65221cd3c6b33102c9b5971530166",
@@ -46,169 +46,169 @@
       "name": "podstawowe_v29",
       "status": 0,
       "signal": null,
-      "elapsedMs": 491
+      "elapsedMs": 691
     },
     {
       "name": "trudne",
       "status": 0,
       "signal": null,
-      "elapsedMs": 1997
+      "elapsedMs": 3032
     },
     {
       "name": "czulosc",
       "status": 0,
       "signal": null,
-      "elapsedMs": 1347
+      "elapsedMs": 1791
     },
     {
       "name": "regresje",
       "status": 0,
       "signal": null,
-      "elapsedMs": 31089
+      "elapsedMs": 41235
     },
     {
       "name": "czulosc_v21",
       "status": 0,
       "signal": null,
-      "elapsedMs": 1903
+      "elapsedMs": 2001
     },
     {
       "name": "jakosciowe",
       "status": 0,
       "signal": null,
-      "elapsedMs": 13173
+      "elapsedMs": 13230
     },
     {
       "name": "dostepnosc",
       "status": 0,
       "signal": null,
-      "elapsedMs": 23403
+      "elapsedMs": 31618
     },
     {
       "name": "porownanie28",
       "status": 0,
       "signal": null,
-      "elapsedMs": 1920
+      "elapsedMs": 1931
     },
     {
       "name": "porownanie_v19_v20",
       "status": 0,
       "signal": null,
-      "elapsedMs": 15253
+      "elapsedMs": 16877
     },
     {
       "name": "porownanie_v20_v21",
       "status": 0,
       "signal": null,
-      "elapsedMs": 16793
+      "elapsedMs": 18269
     },
     {
       "name": "sweep",
       "status": 0,
       "signal": null,
-      "elapsedMs": 290579
+      "elapsedMs": 333365
     },
     {
       "name": "skrypt_bledy",
       "status": 0,
       "signal": null,
-      "elapsedMs": 1225
+      "elapsedMs": 1333
     },
     {
       "name": "v22",
       "status": 0,
       "signal": null,
-      "elapsedMs": 1476
+      "elapsedMs": 1636
     },
     {
       "name": "porownanie_v21_v22",
       "status": 0,
       "signal": null,
-      "elapsedMs": 28185
+      "elapsedMs": 27990
     },
     {
       "name": "regresje_v22_v23",
       "status": 0,
       "signal": null,
-      "elapsedMs": 1567
+      "elapsedMs": 1632
     },
     {
       "name": "kalibracja_v23",
       "status": 0,
       "signal": null,
-      "elapsedMs": 73
+      "elapsedMs": 74
     },
     {
       "name": "v23",
       "status": 0,
       "signal": null,
-      "elapsedMs": 1673
+      "elapsedMs": 1566
     },
     {
       "name": "porownanie_v22_v23",
       "status": 0,
       "signal": null,
-      "elapsedMs": 30844
+      "elapsedMs": 34559
     },
     {
       "name": "v24_inherited",
       "status": 0,
       "signal": null,
-      "elapsedMs": 1533
+      "elapsedMs": 1468
     },
     {
       "name": "v24",
       "status": 0,
       "signal": null,
-      "elapsedMs": 7136
+      "elapsedMs": 6720
     },
     {
       "name": "porownanie_v23_v24",
       "status": 0,
       "signal": null,
-      "elapsedMs": 30788
+      "elapsedMs": 33935
     },
     {
       "name": "regresje_v25",
       "status": 0,
       "signal": null,
-      "elapsedMs": 181
+      "elapsedMs": 180
     },
     {
       "name": "v25_inherited",
       "status": 0,
       "signal": null,
-      "elapsedMs": 1731
+      "elapsedMs": 1559
     },
     {
       "name": "adaptacja_v25",
       "status": 0,
       "signal": null,
-      "elapsedMs": 3800
+      "elapsedMs": 3799
     },
     {
       "name": "v25",
       "status": 0,
       "signal": null,
-      "elapsedMs": 1784
+      "elapsedMs": 1668
     },
     {
       "name": "kalibracja_v25",
       "status": 0,
       "signal": null,
-      "elapsedMs": 73
+      "elapsedMs": 92
     },
     {
       "name": "porownanie_v24_v25",
       "status": 0,
       "signal": null,
-      "elapsedMs": 33450
+      "elapsedMs": 36087
     },
     {
       "name": "wydajnosc_v25",
       "status": 0,
       "signal": null,
-      "elapsedMs": 2851
+      "elapsedMs": 3067
     }
   ],
   "passed": 28,

@@ -1,0 +1,700 @@
+{
+  "version": "29.0.0",
+  "ready": true,
+  "runStages": 11,
+  "failedStages": 0,
+  "passedChecks": 4011,
+  "failedChecks": 0,
+  "counts": [
+    {
+      "suite": "podstawowe_v28",
+      "status": 0,
+      "passed": 107,
+      "failed": 0
+    },
+    {
+      "suite": "trudne",
+      "status": 0,
+      "passed": 93,
+      "failed": 0
+    },
+    {
+      "suite": "czulosc",
+      "status": 0,
+      "passed": 28,
+      "failed": 0
+    },
+    {
+      "suite": "regresje",
+      "status": 0,
+      "passed": 17,
+      "failed": 0
+    },
+    {
+      "suite": "czulosc_v21",
+      "status": 0,
+      "passed": 38,
+      "failed": 0
+    },
+    {
+      "suite": "jakosciowe",
+      "status": 0,
+      "passed": 35,
+      "failed": 0
+    },
+    {
+      "suite": "dostepnosc",
+      "status": 0,
+      "passed": 9,
+      "failed": 0
+    },
+    {
+      "suite": "porownanie28",
+      "status": 0,
+      "passed": 31,
+      "failed": 0
+    },
+    {
+      "suite": "porownanie_v19_v20",
+      "status": 0,
+      "passed": 12,
+      "failed": 0
+    },
+    {
+      "suite": "porownanie_v20_v21",
+      "status": 0,
+      "passed": 32,
+      "failed": 0
+    },
+    {
+      "suite": "sweep",
+      "status": 0,
+      "passed": 21,
+      "failed": 0
+    },
+    {
+      "suite": "skrypt_bledy",
+      "status": 0,
+      "passed": 4,
+      "failed": 0
+    },
+    {
+      "suite": "v22",
+      "status": 0,
+      "passed": 73,
+      "failed": 0
+    },
+    {
+      "suite": "porownanie_v21_v22",
+      "status": 0,
+      "passed": null,
+      "failed": null
+    },
+    {
+      "suite": "regresje_v22_v23",
+      "status": 0,
+      "passed": 73,
+      "failed": 0
+    },
+    {
+      "suite": "kalibracja_v23",
+      "status": 0,
+      "passed": 16,
+      "failed": 0
+    },
+    {
+      "suite": "v23",
+      "status": 0,
+      "passed": 82,
+      "failed": 0
+    },
+    {
+      "suite": "porownanie_v22_v23",
+      "status": 0,
+      "passed": null,
+      "failed": null
+    },
+    {
+      "suite": "v24_inherited",
+      "status": 0,
+      "passed": 82,
+      "failed": 0
+    },
+    {
+      "suite": "v24",
+      "status": 0,
+      "passed": 227,
+      "failed": 0
+    },
+    {
+      "suite": "porownanie_v23_v24",
+      "status": 0,
+      "passed": null,
+      "failed": null
+    },
+    {
+      "suite": "regresje_v25",
+      "status": 0,
+      "passed": 8,
+      "failed": 0
+    },
+    {
+      "suite": "v25_inherited",
+      "status": 0,
+      "passed": 82,
+      "failed": 0
+    },
+    {
+      "suite": "adaptacja_v25",
+      "status": 0,
+      "passed": 140,
+      "failed": 0
+    },
+    {
+      "suite": "v25",
+      "status": 0,
+      "passed": 121,
+      "failed": 0
+    },
+    {
+      "suite": "kalibracja_v25",
+      "status": 0,
+      "passed": 24,
+      "failed": 0
+    },
+    {
+      "suite": "porownanie_v24_v25",
+      "status": 0,
+      "passed": null,
+      "failed": null
+    },
+    {
+      "suite": "wydajnosc_v25",
+      "status": 0,
+      "passed": 1,
+      "failed": 0
+    },
+    {
+      "suite": "v27",
+      "status": 0,
+      "passed": 119,
+      "failed": 0
+    },
+    {
+      "suite": "kalibracja_v27",
+      "status": 0,
+      "passed": 16,
+      "failed": 0
+    },
+    {
+      "suite": "regresje_v28_inherited",
+      "status": 0,
+      "passed": 5,
+      "failed": 0
+    },
+    {
+      "suite": "v28_inherited",
+      "status": 0,
+      "passed": 119,
+      "failed": 0
+    },
+    {
+      "suite": "adaptacja_compat_v28",
+      "status": 0,
+      "passed": 140,
+      "failed": 0
+    },
+    {
+      "suite": "chronologia_v28",
+      "status": 0,
+      "passed": 8,
+      "failed": 0
+    },
+    {
+      "suite": "historie_v28",
+      "status": 0,
+      "passed": 151,
+      "failed": 0
+    },
+    {
+      "suite": "v28",
+      "status": 0,
+      "passed": 215,
+      "failed": 0
+    },
+    {
+      "suite": "kalibracja_v28",
+      "status": 0,
+      "passed": 14,
+      "failed": 0
+    },
+    {
+      "suite": "benchmark_v28",
+      "status": 0,
+      "passed": null,
+      "failed": null
+    },
+    {
+      "suite": "profiles_v28",
+      "status": 0,
+      "passed": null,
+      "failed": null
+    },
+    {
+      "suite": "triage_v28",
+      "status": 0,
+      "passed": null,
+      "failed": null
+    },
+    {
+      "suite": "blind_review_v28",
+      "status": 0,
+      "passed": null,
+      "failed": null
+    },
+    {
+      "suite": "trace_baseline_v28",
+      "status": 0,
+      "passed": null,
+      "failed": null
+    },
+    {
+      "suite": "wydajnosc_v28",
+      "status": 0,
+      "passed": 1,
+      "failed": 0
+    },
+    {
+      "suite": "profiling_v28",
+      "status": 0,
+      "passed": null,
+      "failed": null
+    },
+    {
+      "suite": "podstawowe_v29",
+      "status": 0,
+      "passed": 107,
+      "failed": 0
+    },
+    {
+      "suite": "trudne",
+      "status": 0,
+      "passed": 93,
+      "failed": 0
+    },
+    {
+      "suite": "czulosc",
+      "status": 0,
+      "passed": 28,
+      "failed": 0
+    },
+    {
+      "suite": "regresje",
+      "status": 0,
+      "passed": 17,
+      "failed": 0
+    },
+    {
+      "suite": "czulosc_v21",
+      "status": 0,
+      "passed": 38,
+      "failed": 0
+    },
+    {
+      "suite": "jakosciowe",
+      "status": 0,
+      "passed": 35,
+      "failed": 0
+    },
+    {
+      "suite": "dostepnosc",
+      "status": 0,
+      "passed": 9,
+      "failed": 0
+    },
+    {
+      "suite": "porownanie28",
+      "status": 0,
+      "passed": 31,
+      "failed": 0
+    },
+    {
+      "suite": "porownanie_v19_v20",
+      "status": 0,
+      "passed": 12,
+      "failed": 0
+    },
+    {
+      "suite": "porownanie_v20_v21",
+      "status": 0,
+      "passed": 32,
+      "failed": 0
+    },
+    {
+      "suite": "sweep",
+      "status": 0,
+      "passed": 21,
+      "failed": 0
+    },
+    {
+      "suite": "skrypt_bledy",
+      "status": 0,
+      "passed": 4,
+      "failed": 0
+    },
+    {
+      "suite": "v22",
+      "status": 0,
+      "passed": 73,
+      "failed": 0
+    },
+    {
+      "suite": "porownanie_v21_v22",
+      "status": 0,
+      "passed": null,
+      "failed": null
+    },
+    {
+      "suite": "regresje_v22_v23",
+      "status": 0,
+      "passed": 73,
+      "failed": 0
+    },
+    {
+      "suite": "kalibracja_v23",
+      "status": 0,
+      "passed": 16,
+      "failed": 0
+    },
+    {
+      "suite": "v23",
+      "status": 0,
+      "passed": 82,
+      "failed": 0
+    },
+    {
+      "suite": "porownanie_v22_v23",
+      "status": 0,
+      "passed": null,
+      "failed": null
+    },
+    {
+      "suite": "v24_inherited",
+      "status": 0,
+      "passed": 82,
+      "failed": 0
+    },
+    {
+      "suite": "v24",
+      "status": 0,
+      "passed": 227,
+      "failed": 0
+    },
+    {
+      "suite": "porownanie_v23_v24",
+      "status": 0,
+      "passed": null,
+      "failed": null
+    },
+    {
+      "suite": "regresje_v25",
+      "status": 0,
+      "passed": 8,
+      "failed": 0
+    },
+    {
+      "suite": "v25_inherited",
+      "status": 0,
+      "passed": 82,
+      "failed": 0
+    },
+    {
+      "suite": "adaptacja_v25",
+      "status": 0,
+      "passed": 140,
+      "failed": 0
+    },
+    {
+      "suite": "v25",
+      "status": 0,
+      "passed": 121,
+      "failed": 0
+    },
+    {
+      "suite": "kalibracja_v25",
+      "status": 0,
+      "passed": 24,
+      "failed": 0
+    },
+    {
+      "suite": "porownanie_v24_v25",
+      "status": 0,
+      "passed": null,
+      "failed": null
+    },
+    {
+      "suite": "wydajnosc_v25",
+      "status": 0,
+      "passed": 1,
+      "failed": 0
+    },
+    {
+      "suite": "stage_a_v29",
+      "status": 0,
+      "passed": 34,
+      "failed": 0
+    },
+    {
+      "suite": "stage_b_v29",
+      "status": 0,
+      "passed": 99,
+      "failed": 0
+    },
+    {
+      "suite": "stage_c_v29",
+      "status": 0,
+      "passed": 60,
+      "failed": 0
+    },
+    {
+      "suite": "adaptacja_v29",
+      "status": 0,
+      "passed": 140,
+      "failed": 0
+    },
+    {
+      "suite": "chronologia_v29",
+      "status": 0,
+      "passed": 8,
+      "failed": 0
+    },
+    {
+      "suite": "historie_v29",
+      "status": 0,
+      "passed": 151,
+      "failed": 0
+    },
+    {
+      "suite": "audit18_v29",
+      "status": 0,
+      "passed": 18,
+      "failed": 0
+    },
+    {
+      "suite": "wydajnosc_v29",
+      "status": 0,
+      "passed": 1,
+      "failed": 0
+    }
+  ],
+  "production": [
+    {
+      "file": "planGenerator_v29.js",
+      "lines": 2651,
+      "bytes": 258216,
+      "sha256": "812c04e9710054226da6c000c1af227e6b64441780c7634c95bfda83358ee8fb"
+    },
+    {
+      "file": "model/training.mjs",
+      "lines": 69,
+      "bytes": 4220,
+      "sha256": "dfb3fdd9e9a74dedfa90e458fa14e0e0205dd61b29a779726b7321383bd671a0"
+    },
+    {
+      "file": "model/activity_v29.mjs",
+      "lines": 123,
+      "bytes": 12024,
+      "sha256": "72f8c1b58542ab72578cb5ed74cfcf576d992b770ad3dae87a31de4bcb580d77"
+    },
+    {
+      "file": "model/adaptation_v29.mjs",
+      "lines": 82,
+      "bytes": 12301,
+      "sha256": "d37730d5c5aa0b1eb209ae23468363bf05cbaab46e6bbeeb1db6a2ae4c94b0d0"
+    },
+    {
+      "file": "model/constraints_v29.mjs",
+      "lines": 103,
+      "bytes": 11650,
+      "sha256": "bf8f5d38751fa0925c310dd1c88cb7d312b0c83847ff45b1a292d346f5929abb"
+    },
+    {
+      "file": "model/dose_v29.mjs",
+      "lines": 60,
+      "bytes": 6155,
+      "sha256": "adaea50499160f1859a994bb06893a59e643e203ca5a2f2a02550b42735f636a"
+    },
+    {
+      "file": "model/frequency_v29.mjs",
+      "lines": 63,
+      "bytes": 7117,
+      "sha256": "d8840a0777b28aa9636db7ce4f3d8cfffb253dd8a301c3ebe4783edbb364596f"
+    },
+    {
+      "file": "model/ledger_v29.mjs",
+      "lines": 21,
+      "bytes": 2526,
+      "sha256": "eabdeb25c574f8fb10ad066bb92a6141e05fead82668204610e66534771a76b0"
+    },
+    {
+      "file": "model/planning_v29.mjs",
+      "lines": 53,
+      "bytes": 5470,
+      "sha256": "8eafed42c4df9b2e276ef4b2675f20923b599cc715c94d8d710a1a64037ff231"
+    },
+    {
+      "file": "model/policy_v29.mjs",
+      "lines": 106,
+      "bytes": 9338,
+      "sha256": "6354ce8e4e18ed3fb8d7fb2784ad8567590cc7326614f3cf12afb21e3da4cdc0"
+    },
+    {
+      "file": "model/profile_v29.mjs",
+      "lines": 44,
+      "bytes": 6344,
+      "sha256": "6dcf6f44b0c9751fbd9406f49008bf97272cfcdca52f248be184c87686ff0a73"
+    },
+    {
+      "file": "model/quality_v29.mjs",
+      "lines": 76,
+      "bytes": 10308,
+      "sha256": "23f34f4b266218867bb101c983ef69b39100ff7bd8eec62852a7433041085ceb"
+    },
+    {
+      "file": "model/readiness_v29.mjs",
+      "lines": 28,
+      "bytes": 5299,
+      "sha256": "7626c9fd66f2db6b3ce0feda2479b2db06571331a55e9783cd8a27d2be34a25f"
+    },
+    {
+      "file": "model/season_v29.mjs",
+      "lines": 58,
+      "bytes": 6797,
+      "sha256": "28e51c2795207408a840db2f4ecd1c6e23793edea889a98af6bfb5ff1c999fcd"
+    },
+    {
+      "file": "model/units_v29.mjs",
+      "lines": 25,
+      "bytes": 2252,
+      "sha256": "0d860eda8a3309570feaedc8d8f3d372a8d774b293bf8bf21576905f06750f85"
+    },
+    {
+      "file": "scoring/v23.mjs",
+      "lines": 134,
+      "bytes": 15652,
+      "sha256": "a7d2cfe244bb156418e3334b917b39773c1e96ad7c0ff356aac586380aa3eb71"
+    },
+    {
+      "file": "scoring/v25.mjs",
+      "lines": 166,
+      "bytes": 21643,
+      "sha256": "09dfeeb6b6ab25bdbae4065b5d2166b75f9d1c7f286408337fa8c912f65332b2"
+    }
+  ],
+  "mainLines": 2651,
+  "totalLines": 3862,
+  "bytes": 397312,
+  "benchmarkPairs": 1324,
+  "manualInternalPlans": 18,
+  "statistics": {
+    "v28": {
+      "score23": {
+        "n": 1008,
+        "mean": 7.547015873015859,
+        "median": 8.517,
+        "min": 2.794,
+        "max": 9.572
+      },
+      "score25": {
+        "n": 1008,
+        "mean": 9.325792658730215,
+        "median": 9.303,
+        "min": 8.212,
+        "max": 9.87
+      },
+      "audit27": {
+        "n": 1008,
+        "mean": 7.424633928571438,
+        "median": 7.702000000000001,
+        "min": 6.11,
+        "max": 8.309999999999999
+      },
+      "audit28": {
+        "n": 1008,
+        "mean": 7.883758680555583,
+        "median": 8.0375,
+        "min": 6.8875,
+        "max": 8.7625
+      }
+    },
+    "v29": {
+      "score23": {
+        "n": 1008,
+        "mean": 7.134840277777769,
+        "median": 7.665,
+        "min": 2.794,
+        "max": 9.65
+      },
+      "score25": {
+        "n": 1008,
+        "mean": 9.268561507936502,
+        "median": 9.222,
+        "min": 8.126,
+        "max": 9.81
+      },
+      "audit27": {
+        "n": 1008,
+        "mean": 7.38880853174604,
+        "median": 7.76,
+        "min": 6.11,
+        "max": 8.309999999999999
+      },
+      "audit28": {
+        "n": 1008,
+        "mean": 7.904951636904773,
+        "median": 8.11625,
+        "min": 6.8875,
+        "max": 8.7625
+      }
+    }
+  },
+  "distribution": {
+    "better": 237,
+    "same": 186,
+    "worse": 585
+  },
+  "performance": {
+    "passed": 1,
+    "failed": 0,
+    "results": [
+      {
+        "version": "v28",
+        "inputSha256": "0947bb9c68a7740a707d59e17f6e2117f68b2245c188a1d00180bc87077928d0",
+        "executed": 84,
+        "meanMs": 20.48652248809524,
+        "medianMs": 14.260070999999982,
+        "p95Ms": 55.95404999999994,
+        "maxMs": 64.81316900000002,
+        "startRss": 69877760,
+        "maxRssBytes": 195219456,
+        "node": "v24.19.0"
+      },
+      {
+        "version": "v29",
+        "inputSha256": "0947bb9c68a7740a707d59e17f6e2117f68b2245c188a1d00180bc87077928d0",
+        "executed": 84,
+        "meanMs": 55.30383977380949,
+        "medianMs": 37.51141200000001,
+        "p95Ms": 149.8447430000001,
+        "maxMs": 170.54731899999933,
+        "startRss": 73637888,
+        "maxRssBytes": 329097216,
+        "node": "v24.19.0"
+      }
+    ],
+    "ratioMean": 2.6995230550205225,
+    "limitations": "Osobne świeże procesy, ten sam zestaw, jedno środowisko; pomiar RSS jest maksimum procesu, nie rozmiar samego planu."
+  },
+  "baselineCommit": "5ca57498a462007f46655982e2aaebdf5bcdc84c",
+  "node": "v24.19.0"
+}
