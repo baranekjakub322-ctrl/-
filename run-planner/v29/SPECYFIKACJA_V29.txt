@@ -1,0 +1,75 @@
+RUN PLANNER V29 — PRECYZYJNY PLAN PRZEBUDOWY JAKOŚCI TRENINGOWEJ
+Baza: kompletne RunPlanner_V28.zip. Wykonaj implementację, testy i dostarcz RunPlanner_V29.zip.
+
+CEL
+Nie buduj kolejnego systemu punktowego ani obszernej dokumentacji zamiast lepszych treningów. Zmień faktyczne decyzje generatora dla 5 km, 10 km, półmaratonu i maratonu, szczególnie przy 2–5 treningach/tydzień. Priorytet: sensowna progresja sezonu, indywidualna dawka, spójność jednostek i bezpieczeństwo. Zachowaj to, co V28 naprawiła w maratonie. Wynik benchmarku to diagnostyka regresji, NIE funkcja celu ani warunek, który można spełnić przez manipulowanie scorerem.
+
+PONIŻEJ SĄ MOJE DIAGNOZY Z KONKRETNEGO KODU V28 I PROPONOWANE ROZWIĄZANIA. Wdrożenie ma być rzeczowe; nie przekazuję Ci zadania „sam znajdź wszystko”. Jeśli istnieje zależność uniemożliwiająca dokładną implementację, wyjaśnij ją i wybierz najbliższy bezpieczny wariant.
+
+1. GŁÓWNA PRZYCZYNA STAGNACJI 5 KM / 10 KM: RECEPTY SĄ Z GÓRY ZAPISANYMI TABELAMI
+Plik model/quality_v28.mjs:
+- intervalRecipe() ma stałe rows i stage=Math.min(rows.length-1,k).
+- specificRecipe() również wybiera z krótkich tabel, stage=k-Math.floor(k/4).
+- thresholdMinutes() zwiększa dawkę według indeksu k, nie według realnego miejsca w sezonie, tolerancji i poprzedniej pracy.
+To oznacza, że po dojściu do końca tabeli recepty się powtarzają; zmiana kalendarza czy częstotliwości nie daje indywidualnego rozwoju bodźca.
+NAPRAWA: pozostaw tabele jako bezpieczne punkty startowe, ale wprowadź generator recept oparty na parametrach: rodzina bodźca, faza, aktualna baza, historia ekspozycji, limit czasu, regeneracja, dystans celu i stopień pewności danych. Każda recepta ma jawne: workKm/workMin, długość odcinka, liczba powtórzeń, czas/typ przerwy, cel fizjologiczny, koszt i powód wyboru. Nie zwiększaj jednocześnie tempa, objętości i skracania przerwy. Nie przyspieszaj na podstawie samego upływu tygodnia.
+Przykład logiczny 10 km (nie sztywny obowiązkowy schemat): 4×800 m -> 5×800 m -> 4×1000 m -> 3×1200 m; przy trudnej realizacji konsolidacja lub krok wstecz. Dla 5 km więcej pracy nad odcinkami krótszymi i średnimi; dla 10 km rosnąca ciągłość i łączny czas pracy specyficznej. Rozróżniaj powtórkę celową od stagnacji.
+
+2. FAŁSZYWA PROGRESJA NA PODSTAWIE ZAPLANOWANYCH JEDNOSTEK
+Plik model/quality_v28.mjs, exposureDecision(): poprzednia ekspozycja jest opisana jako predecessorStatus:'planned', a decyzja o progresji opiera się m.in. na różnicy minut. W planie statycznym może to być prawidłowa PROPOZYCJA, ale nie potwierdzenie adaptacji.
+NAPRAWA: dwa tryby. (A) Plan początkowy: progresja warunkowa z alternatywą „jeśli nie wykonano / wysokie RPE / ból / przeciążenie”. (B) Aktualizacja: progresja dopiero na podstawie completedHistory; pominięte i zaplanowane treningi nie potwierdzają tolerancji. Utrzymuj w danych osobno plannedDose, executedDose, decisionEvidence i confidence. Nie zmieniaj starych API bez adaptera.
+
+3. ZBYT PROSTE ROZPOZNAWANIE GOTOWOŚCI WYTRZYMAŁOŚCIOWEJ
+Plik model/profile_v28.mjs, enduranceIntent(): progi 30/45 km tygodniowo i 16/28 km długiego biegu oraz warunek daysPerWeek>=3. To przydatne orientacyjne heurystyki, ale w okolicach progu dwa podobne profile mogą dostać różne decyzje; ponadto 2 dni/tydzień nie powinny wyłączać samej informacji o brakach wytrzymałościowych.
+NAPRAWA: rozdziel trzy wyniki: enduranceGap (ciągła skala z niepewnością), feasibleDevelopment (czy dostępny czas pozwala go zmniejszać), readinessEvidence (deklaracja vs wykonanie). Użyj historii ostatnich 6–8 tygodni, regularności, najdłuższych biegów, doświadczenia, czasu do startu i limitów czasu. Jeśli brak danych, zachowaj konserwatywne widełki i jawnie oznacz niepewność. Dla 1–2 dni nadal sygnalizuj lukę i proponuj bezpieczny, ograniczony plan, bez udawania pełnego przygotowania do maratonu.
+
+4. SEZON NIE MOŻE BYĆ JEDNĄ LINIOWĄ KRZYWĄ
+Plik model/season_v28.mjs: increment=(peak-startVol)/(normalToPeak-1), longInc ograniczone do 1.5/1.25 km na krok; w tygodniach taper stałe mnożniki [.78,.60,.38] itd. Takie wzory są przewidywalne, lecz zbyt sztywne dla różnych poziomów i długości planu.
+NAPRAWA: planuj bloki 3–5 tygodni: wprowadzenie, rozwój, konsolidacja, odciążenie; dawkę dobieraj do bieżącej tolerancji, a nie do obowiązku osiągnięcia peak. Długie biegi nie muszą rosnąć co tydzień; wstawiaj utrwalenie i cofnięcia. Nie używaj uniwersalnego limitu „10% tygodniowo”. Taper uzależnij od dystansu, częstotliwości, objętości szczytowej, ostatnich rzeczywiście wykonanych obciążeń i startu; zachowaj rytm bez zbędnego zmęczenia. Bez historii stosuj konserwatywny scenariusz i wyjaśnij założenia.
+
+5. OPTYMALIZACJA TYGODNIA POMIJA SKUTKI DLA NASTĘPNYCH TYGODNI
+Plik model/constraints_v28.mjs, constrainedWeek(): count domyślnie 2 lub 4, warianty obejmują głównie przesunięcie akcentu/długiego biegu; ranking jest leksykograficzny i lokalny. Kandydat może wygrać ten tydzień, ale osłabić bodziec w następnym.
+NAPRAWA: małe, ograniczone przeszukiwanie 2–3 kolejnych tygodni (beam search lub dynamiczny wybór 3–6 kandydatów/tydzień). Twarde bezpieczeństwo pozostaje nieprzekraczalne. Wśród bezpiecznych wariantów oceniaj: ciągłość rodzin bodźców, czas regeneracji między tygodniami, osiągalność dawki, specyfikę dystansu i rozsądne wykorzystanie czasu. Nie wybieraj większej objętości kosztem naruszeń. Dodaj ślad decyzji: odrzucony wariant, przyczyna, zachowany bodziec. Limituj koszt obliczeń.
+
+6. JAKOŚĆ PLANÓW 5 KM / 10 KM: KONKRETNE RECEPTY ZAMIAST LOSOWEJ RÓŻNORODNOŚCI
+Wprowadź planowanie dwóch osi: (i) wytrzymałość tlenowa/próg, (ii) specyfika prędkości startowej i ekonomia. Przy 2 dniach zwykle jeden akcent + jeden bieg spokojny/dłuższy; przy 3 dniach rozdziel bazę, akcent i dłuższy bieg; przy 4–5 dniach dołóż objętość łatwą i ewentualny drugi akcent tylko przy tolerancji. Nie twórz dwóch ciężkich jednostek przez sam fakt dostępności dni. Krótkie przebieżki mogą być dodatkiem, nie zastępstwem pracy progowej. Dla celu utrzymaniowego nie wymuszaj ciągłego wzrostu; dla ambitnego celu rozpoznawaj niewykonalność i nie przepisuj agresywniejszych temp.
+
+7. PÓŁMARATON / MARATON: ZACHOWAJ NAPRAWY V28
+Nie przywracaj błędu V27, gdy objętość i długi bieg zapadały się wskutek pomylenia utrzymania prędkości z rozwojem wytrzymałości. Zachowaj rozdział intencji z profile_v28.mjs i ochronę długiego biegu w constraints_v28.mjs. Rozbuduj stopniową tolerancję czasu na nogach, regularność i proporcję długiego biegu do tygodnia. Maraton: specyficzne długie biegi tylko u gotowych zawodników, bez obowiązkowego tempa maratońskiego w każdym długim biegu. Żywienie/nawodnienie: ogólne zalecenia i praktyka na treningu, bez pozorowania medycznej personalizacji. Przy 1–2 dniach uczciwie komunikuj ograniczenia celu.
+
+8. PROBLEM RZECZYWISTEJ DAWKI I KOSZTU TRENINGU
+Plik model/constraints_v28.mjs, workDose(): rozpoznawanie części głównej opiera się na nazwach etapów i regexie tempa; estimatedLoad w weekBudget() ma stałe mnożniki typów treningu. To może pomijać niestandardowe kroki, przerwy i błędnie porównywać jednostki.
+NAPRAWA: obliczaj dawkę ze STRUKTURALNYCH pól jednostki, nie z tekstowej nazwy etapu; osobno praca jakościowa, rozgrzewka, schłodzenie, przerwy, całkowity czas i dystans. Dla brakujących danych oznacz niepewność, nie dopowiadaj z precyzją do sekundy. Zachowaj kompatybilność przez adapter starego formatu. Dodaj testy spójności: suma kroków vs dystans/czas jednostki, przerwy, intensywność, tempo i limit dnia.
+
+9. POMIAR I ADAPTACJA: BRAK DANYCH TO NIE SUKCES
+Plik model/quality_v28.mjs, comparableExposureState(): już wymaga porównywalnych wykonań, ale sprawdź, czy brak RPE/zmęczenia nie jest mylony z tolerancją, a krótkie i długie ekspozycje nie są łączone tylko dlatego, że mają podobne minuty. Rozszerz porównywalność o rodzinę bodźca, strukturę odcinków, przerwy, warunki i subiektywną trudność. Po dwóch dobrych wykonaniach rozważ mały krok, ale nie wymuszaj go; po chorobie, bólu, dłuższej przerwie lub narastającym zmęczeniu najpierw obniż dawkę i poproś o potwierdzenie gotowości. Nie diagnozuj urazów.
+
+10. INFORMACJA ZWROTNA I UCZCIWA PRECYZJA
+Jeżeli HRmax jest tylko szacowane, nie przedstawiaj wąskich stref bpm jako pomiaru. Pierwszeństwo: wiarygodny próg/wykonane testy > ostrożne zakresy > RPE i test rozmowy. Dla krótkich interwałów nie steruj intensywnością na podstawie chwilowego HR. Wyjaśnij każdą trudną decyzję jednym krótkim zdaniem: „dlaczego ten bodziec, dlaczego teraz, co zrobić, jeśli nie wyszedł”. Bez przesadnie rozbudowanego UI i nowych pól obowiązkowych.
+
+11. SPOSÓB PRACY — MNIEJ PAPIERU, WIĘCEJ REALNYCH ZMIAN
+Etap A: popraw model dawki + progresji 5/10 km; uruchom kilka rzeczywistych planów i skontroluj je ręcznie.
+Etap B: popraw sezon i wybór wielotygodniowy; sprawdź ochronę maratonu i bezpieczeństwo.
+Etap C: adaptacja i czytelność wyjścia; testy integracyjne.
+Po każdym etapie zachowaj działającą wersję i możliwość cofnięcia zmiany. Nie pisz dziesiątek raportów pośrednich. Nie zwiększaj liczby linii kodu bez uzasadnienia. Nie zmieniaj scorerów historycznych i nie wprowadzaj nowego tylko po to, by pokazać lepszą ocenę.
+
+12. JAK SPRAWDZAĆ, CZY NAPRAWDĘ JEST LEPIEJ
+Benchmarki 28/1008/holdout mogą być używane jako ALARM REGRESJI, nie jako cel optymalizacji. Nie dobieraj stałych pod znane przypadki i nie zatrzymuj pracy tylko dlatego, że średnia wzrosła o 0.01. Najważniejsza ocena to ręczny audyt treści minimum 12 pełnych planów (5 km, 10 km, półmaraton, maraton × 2, 3, 5 dni) oraz kilku profili: początkujący, regularny, zaawansowany, utrzymanie, ambitny cel, powrót po przerwie. Dla każdego pokaż 3–5 konkretnych jednostek i sekwencję tygodni PRZED/PO, uzasadnij dawkę i wskaż kompromisy. Sprawdź, czy po zmianie powstają lepsze bodźce, a nie tylko inne nazwy. Testuj deterministyczność, API, limity czasu, dni dostępności, odpoczynek, taper, korekty historii i brak niebezpiecznego nadrabiania.
+
+13. KRYTERIA JAKOŚCI, KTÓRE MAJĄ REALNIE ROSNĄĆ
+Bezpieczeństwo: zero krytycznych naruszeń i brak agresywnej progresji bez dowodów.
+Indywidualizacja: podobny cel, ale inna baza = rzeczywiście inna dawka.
+Kilometraż: stabilna, wykonalna trajektoria z odciążeniem.
+Jakość: progresja w obrębie rodziny bodźca, nie rotacja tabel.
+Specyfika: 5/10 km rozwijają odpowiednie bodźce; długie dystanse chronią wytrzymałość.
+Regeneracja: odstępy i kumulacja obciążenia między tygodniami.
+Periodyzacja: sensowny cel każdego bloku.
+Taper: mniejsze zmęczenie bez utraty rytmu.
+Adaptacja: wykonanie, nie deklaracja, warunkuje następny krok.
+Wykonalność: uczciwy komunikat przy zbyt ambitnym celu.
+Nie traktuj 10/10 jako czegoś, co można uzyskać przez podkręcenie miernika.
+
+14. DOSTARCZENIE
+Kompletny RunPlanner_V29.zip z kodem, działającymi testami, krótkim CHANGELOG_V29.md (maks. 2 strony), zestawieniem 12 planów przed/po i listą nierozwiązanych ograniczeń. Zapisz w repozytorium, jeżeli masz dostęp i jest to zgodne z bieżącym workflow. Jeśli jakaś proponowana zmiana nie daje sensownych wyników lub pogarsza bezpieczeństwo, nie ukrywaj tego: cofnij ją albo opisz powód. Nie kończ na analizie; dostarcz implementację.
+
+NAJWAŻNIEJSZE ZDANIE: V29 ma produkować odczuwalnie lepsze, bardziej spójne i indywidualne PLANY — szczególnie 5 km i 10 km — a nie tylko lepsze wykresy, benchmarki i dokumenty.

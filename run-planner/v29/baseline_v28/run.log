@@ -1,0 +1,208 @@
+
+> run-planner@28.0.0 test
+> node testy/run_v28.mjs
+
+=== history
+ porownanie_v22_v23
+Comparison: 28 matrix + 1008 extended + 18 detailed; violations 0
+=== v24_inherited
+V23 82/82
+=== v24
+V24 227/227
+=== porownanie_v23_v24
+Comparison: 28 matrix + 1008 extended + 30 detailed; violations 0
+=== regresje_v25
+8/8
+=== v25_inherited
+V23 82/82
+=== adaptacja_v25
+Adaptation 140/140
+=== v25
+V25 121/121
+=== kalibracja_v25
+Calibration V25 24/24; good=8.904
+=== porownanie_v24_v25
+Comparison: 28 matrix + 1008 extended + 30 detailed; violations 0
+=== wydajnosc_v25
+[
+  {
+    version: 'v24',
+    inputSha256: '0947bb9c68a7740a707d59e17f6e2117f68b2245c188a1d00180bc87077928d0',
+    executed: 84,
+    meanMs: 13.826447595238092,
+    medianMs: 10.477454000000023,
+    p95Ms: 33.17143199999998,
+    maxMs: 38.75179799999995,
+    startRss: 70709248,
+    maxRssBytes: 141357056,
+    node: 'v24.19.0'
+  },
+  {
+    version: 'v25',
+    inputSha256: '0947bb9c68a7740a707d59e17f6e2117f68b2245c188a1d00180bc87077928d0',
+    executed: 84,
+    meanMs: 14.247376607142863,
+    medianMs: 11.033382999999958,
+    p95Ms: 33.38154600000007,
+    maxMs: 35.079863999999986,
+    startRss: 74080256,
+    maxRssBytes: 148406272,
+    node: 'v24.19.0'
+  }
+]
+WYNIK: wszystkie 28 zestawy testów zaliczone
+
+=== v27
+V27 119/119
+
+=== kalibracja_v27
+Audit calibration 16/16
+
+=== regresje_v28_inherited
+[
+  {
+    name: 'season trajectory exists before local session allocation',
+    ok: true
+  },
+  { name: 'maintenance does not repeat maximal 3 km tests', ok: true },
+  {
+    name: 'stimulus ledger includes next step and conditional progression',
+    ok: true
+  },
+  { name: 'weekly replan preserves original season phase', ok: true },
+  { name: 'undated PB has explicitly declared provenance', ok: true }
+]
+
+=== v28_inherited
+V27 119/119
+
+=== adaptacja_compat_v28
+Adaptation 140/140
+
+=== chronologia_v28
+Chronology 8/8
+
+=== historie_v28
+{"scenarios":150,"weeksPerHistory":[8,12],"completedHistories":150,"elapsedMs":47340.967100999995,"peakRssBytes":764772352,"passed":151,"failed":0}
+
+=== v28
+V28 215/215
+
+=== kalibracja_v28
+Audit28 14 / 14
+
+=== benchmark_v28
+tDecileMean":6.482956521739131,"histogram":[0,0,0,0,0,0,58,120,46,0]},"audit28":{"n":224,"mean":7.7863560267857155,"median":7.73125,"p10":7.17875,"p90":8.49125,"min":6.8825,"max":8.78375,"worstDecileMean":7.050271739130436,"histogram":[0,0,0,0,0,0,7,147,70,0]}},"v28":{"score23":{"n":224,"mean":7.205647321428572,"median":8.048,"p10":4.239,"p90":9.219,"min":2.55,"max":9.788,"worstDecileMean":3.589478260869566,"histogram":[0,0,3,16,23,26,21,22,68,45]},"score25":{"n":224,"mean":9.046366071428569,"median":9.096,"p10":8.347,"p90":9.72,"min":7.35,"max":9.9,"worstDecileMean":7.927347826086957,"histogram":[0,0,0,0,0,0,0,12,83,129]},"audit27":{"n":224,"mean":7.442339285714287,"median":7.549999999999999,"p10":6.6,"p90":8.099,"min":6.226,"max":8.327,"worstDecileMean":6.4907826086956515,"histogram":[0,0,0,0,0,0,57,119,48,0]},"audit28":{"n":224,"mean":7.930267857142861,"median":7.93375,"p10":7.3100000000000005,"p90":8.504999999999999,"min":6.94375,"max":8.78375,"worstDecileMean":7.120978260869565,"histogram":[0,0,0,0,0,0,3,118,103,0]}}},"holdout224Distribution":{"better":33,"same":180,"worse":11},"newRegressions":[620,621,622,623,632,633,634,635,647],"internalRecipeImprovements":21,"errors":[]}
+
+=== profiles_v28
+{ profiles: 47, fullPlans: 46 }
+
+=== triage_v28
+{ historical: 250, newRegressions: 9, top20Improved: 20 }
+
+=== blind_review_v28
+{
+  plans: 40,
+  pairs: 20,
+  seed: 280019,
+  versionKeyNotProvidedToReviewer: true,
+  externalCoach: false,
+  notIndependentHumanBlindTrial: true
+}
+
+=== trace_baseline_v28
+  },
+  {
+    week: '2026-11-30',
+    desired: {
+      km: 61.42624333003954,
+      longKm: 24.826243330039542,
+      longMinutes: 173.90088880337137,
+      qualityMinutes: 16.8
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-12-07',
+    desired: {
+      km: 61.901657773386056,
+      longKm: 25.101657773386055,
+      longMinutes: 175.83008992536682,
+      qualityMinutes: 18
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-12-14',
+    desired: {
+      km: 62.377072216732564,
+      longKm: 25.377072216732568,
+      longMinutes: 177.75929104736227,
+      qualityMinutes: 19.2
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  },
+  {
+    week: '2026-12-21',
+    desired: {
+      km: 51.1491992177207,
+      longKm: 19.032804162549425,
+      longMinutes: 133.3194682855217,
+      qualityMinutes: 19.2
+    },
+    stages: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  }
+]
+
+=== wydajnosc_v28
+[
+  {
+    version: 'v27',
+    inputSha256: '0947bb9c68a7740a707d59e17f6e2117f68b2245c188a1d00180bc87077928d0',
+    executed: 84,
+    meanMs: 20.845828916666687,
+    medianMs: 15.602274000000023,
+    p95Ms: 44.60701800000015,
+    maxMs: 45.458532000000105,
+    startRss: 69459968,
+    maxRssBytes: 187555840,
+    node: 'v24.19.0'
+  },
+  {
+    version: 'v28',
+    inputSha256: '0947bb9c68a7740a707d59e17f6e2117f68b2245c188a1d00180bc87077928d0',
+    executed: 84,
+    meanMs: 24.131618928571438,
+    medianMs: 15.192810000000009,
+    p95Ms: 72.96357000000035,
+    maxMs: 78.75070299999993,
+    startRss: 69492736,
+    maxRssBytes: 194985984,
+    node: 'v24.19.0'
+  }
+]
+
+=== profiling_v28
+ssAfter":115630080,"heapBefore":31891320,"heapAfter":35610528,"completed":12,"version":"v27","count":12},{"name":"v28 update 12","elapsedMs":11.599928999999975,"rssBefore":122576896,"rssAfter":126640128,"heapBefore":42558424,"heapAfter":46689520,"completed":12,"version":"v28","count":12},{"name":"v27 update 60","elapsedMs":14.021709999999985,"rssBefore":131358720,"rssAfter":135421952,"heapBefore":51507432,"heapAfter":28514008,"completed":60,"version":"v27","count":60},{"name":"v28 update 60","elapsedMs":12.871516000000042,"rssBefore":135684096,"rssAfter":136863744,"heapBefore":34574728,"heapAfter":41557400,"completed":60,"version":"v28","count":60},{"name":"v27 update 180","elapsedMs":23.579061000000024,"rssBefore":136994816,"rssAfter":137256960,"heapBefore":46342200,"heapAfter":29439736,"completed":180,"version":"v27","count":180},{"name":"v28 update 180","elapsedMs":22.474412999999913,"rssBefore":137256960,"rssAfter":137388032,"heapBefore":34931864,"heapAfter":50786224,"completed":180,"version":"v28","count":180}],"peakRssBytes":137388032,"limitations":"Sequential cold/warm calls in one process; heap/RSS include retained runtime and JIT, not isolated object size. No SLA claim."}
+
+{"node":"v24.19.0","started":"2026-11-05T13:37:04.729Z","elapsedMs":473437,"passed":17,"failed":0}

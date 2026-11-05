@@ -1,0 +1,1 @@
+{"scenarios":150,"weeksPerHistory":6,"completedHistories":150,"elapsedMs":31937.443922,"peakRssBytes":495235072,"passed":151,"failed":0}

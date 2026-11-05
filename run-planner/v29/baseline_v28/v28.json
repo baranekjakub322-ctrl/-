@@ -1,0 +1,866 @@
+{
+  "passed": 215,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "V27 public exports and immutable source hashes",
+      "ok": true
+    },
+    {
+      "name": "reference marathon preserves declarative starting tolerance conditionally",
+      "ok": true
+    },
+    {
+      "name": "cross-distance maintenance does not cap marathon endurance 4",
+      "ok": true
+    },
+    {
+      "name": "cross-distance maintenance does not cap marathon endurance 5",
+      "ok": true
+    },
+    {
+      "name": "cross-distance maintenance does not cap marathon endurance 6",
+      "ok": true
+    },
+    {
+      "name": "cross-distance maintenance does not cap marathon endurance 7",
+      "ok": true
+    },
+    {
+      "name": "explicit maintenance remains respected",
+      "ok": true
+    },
+    {
+      "name": "bounded candidate chooses recovery-aware quality placement",
+      "ok": true
+    },
+    {
+      "name": "debug trace is optional and records the whole actual chain",
+      "ok": true
+    },
+    {
+      "name": "allocated weeks are final prescriptions, never observed history",
+      "ok": true
+    },
+    {
+      "name": "explicit long-duration restriction has explained degraded envelope",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 36",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 37",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 38",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 39",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 40",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 41",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 42",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 43",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 44",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 45",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 46",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 47",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 48",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 49",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 50",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 51",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 52",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 53",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 54",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 55",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 56",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 57",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 58",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 59",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 60",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 61",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 62",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 63",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 64",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 65",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 66",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 67",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 68",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 69",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 70",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 71",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 288",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 289",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 290",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 291",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 292",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 293",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 294",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 295",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 296",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 297",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 298",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 299",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 300",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 301",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 302",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 303",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 304",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 305",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 306",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 307",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 308",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 309",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 310",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 311",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 312",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 313",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 314",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 315",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 316",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 317",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 318",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 319",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 320",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 321",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 322",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 323",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 540",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 541",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 542",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 543",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 544",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 545",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 546",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 547",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 548",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 549",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 550",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 551",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 552",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 553",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 554",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 555",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 556",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 557",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 558",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 559",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 560",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 561",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 562",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 563",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 564",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 565",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 566",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 567",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 568",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 569",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 570",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 571",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 572",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 573",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 574",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 575",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 792",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 793",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 794",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 795",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 796",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 797",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 798",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 799",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 800",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 801",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 802",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 803",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 804",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 805",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 806",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 807",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 808",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 809",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 810",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 811",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 812",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 813",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 814",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 815",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 816",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 817",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 818",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 819",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 820",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 821",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 822",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 823",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 824",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 825",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 826",
+      "ok": true
+    },
+    {
+      "name": "protect all two-day scenarios 827",
+      "ok": true
+    },
+    {
+      "name": "single-parameter base 5k/20",
+      "ok": true
+    },
+    {
+      "name": "single-parameter base 5k/35",
+      "ok": true
+    },
+    {
+      "name": "single-parameter base 5k/60",
+      "ok": true
+    },
+    {
+      "name": "single-parameter base 10k/20",
+      "ok": true
+    },
+    {
+      "name": "single-parameter base 10k/35",
+      "ok": true
+    },
+    {
+      "name": "single-parameter base 10k/60",
+      "ok": true
+    },
+    {
+      "name": "single-parameter base half/20",
+      "ok": true
+    },
+    {
+      "name": "single-parameter base half/35",
+      "ok": true
+    },
+    {
+      "name": "single-parameter base half/60",
+      "ok": true
+    },
+    {
+      "name": "single-parameter base marathon/20",
+      "ok": true
+    },
+    {
+      "name": "single-parameter base marathon/35",
+      "ok": true
+    },
+    {
+      "name": "single-parameter base marathon/60",
+      "ok": true
+    },
+    {
+      "name": "duration and consistency 5k/6",
+      "ok": true
+    },
+    {
+      "name": "duration and consistency 5k/8",
+      "ok": true
+    },
+    {
+      "name": "duration and consistency 5k/12",
+      "ok": true
+    },
+    {
+      "name": "duration and consistency 5k/16",
+      "ok": true
+    },
+    {
+      "name": "duration and consistency 5k/20",
+      "ok": true
+    },
+    {
+      "name": "duration and consistency 5k/24",
+      "ok": true
+    },
+    {
+      "name": "duration and consistency 10k/6",
+      "ok": true
+    },
+    {
+      "name": "duration and consistency 10k/8",
+      "ok": true
+    },
+    {
+      "name": "duration and consistency 10k/12",
+      "ok": true
+    },
+    {
+      "name": "duration and consistency 10k/16",
+      "ok": true
+    },
+    {
+      "name": "duration and consistency 10k/20",
+      "ok": true
+    },
+    {
+      "name": "duration and consistency 10k/24",
+      "ok": true
+    },
+    {
+      "name": "duration and consistency half/6",
+      "ok": true
+    },
+    {
+      "name": "duration and consistency half/8",
+      "ok": true
+    },
+    {
+      "name": "duration and consistency half/12",
+      "ok": true
+    },
+    {
+      "name": "duration and consistency half/16",
+      "ok": true
+    },
+    {
+      "name": "duration and consistency half/20",
+      "ok": true
+    },
+    {
+      "name": "duration and consistency half/24",
+      "ok": true
+    },
+    {
+      "name": "duration and consistency marathon/6",
+      "ok": true
+    },
+    {
+      "name": "duration and consistency marathon/8",
+      "ok": true
+    },
+    {
+      "name": "duration and consistency marathon/12",
+      "ok": true
+    },
+    {
+      "name": "duration and consistency marathon/16",
+      "ok": true
+    },
+    {
+      "name": "duration and consistency marathon/20",
+      "ok": true
+    },
+    {
+      "name": "duration and consistency marathon/24",
+      "ok": true
+    },
+    {
+      "name": "10k reference protects existing good plan and controls",
+      "ok": true
+    },
+    {
+      "name": "rest counts and distances are internally consistent",
+      "ok": true
+    },
+    {
+      "name": "two comparable good executions may permit one small step",
+      "ok": true
+    },
+    {
+      "name": "same-day duplicates cannot establish progression",
+      "ok": true
+    },
+    {
+      "name": "one hard exposure, missing work, fatigue and poor recovery never certify adaptation",
+      "ok": true
+    },
+    {
+      "name": "worse tolerance does not increase prescribed load {\"fatigue\":5}",
+      "ok": true
+    },
+    {
+      "name": "worse tolerance does not increase prescribed load {\"volumeTolerance\":\"low\"}",
+      "ok": true
+    },
+    {
+      "name": "worse tolerance does not increase prescribed load {\"intensityTolerance\":\"low\"}",
+      "ok": true
+    },
+    {
+      "name": "worse tolerance does not increase prescribed load {\"breakDays\":28}",
+      "ok": true
+    },
+    {
+      "name": "worse tolerance does not increase prescribed load {\"pain\":3}",
+      "ok": true
+    },
+    {
+      "name": "invalid nested step value NaN",
+      "ok": true
+    },
+    {
+      "name": "invalid nested step value Infinity",
+      "ok": true
+    },
+    {
+      "name": "invalid nested step value -1",
+      "ok": true
+    },
+    {
+      "name": "round-trip and timezone do not move local dates",
+      "ok": true
+    },
+    {
+      "name": "invalid input {\"debugTrace\":\"yes\"}",
+      "ok": true
+    },
+    {
+      "name": "invalid input {\"today\":\"2026-02-30\"}",
+      "ok": true
+    },
+    {
+      "name": "invalid input {\"currentWeeklyKm\":-1}",
+      "ok": true
+    },
+    {
+      "name": "invalid input {\"activeInjury\":true}",
+      "ok": true
+    },
+    {
+      "name": "invalid input {\"daysPerWeek\":8}",
+      "ok": true
+    },
+    {
+      "name": "final trace explicitly identifies rounding and repair operations",
+      "ok": true
+    },
+    {
+      "name": "alternative readiness distinguishes conditional schedule from execution evidence",
+      "ok": true
+    },
+    {
+      "name": "nutrition practice has no universal automatic carbohydrate dose",
+      "ok": true
+    },
+    {
+      "name": "hill work counts ascent only and preserves observed family evidence",
+      "ok": true
+    },
+    {
+      "name": "economy exposures stay planned and within the easy-run distance",
+      "ok": true
+    }
+  ]
+}

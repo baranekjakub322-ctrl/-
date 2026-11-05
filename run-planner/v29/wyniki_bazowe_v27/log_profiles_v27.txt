@@ -1,0 +1,16 @@
+{
+  profiles: 47,
+  fullPlans: 46,
+  worst: [
+    'maraton_krotki',
+    'jeden_powrot',
+    'jeden_podtrzymanie',
+    '5k_jeden',
+    'tylko_jeden_dostepny',
+    'maraton_jeden',
+    'spadek_historii',
+    '5k_poczatkujacy',
+    'maraton_dwa',
+    'niska_tolerancja'
+  ]
+}

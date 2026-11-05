@@ -1,0 +1,142 @@
+{
+  "passed": 34,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "structural sum isolates warmup work rest cooldown",
+      "ok": true
+    },
+    {
+      "name": "rename invariance: no text-dependent native dose",
+      "ok": true
+    },
+    {
+      "name": "unknown legacy pace is unknown, not fabricated 6min/km",
+      "ok": true
+    },
+    {
+      "name": "legacy adapter known time is preserved",
+      "ok": true
+    },
+    {
+      "name": "economy does not double count total distance or minutes",
+      "ok": true
+    },
+    {
+      "name": "two structurally comparable actual exposures permit consideration",
+      "ok": true
+    },
+    {
+      "name": "not proof: noRpe",
+      "ok": true
+    },
+    {
+      "name": "not proof: noFatigue",
+      "ok": true
+    },
+    {
+      "name": "not proof: noStructure",
+      "ok": true
+    },
+    {
+      "name": "not proof: shortened",
+      "ok": true
+    },
+    {
+      "name": "not proof: pain",
+      "ok": true
+    },
+    {
+      "name": "not proof: fatigue",
+      "ok": true
+    },
+    {
+      "name": "not proof: differentBout",
+      "ok": true
+    },
+    {
+      "name": "not proof: differentConditions",
+      "ok": true
+    },
+    {
+      "name": "actual full plan 5k-2",
+      "ok": true
+    },
+    {
+      "name": "actual full plan 5k-3",
+      "ok": true
+    },
+    {
+      "name": "actual full plan 5k-5",
+      "ok": true
+    },
+    {
+      "name": "actual full plan 10k-2",
+      "ok": true
+    },
+    {
+      "name": "actual full plan 10k-3",
+      "ok": true
+    },
+    {
+      "name": "actual full plan 10k-5",
+      "ok": true
+    },
+    {
+      "name": "actual full plan half-2",
+      "ok": true
+    },
+    {
+      "name": "actual full plan half-3",
+      "ok": true
+    },
+    {
+      "name": "actual full plan half-5",
+      "ok": true
+    },
+    {
+      "name": "actual full plan marathon-2",
+      "ok": true
+    },
+    {
+      "name": "actual full plan marathon-3",
+      "ok": true
+    },
+    {
+      "name": "actual full plan marathon-5",
+      "ok": true
+    },
+    {
+      "name": "actual full plan beginner",
+      "ok": true
+    },
+    {
+      "name": "actual full plan advanced",
+      "ok": true
+    },
+    {
+      "name": "actual full plan maintenance",
+      "ok": true
+    },
+    {
+      "name": "actual full plan ambitious",
+      "ok": true
+    },
+    {
+      "name": "actual full plan return",
+      "ok": true
+    },
+    {
+      "name": "actual full plan marathon60",
+      "ok": true
+    },
+    {
+      "name": "family progression without fixed-table endpoint 5k",
+      "ok": true
+    },
+    {
+      "name": "family progression without fixed-table endpoint 10k",
+      "ok": true
+    }
+  ]
+}
