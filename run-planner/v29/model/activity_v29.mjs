@@ -39,6 +39,10 @@ function normalise(raw,today,defaultZone='UTC',fixedId=null){
   if(v.restType!=null&&!['jog','walk','passive','none'].includes(v.restType))fail('Nieprawidłowy rodzaj przerwy.');
   if(v.targetDistance!=null&&!['5k','10k','half','marathon','health'].includes(v.targetDistance))fail('Nieprawidłowy dystans docelowy ekspozycji.');
   if(v.intervalSeconds>0&&v.repetitions>0&&o.workMinutes!=null&&Math.abs(v.intervalSeconds*v.repetitions/60-o.workMinutes)>.5)fail('Struktura odcinków jest sprzeczna z czasem wykonanej pracy.');
+  const workKm=v.repetitions>0&&v.intervalMeters>0?v.repetitions*v.intervalMeters/1000:null;
+  if(workKm!=null&&workKm>(o.distanceKm||0)+.05)fail('Suma wykonanych odcinków przekracza całkowity dystans aktywności.');
+  if(workKm>0&&o.workMinutes>0&&(o.workMinutes/workKm<1.5||o.workMinutes/workKm>30))fail('Sprzeczny dystans i czas wykonanej części głównej.');
+  if(v.repetitions>0&&v.restSeconds!=null&&o.workMinutes!=null&&o.workMinutes+(v.repetitions-1)*v.restSeconds/60>(o.durationMin||0)+.5)fail('Praca i przerwy przekraczają całkowity czas wykonania.');
   if(v.conditions!=null){const q=v.conditions;if(typeof q!=='object'||Array.isArray(q))fail('Warunki wymagają obiektu.');if(q.temperatureC!=null&&(!Number.isFinite(q.temperatureC)||q.temperatureC< -50||q.temperatureC>60))fail('Nieprawidłowa temperatura.');if(q.surface!=null&&!['road','track','trail','treadmill'].includes(q.surface))fail('Nieprawidłowa nawierzchnia.');}
  }
  if(o.illness!=null&&typeof o.illness!=='boolean')fail('illness musi być logiczne.');

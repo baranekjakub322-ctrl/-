@@ -49,6 +49,8 @@ export function prescribeQuality(c,family){
  if(adaptive&&observed.retainedDoseMinutes){const executed=observed.retainedDoseMinutes;cap=Math.min(cap,progress?executed+Math.min(2,executed*.12):executed);}
  if(previous)cap=Math.min(cap,Math.max(previous.workMin*1.18,previous.workMin+2));
  if(previous&&progress&&axis==='repetitions'&&reps*metres/1000*pace/60>cap){reps=previous.reps;metres=previous.metres+100;axis='interval_length';}
+ const boutLimitSeconds=family==='interval'?(I.goal.type==='5k'?300:360):null;
+ if(boutLimitSeconds)metres=Math.min(metres,Math.max(200,Math.floor(boutLimitSeconds/pace*10)*100));
  const total=()=>reps*metres/1000+(reps-1)*rest/c.easyMid,minutes=()=>reps*metres/1000*pace/60;
  while((total()>budget+.01||minutes()>cap+.01)&&reps>Math.min(2,reps))reps--;
  while((total()>budget+.01||minutes()>cap+.01)&&metres> (family==='threshold'?600:200))metres-=100;
@@ -56,7 +58,7 @@ export function prescribeQuality(c,family){
  if(adaptive&&action==='progression'&&observed.executedDose&&minutes()<=observed.executedDose.workMin+.5){action='consolidation';axis=null;}
  const workKm=reps*metres/1000,workMin=workKm*pace/60,feasible=total()<=budget+.05&&workMin<=cap+.1&&workMin>= (family==='threshold'?4:3);
  const reason=action==='redistribution'?'Dłuższy odcinek przy podobnej lub niższej dawce; nie jest to potwierdzona adaptacja.':action==='consolidation'?(adaptive&&!observed.canProgress?'Brak porównywalnego wykonania: utrzymaj bezpieczną dawkę.':maintenance?'Podtrzymanie formy: konsolidacja zamiast obowiązkowego wzrostu.':'Konsolidacja dawki lub ograniczenie budżetu, bez przypadkowej rotacji.'):action==='reduction'?'Redukcja pracy dla regeneracji, taperu lub niższej tolerancji.':action.includes('progression')?`Mały krok jednej osi (${axis}); tempo i przerwy pozostają bez zaostrzenia.`:'Pierwsza dawka dobrana do fazy, bazy i dostępnego czasu.';
- return {family,phase,mode,action,axis,reps,metres,rest,restType:'jog',workKm,workMin,paceSecPerKm:pace,feasible,
+ return {family,phase,mode,action,axis,reps,metres,rest,boutLimitSeconds,restType:'jog',workKm,workMin,paceSecPerKm:pace,feasible,
   plannedDose:{workKm,workMin,repetitions:reps,intervalMeters:metres,restSeconds:rest},executedDose:observed.executedDose,decisionEvidence:observed,confidence:observed.confidence,
   physiologicalGoal:goals[family],reason:`${goals[family]} / ${phase}: ${reason}`,conditionalOnExecution:!adaptive||!observed.canProgress,
   alternative:{missed:'Nie nadrabiaj; utrzymaj lub wróć do poprzedniej dawki.',highRpe:'Skróć pracę lub zamień na spokojny bieg; potwierdź regenerację.',pain:'Przerwij obciążenie; nie jest to diagnoza.'},estimatedCost:workMin*(family==='interval'?7.5:family==='threshold'?6.5:5.5)};

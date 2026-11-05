@@ -1,5 +1,5 @@
 {
-  "passed": 24,
+  "passed": 30,
   "failed": 0,
   "tests": [
     {
@@ -96,6 +96,30 @@
     },
     {
       "name": "two-day plan includes distance-specific development 10k",
+      "ok": true
+    },
+    {
+      "name": "contradictory actual work/rest {\"repetitions\":4,\"intervalMeters\":40000,\"restSeconds\":90,\"restType\":\"jog\"}",
+      "ok": true
+    },
+    {
+      "name": "contradictory actual work/rest {\"repetitions\":4,\"intervalMeters\":20,\"restSeconds\":90,\"restType\":\"jog\"}",
+      "ok": true
+    },
+    {
+      "name": "contradictory actual work/rest {\"repetitions\":4,\"intervalMeters\":800,\"restSeconds\":900,\"restType\":\"jog\"}",
+      "ok": true
+    },
+    {
+      "name": "single VO2 bout duration fits current pace 2400",
+      "ok": true
+    },
+    {
+      "name": "single VO2 bout duration fits current pace 3300",
+      "ok": true
+    },
+    {
+      "name": "single VO2 bout duration fits current pace 4200",
       "ok": true
     }
   ]

@@ -1,0 +1,5 @@
+{
+  "status": "INTERRUPTED_NOT_PASS",
+  "reason": "Reproduced missing per-bout duration cap and contradictory actual structure validation; fixed with six additional regression cases before a complete rerun.",
+  "supersededBy": "run_v29.json"
+}
