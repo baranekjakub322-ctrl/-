@@ -53,6 +53,7 @@ export function syncStructure(t,{recomputeTime=false}={}){
 export function retainFamilyRecipes(state,units){
  state.familyRecipes??={};state.executedProgressions??={};
  for(const t of units){if(!t.prescription||familyOf(t)!==t.prescription.family)continue;const p=t.prescription,f=p.family,d=workDose(t),prior=state.familyRecipes[f];
+  state.lastQualityFamily=f;
   state.familyRecipes[f]={...p,workMin:d.minutes,workKm:d.km,exposures:(prior?.exposures||0)+1,status:'planned',notCompletionEvidence:true};
   if(p.mode==='adaptive'&&p.action==='progression')state.executedProgressions[f]=true;
  }

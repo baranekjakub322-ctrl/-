@@ -1,5 +1,5 @@
 {
-  "passed": 22,
+  "passed": 24,
   "failed": 0,
   "tests": [
     {
@@ -88,6 +88,14 @@
     },
     {
       "name": "initial progression never adds completed history",
+      "ok": true
+    },
+    {
+      "name": "two-day plan includes distance-specific development 5k",
+      "ok": true
+    },
+    {
+      "name": "two-day plan includes distance-specific development 10k",
       "ok": true
     }
   ]

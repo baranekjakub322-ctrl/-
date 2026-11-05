@@ -263,5 +263,16 @@
       "model/ledger_v29.mjs": "eabdeb25c574f8fb10ad066bb92a6141e05fead82668204610e66534771a76b0",
       "model/units_v29.mjs": "0d860eda8a3309570feaedc8d8f3d372a8d774b293bf8bf21576905f06750f85"
     }
+  },
+  "checkpoints": {
+    "A": "16ae68c",
+    "B": "17b8f8f",
+    "C": "1633f80"
+  },
+  "methodology": {
+    "scorers": "23.0.0 and 25.0.0 unchanged; existing audits 27 and 28 unchanged; no new scorer",
+    "benchmarkRole": "regression_alarm_not_objective",
+    "adaptationTestFixture": "New V29 copy of the 140-case adaptation suite supplies fatigue:2 in its good-execution fixture; unchanged original runs on frozen V28. Missing fatigue tested separately and never confirms progression.",
+    "internalContentReview": "18 frozen profiles; 12 primary distance/frequency combinations plus 6 special profiles. Internal review, not external coaching or clinical validation."
   }
 }

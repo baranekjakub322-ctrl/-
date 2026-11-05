@@ -1,20 +1,21 @@
 {
   "name": "run-planner",
-  "version": "28.0.0",
+  "version": "29.0.0",
   "type": "module",
   "private": true,
   "engines": {
     "node": ">=18"
   },
   "scripts": {
-    "test": "node testy/run_v28.mjs",
-    "test:v28": "node testy/v28.mjs",
-    "test:adaptation": "node testy/historie_v28.mjs",
-    "benchmark": "node testy/benchmark_v28.mjs",
+    "test": "node testy/run_v29.mjs",
+    "test:v28": "node testy/run_v28.mjs",
+    "test:adaptation": "node testy/adaptacja_v29.mjs && node testy/chronologia_v29.mjs && node testy/historie_v29.mjs",
+    "benchmark": "node testy/benchmark_v29.mjs",
     "calibrate": "node testy/kalibracja_v28.mjs",
-    "profile": "node testy/wydajnosc_v28.mjs && node narzedzia/profiling_v28.mjs",
-    "report": "node testy/raporty_v28.mjs",
-    "compare": "node testy/benchmark_v28.mjs",
-    "test:v27": "node testy/v27.mjs"
+    "profile": "node testy/wydajnosc_v29.mjs",
+    "report": "node narzedzia/report_v29.mjs",
+    "compare": "node testy/benchmark_v29.mjs",
+    "test:v27": "node testy/v27.mjs",
+    "test:v29": "node testy/stage_a_v29.mjs && node testy/stage_b_v29.mjs && node testy/stage_c_v29.mjs"
   }
 }

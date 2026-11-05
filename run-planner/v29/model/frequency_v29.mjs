@@ -30,7 +30,13 @@ export function lowFrequencyWeek(c,dates,V,h) {
     if(longItem){const long=easy(longItem,L,true);long.kroki[0]=nativeStep('easy',{...long.kroki[0],tempo:h.range(c.P.long)},[c.P.long.fast,c.P.long.slow]);emit(longItem,long);if(!c.recovery){state.lastLong=Math.max(state.lastLong,L);state.plannedLong=Math.max(state.plannedLong,L);}}
     if(other){
       const distance=longItem?Math.abs(Date.parse(other.date)-Date.parse(longItem.date))/86400000:7;
-      const kind=developmentWeek?'tempo':h.policy(I,c.phase,c.kQuality,c.recovery,c.raceWeek,c.lateBase)[0];
+      let kind=developmentWeek?'tempo':h.policy(I,c.phase,c.kQuality,c.recovery,c.raceWeek,c.lateBase)[0];
+      const prepared=I.currentWeeklyKm>=20&&I.longestRecentRun>=8&&I.level!=='beginner'&&(I.experienceMonths==null||I.experienceMonths>=12)&&I.intensityTolerance!=='low'&&!I.injuries;
+      if(kind&&prepared&&!developmentWeek&&['5k','10k'].includes(I.goal.type)&&['build','peak'].includes(c.phase)){
+        const f=state.familyRecipes||{},count=Object.values(f).reduce((n,p)=>n+(p.exposures||0),0);
+        if(c.phase==='peak')kind=I.goal.type==='10k'?(state.lastQualityFamily==='specific'?'tempo':'racepace'):count%3===0?'racepace':state.lastQualityFamily==='interval'?'tempo':'interval';
+        else kind=I.goal.type==='5k'?(state.lastQualityFamily==='threshold'?'interval':'tempo'):(f.threshold?.exposures>=2&&count%3===2?'interval':'tempo');
+      }
       const safe=distance>=I.recoveryDays && !c.noQuality && c.weekIdx>=(I.currentWeeklyKm>=20&&I.longestRecentRun>=8&&(I.experienceMonths==null||I.experienceMonths>=6)&&I.level!=='beginner'?1:3) && !c.taper && (!I.qualityNotBefore || other.date>=I.qualityNotBefore) && !state.hardDates.some(d=>d<other.date&&(Date.parse(other.date)-Date.parse(d))/86400000<I.recoveryDays);
       let s=easy(other,development);
       if(kind&&safe){

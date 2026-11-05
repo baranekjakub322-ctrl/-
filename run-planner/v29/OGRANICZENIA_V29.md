@@ -1,0 +1,15 @@
+# Ograniczenia V29
+
+- Audyt treści wykonał ten sam system. Brak zewnętrznego trenera, badania klinicznego i danych o faktycznych wynikach lub urazach po realizacji planów. PASS oznacza działanie określonych zabezpieczeń i kontraktów.
+- Bloki i dawki są heurystyczne. Mniejsza objętość lub bardziej ustrukturyzowany trening nie dowodzi większej skuteczności. W audycie maraton / 5 dni z bazą 35 km zmniejszył szczyt z ok. 65/27 do 59/24 km; maraton / 3 dni też stracił część długiego biegu. To jawny kompromis konsolidacji, nie potwierdzona przewaga. Referencyjny maraton 60 km / 4 dni zachowuje ok. 67/27 km i poprawki V28 przeciw zapadaniu się przygotowania.
+- Specyfika 10 km/HM pozostaje zachowawcza, szczególnie przy dwóch dniach; 2×1000 m w planie 10 km to mała dawka dla ambitnego zawodnika. Silnik nie obiecuje rekordu. Nie podniesiono intensywności wyłącznie dla oceny.
+- Dwa wykonania z wiarygodnie podaną strukturą/RPE/zmęczeniem pozwalają jedynie rozważyć mały krok. Dane są zgłoszeniami, bez weryfikacji sensora. Warunki niepodane w obu ekspozycjach pozostają nieznane; brak struktury nie daje dowodu progresji.
+- W planie początkowym kolejne tygodnie są warunkowymi propozycjami. Nie można potwierdzić ich tolerancji z przyszłego harmonogramu. W adaptacji wykonane ekspozycje nie prowadzą do serii automatycznych awansów.
+- Luka wytrzymałościowa i jej przedział to skala opisowa. Potwierdzenie sześciu–ośmiu tygodni wymaga pełnej historii; pojedynczy import nie uprawnia do wniosku o regularności. Luka celu jest oddzielona od jakości algorytmu.
+- Przeszukiwanie obejmuje do trzech tygodni i 24 węzłów, nie cały sezon. Prognozy nie przechodzą wszystkich późniejszych globalnych napraw; ostateczny plan ponownie podlega zabezpieczeniom. W tygodniach ze startami pobocznymi oraz marszobiegach używany jest wariant lokalny. Koszt CPU jest większy niż V28; rzeczywisty pomiar w raporcie testów.
+- Adapter dawnych jednostek nadal rozpoznaje dawne nazwy/tekst tempa. Nowe recepty jakościowe używają pól strukturalnych. Nierozpoznana część pozostaje niepewna/null; nie każdy dawny trening ma dokładną sumę minut. Źródła mieszane są jawne.
+- Obciążenie strukturalne używa orientacyjnego RPE, a zakres ±15% jest umowną niepewnością opisową, nie skalibrowanym przedziałem statystycznym ani ryzykiem urazu. Historyczny strażnik kosztu działa równolegle.
+- Szacowane strefy HR nadal istnieją w dawnym polu API, z opisanym źródłem. W krokach pierwszeństwo ma RPE/rozmowa; szacowane bpm nie są przedstawiane jako pomiar.
+- Początkujący z deklaracją bardzo krótkiego stażu może dostać cały spokojny plan bez agresywnych akcentów. Aktualizacja po rzeczywistej realizacji jest właściwym miejscem potwierdzenia tolerancji. Brak nowych danych nie jest automatycznym awansem stażu/gotowości.
+
+Dalszy rozwój: zewnętrzna ocena planów i obserwacja realizacji; lepiej zbadane bramki rozwoju długiego biegu przy trzech dniach; stopniowe dłuższe bloki 10 km/HM po potwierdzonym wykonaniu; pełna strukturyzacja dawnych jednostek; profilowanie przeszukiwania na długich historiach. Historyczne wyniki pozostają punktami odniesienia bez zmiany progów.

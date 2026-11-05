@@ -1,0 +1,12 @@
+# V28 → V29
+
+1. Zastąpiono kończące się tabele recept generatorem dawki dla progu, interwałów i tempa dystansu. Uwzględnia bazę, fazę, częstotliwość, dostępny budżet, tolerancję i poprzednią zachowaną receptę. Jeden krok zmienia jedną oś; tempo i przerwy nie zaostrzają się z kalendarzem. Powtórki i reorganizacja pracy mają osobny powód.
+2. Dodano strukturalne role kroków i numeryczne tempo. Praca, przerwy n−1, rozgrzewka, schłodzenie i przebieżki wliczone w bieg są policzone osobno. Adapter dawnych danych oznacza nieznane minuty zamiast podstawiać fikcyjne tempo. Koszt strukturalny jest opisowy; stary strażnik obciążenia pozostaje dodatkową ochroną.
+3. Dwa dni dla 5/10 km dostały świadomy rozdział bodźców. Po audycie poprawiono wariant 10 km, który wybierał niemal sam próg. W szczycie występuje specyfika dystansu, ale nadal najwyżej jeden akcent.
+4. Sezon ma bloki 3–5 tygodni (przy dużym zmęczeniu krótszy cykl ochronny), konsolidację i odciążenie. Wzrost wynika z tolerancji i pozostałej luki; szczyt jest sufitem. Taper zależy od objętości/częstotliwości i, przy pełnej historii, wykonania. Zawody pozostają obciążeniem tygodnia.
+5. Wybór tygodnia ma ograniczone przeszukiwanie 2–3 tygodni, szerokość beam=2, do 24 ocenionych węzłów. Twarde ograniczenia są pierwsze, dalej ciągłość, długi bieg i budżet. Ślad wskazuje odrzucony wariant i zachowany bodziec. Przy braku konfliktu działa szybki wariant lokalny.
+6. Oddzielono ciągłą lukę wytrzymałościową, możliwość rozwoju i pochodzenie dowodów. Jeden–dwa dni nie wyłączają informacji o brakach. Surowa deklaracja jest zachowana obok ostrożnie znormalizowanej bazy.
+7. Aktualizacja wymaga rzeczywiście porównywalnych ekspozycji: odcinki, przerwy, rodzina, dawka, znane RPE i zmęczenie oraz porównywalne podane warunki. Brak danych nie potwierdza tolerancji. Korekta/anulowanie przelicza przyszłość; przeszłość i oryginały pozostają w audycie. Sam plan nie staje się wykonaniem. Po jednym szybkim teście nie ma wzrostu VDOT.
+8. Szacowane HR nie pojawia się w kroku jako zmierzona wąska strefa bpm; pierwszeństwo mają RPE, rozmowa i aktualna forma. Krótkie interwały nie są sterowane chwilowym HR.
+
+Bez nowego miernika, UI lub zależności. Scorery 23.0.0/25.0.0 i wejścia benchmarków pozostały identyczne. Benchmark jest alarmem, nie celem do strojenia. Wewnętrzny audyt 18 planów wskazuje także ograniczenia: niższy szczyt długiego biegu w części maratonów z niższą bazą i zachowawczą specyfikę 10 km/HM. Nie deklarujemy poprawy każdego planu ani jakości klinicznej 10/10.

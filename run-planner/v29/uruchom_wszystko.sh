@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -euo pipefail
-cd "$(dirname "${BASH_SOURCE[0]}")"
-exec node testy/run_v28.mjs
+cd -- "$(dirname -- "$0")"
+exec node testy/run_v29.mjs
