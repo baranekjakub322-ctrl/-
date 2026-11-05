@@ -24,7 +24,9 @@
     "dane/holdout64.json": "a69b9b9c309c1496116a6683ee916294ced3fae38545514c875e92040960417d",
     "dane/hypotheses.json": "e6cee7460329ed4c4ce704538d99327106af7f131b285923c85582b60bed20eb",
     "dane/profiles42.json": "f92f977a4d18ba147505c7ca07a98c74dff423fc4dd070daf3f1a6cc2d772322",
-    "dane/v27-frozen-results.json": "6b6820da76c3ce698ddc2bf925d50545d868bede46c3139695c07ba7ac0715cb"
+    "dane/v27-frozen-results.json": "6b6820da76c3ce698ddc2bf925d50545d868bede46c3139695c07ba7ac0715cb",
+    "baseline/v23-source.sha256": "0da126f74e96bb2f89892bcecec27b101d4dab7a3002173d9cffc7ff50df121b",
+    "baseline/v24-source.sha256": "3fbece7757383da5e7b80466345093750817763b67eb1b997c647e6ab6792672"
   },
   "baselineRun": {
     "node": "v24.19.0",

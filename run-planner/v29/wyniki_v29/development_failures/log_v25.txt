@@ -1,0 +1,6 @@
+V25 120/121
+all historical sources and frozen meter unchanged Error: ENOENT: no such file or directory, open 'baseline/v24-source.sha256'
+    at Object.readFileSync (node:fs:484:20)
+    at file:///workspace/-/run-planner/v29/testy/v25.mjs:5:84
+    at test (file:///workspace/-/run-planner/v29/testy/v25.mjs:2:37)
+    at file:///workspace/-/run-planner/v29/testy/v25.mjs:5:1

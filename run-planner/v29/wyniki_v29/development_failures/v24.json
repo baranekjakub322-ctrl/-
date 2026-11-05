@@ -1,0 +1,923 @@
+{
+  "passed": 226,
+  "failed": 1,
+  "stressExecuted": 128,
+  "node": "v24.19.0",
+  "timing": {
+    "elapsedCheckMs": 10087.237094000007,
+    "maxCheckMs": 262.5093079999997,
+    "medianCheckMs": 14.170325000000048,
+    "rssBytes": 372162560
+  },
+  "tests": [
+    {
+      "name": "frozen V23 meter has original SHA256",
+      "ok": true
+    },
+    {
+      "name": "historical production sources remain identical to V23 branch baseline",
+      "ok": false,
+      "error": "Error: ENOENT: no such file or directory, open 'baseline/v23-source.sha256'\n    at Object.readFileSync (node:fs:484:20)\n    at file:///workspace/-/run-planner/v29/testy/v24.mjs:10:98\n    at test (file:///workspace/-/run-planner/v29/testy/v24.mjs:4:84)\n    at file:///workspace/-/run-planner/v29/testy/v24.mjs:10:1"
+    },
+    {
+      "name": "race 5k weekday 0: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race 5k weekday 1: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race 5k weekday 2: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race 5k weekday 3: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race 5k weekday 4: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race 5k weekday 5: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race 5k weekday 6: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race 10k weekday 0: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race 10k weekday 1: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race 10k weekday 2: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race 10k weekday 3: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race 10k weekday 4: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race 10k weekday 5: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race 10k weekday 6: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race half weekday 0: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race half weekday 1: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race half weekday 2: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race half weekday 3: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race half weekday 4: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race half weekday 5: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race half weekday 6: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race marathon weekday 0: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race marathon weekday 1: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race marathon weekday 2: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race marathon weekday 3: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race marathon weekday 4: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race marathon weekday 5: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "race marathon weekday 6: frequency, sum, taper, gaps",
+      "ok": true
+    },
+    {
+      "name": "dedicated 5k/1/beginner",
+      "ok": true
+    },
+    {
+      "name": "dedicated 5k/1/intermediate",
+      "ok": true
+    },
+    {
+      "name": "dedicated 5k/1/advanced",
+      "ok": true
+    },
+    {
+      "name": "dedicated 5k/2/beginner",
+      "ok": true
+    },
+    {
+      "name": "dedicated 5k/2/intermediate",
+      "ok": true
+    },
+    {
+      "name": "dedicated 5k/2/advanced",
+      "ok": true
+    },
+    {
+      "name": "dedicated 10k/1/beginner",
+      "ok": true
+    },
+    {
+      "name": "dedicated 10k/1/intermediate",
+      "ok": true
+    },
+    {
+      "name": "dedicated 10k/1/advanced",
+      "ok": true
+    },
+    {
+      "name": "dedicated 10k/2/beginner",
+      "ok": true
+    },
+    {
+      "name": "dedicated 10k/2/intermediate",
+      "ok": true
+    },
+    {
+      "name": "dedicated 10k/2/advanced",
+      "ok": true
+    },
+    {
+      "name": "dedicated half/1/beginner",
+      "ok": true
+    },
+    {
+      "name": "dedicated half/1/intermediate",
+      "ok": true
+    },
+    {
+      "name": "dedicated half/1/advanced",
+      "ok": true
+    },
+    {
+      "name": "dedicated half/2/beginner",
+      "ok": true
+    },
+    {
+      "name": "dedicated half/2/intermediate",
+      "ok": true
+    },
+    {
+      "name": "dedicated half/2/advanced",
+      "ok": true
+    },
+    {
+      "name": "dedicated marathon/1/beginner",
+      "ok": true
+    },
+    {
+      "name": "dedicated marathon/1/intermediate",
+      "ok": true
+    },
+    {
+      "name": "dedicated marathon/1/advanced",
+      "ok": true
+    },
+    {
+      "name": "dedicated marathon/2/beginner",
+      "ok": true
+    },
+    {
+      "name": "dedicated marathon/2/intermediate",
+      "ok": true
+    },
+    {
+      "name": "dedicated marathon/2/advanced",
+      "ok": true
+    },
+    {
+      "name": "two consecutive available days do not receive an accent beside a long run",
+      "ok": true
+    },
+    {
+      "name": "two-day quality never uses inflated warm/cool to consume volume",
+      "ok": true
+    },
+    {
+      "name": "one day continuity can progress cautiously from 3 km",
+      "ok": true
+    },
+    {
+      "name": "fit evidence avoids frozen beginner threshold dose",
+      "ok": true
+    },
+    {
+      "name": "specific doses evolve across retained sessions",
+      "ok": true
+    },
+    {
+      "name": "quality ledger corresponds to retained corrected work",
+      "ok": true
+    },
+    {
+      "name": "pace does not accelerate from elapsed weeks or faster target",
+      "ok": true
+    },
+    {
+      "name": "volumeTolerance validation",
+      "ok": true
+    },
+    {
+      "name": "intensityTolerance validation",
+      "ok": true
+    },
+    {
+      "name": "fatigue validation and real reduction",
+      "ok": true
+    },
+    {
+      "name": "low intensity tolerance lowers work without raising volume in compensation",
+      "ok": true
+    },
+    {
+      "name": "volume tolerance alias equals established load tolerance",
+      "ok": true
+    },
+    {
+      "name": "age 25 maintains independent safety",
+      "ok": true
+    },
+    {
+      "name": "age 50 maintains independent safety",
+      "ok": true
+    },
+    {
+      "name": "age 65 maintains independent safety",
+      "ok": true
+    },
+    {
+      "name": "1 misses: no catch-up",
+      "ok": true
+    },
+    {
+      "name": "2 misses: no catch-up",
+      "ok": true
+    },
+    {
+      "name": "return after 7 days",
+      "ok": true
+    },
+    {
+      "name": "return after 14 days",
+      "ok": true
+    },
+    {
+      "name": "return after 60 days",
+      "ok": true
+    },
+    {
+      "name": "reduced intensity is actionable and does not erase completed work",
+      "ok": true
+    },
+    {
+      "name": "change race date after old event creates future taper",
+      "ok": true
+    },
+    {
+      "name": "date earlier than journal and invalid new race rejected",
+      "ok": true
+    },
+    {
+      "name": "completed past persists through repeated updates, not rewritten as new plan",
+      "ok": true
+    },
+    {
+      "name": "retransmitting same test cannot ratchet VDOT or reapply fatigue reduction",
+      "ok": true
+    },
+    {
+      "name": "observation history cannot be silently replaced",
+      "ok": true
+    },
+    {
+      "name": "second new record improves capped used VDOT, not previous raw result",
+      "ok": true
+    },
+    {
+      "name": "new race within days: no extra quality or race-week frequency overflow",
+      "ok": true
+    },
+    {
+      "name": "pain persists and only explicit symptom clearance releases it",
+      "ok": true
+    },
+    {
+      "name": "fatigue, high RPE and shortened sessions reduce load",
+      "ok": true
+    },
+    {
+      "name": "adaptation deterministic and inputs immutable",
+      "ok": true
+    },
+    {
+      "name": "prepared marathon retains specific work, fuel instructions and duration guards",
+      "ok": true
+    },
+    {
+      "name": "conditional marathon specificity does not claim observed readiness",
+      "ok": true
+    },
+    {
+      "name": "reusing original input still preserves latest effective pace and new race date",
+      "ok": true
+    },
+    {
+      "name": "same observation with different key ordering is idempotent",
+      "ok": true
+    },
+    {
+      "name": "already completed today is not scheduled a second time",
+      "ok": true
+    },
+    {
+      "name": "prepared marathon controlled MP finish replaces standalone quality",
+      "ok": true
+    },
+    {
+      "name": "two-day HM taper reflects actual run dates near midweek event",
+      "ok": true
+    },
+    {
+      "name": "repeat update after completed workout today remains valid",
+      "ok": true
+    },
+    {
+      "name": "positive observed distance cannot have zero elapsed time",
+      "ok": true
+    },
+    {
+      "name": "two-day side race week respects no-long allocation",
+      "ok": true
+    },
+    {
+      "name": "marathon MP guidance agrees with its estimated effort",
+      "ok": true
+    },
+    {
+      "name": "two-day half low-base taper respects shared weekly budget",
+      "ok": true
+    },
+    {
+      "name": "two-day marathon low-base taper respects shared weekly budget",
+      "ok": true
+    },
+    {
+      "name": "availability update removes unavailable old preferences without mutating the past",
+      "ok": true
+    },
+    {
+      "name": "stress 0",
+      "ok": true
+    },
+    {
+      "name": "stress 1",
+      "ok": true
+    },
+    {
+      "name": "stress 2",
+      "ok": true
+    },
+    {
+      "name": "stress 3",
+      "ok": true
+    },
+    {
+      "name": "stress 4",
+      "ok": true
+    },
+    {
+      "name": "stress 5",
+      "ok": true
+    },
+    {
+      "name": "stress 6",
+      "ok": true
+    },
+    {
+      "name": "stress 7",
+      "ok": true
+    },
+    {
+      "name": "stress 8",
+      "ok": true
+    },
+    {
+      "name": "stress 9",
+      "ok": true
+    },
+    {
+      "name": "stress 10",
+      "ok": true
+    },
+    {
+      "name": "stress 11",
+      "ok": true
+    },
+    {
+      "name": "stress 12",
+      "ok": true
+    },
+    {
+      "name": "stress 13",
+      "ok": true
+    },
+    {
+      "name": "stress 14",
+      "ok": true
+    },
+    {
+      "name": "stress 15",
+      "ok": true
+    },
+    {
+      "name": "stress 16",
+      "ok": true
+    },
+    {
+      "name": "stress 17",
+      "ok": true
+    },
+    {
+      "name": "stress 18",
+      "ok": true
+    },
+    {
+      "name": "stress 19",
+      "ok": true
+    },
+    {
+      "name": "stress 20",
+      "ok": true
+    },
+    {
+      "name": "stress 21",
+      "ok": true
+    },
+    {
+      "name": "stress 22",
+      "ok": true
+    },
+    {
+      "name": "stress 23",
+      "ok": true
+    },
+    {
+      "name": "stress 24",
+      "ok": true
+    },
+    {
+      "name": "stress 25",
+      "ok": true
+    },
+    {
+      "name": "stress 26",
+      "ok": true
+    },
+    {
+      "name": "stress 27",
+      "ok": true
+    },
+    {
+      "name": "stress 28",
+      "ok": true
+    },
+    {
+      "name": "stress 29",
+      "ok": true
+    },
+    {
+      "name": "stress 30",
+      "ok": true
+    },
+    {
+      "name": "stress 31",
+      "ok": true
+    },
+    {
+      "name": "stress 32",
+      "ok": true
+    },
+    {
+      "name": "stress 33",
+      "ok": true
+    },
+    {
+      "name": "stress 34",
+      "ok": true
+    },
+    {
+      "name": "stress 35",
+      "ok": true
+    },
+    {
+      "name": "stress 36",
+      "ok": true
+    },
+    {
+      "name": "stress 37",
+      "ok": true
+    },
+    {
+      "name": "stress 38",
+      "ok": true
+    },
+    {
+      "name": "stress 39",
+      "ok": true
+    },
+    {
+      "name": "stress 40",
+      "ok": true
+    },
+    {
+      "name": "stress 41",
+      "ok": true
+    },
+    {
+      "name": "stress 42",
+      "ok": true
+    },
+    {
+      "name": "stress 43",
+      "ok": true
+    },
+    {
+      "name": "stress 44",
+      "ok": true
+    },
+    {
+      "name": "stress 45",
+      "ok": true
+    },
+    {
+      "name": "stress 46",
+      "ok": true
+    },
+    {
+      "name": "stress 47",
+      "ok": true
+    },
+    {
+      "name": "stress 48",
+      "ok": true
+    },
+    {
+      "name": "stress 49",
+      "ok": true
+    },
+    {
+      "name": "stress 50",
+      "ok": true
+    },
+    {
+      "name": "stress 51",
+      "ok": true
+    },
+    {
+      "name": "stress 52",
+      "ok": true
+    },
+    {
+      "name": "stress 53",
+      "ok": true
+    },
+    {
+      "name": "stress 54",
+      "ok": true
+    },
+    {
+      "name": "stress 55",
+      "ok": true
+    },
+    {
+      "name": "stress 56",
+      "ok": true
+    },
+    {
+      "name": "stress 57",
+      "ok": true
+    },
+    {
+      "name": "stress 58",
+      "ok": true
+    },
+    {
+      "name": "stress 59",
+      "ok": true
+    },
+    {
+      "name": "stress 60",
+      "ok": true
+    },
+    {
+      "name": "stress 61",
+      "ok": true
+    },
+    {
+      "name": "stress 62",
+      "ok": true
+    },
+    {
+      "name": "stress 63",
+      "ok": true
+    },
+    {
+      "name": "stress 64",
+      "ok": true
+    },
+    {
+      "name": "stress 65",
+      "ok": true
+    },
+    {
+      "name": "stress 66",
+      "ok": true
+    },
+    {
+      "name": "stress 67",
+      "ok": true
+    },
+    {
+      "name": "stress 68",
+      "ok": true
+    },
+    {
+      "name": "stress 69",
+      "ok": true
+    },
+    {
+      "name": "stress 70",
+      "ok": true
+    },
+    {
+      "name": "stress 71",
+      "ok": true
+    },
+    {
+      "name": "stress 72",
+      "ok": true
+    },
+    {
+      "name": "stress 73",
+      "ok": true
+    },
+    {
+      "name": "stress 74",
+      "ok": true
+    },
+    {
+      "name": "stress 75",
+      "ok": true
+    },
+    {
+      "name": "stress 76",
+      "ok": true
+    },
+    {
+      "name": "stress 77",
+      "ok": true
+    },
+    {
+      "name": "stress 78",
+      "ok": true
+    },
+    {
+      "name": "stress 79",
+      "ok": true
+    },
+    {
+      "name": "stress 80",
+      "ok": true
+    },
+    {
+      "name": "stress 81",
+      "ok": true
+    },
+    {
+      "name": "stress 82",
+      "ok": true
+    },
+    {
+      "name": "stress 83",
+      "ok": true
+    },
+    {
+      "name": "stress 84",
+      "ok": true
+    },
+    {
+      "name": "stress 85",
+      "ok": true
+    },
+    {
+      "name": "stress 86",
+      "ok": true
+    },
+    {
+      "name": "stress 87",
+      "ok": true
+    },
+    {
+      "name": "stress 88",
+      "ok": true
+    },
+    {
+      "name": "stress 89",
+      "ok": true
+    },
+    {
+      "name": "stress 90",
+      "ok": true
+    },
+    {
+      "name": "stress 91",
+      "ok": true
+    },
+    {
+      "name": "stress 92",
+      "ok": true
+    },
+    {
+      "name": "stress 93",
+      "ok": true
+    },
+    {
+      "name": "stress 94",
+      "ok": true
+    },
+    {
+      "name": "stress 95",
+      "ok": true
+    },
+    {
+      "name": "stress 96",
+      "ok": true
+    },
+    {
+      "name": "stress 97",
+      "ok": true
+    },
+    {
+      "name": "stress 98",
+      "ok": true
+    },
+    {
+      "name": "stress 99",
+      "ok": true
+    },
+    {
+      "name": "stress 100",
+      "ok": true
+    },
+    {
+      "name": "stress 101",
+      "ok": true
+    },
+    {
+      "name": "stress 102",
+      "ok": true
+    },
+    {
+      "name": "stress 103",
+      "ok": true
+    },
+    {
+      "name": "stress 104",
+      "ok": true
+    },
+    {
+      "name": "stress 105",
+      "ok": true
+    },
+    {
+      "name": "stress 106",
+      "ok": true
+    },
+    {
+      "name": "stress 107",
+      "ok": true
+    },
+    {
+      "name": "stress 108",
+      "ok": true
+    },
+    {
+      "name": "stress 109",
+      "ok": true
+    },
+    {
+      "name": "stress 110",
+      "ok": true
+    },
+    {
+      "name": "stress 111",
+      "ok": true
+    },
+    {
+      "name": "stress 112",
+      "ok": true
+    },
+    {
+      "name": "stress 113",
+      "ok": true
+    },
+    {
+      "name": "stress 114",
+      "ok": true
+    },
+    {
+      "name": "stress 115",
+      "ok": true
+    },
+    {
+      "name": "stress 116",
+      "ok": true
+    },
+    {
+      "name": "stress 117",
+      "ok": true
+    },
+    {
+      "name": "stress 118",
+      "ok": true
+    },
+    {
+      "name": "stress 119",
+      "ok": true
+    },
+    {
+      "name": "stress 120",
+      "ok": true
+    },
+    {
+      "name": "stress 121",
+      "ok": true
+    },
+    {
+      "name": "stress 122",
+      "ok": true
+    },
+    {
+      "name": "stress 123",
+      "ok": true
+    },
+    {
+      "name": "stress 124",
+      "ok": true
+    },
+    {
+      "name": "stress 125",
+      "ok": true
+    },
+    {
+      "name": "stress 126",
+      "ok": true
+    },
+    {
+      "name": "stress 127",
+      "ok": true
+    }
+  ]
+}

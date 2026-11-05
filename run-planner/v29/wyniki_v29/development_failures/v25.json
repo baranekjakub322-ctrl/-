@@ -1,0 +1,492 @@
+{
+  "passed": 120,
+  "failed": 1,
+  "tests": [
+    {
+      "name": "API and version retained",
+      "ok": true
+    },
+    {
+      "name": "all historical sources and frozen meter unchanged",
+      "ok": false,
+      "error": "Error: ENOENT: no such file or directory, open 'baseline/v24-source.sha256'\n    at Object.readFileSync (node:fs:484:20)\n    at file:///workspace/-/run-planner/v29/testy/v25.mjs:5:84\n    at test (file:///workspace/-/run-planner/v29/testy/v25.mjs:2:37)\n    at file:///workspace/-/run-planner/v29/testy/v25.mjs:5:1"
+    },
+    {
+      "name": "5k / 6 weeks: phases, sums, deload and taper",
+      "ok": true
+    },
+    {
+      "name": "5k / 8 weeks: phases, sums, deload and taper",
+      "ok": true
+    },
+    {
+      "name": "5k / 12 weeks: phases, sums, deload and taper",
+      "ok": true
+    },
+    {
+      "name": "5k / 16 weeks: phases, sums, deload and taper",
+      "ok": true
+    },
+    {
+      "name": "5k / 20 weeks: phases, sums, deload and taper",
+      "ok": true
+    },
+    {
+      "name": "5k / 24 weeks: phases, sums, deload and taper",
+      "ok": true
+    },
+    {
+      "name": "10k / 6 weeks: phases, sums, deload and taper",
+      "ok": true
+    },
+    {
+      "name": "10k / 8 weeks: phases, sums, deload and taper",
+      "ok": true
+    },
+    {
+      "name": "10k / 12 weeks: phases, sums, deload and taper",
+      "ok": true
+    },
+    {
+      "name": "10k / 16 weeks: phases, sums, deload and taper",
+      "ok": true
+    },
+    {
+      "name": "10k / 20 weeks: phases, sums, deload and taper",
+      "ok": true
+    },
+    {
+      "name": "10k / 24 weeks: phases, sums, deload and taper",
+      "ok": true
+    },
+    {
+      "name": "half / 6 weeks: phases, sums, deload and taper",
+      "ok": true
+    },
+    {
+      "name": "half / 8 weeks: phases, sums, deload and taper",
+      "ok": true
+    },
+    {
+      "name": "half / 12 weeks: phases, sums, deload and taper",
+      "ok": true
+    },
+    {
+      "name": "half / 16 weeks: phases, sums, deload and taper",
+      "ok": true
+    },
+    {
+      "name": "half / 20 weeks: phases, sums, deload and taper",
+      "ok": true
+    },
+    {
+      "name": "half / 24 weeks: phases, sums, deload and taper",
+      "ok": true
+    },
+    {
+      "name": "marathon / 6 weeks: phases, sums, deload and taper",
+      "ok": true
+    },
+    {
+      "name": "marathon / 8 weeks: phases, sums, deload and taper",
+      "ok": true
+    },
+    {
+      "name": "marathon / 12 weeks: phases, sums, deload and taper",
+      "ok": true
+    },
+    {
+      "name": "marathon / 16 weeks: phases, sums, deload and taper",
+      "ok": true
+    },
+    {
+      "name": "marathon / 20 weeks: phases, sums, deload and taper",
+      "ok": true
+    },
+    {
+      "name": "marathon / 24 weeks: phases, sums, deload and taper",
+      "ok": true
+    },
+    {
+      "name": "low frequency 5k/beginner/1",
+      "ok": true
+    },
+    {
+      "name": "low frequency 5k/beginner/2",
+      "ok": true
+    },
+    {
+      "name": "low frequency 5k/intermediate/1",
+      "ok": true
+    },
+    {
+      "name": "low frequency 5k/intermediate/2",
+      "ok": true
+    },
+    {
+      "name": "low frequency 5k/advanced/1",
+      "ok": true
+    },
+    {
+      "name": "low frequency 5k/advanced/2",
+      "ok": true
+    },
+    {
+      "name": "low frequency 10k/beginner/1",
+      "ok": true
+    },
+    {
+      "name": "low frequency 10k/beginner/2",
+      "ok": true
+    },
+    {
+      "name": "low frequency 10k/intermediate/1",
+      "ok": true
+    },
+    {
+      "name": "low frequency 10k/intermediate/2",
+      "ok": true
+    },
+    {
+      "name": "low frequency 10k/advanced/1",
+      "ok": true
+    },
+    {
+      "name": "low frequency 10k/advanced/2",
+      "ok": true
+    },
+    {
+      "name": "low frequency half/beginner/1",
+      "ok": true
+    },
+    {
+      "name": "low frequency half/beginner/2",
+      "ok": true
+    },
+    {
+      "name": "low frequency half/intermediate/1",
+      "ok": true
+    },
+    {
+      "name": "low frequency half/intermediate/2",
+      "ok": true
+    },
+    {
+      "name": "low frequency half/advanced/1",
+      "ok": true
+    },
+    {
+      "name": "low frequency half/advanced/2",
+      "ok": true
+    },
+    {
+      "name": "low frequency marathon/beginner/1",
+      "ok": true
+    },
+    {
+      "name": "low frequency marathon/beginner/2",
+      "ok": true
+    },
+    {
+      "name": "low frequency marathon/intermediate/1",
+      "ok": true
+    },
+    {
+      "name": "low frequency marathon/intermediate/2",
+      "ok": true
+    },
+    {
+      "name": "low frequency marathon/advanced/1",
+      "ok": true
+    },
+    {
+      "name": "low frequency marathon/advanced/2",
+      "ok": true
+    },
+    {
+      "name": "prepared one-day runner can rotate relaxed strides without interval session",
+      "ok": true
+    },
+    {
+      "name": "consecutive two-day availability has no accent beside endurance",
+      "ok": true
+    },
+    {
+      "name": "sensitivity age",
+      "ok": true
+    },
+    {
+      "name": "sensitivity level",
+      "ok": true
+    },
+    {
+      "name": "sensitivity short experience",
+      "ok": true
+    },
+    {
+      "name": "sensitivity lower volume",
+      "ok": true
+    },
+    {
+      "name": "sensitivity declining history",
+      "ok": true
+    },
+    {
+      "name": "sensitivity longer run history",
+      "ok": true
+    },
+    {
+      "name": "sensitivity worse record",
+      "ok": true
+    },
+    {
+      "name": "sensitivity faster goal",
+      "ok": true
+    },
+    {
+      "name": "sensitivity fewer available days",
+      "ok": true
+    },
+    {
+      "name": "sensitivity fatigue",
+      "ok": true
+    },
+    {
+      "name": "sensitivity low intensity",
+      "ok": true
+    },
+    {
+      "name": "sensitivity low volume tolerance",
+      "ok": true
+    },
+    {
+      "name": "sensitivity break",
+      "ok": true
+    },
+    {
+      "name": "sensitivity pain",
+      "ok": true
+    },
+    {
+      "name": "active injury never schedules increased intensity",
+      "ok": true
+    },
+    {
+      "name": "5k race weekday 0",
+      "ok": true
+    },
+    {
+      "name": "5k race weekday 1",
+      "ok": true
+    },
+    {
+      "name": "5k race weekday 2",
+      "ok": true
+    },
+    {
+      "name": "5k race weekday 3",
+      "ok": true
+    },
+    {
+      "name": "5k race weekday 4",
+      "ok": true
+    },
+    {
+      "name": "5k race weekday 5",
+      "ok": true
+    },
+    {
+      "name": "5k race weekday 6",
+      "ok": true
+    },
+    {
+      "name": "10k race weekday 0",
+      "ok": true
+    },
+    {
+      "name": "10k race weekday 1",
+      "ok": true
+    },
+    {
+      "name": "10k race weekday 2",
+      "ok": true
+    },
+    {
+      "name": "10k race weekday 3",
+      "ok": true
+    },
+    {
+      "name": "10k race weekday 4",
+      "ok": true
+    },
+    {
+      "name": "10k race weekday 5",
+      "ok": true
+    },
+    {
+      "name": "10k race weekday 6",
+      "ok": true
+    },
+    {
+      "name": "half race weekday 0",
+      "ok": true
+    },
+    {
+      "name": "half race weekday 1",
+      "ok": true
+    },
+    {
+      "name": "half race weekday 2",
+      "ok": true
+    },
+    {
+      "name": "half race weekday 3",
+      "ok": true
+    },
+    {
+      "name": "half race weekday 4",
+      "ok": true
+    },
+    {
+      "name": "half race weekday 5",
+      "ok": true
+    },
+    {
+      "name": "half race weekday 6",
+      "ok": true
+    },
+    {
+      "name": "marathon race weekday 0",
+      "ok": true
+    },
+    {
+      "name": "marathon race weekday 1",
+      "ok": true
+    },
+    {
+      "name": "marathon race weekday 2",
+      "ok": true
+    },
+    {
+      "name": "marathon race weekday 3",
+      "ok": true
+    },
+    {
+      "name": "marathon race weekday 4",
+      "ok": true
+    },
+    {
+      "name": "marathon race weekday 5",
+      "ok": true
+    },
+    {
+      "name": "marathon race weekday 6",
+      "ok": true
+    },
+    {
+      "name": "planned quality records contain dose, rest, purpose and status",
+      "ok": true
+    },
+    {
+      "name": "odd half-kilometre threshold split never creates extra work",
+      "ok": true
+    },
+    {
+      "name": "nutrition is separate and GI tolerance changes guidance",
+      "ok": true
+    },
+    {
+      "name": "unknown conditions do not invent a pace correction; known heat affects guidance",
+      "ok": true
+    },
+    {
+      "name": "bad input null",
+      "ok": true
+    },
+    {
+      "name": "bad input {}",
+      "ok": true
+    },
+    {
+      "name": "bad input {\"today\":\"2026-02-30\",\"age\":35,\"level\":\"intermediate\",\"availableDays\":[0,1,2,3,4,5,6],\"daysPerWeek\":4,\"currentWeeklyKm\":35,\"longestRecentRun\":14,\"goal\":{\"type\":\"10k\",\"raceDate\":\"2027-03-28\"},\"bestResult\":{\"distanceKm\":10,\"timeSec\":3120},\"experienceMonths\":24}",
+      "ok": true
+    },
+    {
+      "name": "bad input {\"today\":\"2026-11-02\",\"age\":35,\"level\":\"intermediate\",\"availableDays\":[0,1,2,3,4,5,6],\"daysPerWeek\":4,\"currentWeeklyKm\":-1,\"longestRecentRun\":14,\"goal\":{\"type\":\"10k\",\"raceDate\":\"2027-03-28\"},\"bestResult\":{\"distanceKm\":10,\"timeSec\":3120},\"experienceMonths\":24}",
+      "ok": true
+    },
+    {
+      "name": "bad input {\"today\":\"2026-11-02\",\"age\":35,\"level\":\"intermediate\",\"availableDays\":[0,1,2,3,4,5,6],\"daysPerWeek\":4,\"currentWeeklyKm\":35,\"longestRecentRun\":14,\"goal\":{\"type\":\"10k\",\"raceDate\":\"2027-03-28\"},\"bestResult\":{\"distanceKm\":10,\"timeSec\":0},\"experienceMonths\":24}",
+      "ok": true
+    },
+    {
+      "name": "bad input {\"today\":\"2026-11-02\",\"age\":35,\"level\":\"intermediate\",\"availableDays\":[0,1,2,3,4,5,6],\"daysPerWeek\":4,\"currentWeeklyKm\":35,\"longestRecentRun\":14,\"goal\":{\"type\":\"10k\",\"raceDate\":\"2027-03-28\"},\"bestResult\":{\"distanceKm\":10,\"timeSec\":3120},\"experienceMonths\":24,\"hrMax\":300}",
+      "ok": true
+    },
+    {
+      "name": "bad input {\"today\":\"2026-11-02\",\"age\":35,\"level\":\"intermediate\",\"availableDays\":[0,1,2,3,4,5,6],\"daysPerWeek\":8,\"currentWeeklyKm\":35,\"longestRecentRun\":14,\"goal\":{\"type\":\"10k\",\"raceDate\":\"2027-03-28\"},\"bestResult\":{\"distanceKm\":10,\"timeSec\":3120},\"experienceMonths\":24}",
+      "ok": true
+    },
+    {
+      "name": "bad input {\"today\":\"2026-11-02\",\"age\":35,\"level\":\"intermediate\",\"availableDays\":[0,1,2,3,4,5,6],\"daysPerWeek\":4,\"currentWeeklyKm\":35,\"longestRecentRun\":14,\"goal\":{\"type\":\"10k\",\"raceDate\":\"2027-03-28\"},\"bestResult\":{\"distanceKm\":10,\"timeSec\":3120},\"experienceMonths\":24,\"recentWeeklyKm\":[1,null]}",
+      "ok": true
+    },
+    {
+      "name": "bad input {\"today\":\"2026-11-02\",\"age\":35,\"level\":\"intermediate\",\"availableDays\":[0,1,2,3,4,5,6],\"daysPerWeek\":4,\"currentWeeklyKm\":35,\"longestRecentRun\":14,\"goal\":{\"type\":\"10k\",\"raceDate\":\"2027-03-28\"},\"bestResult\":{\"distanceKm\":10,\"timeSec\":3120},\"experienceMonths\":24,\"conditions\":{\"temperatureC\":null}}",
+      "ok": true
+    },
+    {
+      "name": "bad input {\"today\":\"2026-11-02\",\"age\":35,\"level\":\"intermediate\",\"availableDays\":[0,1,2,3,4,5,6],\"daysPerWeek\":4,\"currentWeeklyKm\":35,\"longestRecentRun\":14,\"goal\":{\"type\":\"10k\",\"raceDate\":\"2027-03-28\"},\"bestResult\":{\"distanceKm\":10,\"timeSec\":3120},\"experienceMonths\":24,\"conditions\":{\"terrain\":\"magic\"}}",
+      "ok": true
+    },
+    {
+      "name": "bad input {\"today\":\"2026-11-02\",\"age\":35,\"level\":\"intermediate\",\"availableDays\":[0,1,2,3,4,5,6],\"daysPerWeek\":4,\"currentWeeklyKm\":35,\"longestRecentRun\":14,\"goal\":{\"type\":\"10k\",\"raceDate\":\"2027-03-28\"},\"bestResult\":{\"distanceKm\":10,\"timeSec\":3120},\"experienceMonths\":24,\"nutrition\":{\"giTolerance\":\"magic\"}}",
+      "ok": true
+    },
+    {
+      "name": "bad input {\"today\":\"2026-11-02\",\"age\":35,\"level\":\"intermediate\",\"availableDays\":[0,1,2,3,4,5,6],\"daysPerWeek\":4,\"currentWeeklyKm\":35,\"longestRecentRun\":14,\"goal\":{\"type\":\"10k\",\"raceDate\":\"2027-03-28\"},\"bestResult\":{\"distanceKm\":10,\"timeSec\":3120},\"experienceMonths\":24,\"timeZone\":\"Imaginary/Zone\"}",
+      "ok": true
+    },
+    {
+      "name": "bad input {\"today\":\"2026-11-02\",\"age\":35,\"level\":\"intermediate\",\"availableDays\":[0,1,2,3,4,5,6],\"daysPerWeek\":4,\"currentWeeklyKm\":35,\"longestRecentRun\":14,\"goal\":{\"type\":\"10k\",\"raceDate\":\"2027-03-28\"},\"bestResult\":{\"distanceKm\":10,\"timeSec\":3120},\"experienceMonths\":24,\"completedHistory\":[{\"date\":\"2026-11-01\",\"status\":\"done\",\"distanceKm\":4,\"durationMin\":30,\"rpe\":null}]}",
+      "ok": true
+    },
+    {
+      "name": "marathon readiness requires actual regularity, long runs and full coverage",
+      "ok": true
+    },
+    {
+      "name": "history and plan inputs are immutable",
+      "ok": true
+    },
+    {
+      "name": "public validator rejects invalid new optional fields consistently",
+      "ok": true
+    },
+    {
+      "name": "zero-length observations do not prove running regularity",
+      "ok": true
+    },
+    {
+      "name": "direct generation respects unresolved pain even on a zero-distance observation",
+      "ok": true
+    },
+    {
+      "name": "direct generation uses complete execution rather than a larger declaration",
+      "ok": true
+    },
+    {
+      "name": "moderate observed pain suppresses quality in direct generation",
+      "ok": true
+    },
+    {
+      "name": "declarative marathon base is not labelled confirmed without execution",
+      "ok": true
+    },
+    {
+      "name": "direct generation treats ambiguous same-day symptoms conservatively",
+      "ok": true
+    }
+  ],
+  "longTermScenarios": 24
+}

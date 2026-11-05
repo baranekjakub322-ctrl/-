@@ -1,5 +1,10 @@
 {
   "status": "INTERRUPTED_NOT_PASS",
   "reason": "Reproduced missing per-bout duration cap and contradictory actual structure validation; fixed with six additional regression cases before a complete rerun.",
-  "supersededBy": "run_v29.json"
+  "supersededBy": "run_v29.json",
+  "additionalInterruptedRun": {
+    "status": "FAIL_UNFINISHED_RESOLVED",
+    "cause": "Missing original baseline/v23-source.sha256 and v24-source.sha256 in copied package; restored byte-for-byte from V28. No test was weakened.",
+    "supersededBy": "complete run_v29.json"
+  }
 }
